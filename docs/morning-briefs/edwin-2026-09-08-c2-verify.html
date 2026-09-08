@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Tue Sep 8</title>
+<style>
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 6px; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+  code { font-size: 0.85em; color: #b8d4ea; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Tuesday Sep 8, 2026 · Call 2 format verify (Dallas Fontaine) · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>10:00 AM ET · Dallas Fontaine · Call 2 · Custom industrial software</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Dallas Fontaine · Call 2 · 10:00 AM</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+        <p><b>Dallas Fontaine · Custom industrial software · Call 2 · Tue Sep 9 · 10:00am ET · Edwin</b></p>
+
+        <h3>From Call 1</h3>
+        <ul>
+          <li><b>Where they are / what stuck:</b> Custom software for industrial / enterprise buyers (manufacturing, automation/machinery, oil &amp; gas, utilities). Growth has leaned on agencies + first-touch leads that go cold. They talked a ~200k industrial/enterprise decision-maker universe and heavy invite volume (about 74–100k invites/mo) once a list exists.</li>
+          <li><b>Emotional state / urgency:</b>
+            <ul>
+              <li><b>How they feel:</b> Frustrated. Agencies burned time and money without nailing messaging / ICP for custom industrial software. Stuck watching leads die after the first touch.</li>
+              <li><b>Goals they want but can’t hit yet:</b> A predictable enterprise pipeline — warm buyers on a repeatable webinar motion, not another hope-cycle with an agency.</li>
+              <li><b>Why hitting the goal matters:</b> Scale into real industrial/enterprise deals without gambling another full agency budget on the wrong audience.</li>
+              <li><b>What’s holding them back:</b> No owned system that works leads after the first touch; prior agencies missed the ICP / messaging for this niche.</li>
+              <li><b>Consequences if nothing changes:</b> Stay agency-dependent or referral-thin. Keep paying for leads that go cold. Miss the enterprise scale they already know is out there.</li>
+              <li><b>Fears that will show up in the decision:</b> Paying for another marketing thing that doesn’t land with industrial buyers. Looking foolish to Aaron if the list/engine isn’t real.</li>
+            </ul>
+          </li>
+          <li><b>Objections still open:</b> Need proof the list is real for industrial/enterprise DMs; need case studies that feel like custom enterprise software; Aaron has to buy the plan.</li>
+          <li><b>Who’s joining Call 2:</b> Dallas + Aaron (confirm on open).</li>
+          <li><b>What we promised to walk:</b> system map (list → invite → webinar), cost/plan path, tighter enterprise custom-software case studies.</li>
+        </ul>
+
+        <h3>Who / Business / Buyers / Problem</h3>
+        <p><b>Who / business:</b> Dallas sells custom software into industrial and enterprise environments (US + Canada).</p>
+        <p><b>Who buys:</b> ~3 decision-maker roles per company (VP / ops / IT-style buyers).</p>
+        <p><b>Who they want most:</b> Larger enterprises (≥100 employees) in manufacturing, oil &amp; gas, utilities — real budget for custom work.</p>
+        <p><b>Core problem:</b> Agencies missed ICP/messaging, and leads die after first touch because nothing owns the follow-up.</p>
+        <p><b>Company goals / dream state:</b> Build a predictable pipeline of industrial/enterprise buyers into webinars and sales conversations — without another failed agency cycle.</p>
+        <p><b>ICP dream state:</b> Plant / ops / IT leaders want custom software that actually fits their industrial reality — less bolt-on junk, more systems that match how the plant/enterprise runs.</p>
+
+        <h3>What’s interesting for THIS Call 2</h3>
+        <p>Aaron is on the call (co-decision). They already asked for tighter enterprise custom-software case studies — bring that. Don’t rediscover the agency pain; prove list + motion.</p>
+
+        <h3>Deep TAM</h3>
+        <p><b>ICP parameters:</b> US + Canada · custom industrial / enterprise software · mfg + automation/machinery + oil &amp; gas + utilities · ~3 DM roles per company · skip micro shops.</p>
+        <p><b>Ideal ICP (tight — who they said they want most):</b></p>
+        <ul>
+          <li>Enterprises ≥100 employees in those sectors</li>
+          <li>About <b>66,000</b> decision-makers (≈22k companies × 3 roles)</li>
+          <li>Dream lane for ticket size — not the only campaign number</li>
+        </ul>
+        <p><b>Broadest honest TAM (largest possible still real — campaign headline):</b></p>
+        <ul>
+          <li>US-only (≥20 emp × 3 roles): about <b>199,000</b> DMs — matches their stated ~200k</li>
+          <li>US + Canada: about <b>312,000</b> DMs</li>
+          <li>This is the campaign upside number for the demo</li>
+        </ul>
+        <p><b>How we got the number:</b></p>
+        <ol>
+          <li>Start with companies in mfg + O&amp;G + utilities</li>
+          <li>Floor out micros (US ≥20 emp; Canada non-micro)</li>
+          <li>Multiply by ~3 DM roles per company (they said this)</li>
+          <li>Ideal tightens to ≥100 emp → ~66k DMs</li>
+        </ol>
+        <p><b>Check vs Call 1:</b> Their ~200k line matches US-only math (~199k). Do not invent a bigger “all manufacturers forever” number without the size floor.</p>
+        <p><b>Too small?:</b> No — clears ~30k easily on Ideal and on broadest.</p>
+
+        <h3>Offer / value-prop read</h3>
+        <ul>
+          <li><b>What’s sharp:</b> Clear buyer world (industrial/enterprise ops); they already feel the agency miss + cold-lead pain.</li>
+          <li><b>What’s fuzzy / weak:</b> “Custom software” is broad — webinar topic still needs one sharp industrial problem lane. Need enterprise custom-software proof, not only generic consulting webinar stories.</li>
+          <li><b>Positioning line:</b> “How industrial and enterprise teams get custom software that fits the plant — without another agency that misses the ICP.”</li>
+        </ul>
+
+        <h3>Webinar strategy</h3>
+        <p><b>Core problem lane (THEIR buyers):</b> Off-the-shelf and agency-built tools don’t match how industrial ops actually run — projects stall and buyers stop trusting vendors.</p>
+        <p><b>Who we invite (OUR motion):</b></p>
+        <ol>
+          <li>First: Ideal — ≥100 emp industrial/enterprise DMs (~66k)</li>
+          <li>Next: Broadest honest US ≥20 emp lane (~199k)</li>
+          <li>Then: US+CA widen if geo is truly both</li>
+        </ol>
+        <p><b>Story arc (THEIR webinar to THEIR audience):</b></p>
+        <ol>
+          <li>Hook — “Why does every ‘custom’ project still feel like it was built for someone else’s plant?”</li>
+          <li>Problem — Generic tools + vendors who don’t speak industrial ops create waste and distrust.</li>
+          <li>Proof — How real custom builds get scoped and shipped for industrial/enterprise teams (their method / examples — not “we built you a list”).</li>
+          <li>Offer — Dallas’s custom software as the path to a system that fits.</li>
+          <li>Easy CTA — Book a fit conversation with Dallas’s team.</li>
+        </ol>
+        <p><b>Copy / talk-track beats:</b></p>
+        <ol>
+          <li>“One topic: custom software that matches industrial reality — not another generic platform pitch.”</li>
+          <li>“Built for VP / ops / IT buyers who own the problem.”</li>
+          <li>“What changes when the build starts from how the plant runs.”</li>
+          <li>“Enterprise ticket sizes without enterprise theater.”</li>
+          <li>“Walk away clearer — then talk to the team if you want it built.”</li>
+        </ol>
+        <p><b>Cadence:</b> Run one core topic 2–3 times → see who books → then segment by vertical or company size.</p>
+
+        <h3>Best case studies for THIS Call 2</h3>
+        <ol>
+          <li><b>Tejas Parikh · Akshar Consulting</b> — senior / niche B2B buyers still ran webinars. Pull if Aaron says “our buyers won’t show.”</li>
+          <li><b>Michael Prothmann · digital transformation consulting</b> — scaled past referrals/trade fairs with webinar volume. Pull if they say “we only grow from relationships.”</li>
+          <li><b>Gap flag:</b> still need tighter enterprise custom-software cases — don’t pretend Tejas/Michael are perfect vertical twins.</li>
+        </ol>
+
+        <h3>Decision / stakeholder map</h3>
+        <ul>
+          <li><b>Dallas:</b> owns the growth push; carries agency frustration.</li>
+          <li><b>Aaron:</b> co-decider on Call 2 — needs the list/engine and cost to feel real.</li>
+          <li>Treat Aaron as a real buyer, not a silent note-taker.</li>
+        </ul>
+        <p><b>Landmines:</b> Don’t restart discovery on agency pain. Don’t oversell generic consulting cases as perfect custom-software twins. Cost must feel like owned capability, not another agency retainer.</p>
+
+        <h3>Weapons</h3>
+        <ol>
+          <li><b>~199k US DMs (matches their ~200k) / Ideal ~66k at ≥100 emp.</b> If they ask “is the list real?”, show Ideal first, then the US ~199k campaign math — no fake round-up.</li>
+          <li><b>Agencies missed ICP + leads die after first touch — that’s the urgency.</b> If energy drops, name the consequence: another cold-lead cycle. Then walk THEIR webinar arc. Don’t pitch our list as the webinar’s “proof.”</li>
+          <li><b>Aaron is in the room.</b> If Dallas nods but Aaron is quiet, ask Aaron what would make him trust the list/cost this week.</li>
+          <li><b>Tejas — senior/niche buyers still showed.</b> If “industrial buyers won’t attend,” pull Tejas, then return to Ideal invite math.</li>
+          <li><b>Michael — past referrals/trade fairs.</b> If relationships are “the only motion,” pull Michael, then show cadence.</li>
+        </ol>
+      </div>
+    </details>
+
+    <p class="note">Closer-facing brief · expand a call for the full pack</p>
+  </div>
+  <script>
+    function setAll(open) {
+      document.querySelectorAll("details.pack").forEach((d) => { d.open = open; });
+    }
+  </script>
+</body>
+</html>
