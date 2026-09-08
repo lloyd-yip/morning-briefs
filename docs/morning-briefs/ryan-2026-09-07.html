@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Mon Sep 7</title>
+<style>
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --hook: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 24px 16px 64px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 1.35rem;
+    font-weight: 650;
+    margin: 0 0 6px;
+  }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 16px 0 20px;
+  }
+  button {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary {
+    background: #1e3a55;
+    border-color: var(--accent);
+  }
+  .slate {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+  }
+  .slate h2 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .slot {
+    padding: 10px 0;
+    border-top: 1px solid var(--border);
+  }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; }
+  .slot .hook { color: var(--hook); font-size: 0.9rem; margin-top: 4px; }
+  .skipped { color: var(--muted); font-size: 0.85rem; margin-top: 10px; }
+  details.pack {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after {
+    content: "▸";
+    color: var(--accent);
+    font-size: 0.9rem;
+    transition: transform 0.15s ease;
+  }
+  details.pack[open] > summary::after { transform: rotate(90deg); }
+  .badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--accent);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 2px 8px;
+    margin-left: 8px;
+  }
+  .body {
+    padding: 0 16px 16px;
+    border-top: 1px solid var(--border);
+    color: var(--hook);
+    font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 14px 0 6px;
+  }
+  .body ul { margin: 0; padding-left: 1.1rem; }
+  .body li { margin: 4px 0; }
+  .body p { margin: 6px 0; }
+  .note {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  code { font-size: 0.85em; color: #b8d4ea; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Monday Sep 7, 2026 · demo HTML · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>1:00 PM ET · Ryann Williams · Call 2 · Jori Coaching</strong>
+        <div class="hook">Reactivation / soft energy — re-qualify before re-pitch</div>
+      </div>
+      <div class="slot">
+        <strong>2:00 PM ET · Brent Forsyth · Call 2 · Westgroup Financial</strong>
+        <div class="hook">System + numbers day; son may join; estate-planning wedge</div>
+      </div>
+      <p class="skipped">Skipped: Janai Walters Call 1 — noshow</p>
+    </section>
+
+    <details class="pack">
+      <summary>
+        <span>Ryann Williams · Call 2 pack <span class="badge">built this morning</span></span>
+      </summary>
+      <div class="body">
+        <h3>From Call 1 (Nov 13, 2025)</h3>
+        <ul>
+          <li>Financial coaching for US millennial / Gen Z women (~$50–200k); behavior-change angle</li>
+          <li>Early business at Call 1; pricing / scalability open</li>
+          <li>Wanted webinar leads; mulling LinkedIn + higher tickets before committing</li>
+          <li>Who joins: Ryann (solo unless she brings someone)</li>
+          <li>Promised: ROI calculator walkthrough, system check, readiness to scale</li>
+        </ul>
+        <h3>What’s interesting for THIS Call 2</h3>
+        <p>Long gap (reactivation). Soft / no-show risk. Re-qualify desire + capacity before full re-pitch.</p>
+        <h3>Deep TAM</h3>
+        <ul>
+          <li><b>Ideal:</b> US women 25–40, $50–200k, coaching-ready on money behavior</li>
+          <li><b>Addressable:</b> needs a real list pull — don’t invent a round number</li>
+          <li>Under ~30k Addressable → usually qualify out</li>
+        </ul>
+        <h3>Weapons</h3>
+        <ol>
+          <li><b>Call 1 already framed webinars + 5× ROI.</b> If she says “remind me,” walk list → invite → webinar in under 3 minutes, then ask what’s changed since November.</li>
+          <li><b>Silent / soft energy risk.</b> If she’s cool, diagnose first — don’t push a cold close.</li>
+          <li><b>Pricing / scalability was her open loop.</b> If she brings price, show how higher ticket + webinar qualification fixes the grind from Call 1.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary>
+        <span>Brent Forsyth · Call 2 pack <span class="badge">from Call 1 day</span></span>
+      </summary>
+      <div class="body">
+        <h3>From Call 1 (Sep 4)</h3>
+        <ul>
+          <li>~$10M AUM · ~100 clients · mostly referrals; paid ads paused (~200 leads → 2–3 clients)</li>
+          <li>Stuck: no predictable acquisition; wants qualified appointments + succession path (son)</li>
+          <li>Focus: estate planning for HNW owners (doctors, lawyers), ~$500k+ liquid</li>
+          <li>Goal: $150M+ AUM (ideally $250M+)</li>
+          <li>Who joins: Brent (+ son invited — confirm)</li>
+          <li>Promised: customized presentation, testimonials, webinar materials, financials</li>
+        </ul>
+        <h3>What’s interesting for THIS Call 2</h3>
+        <p>Past discovery — system + numbers day. Son is a decision lever. Don’t rediscover.</p>
+        <h3>Deep TAM</h3>
+        <ul>
+          <li><b>Ideal:</b> Canadian HNW business owners (~$500k+ liquid) with estate / exit need</li>
+          <li><b>Addressable (headline):</b> ~400k Canadian decision-makers named on Call 2 tape</li>
+          <li>Ideal = tighter estate-planning slice — show both; well above ~30k qualify-out floor</li>
+        </ul>
+        <h3>Weapons</h3>
+        <ol>
+          <li><b>Ads already failed him.</b> If he doubts “another marketing thing,” contrast calendar-invite webinars + qualification vs spray-and-pray ads.</li>
+          <li><b>Son / succession.</b> If son joins or comes up, frame the system as inheritable — not just Brent’s grind.</li>
+          <li><b>Estate planning as the webinar wedge.</b> If he drifts broad, lock one core problem per webinar.</li>
+          <li><b>$150M–$250M AUM goal.</b> If he asks “will this move the needle?,” map booked-call math from the calls only.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary>Call 3+ next steps</summary>
+      <div class="body">
+        <p>None on Ryan’s calendar today.</p>
+      </div>
+    </details>
+
+    <p class="note">
+      Storage plan for live: each closer keeps <code>latest.html</code> (overwritten daily) plus optional dated copies kept 7 days, then auto-deleted. ~3 closers × 7 days ≈ 21 dated files + 3 latest — not a pile-up problem.
+    </p>
+  </div>
+  <script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => { d.open = open; });
+    }
+  </script>
+</body>
+</html>
