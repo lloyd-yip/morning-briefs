@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Tue Sep 8</title>
+<style>
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --hook: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 10px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; }
+  .slot .hook { color: var(--hook); font-size: 0.9rem; margin-top: 4px; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after {
+    content: "▸"; color: var(--accent); font-size: 0.9rem; flex-shrink: 0;
+    transition: transform 0.15s ease;
+  }
+  details.pack[open] > summary::after { transform: rotate(90deg); }
+  .badge {
+    font-size: 0.72rem; font-weight: 600; color: var(--accent);
+    border: 1px solid var(--border); border-radius: 999px; padding: 2px 8px; margin-left: 6px;
+    white-space: nowrap;
+  }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--hook); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+  code { font-size: 0.85em; color: #b8d4ea; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Tuesday Sep 8, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>10:00 AM ET · Jill Pitner · Call 2 · NCTR</strong>
+        <div class="hook">Demo + C-suite in room — list / funnel / cost; don’t rediscover</div>
+      </div>
+      <div class="slot">
+        <strong>1:00 PM ET · Islam Ayoub · Call 1 · Swift Cloud Solutions</strong>
+        <div class="hook">Nonprofit Salesforce partner · goal = more booked leads · $3–10K band</div>
+      </div>
+      <div class="slot">
+        <strong>3:30 PM ET · Darryl Peddle · Call 3+ · Rank Study</strong>
+        <div class="hook">Offer confidence gate · Jen co-decides · ball on him</div>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary>
+        <span>Jill Pitner · Call 2 · 10:00 AM <span class="badge">from Call 1 day</span></span>
+      </summary>
+      <div class="body">
+        <p><b>Jill Pitner · NCTR · Call 2 · Tue Sep 8 · 10:00am ET · Ryan</b></p>
+        <h3>From Call 1</h3>
+        <ul>
+          <li>Where they are / what stuck: ~$4M nonprofit, flat ~5 years; half fees / half philanthropy; CGO owns sales; ~1yr avg cycle; 20–26% close</li>
+          <li>Objections still open: lead tracking after conferences weak; hiring/IP caution; needs moderate 10–30% growth without blowing stability</li>
+          <li>Who’s joining Call 2: C-suite colleague (Jill confirming) + Jill</li>
+          <li>What we promised to walk: custom lead list, funnel walk-through, cost breakdown</li>
+        </ul>
+        <h3>Who / Business / Buyers / Problem</h3>
+        <p>NCTR sells technical assistance for teacher residency programs to colleges and school districts (US). Buyers: Deans of Ed, district HR, CAOs. Ideal: state college/university systems. Growth stuck on conference/referral with weak follow-up.</p>
+        <h3>What’s interesting for THIS Call 2</h3>
+        <p>Demo + stakeholder call. They already buy the problem. Close the gap with proof the list + webinar engine is real for their ICP — and cost fits a cautious nonprofit.</p>
+        <h3>Deep TAM</h3>
+        <ul>
+          <li><b>Ideal ICP:</b> ~65 state systems (NASH) — small count, high leverage</li>
+          <li><b>Addressable (headline):</b> ~1,600–1,700 Dean / College-of-Education decision-makers (AACTE ~1,605 CoEs)</li>
+          <li>Filter math: CoE 1,605 + regular districts 13,303 orgs → Dean-first list ~1.6k; districts only after size/budget cut</li>
+          <li>Sanity vs Call 1: no invented 200k — matches Deans / HR / CAO + systems story</li>
+        </ul>
+        <h3>Weapons</h3>
+        <ol>
+          <li><b>~1,605 Colleges of Education / ~1.6k Dean-level buyers (AACTE).</b> If they ask “is the list real?”, show CoE count + Dean-first pull, then ~65 systems as ideal accounts.</li>
+          <li><b>State systems are the efficiency play they already named.</b> When C-suite is in the room, walk 2–3 example systems and how one webinar covers multi-campus.</li>
+          <li><b>Conference → no follow-up was their leak.</b> When they nod at losing people after events, show the post-webinar follow-up path — not more discovery.</li>
+          <li><b>Cost + IP/hiring caution.</b> When budget/risk comes up, lead with the cost breakdown; frame system as owned capability, not consultant dependency.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary>
+        <span>Islam Ayoub · Call 1 · 1:00 PM <span class="badge">built this morning</span></span>
+      </summary>
+      <div class="body">
+        <p><b>Islam Ayoub · Swift Cloud Solutions · Call 1 · Tue Sep 8 · 1:00pm ET · Ryan</b></p>
+        <h3>Who he/she is</h3>
+        <p>Founder of Swift Cloud Solutions (est. 2022). Salesforce nonprofit consultant — Boulder HQ, works Egypt/US. Multiple Salesforce certs. AppExchange consulting listing; LinkedIn frames him as Nonprofit Technology Consultant / Flow specialist.</p>
+        <h3>The business</h3>
+        <p>Small Salesforce partner (≈1–10) focused on Nonprofit Cloud / NPSP / Flow. Claims 45+ projects and 30+ nonprofit orgs helped. Services = implement, automate, migrate, train — not a product SaaS.</p>
+        <h3>Who they sell to</h3>
+        <p>US (and Arabic/English-speaking) nonprofits that need Salesforce Nonprofit Cloud done right. Buyers: nonprofit ops / IT / exec sponsors who own CRM, fundraising, and programs.</p>
+        <h3>Problem they solve</h3>
+        <p>Nonprofits buy Salesforce and still drown in manual work. He implements and automates Nonprofit Cloud so fundraising and programs actually run.</p>
+        <h3>What’s interesting for this call</h3>
+        <p>GHL goal = booking more leads; budget band $3–10K. Tiny specialist firm. Question isn’t Salesforce skill — it’s whether lead flow is still referrals + content + partner with no owned list/webinar engine. Egypt timezone + US buyers = timing matters.</p>
+        <h3>Weapons</h3>
+        <ol>
+          <li><b>GHL goal is explicitly “booking more leads.”</b> If he opens with growth goals, pin what “lead” means and how those conversations start today.</li>
+          <li><b>He’s a 1–10 person Salesforce partner selling to nonprofits.</b> If capacity comes up, ask whether new clients are constrained by his calendar vs top-of-funnel.</li>
+          <li><b>He already teaches (courses / YouTube / live streams).</b> If he says content works: ask how much turns into booked discovery vs watch time — and whether he owns a remailable list.</li>
+          <li><b>Budget field shows $3–10K.</b> If investment comes up early, don’t pitch price — keep discovery on lead system vs one more contractor.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary>Darryl Peddle · Call 3+ · 3:30 PM</summary>
+      <div class="body">
+        <h3>Next steps only</h3>
+        <ul>
+          <li>Offer + deliverable confidence is still the gate; Jen co-decides</li>
+          <li>He builds/tests deliverable with a few ex-clients, then decides</li>
+          <li>When ready: e-sign + first installment — no extra meeting required</li>
+          <li>Do not re-pitch the whole system; poke holes only if he texts</li>
+        </ul>
+      </div>
+    </details>
+
+    <p class="note">
+      Unique dated file per closer per day:
+      <code>…/morning-briefs/{closer}-{YYYY-MM-DD}.html</code>.
+      No daily overwrite. Auto-delete files older than 7 days on each publish.
+      Wingman chat at SOD sends today’s exact URL only — never attach raw HTML.
+    </p>
+  </div>
+  <script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => { d.open = open; });
+    }
+  </script>
+</body>
+</html>
