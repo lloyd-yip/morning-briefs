@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Tue Sep 8</title>
+<style>
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 6px; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+  code { font-size: 0.85em; color: #b8d4ea; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Tuesday Sep 8, 2026 · format verify · Call 1 + Call 2 + Call 3+ · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot"><strong>10:00 AM ET · Islam Ayoub · Call 1 · Swift Cloud Solutions</strong></div>
+      <div class="slot"><strong>1:00 PM ET · Dallas Fontaine · Call 2 · Custom industrial software</strong></div>
+      <div class="slot"><strong>3:30 PM ET · Darryl Peddle · Call 3+ · Rank Study</strong></div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Islam Ayoub · Call 1 · 10:00 AM</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+        <p><b>Islam Ayoub · Swift Cloud Solutions · Call 1 · Tue Sep 8 · 10:00am ET · Ryan</b></p>
+
+        <h3>Who he/she is</h3>
+        <p>Founder of Swift Cloud Solutions (est. 2022). Salesforce nonprofit consultant — Boulder HQ, works Egypt/US. Multiple Salesforce certs (Nonprofit Cloud, Experience Cloud, Advanced Admin, Platform Dev). AppExchange consulting listing; LinkedIn frames him as Nonprofit Technology Consultant / Flow specialist. Past roles include Agile Cloud Consulting and Cloud11.</p>
+
+        <h3>The business</h3>
+        <p>Small Salesforce partner (about 1–10 people) focused on Nonprofit Cloud / NPSP / Flow: implement, automate, migrate, train. Claims 45+ projects and 30+ nonprofit orgs helped. Services are CRM/fundraising/program setup, integrations, custom automation, and staff enablement — not a product SaaS.</p>
+
+        <h3>Who they sell to</h3>
+        <p>US (and Arabic/English-speaking) nonprofits that need Salesforce Nonprofit Cloud done right — education, housing, faith-based, and similar. Buyers are nonprofit ops / IT / exec sponsors who own CRM, fundraising, and program delivery.</p>
+
+        <h3>Problem they solve</h3>
+        <p>Nonprofits buy Salesforce and still drown in manual work. He implements and automates Nonprofit Cloud so fundraising, programs, and constituent data actually run without consultant dependency for every tweak.</p>
+
+        <h3>What’s interesting for this call</h3>
+        <p>Webinar intake says the goal is booking more leads, budget band $3–10K. Tiny specialist firm, partner-led delivery, content/YouTube already in the mix. The question is not whether he understands Salesforce. The question is whether lead flow is still referrals + content + partner, with no owned list/webinar engine. Egypt timezone plus US nonprofit buyers means calendar and outreach timing matter.</p>
+
+        <h3>Weapons</h3>
+        <ol>
+          <li><b>GHL goal is explicitly “booking more leads.”</b> If he opens with growth goals, pin what “lead” means for him (nonprofit exec sponsor? Salesforce admin? partner referral?) and how those conversations start today — referral, content, AppExchange, or outbound.</li>
+          <li><b>He is a 1–10 person Salesforce partner selling to nonprofits.</b> If capacity or delivery comes up, ask whether new clients are constrained by his calendar versus by top-of-funnel. That is the wedge for a webinar engine versus more billable hours.</li>
+          <li><b>He already teaches (courses / YouTube / live streams on Flow + Nonprofit Cloud).</b> If he says content works, ask how much of that audience turns into booked discovery calls versus vanity watch time — and whether he owns a remailable list.</li>
+          <li><b>Budget field shows $3–10K.</b> If investment comes up early, do not pitch price. Use it as a signal he may be thinking project-sized, not “hire a full marketing team,” and keep discovery on lead system versus one more contractor.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Dallas Fontaine · Call 2 · 1:00 PM</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+        <p><b>Dallas Fontaine · Custom industrial software · Call 2 · Tue Sep 8 · 1:00pm ET · Ryan</b></p>
+
+        <h3>From Call 1</h3>
+        <ul>
+          <li><b>Where they are / what stuck:</b> Custom software for industrial / enterprise buyers (manufacturing, automation/machinery, oil &amp; gas, utilities). Growth has leaned on agencies plus first-touch leads that go cold. They talked a ~200k industrial/enterprise decision-maker universe and heavy invite volume (about 74–100k invites/mo) once a list exists.</li>
+          <li><b>Emotional state / urgency:</b>
+            <ul>
+              <li><b>How they feel:</b> Frustrated. Agencies burned time and money without nailing messaging / ICP for custom industrial software. Stuck watching leads die after the first touch.</li>
+              <li><b>Goals they want but can’t hit yet:</b> A predictable enterprise pipeline — warm buyers on a repeatable webinar motion, not another hope-cycle with an agency.</li>
+              <li><b>Why hitting the goal matters:</b> Scale into real industrial/enterprise deals without gambling another full agency budget on the wrong audience.</li>
+              <li><b>What’s holding them back:</b> No owned system that works leads after the first touch; prior agencies missed the ICP / messaging for this niche.</li>
+              <li><b>Consequences if nothing changes:</b> Stay agency-dependent or referral-thin. Keep paying for leads that go cold. Miss the enterprise scale they already know is out there.</li>
+              <li><b>Fears that will show up in the decision:</b> Paying for another marketing thing that doesn’t land with industrial buyers. Looking foolish to Aaron if the list/engine isn’t real.</li>
+            </ul>
+          </li>
+          <li><b>Objections still open:</b> Need proof the list is real for industrial/enterprise decision-makers; need case studies that feel like custom enterprise software; Aaron has to buy the plan.</li>
+          <li><b>Who’s joining Call 2:</b> Dallas + Aaron (confirm on open).</li>
+          <li><b>What we promised to walk:</b> system map (list → invite → webinar), cost/plan path, tighter enterprise custom-software case studies.</li>
+        </ul>
+
+        <h3>Who / Business / Buyers / Problem</h3>
+        <p><b>Who / business:</b> Dallas sells custom software into industrial and enterprise environments (US + Canada).</p>
+        <p><b>Who buys:</b> About 3 decision-maker roles per company (VP / ops / IT-style buyers).</p>
+        <p><b>Who they want most:</b> Larger enterprises (≥100 employees) in manufacturing, oil &amp; gas, utilities — real budget for custom work.</p>
+        <p><b>Core problem:</b> Agencies missed ICP/messaging, and leads die after first touch because nothing owns the follow-up.</p>
+        <p><b>Company goals / dream state:</b> Build a predictable pipeline of industrial/enterprise buyers into webinars and sales conversations — without another failed agency cycle.</p>
+        <p><b>ICP dream state:</b> Plant / ops / IT leaders want custom software that actually fits their industrial reality — less bolt-on junk, more systems that match how the plant/enterprise runs.</p>
+
+        <h3>What’s interesting for THIS Call 2</h3>
+        <p>Aaron is on the call (co-decision). They already asked for tighter enterprise custom-software case studies — bring that. Do not rediscover the agency pain; prove list + motion.</p>
+
+        <h3>Deep TAM</h3>
+        <p><b>ICP parameters:</b> US + Canada · custom industrial / enterprise software · manufacturing + automation/machinery + oil &amp; gas + utilities · about 3 decision-maker roles per company · skip micro shops.</p>
+        <p><b>Ideal ICP (tight — who they said they want most):</b></p>
+        <ul>
+          <li>Enterprises ≥100 employees in those sectors</li>
+          <li>About <b>66,000</b> decision-makers (about 22k companies × 3 roles)</li>
+          <li>Dream lane for ticket size — not the only campaign number</li>
+        </ul>
+        <p><b>Broadest honest TAM (largest possible still real — campaign headline):</b></p>
+        <ul>
+          <li>US-only (≥20 emp × 3 roles): about <b>199,000</b> decision-makers — matches their stated ~200k</li>
+          <li>US + Canada: about <b>312,000</b> decision-makers</li>
+          <li>This is the campaign upside number for the demo</li>
+        </ul>
+        <p><b>How we got the number:</b></p>
+        <ol>
+          <li>Start with companies in manufacturing + oil &amp; gas + utilities</li>
+          <li>Floor out micros (US ≥20 emp; Canada non-micro)</li>
+          <li>Multiply by about 3 decision-maker roles per company (they said this)</li>
+          <li>Ideal tightens to ≥100 emp → about 66k decision-makers</li>
+        </ol>
+        <p><b>Check vs Call 1:</b> Their ~200k line matches US-only math (~199k). Do not invent a bigger “all manufacturers forever” number without the size floor.</p>
+        <p><b>Too small?:</b> No — clears ~30k easily on Ideal and on broadest.</p>
+
+        <h3>Offer / value-prop read</h3>
+        <ul>
+          <li><b>What’s sharp:</b> Clear buyer world (industrial/enterprise ops); they already feel the agency miss + cold-lead pain.</li>
+          <li><b>What’s fuzzy / weak:</b> “Custom software” is broad — webinar topic still needs one sharp industrial problem lane. Need enterprise custom-software proof, not only generic consulting webinar stories.</li>
+          <li><b>Positioning line:</b> “How industrial and enterprise teams get custom software that fits the plant — without another agency that misses the ICP.”</li>
+        </ul>
+
+        <h3>Webinar strategy</h3>
+        <p><b>Core problem lane (THEIR buyers):</b> Off-the-shelf and agency-built tools don’t match how industrial ops actually run — projects stall and buyers stop trusting vendors.</p>
+        <p><b>Who we invite (OUR motion):</b></p>
+        <ol>
+          <li>First: Ideal — ≥100 emp industrial/enterprise decision-makers (~66k)</li>
+          <li>Next: Broadest honest US ≥20 emp lane (~199k)</li>
+          <li>Then: US+Canada widen if geo is truly both</li>
+        </ol>
+        <p><b>Story arc (THEIR webinar to THEIR audience):</b></p>
+        <ol>
+          <li>Hook — “Why does every ‘custom’ project still feel like it was built for someone else’s plant?”</li>
+          <li>Problem — Generic tools + vendors who don’t speak industrial ops create waste and distrust.</li>
+          <li>Proof — How real custom builds get scoped and shipped for industrial/enterprise teams (their method / examples — not “we built you a list”).</li>
+          <li>Offer — Dallas’s custom software as the path to a system that fits.</li>
+          <li>Easy CTA — Book a fit conversation with Dallas’s team.</li>
+        </ol>
+        <p><b>Copy / talk-track beats:</b></p>
+        <ol>
+          <li>“One topic: custom software that matches industrial reality — not another generic platform pitch.”</li>
+          <li>“Built for VP / ops / IT buyers who own the problem.”</li>
+          <li>“What changes when the build starts from how the plant runs.”</li>
+          <li>“Enterprise ticket sizes without enterprise theater.”</li>
+          <li>“Walk away clearer — then talk to the team if you want it built.”</li>
+        </ol>
+        <p><b>Cadence:</b> Run one core topic 2–3 times → see who books → then segment by vertical or company size.</p>
+
+        <h3>Best case studies for THIS Call 2</h3>
+        <ol>
+          <li><b>Tejas Parikh · Akshar Consulting</b> — senior / niche B2B buyers still ran webinars. Pull if Aaron says “our buyers won’t show.”</li>
+          <li><b>Michael Prothmann · digital transformation consulting</b> — scaled past referrals/trade fairs with webinar volume. Pull if they say “we only grow from relationships.”</li>
+          <li><b>Gap to bring:</b> tighter enterprise custom-software examples if Aaron wants vertical twins beyond consulting stories.</li>
+        </ol>
+
+        <h3>Decision / stakeholder map</h3>
+        <ul>
+          <li><b>Dallas:</b> owns the growth push; carries agency frustration.</li>
+          <li><b>Aaron:</b> co-decider on Call 2 — needs the list/engine and cost to feel real.</li>
+          <li>Treat Aaron as a real buyer, not a silent note-taker.</li>
+        </ul>
+        <p><b>Landmines:</b> Don’t restart discovery on agency pain. Don’t oversell generic consulting cases as perfect custom-software twins. Cost must feel like owned capability, not another agency retainer.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Darryl Peddle · Call 3+ · 3:30 PM</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+        <p><b>Darryl Peddle · Rank Study · Call 3+ · Tue Sep 8 · 3:30pm ET · Ryan</b></p>
+
+        <h3>Where we left it</h3>
+        <p>Darryl already believes QuantumSCALE is the right system for getting leads without grinding one-to-one. The team and handoff side of the deal is not what is blocking him.</p>
+        <p>What is blocking him is confidence in his own offer and deliverable. He does not want to sign until that feels solid. Jen is a real co-decider here, not a silent partner. Her line was basically: build the deliverable, then invest.</p>
+        <p>On money, about $18k upfront was a hard no. A 12-month split around $1,500 USD per month (about $2k CAD) made the investment feel possible. Cash burn is still loud in his head.</p>
+        <p>When the last call ended, the ball was in his court. He was going to build and test the report with a few ex-clients, then come back ready to e-sign and pay the first installment. He did not need another meeting just to start once that bar was met.</p>
+
+        <h3>Emotional state / close readiness</h3>
+        <p>He is bought in on the system, but blocked on product confidence. That is cautious, not cold.</p>
+        <p>The thing killing urgency is “I am not ready until the deliverable feels real.” The thing that should create urgency is that his burn continues either way while he waits.</p>
+        <p>The fear still alive in the decision is paying before the offer is dialed, and looking foolish to Jen if he moves too early.</p>
+
+        <h3>Open blockers</h3>
+        <ol>
+          <li>Offer and deliverable confidence. This is the primary blocker. He will not commit while the product still feels unlocked.</li>
+          <li>Cash and burn. This is secondary, but real. Waiting also costs him money.</li>
+          <li>Market and ICP fear. He worries executives are jaded on “SEO” style pitches and that the webinar could hit the wrong audience. He accepted the logic last time, but conviction is not locked.</li>
+        </ol>
+
+        <h3>Objections + how we fight them</h3>
+
+        <p><b>1. Objection:</b> “I will not sign until the offer and deliverable are solid.”</p>
+        <p>This is still fully open. It is the gate.</p>
+        <p>How to overcome it: get him to define, out loud, what “done enough to sign” means in concrete terms. How many ex-clients need to see a sample? What feedback would unlock a yes? Also ask whether starting with us so they can A/B the offer on early webinars is still on the table.</p>
+        <p><b>Full story to tell — Nick Uresin · Podcast Pros</b> (also runs Argos / ArgoMetrix, a SaaS for Amazon private-label sellers):</p>
+        <p>Say something like this, in your own words, half-offhand:</p>
+        <p>“This actually reminds me of Nick Uresin at Podcast Pros. He is a tech and ecommerce founder — about twenty years in — and he also runs a SaaS for Amazon private-label sellers. When he started with us, the useful point for you is speed. He went from the sales call to a running webinar in eight days, and he already had qualified opportunities off webinar one. He was not some beginner either. He already knew Sales Navigator and LinkedIn automation. What he still needed was the targeting and messaging strategy. So when someone says ‘we are not ready yet,’ I think about Nick. Ready enough to launch can still move.”</p>
+        <p>Do not invent a revenue number for Nick. Use him for speed-to-live and qualified opportunities off webinar one.</p>
+        <p><b>Second story if he needs proof of what happens once they actually run it — Adrien Shiel · High-Performing Coach Ltd:</b></p>
+        <p>“And if the worry is ‘okay but what happens when we actually run it,’ there is Adrien Shiel at High-Performing Coach. Within two weeks after the training, they ran their own webinar following the blueprint. Seventy participants. Twelve sales calls. Five deals. That is the kind of conversion that makes ‘wait forever for perfect’ feel expensive.”</p>
+        <p>How to land it: “You are not waiting because QuantumSCALE is the wrong system. You are waiting for a deliverable bar. Let’s name that bar today. Nick shows you can get live fast. Adrien shows what a real first webinar can do once you run it.”</p>
+
+        <p><b>2. Objection:</b> “About $18k upfront feels too heavy, and burn scares me.”</p>
+        <p>This is half-handled. The monthly plan opened the door, but fear is still in the room.</p>
+        <p>How to overcome it: do not discount on the spot. Reframe that burn continues whether he starts or waits. Then confirm the 12-month path is still the plan that made this feel possible.</p>
+        <p><b>Full story to tell — Brooks Golden · High Performing Coach:</b></p>
+        <p>“This reminds me of Brooks Golden at High Performing Coach. He already had a working lead motion. He was spending about $20,000 a month on LinkedIn ads that were actually working. He still moved to our system at under about $1,000 a month and filled the same webinars — or fuller ones — without lighting that much money on fire every month. So when burn is loud in someone’s head, Brooks is useful. It is not ‘spend more.’ It is ‘stop paying a premium for a leaky way to fill the room.’”</p>
+        <p>How to land it: “The monthly plan already made this feel possible. What is left is confidence in the deliverable, not a new price fight. Brooks is the reminder that the expensive path is not always the predictable one.”</p>
+
+        <p><b>3. Objection:</b> “My market might not work for webinars. People are jaded, and we could hit the wrong audience.”</p>
+        <p>Logic was accepted last time. Conviction is not locked.</p>
+        <p>How to overcome it: bring him back to Ideal-first invite math. He does not need a flood of people. He needs the right handful in the room.</p>
+        <p><b>Full story to tell — Tejas Parikh · Akshar Consulting:</b></p>
+        <p>“You remind me of Tejas Parikh at Akshar Consulting. Finance guy turned founder — FP&amp;A background across places like GE Healthcare, Vodafone, Unilever. He sells high-ticket work to finance directors and CFOs, the exact buyers people assume will never show up to a webinar. He raised that objection himself. His domain looks small next to mass-market clients, and he only wants the senior finance buyer. On outcomes: about 250 registrations, 80 attendees, and 15 booked calls on the campaign numbers we use for him. Closers also use the line that he went from roughly $36k a year to about $1M, including four separate hundred-thousand-dollar contracts. The point for Darryl is not ‘flood the room.’ It is ‘the right handful of senior buyers.’”</p>
+        <p>How to land it: “You do not need a flood. You need the right handful. That is exactly what Tejas’s motion was built for.”</p>
+
+        <h3>Story ammo for THIS close</h3>
+        <ol>
+          <li><b>Nick Uresin · Podcast Pros</b> — eight days from sales call to live webinar; qualified opportunities off webinar one. Use for “not ready yet.” Do not claim revenue.</li>
+          <li><b>Adrien Shiel · High-Performing Coach Ltd</b> — 70 attendees, 12 sales calls, 5 deals within about two weeks of running their own webinar. Use for “what happens when we actually run it.”</li>
+          <li><b>Brooks Golden · High Performing Coach</b> — about $20k/month LinkedIn ads replaced with a sub-$1k/month system that still filled webinars. Use for burn / expensive lead motion.</li>
+          <li><b>Tejas Parikh · Akshar Consulting</b> — senior finance buyers; about 250 regs / 80 attendees / 15 booked calls; ~$36k to ~$1M with four ~$100k contracts. Use for “my buyers are too senior / too jaded.”</li>
+        </ol>
+
+        <h3>Path to close</h3>
+        <ol>
+          <li>Get Jen and Darryl aligned on what “deliverable done enough to sign” means. That should include a sample and a clear number of ex-client feedback checks.</li>
+          <li>Put a real date on that build. Not “whenever.” A calendar deadline.</li>
+          <li>Confirm the payment path stays the 12-month split, with the first installment due on e-sign.</li>
+          <li>On that deadline, leave with one of three outcomes only: e-sign and pay, wait until the named date with Jen aligned, or clear not-moving. No floating maybe.</li>
+        </ol>
+
+        <h3>If / then</h3>
+        <ol>
+          <li>If he says he is still building the offer, ask what “done enough to sign” looks like in concrete terms, and put a date on it. Then tell the Nick Uresin / Podcast Pros story so “not ready yet” does not become endless delay.</li>
+          <li>If Jen is the real pause, bring her concerns into the open on this call. Do not talk around her.</li>
+          <li>If cash burn is the frame, do not discount. Reframe that waiting also costs money, then lock the monthly path. Use Brooks Golden / High Performing Coach if he needs an expensive-leads contrast.</li>
+          <li>If he wants another full system walkthrough, give a one-minute recap max, then come straight back to the decision path.</li>
+        </ol>
+
+        <h3>Exact next step to leave with</h3>
+        <p>Leave with a dated commitment. Prefer e-sign plus first installment. If that is not ready, leave with a named build deadline that Jen also agrees to. If neither is real, leave with a clear not-moving. Do not leave with “I’ll think about it.”</p>
+      </div>
+    </details>
+
+    <p class="note">Closer-facing brief · expand a call for the full pack</p>
+  </div>
+  <script>
+    function setAll(open) {
+      document.querySelectorAll("details.pack").forEach((d) => { d.open = open; });
+    }
+  </script>
+</body>
+</html>
