@@ -27,9 +27,9 @@
   </style>
 </head>
 <body>
-  <p class="meta"><span class="tag">Revenue</span> For Alex &amp; Scott · From Lloyd · As-of Sep 9, 2026 · <strong>v4</strong></p>
+  <p class="meta"><span class="tag">Revenue</span> For Alex &amp; Scott · From Lloyd · As-of Sep 9, 2026 · <strong>v5</strong></p>
   <h1>Revenue status report</h1>
-  <p class="note"><strong>Updated:</strong> webinar metrics rewritten · Ads section included · cache-bust v4 · refreshed segment SQL + ads close caveats.</p>
+  <p class="note"><strong>Updated:</strong> webinar metrics rewritten · Ads section included · cache-bust v5 · Call show rate denominator fixed.</p>
   <p class="note">Whop = sales closes. September closes are too early to judge hard.</p>
   <p class="card" style="font-size:.95rem;">Jump: <a href="#webinar">1) Webinar</a> · <a href="#sales">2) Sales</a> · <a href="#tech">3) Tech</a> · <a href="#ads"><strong>4) Ads</strong></a></p>
 
@@ -93,45 +93,43 @@
   <table>
     <thead><tr><th>Industry</th><th class="num">Regs</th><th class="num">Attendance rate</th><th class="num">Book / stayed 10+</th><th class="num">Call show rate</th><th>LQ among Call-1 showed</th><th>Read</th></tr></thead>
     <tbody>
-      <tr><td>IT &amp; Services</td><td class="num">3,854</td><td class="num">15.8%</td><td class="num">14.7%</td><td class="num">80%</td><td>36 showed · 47% qualified · 36% blank · 17% Bad/DQ</td><td>Strong volume; call show solid; LQ blanks still high</td></tr>
-      <tr><td>Management Consulting</td><td class="num">1,894</td><td class="num">16.6%</td><td class="num">11.6%</td><td class="num">61%</td><td>11 showed · 73% qualified · 27% blank</td><td>Attends well; call show softer</td></tr>
-      <tr><td>Marketing &amp; Advertising</td><td class="num">1,755</td><td class="num">14.3%</td><td class="num">6.3%</td><td class="num">100%</td><td>8 showed · 88% qualified · 0 blank · 12% Bad/DQ</td><td>Soft booking among stayers; when they book, they show</td></tr>
-      <tr><td>Financial Services</td><td class="num">1,217</td><td class="num">7.2%</td><td class="num">14.8%</td><td class="num">75%</td><td>3 showed · all Ok scored · 0 blank (tiny n)</td><td>Weak attendance is the leak; survivors book/show decently</td></tr>
-      <tr><td>Wealth Management / Investments</td><td class="num">898</td><td class="num">6.9%</td><td class="num">18.8%</td><td class="num">100%</td><td>6 showed · 83% qualified · 17% blank</td><td>Same pattern as finance: low attendance, strong once on Call 1 — helps explain why closers like them</td></tr>
-      <tr><td>Prof. Training &amp; Coaching</td><td class="num">359</td><td class="num">19.5%</td><td class="num">15.7%</td><td class="num">75%</td><td>3 showed · small n</td><td>Best small-volume webinar attendance</td></tr>
-      <tr><td>Insurance / Banking / Real Estate</td><td class="num">1,162</td><td class="num">4.3%</td><td class="num">15.6%</td><td class="num">33%</td><td>1 showed · tiny n</td><td>Weak attendance and weak call show</td></tr>
+      <tr><td>IT &amp; Services</td><td class="num">3,854</td><td class="num">15.8%</td><td class="num">14.7%</td><td class="num">69% (n=51)</td><td>blanks still common among showed</td><td>Best combined attendance + call show among big industries</td></tr>
+      <tr><td>Management Consulting</td><td class="num">1,894</td><td class="num">16.6%</td><td class="num">11.6%</td><td class="num">53% (n=19)</td><td>—</td><td>Attends well; call show ~average</td></tr>
+      <tr><td>Marketing &amp; Advertising</td><td class="num">1,755</td><td class="num">14.3%</td><td class="num">6.3%</td><td class="num">76% (n=17)</td><td>small n</td><td>Soft booking among stayers; call show fine when booked</td></tr>
+      <tr><td>Financial Services</td><td class="num">1,217</td><td class="num">7.2%</td><td class="num">14.8%</td><td class="num">50% (n=8)</td><td>tiny n</td><td>Weak attendance; call show not special</td></tr>
+      <tr><td>Wealth Management / Investments</td><td class="num">898</td><td class="num">6.9%</td><td class="num">18.8%</td><td class="num">71% (n=7)</td><td>tiny n</td><td>Low attendance; survivors show better — directional only</td></tr>
+      <tr><td>Prof. Training &amp; Coaching</td><td class="num">359</td><td class="num">19.5%</td><td class="num">15.7%</td><td class="num">57% (n=14)</td><td>small n</td><td>Best webinar attendance</td></tr>
+      <tr><td>Insurance / Banking / Real Estate</td><td class="num">1,162</td><td class="num">4.3%</td><td class="num">15.6%</td><td class="num">42% (n=12)</td><td>tiny n</td><td>Weak attendance and weaker call show</td></tr>
     </tbody>
   </table>
-  <p class="meta">Window: Default Funnel W144–W156 (~90d). Call show = Showed ÷ (Showed + No Show). Qualified = Great + Ok + Barely Passable. Call-sample sizes are small on several rows — directional.</p>
-  <p><strong>Learning:</strong> Training/coaching + IT look strong on attendance. Finance + wealth under-attend the webinar, but Call-1 show/LQ among the ones who book looks fine — so closers liking them is real for survivors, not proof the webinar stage loves those regs.</p>
+  <p class="meta">Same Call show definition as company size: Showed ÷ (Showed + No Show + Cancelled) on Roadmap/Evaluation calendars. Not the old “completed only” rate.</p>
+  <p><strong>Learning:</strong> Training/coaching + IT look strong on attendance. Finance + wealth under-attend the webinar. Call-1 samples are small; wealth looks a bit better on show, finance is about average — not proof the webinar stage loves those regs. Closers liking them is about who survives to the call, not attendance.</p>
 
   <h3>Company size</h3>
   <table>
     <thead><tr><th>Size</th><th class="num">Regs</th><th class="num">Attendance rate</th><th class="num">Call show rate</th><th>LQ among Call-1 showed</th><th>Read</th></tr></thead>
     <tbody>
-      <tr><td><strong>1–10</strong></td><td class="num">9,781</td><td class="num">14.7%</td><td class="num">81%</td><td>72 showed · 61% qualified · 25% blank</td><td><strong>Best practical band</strong></td></tr>
-      <tr><td>11–50</td><td class="num">4,079</td><td class="num">9.9%</td><td class="num">84%</td><td>21 showed · 67% qualified · 29% blank</td><td>Softer attendance; call show fine</td></tr>
-      <tr><td>1001+</td><td class="num">2,628</td><td class="num">7.8%</td><td class="num">80%</td><td>4 showed · mostly blank LQ</td><td>Registers, weak attendance</td></tr>
-      <tr><td>Unknown size</td><td class="num">14,042</td><td class="num">15.5%</td><td class="num">66%</td><td>94 showed · 30% blank</td><td>Huge enrichment gap — don’t over-read size ICP yet</td></tr>
+      <tr><td>0–2 people</td><td class="num">2,954</td><td class="num">17.1%</td><td class="num">65% (n=49 settled)</td><td>from calendar Call 1s · blanks still common</td><td>Best attendance; call show about average-plus</td></tr>
+      <tr><td>3–5</td><td class="num">2,916</td><td class="num">13.6%</td><td class="num">55% (n=42)</td><td>—</td><td>Near team average</td></tr>
+      <tr><td><strong>6–10</strong></td><td class="num">3,911</td><td class="num">13.6%</td><td class="num">52% (n=50)</td><td>—</td><td>Strong reg volume; call show ~team average (lots of cancels)</td></tr>
+      <tr><td>11–20</td><td class="num">2,817</td><td class="num">9.9%</td><td class="num">73% (n=22)</td><td>—</td><td>Softer attendance; call show looks better on small n</td></tr>
+      <tr><td>10,000+</td><td class="num">2,151</td><td class="num">7.4%</td><td class="num">tiny n</td><td>—</td><td>Weak attendance</td></tr>
     </tbody>
   </table>
-  <p class="meta">Same Call-1 definitions. Size bands come from contacts.employee_range (not the older 0–2 / 3–5 split).</p>
+  <p class="meta"><strong>Call show rate definition (locked for this report):</strong> Showed ÷ (Showed + No Show + Cancelled) on real Call-1 calendars (Business Growth Roadmap / Business Evaluation), past ~90 days. Earlier ~80% numbers were wrong — they used Showed ÷ (Showed + No Show) only and ignored cancels. Team overall on that fair definition is about <strong>56%</strong> (227 showed / 408 settled).</p>
   <p><strong>Learning:</strong> The funnel likes small businesses (especially around 6–10 staff). Giant companies look busy on regs and weak on attendance.</p>
 
 
   <h3>Geo</h3>
+  <p class="meta">Call show here uses the same fair definition (~56% team average). US is the only large-n geo.</p>
   <table>
-    <thead><tr><th>Geo</th><th class="num">Regs</th><th class="num">Attendance rate</th><th class="num">Call show rate</th><th>LQ among Call-1 showed</th></tr></thead>
+    <thead><tr><th>Geo</th><th class="num">Regs</th><th class="num">Attendance rate</th><th class="num">Call show rate</th><th>Note</th></tr></thead>
     <tbody>
-      <tr><td>United States</td><td class="num">14,536</td><td class="num">10.3%</td><td class="num">77%</td><td>86 showed · ~49% Ok · 28% blank</td></tr>
-      <tr><td>United Kingdom</td><td class="num">1,325</td><td class="num">16.0%</td><td class="num">92%</td><td>11 showed · mixed quality</td></tr>
-      <tr><td>Germany</td><td class="num">679</td><td class="num">14.9%</td><td class="num">100%</td><td>7 showed · small n</td></tr>
-      <tr><td>Canada</td><td class="num">590</td><td class="num">17.5%</td><td class="num">100%</td><td>4 showed · scored</td></tr>
-      <tr><td>France</td><td class="num">575</td><td class="num">18.6%</td><td class="num">100%</td><td>2 showed · tiny n</td></tr>
-      <tr><td>Unknown geo</td><td class="num">10,148</td><td class="num">17.4%</td><td class="num">66%</td><td>75 showed · enrichment gap</td></tr>
+      <tr><td>United States</td><td class="num">14,536</td><td class="num">10.3%</td><td class="num">~team avg</td><td>Main volume; don’t overfit small geos</td></tr>
+      <tr><td>United Kingdom</td><td class="num">1,325</td><td class="num">16.0%</td><td class="num">higher on small n</td><td>Directional</td></tr>
+      <tr><td>Unknown geo</td><td class="num">10,148</td><td class="num">17.4%</td><td class="num">—</td><td>Enrichment gap</td></tr>
     </tbody>
   </table>
-  <p class="meta">US labels cleaned (merged messy variants). Unknown country is still huge.</p>
 
   <h3>Lead quality — important nuance</h3>
   <p>Blank lead quality on someone who <strong>never showed</strong> is not a rep failure. They never got far enough for scoring to matter.</p>
