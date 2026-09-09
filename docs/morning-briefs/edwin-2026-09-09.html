@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Wed Sep 9</title>
+<style>
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 6px; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+  code { font-size: 0.85em; color: #b8d4ea; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Wednesday Sep 9, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>10:00 AM ET · Jill Pitner · Call 2 · NCTR</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Jill Pitner · Call 2 · 10:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jill Pitner · NCTR · Call 2 · Tue Sep 9 · 10:00am ET · Edwin</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: NCTR is about a $4M nonprofit. Growth has been flat for ~5 years. Roughly half fee revenue, half philanthropy. Jill (CGO) owns sales. Average sales cycle ~1 year. Close rate ~20–26%. They get most demand from conferences and referrals, then lose people because follow-up is weak.</li>
+<li>Emotional state / urgency (from Call 1):</li>
+</ul>
+<p>  - How they feel: Frustrated and stuck. Five years flat while the mission still needs more residencies filled. Careful / protective more than reckless-excited.</p>
+<p>  - Goals they want but can’t hit yet: Moderate, controlled growth (~10–30%) with a predictable pipeline — not “hope the next conference works.”</p>
+<p>  - Why hitting the goal matters: Keep the nonprofit healthy (fees + philanthropy mix). Prove they can scale impact without gambling the org’s stability. Jill owns sales — this sits on her shoulders day to day.</p>
+<p>  - What’s holding them back: Conference / referral demand that doesn’t compound; weak post-event follow-up; no owned system for creating warm pipeline.</p>
+<p>  - Consequences if nothing changes: Another year (or years) flat. Mission impact stays capped. Growth stays luck-and-event dependent. C-suite keeps worrying that “grow” means “blow up what works.”</p>
+<p>  - Fears that will show up in the decision: Reckless hiring. IP / “someone takes our model.” Paying for another marketing thing that doesn’t work. Instability if they push growth the wrong way.</p>
+<ul>
+<li>Objections still open: They don’t want to hire recklessly or create IP risk. They want moderate growth without blowing up stability. They need proof that a real lead list + webinar system can work for their buyers.</li>
+<li>Who’s joining Call 2: Jill plus a C-suite colleague (confirm when the call starts).</li>
+<li>What we promised to walk: a custom lead list, the funnel end to end, and a cost breakdown.</li>
+</ul>
+<p><b>Who / Business / Buyers / Problem</b> (refresh)</p>
+<p>Who / business:</p>
+<p>NCTR sells technical assistance so colleges and school districts can run teacher residency programs in the US.</p>
+<p>Who buys:</p>
+<ul>
+<li>Deans of Colleges of Education</li>
+<li>School-district HR directors</li>
+<li>Chief academic officers</li>
+</ul>
+<p>Who they want most:</p>
+<p>State college / university systems (multi-campus).</p>
+<p>Core problem:</p>
+<p>Residency programs need structured support, but growth is stuck because conference and referral leads don’t get followed up.</p>
+<p>Company goals / dream state (from Call 1):</p>
+<p>Grow about 10–30% without reckless hiring or blowing up stability. Keep the nonprofit healthy (fees + philanthropy mix). Build a predictable way to create pipeline beyond “hope the next conference works.”</p>
+<p>ICP dream state (what THEIR buyers want):</p>
+<p>Deans / district leaders / system academic leads want residency seats filled on a repeatable cycle — less last-minute scramble, less dependence on one heroic staffer or one-off event relationships, more confidence the program will be staffed next cohort.</p>
+<h3>Deep TAM</h3>
+<p>ICP parameters (who we’re counting):</p>
+<ul>
+<li>Country: US only</li>
+<li>What they sell into: teacher residency / educator prep</li>
+<li>Company types: Colleges of Education, public school districts, state higher-ed systems</li>
+<li>Buyer titles: Dean of Education; district HR director; chief academic officer; system academic / growth leads</li>
+<li>Skip: faculty with no budget (they influence, they don’t buy)</li>
+</ul>
+<p>Ideal ICP (tight — who they said they want most):</p>
+<ul>
+<li>State college / university systems (~65 NASH systems)</li>
+<li>About 65–200 buyers (roughly 1–3 decision-makers per system)</li>
+<li>This is the “dream account” lane — high leverage, small count</li>
+<li>This is NOT the campaign headline number</li>
+</ul>
+<p>Broadest honest TAM (largest possible still real — campaign headline):</p>
+<ul>
+<li>About 31,600 people who can buy</li>
+<li>Built from:</li>
+</ul>
+<p>  - ~4,800 college-side buyers (more than just Deans)</p>
+<p>  - ~26,600 district CAO / HR buyers</p>
+<p>  - ~180 system leads</p>
+<ul>
+<li>This is the number you put on the demo as campaign upside</li>
+<li>It just clears the ~30k floor</li>
+</ul>
+<p>How we got the number:</p>
+<p>1. Start with companies: ~1,605 Colleges of Education + ~13,303 regular districts + ~65 systems</p>
+<p>2. Only count people with budget (drop faculty)</p>
+<p>3. Tight-only (Deans alone) ≈ 1,605 — too small for a campaign</p>
+<p>4. Widen (required when thin):</p>
+<p>   - They said Deans / HR / CAO → we count those titles (they said this)</p>
+<p>   - We add extra college titles beyond Dean to get ~4,800 (we added this — say so on the call)</p>
+<p>   - Systems lane 65–200 (they said Ideal)</p>
+<p>5. Before widen ~1.6k → after widen ~31.6k</p>
+<p>Check vs Call 1:</p>
+<ul>
+<li>They never said “200k leads”</li>
+<li>They talked Deans, HR, CAOs, and systems</li>
+<li>~31.6k fits that story</li>
+<li>If they get nervous about “too broad,” start with Ideal systems + Dean-first list, then show the wider TAM as upside</li>
+</ul>
+<p>Too small?:</p>
+<ul>
+<li>No — ~31.6k after widening clears ~30k</li>
+<li>If we only counted big districts (≥5k enrollment), it could fall to ~8.6k and we’d usually qualify out — don’t apply that cut unless they ask</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<p>What’s sharp (easy to invite people on):</p>
+<ul>
+<li>The buyer pain is clear: residency programs need help, and leaders already feel the conference leak</li>
+<li>They already named who they want most (state systems)</li>
+<li>That makes a clean webinar invite theme: “you meet people at events, then lose them — here’s how residency leaders stop doing that”</li>
+</ul>
+<p>What’s fuzzy or weak (you must know this before you oversell):</p>
+<ul>
+<li>Their value prop still sounds a bit general — “we help residency programs run better” — not one sharp before/after a Dean can repeat in 10 seconds</li>
+<li>On Call 1 they did not hand you a crystal-clear USP</li>
+<li>So do not pretend the offer is already dialed. Treat webinar messaging as something we’ll tighten with them, not something already perfect</li>
+</ul>
+<p>Positioning line if we had to pick today:</p>
+<p>“How Colleges of Education and districts fill residency programs without losing every conference lead.”</p>
+<h3>Webinar strategy</h3>
+<p>Core problem lane (what THEIR buyers feel):</p>
+<p>Deans / district leaders still can’t fill residency seats reliably — conferences create buzz, then nothing compounds.</p>
+<p>Who we invite (OUR room-filling motion — not the webinar script):</p>
+<p>1. First: state system academic / growth leads (Ideal)</p>
+<p>2. Next: Deans of Colleges of Education</p>
+<p>3. Then: district CAO / HR</p>
+<p>Story arc (THEIR webinar to THEIR audience):</p>
+<p>1. Hook — “You’re responsible for residency seats. Why does every cycle still feel like a scramble?”</p>
+<p>2. Problem — Event leads and one-off relationships don’t turn into a repeatable fill plan for residencies.</p>
+<p>3. Proof — How structured technical assistance actually changes residency operations (their method / examples — not “we built you a list”).</p>
+<p>4. Offer — NCTR’s TA as the way to run residencies with less chaos and more predictability.</p>
+<p>5. Easy CTA — Book a conversation with NCTR about fit for your college / district / system.</p>
+<p>Copy / talk-track beats (about THEIR offer):</p>
+<p>1. “One topic: filling residency seats without reinventing the program every year.”</p>
+<p>2. “Built for Deans, district HR, and CAOs — not a general ‘education tips’ webinar.”</p>
+<p>3. “What changes when residency support is a system, not a heroic staff member.”</p>
+<p>4. “State systems: same playbook across campuses.”</p>
+<p>5. “Walk away with a clearer fill plan — then talk to NCTR if you want help running it.”</p>
+<p>Cadence:</p>
+<p>Run that one topic 2–3 times → see who books NCTR → then segment (systems vs single CoE vs large districts).</p>
+<p><b>Best case studies for THIS Call 2</b> (Airtable)</p>
+<p>1. Gene Rosendale · Advocate Advisors</p>
+<p>   Why it fits: best match for “we’ve already been burned by marketing agencies” and “our buyers are too niche.”</p>
+<p>   When to pull it: if C-suite says they’ve tried marketing before / don’t trust another agency story.</p>
+<p>2. Tejas Parikh · Akshar Consulting</p>
+<p>   Why it fits: best match for “our buyers are too senior / the market is too small for webinars.”</p>
+<p>   When to pull it: if they say Deans / C-suite won’t show up to a webinar.</p>
+<p>   Careful: some campaign totals are testimonial-sourced — use the objection match; don’t invent extra revenue claims.</p>
+<p>3. Ken Baron & Rory Zipper · ZEA Financial</p>
+<p>   Why it fits: best match for “we already wasted money” and “our world is different / regulated / special.”</p>
+<p>   When to pull it: if they frame nonprofits as too special for this motion.</p>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Jill: owns sales / growth day to day. Needs the system to feel practical. Carries the flat-growth frustration.</li>
+<li>C-suite colleague: budget and stability. Needs growth without reckless hiring or IP risk. Will hear consequences + fear more than TAM math.</li>
+<li>Treat C-suite as a real co-decider, not a silent note-taker.</li>
+</ul>
+<p>Landmines:</p>
+<ul>
+<li>Don’t pitch a big new hire</li>
+<li>Don’t sound like you’re taking their IP</li>
+<li>Don’t restart discovery</li>
+<li>Cost must feel like a capability they own, not a consultant dependency</li>
+<li>Don’t skip the emotional stakes — urgency lives in “another flat year,” not only in the list size</li>
+</ul>
+<h3>Weapons</h3>
+<p>1. <b>~31.6k broadest honest TAM after widening; Ideal = ~65 systems.</b></p>
+<p>   If they ask “is the list real?”, show Ideal systems first, then walk the widen math so it doesn’t sound made up.</p>
+<p>2. <b>Five years flat + conference leak is the urgency, not a nice-to-have.</b></p>
+<p>   If energy drops, name the consequence: another year luck-and-event dependent. Then walk THEIR webinar arc (hook → proof of their TA → CTA to NCTR). Do not restart discovery. Do not pitch our list/invite system as the webinar’s “proof.”</p>
+<p>3. <b>Gene / Advocate — burned by agencies, niche buyers still worked.</b></p>
+<p>   If C-suite says “we’ve tried this,” pull Gene before you argue theory.</p>
+<p>4. <b>Tejas — senior buyers / small domain still ran webinars.</b></p>
+<p>   If “Deans won’t show,” use Tejas’s objection match, then return to Dean-first invite math.</p>
+<p>5. <b>Cost + IP / hiring fear is the real close obstacle.</b></p>
+<p>   If budget or risk comes up, go straight to the cost breakdown you promised. Frame owned system vs another consultant — speak to the fear, not just the price line.</p>
+      </div>
+    </details>
+
+    <p class="note">Closer-facing morning brief · quantumSCALE</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => { d.open = open; });
+    }
+  </script>
+</body>
+</html>
