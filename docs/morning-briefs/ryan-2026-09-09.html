@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Morning brief · Ryan · Wed Sep 9</title>
+<title>Morning brief · Ryan · Wednesday Sep 9, 2026</title>
 <style>
   :root {
     --bg: #0f1419;
@@ -89,21 +89,29 @@
       <h1>Morning brief · Ryan</h1>
       <p class="meta">Wednesday Sep 9, 2026 · unique dated URL · packs start collapsed</p>
     </header>
+
     <div class="toolbar">
       <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
       <button type="button" onclick="setAll(false)">Collapse all</button>
     </div>
+
     <section class="slate">
       <h2>Today’s slate</h2>
-      <div class="slot"><strong>11:00 AM ET · Steve Young · Call 2</strong></div>
-      <div class="slot"><strong>4:00 PM ET · Frank Auger · Call 1</strong></div>
+      <div class="slot">
+        <strong>11:00 AM ET · Steve Young · Call 2 · Pocket-E</strong>
+      </div>
+      <div class="slot">
+        <strong>4:00 PM ET · Frank Auger · Call 1 · Fassilio</strong>
+      </div>
     </section>
-    <!-- PACKS_PLACEHOLDER -->
-    <p class="note">Closer-facing morning brief · quantumSCALE</p>
+
+    <!-- packs pending enrich -->
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
   </div>
-<script>
+  <script>
     function setAll(open) {
-      document.querySelectorAll('details.pack').forEach(d => { d.open = open; });
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
     }
   </script>
 </body>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Morning brief · Armando · Wed Sep 9</title>
+<title>Morning brief · Armando · Wednesday Sep 9, 2026</title>
 <style>
   :root {
     --bg: #0f1419;
@@ -89,24 +89,38 @@
       <h1>Morning brief · Armando</h1>
       <p class="meta">Wednesday Sep 9, 2026 · unique dated URL · packs start collapsed</p>
     </header>
+
     <div class="toolbar">
       <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
       <button type="button" onclick="setAll(false)">Collapse all</button>
     </div>
+
     <section class="slate">
       <h2>Today’s slate</h2>
-      <div class="slot"><strong>9:00 AM CT · Mario Sylvander · Call 1</strong></div>
-      <div class="slot"><strong>10:00 AM CT · Bryan Carter · Call 3</strong></div>
-      <div class="slot"><strong>12:00 PM CT · Muhammad Ali · Call 3</strong></div>
-      <div class="slot"><strong>4:00 PM CT · Kenton Gray · Call 1</strong></div>
-      <div class="slot"><strong>5:00 PM CT · David Little · Call 2</strong></div>
+      <div class="slot">
+        <strong>9:00 AM CT · Mario Sylvander · Call 1 · 3Dethos</strong>
+      </div>
+      <div class="slot">
+        <strong>10:00 AM CT · Bryan Carter · Call 3 · THINK Creative Intelligence</strong>
+      </div>
+      <div class="slot">
+        <strong>12:00 PM CT · Muhammad Ali · Call 3 · Uptivity / Just Sell</strong>
+      </div>
+      <div class="slot">
+        <strong>4:00 PM CT · Kenton Gray · Call 1 · Veracor Group</strong>
+      </div>
+      <div class="slot">
+        <strong>5:00 PM CT · David Little · Call 2 · Fortis Telecom</strong>
+      </div>
     </section>
-    <!-- PACKS_PLACEHOLDER -->
-    <p class="note">Closer-facing morning brief · quantumSCALE</p>
+
+    <!-- packs pending enrich -->
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
   </div>
-<script>
+  <script>
     function setAll(open) {
-      document.querySelectorAll('details.pack').forEach(d => { d.open = open; });
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
     }
   </script>
 </body>
