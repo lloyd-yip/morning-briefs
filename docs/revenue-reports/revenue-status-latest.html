@@ -28,7 +28,7 @@
 <body>
   <p class="meta"><span class="tag">Revenue</span> For Alex &amp; Scott · From Lloyd · As-of Sep 9, 2026</p>
   <h1>Revenue status report</h1>
-  <p class="note">Webinar + sales + tech. Ads section comes next once Lloyd pastes numbers. Whop = sales closes. September closes are too early to judge hard.</p>
+  <p class="note">Webinar + sales + tech + ads. Whop = sales closes. September closes are too early to judge hard.</p>
 
   <h2>1) Webinar funnel</h2>
   <h3>Last 30 days (main view)</h3>
@@ -286,9 +286,89 @@
     <li>Keep Wingmen packs tied to that cleaned process.</li>
   </ol>
 
-  <h2>4) Ads</h2>
-  <p class="note">Waiting on Lloyd’s numbers. Placeholder only.</p>
+<h2>4) Ads</h2>
+  <p class="note">Sources: Juan’s Meta Ads dashboard (systemsandclients) · Google Sheet Ad Performance / Webby Event Tracker · Airtable Creative Launch Plan. KPI floor to keep a TOFU creative: <strong>$50 cost per lead</strong>. Goal on the aggregate sheet is tighter ($25 CPL).</p>
 
-  <p class="meta" style="margin-top:2rem;">Sources: Webinar Studio · Rev Dash Whop matches · GHL booked calendars · SalesPulse (thin dated sample) · Mon Sep 7 pipeline meeting (spoken only).</p>
+  <h3>What happened</h3>
+  <p>Paid ads are funding the live webinar funnel. New top-of-funnel creatives only launch about every other week (twice a month). Off weeks are mostly retargeting, so spend dips. Learning is slow because each real TOFU test waits ~2 weeks.</p>
+
+  <div class="card">
+  <table>
+    <thead><tr><th>All-time sheet snapshot</th><th class="num">Actual</th><th class="num">Goal</th></tr></thead>
+    <tbody>
+      <tr><td>Total ad spend</td><td class="num">$14,004</td><td class="num">—</td></tr>
+      <tr><td>Registrations from ads</td><td class="num">381</td><td class="num">—</td></tr>
+      <tr><td>Cost per registration (CPL)</td><td class="num">$36.76</td><td class="num">$25</td></tr>
+      <tr><td>Ads webinar show rate</td><td class="num bad">26.2%</td><td class="num">30%</td></tr>
+      <tr><td>Cost per attendee</td><td class="num bad">$298</td><td class="num">$53</td></tr>
+      <tr><td>Booked calls from ads path</td><td class="num">8</td><td class="num">—</td></tr>
+      <tr><td>Cost per booked call</td><td class="num bad">~$1,751</td><td class="num">$350</td></tr>
+      <tr><td>Closed clients (ads sheet)</td><td class="num">0</td><td class="num">—</td></tr>
+    </tbody>
+  </table>
+  <p class="meta">CPL is better than the $50 “keep it” floor, but still above the $25 goal. Downstream costs (attendee / booked call) miss goals by a lot. Show rate on the ads sheet (~26%) is the paid cohort, not the full Studio funnel (~10–12% recently).</p>
+  </div>
+
+  <h3>Week-by-week spend (every other week = TOFU)</h3>
+  <p>High-spend weeks = new top-of-funnel launches. Low-spend weeks = mostly retargeting.</p>
+  <table>
+    <thead><tr><th>Webinar</th><th>Date</th><th class="num">Ad spend</th><th class="num">Leads</th><th class="num">CPL</th><th class="num">Show rate</th><th>Pattern</th></tr></thead>
+    <tbody>
+      <tr><td>W147</td><td>Jul 7</td><td class="num">$1,317</td><td class="num">30</td><td class="num">$43.90</td><td class="num">26.7%</td><td>TOFU week</td></tr>
+      <tr><td>W148</td><td>Jul 14</td><td class="num">$144</td><td class="num">3</td><td class="num">$47.84</td><td class="num">33.3%</td><td>Retarget</td></tr>
+      <tr><td>W149</td><td>Jul 21</td><td class="num">$230</td><td class="num">4</td><td class="num">$57.55</td><td class="num">25.0%</td><td>Retarget</td></tr>
+      <tr><td>W150</td><td>Jul 28</td><td class="num">$85</td><td class="num">3</td><td class="num">$28.18</td><td class="num">33.3%</td><td>Retarget</td></tr>
+      <tr><td>W151</td><td>Aug 4</td><td class="num">$1,207</td><td class="num">9</td><td class="num bad">$134.06</td><td class="num bad">11.1%</td><td>TOFU week (bad CPL)</td></tr>
+      <tr><td>W152</td><td>Aug 11</td><td class="num">$253</td><td class="num">8</td><td class="num">$31.62</td><td class="num bad">12.5%</td><td>Retarget</td></tr>
+      <tr><td>W153</td><td>Aug 18</td><td class="num">$1,664</td><td class="num">27</td><td class="num">$61.63</td><td class="num bad">14.8%</td><td>TOFU week (Wave 1)</td></tr>
+      <tr><td>W154</td><td>Aug 25</td><td class="num">$588</td><td class="num">10</td><td class="num">$58.83</td><td class="num">30.0%</td><td>Mixed</td></tr>
+      <tr><td>W155</td><td>Sep 1</td><td class="num">$1,953</td><td class="num">43</td><td class="num">$45.41</td><td class="num bad">18.6%</td><td>TOFU week (Wave 2)</td></tr>
+      <tr><td>W156</td><td>Sep 8</td><td class="num">$130</td><td class="num">1</td><td class="num">$130.29</td><td class="num">—</td><td>Retarget (partial)</td></tr>
+    </tbody>
+  </table>
+  <p>CPL is drifting down on the better TOFU weeks (Sep 1 hit $45). Show rate on paid weeks is still weak when volume is high.</p>
+
+  <h3>Creative testing (Waves 1–2)</h3>
+  <p>Wave 2 is mostly wrapped. Winners beat the $50 CPL floor. Many hooks die with zero leads.</p>
+  <table>
+    <thead><tr><th>Creative</th><th>Outcome</th><th class="num">Leads</th><th class="num">CPL</th></tr></thead>
+    <tbody>
+      <tr><td>Angle 01 Linear Sequence · Hook 1 (c15-h1)</td><td class="good">Winner → control</td><td class="num">23</td><td class="num">$30.83</td></tr>
+      <tr><td>Angle 02 Proof First · Hook 2 (c16-h2)</td><td class="good">Winner</td><td class="num">12</td><td class="num">$14.07</td></tr>
+      <tr><td>Angle 03 Better Vehicle · Hook 2 (c17-h2)</td><td class="good">Winner</td><td class="num">2</td><td class="num">$20.32</td></tr>
+      <tr><td>Angle 05 Replacement · Hook 2 (c19-h2)</td><td class="good">Winner</td><td class="num">3</td><td class="num">$35.62</td></tr>
+      <tr><td>Angle 04 Low Cost Per Lead · Hook 2 (c18-h2)</td><td>Still testing</td><td class="num">0</td><td class="num">—</td></tr>
+      <tr><td>Several other hooks (H1s + Angle 01 H2)</td><td class="bad">Killed</td><td class="num">0–1</td><td class="num">—</td></tr>
+    </tbody>
+  </table>
+  <p>Dashboard “this week” snapshot: control CPL <strong>$31.65</strong> vs testing CPL <strong>$56.40</strong> (47 regs that week). Angle 06+ queued for <strong>Sep 11</strong> (Wave 3).</p>
+
+  <h3>Pipeline of creatives (Airtable)</h3>
+  <ul>
+    <li><strong>Winners running at KPI:</strong> Linear Sequence, Proof First, Better Vehicle, Replacement. (Older “Original Close Winner” marked fatigued.)</li>
+    <li><strong>Wave 3 (ads launch Sep 11 / webinar Sep 15):</strong> Angle 06 What The AI Does + podcast angles ready or nearly ready.</li>
+    <li><strong>Winner variations:</strong> 6 copy variants of Linear Sequence + Proof First, Wave 3, Ready for Launch — not live yet.</li>
+    <li><strong>MOFU Ads table:</strong> empty. Retargeting used to work; creatives look fatigued. Scripts exist; filming hasn’t happened. Juan hasn’t updated MOFU in Airtable.</li>
+    <li><strong>Later backlog:</strong> Angles 07–09 + more podcast angles waiting on film/edit.</li>
+  </ul>
+
+  <h3>Why it matters</h3>
+  <ul>
+    <li>Paid acquisition is improving at the top (CPL), but still fails the economics that matter (show → book → close).</li>
+    <li>Process debt was real: creative engine issues, then a media buyer who didn’t optimize well — buyer was let go; Lloyd took control back.</li>
+    <li>Speed of learning is capped by the every-other-week TOFU cadence. An evergreen VSL funnel would let tests run continuously instead of waiting two weeks per batch.</li>
+    <li>Show rate is a shared problem with organic (not ads-only). Juan owns a new reminder sequence + thank-you page refresh (current video is outdated and features Alex while ads/webinar feature Scott).</li>
+  </ul>
+
+  <h3>Next</h3>
+  <ol>
+    <li>Ship Wave 3 TOFU on Sep 11; kill fast against the $50 CPL floor.</li>
+    <li>Record and launch fresh MOFU retargeting (scripts already exist).</li>
+    <li>Finish Juan’s show-rate work: reminders + Scott-consistent thank-you confirmation.</li>
+    <li>Decide whether an evergreen VSL test is worth standing up to speed learning.</li>
+  </ol>
+
+
+  <p class="meta" style="margin-top:2rem;">Sources: Webinar Studio · Rev Dash Whop matches · GHL booked calendars · SalesPulse (thin dated sample) · Mon Sep 7 pipeline meeting · Meta Ads dashboard · Google Sheet Ad Performance / Webby Event Tracker · Airtable Creative Launch Plan.</p>
 </body>
 </html>
