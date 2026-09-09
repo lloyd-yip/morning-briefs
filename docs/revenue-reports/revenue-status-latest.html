@@ -27,22 +27,22 @@
   </style>
 </head>
 <body>
-  <p class="meta"><span class="tag">Revenue</span> For Alex &amp; Scott · From Lloyd · As-of Sep 9, 2026 · <strong>v2</strong></p>
+  <p class="meta"><span class="tag">Revenue</span> For Alex &amp; Scott · From Lloyd · As-of Sep 9, 2026 · <strong>v3</strong></p>
   <h1>Revenue status report</h1>
-  <p class="note"><strong>Updated:</strong> webinar metrics rewritten · Ads section included · cache-bust v2.</p>
+  <p class="note"><strong>Updated:</strong> webinar metrics rewritten · Ads section included · cache-bust v3 · paid-ads close + segment call metrics.</p>
   <p class="note">Whop = sales closes. September closes are too early to judge hard.</p>
   <p class="card" style="font-size:.95rem;">Jump: <a href="#webinar">1) Webinar</a> · <a href="#sales">2) Sales</a> · <a href="#tech">3) Tech</a> · <a href="#ads"><strong>4) Ads</strong></a></p>
 
   <h2 id="webinar">1) Webinar funnel</h2>
   <h3>Last 30 days (main view)</h3>
   <p>Webinars: Aug 11 – Sep 8 (W152–W156).</p>
-  <p>Two rates matter most: <strong>show rate</strong> (live ÷ regs) and <strong>booking rate</strong> (people who booked ÷ people who stayed 10+ minutes). We do <em>not</em> use “booked ÷ registrations.” People who bounce in under 10 minutes should not sit in the booking denominator.</p>
+  <p>Two rates matter most: <strong>attendance rate</strong> (live ÷ regs) and <strong>booking rate</strong> (people who booked ÷ people who stayed 10+ minutes). We do <em>not</em> use “booked ÷ registrations.” People who bounce in under 10 minutes should not sit in the booking denominator.</p>
   <div class="card">
   <table>
     <thead><tr><th>Step</th><th class="num">Count</th><th class="num">Rate</th></tr></thead>
     <tbody>
       <tr><td>Registered</td><td class="num">12,544</td><td class="num">—</td></tr>
-      <tr><td>Showed up live</td><td class="num">1,553</td><td class="num">12.4% show rate (of regs)</td></tr>
+      <tr><td>Showed up live</td><td class="num">1,553</td><td class="num">12.4% attendance rate (of regs)</td></tr>
       <tr><td>Stayed 10+ minutes</td><td class="num">1,140</td><td class="num">73.4% of people who showed live</td></tr>
       <tr><td>People who booked</td><td class="num">128</td><td class="num"><strong>11.2% booking rate</strong> (of stayed 10+)</td></tr>
       <tr><td>Open deals created</td><td class="num">146</td><td class="num">—</td></tr>
@@ -58,22 +58,22 @@
   </table>
   </div>
 
-  <h3>Recent show rates</h3>
+  <h3>Recent attendance rates</h3>
   <table>
-    <thead><tr><th>Webinar</th><th>Date</th><th class="num">Show rate</th></tr></thead>
+    <thead><tr><th>Webinar</th><th>Date</th><th class="num">Attendance rate</th></tr></thead>
     <tbody>
       <tr><td>W154</td><td>Aug 25</td><td class="num">11.6%</td></tr>
       <tr><td>W155</td><td>Sep 1</td><td class="num">10.6%</td></tr>
       <tr><td>W156</td><td>Sep 8</td><td class="num">9.7%</td></tr>
     </tbody>
   </table>
-  <p>Show rate has been descending week over week. Still watching mix and reminders — not sounding an alarm color here.</p>
+  <p>Attendance rate has been descending week over week. Still watching mix and reminders — not sounding an alarm color here.</p>
 
   <h3>Compared to the prior 30 days</h3>
   <table>
     <thead><tr><th>Metric</th><th class="num">Prior 30d</th><th class="num">Last 30d</th><th>Direction</th></tr></thead>
     <tbody>
-      <tr><td>Show rate (live ÷ regs)</td><td class="num">15.5%</td><td class="num">12.4%</td><td>Down</td></tr>
+      <tr><td>Attendance rate (live ÷ regs)</td><td class="num">15.5%</td><td class="num">12.4%</td><td>Down</td></tr>
       <tr><td>Booking rate (booked ÷ stayed 10+)</td><td class="num">~12.3%</td><td class="num">11.2%</td><td>Slightly down</td></tr>
       <tr><td>Stayed 10+ ÷ live (in-room retention)</td><td class="num">~73%</td><td class="num">73.4%</td><td>Flat</td></tr>
     </tbody>
@@ -82,7 +82,7 @@
 
   <h3>Segments — what to ask</h3>
   <ol>
-    <li>Do they show? (show rate)</li>
+    <li>Do they attend the webinar? (attendance rate)</li>
     <li>If they stay 10+, do they book? (booking rate)</li>
     <li>Watch-time retention once they’re in the room</li>
     <li>After Call 1 show / progress: is lead quality scored?</li>
@@ -91,30 +91,46 @@
   <h3>Industry (90 days — need volume to trust the %)</h3>
   <p>Booking rate here = booked ÷ stayed 10+ (not ÷ regs).</p>
   <table>
-    <thead><tr><th>Industry</th><th class="num">Regs</th><th class="num">Show rate</th><th class="num">Book / stayed 10+</th><th>Read</th></tr></thead>
+    <thead><tr><th>Industry</th><th class="num">Regs</th><th class="num">Attendance rate</th><th class="num">Book / stayed 10+</th><th class="num">Call show rate</th><th>LQ among Call-1 showed</th><th>Read</th></tr></thead>
     <tbody>
-      <tr><td>IT &amp; Services</td><td class="num">3,251</td><td class="num">16.1%</td><td class="num">~14.6%</td><td>Strong show + solid booking among stayers</td></tr>
-      <tr><td>Management Consulting</td><td class="num">1,824</td><td class="num">16.9%</td><td class="num">~11.2%</td><td>Shows well; booking about average</td></tr>
-      <tr><td>Marketing &amp; Advertising</td><td class="num">1,709</td><td class="num">14.2%</td><td class="num">~7.5%</td><td>Okay show; softer booking among stayers</td></tr>
-      <tr><td>Financial Services</td><td class="num">1,157</td><td class="num">6.9%</td><td class="num">~8.3%</td><td>Weak show is the leak. Among people who stay, booking is middling — not elite, not zero. Closers may still like the ones who make it through.</td></tr>
-      <tr><td>Prof. Training &amp; Coaching</td><td class="num">355</td><td class="num">19.2%</td><td class="num">~16.3%</td><td>Best small-volume profile</td></tr>
-      <tr><td>Insurance / Banking / Real Estate</td><td class="num">mixed</td><td class="num">~3–4%</td><td class="num">thin</td><td>Very weak show; tiny serious-attendee pool</td></tr>
+      <tr><td>IT &amp; Services</td><td class="num">3,251</td><td class="num">16.1%</td><td class="num">~14.6%</td><td class="num">82% (n=39)</td><td>32 showed · ~50% qualified · 38% blank</td><td>Strong webinar attendance; call show solid; LQ entry incomplete</td></tr>
+      <tr><td>Management Consulting</td><td class="num">1,824</td><td class="num">16.9%</td><td class="num">~11.2%</td><td class="num">69% (n=13)</td><td>9 showed · ~78% qualified · 22% blank</td><td>Attends well; call show average</td></tr>
+      <tr><td>Marketing &amp; Advertising</td><td class="num">1,709</td><td class="num">14.2%</td><td class="num">~7.5%</td><td class="num">90% (n=10)</td><td>9 showed · ~89% qualified · 0% blank</td><td>Softer booking among stayers; call show + LQ look good when they book</td></tr>
+      <tr><td>Financial Services</td><td class="num">1,157</td><td class="num">6.9%</td><td class="num">~8.3%</td><td class="num">89% (n=9)</td><td>8 showed · 100% scored qualified · 0 blank</td><td>Weak webinar attendance is the leak. Once on a Call 1, they show and score well — matches why closers like them</td></tr>
+      <tr><td>Prof. Training &amp; Coaching</td><td class="num">355</td><td class="num">19.2%</td><td class="num">~16.3%</td><td class="num">88% (n=8)</td><td>7 showed · ~57% qualified · 29% blank</td><td>Best small-volume webinar profile; protect LQ entry</td></tr>
+      <tr><td>Insurance / Banking / Real Estate</td><td class="num">mixed</td><td class="num">~3–4%</td><td class="num">thin</td><td class="num">56% (n=9)</td><td>5 showed · 60% qualified · 40% Bad/DQ</td><td>Weak attendance and weaker call show</td></tr>
     </tbody>
   </table>
+  <p class="meta">Call show rate = Call-1 Showed ÷ (Showed + No Show), last ~90 days webinar-attributed opps. Qualified = Great + Ok + Barely Passable. Sample sizes on call metrics are small — read as directional.</p>
   <p><strong>Learning:</strong> Training/coaching + IT look strong end-to-end. Finance-heavy labels still under-show. That can coexist with sales preferring finance people who actually reach Call 1 — those are filtered survivors, not proof the webinar stage loves finance regs.</p>
 
   <h3>Company size</h3>
   <table>
-    <thead><tr><th>Size</th><th class="num">Regs</th><th class="num">Show rate</th><th>Read</th></tr></thead>
+    <thead><tr><th>Size</th><th class="num">Regs</th><th class="num">Attendance rate</th><th class="num">Call show rate</th><th>LQ among Call-1 showed</th><th>Read</th></tr></thead>
     <tbody>
-      <tr><td>0–2 people</td><td class="num">2,954</td><td class="num">17.1%</td><td>Strong show</td></tr>
-      <tr><td>3–5</td><td class="num">2,916</td><td class="num">13.6%</td><td>Okay</td></tr>
-      <tr><td><strong>6–10</strong></td><td class="num">3,911</td><td class="num">13.6%</td><td><strong>Best practical band historically for booking volume</strong></td></tr>
-      <tr><td>11–20</td><td class="num">2,817</td><td class="num">9.9%</td><td>Softer show</td></tr>
-      <tr><td>10,000+</td><td class="num">2,151</td><td class="num">7.4%</td><td>Registers a lot, shows little</td></tr>
+      <tr><td>0–2 people</td><td class="num">2,954</td><td class="num">17.1%</td><td class="num">88% (n=34)</td><td>30 showed · 57% qualified · 33% blank</td><td>Strong attendance + call show; blank LQ too high</td></tr>
+      <tr><td>3–5</td><td class="num">2,916</td><td class="num">13.6%</td><td class="num">71% (n=28)</td><td>20 showed · 65% qualified · 25% blank</td><td>Okay</td></tr>
+      <tr><td><strong>6–10</strong></td><td class="num">3,911</td><td class="num">13.6%</td><td class="num">82% (n=27)</td><td>22 showed · 64% qualified · 14% blank</td><td><strong>Best practical band</strong></td></tr>
+      <tr><td>11–20</td><td class="num">2,817</td><td class="num">9.9%</td><td class="num">82% (n=17)</td><td>14 showed · 86% qualified · 14% blank</td><td>Softer attendance; call quality looks fine</td></tr>
+      <tr><td>10,000+</td><td class="num">2,151</td><td class="num">7.4%</td><td class="num">67% (n=3)</td><td>tiny n</td><td>Registers a lot, weak attendance</td></tr>
     </tbody>
   </table>
+  <p class="meta">Same Call-1 show / LQ definitions as industry. Many Call-1s still have Unknown size (~209) — missing contact enrichment.</p>
   <p><strong>Learning:</strong> The funnel likes small businesses (especially around 6–10 staff). Giant companies look busy on regs and weak on attendance.</p>
+
+
+  <h3>Geo (Call-1 outcomes)</h3>
+  <p>Webinar attendance-by-country wasn’t in the prior cut with clean volumes. Call show + LQ for webinar-attributed Call 1s (last ~90 days):</p>
+  <table>
+    <thead><tr><th>Geo</th><th class="num">Call-1s with status</th><th class="num">Call show rate</th><th>LQ among Call-1 showed</th></tr></thead>
+    <tbody>
+      <tr><td>United States</td><td class="num">~146</td><td class="num">~76–80%</td><td>~75 showed · majority Ok/Great/Barely · blank still common</td></tr>
+      <tr><td>United Kingdom</td><td class="num">16</td><td class="num">92%</td><td>11 showed · mixed (4 qual / 4 Bad·DQ / 3 blank)</td></tr>
+      <tr><td>Germany</td><td class="num">9</td><td class="num">100%</td><td>7 showed · small n</td></tr>
+      <tr><td>Canada</td><td class="num">7</td><td class="num">100%</td><td>3 showed · all qualified scored</td></tr>
+      <tr><td>Unknown geo</td><td class="num">172</td><td class="num">66%</td><td>Large missing-country bucket — enrichment gap</td></tr>
+    </tbody>
+  </table>
 
   <h3>Lead quality — important nuance</h3>
   <p>Blank lead quality on someone who <strong>never showed</strong> is not a rep failure. They never got far enough for scoring to matter.</p>
@@ -131,7 +147,7 @@
 
   <h3>Insights / lessons</h3>
   <p>The live webinar still holds people. In-room retention is flat and healthy (~73% clear 10 minutes; serious watchers hang ~40 minutes).</p>
-  <p>What’s soft is show rate — fewer regs becoming live attendees. Booking rate among people who stayed 10+ is only slightly down (~12.3% → 11.2%), so the bigger leak is still getting the right people into the room.</p>
+  <p>What’s soft is attendance rate — fewer regs becoming live attendees. Booking rate among people who stayed 10+ is only slightly down (~12.3% → 11.2%), so the bigger leak is still getting the right people into the room.</p>
   <p>Important: we didn’t change funnel mechanics or reminder sequences in a way that cleanly explains the show drop. The webinar content change seemed to help, not hurt. Root cause is still unclear (mix, traffic, seasonality, or swing).</p>
   <p><strong>What we’re doing anyway:</strong> rewrite show reminder sequences while we keep watching mix.</p>
 
@@ -144,22 +160,22 @@
 
   <h3>Failures</h3>
   <ul>
-    <li><strong>Show rate has been descending</strong> across recent webinars. That’s still the main top-of-funnel leak into live.</li>
+    <li><strong>Attendance rate has been descending</strong> across recent webinars. That’s still the main top-of-funnel leak into live.</li>
     <li><strong>Lead quality entry after showed Call 1s is incomplete</strong> — especially Armando in August — so “qualified” still isn’t a clean scoreboard.</li>
   </ul>
 
   <h3>Strengths / gaps / risks / opportunities</h3>
   <ul>
-    <li><strong>Strengths:</strong> Sticky live experience; clear show-rate ICP pockets; measurable weekly funnel.</li>
-    <li><strong>Gaps:</strong> No proven root cause for the show drop yet; incomplete LQ after showed calls; messy industry labels / missing contact data on ~1/3 of regs.</li>
-    <li><strong>Risks:</strong> Spending more to acquire regs into a weak-show mix; debating lead quality without separating no-shows from showed-and-unscored.</li>
+    <li><strong>Strengths:</strong> Sticky live experience; clear attendance-rate ICP pockets; measurable weekly funnel.</li>
+    <li><strong>Gaps:</strong> No proven root cause for the attendance drop yet; incomplete LQ after showed calls; messy industry labels / missing contact data on ~1/3 of regs.</li>
+    <li><strong>Risks:</strong> Spending more to acquire regs into a weak-attendance mix; debating lead quality without separating no-shows from showed-and-unscored.</li>
     <li><strong>Opportunities:</strong> Reminder rewrite; steer mix toward SMB 6–10 + training/IT; force LQ scoring after showed Call 1s.</li>
   </ul>
 
   <h3>Next</h3>
   <ol>
-    <li>Ship new show reminder sequences.</li>
-    <li>Watch show % and booking rate (booked ÷ stayed 10+) weekly — especially by segment mix.</li>
+    <li>Ship new attendance reminder sequences.</li>
+    <li>Watch attendance % and booking rate (booked ÷ stayed 10+) weekly — especially by segment mix.</li>
     <li>Force lead-quality entry after Call-1 show (not for no-shows).</li>
   </ol>
 
@@ -306,10 +322,26 @@
       <tr><td>Cost per attendee</td><td class="num bad">$298</td><td class="num">$53</td></tr>
       <tr><td>Booked calls from ads path</td><td class="num">8</td><td class="num">—</td></tr>
       <tr><td>Cost per booked call</td><td class="num bad">~$1,751</td><td class="num">$350</td></tr>
-      <tr><td>Closed clients (ads sheet)</td><td class="num">0</td><td class="num">—</td></tr>
+      <tr><td>Closed clients (ads sheet)</td><td class="num">1</td><td class="num">—</td></tr>
     </tbody>
   </table>
   <p class="meta">CPL is better than the $50 “keep it” floor, but still above the $25 goal. Downstream costs (attendee / booked call) miss goals by a lot. Show rate on the ads sheet (~26%) is the paid cohort, not the full Studio funnel (~10–12% recently).</p>
+  </div>
+
+    <h3>Paid-ads close (the one win)</h3>
+  <div class="card">
+    <p><strong>Mark Whitaker</strong> · <code>mark@aicountingpartners.com</code> · closer <strong>Ryan</strong></p>
+    <table>
+      <thead><tr><th>Field</th><th>Value</th></tr></thead>
+      <tbody>
+        <tr><td>Cash collected (ads sheet)</td><td><strong>$19,895</strong></td></tr>
+        <tr><td>Contract value (ads sheet)</td><td><strong>$19,895</strong></td></tr>
+        <tr><td>Close date</td><td>Jul 31, 2026</td></tr>
+        <tr><td>Webinar</td><td>W148 (attended Jul 14)</td></tr>
+        <tr><td>Source</td><td>Facebook · creative <code>c9a-adc2b</code> · TOF01 Complete Registration ABO</td></tr>
+      </tbody>
+    </table>
+    <p class="meta">Source: Google Sheet Ad Performance / Webby Event Tracker + GHL registrants tab. Rev Dash has the Mark Whitaker / Ryan opp on that close date; Whop paid fields were empty when checked — ads sheet carries the $19,895.</p>
   </div>
 
   <h3>Week-by-week spend (every other week = TOFU)</h3>
@@ -357,7 +389,7 @@
 
   <h3>Why it matters</h3>
   <ul>
-    <li>Paid acquisition is improving at the top (CPL), but still fails the economics that matter (show → book → close).</li>
+    <li>Paid acquisition is improving at the top (CPL). Downstream is still expensive, with one documented close so far (Mark Whitaker, $19,895).</li>
     <li>Process debt was real: creative engine issues, then a media buyer who didn’t optimize well — buyer was let go; Lloyd took control back.</li>
     <li>Speed of learning is capped by the every-other-week TOFU cadence. Evergreen VSL is a discussion point for whether continuous testing would beat biweekly TOFU waves.</li>
     <li>Show rate is a shared problem with organic (not ads-only). Juan owns a new reminder sequence + thank-you page refresh (current video is outdated and features Alex while ads/webinar feature Scott).</li>
