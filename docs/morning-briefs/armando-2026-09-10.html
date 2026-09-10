@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Thursday Sep 10, 2026</title>
+
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 6px; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+  code { font-size: 0.85em; color: #b8d4ea; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Thursday Sep 10, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot"><strong>9:00 AM CT · Greg Hanffou · Call 1 · DIGIDATALE</strong></div>
+      <div class="slot"><strong>10:00 AM CT · Alex Galert · Call 2 · BRNZ</strong></div>
+      <div class="slot"><strong>12:00 PM CT · Alexander Ligum · Call 1 · Genesis Dome</strong></div>
+      <div class="slot"><strong>3:00 PM CT · Kenton Gray · Call 2 · Veracor Group</strong></div>
+      <div class="slot"><strong>4:15 PM CT · Al Romano · Call 1 · Virtually(Creative)</strong></div>
+      <div class="slot"><strong>5:00 PM CT · David Little · Call 2 · Fortis Telecom</strong></div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Greg Hanffou · Call 1 · 9:00 AM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Greg Hanffou · DIGIDATALE · Call 1 · Thursday Sep 10, 2026 · 9:00 AM CT · Armando</b></p><p>Slate-first shell. Full research pack enriching — check GHL + LinkedIn before the call. Do not invent numbers.</p>
+      </div>
+    </details>
+    <details class="pack">
+      <summary><span>Alex Galert · Call 2 · 10:00 AM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Alex Galert · BRNZ · Call 2 · Thursday Sep 10, 2026 · 10:00 AM CT · Armando</b></p><p>Slate-first shell. Full research pack enriching — check GHL + LinkedIn before the call. Do not invent numbers.</p>
+      </div>
+    </details>
+    <details class="pack">
+      <summary><span>Alexander Ligum · Call 1 · 12:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Alexander Ligum · Genesis Dome · Call 1 · Thursday Sep 10, 2026 · 12:00 PM CT · Armando</b></p><p>Slate-first shell. Full research pack enriching — check GHL + LinkedIn before the call. Do not invent numbers.</p>
+      </div>
+    </details>
+    <details class="pack">
+      <summary><span>Kenton Gray · Call 2 · 3:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Kenton Gray · Call 2 prep (same-day from Call 1 show)</b></p>
+<p>Kenton Gray · Veracor Group · Call 2 · Thu Sep 10, 2026 3:00–3:30 PM CT · Armando Valencia</p>
+<p>**From Call 1**<br/>- Where they are / what stuck: Call 1 appointment (P0lRHGfZKBl4vKB7jrLg) showed on Sep 9. GHL moved the opportunity to **1st Call Done** and Call 2 is booked same week. Form / CRM reason for talking to us: **booking more leads**. Opportunity fields after the show (not a transcript): Offer Type = High ticket offer; Pain/Goal Oriented = Goal; Business Fit = Yes; Intent To Transform = Yes; Deal Size (QS side) = 3–10K; Closing Probability = 20%; Projected close month = Sept; Financial Qual = I don’t know; Current Revenue of Business = I don’t know; Business Industry = Others. Public / web context (not Call 1 tape): Kenton is Co-Founder / CEO of Veracor Group (Miami Brickell), a veteran-led holding company across Home / Health / Finance / Technology; Veracor Capital is raising the Kure Health Ecosystem Fund for accredited investors (public materials cite ~$250M target, $250k minimum, Reg D 506(c), early commitments still a small slice of target). Operating proof they market includes KureCare, EliteMD, Pure Pak, RIIZE, and KureOS under Signal-Based Medicine™.<br/>- Emotional state / urgency (from Call 1 — required):<br/>  - How they feel: **Not discussed / limited — Call 1 transcript still missing.** Do not invent frustration or excitement. GHL only shows Showed + Call 2 booked + Goal-oriented / Intent Yes / 20% close probability. Refresh this block the moment Call 1 Fireflies lands.<br/>  - Goals they want but can’t hit yet: **Not discussed on tape.** Closest CRM crumb is “booking more leads.” Web context (label as web, not Call 1): scale investor pipeline for the Health Impact / Kure Health Ecosystem Fund and keep operating companies growing into 2026 launch plans.<br/>  - Why hitting the goal matters to them personally / for the company: **Not discussed on tape.** Flag for refresh. Public story is operator-turned-fund-manager: they built clinics and manufacturing first, then formed the fund to scale what already runs — personal mission language around reclaiming health / provider purpose appears on his LinkedIn and Kure pages, but that is not Call 1 emotion.<br/>  - What’s holding them back: **Not discussed on tape.** Opp fields still say Financial Qual and Current Revenue = “I don’t know,” which usually means discovery was thin or money talk was deferred — confirm on Call 2 instead of guessing.<br/>  - Consequences if nothing changes: **Not discussed on tape.** Web-only: a large fund target with early commitments still small implies capital velocity matters; do not dramatize numbers he did not say.<br/>  - Fears that will show up in the decision: **Not discussed / limited.** Likely landmines to listen for (not claimed from Call 1): “accredited / UHNW investors won’t sit on a webinar,” compliance / Reg D marketing limits, “we already have IR / warm network,” and skepticism after years of operator-led fundraising.<br/>- Objections still open: **Not captured on Call 1 tape.** Treat as open until the transcript lands: mechanism fit for investor acquisition, list/TAM honesty for accredited buyers, price/ROI vs 3–10K deal band, and who else must approve.<br/>- Who’s joining Call 2: Expect **Kenton only** unless he brings IR / partner — Call 1 tape missing, so confirm live. Contact email kenton@veracorgroup.com · +1 818 858 5551 · TZ America/Chicago in GHL.<br/>- What we promised to walk: Standard Call 2 motion from the follow-up booking email (custom walk of how the webinar acquisition system would work for his market/offer, diligence, clear yes/no). Exact Call 1 promises **not recoverable without the tape** — ask him what he wanted to see today in the first two minutes.</p>
+<p>**Who / Business / Buyers / Problem** (refresh only)<br/>- Who / business / who buys / problem: Kenton Gray · Veracor Group / Veracor Capital (Miami). Sells / raises: high-ticket private fund interests and related capital / partnership conversations into a healthcare + multi-vertical holding stack (Signal-Based Medicine clinics/tech, consumer health, manufacturing, and fund vehicles). Buyers (for the fund lane): accredited investors, family offices, and serious allocators who can meet a high minimum. Problem for him (CRM): not enough controllable lead / meeting flow (“booking more leads”).<br/>- Company goals / dream state (from Call 1): **Not stated on Call 1 tape.** Opp projects close month Sept and Goal-oriented intent — confirm his number, timeline, and whether the primary goal is LP meetings, clinic/patient demand, practitioner network, or mixed.<br/>- ICP dream state (what THEIR buyers want): Accredited / UHNW allocators who want healthcare private-market exposure with real operating proof (clinical outcomes + revenue-generating portfolio companies), not another slide-deck thesis — clarity, legitimacy (Reg D), and a clean next step into data room / partner call.</p>
+<p>**What’s interesting for THIS Call 2**<br/>Call 1 Fireflies is still missing after the show, so this pack is GHL + web + prep-not-Call1 only — refresh emotional state and promises the second the tape posts. Prep Fireflies `01M23TYHQT8CEE1QHRXAZ01B68` (“Call 1 prep - Kenton Grey”) is **prep-not-Call1** and nearly empty; do not treat it as discovery. Dual story risk: he can mean investor leads for the fund **or** demand for operating companies — lock which lane is primary before you build Deep TAM. GHL close probability is only 20% with Financial Qual / Revenue still “I don’t know,” so Call 2 has to earn conviction, not assume it.</p>
+<p>**Deep TAM** (required)<br/>- ICP parameters (plain English): United States · healthcare / impact / alternative-investment interested capital · accredited investors and family offices (and advisors who place them) · company type = capital allocators able to write a high minimum into a Reg D private fund · buyer titles = principal, family office CIO/allocator, UHNW individual, RIA / private-wealth lead who can introduce · exclude non-accredited retail, tire-kickers under minimum, and pure “curious about wellness” with no capital.<br/>- Ideal ICP (tight — who they said they want most): **Not locked on Call 1 tape.** Working Ideal from public Veracor Capital positioning (flag as our read until he confirms): US accredited investors / family offices seeking healthcare growth equity with operator-built proof, able to meet the published minimum. Decision-maker count: **not measured on Call 1 — do not invent; enrich after he confirms Ideal.**<br/>- Broadest honest TAM (largest possible still real — campaign headline): US accredited investors + family-office allocators + private-wealth / RIA introducers who place clients into private healthcare / impact funds — still real capital, still above junk “webinar shoppers.” Exact headcount **not measured on Call 1 — do not invent on the call.**<br/>- How we got the number: Call 1 tape missing; parameters inferred from public fund terms + CRM “booking more leads” + high-ticket offer tag — **no list pull yet.**<br/>- What we widened (if thin): Multi-title (principal + FO allocator + RIA introducer), adjacent healthcare-interested UHNW, and (only if he confirms) a second lane for clinic / medical-director / partner demand for operating companies — always say “they said” vs “we added.”<br/>- Check vs Call 1: Cannot fully check — tape missing. Align live to whatever Ideal he names in the first ten minutes.<br/>- Too small?: Unknown until enrichment. Accredited-investor + FO titles nationally should clear thin-TAM if Ideal is fund raise; if he only wants a tiny warm list of named LPs, run the qualify-out conversation honestly after expansion.</p>
+<p>**Offer / value-prop read** (required — honest)<br/>- What’s sharp (easy to invite on): Clear high-ticket capital offer with a concrete buyer filter (accredited / minimum). Strong operator narrative (clinics and manufacturing before the fund). Mission + veteran-owned proof that can carry a webinar hook without sounding like generic “PE raise.”<br/>- What’s fuzzy or weak (closer must know): Call 1 discovery gaps (revenue / financial qual unknown in GHL). Which product is the webinar for — fund LP vs operating-company demand — is not locked. Compliance boundaries on how a Reg D 506(c) raise can be marketed must be respected (he owns counsel; we don’t freelance securities advice). Early fund commitments vs large public target can create skepticism if oversold.<br/>- Positioning line for the webinar if we pick today: How accredited investors get into a healthcare growth vehicle built on clinics and manufacturing that already operate — not another fund that raises first and hunts for deals later.</p>
+<p>**Webinar strategy** (required — keep OUR motion vs THEIR story separate)<br/>- Core problem lane (one, not five): Serious allocators cannot tell which healthcare funds have real clinical and operating proof versus slide-deck stories — the pain THEIR buyers feel.<br/>- Who we invite first → next: Ideal accredited / family-office allocators first → then broadest honest TAM (RIA / private-wealth introducers and adjacent UHNW still inside capital reality). That invite order is OUR acquisition motion.<br/>- Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop):<br/>  hook → problem → proof (their method / results / proof) → offer (their product) → easy CTA (book with them)<br/>  Hook on the gap between healthcare spend and chronic-disease outcomes → problem of funds that raise capital before they have operating proof → proof via Signal-Based Medicine operating history and portfolio companies → offer the Kure Health Ecosystem Fund / partner path → CTA to book a Veracor capital / data-room conversation with his team.<br/>- Copy / talk-track beats (3–5):<br/>  1. “Most healthcare funds raise first and look for deals second — we built the companies first.”<br/>  2. “What accredited investors should demand before they wire into healthcare private markets.”<br/>  3. “How clinical operating proof changes the risk conversation versus a pure thesis deck.”<br/>  4. “What a fit conversation looks like if the minimum and structure are even in range.”<br/>  5. Soft CTA: book a partner / data-room call with Veracor — not a hard pitch on the webinar itself.<br/>- Cadence: One core investor-education topic, test with Ideal accredited / FO list, then segment (direct LP vs advisor-introducer) once show→meeting math is real. If he confirms the primary goal is clinic/patient or practitioner demand instead, rebuild this arc to that buyer before launch — do not mash two audiences into one room.</p>
+<p>**Best case studies for THIS Call 2**<br/>1. Jason Rotman — Elevate Financial — why it fits: best answer when Kenton (or his IR) worries that C-level / high-income / UHNW buyers will not attend a webinar; also strong for compliance-heavy financial offers. When to pull it: “My LPs / principals won’t show up to a webinar.” Tell the story; do not invent funnel counts (no clean workshop-stats row for quoting).<br/>2. Joshua Hollander — Horton International — why it fits: high-ticket, C-suite / board buyers, six-figure deals using the same cold-calendar motion. Use their workshop-tracked shape carefully: one strong run put tens of thousands of invites in front of senior buyers with a real show rate and booked follow-up calls across the campaign. When to pull it: “This only works for cheap SaaS, not serious capital conversations.”<br/>3. Philipp Von Schulthess — Oxoia — why it fits: institutional / pension-fund / technical buyers who “would never webinar,” plus the “referrals are real but not fast enough” objection. When to pull it: “Family offices and institutions don’t buy this way.” Keep it qualitative — no clean campaign totals to quote.</p>
+<p>**Decision / stakeholder map**<br/>- Who’s in the room / who signs / what each cares about: Kenton is Co-Founder / CEO and the named fund operator — likely primary signer for a QS engagement, but capital-raise marketing may need counsel / IR alignment. Confirm if any partner, compliance, or advisory voice must see Call 2 before a yes. He cares about controllable meetings with the right capital (</p>
+      </div>
+    </details>
+    <details class="pack">
+      <summary><span>Al Romano · Call 1 · 4:15 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Al Romano · — · Call 1 · Thursday Sep 10, 2026 · 4:15 PM CT · Armando</b></p><p>Slate-first shell. Full research pack enriching — check GHL + LinkedIn before the call. Do not invent numbers.</p>
+      </div>
+    </details>
+    <details class="pack">
+      <summary><span>David Little · Call 2 · 5:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>David Little · — · Call 2 · Thursday Sep 10, 2026 · 5:00 PM CT · Armando</b></p><p>Slate-first shell. Full research pack enriching — check GHL + LinkedIn before the call. Do not invent numbers.</p>
+      </div>
+    </details>
+
+    <p class="note">Closer-facing only. Packs may enrich after this shell — refresh if a second commit lands.</p>
+  </div>
+  <script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => { d.open = open; });
+    }
+  </script>
+</body>
+</html>

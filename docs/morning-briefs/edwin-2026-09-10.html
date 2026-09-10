@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Thursday Sep 10, 2026</title>
+
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 6px; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+  code { font-size: 0.85em; color: #b8d4ea; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Thursday Sep 10, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot"><strong>5:00 AM ET · Sofia Strazzanti · Call 1 · Future Fashion Assembly Ltd</strong></div>
+      <div class="slot"><strong>10:30 AM ET · Islam Ayoub · Call 2 · Swift Cloud Solutions</strong></div>
+      <div class="slot"><strong>12:00 PM ET · Stuart Cranston · Call 1 · Vantage Group</strong></div>
+      <div class="slot"><strong>1:15 PM ET · Dean Sorensen · Call 1 · IBP Collaborative</strong></div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Sofia Strazzanti · Call 1 · 5:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Sofia Strazzanti · Future Fashion Assembly Ltd · Call 1 · Thursday Sep 10, 2026 · 5:00 AM ET · Edwin</b></p><p>Slate-first shell. Full research pack enriching — check GHL + LinkedIn before the call. Do not invent numbers.</p>
+      </div>
+    </details>
+    <details class="pack">
+      <summary><span>Islam Ayoub · Call 2 · 10:30 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Islam Ayoub · Call 2 prep (from Call 1 day)</b></p>
+<p>Islam Ayoub · Swift Cloud Solutions · Call 2 · Thursday follow-up · Edwin Chung</p>
+<p>**From Call 1**<br/>- Where they are / what stuck: Salesforce Nonprofit Cloud implementer for US/Canada nonprofits. Revenue flat at $20–23k/mo for ~12 months on ~5 retainers. YouTube inbound that used to feed a prospect every ~3 months is dead; cold email/LinkedIn/calls, ads, listings, and two contractor marketers all failed. High close when he gets a conversation — volume is the whole problem.<br/>- Emotional state / urgency (from Call 1 — required):<br/>  - How they feel: Calm about today (“we don’t have a problem now”), clearly anxious about the future — worried one client leave is a big drop and two is a “disaster.”<br/>  - Goals they want but can’t hit yet: ~$30k+/mo within a year; pay an unpaid intern and a relative he’s training; raise everyone’s salaries; stop grinding YouTube/blog BD.<br/>  - Why hitting the goal matters to them personally / for the company: Buffer so churn doesn’t put the company at a loss; values-led generosity with the team; reclaim time for kids and the gym (“stop being fat” — warm, not flippant).<br/>  - What’s holding them back: No controllable outbound lever; over-reliant on inbound he can’t dial up; content BD is slow and boring.<br/>  - Consequences if nothing changes: One ~$5k client leave → profit ~$2k; second leave → operating at a loss given ~50–70% expense load and ~$6–7k profit.<br/>  - Fears that will show up in the decision: “I’ve already tried outbound/ads and wasted time — why is this different?” Plus values filter must be respected on who gets invited.<br/>- Objections still open: Soft only — burned on prior outbound/contractors; pricing upside on current book limited until baseline clients grow; TAM/webinar economics reserved for this call.<br/>- Who’s joining Call 2: Islam only (sole decision maker). No other stakeholders required.<br/>- What we promised to walk: Custom presentation — how we’ll target NGOs, get them into his webinar, structure the webinar to build authority and book calls, and turn volume into recurring $5–7k/mo engagements. Edwin sends Wednesday prep/confirm email.</p>
+<p>**Who / Business / Buyers / Problem** (refresh only)<br/>- Who / business / who buys / problem: Islam · Swift Cloud Solutions (Boulder registered, operates from Egypt). Sells Salesforce nonprofit CRM implementations/support (~$5–7k/mo retainers, sometimes ~$15k projects). Buyers = nonprofit CEOs/founders, program/fundraising/grants leads, CRM/Salesforce admins. Problem for him = no reliable new-client engine after inbound died.<br/>- Company goals / dream state (from Call 1): $30k+/mo, team paid fairly, churn-safe, less content grind, more life.<br/>- ICP dream state (what THEIR buyers want): Nonprofits that need fundraising/program/volunteer/case/grants systems running cleanly on Salesforce without hiring a 15-person IT shop — clarity, compliance-friendly ops, and a partner who can implement and support.</p>
+<p>**What’s interesting for THIS Call 2**<br/>Values-based exclusions (no alcohol / LGBTQ-advocacy orgs) must be baked into list strategy — not a soft preference. Egypt time zones already shaped booking (tomorrow slots too late). Public website pricing pre-qualifies; webinar should lean expertise + case studies he now has (he lacked logos under prior-employer NDAs before).</p>
+<p>**Deep TAM** (required)<br/>- ICP parameters (plain English): US + Canada nonprofits · small orgs ~5–10 staff · budget for ~$5–7k/mo CRM work · decision makers (CEO/founder, program, fundraising, grants, CRM/Salesforce admin) · exclude alcohol and LGBTQ-advocacy business models.<br/>- Ideal ICP (tight — who they said they want most): Small US nonprofits, 5–10 employees, can afford Salesforce CRM at ~$5–7k/mo, decision maker reachable, values-aligned. Decision-maker count: not quantified on Call 1 — treat as qualitative until enrichment.<br/>- Broadest honest TAM (largest possible still real — campaign headline): US+Canada nonprofit decision makers across adjacent titles (CEO/ED, program, development/fundraising, grants, ops, CRM/admin), still excluding values conflicts and pure startups with no budget. Exact headcount not measured on Call 1 — do not invent; enrich before quoting a number on the call.<br/>- How we got the number: Call 1 gave parameters only (geo, size band, budget, titles, exclusions) — no list pull yet.<br/>- What we widened (if thin): Multi-title (CEO + program + fundraising + CRM), Canada as secondary, adjacent small-org band if 5–10 is sparse — always flag “they said” vs “we added.”<br/>- Check vs Call 1: Matches his Ideal (small, budgeted) and exclusions; he said “any nonprofit” then tightened to small + values filters.<br/>- Too small?: Unknown until enrichment. If broadest honest TAM after expansion is still under ~30k decision makers, qualify-out conversation — unlikely for US nonprofit DM titles, but verify; don’t bluff a count.</p>
+<p>**Offer / value-prop read** (required)<br/>- What’s sharp: Clear recurring offer ($5–7k/mo), public pricing, strong expertise proof (YouTube historically converted), communicator presence, narrow enough ICP to teach in a webinar.<br/>- What’s fuzzy or weak: Buyer budget signal is “can afford Salesforce” without nonprofit revenue bands; values exclusions need clean list filters; prior outbound failure means mechanism proof matters more than hype.<br/>- Positioning line for the webinar if we pick today: How small US nonprofits get fundraising, programs, and grants running on Salesforce without building an internal IT team.</p>
+<p>**Webinar strategy** (required)<br/>- Core problem lane: Small nonprofit leaders stuck with messy fundraising/program/grants data and no clean Salesforce path — not “Islam needs more leads.”<br/>- Who we invite first → next: Ideal first (small US NPOs, 5–10 staff, budgeted, values-aligned DMs) → then broaden titles/geo still inside honest TAM. That invite order is OUR motion.<br/>- Story arc (THEIR webinar to THEIR audience — NOT QS value prop): Hook on the pain of broken nonprofit ops/fundraising systems → problem of duct-tape tools and failed DIY Salesforce → proof via his method, case studies, reviews → offer his implementation/support engagement → easy CTA to book a fit call with his team.<br/>- Copy / talk-track beats (3–5):<br/>  1. “Your fundraising and program data shouldn’t live in five spreadsheets.”<br/>  2. “Nonprofit Cloud / Agentforce Nonprofit only works when someone owns the implementation.”<br/>  3. “What a 5–10 person nonprofit can launch in 30–60 days without a 15-person IT bench.”<br/>  4. “What good looks like: forecastable monthly CRM partnership, not a one-off dump.”<br/>  5. Soft CTA: book a working session to see if Salesforce fit + budget line up.<br/>- Cadence: One core topic, test with Ideal list, then segment (fundraising-heavy vs program-heavy) once show rates stabilize.</p>
+<p>**Best case studies for THIS Call 2** (Airtable SoT)<br/>1. Ken Tyborski (Code of the North) — why: burned serious money on lead gen before QS; also closest “systems implementer” analogue (NetSuite ops for mid-market). Workshop-stats row is clean (Data flags = recording path note only). When to pull: “I’ve already spent on marketers/contractors and got nothing.”<br/>2. Ken Baron &amp; Rory Zipper (ZEA Financial) — why: “tried everything / wasted money” + compliance-heavy industry still worked; proof-of-mechanism (closed by the same cold-calendar motion). Stats basis = workshop database. When to pull: skepticism that nonprofit/regulated buyers won’t respond.<br/>3. Tejas Parikh / Parkish (Akshar Consulting) — why: small senior market, wants a few real conversations not junk leads — mirrors Islam’s high-close / low-volume world. Numbers are client-interview self-reported (Data flags say so) — tell the story, don’t over-index the exact counts. When to pull: “I only need a few $5k retainers, not 500 junk leads.”</p>
+<p>**Decision / stakeholder map**<br/>- Who’s in the room / who signs: Islam alone. He signs.<br/>- Landmines from Call 1: Respect haram exclusions on every list; don’t pitch “just do more YouTube”; don’t minimize churn risk; Egypt timezone; Wednesday email must land or trust dips; one awkward client may leave or upsell — keep urgency honest without fear-mongering.</p>
+      </div>
+    </details>
+    <details class="pack">
+      <summary><span>Stuart Cranston · Call 1 · 12:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Stuart Cranston · Vantage Group · Call 1 · Thursday Sep 10, 2026 · 12:00 PM ET · Edwin</b></p><p>Slate-first shell. Full research pack enriching — check GHL + LinkedIn before the call. Do not invent numbers.</p>
+      </div>
+    </details>
+    <details class="pack">
+      <summary><span>Dean Sorensen · Call 1 · 1:15 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Dean Sorensen · IBP Collaborative · Call 1 · Thursday Sep 10, 2026 · 1:15 PM ET · Edwin</b></p><p>Slate-first shell. Full research pack enriching — check GHL + LinkedIn before the call. Do not invent numbers.</p>
+      </div>
+    </details>
+
+    <p class="note">Closer-facing only. Packs may enrich after this shell — refresh if a second commit lands.</p>
+  </div>
+  <script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => { d.open = open; });
+    }
+  </script>
+</body>
+</html>
