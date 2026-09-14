@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Monday Sep 14, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Monday Sep 14, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>9:15 AM CT · Gonçalo Conde · Call 1 · Bubblevel Consulting</strong>
+      </div>
+      <div class="slot">
+        <strong>4:00 PM CT · Amanda Zotzky · Call 1 · Sprinkled With Pink</strong>
+      </div>
+      <div class="slot">
+        <strong>5:15 PM CT · Tony Crisp · Call 1 · CRISPx</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Gonçalo Conde · Call 1 · 9:15 AM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+
+<p><b>Gonçalo Conde · Bubblevel Consulting · Call 1 · Mon Sep 14 · 9:15am CT · Armando</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Gonçalo Conde — CEO of Bubblevel Consulting (Lisbon); also Business Owner at Prink Portugal.</li>
+<li>Email gconde@bubblevel.com · +351 917 500 681 · Europe/Lisbon. LinkedIn /in/gconde.</li>
+<li>GHL company field shows Bubblevel Consulting, lda; Apollo also tagged Prink Portugal. Tags: webinar-attended · sales call booked · Vera booking assist · budget form 3–10K.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Bubblevel Consulting — small Lisbon IT consultancy (Cegid Primavera ERP, Microsoft 365, Power BI, process automation, management control). Site bubblevel.com. Roughly 1–10 people.</li>
+<li>Prink Portugal — printer / toner / ink / paper retail + delivery network (prink.pt); he appears as business owner since ~2023. Confirm which company is the growth problem today.</li>
+<li>Booking pain note in GHL custom fields: “booking more leads.”</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Bubblevel: Portuguese SMEs that need ERP, reporting, and automation so finance/ops can run without chaos.</li>
+<li>Prink: businesses and consumers that need printers, consumables, and SOS printer service across Portugal store footprint.</li>
+<li>Qualify which buyer he wants more of before you build TAM.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Bubblevel: messy systems, weak management control, and tools that do not talk to each other.</li>
+<li>Prink: keep printers running and consumables easy to buy/deliver.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>Two-company fork (ERP consulting vs printer retail) — force one webinar lane on Call 1 or Call 2 will mush.</li>
+<li>Portugal geo + 3–10K budget band — check currency, decision speed, and whether English webinars work for his Ideal buyers.</li>
+<li>Showed webinar from chat booking — engaged, but still enrichment-only Call 1 (no prior QS tape).</li>
+</ul>
+
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Amanda Zotzky · Call 1 · 4:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+
+<p><b>Amanda Zotzky · Sprinkled With Pink · Call 1 · Mon Sep 14 · 4:00pm CT · Armando</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Amanda Zotzky — Business Development Manager at Sprinkled With Pink (Dallas, TX female-founded custom gifts / corporate swag).</li>
+<li>Email amanda@sprinkledwithpinkshop.com · +1 281-743-1058 · America/Chicago. LinkedIn amanda-zotzky-416b90163.</li>
+<li>GHL tags: sales call booked. Booked via webinar chat. Budget form 3–10K.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Sprinkled With Pink — handmade personalized gifts and corporate merchandise (employee gifts, events, PR mailers, client appreciation). Site sprinkledwithpinkshop.com.</li>
+<li>Public claims: 100% handmade in Dallas; ships ~7 business days; corporate “swag concierge”; strong Etsy / DTC history (site cites 100k+ products sold / top-1% Etsy ranking language — treat as public marketing, not a QS-verified number).</li>
+<li>Company LinkedIn lists ~11 people; founder/CEO Kendra Laine (Eaton). Confirm whether Amanda is buyer, influencer, or BD bringing a growth mandate.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Consumers buying personalized gifts (weddings, parties, under-$20 gifts).</li>
+<li>Corporate buyers who need on-brand employee / client / event merch without running the production themselves.</li>
+<li>Qualify which lane she wants to scale — DTC gifting vs B2B corporate swag — before promising a list.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Buyers want trendy, personal, Instagrammable gifts without DIY stress.</li>
+<li>Corporate buyers want swag people actually keep, delivered on time, on brand.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>Corporate gifting page leans hard on word-of-mouth growth — classic “referrals work until they don’t” Call 1 opener if she confirms B2B lane.</li>
+<li>3–10K budget band + BD title — clarify if she can sign, who owns P&amp;L, and whether QS is for corporate pipeline or consumer acquisition.</li>
+<li>Fresh contact (added Sep 8) — cold enrichment Call 1; no prior Fireflies.</li>
+</ul>
+
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Tony Crisp · Call 1 · 5:15 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+
+<p><b>Tony Crisp · CRISPx · Call 1 · Mon Sep 14 · 5:15pm CT · Armando</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Tony Crisp — Co-Founder / CEO (“Brand Guy”) of CRISPx; fractional CMO; President of Tech Coast Venture Network (TCVN).</li>
+<li>Email tony@crispx.com · +1 949-791-9150 · America/Los_Angeles (Newport Beach, CA). LinkedIn /in/tonycrisp.</li>
+<li>GHL: webinar-attended · sales call booked · cold-email recycled · budget form 25–50K.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>CRISPx — tech brand marketing / product-launch agency since 1992 (crispx.com). Claims 100+ hard-tech launches; works space/defense, consumer electronics, SaaS, gaming, robotics.</li>
+<li>Public offers: LaunchX Brand, LaunchX Website, OrbitX ongoing marketing; DOSE Method™ (Dopamine / Oxytocin / Serotonin / Endorphins) psychology-based branding.</li>
+<li>Small agency footprint (public directories ~1–10). Do not invent QS money or prior-call retainers on Call 1.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Tech founders / CEOs and marketing leads at companies that have outgrown DIY brand — launching products, entering markets, or needing category authority.</li>
+<li>Buyer titles look like Founder/CEO, CMO, Marketing Lead at hardware, SaaS, defense-adjacent, and deep-tech companies.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Complex tech products that look commodity or confusing, so buyers never put them on the Day-1 shortlist.</li>
+<li>Long sales cycles and weak brand systems that burn cash before the product proves itself.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>25–50K budget form is a strong Call 1 signal — confirm what outcome that budget is for and whether he is buying for CRISPx acquisition or a client/venture.</li>
+<li>Agency that already sells “pipeline from brand” may object “we already do marketing” — lock whether he wants more agency clients or a productized lane.</li>
+<li>Showed webinar + booked from chat; still Call 1 enrichment only (no prior Fireflies).</li>
+</ul>
+
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+  <script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
