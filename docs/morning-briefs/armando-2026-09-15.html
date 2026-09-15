@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Tuesday Sep 15, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Tuesday Sep 15, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>12:00 PM CT · Al Romano · Call 2 · Virtually(Creative)</strong>
+      </div>
+      <div class="slot">
+        <strong>4:00 PM CT · Ajay Bam · Call 2 · Vyrill Inc</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Al Romano · Call 2 · 12:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+
+<p><b>Al Romano (Alexander) · Virtually(Creative) · Call 2 · Tue Sep 15, 2026 12:00 Eastern (verbal only — no GHL Call 2 appointment confirmed yet) · Armando Valencia</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Al Romano (Alexander on Zoom; Toronto) runs Virtually(Creative), an inbound digital marketing agency that has shifted from WordPress websites into Meta (Facebook/Instagram) managed ads plus DM/chat automation across Meta, Instagram, Telegram, and WhatsApp. He also sells accessibility / inclusive-design work and still does email, N8N/custom AI workflows, and a custom Meta affluent-ad targeting app. Agency is small (Al + 2 in Toronto + ~10 contractors in Poland/Ukraine); Al still owns sales. Revenue ~$120k CAD today, expects ~$146k this year, ~12–20% YoY mostly from existing clients expanding scope — not net-new volume. Managed-ads packages are new (~8 months, word-of-mouth only, ~3 clients so far) at CAD $250 / $650 / $1,250 per month (three-month minimum on entry). He locked a clear growth goal with Armando: land ~five clients per quarter on a ~$3,500 CAD/month package with ~90-day initial engagements. He already has CRM, email, AI agents, and an AI phone triage agent — underused because he wears too many hats. What hooked him on the QS webinar was the calendar-invite / GCal-at-scale motion (first time he had seen it work without bans) plus white-label potential. Call 2 was verbally booked for Tuesday at 12:00 Eastern covering all four funnel phases; there is still no GHL Call 2 appointment on the calendar — confirm the hold.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Engaged, candid, and technically literate. He joked about being “miffed” by the calendar invite, then admitted it worked and that he was on the webinar because of it. Collaborative tone throughout — he empathized with QS roadblocks, asked sharp questions, and by roughly the 45-minute mark said it was “sounding like a pretty good fit” and asked for next steps. Protective of his calendar around a big RFP and kid pickup, but flexible enough to lock Tuesday noon.</li>
+<li>Goals they want but can’t hit yet: Land about five clients per quarter on the ~$3,500 CAD/month package (with connected services and ~90-day initial engagements). Take the sales hat off by systemizing acquisition instead of rebuilding calendar/email/AI infrastructure himself. Move the agency off slow word-of-mouth growth and onto a repeatable engine for higher-ticket managed packages.</li>
+<li>Why hitting the goal matters to them personally / for the company: Growth today is stuck near ~$120–146k CAD with only 12–20% YoY, mostly from existing clients expanding — not new logos. He is the agency’s sales function while also leading delivery and systems. Hitting five $3.5k/mo clients per quarter is how he gets stability for the agency and the team, and how he stops being the bottleneck.</li>
+<li>What’s holding them back: Capacity and time — too many hats. Systems (CRM, email, AI agents, phone triage) already exist but are not run at A+ potential. Managed-ads offer sits on the agency page but has not been actively lead-genned. Networking has a fixed yearly cost that returns okay but is time-heavy. Entry $250 packages keep LTV thin versus the $3,500 package he actually wants to sell.</li>
+<li>Consequences if nothing changes: Growth stays slow and founder-dependent. He keeps spending R&amp;D time reinventing acquisition infrastructure QS already runs. The agency stays near sub-$150k CAD with line of sight only if he personally sells every deal.</li>
+<li>Fears that will show up in the decision: Whether QS works cleanly with his existing AI/CRM/email/phone stack (white-label / tech-fit). Whether the economics make sense given current agency revenue and the thin $250 entry ladder. Whether accessibility outreach can stay credible and sensitive (he flagged reputational considerations). Case-study diligence before Tuesday — he wants proof, including trying for Dana’s numbers.</li>
+<li>Objections still open: Time/capacity (systems exist but underused). Pricing ladder ($250 entry vs desired $3,500 package — Call 2 must reinforce offer architecture). White-label / stack fit with his existing agents. Case-study diligence (Dana numbers maybe email, else live). Call 2 still only verbal — calendar not confirmed in GHL.</li>
+<li>Who’s joining Call 2: Al only on Call 1. No co-decider named. He is the founder and sales owner.</li>
+<li>What we promised to walk: Custom demo covering all four funnel phases — lead quality/volume, campaign/calendar invite, webinar conversion, and financial model/projections. Armando to send case studies / diligence materials meanwhile (try for Dana’s numbers; else show Tuesday). Al to review QS team (Scott, Lloyd, Alex, Doug, Daniel) and case studies before the demo.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Al · Virtually(Creative) (Toronto). End-to-end inbound digital marketing agency with an accessibility / inclusive-design wedge; center of gravity is Meta managed ads + chat automation. Buyers today = business owners or marketing managers at small businesses, freelancers, and entrepreneurs — often companies that just hired marketing or recently cut marketing and want a managed service. Ideal commercial filter he stated: roughly $1.5–2M CAD/year+ revenue and regular marketing / ad spend around ~$5k/month or more. Problem for him = no repeatable acquisition engine for higher-ticket packages while he is still the sales function.</li>
+<li>Company goals / dream state (from Call 1): Five ~$3,500 CAD/month clients per quarter with ~90-day initial engagements and connected services; take the sales hat off via systemized acquisition; grow past founder-led word-of-mouth without rebuilding the whole stack himself.</li>
+<li>ICP dream state (what THEIR buyers want): Owners and marketing managers who are already spending on ads (or facing accessibility compliance pressure) want managed Meta campaigns, chat automation, and/or compliance-ready inclusive design without hiring a full in-house team — they want leads and systems connected, not another DIY project.</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<p>Call 2 is verbal for Tuesday Sep 15 at 12:00 Eastern and is not yet booked as a GHL Call 2 appointment — confirm the calendar hold before show time. Dual-offer strategy is live: Meta managed-ads packages (where he wants to sell $3,500+, not $250 entry) plus accessibility compliance as the near-term wedge Armando already paralleled to 216 Digital / Cleveland. Agency revenue is still ~$120–146k CAD, so frame QS engagement economics carefully against his five-clients-per-quarter math — do not ignore the thin entry LTV. He already owns CRM/AI/email/phone agents and asked about white-label / stack fit — lead with “use what you have,” not “rip and replace.” Send or walk case studies (Dana if available) before or on the call; he is doing diligence.</p>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): Geo = industry-agnostic today; Al is Toronto / East Coast personally; current book spans Canada and similar small-business verticals; accessibility wedge points at U.S. and Canadian public-facing companies facing AODA / Title II-style deadlines · Vertical = currently broad (restaurants, venues, product vendors, salons, entertainment, podcasts, charities) with accessibility compliance and Meta-ad-mature businesses as the two scalable lanes he named · Company type/size = Ideal ~$1.5–2M CAD/year+ with ~$5k+/month marketing/ad spend; accessibility lane may include public-facing firms with compliance pressure (he cited ~20+ employee public-facing obligations in the U.S./Canada conversation) · Buyer titles = business owner or marketing manager · Who we exclude = brand-new businesses with zero prior marketing spend (he said they need education first); competitors / other agencies as primary buyers for his managed-ads offer.</li>
+<li>Ideal ICP (tight — who they said they want most): Business owners or marketing managers at ~$1.5–2M CAD/year+ companies already spending roughly ~$5k/month on marketing/ads — Canada / East Coast practical first — who want managed Meta + automation (and/or accessibility compliance help). That is the “golden” filter he stated. Decision-maker contact count was not measured on Call 1 — do not invent a list size; enrich companies then owner/marketing-manager contacts before quoting a campaign number.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Canada + U.S. decision makers across owner / marketing manager / marketing director / CMO titles at established small-to-mid businesses that either already spend on paid ads or face near-term accessibility compliance pressure — still exclude pre-marketing startups and peer agencies as primary buyers. Exact decision-maker headcount after expansion was not measured on Call 1. Directionally this is a large SMB + compliance market; treat public scale as “not thin,” then verify with a real list pull on the demo.</li>
+<li>How we got the number: Call 1 gave Ideal revenue band, ad-spend filter, titles, geo flavor, and the accessibility wedge — no owned cold list size and no enrichment count. He does not have a quantified outbound list today. Path on Call 2 = companies in band then owner / marketing titles then contactable decision makers.</li>
+<li>What we widened (if thin): They said: ~$1.5–2M+ CAD, ~$5k+/mo ad spend, owner or marketing manager, accessibility + Meta-ad-mature lanes. We add for campaign honesty: full Canada + U.S. geo (not just Toronto/East Coast home base), multi-title stack (owner + marketing manager + marketing director / CMO), and the accessibility compliance lane as a parallel invite segment (public-facing firms with deadline pressure). Always say which lever is theirs vs ours. Do not invent a contact headcount.</li>
+<li>Check vs Call 1: Matches his Ideal golden filter, dual Meta + accessibility offers, title language, and “no owned quantified cold list” reality. No conflict with current word-of-mouth book — this is the missing outbound engine.</li>
+<li>Too small?: Unlikely once Canada/U.S. Ideal + accessibility compliance lanes are built with multi-title enrichment. Do not qualify out on “he has no list today” — that is current reach, not the honest TAM. Do not invent a precision number either — say not measured until the list pull.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): Clear dual lanes buyers already feel — Meta ads that are not converting the way they should, and accessibility / inclusive-design compliance with real regulatory deadlines. Concrete managed packages and a desired higher ticket (~$3,500 CAD/month, with conversation context of larger $5k / $10k engagements). Strong existing tech stack (CRM, email, AI agents, phone triage, custom Meta targeting) so QS can plug into what he already runs. Calendar-invite motion already personally converted him, so he believes the channel.</li>
+<li>What’s fuzzy or weak (closer must know): Entry $250×3-month LTV is thin (~$750) and undercuts the $3,500 package story — Call 2 must reinforce offer architecture so the webinar sells the high-ticket lane. Only ~3 managed-ads clients so far; offer is ~8 months old and word-of-mouth only. Agency revenue still ~$120–146k CAD, so QS engagement economics must clear against five-clients-per-quarter math without fairy tales. Current ICP is industry-agnostic — accessibility wedge helps, but Ideal still needs a tight first invite segment. Call 2 is verbal only; calendar not confirmed in GHL.</li>
+<li>Positioning line for the webinar if we pick today: How established small businesses stop wasting Meta ad spend (and scramble on accessibility deadlines) — and get a managed system that actually brings in leads without hiring a full in-house marketing team.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Business owners and marketing managers are already spending on Meta (or facing accessibility compliance pressure) and still are not getting predictable leads or a compliant, inclusive presence — so growth stalls while they wear the marketing hat themselves.</li>
+<li>Who we invite first then next: Ideal first (~$1.5–2M+ CAD, ~$5k+/mo ad spend, owner / marketing manager, Meta-ad-mature or accessibility-deadline buyers in Canada / East Coast) then then broadest honest TAM (Canada + U.S., multi-title marketing stack, wider established SMB + compliance segment). That invite order is OUR acquisition motion — not the webinar story.</li>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook then problem then proof (their method / results / proof) then offer (their product) then easy CTA (book with them) Hook on Meta spend that is not producing (or an accessibility deadline that is coming fast) then problem of DIY marketing / incomplete systems / compliance risk then proof via Virtually(Creative)’s managed Meta + chat automation and/or inclusive-design method and client results then offer the right managed package (aim the room at the ~$3,500 connected-services lane, not the $250 entry) then CTA to book a short fit call with Al’s team.</li>
+<li>Copy / talk-track beats (3–5): 1. “You are already spending on Meta — why are the leads still inconsistent?” 2. “What a managed Meta + DM automation system looks like when chat, ads, and follow-up finally talk to each other.” 3. “Accessibility is not a nice-to-have when public-facing compliance deadlines are on the calendar.” 4. “How a ~90-day managed engagement connects ads, content, and systems without you hiring a full marketing department.” 5. Soft CTA: book a short fit call with Virtually(Creative) — not a hard close on the webinar itself.</li>
+<li>Cadence: One topic first — either Meta-ad ROI for Ideal spenders or accessibility compliance for deadline-pressure buyers — to prove show then booked-call math; test; then segment the second lane once quality is stable. Do not mash five service lines into the first webinar. Do not tell THEIR audience a story about list building or calendar invites — that is how we fill the room, not what the webinar is about.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Felix Petzel — Panda Media — why it fits: he already ran a social-selling / lead-gen agency for a living, knew the tools and workflows, and still bought because he was missing a repeatable system — the exact “I already have CRM, AI agents, email, and phone triage” objection Al will raise on white-label / stack fit. Also the cleanest agency-operator parallel for moving upmarket on deal size once pipeline is full. When to pull it: Al asks how QS works with his existing stack, or wonders what an agency owner could still learn. Keep campaign totals light and conversational — lead with the expert-buys-it story, not a spreadsheet.</li>
+<li>Sheila Kloefkorn — KEO Marketing Inc — why it fits: marketing / fractional-CMO agency selling high-ticket monthly retainers to CEOs and owners via a cold calendar-invite webinar motion — the closest “agency scaling high-ticket packages” proof for Al’s five × ~$3,500/mo goal. When to pull it: offer-architecture talk ($250 entry vs $3,500 target) or “will CEOs / owners actually show for a marketing webinar?” Safe to cite tracked multi-run conversion shape at a high level (strong invite-to-registration and show rates across consecutive runs, with booked calls off the funnel) without dumping every metric.</li>
+<li>Jean Tang — MarketSmiths Content Strategists — why it fits: services / messaging agency selling to marketing buyers, with a cold-invite webinar motion that held strong show rates across consecutive events — proof the system works for an agency-style offer, not only coaches. When to pull it: industry-agnostic ICP anxiety, or “agencies can’t fill rooms from cold outreach.” Lead with the agency + marketing-buyer parallel; keep ROI claims qualitative unless you are working from verified event stats on the call.</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Al is founder, sales owner, and sole named decision maker on Call 1. He cares about (1) custom demo math across the four funnel phases, (2) financial model / when investment returns against five $3.5k/mo clients per quarter, (3) white-label fit with his existing AI/CRM/email/phone stack, and (4) case-study diligence (Dana if available). No co-signer named — do not invent one.</li>
+<li>Landmines from Call 1: Confirm the Tuesday 12:00 Eastern hold in GHL — Call 2 is still verbal only. Do not pitch ripping out his stack; sell using what he already has. Do not let the webinar or offer story center on the $250 entry package — reinforce the ~$3,500 connected-services architecture. Frame QS economics carefully against ~$120–146k CAD agency revenue; tie projections to his five-per-quarter goal. Accessibility outreach must stay credible and sensitive — he flagged reputation risk. Bring or send case studies (try Dana) before or on the call; he is reviewing Scott / Lloyd / Alex / Doug / Daniel and proof materials. Flip Call 1 GHL show status yourself if still sitting on confirmed — Wingman will not auto-flip.</li>
+</ul>
+
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Ajay Bam · Call 2 · 4:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+
+<p><b>Ajay Bam · Vyrill Inc · Call 2 · Tue Sep 15 · 4:00pm CT · Armando</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Aug 19 Call 1 with Armando (Fireflies 01M09D3AQEF9Z2G28N4FHVBSQQ). Vyrill (video commerce / in-video search — Call 1 tape also said “Varo”; confirm live brand name) makes ecommerce video searchable and personalized across YouTube / Instagram / TikTok. ~200 customers / ~165 paying, mostly Shopify D2C and TikTok merchants; ~$255k revenue on tape; 100 new customers in prior four months. Shifting toward mid-market enterprises with $50M+ revenue and big video libraries. Three GTM lanes: agency partnerships, TikTok app-store organic, LinkedIn outbound (~2–3 meetings/week). Raising $3M seed (target close late Sep) to hire two AEs + CS. Armando declared webinar-system fit; Ajay budgeted ~$50k for a six-month program post-funding and booked a Custom Demo (originally Sep 14 SF then now Sep 15 CT calendar).</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Founder-operator energy — personally running sales, CS, and product support; clear that sales capacity is the bottleneck more than product. Open to webinars as education for a new category.</li>
+<li>Goals they want but can’t hit yet: ~$1M ARR by year-end; then ~$8–9M next year and a longer path toward ~$30–40M / acquisition interest; hire AEs after seed closes; compress long enterprise cycles ($500k–$10M deals, 6–8 touchpoints).</li>
+<li>Why hitting the goal matters to them personally / for the company: Seed close funds the team that can actually run pipeline; without capacity he stays stuck in back-to-back customer meetings and cannot scale outbound or enterprise.</li>
+<li>What’s holding them back: One-person sales load; LinkedIn agency mixed results; enterprise multi-stakeholder cycles; category education gap (AI video commerce still new).</li>
+<li>Consequences if nothing changes: Misses $1M ARR timing, stays founder-bottlenecked, and cannot capitalize on TikTok-driven video commerce shift while competitors stay simpler.</li>
+<li>Fears that will show up in the decision: Spending ~$50k before seed cash is real; whether webinars work for mid-market / enterprise video buyers; time cost before automation kicks in.</li>
+<li>Objections still open: Budget gated on seed close (~late Sep); pricing / package scope not locked on a signed sheet; enterprise vs Shopify mix for first webinar lane; capacity to handle a surge of booked calls.</li>
+<li>Who’s joining Call 2: Ajay expected (CEO / co-founder). Confirm if co-founder Barbara or finance joins.</li>
+<li>What we promised to walk: Custom webinar demonstration + proposal — lead volume, campaign structure, webinar build, conversions, tech stack costs, pricing; share Cinnamon Consulting style proof.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Ajay Bam — CEO &amp; co-founder, Vyrill Inc (San Francisco; SkyDeck roots). Platform: in-video search, moderation (~20 dimensions), personalization, SEO / buy-now publishing for ecommerce brands. Buyers today = Shopify / TikTok merchants; Ideal shift = mid-market enterprises with large video libraries ($50M+ revenue). Problem for buyers = most video is not searchable or optimized, so brands lose engagement and conversion.</li>
+<li>Company goals / dream state (from Call 1): $1M ARR YE; seed $3M close; hire 2 AEs + CS; move upmarket; long-term $8–9M then $30–40M path.</li>
+<li>ICP dream state (what THEIR buyers want): Ecommerce / retail teams want video that can be searched, moderated, personalized, and turned into revenue — without leaking brand data or drowning in unsearchable content.</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<p>Funding gate is real — do not push e-sign before he can fund ~$50k. First webinar lane must choose Shopify/TikTok volume vs mid-market enterprise education (do not mash). Confirm product brand naming (Vyrill vs any “Varo” label on tape) so invites and webinar creative stay clean. Agency partnerships with large ARR potential are live — webinars should feed the same enterprise motion, not fight it.</p>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): Geo = US-first (confirm international later) · Vertical = ecommerce / retail / brands with serious video libraries · Company type/size = Ideal mid-market $50M+ revenue with multi-channel video; secondary = Shopify D2C / TikTok merchants already converting · Buyer titles = ecommerce / digital / growth / marketing leaders who own video and conversion · Who we exclude = brands with almost no video; tiny hobby shops; pure developer API tire-kickers if they will not buy the product.</li>
+<li>Ideal ICP (tight — who they said they want most): Mid-market enterprises ~$50M+ revenue with large video libraries and conversion pressure — decision makers in ecommerce / digital / growth. Exact people count not measured on Call 1 — do not invent a headcount.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): US ecommerce / retail decision makers at brands that already publish video across web + social — including capable Shopify / TikTok merchants — still exclude no-video junk. Exact count after expansion not measured yet.</li>
+<li>How we got the number: Call 1 gave verticals, size bands, customer mix (~165 paying), and enterprise direction. No full people count yet — companies then roles then contacts on the demo.</li>
+<li>What we widened (if thin): Multi-title on the brand side; adjacent retail verticals with video-heavy catalogs; keep Shopify lane as volume proof while Ideal stays mid-market. Always say “they said” (mid-market $50M+) vs “we added” (broader ecommerce video publishers).</li>
+<li>Check vs Call 1: Matches upmarket shift, video-search offer, and education-heavy category.</li>
+<li>Too small?: Unlikely once US ecommerce video decision makers are counted honestly. Do not qualify out on current 165 customers — that is today’s book, not the TAM.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): Clear “search inside your video” + moderation + ecommerce publish story; privacy / closed-box angle for bigger brands; TikTok timing.</li>
+<li>What’s fuzzy or weak (closer must know): Early revenue vs enterprise ACV story can confuse a room; seed-gated budget; long enterprise cycles still need sales capacity after webinars book meetings.</li>
+<li>Positioning line for the webinar if we pick today: How ecommerce brands stop losing revenue to unsearchable video — and turn existing YouTube / social footage into on-site conversion.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Brands pour money into video that shoppers and teams still cannot search, moderate, or turn into buyable moments.</li>
+<li>Who we invite first, then next: Ideal mid-market ecommerce / digital leaders first, then broader honest Shopify / video-publishing merchant titles once show-to-meeting math is real.</li>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook then problem then proof (their method / results / proof) then offer (their product) then easy CTA (book with them) Hook on video libraries that get views but not revenue then problem of unsearchable / unmoderated content then proof via Vyrill’s in-video search + moderation + publish then offer a platform walkthrough then CTA to book with Ajay’s team.</li>
+<li>Copy / talk-track beats (3–5): 1. “You already have the footage — you still cannot google inside it.” 2. “What 20-dimension moderation means for brand safety without killing conversion.” 3. “From TikTok / YouTube to on-site buy-now without rebuilding your stack.” 4. Soft CTA: book a short Vyrill fit call — not a hard enterprise procurement dump.</li>
+<li>Cadence: One Ideal mid-market topic to prove education then meetings; keep a separate merchant topic only if Ideal lane is thin.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Jonathan Duarte — GoHire — why it fits: bootstrapped SaaS using webinars as the outbound demand engine; proof volume can scale. When to pull it: “we’re a software company, not a coaching brand.”</li>
+<li>Gene Rosendale — Advocate Advisors — why it fits: burned by prior agencies / outbound with little to show. When to pull it: LinkedIn agency fatigue.</li>
+<li>Tejas — high-ticket B2B — why it fits: multi-stakeholder, longer cycles, education before buy. When to pull it: enterprise $500k+ path. Tell full stories (name + company + numbers when allowed) — never name-only.</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Ajay signs commercially; seed investors / co-founder may influence timing. He cares about pipeline quality for mid-market, founder time back, and not writing a check before seed cash.</li>
+<li>Landmines from Call 1: Do not force start before funding close. Do not mash Shopify merchants and Walmart-scale enterprise into one first webinar. Do not invent ARR beyond what he said. Confirm product brand naming before creative goes out.</li>
+</ul>
+
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
