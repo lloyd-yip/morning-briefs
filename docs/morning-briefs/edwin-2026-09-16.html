@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Wednesday Sep 16, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Wednesday Sep 16, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>6:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/6k5n3PtwPA4IJpodNsVP">Christian Rosenfeld</a> · Call 1 · BrandLink</strong>
+      </div>
+      <div class="slot">
+        <strong>7:15 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/LOBqqp7ffeSQGDbx9BGA">Eddie Webb</a> · Call 1 · Rayz / Oh So Studio</strong>
+      </div>
+      <div class="slot">
+        <strong>8:30 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/vUtgA0bY1eyTScKzGshp">Amanda Forssberg</a> · Call 1 · Homepal</strong>
+      </div>
+      <div class="slot">
+        <strong>9:45 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/vHsFqDlPwj5sHpUo6tjg">Joseph Walker</a> · Call 1 · Joint Communication Solutions</strong>
+      </div>
+      <div class="slot">
+        <strong>11:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/6yxpOb2rWvYPFzJM4HLG">Josh Hill</a> · Call 1 · The Agency (Orlando)</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Christian Rosenfeld · Call 1 · 6:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+
+<p><b>Christian Rosenfeld · BrandLink · Call 1 · Wed Sep 16 · 6:00am ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Christian Rosenfeld — Country Manager Spain at BrandLink (Madrid).</li>
+<li>Public LinkedIn: ~25 years in FMCG / CPG marketing; recently Marketing Director Southern Europe at Hero Group (Spain, Italy, France, Portugal). Earlier stops include Mondelez, P&amp;G, J&amp;J, Kimberly-Clark / Huggies LatAm.</li>
+<li>Industrial engineering + marketing master’s (Universidad Simón Bolívar); Executive MBA (ESIC). Frames himself as branding / innovation advocate and fractional CMO–CGO.</li>
+<li>Spain phone +34663674022 · christian.rosenfeld@brandlink.pro · timezone Europe/Amsterdam on the contact. GHL: webinar-registered · webinar-attended · Vera booking · sales call booked.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>BrandLink (brandlink.pro) — “direct to consumers” shopper-marketing platform: shoppers scan receipts and get cashback / rewards; brands get first-party purchase data and promo mechanics.</li>
+<li>HQ Ljubljana, Slovenia (founded ~2018); public LinkedIn size ~10–20 people across multiple countries. Spain presence tied to Christian’s country role.</li>
+<li>Public offer: fixed / cumulative cashback, chain-specific promos, sampling; fee framed as a percent of registered purchases (site claims ~3%). Partners listed on the site are CPG / retail brands.</li>
+<li>Advertising / shopper-marketing services firm with a productized platform — not a coaching practice.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>FMCG / CPG brands and agencies that want shopper promotions, loyalty, and first-party purchase data across retail (online and offline).</li>
+<li>Retail / shopper-marketing buyers who care about cashback, sampling, and receipt-level engagement — not consumer end-users on this call.</li>
+<li>Spain / Southern Europe expansion is the live lane for Christian’s role.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Brands waste promo budget on campaigns that do not prove real purchases or build a reusable shopper list.</li>
+<li>DTC sites and one-off landing pages burn money without durable first-party purchase data; BrandLink pitches receipt-scan rewards so brands can talk to real buyers and retarget.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>Webinar-registered and webinar-attended — he already sat the QS story; Call 1 is fit + ICP, not a re-pitch of the webinar.</li>
+<li>Country Manager for Spain at a multi-country platform (not the founder HQ seat) — confirm whether he is buying growth for BrandLink Spain / his book, or exploring fractional / adjacent options.</li>
+<li>Deep CPG / Hero Group background + ShopTalk / Best!N Food jury posts — he thinks like a brand marketer; keep the conversation in shopper / retail-media language, not generic “leads.”</li>
+</ul>
+
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Eddie Webb · Call 1 · 7:15 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+
+<p><b>Eddie Webb · Rayz / Oh So Studio · Call 1 · Wed Sep 16 · 7:15am ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Eddie Webb — Design Director / founder behind Rayz Agency (also still branded Oh So Studio on LinkedIn and client posts).</li>
+<li>Based South London / UK. Email eddie@rayz.agency · +44 7870 373856 · timezone Europe/London.</li>
+<li>Public story: ~12–15 years design (London agencies + enterprise brands), then built his own studio; LinkedIn posts still use “Oh So Studio” for client work while rayz.agency is the live commercial site.</li>
+<li>GHL: webinar-auto-registered · webinar-attended · sales call booked · Apollo / Clay enrichment tags · graphic design on enrichment fields.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Rayz (rayz.agency) — strategic websites and brand work for service businesses and startups. Public line: “websites that pay for themselves.”</li>
+<li>Sister / prior brand Oh So Studio — London branding, naming, identity, and web for startups (ohso.studio still referenced on LinkedIn).</li>
+<li>Public offer mix: website design/build, 3-week brand sprints, hosting/maintenance, SEO, audits. Site claims he designs and builds himself (senior designers + AI-assisted build), not an offshore factory.</li>
+<li>Small studio (LinkedIn ~1–10). Public case claims include clients raising capital, multi-continent launches, and strong project ROI — treat as marketing claims until he confirms live.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Seed to Series A founders and service businesses that need brand + website that wins clients (B2B tech, AI, fintech, wellness called out on LinkedIn).</li>
+<li>Legal / professional services and enterprise-adjacent buyers from his agency past — people who buy design that converts, not decoration.</li>
+<li>Location: UK core with US / Europe / Australia / UAE called out on the site.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Founders and service firms show up to pitches and sales calls with a brand/site that looks pre-product — agencies want six months and a blank cheque; freelancers are inconsistent.</li>
+<li>Sites built for “looks nice” fail twice: at launch (wrong story) and six months later (nobody maintains them). Rayz pitches strategy-first builds plus fast post-launch changes.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>Dual brand (Rayz + Oh So Studio) — confirm which name he is growing and whether the offer is brand sprints, websites, or both.</li>
+<li>Webinar-attended + sales call booked from auto-reg path — he already heard the QS system; discover lead sources and capacity today.</li>
+<li>Solo / tiny team delivering senior work — growth pain is often top-of-funnel consistency vs delivery hours; confirm which constraint is real before you map TAM.</li>
+</ul>
+
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Amanda Forssberg · Call 1 · 8:30 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+
+<p><b>Amanda Forssberg · Homepal · Call 1 · Wed Sep 16 · 8:30am ET · Edwin</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Amanda Forssberg — CMO at Homepal (Homepal AB), Malmö / Skåne, Sweden.</li>
+<li>Public LinkedIn About: communication strategist, “former elite athlete, current growth enthusiast,” Ivy League / Columbia Business Management (summa cum laude, 4.0 GPA), Lund University strategic communication background.</li>
+<li>Earlier: Urban Watch Magazine, IKEA sales, BBDO Nordics internship. Email amanda@homepal.se · +46 70 788 04 34 · timezone Europe/Stockholm (GHL country code shows EE — confirm live).</li>
+<li>GHL: webinar-registered · webinar-attended · Vera booking · sales call booked · registered same day as booking (2026-09-15).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Homepal (homepal.se) — Swedish proptech / real-estate analytics. Public pitch: help property companies raise operating net with faster, clearer decisions from standardized metrics and dashboards.</li>
+<li>Not a giant IT rip-and-replace: positioned as an add-on that connects existing data so teams see vacancies, rent loss, work orders, energy, and operating net in one place.</li>
+<li>Public size ~10–20 people; founded ~2019; small disclosed funding band. Customers named on site include Swedish housing companies (e.g. Stockholmshem, Mimer, Uddevallahem) with large SEK savings claims.</li>
+<li>B2B SaaS for the real-estate industry — not a coaching or agency shop.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Nordic / Swedish real-estate companies and housing companies (public and private) that own or manage large portfolios.</li>
+<li>Buyers: property managers, letting / customer chiefs, IT / digitalization leads, and executives who own operating net, vacancies, and rent loss.</li>
+<li>Industry peers who already care about data-driven operations — not consumer homebuyers.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Real-estate teams drown in fragmented systems and slow reporting while vacancies, rent loss, and costs move fast.</li>
+<li>Homepal turns portfolio data into shared metrics and “what should I do next” dashboards so leaders can cut waste and protect net operating income without a multi-year system rewrite.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>CMO seat at a funded proptech — confirm she is buying growth for Homepal (pipeline / webinars / list) vs a side project.</li>
+<li>Same-day webinar register + attend + book (Sep 15) — high intent signal; Call 1 is fit and ICP, not education.</li>
+<li>Sweden / Nordics buyer base — location and language of their market matter; keep Ideal ICP tight to property companies before any broad expansion talk.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Calls herself a former elite athlete and “current growth enthusiast” on her LinkedIn About — light human opener if it fits naturally. (her LinkedIn About)</li>
+<li>Columbia Business Management, graduated summa cum laude with a 4.0 — she is proud of the academic grind if you want a warm, non-sales beat. (her LinkedIn education)</li>
+</ul>
+
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Joseph Walker · Call 1 · 9:45 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+
+<p><b>Joseph Walker · Joint Communication Solutions · Call 1 · Wed Sep 16 · 9:45am ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Joseph Walker (Jr.) — CEO / President of Joint Communications Solutions Group, LLC (JCSG). Calendar title is Joseph; CRM firstName may still show stale “There” — use Joseph on the call.</li>
+<li>Email joseph@jcsgllc.com · +1 706-267-9310 · US / America/New_York on the contact. Augusta / Columbus, Georgia footprint.</li>
+<li>Public LinkedIn: CEO since ~2020. SAM / public filings list him as CEO/President of the SDVOSB entity.</li>
+<li>GHL: webinar-auto-registered · webinar-attended · sales call booked.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Joint Communications Solutions Group (jcsgllc.com) — Service-Disabled Veteran-Owned Small Business focused on surveillance cameras, optical surveillance install/train/sustain, and related security / C4ISR technical services.</li>
+<li>Public materials: Columbus, GA HQ (“Home of the Infantry”) with Augusta presence; small team (LinkedIn ~3). Founded ~2015. NAICS centered on security systems services.</li>
+<li>Offer mix from public pages: design, install, monitor, repair, train, and maintain surveillance / force-protection systems for government, military, and commercial clients; also product procurement for related gear.</li>
+<li>Technical services / contracting firm — not a software SaaS or coaching brand.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Federal, military, and commercial buyers who need persistent surveillance, camera systems, training, and sustainment.</li>
+<li>Contracting / facilities / security stakeholders who buy install + training + maintenance — not consumer home-security DIY.</li>
+<li>Georgia / US government and commercial security buyers in their SAM / SBA lane.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Missions and facilities that need camera and force-protection systems installed, trained, and kept alive — not a one-time hardware drop.</li>
+<li>Buyers who want veteran operators with infantry / Ranger / Special Forces training backgrounds to stand up and sustain surveillance systems correctly.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>SDVOSB + government/military lane — growth motion may be contracting, referrals, and relationship selling more than classic B2B webinars; confirm how deals start today.</li>
+<li>Webinar-attended after auto-reg — he sat the QS story; discover whether he wants more commercial pipeline, federal pipeline, or both.</li>
+<li>Very small team — capacity vs top-of-funnel will matter; pin which constraint is real before you talk list size.</li>
+</ul>
+
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Josh Hill · Call 1 · 11:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+
+<p><b>Josh Hill · The Agency Orlando · Call 1 · Wed Sep 16 · 11:00am ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Josh Hill (Joshua K. Hill) — Founding Partner / Managing Director at The Agency Orlando; also Managing Partner on The Agency Tampa Bay launch with Brian Hyser.</li>
+<li>License SL3583116 (Florida). Email josh.hill@theagencyre.com · +1 937-594-2225 · Orlando / Winter Park (1007 Lewis Dr Ste 100). GHL city Orlando, FL.</li>
+<li>Originally Columbus, Ohio; Strategic Communication degree from The Ohio State University; prior corporate retail leadership before real estate.</li>
+<li>Public accolades on his bio: YPN “20 Under 40” and “Best of Zillow.” GHL: webinar-auto-registered · webinar-attended · sales call booked · Clay phone enrichment.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>The Agency Orlando (theagencyorlando.com) — local office of The Agency (theagencyre.com), a global boutique luxury real-estate brokerage founded in Beverly Hills.</li>
+<li>Josh’s public focus: Downtown Orlando and surrounding neighborhoods; buy / sell / invest residential. Office also tied to Tampa Bay expansion (ninth Florida office per Agency press, Apr 2026).</li>
+<li>Model: brokerage / agent network under The Agency brand — not a software product. Growth levers are agent recruitment, listings, and buyer/seller pipeline.</li>
+<li>Contact website field points at theagencyorlando.com.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Home buyers, sellers, and investors in Orlando / Central Florida (and now Tampa Bay expansion buyers).</li>
+<li>Agents and partners who want to hang with a luxury boutique brand rather than a volume discount shop.</li>
+<li>Out-of-state buyers relocating to Florida — called out in Tampa Bay launch quotes.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Buyers and sellers who want a high-touch local expert with neighborhood knowledge, network (inspectors, lenders), and a premium brand — not a transactional listing mill.</li>
+<li>For the brokerage: how to keep listings and agent growth compounding across Orlando and the new Tampa Bay market.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>Founding Partner + Tampa Bay expansion — growth story is brokerage / market expansion, not a solo agent grind; confirm which number he cares about (listings, agents, GCI, Tampa ramp).</li>
+<li>Webinar-attended + auto-reg path — he already heard QS; Call 1 is ICP of who they invite (buyers? sellers? agent recruits?) and whether a webinar engine fits real estate compliance/culture.</li>
+<li>Dual market (Orlando + Tampa Bay) — Ideal ICP may need to be one market first; do not squash both into one vague Florida list.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Volunteers monthly with Ronald McDonald House Charities of Central Florida — easy, human opener. (his The Agency Orlando agent bio)</li>
+<li>Off the clock: staying active, trying new restaurants, and time outdoors with family and friends. (same Agency Orlando bio)</li>
+<li>Ohio State Strategic Communication alum, originally from Columbus, Ohio — light Buckeye / Midwest beat if it fits. (same bio)</li>
+</ul>
+
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
