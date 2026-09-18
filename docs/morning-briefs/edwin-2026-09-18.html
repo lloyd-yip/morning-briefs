@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Friday Sep 18, 2026</title>
+<style>
+
+
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Friday Sep 18, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>5:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/39ExMzNGrL9dgoWpcrGX">Adar Cohen</a> · Call 1 · UBIO</strong>
+      </div>
+      <div class="slot">
+        <strong>7:30 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/SNZTdmMPwHwg4EyrYLkv">Mauricio Kigiela</a> · Call 1 · DocSales</strong>
+      </div>
+      <div class="slot">
+        <strong>9:30 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/gDOmtZGmNUYGuSBDME0X">Fabio D&#x27;Agostino</a> · Call 1 · CharaBio</strong>
+      </div>
+      <div class="slot">
+        <strong>11:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/nQiCAcrz8fVYmViRnI2X">Scott Curtis</a> · Call 1 · FCBB Charlotte</strong>
+      </div>
+      <div class="slot">
+        <strong>1:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/zIU9VsHTlI6u4K3lojYs">Dean Sorensen</a> · Call 2 · IBP Collaborative</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Adar Cohen · Call 1 · 5:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Adar Cohen · UBIO · Call 1 · Fri Sep 18, 2026 5:00 AM ET · Edwin Chung</b></p>
+<h3>Who he is</h3>
+<ul><li>Adar Cohen is Chief Commercial Officer (also framed as CCO / CRO) at UBIO, based in Greater London, United Kingdom.</li><li>Public LinkedIn: commercial growth, customer success, AI and automation strategy. Prior path includes SVP / VP Customer Success at UBIO and enterprise Client Director at Gelato.</li><li>Email adar@ubio.ai · phone +44 7739 425464 · timezone Europe/London.</li><li>GHL tags: webinar-auto-registered · webinar-attended · sales call booked. Booking deal-size band shows 25-50K (soft signal only).</li></ul>
+<h3>The business</h3>
+<ul><li>UBIO (ub.io / ubio.ai) builds an “execution layer” so AI and enterprise apps can act on live websites that have no usable API — extract data, run workflows, complete transactions.</li><li>Flagship vertical: Hotel Universe (live hotel rates, availability, content, booking workflows for travel / tech buyers). Horizontal platform: A3 agentic web automation + Automation Cloud runtime.</li><li>London-based tech company; LinkedIn company size ~50–60. Public story is production web automation for travel and beyond, not a coaching practice.</li></ul>
+<h3>Who they sell to</h3>
+<ul><li>Travel platforms, OTAs, metasearch, and data buyers who need live hotel content and bookable workflows.</li><li>AI platforms, enterprise product / data teams, and developers who need reliable access to websites beyond available APIs.</li><li>Buyers who care about production reliability at scale — not one-off scraping scripts.</li></ul>
+<h3>Problem they solve</h3>
+<ul><li>AI can reason, but most of the live web was built for a human with a browser, so acting on it (prices, bookings, forms) is brittle or expensive.</li><li>Manual Playwright-style scripts break when sites change; fully agentic runtimes get costly at volume.</li><li>UBIO’s pitch is a third way: AI builds and maintains the automation, then a managed runtime runs it predictably.</li></ul>
+<h3>What’s interesting for this call</h3>
+<ul><li>Webinar-attended — he already sat the QS story; Call 1 is fit + ICP, not a re-pitch.</li><li>He is commercial / CS leadership, not the founder-CEO (Marcus Greenwood) — confirm whether he owns growth budget or needs another decider.</li><li>Soft deal-size band 25–50K on the booking form — treat as a signal only; confirm real economics live.</li><li>London / Europe timezone on a 5:00 AM ET slot — early afternoon UK; keep energy tight.</li></ul>
+<h3>Rapport (personal)</h3>
+<ul><li>Public speaker at Job Boards Connect on AI innovation and automation for the jobs board vertical — easy opener if he mentions industry events. (Job Boards Connect speaker bio “Adar Cohen”)</li></ul>
+      </div>
+    </details>
+    <details class="pack">
+      <summary><span>Mauricio Kigiela · Call 1 · 7:30 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Mauricio Kigiela · DocSales · Call 1 · Fri Sep 18, 2026 7:30 AM ET · Edwin Chung</b></p>
+<h3>Who he is</h3>
+<ul><li>Mauricio Kigiela is Founder and CEO of DocSales. Public LinkedIn lists him as a serial Brazilian SaaS entrepreneur and angel investor.</li><li>Prior exits / ventures on his About: Site Blindado (acquired by B2W), Smartbill (merged / acquired path with Vindi), then Internet Intelligence venture builder before DocSales.</li><li>Email mauricio@docsales.com · phone +34 625 263 875 · timezone Europe/Madrid (GHL also shows Winter Park, FL enrichment — confirm live where he sits).</li><li>LinkedIn: linkedin.com/in/mauriciokigiela. GHL tags: webinar-registered · webinar-attended · sales call booked · vera (call for booking) · clay enrichment.</li></ul>
+<h3>The business</h3>
+<ul><li>DocSales (docsales.com) is a B2B SaaS that automates sales proposals, contracts, and e-sign from the CRM — “sales closing on autopilot.”</li><li>Public pitch: drag an opportunity to a new stage and DocSales prepares / sends the proposal or contract; built-in eSign can tie to payment.</li><li>GlobeNewswire (2022) framed a US expansion push after Brazilian roots. GHL enrichment band roughly $1M–$5M revenue / ~15–20 people — soft enrichment only; confirm live.</li></ul>
+<h3>Who they sell to</h3>
+<ul><li>B2B sales teams that generate lots of proposals and contracts from a CRM and hate manual document work.</li><li>Companies that want e-sign and proposal automation without bolting five tools together.</li><li>Buyers in SaaS / services / internet businesses who care about cycle time to signature.</li></ul>
+<h3>Problem they solve</h3>
+<ul><li>Sales closing slows when proposals and contracts are built by hand after every CRM stage move.</li><li>Teams lose deals to lag between “yes” and a signed document.</li><li>DocSales sells automated document generation + eSign so closing is less ops work.</li></ul>
+<h3>What’s interesting for this call</h3>
+<ul><li>Webinar-attended + Vera booking path — he already sat QS; Call 1 is fit + ICP.</li><li>Booking form deal-size band shows &lt;3K — treat as soft only; his public company story sounds larger; reconcile live.</li><li>Serial founder / US expansion narrative — pin whether growth pain is US pipeline, Brazil, or both before TAM talk.</li><li>Spain timezone (+ Madrid) on a 7:30 AM ET slot — mid-afternoon Europe; keep pace crisp.</li></ul>
+<h3>Rapport (personal)</h3>
+<ul><li>On the Outra Visão podcast he joked he is an “esqueleto perturbado,” started by teaching computer classes, and named the podcast “Outra Visão” for a longtime friend. (podcast Outra Visão, Mauricio Kigiela episode)</li></ul>
+      </div>
+    </details>
+    <details class="pack">
+      <summary><span>Fabio D&#x27;Agostino · Call 1 · 9:30 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Fabio D&#x27;Agostino · CharaBio · Call 1 · Fri Sep 18, 2026 9:30 AM ET · Edwin Chung</b></p>
+<h3>Who he is</h3>
+<ul><li>Dr. Fabio D&#x27;Agostino is CEO and Founder of CharaBio, a London-based life-science strategy / consulting firm.</li><li>Public bio: EngD in Biopharmaceutical Process Development (Newcastle University); ~15 years in cell and gene therapy strategy; prior work with Claris Ventures (€85M biotech VC) and PDA Cell and Gene Task Force (Technical Report 81).</li><li>Email fabiodag@charabio.com · phone +44 7428 489608 · timezone Europe/London · LinkedIn linkedin.com/in/drfabiodagostino.</li><li>GHL tags: webinar-registered · webinar-attended · sales call booked · apollo-data · vera (call for booking). Deal-size band 3–10K (soft).</li></ul>
+<h3>The business</h3>
+<ul><li>CharaBio (charabio.com) advises pharma, biotech, investors, and early-stage life-science founders on growth strategy, diligence, white-space mapping, and ecosystem / alliance building.</li><li>Public services: strategic white space / horizon mapping, multi-dimensional diligence, ecosystem building, biotech value creation. Tiny firm (LinkedIn ~1–10).</li><li>Model is consulting / advisory ecosystem — not a software product company.</li></ul>
+<h3>Who they sell to</h3>
+<ul><li>Pharma and biotech leadership teams evaluating growth, M&amp;A, or new modalities (esp. cell and gene).</li><li>VC / investor teams that need commercial diligence on life-science assets.</li><li>First-time biotech CEOs and scientist-founders who need an investable strategy.</li></ul>
+<h3>Problem they solve</h3>
+<ul><li>Life-science leaders face noisy science and markets and need clarity on what is worth pursuing.</li><li>Early founders struggle to turn science into a commercial, investable story.</li><li>CharaBio sells perspective + diligence so decisions are less “leap of faith.”</li></ul>
+<h3>What’s interesting for this call</h3>
+<ul><li>Webinar-attended — Call 1 is fit + ICP, not a re-pitch of the webinar.</li><li>Solo / tiny consulting practice in a specialized niche — growth pain is often lead flow vs delivery hours; pin which constraint is real.</li><li>Soft deal-size band 3–10K — confirm live economics and whether he sells project work or retainers.</li><li>London afternoon on a 9:30 AM ET slot.</li></ul>
+<h3>Rapport (personal)</h3>
+<ul><li>Italian-trained biomedical engineer (Polytechnic of Turin) who moved to Newcastle for his EngD — easy human opener on the UK path. (CharaBio About / Veritux consultant bio)</li></ul>
+      </div>
+    </details>
+    <details class="pack">
+      <summary><span>Scott Curtis · Call 1 · 11:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Scott Curtis · First Choice Business Brokers Charlotte · Call 1 · Fri Sep 18, 2026 11:00 AM ET · Edwin Chung</b></p>
+<h3>Who he is</h3>
+<ul><li>Scott Curtis is Broker / principal (public pages also say Vice President / principle broker) at First Choice Business Brokers Charlotte with his wife Christie.</li><li>Public bio: University of South Carolina (Economics &amp; Finance + Business Management) on a football scholarship; prior owned a commercial construction subcontracting company, a multi-office tax franchise, and an Area Developer franchise.</li><li>Email scott@fcbb.com · phone +1 704-649-8068 · timezone America/New_York · LinkedIn linkedin.com/in/scott-curtis-5777021a9.</li><li>GHL tags: webinar-registered · webinar-attended · sales call booked · vera (call for booking) · prospect-replied-to-booked-call-reminder. Deal-size band 25–50K (soft).</li></ul>
+<h3>The business</h3>
+<ul><li>First Choice Business Brokers Charlotte (fcbb.com / charlottencbusinessforsale.com) helps owners sell Main Street and mid-market businesses and helps buyers find them.</li><li>National FCBB network story: large US business-sales organization; Charlotte office at 301 McCullough Drive #400.</li><li>Model: brokerage / intermediary — paid on successful transactions; public note that they do not charge upfront fees.</li></ul>
+<h3>Who they sell to</h3>
+<ul><li>Business owners in the Charlotte metro who want a confidential path to sell.</li><li>Buyers looking for Main Street / mid-market acquisitions in the Carolinas.</li><li>Franchise and service businesses (public sold-listing examples include senior care placement and similar).</li></ul>
+<h3>Problem they solve</h3>
+<ul><li>Owners do not know how to price, find, and close a buyer without wrecking confidentiality.</li><li>Buyers struggle to find real opportunities and trust the process.</li><li>Scott’s shop sells clarity + process so both sides reach a win-win close.</li></ul>
+<h3>What’s interesting for this call</h3>
+<ul><li>Webinar-attended + he replied to a booked-call reminder — warm intent signal.</li><li>Same FCBB brand family as Dan Ober (Myrtle Beach) — useful context only; do not assume they know each other or share ops.</li><li>Soft deal-size band 25–50K — confirm whether that is brokerage revenue, personal GCI, or aspiration.</li><li>Charlotte / ET morning slot — local time friendly.</li></ul>
+<h3>Rapport (personal)</h3>
+<ul><li>Played college football at South Carolina on scholarship before the brokerage path — light, say-out-loud personal hook. (BizBuySell / BizQuest broker bio for Scott Curtis)</li></ul>
+      </div>
+    </details>
+    <details class="pack">
+      <summary><span>Dean Sorensen · Call 2 · 1:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Dean Sorensen · IBP Collaborative · Call 2 · Fri Sep 18, 2026 · 1:00 PM Eastern · Edwin Chung · 3–4 partners joining (provisional; rearrangements OK if partners need a move)</b></p>
+<h3>From Call 1</h3>
+<ul><li>Where they are / what stuck: Dean (Seattle suburb; originally Toronto / Scarborough) is packaging a management-systems / economic-modeling offer for complex manufacturers with a partner consortium (~100 partners; ~2,000–3,000 associated people). Personal practice today is part-time, referral-fed (~$50k–$100k deals; 2–4 when someone calls; ~100% convert). The new venture is early-stage packaging: methodology + tech plug-ins (prescriptive analytics + traditional financial tooling) sold as a McKinsey-style market offering so CEOs stop approving plans on a “leap of faith.” Website is outdated and does not represent the group. Partner webinars exist (~20–30 signups, weak conversion, unstructured list). Edwin called webinar-system fit. Soft yes to provisional Call 2 with partners; Dean asked for economics in the follow-up email — not quoted on Call 1.</li><li>Emotional state / urgency (from Call 1 — required):</li></ul>
+<p>- How they feel: Warm, verbose, teacherly — drove a long screen-share of the offer and market. Not desperate for cash (comfortable with part-time referral work) but clearly energized by the consortium offering and first-to-market ambition. Repeatedly complimented QS (“incredibly impressive,” “impressed the hell out of me”) and treated Edwin as a peer who “gets” the education hook. Collaborative and careful: pushed for a clear Call 2 agenda so nobody wastes time, and insisted partners who can answer consortium questions join next.</p>
+<p>- Goals they want but can’t hit yet: Get ducks in a row with colleagues, lock ICP in writing, start rolling webinars (and possibly CEO roundtables of 5–10), and see what can get done before year-end — measuring in months, not next year / not six months out. Longer arc: become the recognized management-system expert (Siebel / CRM analogy), act as marketing / closer while partners deliver methodology and tech, and scale toward a company bigger than ~$100M/year within about 2–5 years.</p>
+<p>- Why hitting the goal matters to them personally / for the company: First-to-market positioning as the management-system experts in this niche; monetary and non-monetary (“fed up” with vendors selling broken planning / AI-on-broken-models); partners are “dying to get it done tomorrow.”</p>
+<p>- What’s holding them back: Brand-new venture packaging; offer still being fine-tuned with partners; almost no serious outbound (light LinkedIn only — ~20–30 conversations); partner webinars unstructured; hard to break into new senior relationships at scale; when they do get a senior exec conversation, interest is high then they get stuck; Dean cannot brief partners until Monday (they were out of pocket this Call 1 week).</p>
+<p>- Consequences if nothing changes: Status quo for 12 months ≈ the same part-time referral practice; miss first-to-market expert positioning (he said they would not die if second/third, but lose the expert seat).</p>
+<p>- Fears that will show up in the decision: “Are we too early for quantumSCALE?” (he floated it; Edwin still advanced); multi-party buy-in — three or four partners must see fit and economics together; QS engagement economics unknown to partners (asked for numbers in email; deferred to Call 2); thin LinkedIn self-list (~300–500) may feel “too small” until expanded honestly on the demo.</p>
+<ul><li>Objections still open: Too-early / stage risk; QS price not quoted on Call 1 (economics on Call 2 after team assessment); multi-party decision (3–4 partners); ICP confirmation still pending in writing from Dean’s side; website / past webinars do not match new positioning.</li><li>Who’s joining Call 2: Dean + three or four partners / colleagues who can answer consortium questions (names not locked on Call 1). Friday chosen because they are usually more flexible then. Dean will brief them starting Monday and confirm target audience in writing before the call.</li><li>What we promised to walk: Custom demo — how we get to their target audience, how we bring them onto a webinar, how they run the webinar, how we get buyers onto sales calls with them. Edwin: follow-up email with discovery questions, webinar link for partners to watch, due-diligence prep; economics covered on Call 2 (not quoted on Call 1). Dean: brief partners, confirm ICP in writing, bring the decision colleagues.</li></ul>
+<p><b>Who / Business / Buyers / Problem</b> (refresh only)</p>
+<ul><li>Who / business / who buys / problem: Dean · IBP Collaborative (new consortium packaging; personal brand / site outdated). Helps large complex manufacturers build real economic models of the business, then wraps a process so leaders continually optimize cash, profit, and free cash flow. Buyers = CEOs facing the “leap of faith” planning problem and “operationally” oriented CFOs (finance leaders with supply-chain, profitability-analytics, supply-chain finance, or FP&amp;A tool experience). Problem for buyers = siloed FP&amp;A / ops tools and AI on broken models, so they cannot answer whether the plan is optimized, hits free-cash-flow targets, and is executable.</li><li>Company goals / dream state (from Call 1): Roll webinars (and CEO roundtables) before year-end; become the go-to management-system expert; Dean as marketing / closer with partners delivering; scale the venture toward &gt;$100M/year in ~2–5 years; consulting value on the new offer framed ~$2–$10M over 2–5 years per engagement across the consortium.</li><li>ICP dream state (what THEIR buyers want): CEOs who want a single management system that answers “is this plan optimized, does it hit free cash flow, and is it executable?” before they approve — not another leap of faith. Operational CFOs who have already invested in planning tools and still cannot answer those questions want a breath-of-fresh-air partner who can show the economics of the business and a process that keeps optimizing.</li></ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<p>Multi-party room (3–4 partners) is the real gate — not a Dean-only soft close. QS price was never quoted on Call 1 and partners will ask; cover economics after strategy, not as the opener. Dean’s self-stated LinkedIn ICP (~300–500 operational CFOs) is thin if left alone — expand honestly on the demo (multi-title, CEO lane, adjacent complex-manufacturing verticals) without inventing a fake precision count. Early-stage packaging + outdated website are live optics: sell the system and offer sharpness, not the old site. Partner already runs weak unstructured webinars (~20–30 signups) — do not re-demo “what a webinar is”; show list → invite → show → booked-call math.</p>
+<p><b>Deep TAM</b> (required)</p>
+<ul><li>ICP parameters (plain English): Geo = theoretically global; practical focus U.S. / North America first · Vertical = complex manufacturers with common products/customers and volume/mix variability; dream lane food / packaged goods / CPG; stay away from project-oriented manufacturing (aerospace &amp; defense) · Company type/size = roughly $500M–$5B; dream client ~$2–$5B that already invested in planning tools and is stuck · Buyer titles = CEOs (leap-of-faith problem) and operationally oriented CFOs / finance leaders with supply-chain, profitability analytics, supply-chain finance, or FP&amp;A tool experience · Who we exclude = aerospace &amp; defense / one-customer project manufacturing; tiny / simple manufacturers without volume-mix complexity.</li><li>Ideal ICP (tight — who they said they want most): Operational CFOs (and finance leaders with the supply-chain / FP&amp;A pattern above) at ~$500M–$5B complex manufacturers — food / packaged goods / CPG dream first — U.S. / North America. Dean’s own LinkedIn self-count for that operational-CFO pattern: roughly <b>300–500</b> profiles. That is the Ideal lane he named, not the campaign ceiling.</li><li>Broadest honest TAM (largest possible still real — campaign headline): North American complex manufacturers in the mid-to-large band (roughly $500M–$5B, with honest adjacent size edges only if still complex volume/mix) across food/CPG <b>plus</b> other non-project manufacturing verticals that feel the same planning pain — decision makers stacked across CEO + operational CFO + VP Finance / FP&amp;A / supply-chain finance titles. Exact decision-maker headcount after expansion was <b>not measured on Call 1</b> — do not invent a fake number on the call; build companies → roles → contacts before quoting a campaign count. Directionally: Edwin already framed the addressable market as large on Call 1; Dean’s half-trillion “value thesis” is his market story, not a contact TAM.</li><li>How we got the number: Call 1 gave Ideal titles, size band, vertical preference, exclusions, and Dean’s LinkedIn self-estimate (300–500). No list pull / enrichment count yet. Path on Call 2: companies in band → relevant titles per company → contactable decision makers.</li><li>What we widened (if thin): <b>They said:</b> operational CFOs, CEOs as the problem owner, $500M–$5B, food/CPG dream, NA practical, exclude aerospace/defense. <b>We add for campaign honesty:</b> multi-title stack (CEO + CFO + VP Finance / FP&amp;A / supply-chain finance), adjacent complex manufacturing verticals beyond food/CPG that still have common products + volume/mix variability, Canada alongside U.S., and (only if still complex) modest size-band edges around $500M–$5B. Always say which lever is theirs vs ours. Do not count his half-trillion value thesis as a contact TAM.</li><li>Check vs Call 1: Matches Ideal (operational CFO pattern + CEO leap-of-faith), size band, food/CPG dream, aerospace/defense exclusion, NA first, and the thin 300–500 self-list that must be expanded for the demo.</li><li>Too small?: The <b>Ideal-only</b> 300–500 LinkedIn self-list is too thin if that is the whole campaign. After honest expansion (multi-title + CEO lane + adjacent complex mfg + NA), this should clear the ~30k qualify-out bar — <b>verify with a real list pull before quoting a hard campaign number</b>. Do not qualify out on Dean’s LinkedIn bookmark count alone; do not bluff a precise TAM either.</li></ul>
+<p><b>Offer / value-prop read</b> (required — honest)</p>
+<ul><li>What’s sharp (easy to invite on): Clear CEO “leap of faith” problem language; education-led sale (buyers feel the pain when shown); large deal economics on the new venture (~$2–$10M consulting value over 2–5 years across consortium; he also frames huge client-side value from prior work); Dean is a strong speaker / teacher; partners already want webinars and CEO roundtables; when he reaches the right CFO pattern, interest is near-universal (~99% of his light LinkedIn conversations agreed the problem is real).</li><li>What’s fuzzy or weak (closer must know): Early-stage venture packaging — offer still being fine-tuned; no firm IBP Collaborative run-rate stated; personal economics today are referral $50k–$100k, not the $2–$10M story yet; website outdated; partner webinars unstructured and weak; ICP confirmation still coming in writing; QS price unknown to the partner group; multi-party decision can stall even if Dean loves it.</li><li>Positioning line for the webinar if we pick today: How CEOs and operational CFOs at complex manufacturers stop approving plans on a leap of faith — and finally answer whether the plan is optimized, hits free cash flow, and is actually executable.</li></ul>
+<p><b>Webinar strategy</b> (required — keep OUR motion vs THEIR story separate)</p>
+<ul><li>Core problem lane (one, not five): CEOs approve plans without a single management system that proves the plan is optimized, hits free-cash-flow targets, and is executable — while vendors put AI on broken, siloed models.</li><li>Who we invite first → next: Ideal operational CFOs at food/CPG / complex manufacturers in the stated size band first → then broadest honest TAM (CEO + multi-title finance stack across adjacent complex manufacturing in NA). That invite order is OUR acquisition motion — not the webinar story.</li><li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop):</li></ul>
+<p>hook → problem → proof (their method / results / proof) → offer (their product) → easy CTA (book with them)</p>
+<p>Hook on the CEO leap of faith / “you still cannot answer questions 4 and 5” → problem of siloed FP&amp;A vs ops tools and AI on broken models → proof via economic modeling + wrapped process that finds cash/value fast → offer the consortium management-system engagement (methodology + tech plug-in) → CTA to book a working session with Dean / the partner team.</p>
+<ul><li>Copy / talk-track beats (3–5):</li></ul>
+<p>1. “You are being asked to approve a plan when you cannot answer: is it optimized, does it hit free cash flow, and is it executable?”</p>
+<p>2. “Your FP&amp;A stack and your ops stack still do not speak the same economic language.”</p>
+<p>3. “AI on a broken model is still a broken model.”</p>
+<p>4. “What an economic model of the business looks like when small volume/mix moves swing cash.”</p>
+<p>5. Soft CTA: book a short fit conversation with the IBP Collaborative team — not a hard close on the webinar itself.</p>
+<ul><li>Cadence: One leap-of-faith / economic-model topic aimed at Ideal operational CFOs first to prove show→meeting math before year-end; test; then segment CEO-roundtable or adjacent-vertical variants once conversion is real. Do not mash CEO roundtables into the first webinar as the primary motion — treat roundtables as a follow-on vehicle they already like.</li></ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul><li>Tejas Parkish — Akshar Business Group (Akshar Consulting) — why it fits: best answer when partners say “our buyers are CFOs / finance directors — too senior and too small a list for webinars; we’d rather have five real conversations than 500 junk leads.” Tejas sells high-ticket finance consulting to exactly that CFO / finance-director lane and raised the same objection himself. When to pull it: thin-list fear, senior-buyer skepticism, or “high-ticket B2B consulting won’t webinar.” Keep numbers conversational (his story is a handful of quality finance calls turning into high-ticket clients) — do not dump a spreadsheet.</li><li>Nick Uresin — Podcast Pros — why it fits: best answer to “are we too early?” and “how fast can this be live?” He went from sales call to a running webinar in about eight days and had qualified opportunities off webinar one — while already being a capable LinkedIn / Sales Navigator operator who still needed targeting and messaging strategy. When to pull it: early-stage packaging anxiety, partner impatience (“dying to get it done tomorrow”), or “we already know LinkedIn.” Do not use him as a revenue proof point.</li><li>Philipp Von Schulthess — Oxoia — why it fits: niche / technical / institutional buyers who “would never webinar,” plus the exact “referrals are real but not big enough to grow fast enough” line Dean is living (referral practice works; consortium scale does not). When to pull it: website/referral status quo, technical manufacturer buyers, or partner fear that senior ops/finance leaders will not sit on a webinar. Keep it qualitative — no clean campaign totals to quote.</li></ul>
+<h3>Decision / stakeholder map</h3>
+<ul><li>Who’s in the room / who signs / what each cares about: Dean (champion / likely marketing-closer seat; cares about professional reach to Ideal ICP, education hook, first-to-market). Three or four partners (delivery / tech / consortium economics — names TBD; care about whether this is the go-to-market engine, engagement economics, and whether ICP is locked). Sign path is shared — not a solo Dean close. Anyone who can answer consortium questions should be on the Zoom; do not settle for Dean-only if avoidable.</li><li>Landmines from Call 1: Do not invent or soft-quote a QS price Dean never heard — economics belong on Call 2 after strategy. Do not treat the outdated website as the offer. Do not leave the TAM at his 300–500 LinkedIn self-list — expand honestly and say what you widened. Do not dismiss “too early”; reframe with Nick + year-end urgency + partner hunger. Multi-party: align agenda so partners are not surprised. Partner’s weak ~20–30-signup webinars are scar tissue — show system math, not “try webinars harder.” Confirm Dean’s written ICP before over-building a wrong list. Keep Friday Sep 18 · 1:00 PM Eastern warm; rearrangements OK if partners need a move.</li></ul>
+      </div>
+    </details>
+
+    <p class="note">Closer-facing Morning Brief · quantumSCALE · Fri Sep 18, 2026</p>
+  </div>
+  <script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
