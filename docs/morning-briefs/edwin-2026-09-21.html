@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Monday Sep 21, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Monday Sep 21, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>8:30 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/vUtgA0bY1eyTScKzGshp">Amanda Forssberg</a> · Call 2 · Homepal</strong>
+      </div>
+      <div class="slot">
+        <strong>12:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/zIU9VsHTlI6u4K3lojYs">Dean Sorensen</a> · Call 2 · IBP Collaborative</strong>
+      </div>
+      <div class="slot">
+        <strong>2:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/q3YY74ZfzLnDVvrp5LPZ">Dallas Fontaine</a> · Call 4 · Scale Labs</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Amanda Forssberg · Call 2 · 8:30 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Amanda Forssberg · Homepal · Call 2 · Mon Sep 21, 2026 · 8:30 AM ET · Edwin Chung</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Amanda Forssberg (CMO, Homepal AB, southern Sweden near Denmark) joined Call 1 after the QS webinar. Homepal sells packaged business-intelligence / portfolio analytics for real-estate owners and operators, with newer AI analysis that surfaces which key figures need attention. Differentiation vs heavy Power BI / custom BI builds: faster packaged delivery, strong customer service, easy enough that “grandma could figure it out,” and an annual software fee instead of endless consulting hours. Company is about 10 people, founder-heavy; revenue around €1M (about the same in USD); ACV roughly €20k to ~€60–80k/year; sales cycles often ~6–9 months; close rate guessed ~15–20% of conversations. Sweden-only today. Expansion beyond Sweden framed as roughly a 2028 goal, not near-term — customer-service capacity is a real constraint. She already runs monthly webinars (about 30–120 signups, strong attendance) with some multi-touch deals, but inbound has slowed and webinar-to-deal attribution is fuzzy. Cold calling is still the main historical engine; cold email mostly supports phone. New head of sales joins in November; CEO has been running sales. Soft yes from Edwin on communicator fit + webinar proof + ACV floor. Soft interest from Amanda, gated on clarity, Sweden-first scope, and budget before she brings the CEO.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Warm, sharp, and transparent. Proud of the product and of webinar craft. Curious, not desperate — she said she was “still pretty unsure” and thought out loud on geo and price. Cautious about dragging a busy CEO onto Call 2 before the QS motion and budget are clear.</li>
+<li>Goals they want but can’t hit yet: A steadier inbound / webinar machine that runs with less manual lift so buyers come to them. Company language includes doubling and a ~20M Swedish-crown target framed as roughly doubling from this year’s base — she is unsure they are on track to double from last year’s ~€1M. Near-term: understand what QS actually looks like for Homepal, keep targeting Sweden-first, and see if budget fits before a multi-stakeholder call.</li>
+<li>Why hitting the goal matters to them personally / for the company: Personally she wants to own webinars and inbound without drowning in manual work. For the company: growth has been softer in 2025–2026 after a strong 2024; sales capacity rises in November and will starve without more qualified leads; marketing spend sits around ~5% of revenue (below Edwin’s ~15% benchmark).</li>
+<li>What’s holding them back: Solo marketing capacity (Amanda is the marketer). Inbound and lead flow softer than she wants while cycles stay long and multi-threaded. Cold-call lists in Sweden can exhaust. Content fatigue mid-stream on webinars; they are restarting with more in-house / AI-education angles. Not ready to put the CEO on Call 2 until motion and price are clearer.</li>
+<li>Consequences if nothing changes: Fewer closes even as the new head of sales arrives. Growth stays below the double-revenue ambition. Marketing stays under-invested relative to outbound grind. Sweden-only list risk gets worse as cold-call saturation bites.</li>
+<li>Fears that will show up in the decision: Budget / pricing vs her comfort band (she floated a max around ~€30k and preferred lower). Whether QS works for a Sweden-only, long-cycle BI / real-estate buyer. Whether she will be pressured into geo expansion before customer success can keep up. Bringing the CEO too early and wasting his time. Fuzzy webinar attribution making ROI hard to defend.</li>
+<li>Objections still open: Budget / pricing clarity before CEO joins. How QS works specifically for Sweden-only + long-cycle RE buyers. Not ready for CEO on this call yet. Geo expansion timing (~2028). Attribution of webinars to closed deals still fuzzy.</li>
+<li>Who’s joining Call 2: Amanda only expected. CEO involvement was recommended by Edwin but she is not ready; she may consult him after she sees motion and budget clarity. Do not assume a multi-stakeholder room.</li>
+<li>What we promised to walk: Custom demo — Sweden-first TAM and invite motion that fits her buyer and long cycle; how we would build on the webinar system she already runs (content + calendar invite + follow-up); rough engagement shape / budget band so she can decide when to bring the CEO. Edwin also offered verified SaaS / long-cycle B2B webinar case studies from the library (numbers only from that library). Follow-up email with agenda already drafted from Call 1.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Amanda · CMO at Homepal (homepal.se) · Malmö / Skåne, Sweden. Homepal is Swedish proptech / real-estate portfolio BI — an add-on that connects existing data so teams see vacancies, rent loss, work orders, energy, and operating net in one place, plus AI that flags which figures need attention. Buyers = people who own net operating revenue at larger property companies (CEO, CFO, operational / regional managers). Ideal size floor from Call 1 / tape: roughly companies managing at least ~70,000 sqm or ~2,000 apartments — tiny 3–5 building landlords are a poor fit. Problem for their buyers = fragmented systems, slow or untrusted data, unknown financial leakages, and delayed decisions while money leaks from the portfolio.</li>
+<li>Company goals / dream state (from Call 1): Grow Sweden first; roughly double toward a ~20M SEK-style target; build an inbound / webinar machine with less manual lift; use the November head-of-sales hire without starving the funnel. Expansion beyond Sweden is later (~2028 language), not the near-term bet.</li>
+<li>ICP dream state (what THEIR buyers want): Property leaders who want a clear picture of portfolio performance and where money is leaking — faster packaged BI they can actually use, not another multi-year Power BI consulting project — so they can protect and raise net operating income.</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<p>Sweden-only Ideal ICP is thin for a standard QS cold-webinar volume model — public research put serious Homepal-fit Swedish owners in the hundreds to low thousands of firms, and reachable CEO / CFO / ops contacts in the low thousands, well under the ~30k contact bar. Do not bluff a fat list. Call 2 is partly an honest volume / motion conversation, not a “launch Wingman tomorrow” pitch. Amanda already runs monthly webinars with real attendance — do not re-teach “what a webinar is”; show list, then invite, then show, then booked-call math on top of what she already does. CEO is not in the room; budget clarity (she floated ~€30k max comfort, preferred lower) is the gate to bringing him later. New head of sales in November creates a capacity clock — more conversations needed, or the hire underperforms.</p>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): Geo = Sweden only for near-term (Norway / Northern Europe researched; Poland looked at and rejected as too many tiny landlords; US / broader geo possible in product terms but expansion framed ~2028) · Vertical = real-estate property companies / housing companies (public and private) that own or manage portfolios · Company type/size = larger owners with enough buildings that Excel / light CRM is not enough; tape floor ~70,000 sqm or ~2,000 apartments · Buyer titles = CEO, CFO, and operational / regional managers who own a slice of net operating revenue · Who we exclude = tiny 3–5 building landlords; Poland-style fragmented micro ownership; any geo she has not green-lit for near-term go-to-market.</li>
+<li>Ideal ICP (tight — who they said they want most): Sweden-only larger property / housing companies at or above that portfolio floor, selling to CEO / CFO / ops leaders who own net operating revenue. Firm count in that serious Ideal lane is roughly hundreds to maybe ~1–2 thousand companies — not tens of thousands. Decision-maker contacts inside that Ideal lane land in the low thousands after normal enrichment, not a campaign-scale tens of thousands. We have not run a fresh Apollo / Deal Forge people count for this Call 2 — treat Ideal as thin and say so out loud.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Still Sweden-first unless she opens geo on the call. Honest wideners inside Sweden: multi-title stack (CEO + CFO + ops / regional / property managers who own operating net), modest mid-market stretch toward firms with enough employees / revenue to buy a €20–80k analytics product (not micro landlords), and public + private housing companies in the same pain. Even after those wideners, public estimates still land reachable contacts in the low thousands to maybe mid-thousands — still under the ~30k QS cold-webinar bar. Nordic / Northern Europe or US lists are not her near-term market unless she changes that live; if she softens, say “we added this” vs “you said this,” and still do not invent a precise campaign headcount without a real list pull.</li>
+<li>How we got the number: Call 1 gave Ideal titles, Sweden-first geo, portfolio floor, exclusions, ACV, and cycle. A separate public-directory volume check (not Apollo) for Sweden-only Homepal-fit owners put serious firms roughly in the 400–700 band Ideal, stretch mid-market still failing the 30k contact bar, and “blast every micro RE CEO” as both under bar and wrong buyers. Path on the demo: companies in band, then roles, then contactable decision makers — write it in words, never invent a fake precision count.</li>
+<li>What we widened (if thin): They said: Sweden only near-term; larger portfolio owners; CEO / CFO / ops who own net operating revenue; exclude tiny landlords; expansion ~2028. We add for campaign honesty only if still real: multi-title stack inside those firms, modest mid-market edges that can still pay €20–80k ACV, and (only if she opens it live) Nordic adjacent markets. Always say which lever is hers vs ours. Do not count all ~42k–122k Swedish “property companies on paper” as Homepal buyers — most are tiny.</li>
+<li>Check vs Call 1: Matches Sweden-first, Ideal titles, portfolio floor, tiny-landlord exclusion, ~2028 expansion language, and Edwin’s Call 1 flag that Sweden-only caps QS impact.</li>
+<li>Too small?: Yes for standard QS cold-webinar volume under Sweden-only Ideal / honest Sweden stretch. Ideal-only and even broadest honest Sweden still look well under ~30k reachable decision makers. Qualifying out of Wingman webinar volume is on the table unless she opens a much wider geo that still holds ACV-quality buyers — and even Nordics looked short in the public check. Use Call 2 to share that kindly, then decide motion (narrow ABM / warm webinar / polite no-fit) rather than promising a fat cold list.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): Clear buyer pain (portfolio money leaking; slow / untrusted data; Power BI consulting drag). Packaged, easy product story with AI analysis on top. Real webinar craft already in-house (monthly events, strong attendance). Healthy ACV (€20k–€60–80k) and communicator fit. Named public customers and savings stories on their site give her proof language for THEIR webinars. November sales-hire creates a timing hook for more qualified conversations.</li>
+<li>What’s fuzzy or weak (closer must know): Sweden-only TAM is too thin for standard QS webinar volume — this is the live landmine. She already webinars, so the gap is systemized list, then invite, then attributed pipeline, not “start webinars.” Budget comfort floated around ~€30k max (preferred lower) vs marketing at ~5% of ~€1M — economics must be honest before CEO joins. Long 6–9 month cycles and fuzzy webinar attribution make ROI storytelling harder. CEO not in the room. Geo expansion she does not want to own yet. Do not invent guarantees or a fake fat list.</li>
+<li>Positioning line for the webinar if we pick today: How property CEOs, CFOs, and ops leaders stop guessing where the portfolio is leaking money — and get a clear operating-net picture without a years-long Power BI build.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Property leaders cannot see where money is leaking across the portfolio fast enough — data is slow, untrusted, or trapped in heavy custom BI — so net operating income suffers while decisions wait.</li>
+<li>Who we invite first, then next: Ideal Sweden CEO / CFO / ops at larger portfolio owners first, then the broader honest Sweden multi-title / mid-market stretch if she still wants volume experiments. That invite order is OUR acquisition motion — not the webinar story. Do not invite micro landlords just to inflate a list.</li>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook then problem then proof (their method / results / proof) then offer (their product) then easy CTA (book with them) Hook on “you still cannot see where the portfolio is leaking this month” then problem of fragmented systems / slow reporting / Power BI consulting drag then proof via packaged Homepal dashboards + AI that flags which key figures need attention (use their Stockholmshem / Mimer / Uddevallahem-style proof language carefully) then offer a Homepal demo / fit conversation then CTA to book with Homepal sales — not a hard close on the webinar itself.</li>
+<li>Copy / talk-track beats (3–5): 1. “You own net operating revenue, but the numbers that matter are still late or scattered.” 2. “Custom Power BI projects eat months and hours — your team needs a picture they can trust this quarter.” 3. “AI that points to which key figures need attention, not another dashboard graveyard.” 4. “Built with Swedish property companies who already live vacancies, rent loss, work orders, and energy.” 5. Soft CTA: book a short Homepal working session — not “buy on the webinar.”</li>
+<li>Cadence: One AI / operating-net education topic aimed at Ideal Sweden buyers first, building on the in-house webinar restart she already wants. Test show-to-meeting math before inventing five topics. Segment later (public housing vs private owners, or ops vs CFO) only after conversion is real. Do not mash QS list/invite mechanics into THEIR story arc.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Philipp Von Schulthess — Oxoia — why it fits: closest analogue — technical building / real-estate-adjacent software sold to institutional and conservative buyers (municipalities, pension funds, facility managers) who “would never webinar.” Also the exact “referrals are real but not big enough to grow fast enough” line Amanda is living with inbound slowing and cold-call lists exhausting. When to pull it: niche/technical/institutional buyer fear, Sweden RE buyer skepticism, or “we already get some webinar attendance / referrals.” Keep it qualitative — no clean campaign totals to quote. Prospect link: https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</li>
+<li>Tejas Parkish — Akshar Business Group (Akshar Consulting) — why it fits: best answer when she says the Sweden list is too small and too senior, or that she would rather have a handful of real CFO / finance conversations than junk volume. Tejas sells high-ticket finance consulting to CFO / finance-director buyers and raised the same objection himself; a handful of quality calls turned into high-ticket clients. When to pull it: thin-list fear, senior-buyer skepticism, long-cycle high-ACV B2B. Keep numbers conversational — do not dump a spreadsheet. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+<li>Cedric Le Rouzo — Cinnamon Consulting — why it fits: software / SaaS story and the clearest “webinar economics” audible when she worries about marketing hours and cost per conversation while she is a one-person marketing team. Cedric’s lane is partner-led software growth; use him when the objection is “will this actually reduce grind / cost per sales conversation?” When to pull it: solo-marketer capacity, software-buyer doubt, or “we already try webinars but the economics are fuzzy.” Keep the tell light and half-offhand. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Amanda (CMO / champion — cares about inbound machine, webinar craft, Sweden-first fit, and not wasting the CEO’s time). CEO (not expected on this call — cares about budget, ROI, and growth vs capacity; she wants clarity before involving him). Incoming head of sales (November — not on Call 2; care later is qualified conversation volume). Sign path is not Amanda-solo forever — budget and CEO buy-in are later gates — but today’s job is Amanda clarity, not a hard close.</li>
+<li>Landmines from Call 1: Do not invent a fat Sweden list or soft-promise Wingman volume that the Ideal ICP cannot support — share the thin-TAM reality kindly. Do not quote a QS price she never locked; walk engagement shape / budget band honestly against her ~€30k comfort language and ~5% marketing spend. Do not re-demo basic webinars — she already runs them. Do not push US / Nordic expansion as the fix unless she opens it; she framed expansion ~2028 and CS capacity as constraints. Do not demand the CEO on this call. Do not invent guarantees or webinar-attributed revenue she did not claim. Keep Mon Sep 21 · 8:30 AM ET warm; if motion is no-fit for cold-webinar volume, leave her with a clear next step (narrow alternative or polite close-out) rather than a vague “think about it.”</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Dean Sorensen · Call 2 · 12:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Dean Sorensen · IBP Collaborative · Call 2 · Fri Sep 18, 2026 · 1:00 PM Eastern · Edwin Chung · 3–4 partners joining (provisional; rearrangements OK if partners need a move)</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Dean (Seattle suburb; originally Toronto / Scarborough) is packaging a management-systems / economic-modeling offer for complex manufacturers with a partner consortium (~100 partners; ~2,000–3,000 associated people). Personal practice today is part-time, referral-fed (~$50k–$100k deals; 2–4 when someone calls; ~100% convert). The new venture is early-stage packaging: methodology + tech plug-ins (prescriptive analytics + traditional financial tooling) sold as a McKinsey-style market offering so CEOs stop approving plans on a “leap of faith.” Website is outdated and does not represent the group. Partner webinars exist (~20–30 signups, weak conversion, unstructured list). Edwin called webinar-system fit. Soft yes to provisional Call 2 with partners; Dean asked for economics in the follow-up email — not quoted on Call 1.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Warm, verbose, teacherly — drove a long screen-share of the offer and market. Not desperate for cash (comfortable with part-time referral work) but clearly energized by the consortium offering and first-to-market ambition. Repeatedly complimented QS (“incredibly impressive,” “impressed the hell out of me”) and treated Edwin as a peer who “gets” the education hook. Collaborative and careful: pushed for a clear Call 2 agenda so nobody wastes time, and insisted partners who can answer consortium questions join next.</li>
+<li>Goals they want but can’t hit yet: Get ducks in a row with colleagues, lock ICP in writing, start rolling webinars (and possibly CEO roundtables of 5–10), and see what can get done before year-end — measuring in months, not next year / not six months out. Longer arc: become the recognized management-system expert (Siebel / CRM analogy), act as marketing / closer while partners deliver methodology and tech, and scale toward a company bigger than ~$100M/year within about 2–5 years.</li>
+<li>Why hitting the goal matters to them personally / for the company: First-to-market positioning as the management-system experts in this niche; monetary and non-monetary (“fed up” with vendors selling broken planning / AI-on-broken-models); partners are “dying to get it done tomorrow.”</li>
+<li>What’s holding them back: Brand-new venture packaging; offer still being fine-tuned with partners; almost no serious outbound (light LinkedIn only — ~20–30 conversations); partner webinars unstructured; hard to break into new senior relationships at scale; when they do get a senior exec conversation, interest is high then they get stuck; Dean cannot brief partners until Monday (they were out of pocket this Call 1 week).</li>
+<li>Consequences if nothing changes: Status quo for 12 months ≈ the same part-time referral practice; miss first-to-market expert positioning (he said they would not die if second/third, but lose the expert seat).</li>
+<li>Fears that will show up in the decision: “Are we too early for quantumSCALE?” (he floated it; Edwin still advanced); multi-party buy-in — three or four partners must see fit and economics together; QS engagement economics unknown to partners (asked for numbers in email; deferred to Call 2); thin LinkedIn self-list (~300–500) may feel “too small” until expanded honestly on the demo.</li>
+<li>Objections still open: Too-early / stage risk; QS price not quoted on Call 1 (economics on Call 2 after team assessment); multi-party decision (3–4 partners); ICP confirmation still pending in writing from Dean’s side; website / past webinars do not match new positioning.</li>
+<li>Who’s joining Call 2: Dean + three or four partners / colleagues who can answer consortium questions (names not locked on Call 1). Friday chosen because they are usually more flexible then. Dean will brief them starting Monday and confirm target audience in writing before the call.</li>
+<li>What we promised to walk: Custom demo — how we get to their target audience, how we bring them onto a webinar, how they run the webinar, how we get buyers onto sales calls with them. Edwin: follow-up email with discovery questions, webinar link for partners to watch, due-diligence prep; economics covered on Call 2 (not quoted on Call 1). Dean: brief partners, confirm ICP in writing, bring the decision colleagues.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Dean · IBP Collaborative (new consortium packaging; personal brand / site outdated). Helps large complex manufacturers build real economic models of the business, then wraps a process so leaders continually optimize cash, profit, and free cash flow. Buyers = CEOs facing the “leap of faith” planning problem and “operationally” oriented CFOs (finance leaders with supply-chain, profitability-analytics, supply-chain finance, or FP&amp;A tool experience). Problem for buyers = siloed FP&amp;A / ops tools and AI on broken models, so they cannot answer whether the plan is optimized, hits free-cash-flow targets, and is executable.</li>
+<li>Company goals / dream state (from Call 1): Roll webinars (and CEO roundtables) before year-end; become the go-to management-system expert; Dean as marketing / closer with partners delivering; scale the venture toward &gt;$100M/year in ~2–5 years; consulting value on the new offer framed ~$2–$10M over 2–5 years per engagement across the consortium.</li>
+<li>ICP dream state (what THEIR buyers want): CEOs who want a single management system that answers “is this plan optimized, does it hit free cash flow, and is it executable?” before they approve — not another leap of faith. Operational CFOs who have already invested in planning tools and still cannot answer those questions want a breath-of-fresh-air partner who can show the economics of the business and a process that keeps optimizing.</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<p>Multi-party room (3–4 partners) is the real gate — not a Dean-only soft close. QS price was never quoted on Call 1 and partners will ask; cover economics after strategy, not as the opener. Dean’s self-stated LinkedIn ICP (~300–500 operational CFOs) is thin if left alone — expand honestly on the demo (multi-title, CEO lane, adjacent complex-manufacturing verticals) without inventing a fake precision count. Early-stage packaging + outdated website are live optics: sell the system and offer sharpness, not the old site. Partner already runs weak unstructured webinars (~20–30 signups) — do not re-demo “what a webinar is”; show list then invite then show then booked-call math.</p>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): Geo = theoretically global; practical focus U.S. / North America first · Vertical = complex manufacturers with common products/customers and volume/mix variability; dream lane food / packaged goods / CPG; stay away from project-oriented manufacturing (aerospace &amp; defense) · Company type/size = roughly $500M–$5B; dream client ~$2–$5B that already invested in planning tools and is stuck · Buyer titles = CEOs (leap-of-faith problem) and operationally oriented CFOs / finance leaders with supply-chain, profitability analytics, supply-chain finance, or FP&amp;A tool experience · Who we exclude = aerospace &amp; defense / one-customer project manufacturing; tiny / simple manufacturers without volume-mix complexity.</li>
+<li>Ideal ICP (tight — who they said they want most): Operational CFOs (and finance leaders with the supply-chain / FP&amp;A pattern above) at ~$500M–$5B complex manufacturers — food / packaged goods / CPG dream first — U.S. / North America. Dean’s own LinkedIn self-count for that operational-CFO pattern: roughly 300–500 profiles. That is the Ideal lane he named, not the campaign ceiling.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): North American complex manufacturers in the mid-to-large band (roughly $500M–$5B, with honest adjacent size edges only if still complex volume/mix) across food/CPG plus other non-project manufacturing verticals that feel the same planning pain — decision makers stacked across CEO + operational CFO + VP Finance / FP&amp;A / supply-chain finance titles. Exact decision-maker headcount after expansion was not measured on Call 1 — do not invent a fake number on the call; build companies then roles then contacts before quoting a campaign count. Directionally: Edwin already framed the addressable market as large on Call 1; Dean’s half-trillion “value thesis” is his market story, not a contact TAM.</li>
+<li>How we got the number: Call 1 gave Ideal titles, size band, vertical preference, exclusions, and Dean’s LinkedIn self-estimate (300–500). No list pull / enrichment count yet. Path on Call 2: companies in band then relevant titles per company then contactable decision makers.</li>
+<li>What we widened (if thin): They said: operational CFOs, CEOs as the problem owner, $500M–$5B, food/CPG dream, NA practical, exclude aerospace/defense. We add for campaign honesty: multi-title stack (CEO + CFO + VP Finance / FP&amp;A / supply-chain finance), adjacent complex manufacturing verticals beyond food/CPG that still have common products + volume/mix variability, Canada alongside U.S., and (only if still complex) modest size-band edges around $500M–$5B. Always say which lever is theirs vs ours. Do not count his half-trillion value thesis as a contact TAM.</li>
+<li>Check vs Call 1: Matches Ideal (operational CFO pattern + CEO leap-of-faith), size band, food/CPG dream, aerospace/defense exclusion, NA first, and the thin 300–500 self-list that must be expanded for the demo.</li>
+<li>Too small?: The Ideal-only 300–500 LinkedIn self-list is too thin if that is the whole campaign. After honest expansion (multi-title + CEO lane + adjacent complex mfg + NA), this should clear the ~30k qualify-out bar — verify with a real list pull before quoting a hard campaign number. Do not qualify out on Dean’s LinkedIn bookmark count alone; do not bluff a precise TAM either.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): Clear CEO “leap of faith” problem language; education-led sale (buyers feel the pain when shown); large deal economics on the new venture (~$2–$10M consulting value over 2–5 years across consortium; he also frames huge client-side value from prior work); Dean is a strong speaker / teacher; partners already want webinars and CEO roundtables; when he reaches the right CFO pattern, interest is near-universal (~99% of his light LinkedIn conversations agreed the problem is real).</li>
+<li>What’s fuzzy or weak (closer must know): Early-stage venture packaging — offer still being fine-tuned; no firm IBP Collaborative run-rate stated; personal economics today are referral $50k–$100k, not the $2–$10M story yet; website outdated; partner webinars unstructured and weak; ICP confirmation still coming in writing; QS price unknown to the partner group; multi-party decision can stall even if Dean loves it.</li>
+<li>Positioning line for the webinar if we pick today: How CEOs and operational CFOs at complex manufacturers stop approving plans on a leap of faith — and finally answer whether the plan is optimized, hits free cash flow, and is actually executable.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): CEOs approve plans without a single management system that proves the plan is optimized, hits free-cash-flow targets, and is executable — while vendors put AI on broken, siloed models.</li>
+<li>Who we invite first then next: Ideal operational CFOs at food/CPG / complex manufacturers in the stated size band first then then broadest honest TAM (CEO + multi-title finance stack across adjacent complex manufacturing in NA). That invite order is OUR acquisition motion — not the webinar story.</li>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook then problem then proof (their method / results / proof) then offer (their product) then easy CTA (book with them) Hook on the CEO leap of faith / “you still cannot answer questions 4 and 5” then problem of siloed FP&amp;A vs ops tools and AI on broken models then proof via economic modeling + wrapped process that finds cash/value fast then offer the consortium management-system engagement (methodology + tech plug-in) then CTA to book a working session with Dean / the partner team.</li>
+<li>Copy / talk-track beats (3–5): 1. “You are being asked to approve a plan when you cannot answer: is it optimized, does it hit free cash flow, and is it executable?” 2. “Your FP&amp;A stack and your ops stack still do not speak the same economic language.” 3. “AI on a broken model is still a broken model.” 4. “What an economic model of the business looks like when small volume/mix moves swing cash.” 5. Soft CTA: book a short fit conversation with the IBP Collaborative team — not a hard close on the webinar itself.</li>
+<li>Cadence: One leap-of-faith / economic-model topic aimed at Ideal operational CFOs first to prove showthenmeeting math before year-end; test; then segment CEO-roundtable or adjacent-vertical variants once conversion is real. Do not mash CEO roundtables into the first webinar as the primary motion — treat roundtables as a follow-on vehicle they already like.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Tejas Parkish — Akshar Business Group (Akshar Consulting) — why it fits: best answer when partners say “our buyers are CFOs / finance directors — too senior and too small a list for webinars; we’d rather have five real conversations than 500 junk leads.” Tejas sells high-ticket finance consulting to exactly that CFO / finance-director lane and raised the same objection himself. When to pull it: thin-list fear, senior-buyer skepticism, or “high-ticket B2B consulting won’t webinar.” Keep numbers conversational (his story is a handful of quality finance calls turning into high-ticket clients) — do not dump a spreadsheet.</li>
+<li>Nick Uresin — Podcast Pros — why it fits: best answer to “are we too early?” and “how fast can this be live?” He went from sales call to a running webinar in about eight days and had qualified opportunities off webinar one — while already being a capable LinkedIn / Sales Navigator operator who still needed targeting and messaging strategy. When to pull it: early-stage packaging anxiety, partner impatience (“dying to get it done tomorrow”), or “we already know LinkedIn.” Do not use him as a revenue proof point.</li>
+<li>Philipp Von Schulthess — Oxoia — why it fits: niche / technical / institutional buyers who “would never webinar,” plus the exact “referrals are real but not big enough to grow fast enough” line Dean is living (referral practice works; consortium scale does not). When to pull it: website/referral status quo, technical manufacturer buyers, or partner fear that senior ops/finance leaders will not sit on a webinar. Keep it qualitative — no clean campaign totals to quote.</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Dean (champion / likely marketing-closer seat; cares about professional reach to Ideal ICP, education hook, first-to-market). Three or four partners (delivery / tech / consortium economics — names TBD; care about whether this is the go-to-market engine, engagement economics, and whether ICP is locked). Sign path is shared — not a solo Dean close. Anyone who can answer consortium questions should be on the Zoom; do not settle for Dean-only if avoidable.</li>
+<li>Landmines from Call 1: Do not invent or soft-quote a QS price Dean never heard — economics belong on Call 2 after strategy. Do not treat the outdated website as the offer. Do not leave the TAM at his 300–500 LinkedIn self-list — expand honestly and say what you widened. Do not dismiss “too early”; reframe with Nick + year-end urgency + partner hunger. Multi-party: align agenda so partners are not surprised. Partner’s weak ~20–30-signup webinars are scar tissue — show system math, not “try webinars harder.” Confirm Dean’s written ICP before over-building a wrong list. Keep Friday Sep 18 · 1:00 PM Eastern warm; rearrangements OK if partners need a move.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Dallas Fontaine · Call 4 · 2:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Dallas Fontaine · Scale Labs · Call 3+ · Mon Sep 21, 2026 1:00 PM CT / 2:00 PM ET · Edwin Chung</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft yes on the system as a fit for custom industrial / enterprise software once ICP is dialed. On Call 2 Aaron said the overall approach “makes sense,” liked QS helping segment ICP, and the Kishar / Akshar-style consulting case felt closest on deal size. Dallas engaged on funnel math and calendar once price and cash got real.</li>
+</ul>
+<ul>
+<li>What paused the close: Hard cash-flow gate. Dallas will not make another marketing purchase until Primoris or Hug (or related client payment / kicker) clears. September AR crunch is real. He also said he has talked himself into too many things before and wants to be more careful.</li>
+</ul>
+<ul>
+<li>Who else matters: Aaron Dufall (ICP / co-decision; carried mechanism skepticism). Dallas drives price, cash, and calendar. A QS CEO / leadership ICP validation touch was sketched for ~Sep 14; today’s call is the reopen after Hug / Primoris progress.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table: About $20,000 one-time upfront for a six-month handhold (setup, infrastructure, copy, outreach, webinars — not a month-by-month retainer). Dallas said the $20k itself is not the issue if Hug lands. Financing was floated to start earlier; he still wanted to wait on cash.</li>
+</ul>
+<ul>
+<li>Whose court: Shared. They were to push Primoris / Hug and run ICP diligence; Edwin was to hold today’s touch base. Ball is on this call to decide whether cash is clear enough to start, or to name a dated start after a named deal milestone.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Bought-in-but-blocked. Aaron is calm, analytical, and productively skeptical — open that the mechanism makes sense, blunt that their niche breaks standard ICP playbooks. Dallas is collaborative and firm on money timing without hostility. Separates “price is fine” from “cash is not here yet.”</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency rises if Primoris or Hug signs, if September cash clears, or if they want a parallel pipeline before the next enterprise cycle. Urgency dies if both deals slip and they treat webinars as optional until cash is comfortable.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: Paying for another marketing motion before big deals land; ICP / through-line failure (three clients can be a million in revenue with no shared pattern); agency scar tissue that “it never works first swing”; talking himself into another spend he regrets.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Cash-flow gate (Primoris / Hug) — primary — Dallas will not start until one of those deals (or payment) clears.</li>
+<li>ICP / through-line doubt — primary — Aaron’s lived experience is that agencies fail at ICP because their clients span industries and problems; front-end ~$100k+ with expansion toward ~$2M on the same accounts.</li>
+<li>Agency scar tissue / first-swing skepticism — secondary — past partners promised it would work and it did not; they expect months of iteration.</li>
+<li>Co-decision alignment — secondary — Aaron on mechanism, Dallas on money; both need to land on the same start date.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “We can’t spend until Primoris or Hug cash is in.”</li>
+</ul>
+<ul>
+<li>Status: still open — this was the explicit Call 2 pause.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not fight the cash gate. Reframe today’s call as confirming whether cash cleared, and if not, locking a dated start tied to a named milestone (signed Primoris, Hug board outcome, or first payment) instead of another open-ended wait. Keep the $20k framing as already accepted on price; the only move is timing.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors. Gene is a founding partner at Advocate Advisors, a boutique investment bank and M&amp;A advisory firm headquartered in Chicago with sister offices in other U.S. cities. He is the marketing-literate partner who vetted firms for the group. Before the system, he ran four agencies over five years at roughly $36k–$48k a year and got five qualified prospects and one client total. After they installed the owned webinar system, tracked campaign totals show about 61 booked sales calls across 12 webinars. Tell it half-offhand: agency burn, then owned engine and booked-call math — then soft-tie to “this is not another September marketing experiment; it is the machine you keep once Hug / Primoris cash lands.”</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand, not rehearsed; then soft tie-back to their cash gate without shaming the wait.</li>
+</ul>
+<ul>
+<li>Exact land line: “When cash clears, the question is whether you rent another agency month or own the machine. Gene at Advocate Advisors burned years on agencies and then booked about sixty-one sales calls across twelve webinars once they owned it. That is the fork after Primoris or Hug lands.”</li>
+</ul>
+<ul>
+<li>Objection: “Our ICP has no clean through-line — different industries, different problems — so this fails for us.”</li>
+</ul>
+<ul>
+<li>Status: still open — Aaron’s primary mechanism concern on Call 2.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not pretend they have ten identical clients. Lead with one core problem lane their buyers share (custom industrial / enterprise software that replaces brittle ops tooling), then Ideal titles first, then honest adjacent. Use the Sep 14 CEO ICP validation path as proof you will not spray a mushy list. Pull Tejas when they say senior buyers and large tickets will not sit a webinar.</li>
+</ul>
+<ul>
+<li>Full story to tell: Tejas Parikh at Akshar Consulting. Tejas sells high-ticket B2B consulting to senior finance buyers — the kind of deal size where everyone assumes webinars cannot work. The story that lands is quality over volume: a handful of the right conversations, not hundreds of junk leads. From the audibles framing he went from roughly $36k a year to a million and closed four separate hundred-K contracts. Tell it half-offhand when Aaron says they need the right CIOs / ops leaders, not a spray.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land as permission that messy ICP is a list-design job, not a disqualifier.</li>
+</ul>
+<ul>
+<li>Exact land line: “Aaron’s point is the same one Tejas made — you do not need a flood, you need the right handful of senior buyers in the room. That is what the Ideal-first invite order is for once we pick the one problem lane.”</li>
+</ul>
+<ul>
+<li>Objection: “We’ve been burned by agencies that said it would work and it never did on the first swing.”</li>
+</ul>
+<ul>
+<li>Status: still open — soft but real on Call 2.</li>
+</ul>
+<ul>
+<li>Overcome with: Separate renting an agency from owning a calendar-invite webinar machine with a six-month handhold. Acknowledge first campaigns iterate. Do not promise first-swing magic.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors again for the rent-versus-own reframe, plus Jan’s “we tried webinars, didn’t work” audible: Jan came in jaded because prior webinars genuinely did not work as packaged; once rebuilt correctly they got to closing about 10% of people without even getting on a call. Use Jan when Aaron treats past webinar / agency failure as proof the channel is dead.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land as “packaging failed, not the channel.”</li>
+</ul>
+<ul>
+<li>Exact land line: “Your agency scar tissue is Gene’s story — you were renting someone else’s machine. And if old webinars felt dead, that is Jan’s story — the packaging failed, not the idea. We rebuild the trust path, not another agency retainer.”</li>
+</ul>
+<ul>
+<li>Objection: “I’m being more careful — I’ve talked myself into too many things before.”</li>
+</ul>
+<ul>
+<li>Status: still open — Dallas’s personal caution on Call 2.</li>
+</ul>
+<ul>
+<li>Overcome with: Respect the caution. Make the leave-behind a dated commercial decision, not vibes. Walk scope, $20k, start milestone, and who must say yes (Dallas + Aaron). Offer financing only if cash timing is the sole remaining gap after a signed deal.</li>
+</ul>
+<ul>
+<li>Full story to tell: Brooks — “we already have clients / we’re fine.” Brooks said almost the same thing and sat at about a 5% close rate; after the system tightened, close rate moved toward about 20% and revenue roughly quadrupled. Use lightly if they lean “sales is handled, we just need cash” — their ~8% close framing on Call 2 is strength, not a reason to skip a predictable top of funnel.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; do not lecture Dallas for being careful.</li>
+</ul>
+<ul>
+<li>Exact land line: “Being careful is smart. Brooks thought he was fine because he already had clients — the machine is what made the pipeline predictable enough to plan. Same ask here: dated start after cash clears, not another maybe.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Gene Rosendale · Advocate Advisors — burned by agencies; about 61 booked sales calls across 12 webinars. Use for rent-versus-own vs waiting on cash then buying another agency month.</li>
+<li>Tejas Parikh · Akshar Consulting — high-ticket senior buyers; quality over volume; four separate hundred-K contracts in the audible framing. Use for ICP / through-line and “CIOs won’t show.”</li>
+<li>Jan — tried webinars, flopped as packaged; rebuilt motion then ~10% closing without a call in the audible framing. Use against agency / webinar scar tissue.</li>
+<li>Brooks — already had clients; close rate ~5% then ~20%; revenue roughly quadrupled. Use if they say sales is handled and they only need cash.</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open on Primoris / Hug / cash status since Sep 14 — what cleared, what slipped, and whether September crunch eased.</li>
+<li>Confirm Aaron and Dallas are both aligned that the $20k six-month handhold is the commercial package (price already soft-accepted).</li>
+<li>Re-anchor one Ideal problem lane for custom industrial / enterprise software buyers and the Ideal-first invite order — no full Call 2 re-demo unless they ask.</li>
+<li>If cash is clear: ask for e-sign / pay (or financed start) and name first campaign week.</li>
+<li>If cash is not clear: lock a dated start tied to a named deal milestone this week, with Dallas as champion and Aaron on ICP — not another open “after Hug.”</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If Primoris or Hug signed and cash is landing, then go for e-sign / pay on the $20k six-month package and set kickoff inside two weeks.</li>
+<li>If cash is still blocked but belief is high, then get a written yes on scope and price with a calendar hold for kickoff within seven days of the named payment event.</li>
+<li>If Aaron reopens ICP as a hard no, then run a short Ideal-lane list sample live instead of a philosophy debate; pull Tejas for senior-buyer quality.</li>
+<li>If they ask to “test” with a tiny DIY webinar first, then hold the line that a weak packaging test will lose on purpose — Gene / Jan, not a discount science project.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: signed start (or funded kickoff) on the ~$20k six-month engagement with Aaron aligned on Ideal ICP lane. Next acceptable: written commercial yes from Dallas + Aaron with a dated kickoff tied to a named Primoris / Hug / payment milestone inside two weeks. Not acceptable: “circle back after the deals” with no date and no champion.</p>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
