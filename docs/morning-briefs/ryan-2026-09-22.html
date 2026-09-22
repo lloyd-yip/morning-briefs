@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Tuesday Sep 22, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Tuesday Sep 22, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>11:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/OCMBs7s8QNrBQIh1nEZL">Lars / Mikkel</a> · Call 3 · Novataleny</strong>
+      </div>
+      <div class="slot">
+        <strong>5:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/pj17P4e7SzAR7p31sdIg">Chandra Singla</a> · Call 2 · Pharma Acuity Inc.</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Lars / Mikkel · Call 3 · 11:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Lars Molin / Mikkel · Novataleny · Call 3 · Tue Sep 22, 2026 · 11:00 AM ET · Ryan Matsumori</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft yes from Lars, operator diligence from Mikkel. On the Aug 26 reconnect Lars said he was “basically hooked” and wanted stakeholder demos more than more product education. On Sep 8 Mikkel (Growth Director, Talent Venture Group / Tagsom email) ran a full evaluation without Lars on the call, called the economics attractive if assumptions hold, and named Career Minds as the strongest first-fit portfolio company — not Universum’s turnaround.</li>
+</ul>
+<ul>
+<li>What paused the close: No single buying entity locked. The GHL company on this contact is Novataleny (Nova Talent on the May evaluation). Aug 26 pointed at Universum plus a second unnamed company. Sep 8 pointed at Career Minds for European strategy. July 9 enrollment was cancelled. Mikkel also will not sign without a clear production / PowerPoint routine he can defend to marketing.</li>
+</ul>
+<ul>
+<li>Who else matters: Lars (champion / portfolio initiator, little implement time). Mikkel (financial + delivery gate — “I don’t sign things I can’t deliver on”). Entity CEO for whichever company runs first (Career Minds CEO was on Mikkel’s next-day Stockholm plan after Sep 8; Universum CEO / marketing contact were named on Aug 26). Armando was fractional CMO / project manager on the May arc and is no longer the live operator story on Sep 8 (Mikkel said that hire did not work out).</li>
+</ul>
+<ul>
+<li>Money / terms already on the table (from tape — do not invent a new price): $20,000 one-time build / test investment per company, plus about $500 / month tools and operating support on the Sep 8 frame (May also floated financing and roughly $1,000 / month ops depending on the walk-through — stick to the Sep 8 pair unless they reopen financing). Each company needs its own custom build; group-wide one-price stack was not confirmed.</li>
+</ul>
+<ul>
+<li>Whose court: Shared. Mikkel was to pressure-test Career Minds with Lars and the Career Minds CEO and come back when ready. Lars was to tee stakeholder demos. Today is the first time Lars and Mikkel are both on a QS Institute meeting together — use it to lock one entity and a dated commercial next step, not to re-demo the whole funnel.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Bought-in-but-blocked as a pair. Lars has been warm and champion-mode since at least Aug 26. Mikkel is sharp, evaluative, and protective of credibility — interested, not desperate.</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency rises if they pick one company today (Career Minds or Nova Talent) and Mikkel gets a production pack he can run. Urgency dies if the room stays “portfolio shopping” across Universum / Nova Talent / Career Minds, or if production still feels like a 200-hour studio project.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: Buying financially then getting blocked by marketing / content; domain burn and GDPR on EU multi-language waves; stacking $20k per company without a clear first beachhead; repeating heavy SDR / classic webinar machinery that already costs time.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Which legal entity runs first (Nova Talent / Novataleny vs Career Minds vs Universum) — primary — conflicting theses across May, Aug 26, and Sep 8.</li>
+<li>Production / PowerPoint clarity for Mikkel’s internal sell — primary — he asked for script, roles, and hours before any commitment.</li>
+<li>Multi-stakeholder history (CEO / marketing must buy the model; July enrollment cancelled) — secondary — do not assume today’s room can sign alone without naming who still must align.</li>
+<li>Multi-company commercial structure — secondary — $20k per company is clear; package / TVG-wide deal is not.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “We still need to decide which company goes first — Nova Talent, Career Minds, or Universum.”</li>
+</ul>
+<ul>
+<li>Status: still open — this is the main reason the deal has stretched from May through a cancelled July enrollment into today.</li>
+</ul>
+<ul>
+<li>Overcome with: Force a one-company decision in the first ten minutes. Restate what is already on tape: Mikkel deprioritized Universum while it is in turnaround; Sep 8 best-fit thesis was Career Minds outplacement for executives in restructuring; May / GHL label is Nova Talent (executive search / quality C-suite hires). Pick one ICP, one webinar, one language market. Park the second company until the first build is live.</li>
+</ul>
+<ul>
+<li>Full story to tell: Joshua Hollander at Horton International (North America). Horton is a long-running executive search firm selling high-ticket retained searches into C-suite and board buyers — the closest peer motion to Nova Talent’s quality-hire thesis. They used the same cold-calendar system to put tens of thousands of invites in front of senior buyers per webinar and still held roughly a 33% show rate on tracked runs, with workshop totals showing booked sales calls across a multi-webinar cadence. Tell it half-offhand: senior talent buyers will sit an educational session when the invite is specific. Prospect page: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land as “one search / outplacement ICP first,” not a portfolio tour.</li>
+</ul>
+<ul>
+<li>Exact land line: “Joshua at Horton is the peer for a senior talent buyer — C-suite search, not a consumer list. One company, one webinar, one market first. Which entity are we building for in the next thirty days — Career Minds or Nova Talent — and we park Universum until that machine is live.”</li>
+</ul>
+<ul>
+<li>Objection: “Webinars are a production shit show — my marketing team will turn this into 200 hours unless you give me a simple routine.”</li>
+</ul>
+<ul>
+<li>Status: still open — explicit Sep 8 ask for PowerPoint, script, role clarity, and sample webinar / production process.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not argue “it’s simple” as a vibe. Hand Mikkel a concrete who-does-what: executive on camera for a Zoom-style education session, slides on buyer pain and proof, qualification, calendar CTA. Restate the Sep 8 time box: about 15 hours of one-to-one build time in the first 30 days, then about 3–5 hours a week in testing. Then soft-tie to Gene’s rent-versus-own story so they stop comparing this to agency studio builds.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors. Gene is a founding partner at Advocate Advisors, a boutique investment bank and M&amp;A advisory firm headquartered in Chicago. He is the marketing-literate partner who vetted firms for the group. Before owning the system he ran four agencies over five years at roughly $36k–$48k a year and got five qualified prospects and one client total. After they installed the owned webinar system, tracked campaign totals show about 61 booked sales calls across 12 webinars. Tell it half-offhand: you were about to rebuild someone else’s heavy production machine; Gene is what happens when you stop renting and keep a lean owned engine. Prospect page: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land as production scope + ownership, not a debate about webinar taste.</li>
+</ul>
+<ul>
+<li>Exact land line: “Mikkel, your 200-hour fear is Gene’s agency years — four agencies, almost no pipeline. About sixty-one booked sales calls across twelve webinars is what owning a lean Zoom-style engine looked like. Today we leave with the production checklist and one company on the $20k build, not another studio project.”</li>
+</ul>
+<ul>
+<li>Objection: “We already run heavy SDR / Apollo / ZoomInfo outbound — why add this?”</li>
+</ul>
+<ul>
+<li>Status: half-handled on Sep 8 (Mikkel already liked sourcing + low-friction calendar signup + lower outreach cost) — may reopen with Lars in the room.</li>
+</ul>
+<ul>
+<li>Overcome with: Separate spray SDR volume from calendar-invite education into a designed webinar. Keep their existing outbound where it works; this is the controllable senior-buyer lane beside it. Use Felix for the “we already know outbound” expert buy.</li>
+</ul>
+<ul>
+<li>Full story to tell: Felix Petzel at Panda Media. Felix is founder and managing director of Panda Media, a B2B LinkedIn / social-selling agency in the DACH market — so he already lived expert outbound for a living. He still installed the system, cut a manual outbound team down toward one VA, and took margins from about 30% toward about 90% while deal size moved up into larger transformation engagements. Tracked campaign totals on file show about 17 booked sales calls off the motion he ran. Tell it half-offhand: the person who already “knew LinkedIn” still wanted a predictable owned engine. Prospect page: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land as second engine beside SDR, not a rip-and-replace fight.</li>
+</ul>
+<ul>
+<li>Exact land line: “Felix already ran LinkedIn outbound for clients as his business — and still owned this engine so growth was not stuck on SDR grind. Keep Apollo where it works; this is the calendar-invite lane for the executives Career Minds or Nova Talent actually want in the room.”</li>
+</ul>
+<ul>
+<li>Objection: “Our buyers are senior / deals are high-ticket — will the right people actually show?”</li>
+</ul>
+<ul>
+<li>Status: soft on May (Nova Talent C-suite quality hires, roughly €7k–€8k per placement on tape) and on Sep 8 (Career Minds US deals roughly $50k–$100k, 15–20% close on qualified). May resurface as skepticism.</li>
+</ul>
+<ul>
+<li>Overcome with: Stay on Ideal first — restructuring / talent executives, not a giant junk list. High ticket is why a handful of right attendees beats a flood.</li>
+</ul>
+<ul>
+<li>Full story to tell: Tejas Parikh at Akshar Business Group (Akshar Consulting). Tejas is a finance leader turned founder selling high-ticket work to finance directors and CFOs — the “my buyers are too senior for webinars” objection in his own words. Campaign totals on file show about 15 booked sales calls and about 80 attendees on the run captured for him, and he still recommends the motion for high-ticket conversations where you need the right handful in the room. Prospect page: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land when senior-buyer doubt shows.</li>
+</ul>
+<ul>
+<li>Exact land line: “Tejas sells to CFOs and said the same thing — domain numbers look small until you remember you only need finance leaders in the room. About fifteen booked sales calls off that motion is the point for Career Minds or Nova Talent, not a consumer webinar.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Joshua Hollander · Horton International — executive search / C-suite buyers; high-ticket retained search peer for Nova Talent; roughly 33% show rate on large senior-buyer invite runs. Use to lock one talent ICP first.</li>
+</ul>
+<ul>
+<li>Gene Rosendale · Advocate Advisors — four agencies, roughly $36k–$48k/year, almost no pipeline; then about 61 booked sales calls across 12 webinars. Use for Mikkel’s production / agency-overbuild fear and rent-versus-own on the $20k build.</li>
+</ul>
+<ul>
+<li>Felix Petzel · Panda Media — DACH outbound expert; margins about 30% toward about 90%; about 17 booked sales calls on file. Use when they defend existing SDR / Apollo / ZoomInfo.</li>
+</ul>
+<ul>
+<li>Tejas Parikh · Akshar Business Group — CFO / finance-director buyers; about 15 booked sales calls / about 80 attendees on file. Use for “too senior / too high-ticket for webinars.”</li>
+</ul>
+<ul>
+<li>Philipp Von Schulthess · Oxoia (secondary) — referrals real but “not big enough to grow fast enough”; founder outreach time fell hard once an assistant ran the process. Use only if capacity / operator hours stall the close. Prospect page: https://quantums-institute.com/due-diligence-software</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open in two minutes on the conflict already on tape: Nova Talent vs Career Minds vs Universum — which single company are we building for in the next thirty days.</li>
+<li>Confirm Mikkel as delivery owner and Lars as champion — no silent handoff to marketing without the production checklist.</li>
+<li>Re-anchor commercials already on tape: $20,000 per company + about $500 / month — one company first; second company only after the first build is live.</li>
+<li>Walk the production routine out loud (who is on camera, slide spine, hours in month one and in testing) so Mikkel can sell internally the same day.</li>
+<li>Ask for e-sign and payment on that one-company package, or a named kickoff date inside seven days with the entity CEO already aligned.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If they pick Career Minds today, then stay on restructuring / outplacement executives, park Universum, and ask for e-sign on the Career Minds entity (or a dated CEO lock call this week).</li>
+<li>If they pick Nova Talent / Novataleny today, then stay on quality C-suite hire buyers, use Joshua as the peer, and ask for the same commercial close on that entity.</li>
+<li>If they try to keep Universum in the first build, then restates Mikkel’s Sep 8 deprioritization (turnaround / cost control) and refuse a joint two-company demo as the close path.</li>
+<li>If Mikkel reopens production hours, then run Gene + the written who-does-what checklist before any price debate.</li>
+<li>If they want another full strategy demo with no commercial date, then refuse unless the missing CEO is on calendar the same week with a yes/no attached.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: signed agreement and payment on the $20k + about $500 / month package for one named company (Career Minds or Nova Talent), with Mikkel named as delivery owner and a kickoff week on the calendar. Next acceptable: written entity decision today plus a dated e-sign deadline inside seven days with the entity CEO confirmed. Not acceptable: “we’ll sync internally across the portfolio” with no entity, no production pack acceptance, and no date.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Chandra Singla · Call 2 · 5:30 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Chandra (CK) Singla · Pharma Acuity Inc. · Call 2 · Tue Sep 22, 2026 ~5:30 PM ET / 2:30 PM PT · Ryan Matsumori</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Chandra (CK) Singla is Co-Founder / Co-CEO of Pharma Acuity Inc. (California). Co-founder Clara joined mid-call from the East Coast. They sell AI SaaS for Medical Affairs and related pharma / biotech teams — personalized competitive analysis and synthesis versus generic syndicated research (AlphaSense, Global Data), plus longitudinal proprietary data tailored to each client. Product is sales-ready after about one year of selling (company about three years). Three customers today; first mid-size pharma customer renewed and expanded from one product line to three, with a fourth expected to sign. Ryan judged clear fit (all green) and booked this custom demo. Soft yellow only on market education / differentiation versus entrenched competitors — webinar is the answer.</li>
+</ul>
+<ul>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Engaged and commercially serious. CK pulled Clara onto the call mid-qualification and briefed her live that they were checking fit before a custom demo. Cost-sensitive and early-stage clear. Curious and question-heavy once Clara joined (biotech experience, invite filtering vs competitors, webinar build support, scientific credibility).</li>
+<li>Goals they want but can’t hit yet: A real system to reach target buyers beyond the personal network. Near-term success metric on tape: about 50 webinar attendees per month and about 50 confirmed follow-up calls per month, aiming at about 10 new customers per quarter (Ryan reframed toward capacity-matched volume). Scale capacity 10 then 20 then 40 per quarter by hiring.</li>
+<li>Why hitting the goal matters to them personally / for the company: First-10 revenue unlocks hiring two AI specialists and two life-sciences specialists. That bandwidth lets them raise, speed product growth, and move toward an acquisition path in about 3–4 years at roughly $25–100M ARR (exit ambition on tape).</li>
+<li>What’s holding them back: Founder-led sales only (CK and Clara calling known contacts). LinkedIn content gets engagement but weak real-time CTA to book. Tried HubSpot and Zoho briefly and pivoted away as too labor-intensive. They have talked for years about building their own webinars and never shipped one. They want a team that forces the system into existence.</li>
+<li>Consequences if nothing changes: Stuck near three customers and founder bandwidth. Without a system they cannot hit about 10 new customers per quarter, make the four specialist hires, raise, or move toward the exit path.</li>
+<li>Fears that will show up in the decision: Upfront cost must be manageable at their early stage (willing to pay more later once running). Competitors sitting in the webinar. Scientific / peer-review credibility expectations in Medical Affairs (Clara). Whether QS has done this specifically for biotech or for tech selling into biotech (Ryan promised to confirm with the team before / on Call 2).</li>
+</ul>
+<ul>
+<li>Objections still open: Upfront cost / how much they do themselves versus concierge — must be manageable early. Biotech / pharma proof (or tech selling into biotech) — Ryan to confirm. Can invites be filtered so competitors do not sit in (Ryan said yes — private, targeted list only, not public LinkedIn ads). Scientific / peer-review credibility in Medical Affairs invites and webinar content (Clara). QS pricing not discussed in detail on Call 1 (saved for Call 2).</li>
+</ul>
+<ul>
+<li>Who’s joining Call 2: Chandra (CK) Singla and co-founder Clara (East Coast; welcome / expected). Ryan Matsumori. GHL title may say Klara — confirm spelling / attendance at open.</li>
+</ul>
+<ul>
+<li>What we promised to walk: Pharma Acuity–branded custom demo covering mechanics, hours, finances, and Q&amp;A. Ryan to send calendar invite to both, Call 1 recording, and landing page / team page. Confirm biotech / pharma experience with the team. Show how a private targeted invite list keeps competitors out. Cover how validation and credibility show up in invites and webinar content for Medical Affairs buyers.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Pharma Acuity Inc. — AI SaaS for Medical Affairs / related pharma and biotech teams. Buyers are CMO, head of medical affairs, CEO, chief commercial, head of clinical operations, plus directors / direct reports. Pain: they cannot reach enough of those executives beyond the personal network, so pipeline stays founder-limited while syndicated research and agency competitors stay entrenched.</li>
+</ul>
+<ul>
+<li>Company goals / dream state (from Call 1): About 10 new customers per quarter first, then hire four specialists and scale capacity (10 then 20 then 40 per quarter). Raise on new logos, speed product growth, position for acquisition in about 3–4 years at roughly $25–100M ARR.</li>
+</ul>
+<ul>
+<li>ICP dream state (what THEIR buyers want): Personalized competitive analysis and synthesis that yields conclusions relevant to their asset / company — not generic syndicated reports they must interpret alone. Longitudinal insight over time. Trust and scientific credibility inside Medical Affairs decision-making (trial design, target product profile, competitive intelligence).</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<ul>
+<li>Both founders are expected on the demo — Clara joined mid-Call 1 and drove credibility / trust questions for Medical Affairs. Sell to both, not CK alone.</li>
+<li>Upfront cost is an explicit early-stage decision factor. Be ready with scope / hours / finances after the branded build — do not soft-pedal economics.</li>
+<li>Soft yellow from Call 1 is market education vs AlphaSense / Global Data / agencies — webinar story must myth-bust personalization and longitudinal insight, not pitch “more leads.”</li>
+<li>Competitor filtering was a live ask — show private targeted list vs public ads early.</li>
+<li>Ryan still owes a clear answer on biotech / pharma experience (or tech selling into biotech) — open with that honesty, then land Horton / regulated parallels.</li>
+<li>Disease lane order on tape: dermatology and oncology first, then CNS / mental health. Explicitly avoiding Big Pharma for now (sales cycles too long).</li>
+<li>They never shipped their own webinar after years of talking about it — frame the system as the force that makes it real, not another CRM they abandon.</li>
+</ul>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): Geo = United States first (US-headquartered; can be global companies; Europe later). Vertical = early-stage biotech through mid-size pharma; first disease lanes dermatology and oncology, then CNS / mental health. Company type / size = early-stage biotech with about $100M+ funding through mid-size pharma (about $5–7B market cap, or about $3–5B sales). Buyer titles = CMO, head of medical affairs, CEO, chief commercial, head of clinical operations, plus directors / direct reports in those orgs. Exclude = Big Pharma for now (sales cycles too long), non-decision-makers, Europe as campaign one, competitors on the invite list.</li>
+</ul>
+<ul>
+<li>Ideal ICP (tight — who they said they want most): US-headquartered early-stage biotech ($100M+ funding) through mid-size pharma in derm and oncology first, buying titles CMO / head of medical affairs / CEO / chief commercial / head of clinical operations (plus directors). We have not counted the people yet.</li>
+</ul>
+<ul>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Same US company band across derm + oncology then CNS / mental health, same executive titles plus directors, still excluding Big Pharma for campaign one. Call 1 company estimate from CK was about 5,000–10,000 US companies in their band; that is their estimate, not a counted people list. We have not counted the people yet.</li>
+</ul>
+<ul>
+<li>How we got the number: Call 1 gave geo, size band, disease lanes, titles, and CK’s company estimate. Ryan floated a rough “about five decision-makers per company” framing on tape; CK did not push back — that is still not a counted people list. On the demo show companies, then titles, then contacts — live — before quoting a campaign headline people number.</li>
+</ul>
+<ul>
+<li>What we widened (if thin): They said US first, derm + oncology first, then CNS, titles through directors, and avoid Big Pharma. We keep Ideal tight to that. We do not invent Europe or Big Pharma into webinar one unless Ideal is too thin after a real pull. They already hold maybe a couple thousand emails — that is a seed list, not the TAM.</li>
+</ul>
+<ul>
+<li>Check vs Call 1: Matches US preference, funding / market-cap band, derm then oncology then CNS, CMO / Medical Affairs–led titles, and Big Pharma exclusion. Does not invent a QS people count beyond what was estimated on tape.</li>
+</ul>
+<ul>
+<li>Too small?: Unknown until live pull. Qualify out only if broadest honest people count is still under about 30k after expansion — we do not have that count yet. Their Call 1 company estimate plus several buyer titles per company is why Ryan did not flag size on Call 1; still prove it on screen Tuesday.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): Clear differentiation vs syndicated research — personalized conclusions, longitudinal proprietary data, speed versus big incumbents. Proof of product-market fit (renewals + expansion inside mid-size pharma). High-ticket B2B into executives (ARR about $25k to $250–300k per customer; ticket can expand with more product lines / drugs). Buyers already live by calendar; education / trust is the sale.</li>
+</ul>
+<ul>
+<li>What’s fuzzy or weak (closer must know): Market is crowded (AlphaSense, Global Data, agencies) — sale is not obvious without education. Early-stage cost sensitivity vs full concierge. Scientific / peer-review credibility expectations in Medical Affairs. No QS pricing on Call 1 yet. Biotech-specific case proof still to confirm. They have only three logos today — capacity story must stay honest (about 10/quarter first).</li>
+</ul>
+<ul>
+<li>Positioning line for the webinar if we pick today: How Medical Affairs and commercial leaders at early-stage biotech and mid-size pharma get personalized competitive intelligence and longitudinal insight — not another generic syndicated report.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Medical Affairs and related executives cannot get personalized, decision-ready competitive analysis from syndicated research alone — and they do not trust unproven vendors inside their peer bubble.</li>
+</ul>
+<ul>
+<li>Who we invite first, then next: Ideal first (US derm / oncology CMO, head of medical affairs, CEO, chief commercial, head of clinical operations, plus directors at early-stage biotech through mid-size pharma). Then broader honest list (same titles into CNS / mental health; adjacent directors). That invite order is OUR acquisition motion — not the webinar story.</li>
+</ul>
+<ul>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook: you are making asset and Medical Affairs decisions with generic syndicated research that still leaves you to draw the conclusions then problem: AlphaSense-style reports and agency decks are entrenched but not personalized; peer circles recycle the same trusted names; outsiders struggle to earn trust then proof: Pharma Acuity’s personalized competitive analysis, synthesis, and longitudinal proprietary data — with anonymous client outcomes they can share then offer: their AI SaaS engagement for Medical Affairs / related teams then easy CTA: book a fit call with Pharma Acuity (not a hard close on the webinar)</li>
+</ul>
+<ul>
+<li>Copy / talk-track beats (3–5):</li>
+<li>Why syndicated research still forces the client to do the final analysis</li>
+<li>What personalization and longitudinal trends change for Medical Affairs decisions</li>
+<li>Pattern interrupt for closed peer bubbles (especially CNS / mental health — they hire and fail together)</li>
+<li>How scientific credibility shows up without inventing peer-review claims they do not own</li>
+<li>Soft CTA: book a short fitness call if you are CMO / Medical Affairs / commercial leadership at early-stage biotech or mid-size pharma</li>
+</ul>
+<ul>
+<li>Cadence: One Ideal-lane derm / oncology Medical Affairs topic first. Test show-to-meeting math. Then segment into CNS / mental health. Do not mash Big Pharma or Europe into webinar one. Private targeted list only — never public LinkedIn ads.</li>
+</ul>
+<p>Best case studies for THIS Call 2 (required — Airtable SoT)</p>
+<ul>
+<li>Ken Baron &amp; Rory Zipper — ZEA Financial — why it fits: Best regulated / brand-safety parallel (FINRA / SEC–adjacent fiduciary financial planning). They had burned budget on cold callers, purchased lead lists, LinkedIn lists, and about $13,000 dinner seminars, took time to sign, and still got results in a compliance-heavy industry QS had not worked in before. Strongest proof-of-mechanism: they were closed by the same cold calendar-invite play QS then installed for them. Patience: first two webinars had about five or six attendees and it worked from the third.</li>
+</ul>
+<p>When to pull it: competitor-filtering / brand safety, “our industry is too regulated / too confidential,” early empty-room fear, or “we already tried lists and LinkedIn.” Tell the burned-lists then calendar-invite story half-offhand. Soft tie-back: their couple-thousand emails and LinkedIn posts are not a private executive invite engine — and Medical Affairs will not tolerate competitor spectators.</p>
+<ul>
+<li>Gene Rosendale — Advocate Advisors — why it fits: Best agency-burn and “we tried tools and never shipped” parallel. Gene ran four marketing agencies over five years at about $36k–$48k a year and got five qualified prospects and one client in total — then matched five years of output in about six months before scaling. He is also the marketing-literate buyer who vetted about two dozen firms.</li>
+</ul>
+<p>When to pull it: HubSpot / Zoho labor pain, years of talking about webinars without shipping, or cost fear vs yet another vendor. Tell the agency-burn then owned-system story. Soft tie-back: Pharma Acuity already knows light CRM and LinkedIn content do not create bookable CMO conversations — they need an owned webinar engine, not another tool they abandon.</p>
+<ul>
+<li>Joshua Hollander — Horton International — why it fits: High-ticket C-suite / board buyer motion; industries on file include Biotechnology and Pharmaceuticals. Shows the same cold-calendar system working when the buyer is a CEO / board-level decision-maker and the deal is serious retained search, not cheap SaaS.</li>
+</ul>
+<p>When to pull it: “CMOs / Medical Affairs execs won’t sit for a webinar,” biotech / pharma buyer skepticism, or high-ticket B2B doubt. Tell the C-suite education story without inventing invite-volume numbers. Soft tie-back: their buyers are exactly the calendar-living executives Horton targets — education and trust first, then a booked fitness call.</p>
+<p>Optional if C-level show-rate objection flares: Jason Rotman — Elevate Financial — licensed advisor path; answers “serious executives don’t attend webinars.” Keep to that qualitative objection only; do not lean on interviewer-only figures.</p>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Chandra (CK) Singla — Co-Founder / Co-CEO (California) — cares about scalable reach beyond network, capacity to about 10 customers/quarter, hiring path, exit trajectory, and manageable early cost. Clara — Co-Founder (East Coast) — cares about trust / scientific credibility in Medical Affairs, biotech experience proof, competitor filtering, and market education vs entrenched research vendors. Both are commercial decision-makers on this arc; confirm who signs financially on Call 2. Ryan walks branded demo, mechanics, hours, finances.</li>
+</ul>
+<ul>
+<li>Landmines from Call 1:</li>
+<li>Do not invent a TAM people count. Show companies, then titles, then contacts live. CK’s 5,000–10,000 companies was an estimate, not a counted people list.</li>
+<li>Do not invent money-back or guarantee language. Pricing was saved for Call 2 — walk economics honestly after the build.</li>
+<li>Do not ignore upfront cost sensitivity. Early-stage manageable cost is an explicit decision factor; they will pay more later once running.</li>
+<li>Do not dodge the biotech / pharma experience question. Confirm with the team; use Horton + regulated parallels honestly if QS vertical proof is thin.</li>
+<li>Do not imply public LinkedIn ads or open registration. They asked about competitors in the room — show private targeted invites only.</li>
+<li>Do not skip Clara’s credibility / peer-review concern. Show how validation shows up in invite copy and webinar content without inventing publications they do not have.</li>
+<li>Do not mash Big Pharma or Europe into campaign one. They excluded Big Pharma; Europe is later.</li>
+<li>Do not treat “we’ll think about it” as a leave-behind. Leave with a dated go / no-go or build commitment with both founders aligned.</li>
+<li>Do not invent ARR, renewal, or exit numbers beyond Call 1 tape.</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
