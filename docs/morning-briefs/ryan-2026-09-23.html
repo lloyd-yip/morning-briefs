@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Wednesday Sep 23, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Wednesday Sep 23, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>11:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/st6zGGUxfiSia4M5OpV0">Mukund Kumar</a> · Call 2 · Inventive AI</strong>
+      </div>
+      <div class="slot">
+        <strong>12:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/8shSdCLRXLAtISyi3a7V">Jide Adesalu</a> · Call 1 · Microhills Inc</strong>
+      </div>
+      <div class="slot">
+        <strong>3:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/pQWitak2NCSc66VB0nHZ">Jean Brewster</a> · Call 1 · BrandStory Architech</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Mukund Kumar · Call 2 · 11:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Mukund Kumar · Inventive AI · Call 2 · Wed Sep 23, 2026 11:00 AM ET · Ryan Matsumori</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Mukund (Inventive AI, Delhi) joined alone after a quantumSCALE webinar, about 11:00 PM his time, camera off. Inventive sells AI-native RFP and proposal automation for B2B SaaS / tech selling into enterprise. Ryan green-lit webinar-system fit on product-market fit, global TAM when expanded, and pricing (one close can cover the investment). Soft yes to a custom demo the next day. Yellow flag: win rate still about 4–7% versus the 3x ROI guarantee Ryan said on tape.</li>
+</ul>
+<ul>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Engaged and commercially direct late at night. Frustrated with sales conversion. He described hard conversations with his sales leader about leaking revenue and said they need to figure this out fast.</li>
+<li>Goals they want but can’t hit yet: Take ARR from about $1M toward about $2M. Ideal in 6–12 months: about five to six new clients per month, with roughly 20% close on about 30 calls plus three to four more from webinar / other channels.</li>
+<li>Why hitting the goal matters to them personally / for the company: Seed stage and operating in the red (AI engineer salaries). Fundraising is hard because investors lean on a “Claude can do this” narrative. New logos roughly match about 15% annual churn, so the book can stall without higher volume and conversion.</li>
+<li>What’s holding them back: Inbound collapsed (was about 150 inbounds / about 80 calls; now about 17 inbounds and about 35 calls per month) while marketing still spends about $22k–$25k per month. Weak follow-up, weak sales-enablement content, recent AI harness / response-quality churn after model updates, and buyers stuck on feature checklists or DIY-Claude builds versus Inventive’s autonomous story. Competitors named: Responsive and Loopio.</li>
+<li>Consequences if nothing changes: Spend does not pencil. Logo growth stalls against churn. They stay seed and under fundraising pressure.</li>
+<li>Fears that will show up in the decision: “Does QS work for small tech SaaS?” How participants get to the webinar and what dollar value looks like. Whether the about-17-qualified figure is real or soft qualification. Whether QS helps fix sales process, not only demand gen.</li>
+</ul>
+<ul>
+<li>Objections still open: Small-tech-SaaS fit versus services-looking case studies. Webinar ops + dollar value (Ryan deferred full detail to this demo; previewed about $18k done-for-you, about $8k done-with-you financeable, then about $500/month ops). Qualification math check with his team. Sales-process help beyond demand gen.</li>
+</ul>
+<ul>
+<li>Who’s joining Call 2: Mukund said he will bring team members and that he calls the shots. Confirm who is on at open and what each cares about.</li>
+</ul>
+<ul>
+<li>What we promised to walk: Custom system for Inventive AI — list / invite / webinar structure, TAM size, economics, time commitment, investment, and how QS demonstrates value. Ryan also to send calendar invite, landing page (webinar / testimonials / team), and noted Call 1 was recorded.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Mukund Kumar, Inventive AI (Delhi). AI-native RFP / proposal / security-questionnaire automation for B2B SaaS and tech platforms selling into enterprise and regulated procurement. Buyers: proposal managers, sales engineers, proposal directors, sales-engineer directors, VP / head of sales (CFOs rare; CEOs mainly at very small companies). Company type: SaaS / tech with 500+ employees and at least Series B — health tech, fintech, legal tech, HR tech, other regulated, renewables. Problem for Inventive: conversion and education leak while inbound volume collapsed.</li>
+</ul>
+<ul>
+<li>Company goals / dream state (from Call 1): About $1M ARR toward about $2M; five to six new logos per month in 6–12 months; start sooner than 2027 if the system fits; capacity up to about 10 new clients per month.</li>
+</ul>
+<ul>
+<li>ICP dream state (what THEIR buyers want): Win more enterprise RFPs and security questionnaires faster without living in Responsive / Loopio plus bolted-on AI, and without betting the process on DIY Claude builds that break when models change.</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<ul>
+<li>He already ran one Claude-for-RFPs webinar about a week before Call 1 for demand gen and has not hired a webinar partner yet — that is why he is interviewing QS. Demo must show Inventive’s buyer room, not “webinars 101.”</li>
+<li>Yellow flag is live: about 4–7% win rate versus 3x ROI guarantee within six months of running the system (said on tape). Be ready to separate demand volume from close-rate work Ryan already previewed (longer first meetings, deeper diligence, sales consulting tied to closing).</li>
+<li>Pricing preview on tape (~$18k / ~$8k / ~$500 ops) did not sound like a blocker — treat Call 2 as build + economics confirmation with team in the room, not a first price shock.</li>
+<li>Q4 executive budgeting urgency Ryan flagged — do not treat this as leisurely education.</li>
+<li>Exact people count for Ideal ICP was not given on Call 1 — show companies, then titles, then contacts live before quoting a campaign headline.</li>
+</ul>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): Geo = about 90% United States first; secondary markets named UK, Singapore, Europe (Germany / France not tried yet), Dubai, India (pricing hard). Vertical = SaaS / tech platforms in health tech, fintech, legal tech, HR tech, other regulated industries, renewables. Company type / size = 500+ employees, at least Series B, enterprise / regulated procurement where RFPs show up. Buyer titles = proposal managers, sales engineers, proposal directors, sales-engineer directors, VP of Sales / head of sales. Exclude = pure DIY Claude shoppers with no budget, CFOs as primary (rare), CEOs only at very small companies as first lane, India-first pricing fights as campaign one.</li>
+</ul>
+<ul>
+<li>Ideal ICP (tight — who they said they want most): United States proposal / sales-engineer leaders and VP Sales at Series B+ SaaS / tech companies with 500+ employees in regulated or enterprise RFP-heavy verticals. We have not counted the people yet.</li>
+</ul>
+<ul>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Same titles across US SaaS / tech with RFP / security-questionnaire pain, then honest expansion to UK / Singapore / Europe secondary geos and adjacent sales-enablement titles if Ideal is thin after a real pull. Ryan framed QS needing at least about 100,000 global targets and said Inventive clears that when going global — that was a fit frame, not a counted list from Mukund. We have not counted the people yet.</li>
+</ul>
+<ul>
+<li>How we got the number: Call 1 gave geos, titles, company size, verticals, and economics. No owned decision-maker headcount from Mukund. On the demo show companies, then titles, then contacts — live — before quoting a campaign headline number.</li>
+</ul>
+<ul>
+<li>What we widened (if thin): They said US about 90% and Series B+ / 500+. We keep Ideal tight to US proposal / sales-engineer / VP Sales buyers. We do not mash India pricing fights or CEO-only tiny companies into webinar one unless Ideal is too thin after a real pull.</li>
+</ul>
+<ul>
+<li>Check vs Call 1: Matches US-first, Series B+ / 500+, proposal / sales-engineer / VP Sales titles, regulated / enterprise RFP verticals, and Responsive / Loopio competitive frame. Does not invent a people count.</li>
+</ul>
+<ul>
+<li>Too small?: Unknown until live pull. Qualify out only if broadest honest people count is still under about 30k after expansion — we do not have that count yet. Ryan’s global-fit frame said they clear about 100k when expanded; prove it on screen.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): Clear buyer pain — enterprise RFP / SecQ response is slow, legacy Responsive / Loopio plus bolted-on AI feels dated, DIY Claude breaks after model updates. Named customer logos on inventive.ai (HiBob, Spectro Cloud, Culture Amp, Ripple, Ironclad, and others). Average deal about $20k–$22k ARR with estimated LTV about 2x ARR (~$44k). One logo can cover QS investment math Ryan previewed.</li>
+</ul>
+<ul>
+<li>What’s fuzzy or weak (closer must know): Win rate still about 4–7% after improving from under 4%. Inbound volume collapsed while spend stayed high. Proposal managers can see the product as job competition. Qualification volume (~17 decision-makers) may be soft — he said he needs to check with the team. No counted Ideal TAM yet — show it live. Offer must pick ONE core problem lane for the webinar (RFP win-rate / autonomous response), not every product surface.</li>
+</ul>
+<ul>
+<li>Positioning line for the webinar if we pick today: How proposal and sales-engineering teams at Series B+ SaaS companies win more enterprise RFPs and security questionnaires with AI-native automation — without living in legacy tools or fragile DIY Claude builds.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Enterprise proposal / sales-engineering teams lose deals and burn cycles because RFP and security-questionnaire response is slow, patchwork, and stuck between legacy tools and DIY AI that breaks.</li>
+</ul>
+<ul>
+<li>Who we invite first, then next: Ideal first (US proposal managers / directors, sales engineers / directors, VP Sales at Series B+ SaaS / tech with 500+ employees in RFP-heavy verticals). Then broader honest list (UK / Singapore / Europe same titles; adjacent sales-enablement roles). That invite order is OUR acquisition motion — not the webinar story.</li>
+</ul>
+<ul>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook: you are drowning in enterprise RFPs and security questionnaires while win rate and cycle time punish you then problem: Responsive / Loopio plus bolted-on AI, feature checklists, and DIY Claude builds do not create an autonomous response system that survives model changes then proof: Inventive’s AI-native method, named customer proof, and results they own (do not invent beyond Call 1 / site) then offer: Inventive AI platform for RFP / SecQ automation (demo / pilot path they already run) then easy CTA: book a fit call with Inventive (not a hard close on the webinar)</li>
+</ul>
+<ul>
+<li>Copy / talk-track beats (3–5):</li>
+<li>What “we will just use Claude” costs after the next model update</li>
+<li>Why feature parity with legacy tools is the wrong buyer education frame</li>
+<li>How AI-native RFP / SecQ response changes cycle time and win rate for proposal and sales-engineering teams</li>
+<li>Proof from Inventive customers without inventing numbers beyond what they own</li>
+<li>Soft CTA: book a short fit call to see if Inventive should run a pilot on your next enterprise RFP stack</li>
+</ul>
+<ul>
+<li>Cadence: One Ideal-lane US Series B+ SaaS RFP / SecQ topic first. Test show-to-meeting math. Then segment or add secondary geos. Do not mash every industry vertical into webinar one.</li>
+</ul>
+<p>Best case studies for THIS Call 2 (required — Airtable SoT)</p>
+<ul>
+<li>Cedric Le Rouzo — Cinnamon Consulting — why it fits: Software / SaaS-adjacent technical buyer who pressure-tested webinar economics and time cost. Best answer when Mukund or his team ask “does this work for software / SaaS, not only coaches and services?” Self-reported interview figures only (about $2,000 then about $10 cost per sales call; about 40 hours/month then about 3; about 66 booked sales calls across the first two webinars). Say them as his interview numbers, not QS-measured. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<ul>
+<li>Luke Edwards — Boss Writing / Boss Equity — why it fits: Multi-account software proof — same system run on his own service business and on more than five third-party software companies inside Boss Equity’s client base. Best answer to “will this transfer to our SaaS motion?” and “how long until messaging works?” Keep qualitative on transfer / timeline; do not invent clean campaign totals. Prospect link: https://quantums-institute.com/due-diligence-software#section-vsjNPfqiE6O</li>
+</ul>
+<ul>
+<li>Philipp Von Schulthess — Oxoia — why it fits: Technical / institutional software buyers who “would never webinar,” plus the exact “channels are real but not big enough to grow fast enough” line while Inventive’s inbound has collapsed. When to pull: niche / regulated buyer skepticism or “we already get some inbound / we already tried a Claude webinar.” Keep qualitative — no clean campaign totals to quote. Prospect link: https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Mukund (signer — calls the shots; cares about SaaS fit, webinar participant quality, dollar value, sales-process help, and starting before 2027 if it works). Team members he said he will bring — confirm names and roles at open (likely sales / marketing leaders who own the conversion leak and the ~17-qualified figure). Founder owns burn detail Mukund did not know on Call 1 — do not assume founder is on this call unless he appears.</li>
+</ul>
+<ul>
+<li>Landmines from Call 1:</li>
+<li>Do not lead with services-only case studies — he asked early whether QS works for small tech SaaS. Open software DD (Cedric / Luke) early.</li>
+<li>Do not invent a TAM people count — build Ideal US lists live on screen.</li>
+<li>Do not ignore the win-rate yellow flag versus the 3x ROI guarantee — name the conversion work Ryan already previewed.</li>
+<li>Do not re-debate price as if Call 1 never happened — range already previewed and did not sound like a blocker; walk build then confirm economics with team.</li>
+<li>Do not treat his one Claude-for-RFPs webinar as proof they already have a partner system — they have not hired a webinar partner yet.</li>
+<li>Confirm who is in the room and what each cares about before deep demo.</li>
+<li>Never invent money-back, guarantees beyond what Ryan said on tape, or unsaid revenue.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Jide Adesalu · Call 1 · 12:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jide Adesalu · Microhills Inc · Call 1 · Wed Sep 23, 2026 12:00 PM ET · Ryan Matsumori</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Jide Adesalu, PMP / ACP, is Founder and President of Microhills Inc (also listed as Director of Project Management in Digital Nova Scotia features).</li>
+<li>Based in Halifax, Nova Scotia (America/Halifax). Email jide@microhills.com · phone +1 902-809-7740 · LinkedIn linkedin.com/in/jide-adesalu.</li>
+<li>Public background: computer-science degree in Nigeria; about 25 years in technology and leadership at Shell (systems, enterprise apps, SAP Basis, IT project management, then business development including major-project budgets); further study noted at Cornell and Warwick Business School.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Microhills Inc (microhills.com · Suite 100, 6156 Quinpool Road, Halifax) is a Halifax IT consultancy founded December 2018.</li>
+<li>Public offer: custom software, web and mobile apps, systems integration, AI integration and automation, data management, cybersecurity, workforce / technology consulting, and ongoing support. Also mentions custom hardware builds in Digital Nova Scotia features.</li>
+<li>Positions as helping SMEs and enterprises accelerate digital transformation; public site claims tens of years combined IT experience and client work across Nova Scotia and beyond.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Small and mid-size businesses that need websites, apps, integrations, and digital transformation help.</li>
+<li>Organizations that want AI automation, data management, cybersecurity, and ongoing IT support without a giant internal team.</li>
+<li>Public and community clients appear in their portfolio (local tourism / recreation sites, ecommerce shops, nonprofit and civic projects).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Buyers struggle to modernize websites, apps, and systems with limited in-house IT.</li>
+<li>Leaders need digital transformation, AI automation, and integrations that actually fit how the business runs.</li>
+<li>After launch they still need support, training, and someone who can keep systems working.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: webinar-registered · sales call booked · vera (call for booking) · apollo-data · quantum scaling. Booked through webinar chat into a Business Growth Roadmap Call with Ryan.</li>
+<li>Soft enrichment: Senior Project Manager / President title; information technology and services; Halifax HQ; self-reported interest band on file around 10–25K. Confirm live revenue, team size, and what “booking more leads” means for Microhills.</li>
+<li>Atlantic Canada timezone (12:00 PM ET ≈ 1:00 PM Atlantic) — match energy; he is a founder who publicly talks about hiring experienced local talent as a growth constraint.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Moved to Halifax in 2018 with his family so his children could go to university there, and publicly calls Halifax a good place to raise a family. (Halifax Partnership interview “Finding Opportunity and Talent in Halifax”)</li>
+<li>Left a long Shell career in Nigeria after about 25 years because he was ready to build his own company once the kids’ education plans lined up. (My East Coast Experience “Ready to fly on his own”)</li>
+<li>Grew up in Nigeria with a computer-science degree, then added study at Cornell and Warwick before the Canada move. (My East Coast Experience / Halifax Partnership features)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Jean Brewster · Call 1 · 3:30 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jean Brewster · BrandStory Architech · Call 1 · Wed Sep 23, 2026 3:30 PM ET · Ryan Matsumori</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Jean Brewster is Chief Operating Officer of BrandStory Architech (BSA), a creator-led marketing consultancy.</li>
+<li>Based in the New York metro (White Plains / America/New_York on file). Email jean.brewster@brandstoryarchitech.com · phone +1 914-837-7066 · LinkedIn linkedin.com/in/jean-brewster.</li>
+<li>Public background: former Executive Managing Director at Garth Group; strategy and growth roles at Mastercard and American Express; completed General Assembly’s Data Science Immersive in 2022. BSA founders page highlights her machine-learning and analytics lens on brand growth.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>BrandStory Architech (brandstoryarchitech.com) is a women-founded, creator-led marketing consulting firm (public listings ~1–10 people; founded around 2024; Los Angeles HQ with Jean in the New York metro).</li>
+<li>Public offer: integrating brands into culture through AI and data-driven storytelling — influencer / creator partnerships, entertainment marketing, PR and brand identity, and an AI-driven marketplace connecting brands with women and BIPOC creators in film, TV, podcasts, live events, and music.</li>
+<li>CEO / co-founder Pauline Malcolm (former Essence Ventures CRO and other media leadership) is the public face for speaking and Cannes; Jean owns ops and data-driven growth.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Brands that want creator-led cultural partnerships across influencers, music, TV, and film.</li>
+<li>Marketing and brand leaders who need AI / data-informed storytelling and PR, not only one-off influencer posts.</li>
+<li>Media and publisher partners (site has a partner application for media companies and publishers).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Brands struggle to get into culture in a way that feels authentic to Gen Z and diverse audiences.</li>
+<li>Teams need creator and entertainment partnerships that drive growth, not vanity metrics.</li>
+<li>Leaders want AI and data behind storytelling so campaigns are measurable and scalable.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: webinar-registered · webinar-attended · webinar-auto-registered · qualified · sales call booked · vera (call for booking) · quantum scaling · opp reactivation black friday. Warm webinar-attended path plus a prior reactivation tag — confirm whether this is a fresh evaluation or a reopen.</li>
+<li>Soft enrichment: COO title; marketing services; self-reported interest band on file around 3–10K; booking note “booking more leads.” Confirm live revenue stage, buyer (Jean alone vs Pauline / team), and what growth means for a young creator-led firm.</li>
+<li>Afternoon ET slot (3:30 PM) — she is ops/data heavy; expect precise questions on economics and process, not fluff.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Stepped away from day-to-day work at Garth Group in 2022 to complete General Assembly’s full-time Data Science Immersive (13 weeks, intensive labs and projects) even without a coding background. (her LinkedIn Pulse “My Journey to Becoming a Data Scientist”)</li>
+<li>Publicly reflected on her first Cannes Lions as being all about AI and the Creator Economy, with BrandStory Architech in the room for brand-innovation conversations. (her LinkedIn post on Cannes Lions / Creator Economy)</li>
+<li>BrandStory Architech founders page frames her path through Mastercard and American Express into data-driven brand storytelling at BSA. (BrandStory Architech founders / Jean Brewster bio)</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
