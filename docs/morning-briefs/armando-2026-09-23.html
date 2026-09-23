@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Wednesday Sep 23, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Wednesday Sep 23, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>1:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/gbFFrFRRFbPPAvYStW3b">Philippe Bouissou</a> · Call 1 · Blue Dots Partners</strong>
+      </div>
+      <div class="slot">
+        <strong>2:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/ojp0cd5cAX0EmytEj0N6">Shatay Trigère</a> · Call 2 · RapidCanvas</strong>
+      </div>
+      <div class="slot">
+        <strong>3:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/besl3jSHlLT0EJ1aTCDc">David Hatfield</a> · Call 4 · UniverseIT</strong>
+      </div>
+      <div class="slot">
+        <strong>4:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/YoC3ng4kv7J15wI2DWTt">Raghu Reddy</a> · Call 1 · Kalven Financial Group</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Philippe Bouissou · Call 1 · 1:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Philippe Bouissou · Blue Dots Partners · Call 1 · Wed Sep 23, 2026 1:00 PM CT · Armando Valencia</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Philippe Bouissou, Ph.D., is Founder / CEO (also styled Managing Partner) of Blue Dots Partners, LLC.</li>
+<li>Based in Palo Alto, California (Pacific time). Email phb@bluedotspartners.com · phone +1 650-283-4372 · website bluedotspartners.com · LinkedIn linkedin.com/in/phbouissou.</li>
+<li>Public background: Silicon Valley entrepreneur and CEO (founded G2i, acquired); ran Apple’s early online store under Steve Jobs; venture capitalist; board member; author of Aligning the Dots; Ph.D. in non-linear physics / chaos theory from École Normale Supérieure path in Paris.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Blue Dots Partners (bluedotspartners.com) is a Palo Alto management-consulting firm founded in 2014.</li>
+<li>Public pitch: help mid-market companies accelerate sustainable top-line revenue growth with a data-driven methodology called A4 Precision Alignment™ — find customer-facing and internal misalignments that block growth.</li>
+<li>Small team (public listings ~1–10 / about 5–10). Clients described as companies or units roughly in the $10M–$1B revenue band; team framed as veteran Silicon Valley executives.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>CEOs, general managers, and P&amp;L owners at mid-market companies who need faster top-line growth.</li>
+<li>Leadership teams that feel stuck between strategy and execution and need a clear alignment diagnosis.</li>
+<li>Boards and operators who want a repeatable growth methodology rather than generic coaching slogans.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Many companies work hard and still miss growth because product, market, sales, and internal teams are out of alignment.</li>
+<li>Leaders lack a fact-based way to see which misalignments are killing revenue.</li>
+<li>Blue Dots pitches precise discovery plus a playbook so growth stops depending on luck or one hero seller.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: webinar-auto-registered · sales call booked · apollo-data · cold email. Auto-registered webinar path into a Business Growth Roadmap Call (not marked webinar-attended on file — confirm show status lightly if useful).</li>
+<li>Soft enrichment: CEO title; management consulting; Palo Alto; self-reported interest band on file around 100K+; company size band about 5–10. Confirm live ACV, who else buys, and whether he wants growth for Blue Dots itself or a method for clients.</li>
+<li>1:00 PM CT = 11:00 AM PT — local-friendly for him; confirm energy and whether anyone else joins.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Plays drums — called out on his own site in the Success Made to Last podcast note. (philippebouissou.com Speaking / Events)</li>
+<li>Best-selling author of Aligning the Dots (published 2020) and TEDxYoungstown speaker on “Aligning the Dots… the Secret to Grow Any Business.” (philippebouissou.com · TEDxYoungstown page)</li>
+<li>Physics roots: Ph.D. in non-linear physics / chaos theory — he openly ties that science background to his growth framework. (his LinkedIn / TEDxYoungstown bio)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Shatay Trigère · Call 2 · 2:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Shatay Trigère · RapidCanvas · Call 2 · Tue Sep 23, 2026 2:00 PM CT · Armando Valencia</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Shatay Trigère (CMO, RapidCanvas; also a side coaching / consulting practice) ran two discovery / roadmap conversations with Armando. RapidCanvas is a hybrid AI “service as software” platform for mid-market / enterprise transformation — North America focus, manufacturing / retail / business services strength, land-and-expand annual contracts typically $100k–$500k+, sub-$10M company revenue band on tape, Series B nearing close. Growth is event-led (about 26–46 industry events per year) plus seller networks. Mid-funnel is the bottleneck: hundreds of accounts contacted go quiet; deals stall; sellers hold prospects; marketing holds more on pause. Prior partner webinar results were mixed (example cited: ~140 registrations, ~70 attendees, two calls, no subsequent sales). Soft yes to a custom demo of campaign execution, lead quality, costs, webinar ops, conversion, ROI, and guarantees.</li>
+</ul>
+<ul>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Sharp, cooperative, guarded on financials without NDA. Evaluating, not swooning. Pushes back on generic claims (“most companies say that”). Responded well to personalized calendar-invite channel because it felt relevant.</li>
+<li>Goals they want but can’t hit yet: Better mid-funnel progression from event and seller-network interest into qualified seller meetings. Success picture discussed around roughly five qualified seller meetings per week, about 15–30% attendee-to-meeting conversion, and a path to closed deals — confirm what she still owns as the scoreboard.</li>
+<li>Why hitting the goal matters to them personally / for the company: Events create millions in pipeline energy that dies mid-funnel; sellers need a cleaner trust path than “follow up sometime.” As CMO she owns budget but wants CEO and sales-leadership buy-in.</li>
+<li>What’s holding them back: Wide ICP makes relevant content at scale hard; six-to-nine-month sales cycles; prior webinar partnership underperformed on sales; NDA / private-company caution on sharing deeper financials.</li>
+<li>Consequences if nothing changes: Keep paying for events that create top interest and still watch mid-funnel go quiet; sellers stay overloaded with stalled accounts.</li>
+<li>Fears that will show up in the decision: Another webinar motion that books vanity registrations without seller meetings; ROI claims she cannot hold a vendor to; CEO / sales leaders not buying the channel; list / messaging too generic across manufacturing, retail, and services.</li>
+</ul>
+<ul>
+<li>Objections still open: Webinars as a sales-funnel tool vs “marketing content.” Outcome-based ROI accountability. Prior webinar partnership scar tissue. Wide ICP / content relevance. NDA before deeper numbers. Price / scope for a $20k–$30k class engagement was floated on early notes — confirm live, do not assume acceptance.</li>
+</ul>
+<ul>
+<li>Who’s joining Call 2: Confirm. Shatay is budget DM with CEO + sales counterpart buy-in typically required. Aim to know whether sales leadership or CEO is on this demo or only later.</li>
+</ul>
+<ul>
+<li>What we promised to walk: Customised demonstration — campaign execution, lead quality, costs, webinar operations, conversion, ROI, guarantees / accountability — plus enterprise case studies. NDA recommended before deeper financial discovery.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Shatay · RapidCanvas. Hybrid AI platform + embedded experts helping enterprises move from AI pilots to production ROI. Buyers = senior business leaders (VP / SVP / Director+ / GM / transformation owners) in ops, supply chain, finance / FP&amp;A, RevOps, with IT / data as stakeholders but not primarily IT-led deals. Problem for their buyers = executive pressure for AI ROI while pilots stall in messy data and manual workflows. Problem for RapidCanvas GTM = mid-funnel reactivation + new top-of-funnel that creates seller meetings, not just event badge scans.</li>
+<li>Company goals / dream state (from Call 1): Predictable qualified meetings for sellers; better conversion from event interest; Series B scale story that is not only “more events.”</li>
+<li>ICP dream state (what THEIR buyers want): A measurable business outcome from AI inside roughly a year — without a multi-year internal build or consulting theater.</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<ul>
+<li>Mid-funnel reactivation of quiet event accounts is the live wedge — do not pitch a generic “AI webinar.”</li>
+<li>Wide ICP is acknowledged internally — Call 2 must pick a first problem lane (for example supply-chain ROI or finance automation) rather than “all AI transformation.”</li>
+<li>Prior webinar partnership produced attendees without sales — differentiate calendar-invite + seller-meeting design from vanity webinars.</li>
+<li>Sharp buyer: bring ROI accountability language and enterprise proof; avoid fluffy claims.</li>
+<li>NDA may still be required before she shares deeper financials.</li>
+</ul>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): Geo = North America first; some LatAm (Brazil / Mexico) secondary. Vertical = manufacturing and industrial, retail / CPG, business services / MarTech; secondary verticals exist in her ICP workbook. Company type/size = roughly $100M–$5B / about 100–2,000+ employees (workbook band; strongest growth focus mid-market). Buyer titles = VP / SVP / Director+ business owners of outcomes (ops, supply chain, finance, RevOps, transformation); CIO / CTO / CDO important but not primary champion. Who we exclude = IT-only initiatives with no business owner; companies determined to build everything internally; pure experimenters with no urgency; accounts so large they only buy via top-down vendor decrees she cannot access.</li>
+<li>Ideal ICP (tight — who they said they want most): North American mid-market enterprises in manufacturing / retail / business services with a senior business champion under pressure for measurable AI ROI, where pilots already stalled. We have not counted the people yet on a QS-owned pull — use her workbook as direction, then show companies, then roles, then contacts live.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Same senior business titles across the fuller vertical set in her ICP doc (including secondary verticals she named) across North America plus careful LatAm English/Spanish-capable lanes she accepts — still excluding IT-only and no-urgency accounts. We have not counted the people yet.</li>
+<li>How we got the number: Call notes + confidential ICP workbook parameters. No QS list pull count on tape. Demo path: companies, then roles, then contacts.</li>
+<li>What we widened (if thin): They said: NA mid-market, manufacturing / retail / business services core, business-leader champions, $100M+ band. We add only with her OK: multi-title stacks inside those accounts, secondary verticals from her own workbook, LatAm as second wave. Always label theirs vs ours.</li>
+<li>Check vs Call 1: Matches event-led growth, mid-funnel pain, enterprise ACV, and wide-ICP problem.</li>
+<li>Too small?: Unlikely at NA mid-market decision-maker scale after multi-title expansion — verify with a real pull before quoting. Do not bluff a precision number from the workbook alone.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): High ACV land-and-expand; clear buyer pain (AI ROI pressure); strong proof assets already on their site; CMO who understands messaging; calendar-invite resonance already personally felt.</li>
+<li>What’s fuzzy or weak (closer must know): Wide ICP can mush webinar one; prior webinar partnership scar tissue; CEO / sales buy-in still required; financials guarded; success metrics must be seller-meeting real, not registration vanity.</li>
+<li>Positioning line for the webinar if we pick today: How operations and supply-chain leaders turn stalled AI pilots into measurable production ROI in months — without a multi-year internal rebuild.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Senior business leaders are on the hook for AI ROI while pilots stall in siloed data and manual workflows — not “RapidCanvas needs more leads.”</li>
+<li>Who we invite first, then next: Ideal manufacturing / retail / business-services champions in the Ideal size band first, then broader honest TAM. That invite order is OUR acquisition motion — not the webinar story.</li>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook: you are accountable for AI ROI and the pilot still is not in production then problem: siloed data, manual work, and consulting theater without an operating model then proof: RapidCanvas method / deployments / time-to-production proof then offer: their platform + expert engagement then easy CTA: book a seller / discovery meeting with RapidCanvas</li>
+<li>Copy / talk-track beats (3–5):</li>
+<li>Pilots are not ROI.</li>
+<li>What a business owner can defend to the CFO in twelve months.</li>
+<li>Why IT-led AI projects stall without an outcome owner.</li>
+<li>How production-ready beats another slide deck.</li>
+<li>Soft CTA: book a working session with a RapidCanvas seller.</li>
+<li>Cadence: One Ideal vertical / use-case topic first (pick supply chain or finance-style wedge with her); test attendee-to-meeting math; then segment. Optionally layer reactivation tracks for quiet event accounts as a parallel motion once Ideal messaging is proven.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Cedric Le Rouzo — Cinnamon Consulting — why it fits: technical / specialized enterprise software skepticism; niche sharpened the room. When to pull it: “our buyers are too sophisticated / specific for webinars.” Use ~66 booked calls across first two webinars conversationally.</li>
+<li>Tejas Parikh — Akshar Consulting — why it fits: high-ticket B2B, senior buyers, quality conversations over junk volume — mirrors $100k–$500k ACV world. When to pull it: “we only need seller meetings, not hundreds of tire-kickers.”</li>
+<li>Gene Rosendale — Advocate Advisors — why it fits: if she frames prior webinar partner as agency-like disappointment. When to pull it: rent-versus-own and accountability. About 61 booked sales calls across 12 webinars.</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Shatay (CMO / budget DM — cares about seller meetings, ROI accountability, messaging relevance). Sales counterpart and CEO typically needed for buy-in. Confirm who must see the demo output before commercial yes.</li>
+<li>Landmines from Call 1:</li>
+<li>Do not pitch generic “AI interest” content.</li>
+<li>Do not ignore the failed partner webinar math — differentiate on seller-meeting design.</li>
+<li>Do not demand financials without NDA sensitivity.</li>
+<li>Do not claim guarantees you cannot defend in her words.</li>
+<li>Wide ICP: force a first wedge on the call.</li>
+<li>Never invent TAM headcounts or revenue growth she declined to share.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>David Hatfield · Call 4 · 3:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Call 4 prep · David Hatfield · UniverseIT · from locked via:prep-lock (backfill 2026-09-15 · Armando)</b></p>
+<p>Source disk: /workspace/sod-2026-09-16/raw/hatfield-prep-lock-body.md Next call: 2026-09-18 14:00 CT</p>
+<p>David Hatfield · UniverseIT · Call 4 (Call 3+ spine) · Fri Sep 18, 2026 2:00 PM CT · Armando</p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft yes on the system as a webinar pipeline that can compress MSP networking into a 60-minute trust path and complement conferences. On Call 2 David engaged deeply on the custom funnel, ICP for CIOs / IT Directors, and the $18,000 six-month engagement plus roughly $300–$400 variable tech per webinar, with a 5x ROI framing. On Call 3 he said they may have chosen quantumSCALE over the Exchange conference path if they had met sooner.</li>
+</ul>
+<ul>
+<li>What paused the close: Capacity and timing after a $30,000+ MSP conference investment. David asked to finish conference follow-up first (roughly through the week of September 14), then reopen. CEO Joe was interested but preferred to wait until that workload cooled.</li>
+</ul>
+<ul>
+<li>Who else matters: Joe (CEO) and other partners. David is CFO / principal partner and financial gate. Call 3 explicitly asked to bring Joe and partners into the next conversation.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table: About $18,000 for six months, plus variable webinar tech (~$300–$400 per webinar; ~$600–$800 for two per month). 5x return framing tied to new contracted revenue or continued support. No signed deal.</li>
+</ul>
+<ul>
+<li>Whose court: Shared. They were to work Exchange leads; Armando was to nurture with client-win examples and book today’s reopen. Ball is now on this call to decide whether webinars start as a parallel pipeline alongside October Dynamics booth / March Dallas thinking.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Bought-in-but-blocked. Warm, collaborative, and intellectually sold on calendar invites and webinars as a lower-CAC alternative to trade shows. Not stalling from disbelief — stalling from “conference ROI first.”</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency rises if Exchange follow-up is thin, if October Dynamics needs pre-conference pipeline, or if they want a March Dallas plan that is not only booths and dinners. Urgency dies if MSP subcontracting calls are filling the calendar and they feel they already paid for growth.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: Paying for a new channel before the $30k conference pays back; partner / Joe buy-in without them in the room; their own DIY Teams webinars only getting a ~2% response proving “webinars don’t work” instead of proving the motion was underbuilt; delivery utilization already high (80–100%) if leads spike.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Timing / conference-first focus — primary — David will not start a second big motion while Exchange follow-up is unfinished.</li>
+</ul>
+<ul>
+<li>Co-decider alignment (Joe + partners) — primary — financial yes from David still needs CEO / partner air cover.</li>
+</ul>
+<ul>
+<li>“We already have a pipeline from conferences / MSP dinners” — secondary — they may treat webinars as optional until they compare 2–3 months of results.</li>
+</ul>
+<ul>
+<li>DIY webinar doubt — secondary — email to ~200 non-attendees produced ~4 registrations; without reframing, that looks like proof webinars fail.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “We need to finish conference follow-up before we start anything new.”</li>
+</ul>
+<ul>
+<li>Status: still open — this was the explicit Call 3 pause.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not fight the Exchange work. Reframe today’s call as deciding whether webinars become the parallel machine that fills the gaps conferences cannot: multi-industry buyers beyond the ~50 people who saw their boardroom, shorter cycle (days vs 4–6 weeks), and pre-fuel for October / March events. Offer a controlled first-campaign start date that does not steal David’s week from MSP nurturing.</li>
+</ul>
+<ul>
+<li>Full story to tell: Philipp Von Schulthess at Oxoia. Philipp sells building-energy software to municipalities, pension funds, and facility managers — a niche institutional buyer set. Referrals were real, but in his words they were “not big enough to grow fast enough.” He still filled webinars and closed the largest deal in company history off the motion, and founder time dropped from about 16 hours a week on outreach to almost none once an assistant ran the process. Tell it half-offhand: niche buyers, referrals real but not enough, then owned webinar engine and the biggest deal.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand, not rehearsed; then soft tie-back to UniverseIT’s conference-vs-machine choice.</li>
+</ul>
+<ul>
+<li>Exact land line: “Philipp at Oxoia had real referrals too — they just were not big enough to grow fast enough. The webinar engine is what gave him the deal size conferences alone were not producing. That is the same fork you are on with Exchange versus a owned pipeline.”</li>
+</ul>
+<ul>
+<li>Objection: “We tried webinars / emailed the attendee list and response was weak.”</li>
+</ul>
+<ul>
+<li>Status: still open — Call 3 named ~2% response and four registrations from ~200 emails on DIY Teams webinars.</li>
+</ul>
+<ul>
+<li>Overcome with: Separate “webinar as a Zoom link in an email blast” from “calendar-invite trust path into a designed webinar that books the call.” Their DIY result is evidence the old packaging failed, not that AI automation education for MSPs and SMB IT buyers cannot convert.</li>
+</ul>
+<ul>
+<li>Full story to tell: Greg Smart at 500 More. Greg’s first webinar flopped. The fix was not “buy more traffic” — it was repositioning the offer and broadening the niche. After about two months he was consistently getting more than 10 sales calls every month. Tell it half-offhand: first run failed, they fixed the offer and targeting, then the call flow showed up. Use this when David points at the 2% email test as proof the channel is dead.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land as permission that a weak first run is normal when the packaging is wrong.</li>
+</ul>
+<ul>
+<li>Exact land line: “Your 2% email test is Greg’s first webinar story — the flop was the packaging, not the channel. Once the offer and who we invite are right, the call flow shows up. That is what we would rebuild before you judge webinars against Exchange.”</li>
+</ul>
+<ul>
+<li>Objection: “Joe / partners need to be in this before we commit.”</li>
+</ul>
+<ul>
+<li>Status: still open — Call 3 asked to include Joe and partners; confirm who is actually on today’s Zoom.</li>
+</ul>
+<ul>
+<li>Overcome with: If Joe is present, run a short decision frame (scope, investment, start date, what David already likes). If Joe is absent, get David to name the exact internal ask and book a dated partner decision call this week — not another month of silence. Arm him with one board-friendly story (Gene rent-vs-own) and the $18k + variable cost vs $30k+ conference spend comparison he already understands.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors. Gene is a founding partner at Advocate Advisors, a boutique investment bank and M&amp;A advisory firm headquartered in Chicago with sister offices in other U.S. cities. He is the marketing-literate partner who vetted firms for the group. Before the system, he ran four agencies over five years at roughly $36k–$48k a year and got five qualified prospects and one client total. After they installed the owned webinar system, tracked campaign totals show about 61 booked sales calls across 12 webinars. Tell it half-offhand: agency burn, niche buyers, then owned engine and booked-call math — then soft-tie to Joe asking whether this is “another marketing spend” or a machine they keep.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land as the partner-room answer to “is this just another agency.”</li>
+</ul>
+<ul>
+<li>Exact land line: “When Joe asks if this is another marketing firm, tell him Gene’s story — four agencies, five years, almost nothing, then about sixty-one booked sales calls across twelve webinars once they owned the engine instead of renting it.”</li>
+</ul>
+<ul>
+<li>Objection: “Our world is technical / MSP + Microsoft + AI automation — will the right buyers actually show?”</li>
+</ul>
+<ul>
+<li>Status: half-handled on earlier calls (475k IT executive lane discussed); still useful if Joe probes niche fit.</li>
+</ul>
+<ul>
+<li>Overcome with: Lean into niche as an advantage. Ideal first: MSPs and IT leaders who care about AI automation / Dynamics migrations; then honest adjacent titles. Do not reopen a full Call 2 TAM essay unless they ask.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo at Cinnamon Consulting. Cedric ran partner-sales work in a highly technical software world (process-mining lane; earlier path included Minit growing and selling to Microsoft). Buyers felt “too specialized for webinars.” The niche made messaging sharper, not weaker. From his own case-study interview: webinar one produced 63 attendees and 16 qualified sales calls; webinar two produced 128 attendees and 50 sales calls — about 66 booked calls across the first two webinars alone. Tell it half-offhand: technical niche, skepticism, then the call volume when the room was built for that buyer.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land when someone says IT / MSP buyers will not sit education.</li>
+</ul>
+<ul>
+<li>Exact land line: “Cedric’s buyers were just as technical and skeptical as an MSP or CIO lane — and the niche made it easier. He got about sixty-six booked sales calls across his first two webinars. Specific is usually the advantage, not the blocker.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Philipp Von Schulthess · Oxoia — referrals real but “not big enough to grow fast enough”; largest deal in company history off the webinar motion; founder time from ~16 hours/week to almost none. Use when conference pipeline feels “good enough.”</li>
+</ul>
+<ul>
+<li>Greg Smart · 500 More — first webinar flopped; fix was offer + niche, not more spam; then consistently more than 10 sales calls per month. Use against the DIY 2% email test.</li>
+</ul>
+<ul>
+<li>Gene Rosendale · Advocate Advisors — burned by agencies; about 61 booked sales calls across 12 webinars. Use for Joe / partner “another marketing spend” and rent-versus-own vs $30k conferences.</li>
+</ul>
+<ul>
+<li>Cedric Le Rouzo · Cinnamon Consulting — technical niche; Microsoft-path credibility; about 66 booked calls across first two webinars. Use for MSP / AI automation buyer skepticism.</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open as a decision reopen after Exchange follow-up — ask what converted from the 10 MSP conversations and whether October / March still need a second channel.</li>
+</ul>
+<ul>
+<li>Confirm who is in the room (Joe / partners). If missing, lock a dated partner decision slot this week with David as champion.</li>
+</ul>
+<ul>
+<li>Re-anchor commercial terms already discussed: ~$18k / six months, variable tech, 5x framing, client owns the machine after build — compare calmly to $30k+ conference spend.</li>
+</ul>
+<ul>
+<li>Pick first campaign lane in their words (MSP partnership webinar vs direct SMB AI automation) and a controlled start date that does not cancel Exchange nurturing.</li>
+</ul>
+<ul>
+<li>Leave with e-sign / pay, or a named kickoff week with Joe aligned — not another vague “after conferences.”</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If Exchange follow-up is crushing and they still refuse parallel work, then offer a dated start after a named MSP milestone (for example after first 3–4 MSP proposals) and still get verbal commercial intent on the record.</li>
+</ul>
+<ul>
+<li>If Joe is absent and David soft-yeses alone, then do not celebrate — book Joe on a short decision call within seven days and give David the Gene rent-versus-own land line.</li>
+</ul>
+<ul>
+<li>If they cite the 2% DIY webinar failure, then run Greg’s first-flop story and contrast email blast versus calendar-invite system without re-demoing the whole funnel unless asked.</li>
+</ul>
+<ul>
+<li>If they want to “test webinars for 2–3 months versus conferences” without buying, then hold the line that the comparison only works if the system is built correctly; DIY Teams links will lose that test on purpose.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: signed start (or funded kickoff week) for the full system with Joe aware, first webinar lane named (MSP or direct AI automation), invite cadence paced so Exchange follow-up is not abandoned. Next acceptable: written yes from David + Joe on scope and investment with a calendar hold for kickoff inside two weeks. Not acceptable: “circle back after October Dynamics” with no date and no partner alignment.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Raghu Reddy · Call 1 · 4:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Raghu Reddy · Kalven Financial Group · Call 1 · Wed Sep 23, 2026 4:00 PM CT · Armando Valencia</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Raghu Reddy is CEO of Kalven Financial Group.</li>
+<li>Based in the Houston / Cypress, Texas area (America/Chicago). Email raghu.reddy@kalven.biz · phone +1 713-213-0606 · LinkedIn linkedin.com/in/raghu-reddy-872282249.</li>
+<li>Public role listed since about October 2017; LinkedIn and company site point to Kalven’s Houston office at 15915 Katy Freeway.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Kalven Financial Group (kalven.biz) offers comprehensive financial planning for individuals and families.</li>
+<li>Public services: retirement planning, estate planning (wills, trusts, tax-efficient strategies, asset protection), and family-protection planning (life insurance and related coverage).</li>
+<li>Positioning: personalized plans so clients can retire with less stress and protect family legacy — not a software company.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Individuals and families planning retirement and long-term financial security.</li>
+<li>Households that need estate plans, wills / trusts, and asset protection.</li>
+<li>People who want family-protection coverage (life insurance and related) tied to a full plan, not a one-off product pitch.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Buyers delay retirement and estate decisions and then face expensive catch-up.</li>
+<li>Families lack a clear plan that covers income, insurance, taxes, and legacy together.</li>
+<li>Kalven pitches expert guidance so clients feel calm about the next decade, not buried in product jargon.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: webinar-auto-registered · sales call booked. Thin tag set — confirm how he found QS and whether he attended the webinar.</li>
+<li>Soft enrichment: CEO title; financial planning / advisory; Houston HQ; self-reported interest band on file around 3–10K. Confirm live revenue, team size, lead sources today, and what “more clients” means for him.</li>
+<li>4:00 PM CT — local afternoon for Houston; confirm energy late day and whether anyone else joins.</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+

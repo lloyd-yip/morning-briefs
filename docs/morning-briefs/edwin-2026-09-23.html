@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Wednesday Sep 23, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Wednesday Sep 23, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>7:30 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/UajGWwBQog8PbLHR3vx3">Jenny Cong</a> · Call 1 · Health Wealth Management Inc</strong>
+      </div>
+      <div class="slot">
+        <strong>8:45 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/ChoxY5U0X3qfGWfSyvkl">Bruce Glass</a> · Call 1 · Glass Brothers Construction Inc.</strong>
+      </div>
+      <div class="slot">
+        <strong>11:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/gDOmtZGmNUYGuSBDME0X">Fabio D&#x27;Agostino</a> · Call 2 · CharaBio</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Jenny Cong · Call 1 · 7:30 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jenny Cong · Health Wealth Management Inc · Call 1 · Wed Sep 23, 2026 7:30 AM ET · Edwin Chung</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Jenny Cong is President and CEO of Health Wealth Management Inc (also styled Health Wealth Management &amp; Insurance Agency).</li>
+<li>Based in Cupertino / San Jose, California (Pacific time). Email jennyc@healthwealthmanager.com · phone +1 408-859-9896 · LinkedIn linkedin.com/in/jenny-cong-0563b7161.</li>
+<li>Public background: financial advisor path through Merrill Lynch, Morgan Stanley, and Prudential Life Insurance; Master’s in Computer Science from UC Davis; bilingual Chinese and English in public listings.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Health Wealth Management Inc (healthwealthmanager.com / Cupertino office at 10455 Torre Ave) is a small financial-services and insurance agency (public listings ~1–10 people; founded around 2006).</li>
+<li>Public offer: life insurance, medical / dental / vision for companies and individuals, retirement and college-fund planning, investment and tax planning, and long-term care.</li>
+<li>Public niche: advanced tax-reduction planning for high-net-worth clients and new immigrants; one-stop insurance and wealth planning for Chinese- and English-speaking families.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Individuals and families who need retirement, college funding, life insurance, and tax planning.</li>
+<li>High-net-worth clients and new immigrants who want bilingual (Chinese / English) planning help.</li>
+<li>Companies that need medical, dental, and vision coverage for people, plus related protection products.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Buyers struggle to coordinate insurance, retirement, college funding, and tax planning in one place.</li>
+<li>High-net-worth and immigrant families need legal tax strategies and bilingual advice they can trust.</li>
+<li>Employers and individuals need clear medical / dental / vision and life-insurance options without a maze of vendors.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: webinar-registered · sales call booked · vera (call for booking) · apollo-data · quantum scaling. Warm webinar-registration path into a Business Growth Roadmap Call.</li>
+<li>Soft enrichment: President / CEO title; financial services; Cupertino HQ; self-reported interest band on file around 25–50K. Confirm live revenue, team size, and what “booking more leads” means for her agency.</li>
+<li>Early Pacific slot (7:30 AM ET = 4:30 AM PT) — confirm she is truly ready at that hour and match energy; she booked through webinar chat.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Immigrated to California more than twenty years ago and built her practice serving Chinese- and English-speaking families. (Chinese SF Bay listing for Health Wealth Mgmt &amp; Insurance Agency)</li>
+<li>Holds a Master’s in Computer Science from UC Davis — unusual technical path into wealth and insurance work. (her LinkedIn About)</li>
+<li>Public speaking: invited Nasdaq talk on international wealth-management strategies and a Harvard Club talk on hedging retirement-planning risk. (MapQuest / agency photo captions and Chinese SF Bay listing)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Bruce Glass · Call 1 · 8:45 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Bruce Glass · Glass Brothers Construction Inc. · Call 1 · Wed Sep 23, 2026 8:45 AM ET · Edwin Chung</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Bruce Glass is Co-Owner / Operations Manager (BBB also lists Vice President) at Glass Brothers Construction Inc.</li>
+<li>Based in the Halifax / Dartmouth area, Nova Scotia (America/Halifax). Email bruce@glassbrothersconstruction.ca · phone +1 902-412-0472 · LinkedIn linkedin.com/in/bruce-glass-3a765627b.</li>
+<li>Public background: co-founded the company in 2016 with brother Blake Glass; brings carpentry, entrepreneurship, and hands-on building skills while Blake is known for ICF (insulated concrete form) specialty.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Glass Brothers Construction (glassbrothersconstruction.ca) is a family-owned general contractor in Dartmouth, NS serving Halifax and nearby communities.</li>
+<li>Public focus: high-performance residential and commercial builds with Insulated Concrete Form (ICF) construction — energy-efficient, durable homes and structures.</li>
+<li>Small team (public listings ~1–10). Started labor-only, then grew into materials, roof-tight, and full home builds with pre-construction through key handover.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Homeowners planning custom or high-performance homes in the Halifax / Dartmouth region.</li>
+<li>Commercial buyers who want durable, energy-efficient ICF structures.</li>
+<li>Clients who want a licensed contractor that also talks clearly about green / energy-efficient building.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Buyers want homes and buildings that stay durable and energy-efficient as energy costs and indoor-air concerns rise.</li>
+<li>Many builders are not deep in ICF; Glass Brothers pitches certified ICF installers and structural systems built to last.</li>
+<li>Clients also want straight answers and relationship-first delivery from a local family firm, not a faceless GC.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: webinar-registered · sales call booked · vera (call for booking) · apollo-data · quantum scaling. Warm webinar path into a Business Growth Roadmap Call.</li>
+<li>Soft enrichment: owner / ops title; construction; Canada / Nova Scotia; self-reported interest band on file around 100K+. Confirm live revenue, how they win work today (referrals vs marketing), and whether Blake joins.</li>
+<li>Atlantic Canada morning (8:45 AM ET ≈ 9:45 AM Atlantic) — local-friendly for him; confirm timezone at open.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Company About page says Glass Brothers was founded by members of the deaf community and actively champions inclusive hiring and opportunity for deaf people in Nova Scotia. (Glass Brothers Construction About Us)</li>
+<li>Public bio highlights carpentry craft and entrepreneurship alongside brother Blake — hands-on builder identity, not only desk ops. (Glass Brothers Construction About Us)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Fabio D&#x27;Agostino · Call 2 · 11:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Fabio D&#x27;Agostino · CharaBio · Call 2 · Wed Sep 23, 2026 ~11:00 AM ET / 4:00 PM London · Edwin Chung</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Solo life-science growth consultant (CharaBio, London). Identify / evaluate / execute growth work for biotech/pharma; secondary lane helping family offices diligence biotech deals. Strong close once selling (~60–70%); acquisition is fully manual (~10 personalized emails/day then ~1 call). Main client (~60–70% of revenue) closed last year; revenue now roughly £100–200k. Soft yes to Call 2 custom demo.</li>
+</ul>
+<ul>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Engaged, precise, commercially clear — not desperate, not calm. Corrected timezone, pushed on targeting quality, personalization, and separate sending domains.</li>
+<li>Goals they want but can’t hit yet: ~10 retainer clients at ~£5k/month (~£600k/year), with more demand than capacity (waiting list). More ideal clients with less manual outreach.</li>
+<li>Why hitting the goal matters to them personally / for the company: Escape concentration risk after losing the main client; stop spending most of the day on non-billable chase work so delivery (and retainers) can scale.</li>
+<li>What’s holding them back: He is the bottleneck. Manual personalization caps volume. Two years looking at automation products without a fit. Never hired an agency.</li>
+<li>Consequences if nothing changes: Stays near £100–200k, keeps over-working outreach, misses Q4 budget season when biotech spend opens. He said status quo is not chill.</li>
+<li>Fears that will show up in the decision: Automation that looks like the bad AI emails he receives (wrong language, wrong relevance). Burning his main domain. Paying for volume that is not his ICP.</li>
+</ul>
+<ul>
+<li>Objections still open: Can automation match his manual targeting + one-by-one personalization? Separate addresses/domains so primary domain stays clean? Pricing / investment (not given on Call 1). Family-office lane now vs later.</li>
+</ul>
+<ul>
+<li>Who’s joining Call 2: Fabio alone. Solo decision-maker. Confirm at open that nobody else is joining.</li>
+</ul>
+<ul>
+<li>What we promised to walk: Custom presentation for his segment — how we build the target list, how we invite them onto a webinar, how we structure the webinar, TAM size, and economics. Also cover sending-domain setup and personalization quality.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Fabio D&#x27;Agostino, founder of CharaBio (London). Sells growth consulting into life-science / biotech / pharma leaders (CEO, CSO, Chief Strategic Officer). Buyers need growth opportunities they have not mapped — not ops efficiency. Problem for Fabio: close rate is fine; top-of-funnel volume is not.</li>
+</ul>
+<ul>
+<li>Company goals / dream state (from Call 1): ~10 retainers at ~£5k/mo then ~£600k/year GBP; waiting list; less time chasing, more time delivering.</li>
+</ul>
+<ul>
+<li>ICP dream state (what THEIR buyers want): Clear growth options (new modalities, markets, partnerships) with a trusted scientific/strategic partner who can identify, evaluate, and help execute — without a McKinsey-sized bill.</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<ul>
+<li>He has been shopping automation for ~2 years and rejects low-quality personalization. Demo must show targeting + copy quality live, not “webinars 101.”</li>
+<li>Domain safety is a live landmine — show separate sending domains/addresses early.</li>
+<li>Prefer US revenue-generating life-science companies first; family-office biotech investors are a possible second lane, not the first campaign.</li>
+<li>Q4 budget timing is real urgency — do not treat Call 2 as leisurely education.</li>
+<li>Solo buyer; leave with a clear go/no-go and dated next step, not “think about it.”</li>
+</ul>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): Geo = prefer United States first (also Europe; he has worked SK/Japan — not first campaign). Vertical = life science / biotech / pharma. Company type = revenue-generating growth-seeking firms (not pre-incorporation for campaign one). Buyer titles = CEO, Chief Scientific Officer, Chief Strategic Officer, sometimes COO. Exclude = working scientists only, pure early-stage with no revenue focus for lane one, non-decision-makers.</li>
+</ul>
+<ul>
+<li>Ideal ICP (tight — who they said they want most): US CEOs / CSOs / Chief Strategic Officers at medium revenue-generating biotech/pharma companies that need growth options (size cue on tape ~$1B–$5B turnover as an indication, also can be smaller ~$10M+). We have not counted the people yet.</li>
+</ul>
+<ul>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Same titles across US life-science companies that already sell and need growth, then honest expansion to Europe if Ideal is thin; family-office biotech investors as a separate second lane later. We have not counted the people yet.</li>
+</ul>
+<ul>
+<li>How we got the number: Call 1 gave geos, titles, size cues, and his own outbound anecdotes (~10 emails/day). No owned decision-maker headcount yet. On the demo show companies, then titles, then contacts — live — before quoting a campaign headline number.</li>
+</ul>
+<ul>
+<li>What we widened (if thin): They said US preference + medium revenue companies; we keep Ideal tight to US growth-seeking life-science decision-makers. We do not mash family offices into webinar one unless Ideal is too thin after a real pull.</li>
+</ul>
+<ul>
+<li>Check vs Call 1: Matches US preference, CEO–Chief Strategic Officer buyers, revenue-generating companies, and deprioritized early-stage. Does not invent a people count.</li>
+</ul>
+<ul>
+<li>Too small?: Unknown until live pull. Qualify out only if broadest honest people count is still under ~30k after expansion — we do not have that count yet.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): Clear buyer pain — “we need growth options we have not mapped.” Scientific + strategic credibility. High close once educated. Retainer math is concrete (£5k/mo × 10).</li>
+</ul>
+<ul>
+<li>What’s fuzzy or weak (closer must know): Offer spans strategy through execution — webinar must pick ONE core problem lane, not the whole framework. Family-office lane is different messaging. No counted Ideal TAM yet — show it live. He will pressure-test personalization quality and domain setup.</li>
+</ul>
+<ul>
+<li>Positioning line for the webinar if we pick today: How revenue-generating biotech and pharma leadership teams find and evaluate growth opportunities they did not know existed — without a giant consulting bill.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Growth-seeking life-science leaders cannot see the next high-value opportunity (new modality, market, partnership) clearly enough to act.</li>
+</ul>
+<ul>
+<li>Who we invite first, then next: Ideal first (US CEO / CSO / Chief Strategic Officer at revenue-generating biotech/pharma). Then broader honest list (Europe same titles; adjacent life-science growth roles). That invite order is OUR acquisition motion — not the webinar story.</li>
+</ul>
+<ul>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook: you are under pressure to grow, but the next opportunity is not obvious from inside the business then problem: internal teams stay in the comfort zone; big firms are slow and expensive; bad bets waste years then proof: Fabio’s identify / evaluate / execute method and relevant growth work then offer: growth advisory / project or retainer engagement with CharaBio then easy CTA: book a fit call with Fabio (not a hard close on the webinar)</li>
+</ul>
+<ul>
+<li>Copy / talk-track beats (3–5):</li>
+<li>What “we need to grow by 2030” looks like when the opportunity set is unclear</li>
+<li>Why ops excellence is not the same as finding the next growth lane</li>
+<li>How identify then evaluate then execute works on a real modality or market move</li>
+<li>Proof from his work without inventing numbers beyond what he owns</li>
+<li>Soft CTA: book a short fit call to see if CharaBio should map growth options with you</li>
+</ul>
+<ul>
+<li>Cadence: One Ideal-lane US life-science growth topic first. Test show-to-meeting math. Then segment or add family-office diligence as a second lane. Do not mash both ICPs into webinar one.</li>
+</ul>
+<p>Best case studies for THIS Call 2 (required — Airtable SoT)</p>
+<ul>
+<li>Cedric Le Rouzo — Cinnamon Consulting — why it fits: Boutique consulting buyer who pressure-tested webinar economics and time cost. Matches Fabio’s “will this waste my calendar / quality bar” posture.</li>
+</ul>
+<p>When to pull: run-cost questions, personalization/time anxiety, or “I’ve looked at automation for two years.” Self-reported economics only (about $2,000 then about $10 cost per sales call; about 40 hours/month then about 3). Do not invent guarantees.</p>
+<ul>
+<li>Tejas Parikh — Akshar Business Group — why it fits: Senior, niche buyers (CFO/FD). Answers “my buyers are too senior / too narrow for webinars.”</li>
+</ul>
+<p>When to pull: “CEOs won’t show up” or “I’d rather have five real conversations.” Self-reported first-webinar figures only (about 250 registrations, 80+ attendees, 15 qualified sales calls). Say them as his interview numbers, not QS-measured.</p>
+<ul>
+<li>Felix Petzel — Panda Media — why it fits: Already knew outbound/tools and still installed an owned webinar engine. Matches Fabio’s two-year automation shopping and quality skepticism.</li>
+</ul>
+<p>When to pull: “I’ve already tried tools” or “I know how to personalize.” Self-reported first-webinar figures only (300 registrations, 90 attendees, 17 qualified sales calls).</p>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Fabio (signer — cares about targeting quality, personalization, domain safety, Q4 timing, and clear economics). No co-buyer named. Confirm solo at open.</li>
+</ul>
+<ul>
+<li>Landmines from Call 1:</li>
+<li>Do not show generic AI spam copy — he already hates it. Show live list + personalization quality.</li>
+<li>Do not ignore separate sending domains — he asked twice.</li>
+<li>Do not invent a TAM people count — build Ideal US lists live on screen.</li>
+<li>Do not lead with family-office lane if Ideal life-science growth is the first campaign.</li>
+<li>Do not soft-pedal Q4 urgency — he wants this into budget season.</li>
+<li>Pricing was deferred to Call 2 — be ready with scope/economics after showing the build.</li>
+<li>Never invent money-back, guarantees, or unsaid revenue.</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
