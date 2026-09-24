@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Thursday Sep 24, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Thursday Sep 24, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>10:00 AM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/4vBpvNQhMmIf2HFtAmnj">Joaquin Altenberg</a> · Call 2 · Evillage</strong>
+      </div>
+      <div class="slot">
+        <strong>12:15 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/ixSSTFvU95z9Al0yuLim">Daniel Lynes</a> · Call 1 · Hammer Software</strong>
+      </div>
+      <div class="slot">
+        <strong>1:30 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/nFwGbx65Ty9TfAiNXRVH">Shawn Matthew Cook</a> · Call 1 · SMC Sales</strong>
+      </div>
+      <div class="slot">
+        <strong>2:30 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/H2KrPHBsc6xDPY3aUviO">Cindy Leddicotte</a> · Call 2 · SBA Accounting &amp; Tax Solutions</strong>
+      </div>
+      <div class="slot">
+        <strong>3:45 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/pQWitak2NCSc66VB0nHZ">Jean Brewster</a> · Call 1 · BrandStory Architech</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Joaquin Altenberg · Call 2 · 10:00 AM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Joaquin Altenberg · Evillage / Clean Energy Nexus · Call 2 · Thu Sep 24 2026 · 10:00–10:55 CT · Armando Valencia</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Joaquin Altenberg (Houston) joined Call 1 the same day he sat the quantumSCALE webinar. He is launching Evillage — an end-to-end operating system for commercial and industrial (CNI) distributed-energy project development (concept to construction paperwork, not the build). Entry offer is SaaS at about $195 per user per month; real upside is the embedded marketplace for services, equipment, and financing (about 5% of project build as the fee goal on tape; about 1–2% of engaged vendor contracts; one completed project framed at about $50k in marketplace fees). He also runs Clean Energy Holdings as a development / finance / EPC shop and owns solar farms in Puerto Rico — the product was built from that operating pain. Soft-positive fit with two orange flags Armando named live: confirm addressable audience size, and craft a webinar that teaches plus lightly demos the product (not a bare product demo). Call 2 Custom Demo booked Thursday at 10:00 CT without hesitation.</li>
+</ul>
+<ul>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Energetic, deeply expert, and unusually humble for the space — he said he is still wrong about half the time even after 20 years. Warm once the Spanish / Costa Rica connection landed. Engaged hard on the “Fundrise of distributed energy” vision. Framed his life as service and wanted to give the industry a real operating system, not a thin proposal tool. Hopeful and launch-ready, not numb.</li>
+<li>Goals they want but can’t hit yet: Software live within about 24 hours / Friday fully operational after about 2.5 months of beta. Near-term: about 100 subscribers in 90 days based on prior free-user interest who said they would pay about $200/month. Longer: Fundrise-style financing platform for distributed energy; lift industry completion rates toward something closer to 50% from today’s under-2% success framing. Marketing spend starts with about $20k earmarked for the first couple months while he interviews firms.</li>
+<li>Why hitting the goal matters to them personally / for the company: Personally he wants to be of service and put the best operating system in the industry into people’s hands. For the company: without a owned go-to-market path he stays the solo bottleneck, cannot efficiently sell a ~$200 seat with long sales calls, and misses the launch window to turn education into subscribers and marketplace throughput. Multi-seat shops (he cited about 30–50 people per developer company) make the seat math matter more than a single-user story.</li>
+<li>What’s holding them back: Days from launch with no paid marketing engine yet. Soft inbound still arrives from old blogs years later, but LinkedIn / organic alone will be slow. Stripe billing was still being finished on Call 1; he expected maybe 5–10 paid users by month-end with no marketing yet. Solo founder plus part-time CFO and Chicago programming consultants — no sales team. Competing interview process with other marketing firms. Audience size still unvalidated beyond his estimates and Armando’s quick search.</li>
+<li>Consequences if nothing changes: He launches with no list + invite + webinar path. He stays stuck doing education one conversation at a time on a low-ticket seat. The industry keeps failing projects at under 2% success while his Trojan-horse SaaS never gets the volume that unlocks marketplace fees. He spends the $20k earmark on a firm that cannot find his buyers or that forces him back into 45-minute sales calls.</li>
+<li>Fears that will show up in the decision: Addressable market too small for classic 30k-invite rooms. Webinar turns into a generic product demo and buyers bounce when they see how robust the system really is. Early-stage economics with no live LTV, churn, or seats-per-account proof yet — ROI must assume software-only first. Solo capacity if any live sales path creeps back in. Picking the wrong marketing partner while several firms are pitching him.</li>
+</ul>
+<ul>
+<li>Objections still open: Early-stage / no live LTV, churn, or seats-per-account proof — financial model must be software-only first. Addressable market may be only tens of thousands without a series approach. Webinar cannot be a pure product demo; needs education plus light software / marketplace show. Solo founder capacity. Competing interview process with other firms.</li>
+</ul>
+<ul>
+<li>Who’s joining Call 2: Joaquin only expected. No co-decider named on Call 1. Team on his side is him, a part-time CFO, and paid programming consultants in Chicago — not a multi-stakeholder buying committee for this demo.</li>
+</ul>
+<ul>
+<li>What we promised to walk: Four pieces Armando laid out on Call 1 — (1) targetable audience volume and quality, (2) a sample calendar-invite campaign, (3) webinar angle / approach (education plus light demo; Scott / Doug / strategy), and (4) a software-only financial model versus his marketing spend. Armando also said he would send software case studies before Thursday. Joaquin finishes Stripe / Friday launch. Leave Thursday with a clear go / no-go on audience size and a believable path to sell the seat on the webinar without him becoming the bottleneck.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Joaquin Altenberg · founder of Evillage / Clean Energy Nexus (Houston). Evillage is the development OS for CNI distributed energy — document roadmap, financial modeling, CRM-style lead handling, and an embedded marketplace that assigns pre-negotiated vendors when projects need design, permits, legal, and procurement. Buyers = CNI solar / distributed-energy developers first; also EPCs and electrical contractors, building owners, OEMs, construction companies, and data-center power buyers. Problem for their buyers = developing distributed energy is as hard as utility-scale work but at a couple-million-dollar project size, with no process system — so most projects die in paperwork before construction.</li>
+</ul>
+<ul>
+<li>Company goals / dream state (from Call 1): Launch Friday / days away. About 100 paid subscribers in 90 days. Multi-seat seats inside developer shops. Marketplace fees compounding as projects complete. Longer dream = Fundrise of distributed energy (financing + capital around the transition) and lifting industry completion rates toward ~50% from today’s ~98% failure framing.</li>
+</ul>
+<ul>
+<li>ICP dream state (what THEIR buyers want): Developers, EPCs, building owners, and data-center power buyers want a clear process from concept to construction paperwork so projects actually get built — not another single-use proposal tool that dies before interconnection. They want certainty, curated vendors when third parties are required, and a way to stop wasting time on projects that never complete.</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<ul>
+<li>Orange flag #1 is live: audience size. Joaquin put developers around 10,000 and the broader industry around 250,000 people. Armando’s quick search put a practical US company universe around 10–20k and said it still needs real validation. If the reachable list stays in the tens of thousands, QS runs a recurring webinar series rather than one-and-done giant rooms. Do not bluff a fat list — show companies, then titles, then contacts on screen.</li>
+<li>Orange flag #2 is the webinar angle: education-led plus light software / marketplace show. Buyers who think they are walking into a proposal tool get “mallet surprise” when they see how robust Evillage is. Story must teach the development process and lightly open the product — not a 45-minute feature dump.</li>
+<li>Software is launching now (Friday operational deadline). Urgency is launch-now, not someday. He is interviewing several firms with about $20k earmarked for the first months — Call 2 has to make the motion and the software-only math feel clearer than LinkedIn / organic / agency alternatives.</li>
+<li>Self-serve seat sell on the webinar is the agreed motion. Marketplace is embedded upside, not the thing he should take 45-minute calls for at $195/seat. Solo founder = bottleneck risk if sales calls creep back in.</li>
+<li>Global product (Australia, Philippines, Dubai users already) but he has not actively targeted those geos. US was the working frame on Call 1; global expansion is a widener only if US alone is thin — say “they said” vs “we added” out loud.</li>
+</ul>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): Geography = United States as the working frame on Call 1; product already used globally but he does not actively target those geos yet. Vertical = commercial and industrial distributed energy / solar development and adjacent build ecosystem. Company type/size = developers who sell solar / distributed-energy projects to CNI users; multi-seat development shops (about 30–50 people cited as a seat multiplier); EPCs and electrical contractors who build but do not want to own development; building owners, OEMs, construction companies, and data-center power buyers who need on-site power solutions. Buyer titles = developer principals and project leads first; EPC / contractor owners and project managers; facility / energy / development leads at building owners and data centers; OEM channel / business-development roles that need ready projects. Who we exclude = tiny residential-only installers as the core primary invite; pure tech looky-loos with no CNI development use case; geos he has not green-lit for the first campaign headline.</li>
+</ul>
+<ul>
+<li>Ideal ICP (tight — who they said they want most): United States. CNI solar / distributed-energy developers who sell projects to commercial and industrial users — the people raising their hand saying “I want to do this for a living but I do not know how.” Multi-seat shops where one company can put many users on the SaaS. Decision-maker count: Joaquin guessed about 10,000 developers. We have not counted the people yet on a real list pull. On the demo, show companies first, then titles, then contacts.</li>
+</ul>
+<ul>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Still start United States unless he opens geo live. Same CNI distributed-energy problem. Widen to the adjacent buyers he named: EPCs and electrical contractors who say “not my baby” on development, building owners, OEMs, construction companies, and data-center power buyers. Use more than one real buyer title at those organizations. If Ideal-only US developers stay thin after a real count, a careful global widen is honest because the product already has users in Australia, Philippines, and Dubai and he said the process works regardless of jurisdiction — but that is a “we added / he allowed” lever, not his first Ideal. After that expansion, campaign headline is the largest still-real contactable list of Ideal plus adjacent CNI distributed-energy buyers. We have not counted the people yet.</li>
+</ul>
+<ul>
+<li>How we got the number: Call 1 gave Ideal (developers), adjacent segments (EPCs, owners, OEMs, builders, data centers), US working frame, global product reality, his ~10k developers / ~250k industry guesses, and Armando’s quick ~10–20k US company search. Those are estimates and a rough company universe, not a finished people count. On Thursday’s demo: companies in band, then roles, then contactable decision makers — write it in words, never invent fake precision.</li>
+</ul>
+<ul>
+<li>What we widened (if thin): They said: developers first; also EPCs, building owners, OEMs, construction companies, data centers; US working frame; product is global but not actively targeted abroad; residential-only tiny installers are not the core. We add for campaign honesty only if still real: more than one real buyer title at the same companies; adjacent “not my baby” EPC / owner / OEM lanes he already named; and (only if US Ideal stays thin and he opens it) global geos where the process already works. Always say which lever is his versus ours. Do not count every residential solar installer in America as an Evillage Ideal buyer.</li>
+</ul>
+<ul>
+<li>Check vs Call 1: Matches his developer-first Ideal, adjacent buyer list, US working frame, global-but-not-targeted language, Trojan-horse SaaS + marketplace story, ~10k / ~250k / Armando ~10–20k company estimates, and the orange flag that audience size still needs validation. Does not invent a finished people count. Does not treat his industry guesses as a locked campaign headcount.</li>
+</ul>
+<ul>
+<li>Too small?: Unknown until counted. Ideal-only US developers at his ~10k guess, or Armando’s ~10–20k US company band, can sit under the classic ~30k cold-invite bar for one giant room. If after Ideal + honest adjacent widen (and optional global only if he opens it) the real people count is still under about 30,000, do not force a one-and-done high-volume room — run a recurring webinar series that invites the whole honest list into one repeating education show. Qualify out of Wingman volume only if even the broadest honest list still cannot support a series. Share the number kindly on screen; do not bluff.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): Clear industry pain — CNI distributed-energy projects fail in paperwork at under 2% success, while demand (data centers, bidirectional energy) is exploding. Educator founder with 20 years, Wall Street banking + electrical engineering background, and a product he runs inside his own Clean Energy Holdings / Puerto Rico solar operations. Trojan-horse economics: low-ticket SaaS entry (~$195/user/month) plus marketplace upside (~5% project / ~$50k framed per completed project). Multi-seat developer shops (30–50 people) improve seat math. Soft inbound from old educational content proves the industry is hungry for process teaching. Self-serve webinar sell fits the ticket size; marketplace is embedded so he does not need to take every sales call.</li>
+</ul>
+<ul>
+<li>What’s fuzzy or weak (closer must know): Early stage — Stripe finishing, maybe 5–10 paid users by month-end, no live LTV / churn / seats-per-account proof. ROI model on Call 2 must be software-only first; marketplace is upside imagination, not guaranteed. TAM may force a series motion, not classic fat rooms. Webinar angle is non-generic and still needs strategy craft (education + light demo) so buyers are not shocked by system depth. Solo founder capacity if any live sales path creeps back. Competing firm interviews and a ~$20k first-months earmark — economics and clarity have to beat LinkedIn / organic / other agencies. Do not invent guarantees, money-back, or a fake fat list.</li>
+</ul>
+<ul>
+<li>Positioning line for the webinar if we pick today: How CNI solar and distributed-energy developers stop losing projects in paperwork — and get from concept to construction-ready with a real operating system, not another proposal tool.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): CNI distributed-energy projects die between concept and construction because there is no end-to-end development process — buyers waste months on 80–100 documents, fail interconnection, and never reach build.</li>
+<li>Who we invite first, then next: Ideal first (US CNI solar / distributed-energy developers and multi-seat development shops). Then the broader honest list (EPCs and electrical contractors, building owners, OEMs, construction companies, data-center power buyers — and global only if he opens it). That invite order is OUR acquisition motion — how we fill the room. It is not the story of the webinar.</li>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook: most CNI distributed-energy projects never get built — the failure is in development paperwork, not construction then problem: there is no operating system for concept-to-construction; single-use tools get you a proposal and then the project dies then proof: Joaquin’s method and results from 20 years + Clean Energy Holdings / Puerto Rico operations + the Evillage roadmap (stages, documents, financial model, when third parties enter) then offer: Evillage SaaS seat (self-serve subscribe) with marketplace available inside when they need curated vendors then easy CTA: start a seat / subscribe on the webinar path — not a 45-minute founder sales call for every $195 user</li>
+<li>Copy / talk-track beats (3–5): 1. “Construction is not the hard part. Getting from concept to construction is.” 2. “If your industry succeeds on under 2% of projects, you do not have a sales problem — you have a process problem.” 3. “What a real development operating system looks like — roadmap, documents, model, and when to bring in design, legal, and procurement without guessing.” 4. “Why another proposal tool is not enough — and what changes when the marketplace is already inside the workflow.” 5. Soft CTA: start with the Evillage seat on the webinar. Marketplace helps when the project is real — you do not need a long sales call to try the OS.</li>
+<li>Cadence: One education topic first aimed at Ideal US developers (process + light product / marketplace open). Sell the seat on the webinar (self-serve). If the list is series-sized, run the same core show on a recurring cadence rather than inventing five topics before conversion is real. Segment later (developers vs EPCs vs data-center buyers) only after show-to-subscribe math is clear. Do not mash QS list / invite mechanics into THEIR story arc.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Philipp Von Schulthess — Oxoia — why it fits: Closest niche parallel — building-energy software sold to conservative, technical, institutional buyers (municipalities, pension funds, facility managers) who do not look like casual webinar shoppers. Joaquin’s CNI developers, EPCs, and data-center buyers live in the same “too technical / too institutional for a webinar” fear. Also answers soft inbound / referrals that are real but not big enough to grow fast enough — Philipp’s line is that referrals were real but not big enough to grow fast enough. When to pull it: TAM skepticism, niche energy software doubt, or “my buyers will not sit a webinar.” Keep it qualitative — tell the institutional-buyer and founder-capacity story; do not invent campaign totals for him. Prospect link: https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</li>
+</ul>
+<ul>
+<li>Cedric Le Rouzo — Cinnamon Consulting — why it fits: Clearest software / SaaS webinar-economics story when Joaquin weighs cost per conversation and founder hours against a ~$195 seat and a ~$20k first-months earmark. Cedric’s lane is partner-led software growth; use him when the objection is “will this actually reduce grind / cost per sales conversation?” or “show me the economics before I pick a firm.” Tell it the way he frames it: cost per sales call dropped from about $2,000 toward about $10, and time dropped from about 40 hours a month toward about 3. Keep that as his story. Soft tie-back: the point is selling the Evillage seat on the webinar so Joaquin is not the bottleneck on $200 conversations — marketplace upside sits on top. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<ul>
+<li>Nick Uresin — Podcast Pros — why it fits: Best speed-to-launch story when Joaquin’s Friday operational deadline and “as soon as the software launches” urgency collide with interviewing multiple firms. Nick went from sales call to a running webinar in about eight days and had qualified opportunities off webinar one. Also useful if Joaquin says he already knows LinkedIn / outreach himself — Nick was an experienced Sales Navigator and LinkedIn-automation user and still said targeting and messaging strategy was the real value. When to pull it: launch-now urgency, “how fast is this live,” or “I can just do LinkedIn myself.” Do not use Nick as a revenue proof point — he had not closed a deal at the time of his interview. Prospect link: https://quantums-institute.com/due-diligence-agencies#section-S7HoLH08fh</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Joaquin (founder / economic buyer / host — cares about launch-now GTM, audience size proof, education-led webinar angle, software-only ROI vs ~$20k earmark, and not becoming the sales bottleneck). Part-time CFO (not expected on Call 2 — cares later about spend and payback). Chicago programming consultants (delivery of product, not the buy). No co-decider named for Thursday. Sign path is Joaquin-led; competing firm interviews mean clarity and a dated next step beat a vague “think about it.”</li>
+</ul>
+<ul>
+<li>Landmines from Call 1: Do not invent a fat people count or soft-promise classic 30k-invite rooms if the live list is series-sized — share volume kindly and switch to recurring series language if needed. Do not build the financial model on marketplace fees; software-only first, marketplace as upside. Do not pitch a bare product demo webinar — education plus light OS / marketplace open. Do not push him into 45-minute sales calls for $195 seats. Do not invent LTV, churn, seats-per-account, guarantees, or money-back. Do not ignore that he is interviewing other firms — make Thursday’s four demo pieces (audience, calendar invite, webinar angle, software-only model) clearer than LinkedIn / organic / agency alternatives. Keep Thu Sep 24 · 10:00–10:55 CT warm; leave with a dated go / no-go or next build step, not a soft stall.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Daniel Lynes · Call 1 · 12:15 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Daniel Lynes · Hammer Software · Call 1 · Thu Sep 24, 2026 12:15 PM CT · Armando Valencia</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Daniel Lynes is President (and Principal Consultant) of Hammer Software in Hamilton, Ontario.</li>
+<li>Email dlynes@hammersoftware.ca · LinkedIn linkedin.com/in/eaglequest · public MikroTik certifications listed as MTCNA / MTCRE / MTCWE.</li>
+<li>Public note on the company team page: started developing software in 1979; primary platforms now Apple OS X and Linux; focuses on automation and hardware-adjacent problems.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Hammer Software (hammersoftware.ca) is a small Hamilton IT and custom-software firm (public listings ~1–10 people; founded around 2013).</li>
+<li>Public offer: IT and cybersecurity for small businesses, custom software, Linux administration, Microsoft 365, network design, automation / embedded (Raspberry Pi, PLC), VoIP / Asterisk, and Mac / Windows desktop support.</li>
+<li>Hamilton Chamber listing frames them as IT + cybersecurity + custom software for small businesses; a public case story describes long-running VPN / RouterOS work for a GTA telecom provider.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Small businesses in and around southern Ontario that need reliable IT, security, and custom software.</li>
+<li>Operators who need networking, VoIP, and infrastructure that stays up without constant tickets.</li>
+<li>Buyers who want a technical partner for automation and embedded / industrial problems, not just helpdesk.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Small businesses need stable IT and security without a large internal team.</li>
+<li>Custom processes and hardware-linked workflows are hard for generic MSPs to own.</li>
+<li>Telecom / VPN / VoIP infrastructure needs someone who can install and run custom OS images under their control.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: webinar-auto-registered · webinar-attended · newsletter-activated · sales call booked. Warm webinar path into a Business Growth Roadmap Call.</li>
+<li>Soft enrichment: IT / MSP / custom-software lane; confirm which offer he wants more pipeline for (managed IT vs custom build vs security) and current lead sources.</li>
+<li>Canada / Hamilton base with a CT-labeled slate time — confirm his local time at open.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Shawn Matthew Cook · Call 1 · 1:30 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Shawn Matthew Cook · SMC Sales · Call 1 · Thu Sep 24, 2026 1:30 PM CT · Armando Valencia</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Shawn Matthew Cook is founder of SMC Sales, a B2B sales coaching and consulting practice, and is also listed publicly as Chief Strategy Officer / Chief Strategist at Boundless Markets.</li>
+<li>Email shawnmatthewcook@gmail.com · LinkedIn linkedin.com/in/shawnsationalcso · GHL country EE (confirm live — may be travel or stale).</li>
+<li>Public background: ~three decades in sales and marketing leadership, including sales-team leadership at RollWorks, Triblio, TrackMaven, Eloqua, and Vocus; specializes in account-based selling and building repeatable sales systems.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>SMC Sales (b2bsalessuperheroes.com) coaches and consults small B2B teams on repeatable, scalable sales systems — mindset, process, skills, and buyer experience.</li>
+<li>Public positioning: “Humblonfident” (humility + confidence) leadership and “Compelevant” (compelling + relevant) messaging for saturated markets; account-based, data-driven sales motions.</li>
+<li>Boundless Markets work (public 2025 announcement): turning customer and member voices into sponsor-ready content for associations, B2B tech, and professional-services firms.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Small B2B sales teams and sales leaders who need a system, not one-off tips.</li>
+<li>Scaling startups and growth-stage SMBs in MarTech / B2B tech and related markets.</li>
+<li>Associations and professional firms that want member / customer-voice content that helps retention and sponsorship (via Boundless Markets lane).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Sales teams stay stuck in heroics instead of a repeatable buying-facilitation system.</li>
+<li>Messaging is relevant but not compelling enough to break through noise.</li>
+<li>Associations and B2B firms underuse real customer / member voices in content that speeds trust and deals.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: sales call booked only — confirm webinar vs other path at open.</li>
+<li>Soft enrichment: sales-system coaching plus Boundless Markets strategist role — confirm which business he is packing growth for on this call (SMC Sales vs Boundless vs both).</li>
+<li>EE country on file while LinkedIn / brand read US — confirm location and time zone live.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Coined “Humblonfident” (humility + confidence) as his leadership philosophy and talks about it publicly. (SMC Sales about page / his LinkedIn)</li>
+<li>Guest on Transformed Sales podcast episode “The Power of Storytelling in Sales with Shawn Cook,” arguing stories help buyers see themselves in the offer. (Transformed Sales podcast)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Cindy Leddicotte · Call 2 · 2:30 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Call 2 prep · Cindy Leddicotte · SBA Accounting &amp; Tax Solutions · Thu Sep 24 2026 2:30–3:25 PM CT / 12:30–1:25 PM PT · Armando Valencia · call2-prep:uNBnzGXOPIAagZMwGfsN · Call2 appt 8QyVa6DuQhB97I2iY4P4</b></p>
+<p>Cindy Leddicotte · SBA Accounting &amp; Tax Solutions · Call 2 · Thu Sep 24, 2026 · 2:30–3:25 PM CT / 12:30–1:25 PM PT · Armando Valencia</p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Cindy + George Leddicotte (Fresno / Central CA) run SBA Accounting &amp; Tax Solutions — accounting, tax, tax planning, tax resolution, pivoting to lead with CFO services (~$1,500–$2,500/mo) over commodity accounting (~$400–$500/mo). Revenue ~$350–375k and flat 2–3 years. ~150 tax / ~25 bookkeeping clients; some quasi-CFO work; no full CFO-only book yet. Biggest hurdle on tape: lead generation so they can present the new offer. Closing is fine (George: above-average close once in front of people). August FB live-event ads ~$5k then 11 signups then 0 showed. Cindy still does manual FB friend-request outreach (~30–40 trade owners/day). Goal: seven figures + exit path in ~3 years (sell or hire an operator). Call 2 Custom Demo booked Thu 12:30 PT / 2:30 CT.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Cindy warm, candid, frustrated about the $5k zero-show. George practical and numbers-forward. Both booked Thursday without friction.</li>
+<li>Goals they want but cannot hit yet: Seven-figure firm; reliable lead flow into CFO / financial-analysis conversations; exit options in about three years.</li>
+<li>Why hitting the goal matters to them personally / for the company: George missed an exit window in the 1990s and they just started fact-finding (last 30–45 days). They want the firm saleable or runnable without them.</li>
+<li>What is holding them back: No owned list + invite engine. Word of mouth + slow FB nurture + a failed paid live event. Free academy / discounted analysis did not convert the 11 no-shows.</li>
+<li>Consequences if nothing changes: Revenue stays flat near $350–375k, ad burn repeats, three-year exit / seven-figure goal slips.</li>
+<li>Fears that will show up in the decision: &quot;We already paid for ads and nobody showed.&quot; &quot;Is this another marketing spend.&quot; Packaging of paid diagnostic vs free analysis still fuzzy on their side. QS investment not discussed on Call 1.</li>
+<li>Objections still open: FB ads just failed (sample + show-up). Free / discounted analysis did not convert. Manual FB works but is slow. George was not on the original QS invite path. Offer packaging and QS price not locked.</li>
+<li>Who is joining Call 2: Cindy Leddicotte and George Leddicotte (both on Call 1). Treat as a two-stakeholder demo.</li>
+<li>What we promised to walk: Four phases Armando named on tape — (1) sample lead list quality + volume, (2) calendar-invitation creative, (3) webinar framework / structure, (4) six-month financial model (break-even clients, pipeline at 30/60/90). Also send case studies, webinar replay, founder/exec diligence before Thursday.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Cindy + George · SBA Accounting &amp; Tax Solutions (also referenced as SBA Group). Accounting / tax firm pivoting to fractional CFO / financial-analysis for service businesses. Buyers = owners of construction trades and home-services firms (plumbers, electricians, builders) plus broader professional / service businesses, preferably ~$1M+ revenue, nationwide. Buyer problem = they cannot see cash / margin / tax / decision gaps clearly and need a strategic finance partner, not only a bookkeeper.</li>
+<li>Company goals / dream state (from Call 1): Seven-figure revenue; exit in ~3 years via sale or hired operator; lead with CFO services and SBA Business Academy then paid financial analysis.</li>
+<li>ICP dream state (what THEIR buyers want): Service-business owners who want financial clarity and a trusted advisor who has sat in the operator seat — not another commodity tax preparer.</li>
+</ul>
+<h3>What is interesting for THIS Call 2</h3>
+<p>Both Cindy and George will be in the room — demo for a couple, not Cindy alone. Armando already pitched education + paid low-ticket diagnostic (~$499–$1,000) feeding ~$2,500/mo CFO retainer; do not reopen a free academy as the CTA. August $5k zero-show is scar tissue — lead with list quality + calendar-invite show math, not &quot;try Facebook ads again.&quot; George brings management-consulting credibility (~600–700 companies; both ex–George S. May / IPA) — use that as proof they can teach and close, then show the missing top-of-funnel. QS price was never put on Call 1 — cover economics after the four-phase walk, not as the opener.</p>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): geo = United States nationwide · vertical = construction trades and home services first (plumbing, electrical, building / remodeling), plus broader professional / service businesses · company type/size = owner-operated service firms, prefer about $1M+ annual revenue (can band to $5M or $10M+ on demo) · buyer titles = Owner / Founder / President (decision-maker who feels cash and tax pain) · who we exclude = pure startups they used to take years ago; tiny residential-only shops below their preferred revenue band unless they say otherwise on Call 2</li>
+<li>Ideal ICP (tight — who they said they want most): Owners of construction / home-services businesses at about $1M+ revenue, nationwide, who will pay for CFO / financial-analysis services. Exact decision-maker headcount was not measured on Call 1 — do not invent a people count.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Same owner titles across construction + home services + broader professional / service businesses nationwide, with revenue bands expanded to $1M / $5M / $10M+ as Armando offered on tape. Exact contact count after expansion was not measured on Call 1. Armando framed the net as &quot;millions of businesses&quot; and &quot;a very large net&quot; — that was his framing, not a measured list size. Verify with a real sample list on the demo before quoting a hard campaign number.</li>
+<li>How we got the number: Call 1 gave Ideal verticals, $1M+ preference, nationwide geo, and owner buyers. No list pull / enrichment count yet. Path on Call 2: companies in band, then owner titles, then contactable decision makers.</li>
+<li>What we widened (if thin): They said construction / home services + professional services, $1M+, nationwide. We add for campaign honesty only if still real: multi-trade stack under home services, adjacent service verticals George already serves, and higher revenue bands ($5M / $10M+) Armando offered as dials. Always say which lever is theirs vs ours.</li>
+<li>Check vs Call 1: Matches construction-first Ideal, $1M+ preference, nationwide, CFO lead offer, lead-gen bottleneck, August ad failure.</li>
+<li>Too small?: Ideal-only with no list pull yet is unknown. After honest expansion (nationwide service-business owners in stated bands) this should clear the ~30k qualify-out bar — verify with a real list pull on the demo before quoting a hard campaign number. Do not qualify out on &quot;we only know Fresno,&quot; and do not bluff a precise TAM either.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What is sharp (easy to invite on): Clear pivot to CFO / financial clarity for service-business owners; paid financial-analysis CTA (~$1,500–$3,000 normal; Armando floated ~$499–$1,000 webinar CTA) feeding ~$2,500/mo retainer; educator credibility from management-consulting background; SBA Business Academy topics already mapped (cash flow, etc.).</li>
+<li>What is fuzzy or weak (closer must know): Free academy + discounted analysis already failed on the 11 no-shows — CTA must be paid and sharp. Public story still mixes accounting / tax / resolution / CFO. Cindy’s FB motion is personal-profile grind, not a system. QS price / engagement shape not discussed on Call 1. Two decision-makers — both need to leave aligned.</li>
+<li>Positioning line for the webinar if we pick today: How construction and home-services owners find the money problems they cannot see yet — in a focused session — before another year of flat cash and tax surprises.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Service-business owners run blind on cash, margin, tax, and decisions — so they stay stuck with a bookkeeper while the real CFO-level gaps compound.</li>
+<li>Who we invite first, then next: Ideal construction / home-services owners at about $1M+ nationwide first, then the broadest honest TAM (broader professional / service owners and higher revenue bands). That invite order is OUR acquisition motion — not the webinar story.</li>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook then problem then proof (their method / results / proof) then offer (their product) then easy CTA (book with them) Hook on &quot;the money problems you cannot see yet&quot; / empty-chair live-event pain reframed as audience problem then problem of commodity bookkeeping and DIY finance then proof via their consulting background and financial-analysis method then offer the paid financial analysis / CFO diagnostic then CTA to book that paid session with Cindy and George.</li>
+<li>Copy / talk-track beats (3–5): 1. &quot;You are making payroll and tax decisions without a clear picture of cash and margin.&quot; 2. &quot;A bookkeeper records history. A CFO partner shows you what to do next month.&quot; 3. &quot;What a focused financial analysis looks like when a construction owner finally sees the $25k problem hiding in the books.&quot; 4. Soft CTA: book the paid diagnostic with SBA — not a free chat that mirrors the August no-show follow-up.</li>
+<li>Cadence: One CFO / financial-clarity topic aimed at Ideal construction / home-services owners first to prove show then meeting math; test; then segment trade or revenue-band variants once conversion is real. Do not mash tax resolution + bookkeeping + CFO into three equal stories — stay linear on the CFO diagnostic.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Lynn Rousseau — The Conscious Leader — why it fits: referral-only consultancy that needed a predictable pipeline; closest parallel when Cindy/George say &quot;we close when we get in front of people, we just cannot manufacture the conversations.&quot; When to pull it: referral dependency, slow FB nurture, or &quot;we do not need help closing.&quot; Prospect link = Due diligence deep link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0</li>
+<li>Gene Rosendale — Advocate Advisors — why it fits: burned by marketing agencies in a niche advisory market; answers the August $5k zero-show scar tissue. When to pull it: &quot;we already paid for lead gen that did not show&quot; or fear this is another rented campaign. Prospect link: DD deep link blank — use industry page only https://quantums-institute.com/due-diligence-consultingandprofessional (never invent a #section). Use only public / approved numbers.</li>
+<li>Tejas Parikh — Akshar Consulting — why it fits: sells senior finance buyers and prefers a few real CFO-level conversations over junk volume; useful if they worry Ideal construction owners are &quot;too busy / too senior for a webinar.&quot; Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s — disclose self-reported campaign totals if used.</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who is in the room / who signs / what each cares about: Cindy Leddicotte (champion / day-to-day outreach — cares that lead gen stops depending on her personal FB grind and that the August failure is not repeated). George Leddicotte (operator / numbers — cares about seven-figure path, exit in ~3 years, and that the financial model is transparent before any dollar moves). Sign path is shared enough that both should leave aligned — not a silent Cindy-only soft yes. Budget ownership was not locked as a solo check on Call 1; pin who writes the check before close pressure.</li>
+<li>Landmines from Call 1: Do not invent or soft-quote a QS price they never heard — economics after the four-phase walk. Do not reopen a free academy CTA; stay on paid diagnostic. Do not treat August FB failure as proof &quot;ads/webinars do not work&quot; — show Ideal-list + calendar-invite math. Do not invent a TAM headcount — build companies then titles then contacts on screen. Do not ignore George; he is a co-decider. Keep Thu Sep 24 · 2:30 PM CT (12:30 PT) warm for both.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Jean Brewster · Call 1 · 3:45 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jean Brewster · BrandStory Architech · Call 1 · Thu Sep 24, 2026 3:45 PM CT · Armando Valencia</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Jean Brewster is Chief Operating Officer of BrandStory Architech (BSA), a creator-led marketing consultancy.</li>
+<li>Based in the New York metro (White Plains / America/New_York on file). Email jean.brewster@brandstoryarchitech.com · LinkedIn linkedin.com/in/jean-brewster.</li>
+<li>Public background: former Executive Managing Director at Garth Group; strategy and growth roles at Mastercard and American Express; completed General Assembly’s Data Science Immersive in 2022. BSA materials highlight her machine-learning and analytics lens on brand growth.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>BrandStory Architech (brandstoryarchitech.com) is a women-founded, creator-led marketing consulting firm (public listings ~1–10 people; founded around 2024; Los Angeles HQ with Jean in the New York metro).</li>
+<li>Public offer: integrating brands into culture through AI and data-driven storytelling — influencer / creator partnerships, entertainment marketing, PR and brand identity, and an AI-driven marketplace connecting brands with women and BIPOC creators in film, TV, podcasts, live events, and music.</li>
+<li>CEO / co-founder Pauline Malcolm (former Essence Ventures CRO and other media leadership) is the public face for speaking; Jean runs operations and growth systems.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Brands that want culturally grounded creator and entertainment partnerships.</li>
+<li>Marketing and brand leaders who need influencer / entertainment activation with an AI and data layer.</li>
+<li>Organizations seeking women and BIPOC creator networks across film, TV, podcasts, live events, and music.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Brands struggle to connect authentically into culture without shallow influencer spend.</li>
+<li>Creator and entertainment partnerships are hard to source, vet, and measure.</li>
+<li>Teams need AI / data help to make creator marketplace decisions clearer and faster.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: webinar-registered · webinar-attended · sales call booked · qualified · quantum scaling · vera (call for booking) · reactivation tags on file. Confirm show intent for this Armando slot.</li>
+<li>Soft enrichment: creator-led marketing / entertainment lane; confirm which offer needs pipeline most and who else joins decisions (Pauline / other partners).</li>
+<li>Confirm show intent for this Armando CT slot and who else should be on the call.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Completed General Assembly’s Data Science Immersive in 2022 and publicly writes about her path into data science alongside brand work. (her LinkedIn / “My Journey to Becoming a Data Scientist” pulse)</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+

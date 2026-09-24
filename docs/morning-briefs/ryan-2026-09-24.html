@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Thursday Sep 24, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Thursday Sep 24, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>11:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/pj17P4e7SzAR7p31sdIg">Chandra, Klara</a> · Call 2 · Pharma Acuity Inc.</strong>
+      </div>
+      <div class="slot">
+        <strong>1:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/5cmw1MZ0Rg8QkJPEQ1kS">Nicolas Breton</a> · Call 1 · Asban</strong>
+      </div>
+      <div class="slot">
+        <strong>3:45 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/D9t8X9hyPYaVUs3mTEs1">Lindsay, Larry</a> · Call 3 · Thomas Ho Company</strong>
+      </div>
+      <div class="slot">
+        <strong>4:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/y97ZNKH9mHnTb37dzQM2">Michael Powell</a> · Call 2 · Next Chapter</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Chandra Singla (+Klara) · Call 2 · 11:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Chandra (CK) Singla · Pharma Acuity Inc. · Call 2 · Tue Sep 22, 2026 ~5:30 PM ET / 2:30 PM PT · Ryan Matsumori</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Chandra (CK) Singla is Co-Founder / Co-CEO of Pharma Acuity Inc. (California). Co-founder Clara joined mid-call from the East Coast. They sell AI SaaS for Medical Affairs and related pharma / biotech teams — personalized competitive analysis and synthesis versus generic syndicated research (AlphaSense, Global Data), plus longitudinal proprietary data tailored to each client. Product is sales-ready after about one year of selling (company about three years). Three customers today; first mid-size pharma customer renewed and expanded from one product line to three, with a fourth expected to sign. Ryan judged clear fit (all green) and booked this custom demo. Soft yellow only on market education / differentiation versus entrenched competitors — webinar is the answer.</li>
+</ul>
+<ul>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Engaged and commercially serious. CK pulled Clara onto the call mid-qualification and briefed her live that they were checking fit before a custom demo. Cost-sensitive and early-stage clear. Curious and question-heavy once Clara joined (biotech experience, invite filtering vs competitors, webinar build support, scientific credibility).</li>
+<li>Goals they want but can’t hit yet: A real system to reach target buyers beyond the personal network. Near-term success metric on tape: about 50 webinar attendees per month and about 50 confirmed follow-up calls per month, aiming at about 10 new customers per quarter (Ryan reframed toward capacity-matched volume). Scale capacity 10 then 20 then 40 per quarter by hiring.</li>
+<li>Why hitting the goal matters to them personally / for the company: First-10 revenue unlocks hiring two AI specialists and two life-sciences specialists. That bandwidth lets them raise, speed product growth, and move toward an acquisition path in about 3–4 years at roughly $25–100M ARR (exit ambition on tape).</li>
+<li>What’s holding them back: Founder-led sales only (CK and Clara calling known contacts). LinkedIn content gets engagement but weak real-time CTA to book. Tried HubSpot and Zoho briefly and pivoted away as too labor-intensive. They have talked for years about building their own webinars and never shipped one. They want a team that forces the system into existence.</li>
+<li>Consequences if nothing changes: Stuck near three customers and founder bandwidth. Without a system they cannot hit about 10 new customers per quarter, make the four specialist hires, raise, or move toward the exit path.</li>
+<li>Fears that will show up in the decision: Upfront cost must be manageable at their early stage (willing to pay more later once running). Competitors sitting in the webinar. Scientific / peer-review credibility expectations in Medical Affairs (Clara). Whether QS has done this specifically for biotech or for tech selling into biotech (Ryan promised to confirm with the team before / on Call 2).</li>
+</ul>
+<ul>
+<li>Objections still open: Upfront cost / how much they do themselves versus concierge — must be manageable early. Biotech / pharma proof (or tech selling into biotech) — Ryan to confirm. Can invites be filtered so competitors do not sit in (Ryan said yes — private, targeted list only, not public LinkedIn ads). Scientific / peer-review credibility in Medical Affairs invites and webinar content (Clara). QS pricing not discussed in detail on Call 1 (saved for Call 2).</li>
+</ul>
+<ul>
+<li>Who’s joining Call 2: Chandra (CK) Singla and co-founder Clara (East Coast; welcome / expected). Ryan Matsumori. GHL title may say Klara — confirm spelling / attendance at open.</li>
+</ul>
+<ul>
+<li>What we promised to walk: Pharma Acuity–branded custom demo covering mechanics, hours, finances, and Q&amp;A. Ryan to send calendar invite to both, Call 1 recording, and landing page / team page. Confirm biotech / pharma experience with the team. Show how a private targeted invite list keeps competitors out. Cover how validation and credibility show up in invites and webinar content for Medical Affairs buyers.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Pharma Acuity Inc. — AI SaaS for Medical Affairs / related pharma and biotech teams. Buyers are CMO, head of medical affairs, CEO, chief commercial, head of clinical operations, plus directors / direct reports. Pain: they cannot reach enough of those executives beyond the personal network, so pipeline stays founder-limited while syndicated research and agency competitors stay entrenched.</li>
+</ul>
+<ul>
+<li>Company goals / dream state (from Call 1): About 10 new customers per quarter first, then hire four specialists and scale capacity (10 then 20 then 40 per quarter). Raise on new logos, speed product growth, position for acquisition in about 3–4 years at roughly $25–100M ARR.</li>
+</ul>
+<ul>
+<li>ICP dream state (what THEIR buyers want): Personalized competitive analysis and synthesis that yields conclusions relevant to their asset / company — not generic syndicated reports they must interpret alone. Longitudinal insight over time. Trust and scientific credibility inside Medical Affairs decision-making (trial design, target product profile, competitive intelligence).</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<ul>
+<li>Both founders are expected on the demo — Clara joined mid-Call 1 and drove credibility / trust questions for Medical Affairs. Sell to both, not CK alone.</li>
+<li>Upfront cost is an explicit early-stage decision factor. Be ready with scope / hours / finances after the branded build — do not soft-pedal economics.</li>
+<li>Soft yellow from Call 1 is market education vs AlphaSense / Global Data / agencies — webinar story must myth-bust personalization and longitudinal insight, not pitch “more leads.”</li>
+<li>Competitor filtering was a live ask — show private targeted list vs public ads early.</li>
+<li>Ryan still owes a clear answer on biotech / pharma experience (or tech selling into biotech) — open with that honesty, then land Horton / regulated parallels.</li>
+<li>Disease lane order on tape: dermatology and oncology first, then CNS / mental health. Explicitly avoiding Big Pharma for now (sales cycles too long).</li>
+<li>They never shipped their own webinar after years of talking about it — frame the system as the force that makes it real, not another CRM they abandon.</li>
+</ul>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): Geo = United States first (US-headquartered; can be global companies; Europe later). Vertical = early-stage biotech through mid-size pharma; first disease lanes dermatology and oncology, then CNS / mental health. Company type / size = early-stage biotech with about $100M+ funding through mid-size pharma (about $5–7B market cap, or about $3–5B sales). Buyer titles = CMO, head of medical affairs, CEO, chief commercial, head of clinical operations, plus directors / direct reports in those orgs. Exclude = Big Pharma for now (sales cycles too long), non-decision-makers, Europe as campaign one, competitors on the invite list.</li>
+</ul>
+<ul>
+<li>Ideal ICP (tight — who they said they want most): US-headquartered early-stage biotech ($100M+ funding) through mid-size pharma in derm and oncology first, buying titles CMO / head of medical affairs / CEO / chief commercial / head of clinical operations (plus directors). We have not counted the people yet.</li>
+</ul>
+<ul>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Same US company band across derm + oncology then CNS / mental health, same executive titles plus directors, still excluding Big Pharma for campaign one. Call 1 company estimate from CK was about 5,000–10,000 US companies in their band; that is their estimate, not a counted people list. We have not counted the people yet.</li>
+</ul>
+<ul>
+<li>How we got the number: Call 1 gave geo, size band, disease lanes, titles, and CK’s company estimate. Ryan floated a rough “about five decision-makers per company” framing on tape; CK did not push back — that is still not a counted people list. On the demo show companies, then titles, then contacts — live — before quoting a campaign headline people number.</li>
+</ul>
+<ul>
+<li>What we widened (if thin): They said US first, derm + oncology first, then CNS, titles through directors, and avoid Big Pharma. We keep Ideal tight to that. We do not invent Europe or Big Pharma into webinar one unless Ideal is too thin after a real pull. They already hold maybe a couple thousand emails — that is a seed list, not the TAM.</li>
+</ul>
+<ul>
+<li>Check vs Call 1: Matches US preference, funding / market-cap band, derm then oncology then CNS, CMO / Medical Affairs–led titles, and Big Pharma exclusion. Does not invent a QS people count beyond what was estimated on tape.</li>
+</ul>
+<ul>
+<li>Too small?: Unknown until live pull. Qualify out only if broadest honest people count is still under about 30k after expansion — we do not have that count yet. Their Call 1 company estimate plus several buyer titles per company is why Ryan did not flag size on Call 1; still prove it on screen Tuesday.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): Clear differentiation vs syndicated research — personalized conclusions, longitudinal proprietary data, speed versus big incumbents. Proof of product-market fit (renewals + expansion inside mid-size pharma). High-ticket B2B into executives (ARR about $25k to $250–300k per customer; ticket can expand with more product lines / drugs). Buyers already live by calendar; education / trust is the sale.</li>
+</ul>
+<ul>
+<li>What’s fuzzy or weak (closer must know): Market is crowded (AlphaSense, Global Data, agencies) — sale is not obvious without education. Early-stage cost sensitivity vs full concierge. Scientific / peer-review credibility expectations in Medical Affairs. No QS pricing on Call 1 yet. Biotech-specific case proof still to confirm. They have only three logos today — capacity story must stay honest (about 10/quarter first).</li>
+</ul>
+<ul>
+<li>Positioning line for the webinar if we pick today: How Medical Affairs and commercial leaders at early-stage biotech and mid-size pharma get personalized competitive intelligence and longitudinal insight — not another generic syndicated report.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Medical Affairs and related executives cannot get personalized, decision-ready competitive analysis from syndicated research alone — and they do not trust unproven vendors inside their peer bubble.</li>
+</ul>
+<ul>
+<li>Who we invite first, then next: Ideal first (US derm / oncology CMO, head of medical affairs, CEO, chief commercial, head of clinical operations, plus directors at early-stage biotech through mid-size pharma). Then broader honest list (same titles into CNS / mental health; adjacent directors). That invite order is OUR acquisition motion — not the webinar story.</li>
+</ul>
+<ul>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook: you are making asset and Medical Affairs decisions with generic syndicated research that still leaves you to draw the conclusions then problem: AlphaSense-style reports and agency decks are entrenched but not personalized; peer circles recycle the same trusted names; outsiders struggle to earn trust then proof: Pharma Acuity’s personalized competitive analysis, synthesis, and longitudinal proprietary data — with anonymous client outcomes they can share then offer: their AI SaaS engagement for Medical Affairs / related teams then easy CTA: book a fit call with Pharma Acuity (not a hard close on the webinar)</li>
+</ul>
+<ul>
+<li>Copy / talk-track beats (3–5):</li>
+<li>Why syndicated research still forces the client to do the final analysis</li>
+<li>What personalization and longitudinal trends change for Medical Affairs decisions</li>
+<li>Pattern interrupt for closed peer bubbles (especially CNS / mental health — they hire and fail together)</li>
+<li>How scientific credibility shows up without inventing peer-review claims they do not own</li>
+<li>Soft CTA: book a short fitness call if you are CMO / Medical Affairs / commercial leadership at early-stage biotech or mid-size pharma</li>
+</ul>
+<ul>
+<li>Cadence: One Ideal-lane derm / oncology Medical Affairs topic first. Test show-to-meeting math. Then segment into CNS / mental health. Do not mash Big Pharma or Europe into webinar one. Private targeted list only — never public LinkedIn ads.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Ken Baron &amp; Rory Zipper — ZEA Financial — why it fits: Best regulated / brand-safety parallel (FINRA / SEC–adjacent fiduciary financial planning). They had burned budget on cold callers, purchased lead lists, LinkedIn lists, and about $13,000 dinner seminars, took time to sign, and still got results in a compliance-heavy industry QS had not worked in before. Strongest proof-of-mechanism: they were closed by the same cold calendar-invite play QS then installed for them. Patience: first two webinars had about five or six attendees and it worked from the third.</li>
+</ul>
+<p>When to pull it: competitor-filtering / brand safety, “our industry is too regulated / too confidential,” early empty-room fear, or “we already tried lists and LinkedIn.” Tell the burned-lists then calendar-invite story half-offhand. Soft tie-back: their couple-thousand emails and LinkedIn posts are not a private executive invite engine — and Medical Affairs will not tolerate competitor spectators.</p>
+<ul>
+<li>Gene Rosendale — Advocate Advisors — why it fits: Best agency-burn and “we tried tools and never shipped” parallel. Gene ran four marketing agencies over five years at about $36k–$48k a year and got five qualified prospects and one client in total — then matched five years of output in about six months before scaling. He is also the marketing-literate buyer who vetted about two dozen firms.</li>
+</ul>
+<p>When to pull it: HubSpot / Zoho labor pain, years of talking about webinars without shipping, or cost fear vs yet another vendor. Tell the agency-burn then owned-system story. Soft tie-back: Pharma Acuity already knows light CRM and LinkedIn content do not create bookable CMO conversations — they need an owned webinar engine, not another tool they abandon.</p>
+<ul>
+<li>Joshua Hollander — Horton International — why it fits: High-ticket C-suite / board buyer motion; industries on file include Biotechnology and Pharmaceuticals. Shows the same cold-calendar system working when the buyer is a CEO / board-level decision-maker and the deal is serious retained search, not cheap SaaS.</li>
+</ul>
+<p>When to pull it: “CMOs / Medical Affairs execs won’t sit for a webinar,” biotech / pharma buyer skepticism, or high-ticket B2B doubt. Tell the C-suite education story without inventing invite-volume numbers. Soft tie-back: their buyers are exactly the calendar-living executives Horton targets — education and trust first, then a booked fitness call.</p>
+<p>Optional if C-level show-rate objection flares: Jason Rotman — Elevate Financial — licensed advisor path; answers “serious executives don’t attend webinars.” Keep to that qualitative objection only; do not lean on interviewer-only figures.</p>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Chandra (CK) Singla — Co-Founder / Co-CEO (California) — cares about scalable reach beyond network, capacity to about 10 customers/quarter, hiring path, exit trajectory, and manageable early cost. Clara — Co-Founder (East Coast) — cares about trust / scientific credibility in Medical Affairs, biotech experience proof, competitor filtering, and market education vs entrenched research vendors. Both are commercial decision-makers on this arc; confirm who signs financially on Call 2. Ryan walks branded demo, mechanics, hours, finances.</li>
+</ul>
+<ul>
+<li>Landmines from Call 1:</li>
+<li>Do not invent a TAM people count. Show companies, then titles, then contacts live. CK’s 5,000–10,000 companies was an estimate, not a counted people list.</li>
+<li>Do not invent money-back or guarantee language. Pricing was saved for Call 2 — walk economics honestly after the build.</li>
+<li>Do not ignore upfront cost sensitivity. Early-stage manageable cost is an explicit decision factor; they will pay more later once running.</li>
+<li>Do not dodge the biotech / pharma experience question. Confirm with the team; use Horton + regulated parallels honestly if QS vertical proof is thin.</li>
+<li>Do not imply public LinkedIn ads or open registration. They asked about competitors in the room — show private targeted invites only.</li>
+<li>Do not skip Clara’s credibility / peer-review concern. Show how validation shows up in invite copy and webinar content without inventing publications they do not have.</li>
+<li>Do not mash Big Pharma or Europe into campaign one. They excluded Big Pharma; Europe is later.</li>
+<li>Do not treat “we’ll think about it” as a leave-behind. Leave with a dated go / no-go or build commitment with both founders aligned.</li>
+<li>Do not invent ARR, renewal, or exit numbers beyond Call 1 tape.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Nicolas Breton · Call 1 · 1:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Nicolas Breton · Asban · Call 1 · Thu Sep 24, 2026 1:00 PM ET · Ryan Matsumori</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Nicolas Breton booked under company Asban with email nicolas@asban.con (likely typo for asban.com) and phone +1 819-817-9117 (819 is Quebec).</li>
+<li>GHL country listed US; webinar registration also stamped Canada on custom fields — confirm location live.</li>
+<li>Public company contact commonly listed for Asban is CEO Steve O’Bomsawin; Nicolas’s exact title is not confirmed on public pages yet — ask role and decision rights at open. Do not use the GHL LinkedIn field (it points to an unrelated Julie Acker profile).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Asban / Agence ASBAN (asban.com) is a Quebec Indigenous digital agency based in Odanak (30 Waban-Aki, Odanak, QC) offering development, hosting, design, advertising, cybersecurity, IT infrastructure, photo/video, and blockchain / Web3 services.</li>
+<li>Public chamber listing (CCIB) frames Asban as a digital agency member with phone 819-472-0000 and info@asban.com.</li>
+<li>Soft read: full-service digital / IT shop selling to organizations that need web, infra, and creative production — confirm which line Nicolas owns.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Organizations in Quebec (and broader Canada) that need digital agency work: sites, hosting, design, ads.</li>
+<li>Buyers who also need IT infrastructure, cybersecurity, or media production.</li>
+<li>Confirm whether buyers are private companies, public / Indigenous community orgs, or both.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Organizations need one partner for web, hosting, design, and IT instead of a stack of vendors.</li>
+<li>Cybersecurity and infrastructure gaps create risk for small and mid-size operators.</li>
+<li>Brands need creative production (photo / video) tied to digital presence.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: webinar-registered · sales call booked · vera (call for booking) · quantum scaling. Warm webinar registration into a Business Growth Roadmap Call.</li>
+<li>Soft enrichment: interest band on file around 50–100K; booking note “booking more leads.” Confirm revenue stage, offer mix, and whether he wants inbound for agency services or a specific productized offer.</li>
+<li>Identity hygiene: wrong LinkedIn on the GHL card — clear name / role / company relationship in the first five minutes.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Lindsay, Larry · Call 3 · 3:45 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Lindsay Velez / Larry Meding · Thomas Ho Company · Call 3+ · Wed Sep 24, 2026 14:45 CT / 15:45 ET · Ryan</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft yes after Larry’s Call 1 (Jun 10) and a custom demo with Larry + Lindsay (Jun 18) for Thomas Ho Company’s cloud ALM / analytics platform for banks and credit unions. Demo framed ~46,000 verified decision-makers, calendar-invite webinars, and strong ROI math. Larry is sole salesperson with near-100% demo-to-close historically; the gap is top-of-funnel. Lindsay was direct and candid; final buy-in depends on CEO/founder Dr. Thomas, who distrusts marketing vendors after prior spend.</li>
+</ul>
+<ul>
+<li>What paused the close: Internal sell to Dr. Thomas (will not attend these meetings). Prior marketing firms (~$35–40K/year with no results per Lindsay) created scar tissue. They also tried webinars before with weak results — likely audience generation, not content.</li>
+</ul>
+<ul>
+<li>Who else matters: Dr. Thomas (CEO/founder) is the signature gate. Larry + Lindsay are champions who must sell internally.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table: Offer / contract was to be sent after the demo for internal review. Confirm numbers from that packet on the call — do not invent.</li>
+</ul>
+<ul>
+<li>Whose court: Larry / Lindsay for Dr. Thomas alignment; Ryan for materials, bank/CU references if available, CRM consult. Today reopens the decision after the long gap.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Champions are aligned on need; cautious because of CEO scar tissue and prior webinar disappointment.</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency rises if Larry remains the only salesperson and demo calendar stays thin. Urgency dies if Dr. Thomas stonewalls or quarterly processing cycles block onboarding hours.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: “Another marketing firm”; prior webinar flop repeating; regulated niche too hard; onboarding time around quarterly cycles.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Dr. Thomas approval without him on Zoom — primary.</li>
+</ul>
+<ul>
+<li>Scar tissue from prior $35–40K/year marketing spend — primary.</li>
+</ul>
+<ul>
+<li>Prior DIY / vendor webinars underperformed — secondary.</li>
+</ul>
+<ul>
+<li>Onboarding timing vs quarterly processing cycles — secondary.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “Dr. Thomas won’t sit these calls and doesn’t trust marketing vendors.”</li>
+</ul>
+<ul>
+<li>Status: still open.</li>
+</ul>
+<ul>
+<li>Overcome with: Build a one-page internal pitch Larry/Lindsay can deliver: rent-vs-own, prior spend contrast, owned asset after six months. Offer a short CEO-only call if needed; otherwise get a dated internal decision meeting on their calendar this week.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors — four agencies, ~$36k–$48k/year, almost no pipeline; then about 61 booked sales calls across 12 webinars. Lindsay already connected with the investment-banker case study energy — land Gene cleanly for Dr. Thomas.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; then give them the land line to repeat upstairs.</li>
+</ul>
+<ul>
+<li>Exact land line: “Tell Dr. Thomas Gene’s story — four agencies over five years, almost nothing, then about sixty-one booked sales calls across twelve webinars once they owned the engine instead of renting another firm.”</li>
+</ul>
+<ul>
+<li>Objection: “We already tried webinars and they didn’t work.”</li>
+</ul>
+<ul>
+<li>Status: still open — named on the demo.</li>
+</ul>
+<ul>
+<li>Overcome with: Separate weak audience generation from weak content. Their ALM expertise is not the failure point; cold distribution was.</li>
+</ul>
+<ul>
+<li>Full story to tell: Greg Smart at 500 More — first webinar flopped; fix was offer + niche/packaging, not more spam; then consistently more than 10 sales calls per month.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand.</li>
+</ul>
+<ul>
+<li>Exact land line: “Your earlier webinars sound like Greg’s first flop — packaging and who got invited, not proof the channel is dead. Once that was fixed he got consistently more than ten sales calls a month.”</li>
+</ul>
+<ul>
+<li>Objection: “Banks and credit unions are too regulated / niche for this.”</li>
+</ul>
+<ul>
+<li>Status: half-handled.</li>
+</ul>
+<ul>
+<li>Overcome with: Niche sharpens the invite for CFOs, Treasurers, CLOs, CIOs, ALM strategists at $250M–$20B institutions.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo at Cinnamon Consulting — technical niche; about 66 booked calls.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand.</li>
+</ul>
+<ul>
+<li>Exact land line: “Cedric’s buyers were as specialized as an ALM bank lane — about sixty-six booked sales calls when the room matched the niche. Regulated does not mean unreachable.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Gene Rosendale · Advocate Advisors — ~61 / 12 — Dr. Thomas / agency scar tissue.</li>
+</ul>
+<ul>
+<li>Greg Smart · 500 More — first flop then &gt;10 calls/month — prior webinars.</li>
+</ul>
+<ul>
+<li>Cedric Le Rouzo · Cinnamon Consulting — ~66 — regulated niche.</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open on what Dr. Thomas said after the demo packet (or why it never reached him).</li>
+</ul>
+<ul>
+<li>Arm Larry/Lindsay with Gene land line + one-page internal ask.</li>
+</ul>
+<ul>
+<li>Re-anchor commercial terms from the sent agreement; confirm onboarding window vs quarterly cycle.</li>
+</ul>
+<ul>
+<li>Name first webinar lane (ALM core vs broader analytics reposition).</li>
+</ul>
+<ul>
+<li>Leave with e-sign / pay once Dr. Thomas yes is captured, or a dated internal decision slot this week — not another months-long quiet period.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If Dr. Thomas still has not seen materials, then send a CEO-length summary the same day and book Larry/Lindsay’s internal meeting on the calendar.</li>
+</ul>
+<ul>
+<li>If prior webinar trauma dominates, then run Greg’s first-flop story before any re-demo.</li>
+</ul>
+<ul>
+<li>If they ask for bank/CU client references Ryan may not have, then be honest and use adjacent fintech / technical stories (Cedric / Gene) rather than inventing logos.</li>
+</ul>
+<ul>
+<li>If onboarding hours conflict with quarterly processing, then pick a start week after the named cycle and still capture commercial yes now.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: signed start with Dr. Thomas aware via champions. Next acceptable: dated internal decision meeting this week with Gene talking points in their hands. Not acceptable: “we’ll try to catch Thomas sometime” with no date.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Michael Powell · Call 2 · 4:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Call 2 prep · Michael Powell · Next Chapter · locked 2026-09-15 (via:prep-lock · backfill 2026-09-15 · Ryan)</b></p>
+<p>Next call: 2026-09-24 15:00 CT / 16:00 ET</p>
+<p>Michael Powell · Next Chapter · Call 2 · Wed Sep 24, 2026 15:00 CT / 16:00 ET · Ryan</p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Jul 31 Business Evaluation (~69 min). Michael (Edmonton, AB) runs management consulting via Next Chapter aimed at business owners and executives. Cold email and LinkedIn had failed him before. Ryan framed a webinar trust path versus those channels; Ideal buyers roughly businesses with $5M–$200M revenue, owners/CEOs. Custom demo was to include partners / decision-makers; hip surgery timing was flagged as a possible reschedule risk.</li>
+</ul>
+<ul>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Open and pragmatic — burned by low-yield outreach, curious about a more efficient system.</li>
+<li>Goals they want but can’t hit yet: Enough qualified conversations with owners/CEOs to grow consulting without living in LinkedIn/email grind.</li>
+<li>Why hitting the goal matters: Capacity and growth for the practice; partners need to see a real engine.</li>
+<li>What’s holding them back: Prior channel failures; partner buy-in pending; possible surgery timing.</li>
+<li>Consequences if nothing changes: Stays stuck in low-conversion cold outreach or referral luck.</li>
+<li>Fears that will show up in the decision: “Webinars won’t work for serious executives”; partners veto; cost versus failed past spend.</li>
+</ul>
+<ul>
+<li>Objections still open: Partner alignment; executive-audience skepticism; past LinkedIn/email failure trauma.</li>
+</ul>
+<ul>
+<li>Who’s joining Call 2: Michael plus other partners / decision-makers if he followed the Call 1 ask — confirm at open.</li>
+</ul>
+<ul>
+<li>What we promised to walk: Custom demo tailored to Next Chapter ICP, testimonials/team context, and whether partners see fit.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Michael Powell — Next Chapter management consulting. Helps owners/executives improve how the business runs/grows. Buyers are owners and CEOs in roughly mid-market companies.</li>
+</ul>
+<ul>
+<li>Company goals / dream state (from Call 1): Scale client acquisition beyond broken cold channels while partners stay aligned.</li>
+</ul>
+<ul>
+<li>ICP dream state (what THEIR buyers want): Clearer growth / operating outcomes without another generic consulting pitch.</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<ul>
+<li>Partners in the room (if present) change the close path — run the demo as a decision aid for them, not a second discovery with Michael alone. Hip-surgery reschedule risk may still be live.</li>
+</ul>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): Canada-first (Edmonton base) with honest US adjacency if he sells there; management-consulting buyers; company type mid-market operating companies; titles owners, CEOs, presidents; exclude tiny lifestyle businesses and enterprises that only buy via RFP panels if he does not win those.</li>
+</ul>
+<ul>
+<li>Ideal ICP (tight — who they said they want most): Owners / CEOs at roughly $5M–$200M revenue companies who feel growth or operating pain now. People count: We have not counted the people yet — walk it on the demo.</li>
+</ul>
+<ul>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Wider owner / CEO set across adjacent revenue bands and geographies he will actually serve. People count: We have not counted the people yet — expand only after Ideal.</li>
+</ul>
+<ul>
+<li>How we got the number: Count companies in the Ideal filters, then the titles, then contacts — in words on screen.</li>
+</ul>
+<ul>
+<li>What we widened (if thin): Adjacent revenue bands, COOs as second title, neighboring provinces / states — label “he said” versus “we added.”</li>
+</ul>
+<ul>
+<li>Check vs Call 1: Keep $5M–$200M owner/CEO frame unless partners correct it live.</li>
+</ul>
+<ul>
+<li>Too small?: Qualify out only if broadest honest people count still under ~30k after widening.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): Executive-level operating / growth problems with a clear consulting CTA.</li>
+</ul>
+<ul>
+<li>What’s fuzzy or weak (closer must know): Exact offer packaging / price ladder was not fully locked in the Call 1 summary — confirm before webinar positioning; partner politics may dominate.</li>
+</ul>
+<ul>
+<li>Positioning line for the webinar if we pick today: What mid-market owners must fix in the operating system before growth spend works.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Owners who are busy and still not seeing predictable growth / operating clarity.</li>
+</ul>
+<ul>
+<li>Who we invite first, then next: Ideal $5M–$200M owners/CEOs first, then broader honest TAM.</li>
+</ul>
+<ul>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook then problem then proof (Michael’s method / client outcomes) then offer (Next Chapter engagement) then easy CTA (book with Michael / team)</li>
+</ul>
+<ul>
+<li>Copy / talk-track beats (3–5):</li>
+<li>Growth problems that are really operating-system problems</li>
+<li>Why more LinkedIn activity did not fix it</li>
+<li>What “good” looks like for a mid-market owner in 90 days</li>
+<li>Soft CTA into a working session</li>
+</ul>
+<ul>
+<li>Cadence: One topic, test, then segment by revenue band or industry.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Cedric Le Rouzo · Cinnamon Consulting — about 66 booked calls — executive / technical skepticism.</li>
+<li>Gene Rosendale · Advocate Advisors — about 61 booked / 12 webinars — partners burned by prior marketing.</li>
+<li>Tejas Parkish · Akshar Business Group — about 15 booked calls from 1 webinar (self-reported) — senior buyer “my market is too small/senior” fear.</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Michael champions; partners care about economics, time, and whether executives will attend. Confirm who can sign.</li>
+<li>Landmines from Call 1: Past LinkedIn/email failure; partner no-show; surgery reschedule; do not pretend Call 2 is discovery again if partners came for a decision demo.</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
