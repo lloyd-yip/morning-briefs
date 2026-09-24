@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Thursday Sep 24, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Thursday Sep 24, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>5:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/fYWrTv0uNAgoFC2NvfRB">Sylvie Milverton</a> · Call 1 · Lynx Educate</strong>
+      </div>
+      <div class="slot">
+        <strong>8:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/gbjRU58qk0G4Oy2DN5ZM">Bohdan Kononets</a> · Call 1 · Flatstudio, LDA</strong>
+      </div>
+      <div class="slot">
+        <strong>10:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/nQiCAcrz8fVYmViRnI2X">Scott Curtis</a> · Call 3 · FCBB</strong>
+      </div>
+      <div class="slot">
+        <strong>11:30 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/gDOmtZGmNUYGuSBDME0X">Fabio D&#x27;Agostino</a> · Call 3 · CharaBio</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Sylvie Milverton · Call 1 · 5:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Sylvie Milverton · Lynx Educate · Call 1 · Thu Sep 24, 2026 5:00 AM ET · Edwin Chung</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Sylvie Milverton is CEO and co-founder of Lynx Educate, a Paris-based EdTech learning-benefits platform.</li>
+<li>Email sylvie.milverton@lynxeducate.com · LinkedIn linkedin.com/in/sylviemilverton · GHL country FR.</li>
+<li>Public background: former CFO of French private higher-ed group INSEEC U. (including an LBO); ~13 years at Laureate Education in Latin America (CFO Mexico/Central America; VP Finance Latin America in Miami). MBA Wharton and MA International Studies (Lauder Institute, UPenn).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Lynx Educate (lynxeducate.com) is a female-founded learning-benefits / workforce-skills platform that helps companies offer quality education as an employee benefit to improve retention and development.</li>
+<li>Public positioning: connect employers to curated education providers so workers can earn credentials without a messy vendor hunt. Named clients in public materials include Deliveroo, Oriflame, Ebiquity, and Citron, with learners across Europe, the Middle East, and Asia.</li>
+<li>Backed in public materials by EdTech / Future of Work investors (including Rethink, Emerge, Southern New Hampshire University, and Brighteye Ventures). HolonIQ / ASU GSV recognition cited on her public profiles.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>European (and multi-country) employers that want learning benefits to retain and upskill workers.</li>
+<li>HR / people / L&amp;D buyers who need a simpler path to quality education options.</li>
+<li>Education providers that want access to working-professional markets through employer channels.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Companies struggle to assemble high-quality education benefits without endless provider hunting.</li>
+<li>Workers want practical credentials and career paths; employers want retention, engagement, and skills without building a university themselves.</li>
+<li>Education providers need a cleaner channel into employed learners.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: webinar-registered · webinar-attended · sales call booked · vera (call for booking) · vera-giveup · quantum scaling. She showed the webinar and booked a Business Growth Roadmap Call.</li>
+<li>Early ET slot (5:00 AM ET) with FR on file — confirm her local time and energy at open.</li>
+<li>Soft enrichment: EdTech / employer learning-benefits lane; confirm live revenue stage, team size, and which buyer she sells to most (HR vs L&amp;D vs benefits).</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Hosts the podcast Talent is Everywhere for HR and people leaders on workplace education and talent. (Talent is Everywhere podcast / Office Hours profile)</li>
+<li>Has written publicly about discovering the joys of making jam and comparing that craft to building a company. (her LinkedIn post on making jam)</li>
+<li>Public founder story ties her US education-benefits inspiration to building Lynx in Europe with co-founder Lamia Rouai. (Lynx Spotlight blog “Sylvie Milverton on Building Bridges and Businesses”)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Bohdan Kononets · Call 1 · 8:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Bohdan Kononets · Flatstudio, LDA · Call 1 · Thu Sep 24, 2026 8:00 AM ET · Edwin Chung</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Bohdan Kononets is CEO and founder (also styled Design Director) of Flatstudio, LDA, a Lisbon product-design and engineering studio.</li>
+<li>Email bohdan.kononets@gmail.com · GHL country PT · public studio site flatstudio.co.</li>
+<li>Public self-description on Behance: insightful, intuitive, a bit quirky interface designer based in Lisbon.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Flatstudio (flatstudio.co) is a Lisbon-based product design and engineering studio (public materials: ~12+ years, ~20 teammates, 100+ systems built).</li>
+<li>Public offer: product and interface design, brand identity, web-app engineering, and marketing design — delivered as pitch-deck / product concept, MVP design and development, product audit and discovery, rebuild / redesign, and dedicated product teams.</li>
+<li>Public vertical depth: iGaming, sports analytics, fintech, and B2B SaaS (plus GovTech / MedTech mentions). Philosophy on the about page: engineer-hearted systems, not decorative pixel work.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Startup founders who need investable prototypes and MVPs.</li>
+<li>Scale-ups and product teams that need audits, redesigns, or an embedded design-and-engineering partner.</li>
+<li>Buyers in iGaming, sports analytics, fintech, and B2B SaaS who need durable product systems under real load.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Digital products often look good but break under load, data, and business risk.</li>
+<li>Non-technical founders need a clear product roadmap investors and developers can read.</li>
+<li>Teams stuck in legacy design debt need a rebuild path without polite “yes-men” design.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: sales call booked only — thinner tag path than typical webinar-warm leads; confirm how he found QS and what he wants from the Roadmap Call.</li>
+<li>Soft enrichment: design + engineering studio selling complex product work; confirm whether he wants inbound for new clients, a webinar for a product niche, or something else.</li>
+<li>Lisbon / Portugal base (PT on file) — confirm time zone comfort for an 8:00 AM ET slot.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Studio about page openly lists team travel and “work hard / play hard” culture — Europe sprints plus techno festivals (Sónar Barcelona called out) and design pilgrimages. (Flatstudio about-us page)</li>
+<li>Behance tagline leans playful: “your mom’s fav interface designer” / quirky self-description. (his Behance profile)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Scott Curtis · Call 3 · 10:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Call 3 prep · Scott Curtis · FCBB · locked 2026-09-24 (via:prep-lock · backfill 2026-09-24)</b></p>
+<p>Next call: 2026-09-24 10:00 AM ET · appt OI7wtHPEmy2E7pFWxNuI · Edwin</p>
+<p>Scott Curtis · FCBB (First Choice Business Brokers Charlotte) · Call 3 · Thu Sep 24, 2026 · 10:00 AM ET / 9:00 AM CT · Edwin Chung</p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft yes on the calendar-invite then webinar system after Call 2 Custom Demo (~83 min, Scott alone). He said it is “exactly what I need” and that he thinks it would work for him. Strategy temp 7–8 / 10 money aside, then 8–9 after VA / coaching framing.</li>
+</ul>
+<ul>
+<li>What paused the close: Wife is business partner and co-decider — she was not on Call 2. He will not spend without her. He also hoped for ~$5k (no $5k package), wants references / case studies, and October has ~two weeks of personal travel ending ~Oct 25.</li>
+</ul>
+<ul>
+<li>Who else matters: Wife (name not on tape) — business partner. She will be extremely critical, may call it a scam, and will ask about time and references. Call 3 exists so she sees the same demo and ROI, not a secondhand pitch from Scott.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table (Call 2 tape only): $8,000 for six months; finance = +15% divided by 12; Scott restated ~$1,500 / month for the first six months and Edwin confirmed; tools + VA ~$700 / month (he called reasonable); $20,000 DFY alt exists — Edwin positioned $8k as better bang for buck for him. Time: ~30 hours month one, ~5–10 hours / month after. No money-back / guarantee language on Call 2 tape — do not invent.</li>
+</ul>
+<ul>
+<li>Whose court: Shared. Edwin sends follow-up + case studies. Scott talks with wife and confirms she can join Thursday. Invite already sent; he will not accept until she is free.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Bought-in-but-blocked. Scott is warm and commercially sharp. Soft yes on mechanism. Close readiness sits with the couple, not Scott alone.</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency = referral ceiling, ~$500k take-home dream, desire to start soon. Killers = wife skepticism, October travel, hoped-for lower price, missing live references.</li>
+</ul>
+<ul>
+<li>Fears still alive: Wife labels it a scam / take-the-money-and-run; he fails at setup because he is “not proactive”; mid-build during October travel; paying $8k when he hoped for $5k; ROI model overstated if commission mix is wrong.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Wife co-decision / legitimacy fear — primary — she must see the system live; expects references first.</li>
+<li>Price hope (~$5k) vs $8k — primary — no discount on tape; finance path already shown.</li>
+<li>October travel / bandwidth — secondary — ~two weeks away; window ends ~Oct 25; can start background work earlier.</li>
+<li>Peer references / case studies — secondary — promised; lead with them before or at open.</li>
+<li>Self as execution risk — softened on Call 2 with VA + daily coaching — may resurface with wife present.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “My wife thinks this might be a scam / take money for six months and disappear.”</li>
+</ul>
+<ul>
+<li>Status: still open — this is why she is on Call 3.</li>
+</ul>
+<ul>
+<li>Overcome with: She watches the same list then invite then webinar then time then price walk. Own-the-machine vs rent-an-agency. Hand case studies before or at open. Offer reference path without over-promising live intros.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors. Gene is a founding partner at Advocate Advisors (boutique investment bank / M&amp;A advisory). Marketing-literate partner who vetted vendors for the group. He had been burned by agencies — years of retainers, thin results — and wanted an owned machine, not another rented campaign. Use for “we’re not an agency; you keep the system.” Prospect page: https://quantums-institute.com/due-diligence-home (DD deep link blank — never Drive).</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand after she voices legitimacy fear; then soft tie to FCBB owning the webinar engine.</li>
+</ul>
+<ul>
+<li>Exact land line: “Fair fear — a lot of sharp partners ask that. Gene at Advocate Advisors had been burned by agencies and only moved when he saw he would own the machine, not rent another retainer. Same design here: we build it with you, then you keep it.”</li>
+</ul>
+<ul>
+<li>Objection: “I was hoping this was about $5,000” / “$8,000 still needs a yes from both of us.”</li>
+</ul>
+<ul>
+<li>Status: open — no $5k/$6k package on tape; $8k vs $20k explained.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not discount. Restate $8k + finance (~$1,500/mo first six as Scott framed) + ~$700/mo tools. Contrast $20k DFY. ROI with his blended commission honesty (~$20k lean, not flat $50k).</li>
+</ul>
+<ul>
+<li>Full story to tell: Forrest Dombrow at Profitable by Design. Consultant to B2B service firms who compared several programs before choosing — closest “I already shopped options” mirror to Value Builders / Sales Double / VA dialer history. Use for decision quality, not a price cut. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-twtCclsfCG</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land as choosing the build that sticks, not the cheapest brochure.</li>
+</ul>
+<ul>
+<li>Exact land line: “There’s no $5k version of this build — $8k is the path where you implement with us, $20k is us doing more. Forrest Dombrow compared several programs before he picked; the win was owning a machine that worked, not shaving the sticker. Same finance math we walked: about fifteen hundred a month for the first stretch, plus about seven hundred for tools and VA.”</li>
+</ul>
+<ul>
+<li>Objection: “October is packed / I’m gone two weeks — I don’t want to be mid-setup.”</li>
+</ul>
+<ul>
+<li>Status: open timing fork.</li>
+</ul>
+<ul>
+<li>Overcome with: Offer two clean plans — (A) start now with team on background list/tech while he travels, he picks up webinars after ~Oct 25; or (B) official kickoff after travel with a dated start. Do not leave undated.</li>
+</ul>
+<ul>
+<li>Full story to tell: Nick Uresin at Podcast Pros (speed after decision). Once decided, he went from sales call to a running webinar in about six to eight days. Use only if they worry “setup will drag forever,” not to pressure over travel. Prospect link: https://quantums-institute.com/due-diligence-agencies#section-S7HoLH08fh</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand after timing is the only brake.</li>
+</ul>
+<ul>
+<li>Exact land line: “October travel does not have to kill this. We can dig the foundation while you’re gone and you step into webinars after the 25th — or we date a kickoff right after travel. Nick’s build moved in about a week once he decided; the point is a dated plan, not a vague ‘later.’”</li>
+</ul>
+<ul>
+<li>Objection: “I’m the weak link — I’m not proactive enough / setup scares me” (wife may echo time fear).</li>
+</ul>
+<ul>
+<li>Status: softened on Call 2 — may return with wife.</li>
+</ul>
+<ul>
+<li>Overcome with: Replay VA does tech setup, pre-trained replacements, daily coaching, templates; Scott owns messaging + live webinars + coaching attendance. Time numbers already on tape.</li>
+</ul>
+<ul>
+<li>Full story to tell: Tejas Parikh at Akshar Consulting. Solo / tiny team consultancy selling high-ticket work to senior finance buyers. He needed a system that did not require him to become a full-time marketer. Use for “operator stays expert on camera; machine feeds the calendar.” Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand when time / capability fear shows.</li>
+</ul>
+<ul>
+<li>Exact land line: “Scott stays the expert on the webinar — that’s the job. VA and coaching carry setup. Tejas Parikh ran a lean advisory shop and used the machine to feed serious buyers without becoming a marketing department.”</li>
+</ul>
+<ul>
+<li>Objection: “Show me someone like me / references first.”</li>
+</ul>
+<ul>
+<li>Status: open — promised case studies; live intros best-effort.</li>
+</ul>
+<ul>
+<li>Overcome with: Lead with Forrest + Gene pages before deep demo. If they insist on a call, take names/times and schedule without blocking Thursday’s decision path.</li>
+</ul>
+<ul>
+<li>Full story to tell: Same Forrest + Gene pair as above — full tellable versions already in this pack. Do not name-drop without the story.</li>
+</ul>
+<ul>
+<li>Exact land line: “Start with Forrest and Gene on the due diligence links I sent — then tell me what still feels thin and I’ll chase a live reference where we can.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Gene Rosendale · Advocate Advisors — agency burn then own the machine. DD: due-diligence-home.</li>
+<li>Forrest Dombrow · Profitable by Design — compared programs before buying. DD deep link above.</li>
+<li>Tejas Parikh · Akshar Consulting — lean high-ticket advisory + webinar for senior buyers. DD deep link above.</li>
+<li>Nick Uresin · Podcast Pros — speed after clear decision (~6–8 days). DD deep link above.</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open to both: thank wife for joining; ask what she most wants clarity on (expect references / time / legitimacy).</li>
+<li>Show case-study links first (Forrest + Gene), then short system replay (list then invite then webinar) with Charlotte territory rules.</li>
+<li>Restate commercial package exactly as Call 2: $8k / finance +15% over 12 / ~$1,500/mo framing Scott used / ~$700 tools / 30h then 5–10h. No new discounts. No invented guarantee.</li>
+<li>Lock timing fork: start-now-with-background-work vs post–Oct 25 kickoff — pick one dated path.</li>
+<li>Ask for a clear couple decision: proceed (e-sign / finance next step), dated hold, or clear no — never “we’ll think” with no date.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If wife leads with scam / agency fear, then Gene own-the-machine reframe + show due diligence pages before price.</li>
+<li>If price / $5k hope returns, then no discount; $8k vs $20k; finance math; Forrest compared-programs story.</li>
+<li>If October travel is the brake, then offer foundation-during-travel vs dated post–Oct 25 start; Nick only for speed-after-decision.</li>
+<li>If time / “Scott is overloaded” is her fear, then replay VA + coaching + 5–10h/mo steady state; Tejas lean-operator story.</li>
+<li>If they want another full strategy dump without her engaging, then redirect: her questions first, then commercial yes/no with a date.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: couple verbal yes to $8,000 (or financed path) + dated kickoff (ASAP-with-background or post–Oct 25) + e-sign / pay step same week. Next acceptable: written yes pending one named reference call dated inside seven days. Not acceptable: “we’ll talk” with no date, no package clarity, and wife still unexposed to the system.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Fabio D&#x27;Agostino · Call 3 · 11:30 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Call 3 prep · Fabio D&#x27;Agostino · CharaBio · locked 2026-09-24 (via:prep-lock · backfill 2026-09-24)</b></p>
+<p>Next call: 2026-09-24 11:30 AM ET · appt nGtwpcTBIp2G7IcUodVe · Edwin</p>
+<p>Fabio D&#x27;Agostino · CharaBio · Call 3 · Thu Sep 24, 2026 · 11:30 AM–12:00 PM ET / 10:30–11:00 AM CT / 4:30 PM UK · Edwin Chung (+ CEO)</p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft yes on the list then calendar-invite then webinar system after Call 2 Custom Demo (~83 min, Fabio alone). Strategy temp close to 9–10 / 10. He said it is what he needs to get his message to more people, he does not see obstacles as of today, and later that he is 100% convinced and has no doubt it will work.</li>
+</ul>
+<ul>
+<li>What paused the close: Cash for October–November–December. No extra budget planned this quarter. Even finance at about $738 / month is not certain without finding roughly $2,000 through year-end or a different structure. He asked for a backloaded payment (less early, more later).</li>
+</ul>
+<ul>
+<li>Who else matters: Solo decision-maker still. Call 3 is not a co-buyer call — it is Edwin bringing his CEO with authority to discuss creative payment options for the first three months.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table (Call 2 tape only): $7,700 USD for six months; tools + VA + leads + CRM about $700 USD / month; finance = about +15% then $738 USD / month for 12 months. ROI framing used ~£5k / month retainer dream math from Call 1 / Call 2 (60k / year example). No money-back / guarantee language on Call 2 tape — do not invent.</li>
+</ul>
+<ul>
+<li>Whose court: Shared. Edwin brings CEO with a concrete creative / backload option. Fabio said he wants a structure that works for both sides and is willing to pay more than 738 a month once cash is stronger.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Bought-in-but-blocked. Warm, precise, cooperative. Soft yes on the machine. Close readiness sits on cash shape for the next three months, not on strategy belief.</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency = Q4 biotech budget season, plateau near £100–200k after losing a main client, desire to start and even fast-track the first webinar. Killer = unplanned Q4 cash and need for CEO-level flexibility.</li>
+</ul>
+<ul>
+<li>Fears still alive: Paying ~738 + tools before new clients land; personalization looking like bad AI email until tested; busy life-science executives not prioritizing his webinar.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Cash / payment structure for Oct–Dec — primary — needs backload, deferral, or other creative path through first three months.</li>
+<li>Finance math still tight — secondary — ~$738 / mo × remaining quarter ≈ ~$2k he said he does not have planned.</li>
+<li>Personalization quality — secondary — open until live test; not the close brake today.</li>
+<li>Busy-exec webinar attendance — secondary — wants strong copy / timing; not a hard no.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “I want this 100%, but I have no extra budget this quarter — can we backload the first three months?”</li>
+</ul>
+<ul>
+<li>Status: still open — this is why Call 3 exists with the CEO.</li>
+</ul>
+<ul>
+<li>Overcome with: Bring one clear creative option (backload / lower months 1–3 then catch-up / deferred kickoff fees) that still totals the agreed engagement economics. Restate $7,700 + $700 tools + finance path exactly. Do not invent a discount or a guarantee. Tie start to Q4 season so delay has a cost.</li>
+</ul>
+<ul>
+<li>Full story to tell: Tejas Parikh at Akshar Consulting (public spelling; Airtable row also shows Parkish). Career finance leader turned founder selling high-ticket work to CFOs and finance directors. He worried his senior buyer pool was too small for webinars and said he would rather have a few real conversations than hundreds of junk leads. On his first webinar he reported about 250 registrations, 80+ attendees, and 15 qualified sales calls, and closed several deals. Use for “lean operator, serious buyers, cash-sensitive start — the machine still feeds high-ticket work.” Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand after cash is the only brake; then soft tie to Fabio’s life-science C-suite lane.</li>
+</ul>
+<ul>
+<li>Exact land line: “We get the cash timing — that is why my CEO is here. Tejas Parikh ran a lean finance consultancy into CFOs and still filled a serious first webinar without needing a huge junk list. Same idea for you: we solve the first three months so the build can catch Q4, not so we pretend the sticker is zero.”</li>
+</ul>
+<ul>
+<li>Objection: “Even $738 a month financed is hard until clients land — I need less early and more later.”</li>
+</ul>
+<ul>
+<li>Status: open — he explicitly prefers backload over equal monthly finance.</li>
+</ul>
+<ul>
+<li>Overcome with: Acknowledge equal finance may not fit. Offer a dated backload schedule (e.g. lighter Oct–Dec, catch-up Jan–Mar) that still gets to the same total. Confirm he said he will happily pay more than 738 later. Keep tools ~$700 / mo separate and honest.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo at Cinnamon Consulting. Partner-sales practitioner for 20+ years; helped Minit grow and sell to Microsoft; then solo consulting (~18 projects in 18 months) before scaling. Strong mirror for niche / technical consulting economics and time compression (he frames webinar economics and hours down sharply). Use for “specialist consultant who needed leverage without becoming a marketing department.” Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand when he presses for structure creativity.</li>
+</ul>
+<ul>
+<li>Exact land line: “Equal 738 may not be the shape. Let’s date a backload that still funds the six-month build. Cedric Le Rouzo’s lane was technical partner consulting too — the win was leverage on his expertise, not pretending month one is free forever.”</li>
+</ul>
+<ul>
+<li>Objection: “Will busy life-science executives actually show up / prioritize this webinar?”</li>
+</ul>
+<ul>
+<li>Status: soft / secondary — raised as realism, not a hard no.</li>
+</ul>
+<ul>
+<li>Overcome with: Short reminder that his cold email already gets meetings; this is the same motion on a stronger channel with more trust before the call. Offer to sharpen invite angles and webinar hook on kickoff. Do not re-run a full demo unless he asks.</li>
+</ul>
+<ul>
+<li>Full story to tell: Jason Rotman at Elevate Financial. Financial advisor selling to high- and ultra-high-net-worth buyers; answers “C-level / high-income people don’t attend webinars” head-on. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand only if attendance fear resurfaces.</li>
+</ul>
+<ul>
+<li>Exact land line: “Fair — your buyers are busy. Jason Rotman heard the same ‘senior people don’t attend webinars’ line and still filled rooms with high-income buyers. Your cold outreach already proves they will take a meeting when the message is right — we put that on a better channel.”</li>
+</ul>
+<ul>
+<li>Objection: “I’m worried the personalization will look like bad AI email.”</li>
+</ul>
+<ul>
+<li>Status: soft — open until test; not the money brake.</li>
+</ul>
+<ul>
+<li>Overcome with: Restate title + industry + daily-problem angles (not random LinkedIn trivia). Promise A/B testing and his review before scale. Keep this short so cash stays the main agenda.</li>
+</ul>
+<ul>
+<li>Full story to tell: Forrest Dombrow at Profitable by Design. Sales consultant / B2B service growth advisor who went from essentially no booked calls to a predictable call cadence on a new brand. Use lightly for “operator who needed a clean system, not spammy personalization theater.” Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-twtCclsfCG</li>
+</ul>
+<ul>
+<li>Exact land line: “We are not pasting random LinkedIn facts. You review angles before we scale — Forrest Dombrow’s win was a clean system that made call flow predictable, not clever spam.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Tejas Parikh · Akshar Consulting — lean high-ticket consulting to senior finance buyers; first-webinar self-reported lift. DD deep link above.</li>
+<li>Cedric Le Rouzo · Cinnamon Consulting — niche / technical consulting leverage after partner-sales Microsoft path. DD deep link above.</li>
+<li>Jason Rotman · Elevate Financial — senior / high-income buyers do attend when the invite is right. DD deep link above.</li>
+<li>Forrest Dombrow · Profitable by Design — clean system / predictable calls for B2B services consulting. DD deep link above.</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open with CEO present: thank Fabio; confirm agenda is commercial structure for months 1–3, not another full strategy demo.</li>
+<li>Restate package exactly as Call 2: $7,700 / six months, ~$700 / mo tools, finance +15% then $738 / mo × 12. No new invented discounts. No invented guarantee.</li>
+<li>Put one concrete backload / creative option on the table (dated months and amounts). Ask what cash shape lets him start this week or next.</li>
+<li>Lock start intent: six-month engagement stays; optional fast-track first webinar as he offered on tape.</li>
+<li>Ask for a clear decision: proceed on agreed structure (e-sign / pay path), dated hold with named reason, or clear no — never “I’ll think” with no date.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If cash / backload is the only brake, then CEO offers one dated structure; Tejas story for lean high-ticket start; ask for yes on that shape.</li>
+<li>If he asks to re-demo the whole system, then redirect: value already clear on Call 2; five minutes max on list then invite then webinar, then back to terms.</li>
+<li>If attendance / personalization fear returns, then Jason + Forrest short stories; promise his review before scale; do not let it replace the money conversation.</li>
+<li>If he wants equal finance only, then show why Oct–Dec still needs a bridge; compare equal $738 vs backload that he said he prefers.</li>
+<li>If CEO cannot flex enough, then leave with a dated counter from Fabio (exact monthly amounts he can do for months 1–3) and a same-week follow-up — never an open “think about it.”</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: verbal yes to $7,700 (or agreed backload / financed shape) + dated kickoff inside seven days + e-sign / pay step same week, with CEO alignment on the first-three-months bridge. Next acceptable: written yes pending one named finance tweak dated inside three days. Not acceptable: “I’ll figure out the cash” with no structure, no date, and no CEO decision on the call.</p>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
