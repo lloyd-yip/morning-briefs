@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Friday Sep 25, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Friday Sep 25, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>5:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/EWAUDSH2KCXJanUpc6iB">Fran Arbulu</a> · Call 1 · 4biz</strong>
+      </div>
+      <div class="slot">
+        <strong>8:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/CWCNGyIxsfSVIlqi9EP0">Justin Harris</a> · Call 1 · Just Properties</strong>
+      </div>
+      <div class="slot">
+        <strong>11:15 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/ymtLL3PPkjSXJKnWQJBM">Mark Petznick</a> · Call 1 · Encor Advisors</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Fran Arbulu · Call 1 · 5:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Fran Arbulu · 4biz · Call 1 · Fri Sep 25, 2026 5:00 AM ET · Edwin Chung</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Fran Arbulu is Senior Partner (and publicly named CEO) at 4 Business International Consulting (4biz) in Madrid, Spain.</li>
+<li>Email fran.arbulu@4biz.es · LinkedIn linkedin.com/in/fran-arbulu-9b7b326 · phone +34 686 989 308 · timezone Europe/Madrid.</li>
+<li>Public bio: former Sony Music executive and Telefónica digital-music lead who moved into cybersecurity distribution and partner growth.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>4biz (4biz.es) is a small Madrid cybersecurity consultancy and distributor founded in 2016, with presence called out in Portugal and Brazil.</li>
+<li>They partner with B2B cybersecurity vendors (public examples: SecurityScorecard, ThreatMark, Waves, PASS) and act as local distributors and resellers into new markets.</li>
+<li>Public positioning: “Helping companies grow” by taking cyber products into Spanish and Latin American buyers.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Technology vendors that need local distribution and reseller reach in Spain, Portugal, and Latin America.</li>
+<li>Mid-market and enterprise buyers who need cybersecurity platforms and related services.</li>
+<li>Sector partnerships such as private healthcare (ASPE collaboration covered in Spanish trade press).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Cyber vendors struggle to open new geographies without a trusted local partner.</li>
+<li>Spanish and regional buyers need vetted security platforms without building the channel alone.</li>
+<li>Private healthcare and other regulated sectors need clearer cyber risk visibility.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: apollo-data · webinar-auto-registered · webinar-attended · sales call booked. Warm webinar path into a Business Growth Roadmap Call.</li>
+<li>Soft enrichment: computer and network security / partner-distribution lane; confirm which offer he wants more pipeline for (vendor partnerships vs end-client cyber projects).</li>
+<li>Spain / Madrid base with a 5:00 AM ET slate time — confirm his local afternoon open and language preference at start.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Played guitar as a rock musician in Chile with the band Nadie, later worked Sony Music Spain artist careers, and still plays in the band Mental Pie. (El Aprehendedor podcast, Episodio #10 — Fran Arbulu)</li>
+<li>Public notes also call him a runner, traveler, and writer alongside the cybersecurity pivot. (El Aprehendedor podcast, Episodio #10 — Fran Arbulu)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Justin Harris · Call 1 · 8:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Justin Harris · Just Properties · Call 1 · Fri Sep 25, 2026 8:00 AM ET · Edwin Chung</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Justin Harris is tied publicly to Just Properties in the UK (LinkedIn shows Just Properties since the mid-1990s; Companies House-linked listings name Justin Maxwell Harris as director of Just Properties (London) Ltd).</li>
+<li>Email justin@just-properties.com · phone +44 7976 160081 · timezone Europe/London.</li>
+<li>Booking form note in GHL: goal framed as “booking more leads.”</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Just Properties (London) Ltd is a UK private company listed around property renovation / real-estate work (incorporated 2014; registered address listings in Leeds).</li>
+<li>Public footprint is thin versus larger estate-agency brands — treat exact service mix as something to confirm on the call (renovation, investment, lettings, or brokerage).</li>
+<li>Company email domain matches just-properties.com; website fetch was unstable at research time, so lean on LinkedIn + company registry facts.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Property owners and investors who need renovation or property services in the UK.</li>
+<li>Buyers or landlords looking for a small specialist firm rather than a national chain.</li>
+<li>Confirm Ideal buyer (homeowners vs investors vs trade partners) in the first minutes.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Property projects stall when owners lack a reliable renovation or property partner.</li>
+<li>Small firms need a steady flow of qualified enquiries without guessing which channel works.</li>
+<li>Lead volume and show rates are the pain he named on booking (“booking more leads”).</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: quantum scaling · webinar-registered · sales call booked · vera (call for booking). Registered path; webinar-attended not on tags — confirm show vs register-only at open.</li>
+<li>Soft enrichment: UK property / renovation lane; confirm which offer he wants more booked conversations for.</li>
+<li>UK / London timezone with an 8:00 AM ET slate time — confirm his local afternoon open.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Mark Petznick · Call 1 · 11:15 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Mark Petznick · Encor Advisors · Call 1 · Fri Sep 25, 2026 11:15 AM ET · Edwin Chung</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Mark Petznick, HBA, MCR is Founding Partner and Executive Vice President at ENCOR Advisors Canada Ltd., Brokerage in the Greater Toronto Area.</li>
+<li>Email mpetznick@encoradvisors.com · LinkedIn linkedin.com/in/markpetznick · phone +1 416-419-6776 · timezone America/Toronto.</li>
+<li>Public bio: about 23 years advocating only for office and industrial tenants; Ivey HBA, Western economics, CoreNet MCR.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>ENCOR Advisors is a Toronto-based tenant-only commercial real estate brokerage (brokerage, consulting, project management across Canada; public listings ~20–30 people; founded around 2012).</li>
+<li>They position as Canada’s largest independent tenant-only CRE brokerage and call out ISO 9001 certification on Mark’s LinkedIn headline.</li>
+<li>Mark’s site bio also notes Protect Your Office, a return-to-work safety initiative he founded for clients and employees.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Corporate occupiers who need office or industrial space strategy without landlord-side conflict.</li>
+<li>Companies renewing, restructuring, or relocating leases who want lower occupancy cost and more flexibility.</li>
+<li>National portfolios that need site selection, workplace strategy, and lease negotiation support.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Tenants overpay or get stuck in inflexible leases when they lack a dedicated advocate.</li>
+<li>Occupancy risk and portfolio complexity are hard to manage without specialist CRE counsel.</li>
+<li>Landlords and brokers on the listing side are not aligned with tenant outcomes.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: quantum scaling · webinar-registered · appointwise-webinar-lead · vera (call for booking) · sales call booked. Warm booking path; confirm webinar show vs register-only.</li>
+<li>Soft enrichment: tenant-only CRE / brokerage lane; confirm whether he wants more corporate occupier conversations or a specific vertical.</li>
+<li>Canada / Toronto base with an 11:15 AM ET slate time — close to his local clock; still confirm at open.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Community involvement listed on his ENCOR bio: 360 Kids, Mahamevnawa Buddhist Monastery, Princess Margaret Hospital, and Fred Victor Centre. (ENCOR Advisors personnel page for Mark Petznick)</li>
+<li>LinkedIn activity thanks ENCOR volunteers for sponsoring a URSPL baseball night and cooking for more than 100 players. (his LinkedIn post about URSPL baseball night)</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Friday Sep 25, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Friday Sep 25, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>11:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/SVcwNN9EsOcfA17u8lNX">Gerard Mac Namee</a> · Call 1 · Trustie</strong>
+      </div>
+      <div class="slot">
+        <strong>1:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/NXQVwKlSQVVwHwT9rXAe">Dick Darraugh</a> · Call 3 · Component and Device Sales</strong>
+      </div>
+      <div class="slot">
+        <strong>3:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/Vz9X23ZR6sz48W0fN7cf">Andrew Mcshea</a> · Call 3 · Revvenue</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Gerard Mac Namee · Call 1 · 11:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Gerard Mac Namee · Trustie · Call 1 · Fri Sep 25, 2026 11:00 AM ET · Ryan Matsumori</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Gerard Mac Namee is Co-Founder / CEO-side leader at Trustie (trustie.co.uk), a UK money-guidance product; Companies House-linked listings for Trustie Labs Limited name Robert Joseph Gerard Macnamee as a director.</li>
+<li>Email gerard@trustie.co.uk · phone +44 7785 777092 · timezone Europe/London.</li>
+<li>Public LinkedIn activity covers Trustie’s selection onto the FCA Supercharged Sandbox (Cohort 2) with co-founder Nigel Byrne.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Trustie is a money app positioned for clear, no-judgement guidance — “Need a money mentor? Ask trustie.”</li>
+<li>Trading / group entities are registered in Northern Ireland (public site footer references Trustie Technology Limited in Omagh; Trustie Labs Limited appears in Belfast company listings).</li>
+<li>Product focus: help people understand money in plain English and take the next step; Open Banking via a registered agent relationship is disclosed on the site.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Young adults and consumers who feel stuck or ashamed asking about money.</li>
+<li>Users who want plain-English guidance rather than a traditional bank product.</li>
+<li>Confirm Ideal go-to-market (consumer acquisition vs B2B partners) on the call.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Most people have nobody safe to ask about money.</li>
+<li>Financial advice feels opaque, judgmental, or hard to act on.</li>
+<li>Shame and complexity cause avoidance instead of progress.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>GHL tags: webinar-auto-registered · quantum scaling · webinar-registered · vera (call for booking) · webinar-attended · sales call booked. Warm attended path into a Business Evaluation Call with Ryan.</li>
+<li>Soft enrichment: fintech / consumer money-app lane; confirm whether he wants more user acquisition, partnerships, or capital conversations.</li>
+<li>UK / Belfast–Omagh base with an 11:00 AM ET slate time — confirm his local late-afternoon open.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Public posts celebrate Trustie’s place on the FCA Supercharged Sandbox and what that means for the mission of making money guidance safer to test. (his LinkedIn post on the FCA Supercharged Sandbox)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Dick Darraugh · Call 3 · 1:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Dick Darraugh · Component &amp; Device Sales · Call 3+ · Fri Sep 25, 2026 12:00 CT / 13:00 ET · Ryan</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft interest after Call 1 (Jun 5) and a custom demo (Jun 13, Post Demo arc). Dick runs a manufacturers’ rep group selling into large OEMs (examples named in evaluation: Siemens, Honda) with long cycles and heavy manual marketing workload. Demo covered calendar + webinar system against a TAM framed around ~500,000 purchasing / commodity / materials / engineering decision-makers at 50+ employee firms, on top of ~5,000 CRM contacts built over ~25 years.</li>
+</ul>
+<ul>
+<li>What paused the close: He was actively onboarding a separate AI appointment-scheduling tool (email/text/call-based) expected live within about a week of the demo and explicitly would not run two systems at once. Also pushed back initially on paid data value versus pulling contacts from LinkedIn himself.</li>
+</ul>
+<ul>
+<li>Who else matters: Dick appears to be the decision-maker on the call. No co-decider was locked as a hard gate in the usable notes.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table: Demo walked pricing/automation; confirm any figure only from materials he acknowledges — do not invent.</li>
+</ul>
+<ul>
+<li>Whose court: Dick’s for results from the AI caller experiment; Ryan’s for today’s Post Demo reopen. Fireflies beyond Call 1/demo summaries is thin — lean on GHL summarizer notes (ff_thin).</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Practical and timing-blocked more than skeptical. Cooperative on the demo, briefly tense when LinkedIn-data assumptions were challenged.</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency rises if the AI caller under-delivers on qualified OEM conversations. Urgency dies if that tool “feels fine enough” and he stays in single-channel mode.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: Running two systems; paying for data he thinks LinkedIn already gives him; long OEM cycles making webinars feel mismatched.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Competing AI appointment tool still in play — primary — explicit demo pause.</li>
+</ul>
+<ul>
+<li>“I can pull enough contacts from LinkedIn myself” — primary — data-value pushback.</li>
+</ul>
+<ul>
+<li>Long OEM sales cycles — secondary — education vs appointment-only mindset.</li>
+</ul>
+<ul>
+<li>Thin recent tape / long gap since June — secondary — re-qualify reality before assuming prior soft yes still holds.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “I’m already rolling an AI dialer / appointment tool — I won’t add a second system now.”</li>
+</ul>
+<ul>
+<li>Status: still open unless he reports it failed.</li>
+</ul>
+<ul>
+<li>Overcome with: Ask for results in numbers (meetings booked, show rate, opportunity quality). If weak, reframe QS as the trust/education layer OEMs need before an appointment ask. If strong, ask whether it reaches new accounts beyond the 5,000 CRM names.</li>
+</ul>
+<ul>
+<li>Full story to tell: Greg Smart at 500 More — first motion flopped; fix was packaging and who you invite, not more raw outbound volume; then consistently more than 10 sales calls per month.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand.</li>
+</ul>
+<ul>
+<li>Exact land line: “If the AI caller is spraying appointments without trust, it is Greg’s first-webinar problem — volume without packaging. Once offer and audience were right he got consistently more than ten sales calls a month.”</li>
+</ul>
+<ul>
+<li>Objection: “I can build the list myself from LinkedIn.”</li>
+</ul>
+<ul>
+<li>Status: still open.</li>
+</ul>
+<ul>
+<li>Overcome with: Stay calm; do not re-litigate settled points. Contrast one-off LinkedIn scraping with verified, refreshed decision-maker coverage across ~500k TAM titles he already agreed exist.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo at Cinnamon Consulting — technical / niche buyers; about 66 booked calls when the room was built correctly rather than manually hunted.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; avoid ego fight.</li>
+</ul>
+<ul>
+<li>Exact land line: “Cedric’s market was just as relationship-driven and technical — about sixty-six booked sales calls once the room was built at scale instead of hunted one LinkedIn profile at a time.”</li>
+</ul>
+<ul>
+<li>Objection: “OEM cycles are long — webinars may not fit.”</li>
+</ul>
+<ul>
+<li>Status: half-handled on Call 1.</li>
+</ul>
+<ul>
+<li>Overcome with: Webinars as education for purchasing / engineering stakeholders who block deals, not as a one-call close toy.</li>
+</ul>
+<ul>
+<li>Full story to tell: Philipp Von Schulthess at Oxoia — institutional / niche buyers; referrals real but “not big enough to grow fast enough”; largest deal in company history off the motion.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand.</li>
+</ul>
+<ul>
+<li>Exact land line: “Philipp sold into institutional buyers with long cycles too — referrals helped, but they were not big enough to grow fast enough until the webinar engine produced his largest deal.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Greg Smart · 500 More — packaging vs raw outbound — AI caller comparison.</li>
+</ul>
+<ul>
+<li>Cedric Le Rouzo · Cinnamon Consulting — ~66 — LinkedIn DIY vs machine.</li>
+</ul>
+<ul>
+<li>Philipp Von Schulthess · Oxoia — long-cycle niche — OEM fit.</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open on AI caller results since June — meetings, quality, gaps.</li>
+</ul>
+<ul>
+<li>Re-qualify whether he still wants a parallel education channel into OEM plants / purchasing orgs.</li>
+</ul>
+<ul>
+<li>Re-anchor commercial terms only from documents he has; clear LinkedIn-data misconception in one calm minute.</li>
+</ul>
+<ul>
+<li>Name first invite lane (purchasing vs engineering) and geography (Midwest / Southeast as discussed).</li>
+</ul>
+<ul>
+<li>Leave with e-sign / pay, a dated start after a named AI-caller review week, or clear not-moving — not another quiet quarter.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If the AI caller is “working fine,” then ask for proof metrics; if real, position QS as expansion beyond the 5,000 CRM — or qualify out.</li>
+</ul>
+<ul>
+<li>If he reopens the LinkedIn data fight, then one reframe max, then move to decision — do not burn the call.</li>
+</ul>
+<ul>
+<li>If tape feels stale and needs are different now, then re-discover in five minutes before pitching close.</li>
+</ul>
+<ul>
+<li>If he wants another full demo, then only with a same-week decision attached.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: signed start with first OEM lane named. Next acceptable: dated decision after a two-week AI-caller scorecard. Not acceptable: “maybe later” with no metric and no date.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Andrew Mcshea · Call 3 · 3:30 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Andrew McShea · Revvenue · Call 3+ · Fri Sep 25, 2026 · 3:30 PM ET / 1:30 PM MT · 15-min check-in · Ryan Matsumori</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft yes on mechanism after Call 2 custom demo (~64 min, Andrew alone). He called the presentation “pretty solid” and the build-out fee “super reasonable.” Biggest draw was the calendar-invite motion; he also wants webinar reply / book / close rates versus cold email.</li>
+</ul>
+<ul>
+<li>What paused the close: Personal timing gate, not product disbelief. Thursday Sep 24 he finds out if his dad has pancreatic cancer. If yes, he may move near Boston for roughly a month and a half and may not start until end of year / December. Cold-email work that is already working stays running — he will not squash it. Earliest clean window he named if dad is clear: mid to late October.</li>
+</ul>
+<ul>
+<li>Who else matters: Andrew decides alone. Kate (wife / co-founder) did not join Call 1 or Call 2. No other DM named.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table (Call 2 tape only): one-time consulting fee $17,995 / $18,000 plus $500 / month ops (about 30,000 leads + tech + assistant). Splitit path: principal about $21,000 over 12 months, which is about $1,750 consulting plus $500 ops, so about $2,250 / month for 12 months, then $500 / month. 3x ROI frame on tape: minimum $54,000 contracted within six months, or QS keeps working free until that 3x is recouped. Extra leads beyond 30k at $30 per 10,000. He said he would probably finance for short-term cash flow — calm on sticker, not a price rejection.</li>
+</ul>
+<ul>
+<li>Whose court: Shared. Ryan sends recording + simple two-page agreement (includes financing). Andrew takes Thursday’s oncologist news, then updates Ryan on Friday with a timeline lean. Friday 15-minute check-in is already set.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Bought-in-but-blocked. Curious and commercially sharp through the stack. Tone went sincere on the dad situation. Explicit “very interested” with timing as the brake.</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency rises if Thursday news is clear and he can name mid–late October start while cold email keeps optimizing. Urgency dies if diagnosis forces a Boston move and December start, or if Friday becomes another open-ended “let’s talk later.”</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: Family health first; bandwidth for the ~15 build hours; cash flow tight enough to prefer finance; killing a cold-email channel that is working; picking law vs tax/wealth first when lead intake differs.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Family / health gate (Thursday oncologist) — primary — explicit, repeated; can push start to December.</li>
+<li>Cold-email work stays in flight — primary — will not squash a channel that is working; earliest non-family window mid–late October.</li>
+<li>Cash flow / finance preference — secondary — not sticker shock; Splitit path already walked.</li>
+<li>Vertical pick (law vs wealth/tax first) — secondary — planning, not a hard no; duplicate after first lane dials.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “I need to wait on Thursday’s news / I may have to move to Boston — this might be December.”</li>
+</ul>
+<ul>
+<li>Status: still open — this is why Friday exists.</li>
+</ul>
+<ul>
+<li>Overcome with: Lead with humanity first. Do not pitch over grief. Ask one clear timeline question: clear path means mid–late October start week; Boston path means December hold with a dated re-open. Get a written lean on the call, not “I’ll text you sometime.” Soft-tie Nick only if he is clear and still stalls on “how fast once I decide.”</li>
+</ul>
+<ul>
+<li>Full story to tell: Nick Uresin at Podcast Pros (also tied to his Amazon seller SaaS work). Nick already knew LinkedIn and outreach tools. Once he decided, he went from sales call to a running webinar in about six to eight days and had qualified opportunities off webinar one. Use for speed after a clear decision — not as a revenue proof point, and never over the family news. Prospect link: https://quantums-institute.com/due-diligence-agencies#section-S7HoLH08fh</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand, only after timeline clarity; never before the dad check-in lands.</li>
+</ul>
+<ul>
+<li>Exact land line: “Dad comes first — full stop. If Thursday is clear and October is the window, Nick went live in about a week once he decided. Today we just need your lean: mid–late October start week, or December hold with a date we reopen.”</li>
+</ul>
+<ul>
+<li>Objection: “Cold email is working — I’m not shutting it off to start this.”</li>
+</ul>
+<ul>
+<li>Status: half-handled on Call 2 (Ryan said 100% do not squash what’s working) — may resurface as either/or.</li>
+</ul>
+<ul>
+<li>Overcome with: Restate parallel path. QS calendar invites sit beside Pitch Lane / Instantly while he optimizes cold email. First lane is one vertical webinar, not a rip-and-replace of outbound. Soft-tie Felix as an operator who already knew lead gen and still added an owned engine.</li>
+</ul>
+<ul>
+<li>Full story to tell: Felix Petzel at Panda Media. Felix is founder and managing director of Panda Media, a B2B LinkedIn marketing and social selling agency in northern Bavaria, Germany. He already ran social selling for a living and still found pieces he had not seen. On economics he took margins from about 30% toward about 90% and reported a first webinar around 300 registrations, 90 attendees, and 17 qualified sales calls (his interview numbers — say them as his interview figures, not QS-measured). Tell it half-offhand: even an agency operator already buying leads still needed an owned webinar engine beside what he already ran. Prospect link: https://quantums-institute.com/due-diligence-agencies#section-rpq6S3zvMtH</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land as parallel, not replacement.</li>
+</ul>
+<ul>
+<li>Exact land line: “We already agreed — don’t squash what’s working. Felix at Panda Media already ran social selling for a living and still installed an owned webinar engine beside it. Same idea for you: cold email keeps optimizing while we stand up one calendar-invite lane.”</li>
+</ul>
+<ul>
+<li>Objection: “Cash is a little tight — I’d finance rather than pay the consulting fee upfront.”</li>
+</ul>
+<ul>
+<li>Status: half-handled — Splitit ~$2,250/mo × 12 already on tape; he called the fee super reasonable.</li>
+</ul>
+<ul>
+<li>Overcome with: Confirm the financing path is already in the two-page agreement. Do not reopen price. Reframe as own-the-machine versus renting another campaign forever, then soft-tie Gene.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors. Gene is a founding partner at Advocate Advisors, a boutique investment bank and M&amp;A advisory firm headquartered in Chicago with sister offices in other U.S. cities. He is the marketing-literate partner who vetted firms for the group. Before the system, he ran about four agencies over five years at roughly $36k–$48k a year and got five qualified prospects and one client total. After they installed the owned webinar system, tracked campaign totals show about 61 booked sales calls across 12 webinars. Tell it half-offhand: renting spend on thin cash versus owning a machine. Gene has no Due diligence deep link — use https://quantums-institute.com/due-diligence-home if he asks for a page (never Drive).</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land as rent-versus-own, not a discount conversation.</li>
+</ul>
+<ul>
+<li>Exact land line: “Financing is already in the agreement — about twenty-two fifty a month end to end for twelve months. Gene at Advocate Advisors burned years of agency retainers and got almost nothing, then about sixty-one booked sales calls across twelve webinars once he owned the engine. You’re not renting another campaign; you’re financing the build you keep.”</li>
+</ul>
+<ul>
+<li>Objection: “Law vs wealth/tax need different webinars — I’m not sure which to start.”</li>
+</ul>
+<ul>
+<li>Status: planning, not a block — Call 2 gut was separate webinars; pick one first, duplicate later.</li>
+</ul>
+<ul>
+<li>Overcome with: Force one Ideal lane decision on Friday if timeline is clear. Law AI was Call 1’s most sellable lane; tax/wealth share lead-nurture math. Do not mash three ICPs into webinar one.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo at Cinnamon Consulting. Cedric is a boutique consulting operator who pressure-tested webinar economics and time cost before committing. Use him when Andrew wants clarity on hours, $500 ops contents, and “can I actually run this.” Keep the story on economics clarity and sequenced starts — do not invent guarantees beyond Call 2 tape. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; one lane, then mirror.</li>
+</ul>
+<ul>
+<li>Exact land line: “We don’t need three webinars on day one. Pick law or tax/wealth today if October is live — Cedric-style: clear economics, clear hours, then duplicate the dialed lane. Your tech guys can mirror once they see the build.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Nick Uresin · Podcast Pros — first webinar live in about six to eight days once decided. Use only after Thursday clarity when speed-to-start is the stall.</li>
+</ul>
+<ul>
+<li>Felix Petzel · Panda Media — agency operator who already knew lead gen; first webinar in his interview ~300 / 90 / 17; margins ~30% toward ~90%. Use for “cold email stays / I already know outbound.”</li>
+</ul>
+<ul>
+<li>Gene Rosendale · Advocate Advisors — four agencies, roughly $36k–$48k/year burn, then about 61 booked sales calls across 12 webinars. Use for finance / cash-tight / rent-versus-own. Prospect page: due-diligence-home (DD blank).</li>
+</ul>
+<ul>
+<li>Cedric Le Rouzo · Cinnamon Consulting — boutique consulting buyer who pressure-tested hours and run-cost clarity. Use for vertical pick + “can I give the 15 hours.”</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open human: ask how Thursday went — one minute max of genuine check-in, no pitch.</li>
+<li>Get a dated timeline lean on the call: mid–late October start week if clear, or December hold with a named reopen date if Boston move.</li>
+<li>If October is live: confirm commercial package already on tape ($17,995/$18k + $500/mo, Splitit ~$2,250/mo × 12, 3x / $54k frame) and that the two-page agreement is in his inbox — ask what questions remain.</li>
+<li>Lock Ideal first lane (law vs tax/wealth) in one sentence so build scoping is real.</li>
+<li>Leave with e-sign / pay preference, or a written yes + start week inside seven days — never another undated check-in.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If Thursday news is clear and he leans mid–late October, then confirm agreement received, answer one or two commercial questions, pick the first vertical, and ask for e-sign / finance path this week.</li>
+<li>If diagnosis forces Boston / December, then book a dated December reopen (or late-November check-in), keep the agreement warm, and do not force a close — protect the relationship.</li>
+<li>If he reopens “don’t kill cold email,” then restate parallel path and pull Felix; do not argue replace.</li>
+<li>If cash flow is the stall, then point at Splitit already in the agreement and land Gene rent-versus-own — no discount.</li>
+<li>If he wants another full strategy demo, then refuse on a 15-minute check-in unless a same-week commercial decision is attached; offer a short scoped call only after timeline + lane are locked.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: written timeline lean on Friday (October start week or December hold with date) plus e-sign / Splitit on the $17,995 / $18k + $500/month package with Ideal first lane named. Next acceptable: clear October window + questions resolved + dated sign deadline inside seven days. Not acceptable: “still thinking” with no date, no lane, and no answer on the agreement.</p>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
