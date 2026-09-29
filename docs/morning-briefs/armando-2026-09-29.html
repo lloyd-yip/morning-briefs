@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Tuesday Sep 29, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Tuesday Sep 29, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>10:00 AM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/4vBpvNQhMmIf2HFtAmnj">Joaquin Altenberg</a> · Call 3 · Evillage</strong>
+      </div>
+      <div class="slot">
+        <strong>2:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/HOc71u1rWlrS6a10ygGZ">Ron Mckenna</a> · Call 1 · Minerva Valuations</strong>
+      </div>
+      <div class="slot">
+        <strong>3:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/y2raveKsfuAy1pu8p5fe">Julien Simon</a> · Call 2 · 1UP Digital Marketing</strong>
+      </div>
+    </section>
+    <details class="pack">
+      <summary><span>Joaquin Altenberg · Call 3 · 10:00 AM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Joaquin Altenberg · Evillage / Clean Energy Nexus · Call 3+ · Tue Sep 29, 2026 · 10:00–10:30 AM CT · Armando Valencia</b></p>
+<p>Zoom: https://us06web.zoom.us/j/84277287805</p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft yes on the system after Call 2 Custom Demo (~74 min, Joaquin alone). He scored himself a 10 on confidence the approach will work for him money-aside. He called the Trojan-horse framing for the $195 Clean Energy Nexus software seat spot on, said the educational webinar path was better than anything he had evaluated in about two months of shopping agencies, podcasts, and media plays, and closed with “I think you guys are pretty kick ass.” He wants industry education first, software as the natural next step, and marketplace / backend services as the real upside — not a self-aggrandizing personal brand.</li>
+</ul>
+<ul>
+<li>What paused the close: Not sticker shock. He would not close that day because CFO Andrew Kutcher has to review proposal, case studies, and unit economics. Verbal commitment was explicitly two-party. Andrew has been shooting down other options Joaquin brought him.</li>
+</ul>
+<ul>
+<li>Who else matters: CFO Andrew Kutcher — Silicon Valley software operator, ex-CFO of Helioscope (energy-industry software later acquired by a big energy conglomerate), multiple software exits. Joaquin said Andrew presses on who quantumSCALE has done this for, how execution works, and price. Call 3 is a 30-minute next-steps call after Joaquin ↔ Andrew, not a second full demo, unless Andrew joins.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table (Call 2 tape only): $18,000 for six months of full execution. Most clients pay upfront; internal splits max at 90 days; third-party financing can stretch 6–12 months for cash flow. Effective load walked on tape: about $3,000 / month plus about $900 in third-party tools, or roughly $3,900–$4,000 / month for the first six months, then about $1,000 / month after. A 3x software-ARR ROI guarantee was attached (continue free support until met if unmet; software ARR only — marketplace is upside, not the guarantee base). Joaquin’s reaction was calm: “reasonable,” “fair ask,” “a lot of value,” should prove out easily inside six months with a read after about three. No discount ask.</li>
+</ul>
+<ul>
+<li>Whose court: Shared after Call 2. Armando owed proposal + CFO visual/simple deck + call recording + software case studies by end of day Thu Sep 24. Joaquin owed a talk with Andrew today or tomorrow once materials landed. Call 3 is booked Tue Sep 29 · 10:00–10:30 AM CT (Monday blocked for Sukkot).</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Warm, complimentary, commercially open, bought-in-but-blocked. About an 8 deal temp — he is a 10 on the system money-aside and expects Andrew to be culturally aligned, but it is not a locked deal until Andrew greenlights.</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency = software is live / launch window; Trojan-horse seat needs volume so marketplace can follow; he rejects slow LinkedIn-only and has already spent ~two months interviewing firms. Killers = Andrew has not seen the paper yet; competing options Andrew may still compare; soft curiosity about whether busy developers actually show up to webinars.</li>
+</ul>
+<ul>
+<li>Fears still alive: Andrew shoots this down like the other options; busy CNI developers cannot make webinar time; company-name / trust curiosity (light, not a hard stop); proving software-only ROI before marketplace upside shows up.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>CFO Andrew Kutcher greenlight — primary — he is the live gate; Joaquin will not close alone.</li>
+<li>Software proof Andrew can look up — primary — Andrew wants who / how / does-it-fit, then he will research the logos himself.</li>
+<li>Busy-executive webinar show-up — secondary — curiosity-level on Call 2, not a hard stop.</li>
+<li>Package clarity into paper — secondary — $18k / 6 months + ops + 3x software-ARR guarantee must match what Andrew reads in the proposal.</li>
+<li>Competing firm comparison — secondary — Joaquin interviewed agencies, podcasts, and media plays for ~two months; Andrew has been the filter.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “It’s me and my CFO who ultimately decide — Andrew has to see who you’ve done this for, how you execute, and the price.”</li>
+</ul>
+<ul>
+<li>Status: still open — this is why Tue Sep 29 exists after Joaquin’s Andrew review.</li>
+</ul>
+<ul>
+<li>Overcome with: Open by asking what Andrew said, what he liked, and what still feels thin. Do not re-demo the whole machine unless they ask. Lead with software proof (Cedric first, then Ken / Luke / Philipp), not Gene M&amp;A, because Andrew is a software operator. If Andrew is green, move straight to package + dated kickoff + e-sign / pay. If Andrew is yellow, book a short Call 4 with Andrew on calendar inside seven days — never an open “keep talking to Andrew.”</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo at Cinnamon Consulting. Partner-sales practitioner for 20+ years; helped Minit grow and sell to Microsoft; then built Cinnamon Consulting (about 18 projects in 18 months solo before scaling). His lane is technical / specialized software partner programs — buyers who look “too sophisticated” for a webinar. In his interview he frames webinar economics collapsing (about $2,000 toward about $10 cost per sales call; about 40 hours toward about 3 hours per month) and reports 66 booked sales calls across his first two webinars (16 then 50). Use for “software operator diligence — who have you done this for, and does the execution math hold?” Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand after Joaquin reports Andrew’s feedback; land as look-up-able software proof, not a soft pitch.</li>
+</ul>
+<ul>
+<li>Exact land line: “That is exactly why we waited for Andrew. Cedric Le Rouzo at Cinnamon Consulting is the software lane Andrew can pressure-test — niche partner-program motion, then 66 sales calls off his first two webinars. Same job here: what did Andrew still need to see so we can either start or put him on a dated call?”</li>
+</ul>
+<ul>
+<li>Objection: “Andrew is going to look companies up and poke holes — he has been shooting down other options I brought him.”</li>
+</ul>
+<ul>
+<li>Status: still open — adversarial diligence is the job description for this CFO.</li>
+</ul>
+<ul>
+<li>Overcome with: Treat diligence as a feature. Hand look-up-able software logos and due-diligence links. Offer Andrew a short call if he wants to pressure-test live. Do not get defensive about Helioscope rapport — use it lightly: Andrew already knows what good energy software ops looks like.</li>
+</ul>
+<ul>
+<li>Full story to tell: Ken Tyborski at Code of the North (NetSuite consulting / mid-market software-ops implementer). Ken had already spent serious money trying to fix lead gen before he bought. He did adversarial diligence (signed up under a fake name, reference-called a prior client, watched multiple client videos, tried to poke holes). What closed him was a clear guarantee structure plus ROI math he could defend internally — including an early webinar path that produced a stated ~$8,000 first contract with multi-year account life in his story. Use for “sharp operator who had to get leadership-grade proof, not a soft pitch.” Prospect link: https://quantums-institute.com/due-diligence-software (no client deep-link section on file — do not invent a #section).</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand when Joaquin describes Andrew’s shoot-down style.</li>
+</ul>
+<ul>
+<li>Exact land line: “Good — Andrew sounds like Ken Tyborski at Code of the North. Ken only moved after he pressure-tested us like a skeptical partner — fake-name signup, references, videos — and then the guarantee-plus-ROI math was something he could take upstairs. Same standard for Andrew: what still needs to clear so we can date a start?”</li>
+</ul>
+<ul>
+<li>Objection: “Will busy CNI developers / executives actually show up to a webinar?”</li>
+</ul>
+<ul>
+<li>Status: half-handled — curiosity on Call 2, not a hard stop; calendar-invite aha already landed for Joaquin personally.</li>
+</ul>
+<ul>
+<li>Overcome with: Remind him how *he* showed up (calendar invite, not Instagram accident). Anchor education-first Trojan-horse webinar for developers who need process teaching, with self-serve trial / seat CTA for 1–5 seats. Do not invent show-rate guarantees.</li>
+</ul>
+<ul>
+<li>Full story to tell: Philipp Von Schulthess at Oxoia. Philipp is CEO of a Swiss building-energy software company selling into conservative institutional buyers — municipalities, pension funds, facility managers, and named public customers like Swiss Railways and Zurich Airport. The fear was “my buyers are too technical / too institutional for a webinar.” He still used the webinar motion into that audience and closed the largest deal in company history off one. Also useful if referrals / soft inbound feel real but “not big enough to grow fast enough.” Keep it qualitative — tell the institutional-buyer story; do not invent campaign totals for him. Prospect link: https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand when show-up fear returns.</li>
+</ul>
+<ul>
+<li>Exact land line: “You already lived the show-up proof — the invite hit your calendar. Philipp Von Schulthess sells building-energy software into municipalities and facility managers, the same ‘too busy / too technical’ fear, and still closed the largest deal in company history off a webinar. Your developers are that buyer shape.”</li>
+</ul>
+<ul>
+<li>Objection: “Price / package — Andrew will press the number.”</li>
+</ul>
+<ul>
+<li>Status: half-handled with Joaquin (calm accept on Call 2); still open with Andrew until paper + greenlight.</li>
+</ul>
+<ul>
+<li>Overcome with: Restate exactly as Call 2 — $18,000 / six months, about $3k / mo plus ~$900 ops ≈ $3.9–4k first six months, then ~$1k / mo, 3x software-ARR ROI guarantee with continued support until met. No new discounts. No invented money-back. Marketplace is upside, not the guarantee base. Payment path: upfront preferred; 90-day internal max; third-party 6–12 month financing if cash flow needs it.</li>
+</ul>
+<ul>
+<li>Full story to tell: Same Cedric Le Rouzo pack above for software economics Andrew can defend — full tellable version already written. Secondary: Luke Edwards for multi-account software transfer if Andrew asks “does this travel beyond one niche?”</li>
+</ul>
+<ul>
+<li>Exact land line: “Andrew gets the same package you heard: eighteen thousand for six months, ops in the three-nine to four-thousand band the first half year, then about a thousand a month, with the three-times software ARR guarantee written the way we said it — not marketplace fairy dust.”</li>
+</ul>
+<ul>
+<li>Objection: “I’ve been burned / I’m comparing firms — why is this not another agency retainer?”</li>
+</ul>
+<ul>
+<li>Status: secondary — Joaquin shopped agencies and media for ~two months; Andrew shoots options down.</li>
+</ul>
+<ul>
+<li>Overcome with: Own-the-machine frame. Six-month build, handoff, no forever hostage retainer. Gene is backup only after software proof — do not lead Gene for Andrew.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors. Gene is a founding partner at a boutique investment bank / M&amp;A advisory. Marketing-literate partner who vetted vendors for the group. He had been burned by agencies — years of retainers, thin results (in his story: four agencies over five years at roughly $36k–$48k a year, five qualified prospects and one client total) — then matched five years of output in about six months once he owned a machine instead of renting campaigns. Workshop path also shows about 61 booked sales calls across 12 webinars. Use for “execution risk / vendor scar tissue — own the system, don’t rent another fragile dependency.” Prospect link: https://quantums-institute.com/due-diligence-home (no client deep-link section on file — do not invent a #section).</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand only if agency-burn language returns; keep Cedric / Ken in front for Andrew.</li>
+</ul>
+<ul>
+<li>Exact land line: “We are not asking Andrew to rent another agency. Gene Rosendale only moved after agency burn taught him to own the machine — same frame for you: six months of build, then you keep the stack.”</li>
+</ul>
+<ul>
+<li>Objection: “Does this actually transfer to software seats / technical buyers, or did it only work for coaches?”</li>
+</ul>
+<ul>
+<li>Status: soft / likely from Andrew’s software lens — preempt it.</li>
+</ul>
+<ul>
+<li>Overcome with: Software multi-account proof + low-ticket self-serve webinar motion for the $195 seat (pitch price / trial on the webinar instead of forcing founder sales calls). Confirmed on Call 2: 14-day free trial; ~5 seats as conservative multi-license average; US-first ~27.7k TAM.</li>
+</ul>
+<ul>
+<li>Full story to tell: Luke Edwards at Boss Writing / Boss Equity. Luke runs a newsletter and LinkedIn writing service and also works inside Boss Equity, his father’s software-sector M&amp;A firm. He applied the same lead-generation system to his own service business and to more than five third-party software companies in that portfolio, with revenue-doubling reported across those accounts in his story. Best for “does this actually transfer to software seats / technical buyers?” Prospect link: https://quantums-institute.com/due-diligence-software#section-vsjNPfqiE6O</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand if Andrew questions category transfer.</li>
+</ul>
+<ul>
+<li>Exact land line: “Luke Edwards ran the same system across his own firm and more than five software companies inside Boss Equity — that is the transfer proof Andrew wants, not a coaching-only story. Your motion stays Trojan-horse: educate, then $195 seat / 14-day trial on the webinar.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Cedric Le Rouzo · Cinnamon Consulting — lead software proof for Andrew; niche / technical; 66 sales calls first two webinars; webinar economics frame. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+<li>Ken Tyborski · Code of the North — adversarial diligence + leadership-grade ROI / guarantee close for a software-ops implementer. Prospect link: https://quantums-institute.com/due-diligence-software</li>
+<li>Philipp Von Schulthess · Oxoia — building-energy software into institutional / busy technical buyers; largest-deal-in-company-history qualitative proof. Prospect link: https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</li>
+<li>Luke Edwards · Boss Writing / Boss Equity — multi-account software transfer; “does this travel?” Prospect link: https://quantums-institute.com/due-diligence-software#section-vsjNPfqiE6O</li>
+<li>Gene Rosendale · Advocate Advisors — agency / vendor burn then own the machine; ~61 calls / 12 webinars (backup after software proof, not the Andrew lead). Prospect link: https://quantums-institute.com/due-diligence-home</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open in the first three minutes: thank him; confirm this is a check-in after Andrew, not a second 70-minute demo. Ask what Andrew said, what he liked, what he looked up, and what still feels thin. Ask whether Andrew is joining or staying off-call.</li>
+<li>Confirm soft yes still stands on the machine (Trojan-horse $195 seat, education webinar, US-first list, own-after-six-months) versus any new blocker Andrew raised.</li>
+<li>If Andrew is green: restate commercial package exactly as Call 2 — $18k / six months, ops ~$3.9–4k / mo first six months then ~$1k / mo, 3x software-ARR ROI guarantee as stated on tape (continue until met, in the agreement). No new discounts. No invented money-back. Marketplace stays upside.</li>
+<li>Lock a dated kickoff with Andrew aligned (named build week, first webinar target window, who owns list vs content). Optional: start list / messaging prep immediately while commercial paper moves.</li>
+<li>Ask for a clear decision on this 30-minute call: proceed (e-sign / pay / SOW path), dated hold with Andrew on a Call 4 calendar hold inside seven days, or clear not-moving — never “Andrew is still thinking” with no date and no name on calendar.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If Andrew is green and Joaquin is ready, then skip re-demo; walk $18k + ops band + 3x software-ARR guarantee; ask for e-sign / pay path this week with a named kickoff week.</li>
+<li>If they liked it but Andrew needs one more pass, then book a dated Call 4 with Andrew inside seven days; send Cedric / Ken / Philipp / Luke diligence links same day; do not leave an open loop.</li>
+<li>If Andrew joined and presses software proof, then lead Cedric, then Ken adversarial diligence, then Philipp energy-software parallel; Gene only if agency-burn language appears.</li>
+<li>If busy-exec show-up fear returns, then Philipp institutional energy-software story + remind Joaquin how the calendar invite got *him* in the room.</li>
+<li>If price is the brake, then restate $18k / 6 months + ops + 3x software-ARR guarantee exactly as tape; offer upfront vs 90-day split vs third-party financing — no discount invention.</li>
+<li>If “does this work for software / not coaches” appears, then Luke multi-account transfer + Cedric partner-software economics.</li>
+<li>If he asks to re-walk the whole demo, then five minutes max on list then invite then education webinar then trial CTA, then back to commercial yes/no — protect the half-hour.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: verbal yes to the $18,000 six-month engagement (ops ~$3.9–4k / mo first six months as framed on Call 2) + 3x software-ARR ROI guarantee language into the SOW exactly as stated on tape + Andrew aligned + dated kickoff week + e-sign / pay step same week. Next acceptable: written yes pending Andrew on a Call 4 calendar hold dated inside seven days with Cedric / Ken / Philipp / Luke links already in his hands. Not acceptable: “still talking to Andrew” with no names, no date, and no package clarity.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Ron Mckenna · Call 1 · 2:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Ron Mckenna · Minerva Valuations · Call 1 · Tue Sep 29, 2026 2:00 PM CT · Armando Valencia</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Ron (Ronald J.) McKenna, LL.B., is Managing Director leading M&amp;A Advisory at Minerva Valuations.</li>
+<li>Based around Toronto / Mississauga (GHL timezone US/Eastern; firm lists Toronto and Mississauga offices). Email ron@minervavaluations.com.</li>
+<li>Lawyer by training (LL.B., University of Ottawa, 2001) with 20+ years in corporate M&amp;A, estate planning, and capital-raising advisory. Completed CPA Canada’s In-depth Income Tax Course.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Minerva Valuations is a mid-market valuation and corporate-finance advisory firm (business valuations, M&amp;A / divestitures, litigation support, shareholder-value work).</li>
+<li>Public site positions custom valuation reports done by accredited valuators, plus mid-market investment banking and litigation support across North America (Toronto, Miami, LA, Texas listed).</li>
+<li>Firm claims hundreds of valuations and dozens of M&amp;A / financing engagements on the public homepage.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Business owners preparing to sell, buy, or refinance.</li>
+<li>Boards, management teams, lawyers, accountants, and high-net-worth families who need a defensible valuation or M&amp;A process.</li>
+<li>Private equity and select institutions that need fairness opinions, portfolio valuations, or deal advisory.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Owners and counsel need a clear, defensible number and a clean process when a company is sold, disputed, taxed, or financed — not a guess and not a generic report.</li>
+<li>Complex estate, shareholder, and M&amp;A situations need someone who can connect legal, tax, and valuation judgment in one advisory path.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>Booked from the QS Institute Business Growth Roadmap path after a webinar (GHL tags: sales call booked; webinar chat attribution). Rescheduled from Sep 28 onto Tue Sep 29 2:00 PM CT with Armando.</li>
+<li>Self-reported deal size band on file is about 3–10K monthly (webinar form) — treat as a booking signal, not a verified firm size.</li>
+<li>He leads the M&amp;A Advisory lane, so the growth conversation is likely about filling a predictable pipeline of owner / PE conversations, not teaching valuation basics.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Outside work he is described as passionate about mentoring young professionals and joining community development initiatives (Minerva Valuations team bio for Ronald J. McKenna).</li>
+<li>He is listed as a speaker for Business Transitions Forum’s “Value Wins in Volatility: Engineering Value in Turbulent Times” session (May 12, 2026) (Business Transitions Forum speaker page “Ron McKenna - Toronto”).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Julien Simon · Call 2 · 3:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Julien Simon · 1UP Digital Marketing · Call 2 · Tue Sep 29, 2026, 3:00–3:55 PM CT (1:00–1:55 PM PT) · Armando</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: 1UP is a 13-year-old digital marketing agency near Vancouver that sells SEO, paid ads, and tracking on monthly retainers. They have about 20 clients, six full-time staff, and revenue of about $800,000 to $1.2 million a year. Julien is pushing into small law firms this quarter, and he came to us because he wants to run his own webinars for lawyers.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Julien was calm, practical, and honest, not panicked. He said &quot;Well, that&#x27;s why I&#x27;m here&quot; when asked how they get clients, and he openly admitted the differentiator is &quot;where we struggle the most.&quot; He is hopeful about webinars because our webinar is what got him on the call.</li>
+<li>Goals they want but can&#x27;t hit yet: He wants a system with proven results in about eight months, where they know roughly what returns it brings. He wants to turn it up when they need clients and turn it down when they are near capacity, and he wants to break through the glass ceiling around $1 million.</li>
+<li>Why it matters to them: They built leadership, structure, and processes for a bigger company, but the team under the leaders never grew. Julien said they are &quot;both too small and too big at the same time,&quot; so new clients are what make all that structure pay off.</li>
+<li>What&#x27;s holding them back: They lived on referrals for years and never built a system they control. Clutch and Google Ads are up and down, the new law firm ads have brought no calls yet, and his free audit offer is not landing.</li>
+<li>Consequences if nothing changes: They stay stuck near $1 million, as they have for about two years after years of doubling. The leaders keep spending time building systems for a small team that does not bring enough revenue to justify them.</li>
+<li>Fears that will show up in the decision: He wants proof of return before spending more, and he said &quot;it&#x27;s just a matter of ROI.&quot; He is still collecting data on his ads before raising budget, and his co-founder will check the numbers. He also dislikes big claims, since he said saying you do everything differently &quot;would be just a plain lie.&quot;</li>
+<li>Objections still open:</li>
+<li>Budget depends on ROI. He spends about $4,000 on marketing today and has not agreed to any new number, and no price for our service was shared on Call 1.</li>
+<li>His offer and edge are not sharp yet. Armando said he would take the differentiator question to our team.</li>
+<li>His co-founder runs operations and finance and must be comfortable with the numbers before they move forward.</li>
+<li>Armando raised the worry that AI makes SEO and ads feel less needed. Julien answered that AI gives generic &quot;slop&quot; and it takes experience to use it well.</li>
+<li>Who&#x27;s joining Call 2: Julien only. He said, &quot;Let&#x27;s do you and me first and once we have a proposal, then we can bring him into the conversation,&quot; meaning his co-founder.</li>
+<li>What we promised to walk: Armando promised all four phases of the funnel. That means the lead list and total market for Julien to verify, what the list would cost, the calendar invite with the actual copy a lawyer would see, and how the webinar is framed. He also promised the full economics, covering operations, tech, and our service fee, and then a formal proposal so Julien has everything he needs to make a choice.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Julien Simon co-founded 1UP Digital Marketing, and he runs sales, growth, and HR there. 1UP sells SEO, paid ads, and tracking on retainers of about $3,000 to $4,000 a month, with a minimum of about $2,500. The new focus is small law firms with 1 to 5 lawyers in Canada, then the US. Those firms live on referrals and word of mouth, so their flow of new clients goes up and down.</li>
+<li>Company goals / dream state (from Call 1): Julien wants a steady, controllable source of new clients that he can turn up or down to match capacity. He wants new clients right away because they have room to take them now. He wants to start with lawyers and later repeat the same play for other verticals.</li>
+<li>ICP dream state (what THEIR buyers want): A small law firm owner wants a steady flow of new clients instead of waiting on referrals. Julien said the real luxury is being able to pick the best clients from the leads that come in. Since most lawyers bill around $400 an hour, one or two new clients a month is enough to pay for 1UP.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>Julien is a marketer himself. He runs paid ads, SEO, and his own new AI outreach, and he pointed out that a webinar can be recorded and reused. Expect him to ask what we do that he could not build himself, so show the parts he has never done, like the list, the calendar invite, and the webinar framing.</li>
+<li>His edge is weak, and he knows it. He said the differentiator is where they struggle most, and Armando promised to bring that question to our team. Bring one or two clear angles we would test, such as fixing a firm&#x27;s tracking so they know which marketing brings cases, and let him react.</li>
+<li>His current offer is a free audit, and he thinks it is not working. On Call 1, Armando suggested giving lawyers something of real value instead, like a plan for getting more clients. Come ready with one offer idea for the webinar&#x27;s call to action.</li>
+<li>The numbers must survive his co-founder. At his average retainer of about $3,500 a month, one new client is worth about $42,000 a year, which is our math from his numbers. Ask how long clients usually stay, because that number drives the return model his co-founder will check.</li>
+<li>He is in &quot;data collecting mode.&quot; He is testing his law firm ads before raising budget, so he may want to wait. Frame the webinar as a second channel he can test in parallel, which is what he said he wanted.</li>
+<li>Our Call 1 research found a public interview where he said agencies that survive AI will build systems instead of selling tasks (E-Coffee with Experts interview). That lines up with the AI worry, and it gives Armando a way to frame this as building 1UP a system.</li>
+<li>On Call 1, Armando mentioned a lawyer client going after enterprise clients and accounting and fractional CFO clients who target attorneys. We could not confirm who those clients are, so confirm before naming them on Call 2.</li>
+</ul>
+<p>Deep TAM (required — TAM means the total number of people we could invite)</p>
+<ul>
+<li>ICP parameters (plain English):</li>
+<li>Location: Canada first, then the United States. Julien said they start in Canada because they are based there, and the weaker Canadian dollar makes them a discount for US firms.</li>
+<li>Vertical: Law firms in any practice area, like family law or criminal law.</li>
+<li>Company type / size: Law firms with 1 to 10 employees, and the sweet spot is 1 to 5 lawyers who want to grow. Julien said they use the closest filter on each platform, like 1 to 15 on LinkedIn Sales Navigator.</li>
+<li>Buyer titles: The owner or founding lawyer, the managing partner, or the principal of the firm. For firms with more staff, we would also add the office manager or firm administrator.</li>
+<li>Who we exclude: Big firms with 50 or 100 lawyers, and 1UP&#x27;s current clients.</li>
+<li>Ideal ICP (tight — who they said they want most): This is the owner or managing lawyer at Canadian law offices with 1 to 9 employees. Statistics Canada counts about 15,200 of these offices (Canadian Business Counts, December 2025 release). We have not counted the people yet, but one or two buyers per office would be roughly 15,000 to 30,000 people.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): This is the same buyers at law offices with 1 to 19 employees in both Canada and the United States. That is about 16,400 offices in Canada and about 155,900 in the US (US Census County Business Patterns, 2023), or about 172,000 offices in total. We have not counted the people yet, but one or two buyers per office would be roughly 170,000 to 340,000 people.</li>
+<li>How we got the number: We started with public government counts of law offices by number of employees in each country. Next, we will remove big firms and 1UP&#x27;s current clients. Then we will count the owner, managing partner, and office manager titles at each office, and then the contacts we can actually reach. These counts only include offices with paid staff, so solo lawyers with no staff are not in them yet.</li>
+<li>What we widened (if thin): They said law firms with 1 to 10 employees, starting in Canada. We added the United States now instead of later, we stretched the size to 19 employees to match the 1 to 15 filter Julien already uses, and we added office managers as a second buyer.</li>
+<li>Check vs Call 1: No list size was given on Call 1. Armando said there are plenty of attorneys across the US and Canada, and he promised to show the list so Julien can confirm it is the right people.</li>
+<li>Too small?: No, the broad list is well over 30,000 people once we count titles. The Canada-only Ideal list is thin on its own, so the campaign should invite Canada first and then move into the US quickly.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): The money math is simple for a lawyer. At about $400 an hour, one or two new clients a month pays for 1UP, so the risk is small next to the upside. They also have 13 years of experience and published law firm results on their site.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): Julien could not name what makes 1UP different from thousands of other agencies, and he said so himself. His free audit offer is not converting, and the law firm push is only a few weeks old with no calls yet. He also would not give an average return for clients, so we cannot promise a number for lawyers yet.</li>
+<li>Positioning line for the webinar if we pick today: How small law firms get a steady flow of new clients every month, so they stop depending on referrals and start choosing who they take on.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Small law firms live on referrals, so new clients come in waves, and they cannot plan or pick the clients they want.</li>
+<li>Who we invite first, then next: We invite the Ideal list first, which is owners and managing lawyers at Canadian law offices with 1 to 9 employees. Then we invite the broader honest list, which is the same buyers at law offices with up to 19 employees in Canada and the United States.</li>
+<li>Story arc (THEIR webinar to THEIR audience): This is what 1UP&#x27;s session says to small law firm owners.</li>
+<li>Hook: Referrals built your practice, but they will not grow it on a schedule.</li>
+<li>Problem: When new clients only come from word of mouth, you get busy months and quiet months, and you take whatever walks in. Julien says most businesses have their tracking set up wrong, so a firm cannot tell which marketing actually brings in cases.</li>
+<li>Proof: 1UP shows its law firm results, like helping a single lawyer with a couple of admin staff grow to more lawyers and more clients. They explain their tracking-first method, built over 13 years of testing.</li>
+<li>Offer: A monthly marketing plan that combines SEO, paid ads, and tracking to bring a steady flow of new clients.</li>
+<li>Easy next step: Book a short call with 1UP to see how many new clients a month the firm could get, using something more useful than a generic audit.</li>
+<li>Copy / talk-track beats (3–5):</li>
+<li>&quot;Referrals are great until the month they stop.&quot;</li>
+<li>&quot;One or two new clients a month pays for the whole thing.&quot;</li>
+<li>&quot;If your tracking is wrong, you&#x27;re guessing which marketing brings in cases.&quot;</li>
+<li>&quot;Pick your clients instead of taking whatever walks in the door.&quot;</li>
+<li>&quot;AI can give you ten different answers. It takes experience to know which one is right.&quot;</li>
+<li>Cadence: Run one topic for small Canadian law firms first, and study who shows up and books. Then move the same session into the US, and later copy it to another vertical like health, since Julien said a session can be recorded and reused.</li>
+</ul>
+<p>Best case studies for THIS Call 2 (required)</p>
+<ul>
+<li>Sheila Kloefkorn, KEO Marketing.</li>
+<li>Why it fits: KEO is a marketing agency that sells a monthly retainer, with about 20 clients at a time, which looks a lot like 1UP. Their webinar is one of our strongest, with about 3.1% of invited people registering and about 42% of registrants showing up, across two runs in a row.</li>
+<li>When to pull it: Use her when Julien asks whether this works for an agency selling retainers, or when he asks what results look like in practice.</li>
+<li>Link: https://quantums-institute.com/due-diligence-agencies</li>
+<li>Felix Petzel, Panda Media.</li>
+<li>Why it fits: Felix already ran a B2B lead generation agency for a living and knew every tool, yet he still found two big things he was missing. He says his first webinar drew 300 registrations, 90 attendees, and 17 qualified sales calls, and he says a full pipeline let him move from about €10,000 retainers to €25,000 to €40,000 projects because he could choose better clients.</li>
+<li>When to pull it: Use him when Julien hints that he could build this himself, or when he talks about wanting to pick his clients.</li>
+<li>Link: https://quantums-institute.com/due-diligence-agencies#section-rpq6S3zvMtH</li>
+<li>Lynn Rousseau, The Conscious Leader.</li>
+<li>Why it fits: Lynn ran her firm on referrals for years and had tried other marketing programs that left her with ideas she dropped. She says what worked here was specific steps plus a full year of support, which fits Julien&#x27;s goal of a system he can count on.</li>
+<li>When to pull it: Use her when referrals come up, or when he worries this will be one more channel that fizzles out.</li>
+<li>Link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room: Julien Simon, co-founder in charge of sales, growth, and HR. He said the final call is his, and he cares about return, predictability, and being able to control the flow of new clients.</li>
+<li>Who else matters: His co-founder runs operations and finance, and Julien said &quot;that&#x27;s where he would need to be consulted is on the numbers.&quot; Public coverage names Philip Caines as a co-founder, so confirm that is who Julien means before using the name. He will join only after there is a proposal.</li>
+<li>Landmines from Call 1:</li>
+<li>Big claims: Julien pushed back when Armando pressed him for an average return, and he called &quot;doing everything different&quot; claims a lie. Keep our numbers real and show ranges, not promises.</li>
+<li>Price: No price was shared on Call 1, and his marketing spend is about $4,000. Confirm that number is monthly, and tie our full cost to the value of one or two new clients.</li>
+<li>Waiting on ads data: He is still testing his law firm ads before raising budget. Position the webinar as a parallel test so he does not wait months.</li>
+<li>Differentiator homework: Armando said he would take the edge question to our team. Bring an answer, or Julien will notice it was dropped.</li>
+<li>Unconfirmed clients: Do not name the lawyer or fractional CFO clients Armando mentioned until we confirm who they are.</li>
+<li>Partner name: His tourism webinar partner showed up as &quot;Resco&quot; on the recording, but our Call 1 research lists a Rezgo collaboration. Say &quot;your tourism webinars&quot; unless you confirm the name.</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
