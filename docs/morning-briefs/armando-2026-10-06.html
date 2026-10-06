@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Tue Oct 6, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Tue Oct 6, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>10:30 AM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/FjqcnWlSMWbfhBal3gaK">Nikki Hackney</a> · Call 3+ · BTDT Global</strong>
+      </div>
+      <div class="slot">
+        <strong>11:30 AM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/ZEjIgnpzD2M9Y3WjeuQ1">Phil LeFevre</a> · Call 1 · Denniston Data Inc.</strong>
+      </div>
+      <div class="slot">
+        <strong>3:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/uLr6eDMInL0mtPdnfiIC">Roger</a> · Call 2 · Open Range Devs</strong>
+      </div>
+      <div class="slot">
+        <strong>4:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/gbFFrFRRFbPPAvYStW3b">Philippe Bouissou</a> · Call 2 · Blue Dots Partners</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Nikki Hackney · Call 3+ · 10:30 AM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Nikki Hackney · BTDT Global · Call 3+ · Tue Oct 6, 2026 · 10:30 AM CT · Armando Valencia</b></p>
+<p>GHL: https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/FjqcnWlSMWbfhBal3gaK</p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft yes on the system after Call 2 (~47 min custom demo with Nikki Hackney and Giles Jepson). They liked the US-first calendar-invite into a live webinar into BTDT’s Solve / problem-definition workshop (about $25,000 entry), with the fuller project (about $80,000) as the natural next ask once the problem is open. Nikki said the list compass was pointing at the right people on the sample (about 63,000 US contacts, wider multi-market pull around 200,000). She called quality databases “the most interesting thing I’ve heard” in their journey. Giles called it an integrated system that minimizes friction across the funnel.</li>
+</ul>
+<ul>
+<li>What paused the close: Not sticker shock on the fee. They will not commit same-day because materials go to their CEO during next-year budget build, with Monday September 28 SLT on their diary, and they asked for about two weeks before reconnecting. No signed engagement, no deposit, and no start date locked on Call 2.</li>
+</ul>
+<ul>
+<li>Who else matters: CEO is the named budget gate and was not on Call 1 or Call 2. Giles Jepson (pronounce Jiles) stays co-champion with Nikki. Same two stakeholders expected on Call 3 unless they bring the CEO.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table (Call 2 tape only): $22,000 for six months under one team (list help, assets, coaching). Third-party software licenses separate — about $500 per month (Armando also said around $475), so about $3,000 across six months. Optional VA ops help about $3–500 per month or about $10–14 per hour if they do not train someone internal. All-in framing on tape landed near about $25,000 for six months with software, possibly around $28,000 with a longer software period. Reaction was calm: Nikki repeated “$22,000,” asked whether software sits inside or on top, then said they would take it away. No discount ask. No money-back or ROI guarantee was quoted on this tape — do not invent one.</li>
+</ul>
+<ul>
+<li>Whose court: Shared after Call 2. Armando owed the visual deck, service agreement / terms, and scope for CEO and SLT review, plus a calendar invite locking Tuesday October 6 at 10:30 AM Chicago. Nikki and Giles owed the CEO walk-through during budget build and a decision lean after about two weeks. There are no newer GHL notes after Call 2 that say whether the materials landed, what Monday September 28 SLT decided, or what the CEO said — open Call 3 by asking, do not assume.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Warm, commercially open, bought-in-but-blocked. Call 2 deal temp sat roughly 7–8 out of 10 on mechanism (no explicit 1–10 score on tape — that read is from “most interesting thing I’ve heard,” Giles’s integrated-system line, and calm fee reception). Process and proof are the brake, not disbelief in the webinar idea. Both stayed warmly skeptical rather than cold; Nikki called them a tough / cynical European audience and asked for the price without drama.</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency = investors want growth beyond referral luck; they want 10–15 projects a month across a wider client base with pipeline three to four months ahead; they are inside next-year budget build now; Nikki was flying to the States on October 5 ahead of this reconnect. Killers = CEO has to clear budget; confidence is hard to score before they have run it; residual worry that cold calendar invites turn into spam; sales follow-up ownership still fuzzy if volume rises.</li>
+</ul>
+<ul>
+<li>Fears still alive: CEO says no or parks it outside this budget cycle; calendar saturation / intimacy of the diary; looking like another growth hire or Brand Innovators-style miss; owning a system they cannot staff; starting UK-first when both Nikki and Armando preferred US launch.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>CEO budget greenlight — primary — named gate on Call 2; Call 3 exists to hear that answer and move or date the next step.</li>
+<li>Materials / proposal clarity into the CEO pack — primary — deck, agreement, and scope were promised; GHL notes after Call 2 do not confirm send or CEO reaction, so verify in the first minutes.</li>
+<li>Start timing inside next-year budget — primary — they are building next-year budget now; same-day start was never the ask.</li>
+<li>Calendar saturation residual — secondary — half-handled with Armando’s roughly 24–36 month runway answer; may resurface with CEO diligence.</li>
+<li>Sales ownership if booked-call volume rises — secondary — still somewhat “whoever is free” from Call 1; name who works Solve workshop sales calls before you push close pressure.</li>
+<li>Confidence before first live webinar — secondary — both said confidence is hard to score before they have run it.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “We need to take this to our CEO / SLT for next-year budget — we will not commit same-day.”</li>
+</ul>
+<ul>
+<li>Status: still open — this is why Tuesday October 6 exists after their internal review window.</li>
+</ul>
+<ul>
+<li>Overcome with: Open in the first three minutes by asking what the CEO said, what Monday September 28 SLT liked, and what still feels thin. Do not re-demo the whole machine unless they ask. If CEO is green, restate the exact Call 2 package and move to dated kickoff plus e-sign / pay. If CEO is yellow, book a short dated Call 4 with the CEO or the named budget owner on calendar inside seven days — never an open “keep talking to the CEO.” If CEO is red, get the real blocker in plain words and either clear it or accept a clean not-moving.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors. Gene is a founding partner at a boutique investment bank / M&amp;A advisory. He is the marketing-literate partner who vetted vendors for the group. He had been burned by agencies — in his story, four agencies over five years at roughly $36,000–$48,000 a year, five qualified prospects and one client total — then matched five years of output in about six months once he owned a machine instead of renting campaigns. Across twelve webinars his campaign total is about 61 booked sales calls. Use for “executive / partner diligence and agency scar tissue — own the system, do not rent another fragile dependency.” Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand after Nikki or Giles reports the CEO’s feedback; land as look-up-able partner proof, not a soft pitch.</li>
+</ul>
+<ul>
+<li>Exact land line: “That is exactly why we waited for your CEO. Gene Rosendale at Advocate Advisors only moved after his partners pressure-tested own-the-machine versus another agency retainer — same job here: what did your CEO still need to see so we can either start or put him on a dated call?”</li>
+</ul>
+<ul>
+<li>Objection: “Cold calendar invites will annoy CMOs — how long before this feels like spam?”</li>
+</ul>
+<ul>
+<li>Status: half-handled — Nikki’s number-one Call 2 worry; Armando’s roughly 24–36 month runway answer was accepted as directionally fine, not deleted.</li>
+</ul>
+<ul>
+<li>Overcome with: Restate one calendar invite per contact, then email and replay nurture, and roughly three to four months before another calendar invite. Remind her she liked that the invite names the CMO / CIO agenda and feels chosen, not LinkedIn spray. Attendance is the KPI, not yes-then-cancel vanity. Do not invent a saturation guarantee.</li>
+</ul>
+<ul>
+<li>Full story to tell: Sheila Kloefkorn at KEO Marketing Inc. Sheila’s firm sells high-ticket consulting retainers to senior buyers off a cold calendar-invite motion. Across two consecutive runs the funnel held about 3.1–3.2% invite-to-registration and about 42–43% registration-to-attendance — repeatability, not a lucky month. Use for “will busy executives actually open a calendar invite and show up?” Prospect link: https://quantums-institute.com/due-diligence-agencies</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand when diary-intimacy fear returns.</li>
+</ul>
+<ul>
+<li>Exact land line: “You already felt the difference between spray LinkedIn and a specific invite. Sheila Kloefkorn at KEO Marketing runs the same cold-calendar motion into senior buyers and held strong show math across two runs in a row — the fix is specificity and cadence, not never inviting.”</li>
+</ul>
+<ul>
+<li>Objection: “Our buyers are CMOs and innovation leaders at Unilever-class companies — too senior and too selective for webinars.”</li>
+</ul>
+<ul>
+<li>Status: soft / likely — Ideal buyer was framed that way on Call 1 and Call 2; list compass landed, but CEO diligence may reopen senior-buyer skepticism.</li>
+</ul>
+<ul>
+<li>Overcome with: Stay on Solve as the linear entry offer. Quality over junk volume. US-first CPG multi-brand lane they already endorsed. Soft contrast: a handful of real Solve workshop conversations beats another Brand Innovators-style broad push.</li>
+</ul>
+<ul>
+<li>Full story to tell: Tejas Parikh at Akshar Consulting (also appears as Akshar Business Group). Tejas sells high-ticket finance consulting to CFOs and finance directors and raised the same objection himself — he would rather have a handful of real conversations than a pile of junk leads. In his own interview, his first webinar did about 250 registrations, 80+ attendees, and 15 qualified sales calls, and he talks about roughly five quality calls a month turning into about four clients at around £100,000 lifetime value each. Use for “senior buyer, high-ticket consulting — webinars still work when the list and offer stay tight.” Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand when senior-buyer skepticism returns; say the first-webinar figures as his interview numbers, not as QS-measured workshop-database stats.</li>
+</ul>
+<ul>
+<li>Exact land line: “Tejas Parikh at Akshar Consulting sells to CFOs the way you sell to CMOs — he wanted five real conversations, not five hundred junk leads, and his first webinar still produced fifteen qualified sales calls. Same standard for your Solve entry.”</li>
+</ul>
+<ul>
+<li>Objection: “We already get clients from referrals and returning relationships — why buy a system?”</li>
+</ul>
+<ul>
+<li>Status: still live as context — Call 1 demand is almost entirely relationships, referrals, and returning clients; volume is the gap, not quality.</li>
+</ul>
+<ul>
+<li>Overcome with: Agree the referral quality is strong. Name the cost of quiet months and over-reliance on a few accounts. Investors want a wider client base and a visible multi-month pipeline. The system is a controllable top of funnel next to referrals, not a replacement for them.</li>
+</ul>
+<ul>
+<li>Full story to tell: Lynn Rousseau at The Conscious Leader. Lynn has run an executive and team coaching firm for about twenty-three years and lived the referral trap — some months are full, some months the calendar goes quiet, and prior marketing programmes gave her ideas she abandoned when they did not stick. What moved her was specificity plus continuity: concrete actions and ongoing refinement, not another pile of tips. Use for “business is good on referrals, but demand comes and goes and you cannot control it.” Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand when they defend the current referral engine as “good enough.”</li>
+</ul>
+<ul>
+<li>Exact land line: “Lynn Rousseau at The Conscious Leader had the same referral engine you do — great until a quiet month — and what she needed was a controllable way to fill the diary without abandoning the relationships that already work. That is the job here for Solve into US CPG.”</li>
+</ul>
+<ul>
+<li>Objection: “We have already tried webinars, partnerships, and growth hires — why is this different?”</li>
+</ul>
+<ul>
+<li>Status: secondary scar tissue from Call 1 (client-panel webinars, Brand Innovators under-delivery, growth / BD hires that did not stick). Cleared somewhat on Call 2 when Giles saw the integrated system, but CEO diligence may reopen “another vendor.”</li>
+</ul>
+<ul>
+<li>Overcome with: Own-the-machine frame. Six-month build, handoff, assets stay in their ecosystem. Past webinars were often panels to an existing audience with no clean attribution — this is Ideal-list calendar invite into a linear Solve offer, not “try webinars harder with people who already know you.”</li>
+</ul>
+<ul>
+<li>Full story to tell: Felix Petzel at Panda Media. Felix ran a social-selling agency for a living, already knew lead gen tools and workflows, and still found pieces he had not seen. In his own interview, his first webinar did about 300 registrations, 90 attendees, and 17 qualified sales calls. He also talks about cutting a manual outbound team down to one VA and taking margin from about 30% to about 90% once the pipeline was owned. Use for “we already know marketing / we already tried growth motions — what could you teach us?” Prospect link: https://quantums-institute.com/due-diligence-agencies#section-rpq6S3zvMtH</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand when Brand Innovators / growth-hire scar tissue returns; say first-webinar figures as his interview numbers.</li>
+</ul>
+<ul>
+<li>Exact land line: “Felix Petzel at Panda Media already ran lead gen for a living and still installed an owned webinar engine — that is the difference from another partnership or growth hire that walks out the door. You keep the machine after six months.”</li>
+</ul>
+<ul>
+<li>Objection: “$22,000 plus software — is the all-in number clear, and will one client cover it?”</li>
+</ul>
+<ul>
+<li>Status: half-handled with Nikki and Giles (calm accept on Call 2); still open until CEO sees paper and greenlights.</li>
+</ul>
+<ul>
+<li>Overcome with: Restate exactly as Call 2 — $22,000 / six months, software about $500 / month extra, optional VA about $3–500 / month or $10–14 / hour, assets stay with them. One Solve workshop at about $25,000 can cover the engagement math they walked. No new discounts. No invented money-back or ROI guarantee.</li>
+</ul>
+<ul>
+<li>Full story to tell: Same Gene Rosendale pack above for rent-versus-own economics a CEO can defend — full tellable version already written. Secondary: Tejas Parikh pack above if they want high-ticket consulting unit economics next to the Solve entry.</li>
+</ul>
+<ul>
+<li>Exact land line: “Your CEO gets the same package you heard: twenty-two thousand for six months, software about five hundred a month on top, optional VA if you do not staff it internal — and one twenty-five-thousand-dollar Solve client is the coverage math we walked, not a fairy-tale ROI promise.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Gene Rosendale · Advocate Advisors — lead for CEO / partner diligence and agency-burn scar tissue; own-the-machine; about 61 booked sales calls across 12 webinars. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+<li>Tejas Parikh · Akshar Consulting — senior high-ticket buyers (CFO parallel to your CMO lane); first-webinar interview figures about 250 / 80+ / 15. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+<li>Felix Petzel · Panda Media — expert / agency self-knowledge and “we already tried growth motions”; first-webinar interview figures about 300 / 90 / 17; margin story about 30% to 90%. Prospect link: https://quantums-institute.com/due-diligence-agencies#section-rpq6S3zvMtH</li>
+<li>Lynn Rousseau · The Conscious Leader — referral-dependent growth that still needs a controllable top of funnel. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0</li>
+<li>Sheila Kloefkorn · KEO Marketing Inc — cold calendar invites into senior buyers with repeatable show math across two runs. Prospect link: https://quantums-institute.com/due-diligence-agencies</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open in the first three minutes: thank Nikki and Giles; confirm this is a check-in after CEO / SLT, not a second full custom demo. Ask what the CEO said, what Monday September 28 SLT liked, what still feels thin, and whether the deck and agreement landed cleanly.</li>
+<li>Confirm the soft yes still stands on the machine (US-first list, calendar invite, live webinar, Solve workshop about $25k, project upsell about $80k, own-after-six-months) versus any new blocker the CEO raised.</li>
+<li>If CEO is green: restate commercial package exactly as Call 2 — $22k / six months, software about $500 / mo, optional VA band as framed on tape. No new discounts. No invented guarantee.</li>
+<li>Lock a dated kickoff with CEO aligned (named build week, first live webinar target around day 30–40, who owns list versus who facilitates the live webinar, who works booked Solve sales calls).</li>
+<li>Ask for a clear decision on this call: proceed (e-sign / pay / SOW path), dated hold with the CEO on a Call 4 calendar hold inside seven days, or clear not-moving — never “CEO is still thinking” with no date and no name on calendar.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If the CEO is green and Nikki / Giles are ready, then skip re-demo; walk $22k / six months plus software and optional VA exactly as Call 2; ask for e-sign / pay path this week with a named kickoff week.</li>
+<li>If they liked it but the CEO needs one more pass, then book a dated Call 4 with the CEO (or named budget owner) inside seven days; send Gene / Tejas / Felix / Lynn diligence links same day; do not leave an open loop.</li>
+<li>If the CEO joined and presses agency / vendor risk, then lead Gene own-the-machine, then Felix expert-buys-it, then Tejas senior-buyer proof.</li>
+<li>If calendar-spam fear returns, then Sheila senior-buyer show math plus restate one-invite-per-contact and three-to-four-month recycle.</li>
+<li>If “CMOs will not show” returns, then Tejas CFO / finance-director parallel and remind Nikki she already felt the calendar invite as personal.</li>
+<li>If price is the brake, then restate $22k / six months plus software about $500 / mo and optional VA; one Solve at about $25k as coverage math — no discount invention.</li>
+<li>If referral complacency returns, then Lynn referral-trap story and investor / multi-month pipeline goal from Call 1.</li>
+<li>If they ask to re-walk the whole demo, then five minutes max on list then invite then live webinar then Solve CTA, then back to commercial yes / no — protect the close call.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: verbal yes to the $22,000 six-month engagement (software about $500 / month extra; optional VA as framed on Call 2) + CEO aligned + dated kickoff week with first webinar target around day 30–40 + e-sign / pay step same week. Next acceptable: written yes pending CEO on a Call 4 calendar hold dated inside seven days with Gene / Tejas / Felix / Lynn links already in their hands. Not acceptable: “still talking to the CEO” with no names, no date, and no package clarity.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Phil LeFevre · Call 1 · 11:30 AM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Phil LeFevre · Denniston Data Inc. · Call 1 · Tue Oct 6, 2026 · 11:30 AM CT · Armando Valencia</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Phil LeFevre is Vice President of Business Development at Denniston Data Inc. (DDI) (email phil.lefevre@dennistondata.com · phone +1 619 200 8502).</li>
+<li>Based around Austin / US Central (GHL timezone US/Central). LinkedIn: linkedin.com/in/phil-lefevre-5b3406126.</li>
+<li>Joined DDI in January 2024 after roughly seven years as Managing Director for ODG and National Vice President at MCG Health (Hearst Health), reuniting with ODG founders Phil Denniston (CEO) and Patricia Whelan (CFO/COO).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Denniston Data (dennistondata.com) sells healthcare analytics focused on physician quality and price transparency.</li>
+<li>Flagship products: Provider Ranking System (PRS) and Healthcare Pricing Guide (HPG), built from claims data and Transparency in Coverage (TiC) files.</li>
+<li>Buyers use the tools to see experience level and market pricing by procedure at national, state, or local level.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Payers, hospital systems, networks, TPAs, and plan sponsors who need objective doctor quality and price data.</li>
+<li>Provider and member applications that want transparent ranking and pricing views.</li>
+<li>Teams drowning in TiC payer files who need usable tools at scale.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Payers and networks struggle to identify high-quality physicians at fair prices when data is fragmented.</li>
+<li>TiC legislation dumped huge, complex payer files that most teams cannot turn into usable tools alone.</li>
+<li>DDI sells ranking and pricing guides so buyers can act on quality and price without guessing.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>Booked QuantumScaling Business Evaluation Call with Armando for Tue Oct 6 at 11:30 AM CT — first sales call on this arc (GHL tags: webinar-registered, vera-chat-booked, appointwise-webinar-lead, sales call booked; no prior QS call notes).</li>
+<li>Healthcare data / transparency niche — growth talk is likely about filling a predictable pipeline of payer / network / TPA buyers for PRS and HPG.</li>
+<li>Confirm whether CEO Phil Denniston or others join.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Roger · Call 2 · 3:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Roger · Open Range Devs · Call 2 · Tue Oct 6, 2026 · 3:00 PM CT (2:00 PM MT) · Armando Valencia</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Roger runs Open Range Devs, a custom-software shop in Alberta on track for about $1M this year. Almost all revenue still comes through one marketing-and-sales partner, and he booked Call 2 to see a productized webinar lane for mid-market manufacturers, engineering firms, and oil-services companies.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Direct, engaged, and urgent. He booked Call 1 right after the webinar the same morning and pushed through a heavy cough to finish the conversation.</li>
+<li>Goals they want but can&#x27;t hit yet: Own lead generation off the partner channel, about five more direct clients at roughly $300k each, and a $3M floor where an executive team replaces him in day-to-day work.</li>
+<li>Why it matters to them: He wants the Hormozi path — work on the business, then buy higher-leverage asset businesses toward a five-year plan (aggressive $50M, more realistic about $20M). Partner dependence also blocks bank conversations.</li>
+<li>What&#x27;s holding them back: No owned sales channel (about 2% to 3% self-booked). Custom software is hard to sell one-to-many until the offer is productized for a specific buyer problem.</li>
+<li>Consequences if nothing changes: If the partner channel slows, he said he would practically have no business. Growth stays locked to someone else&#x27;s funnel.</li>
+<li>Fears that will show up in the decision: Buyers fear cost and choosing the wrong provider. He may pressure-test whether managers and directors will show for a webinar, and whether QS can honestly productize custom software.</li>
+<li>Objections still open: Webinar offer still needs a locked productized lane (manufacturers / engineering / oil services education angle). No QS price objection yet — economics reserved for Call 2.</li>
+<li>Who&#x27;s joining Call 2: Roger alone on Call 1. No co-decider named. Treat him as champion and signer unless he brings someone.</li>
+<li>What we promised to walk: Lead list volume and quality, calendar-invite creative, webinar framework, and six-month economics / tech stack / ROI forecast before he pays a dollar. Case studies ahead of the call.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Open Range builds custom software that turns people-run processes into software-governed workflows. Ideal buyers are mid-market ops managers and directors with budget (not founders) at manufacturers, engineering firms, and oil-services companies roughly $10M to $100M. Core buyer pain is stuck between cheap off-the-shelf tools and heavy enterprise systems, with fear and cost anxiety around custom builds.</li>
+<li>Company goals / dream state (from Call 1): Triple toward a $3M floor (up to about $3M to $6M as a “nice agency”), build an executive team so Roger is fully replaced day to day, then buy more leveraged businesses after the operating system works.</li>
+<li>ICP dream state (what THEIR buyers want): Line of sight on what will ship, an early MVP in weeks not years, lower cost than old million-dollar builds, and software that runs the business without founders stuck in every check.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>Partner dependency is extreme: about 95%+ of revenue through one channel, and Roger is open about needing his own flywheel without blindsiding friends who are the partner.</li>
+<li>Anti-founder buying path is a hard preference. He wants managers and directors with a weekly project owner, not entrepreneur-run shops that rewrite scope at the end.</li>
+<li>Armando usually disqualifies custom-dev shops for webinar fit. Roger cleared the presenter bar on Call 1, so Call 2 must prove the productized problem lane, not re-argue personality.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): Global reach with a US buyer preference; verticals are industrial manufacturers, engineering firms, and oil-services companies with high-cost field crews; company size roughly $10M–$100M; buyer titles are managers and directors who control budget; exclude founders as primary buyers, tiny low-budget trades, and pure SAP-scale enterprise.</li>
+<li>Ideal ICP (tight — who they said they want most): Ops managers and directors at US mid-market manufacturers, engineering firms, and oil-services companies about $10M–$100M who need custom process software and can spend without a founder running the project — we have not counted the people yet.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Same buyer titles across manufacturers, engineering, and oil-and-field industrial services in the US and other English-speaking markets Roger can serve, with a slightly wider size band still under true mid-market (not mega-enterprise) — we have not counted the people yet.</li>
+<li>How we got the number: We start from the industries and size band Roger named on Call 1. On the demo we will show companies first, then the manager and director titles, then the contacts we can actually reach. Public establishment counts will back the company pool — we will not invent a people count today.</li>
+<li>What we widened (if thin): They said manufacturers, engineering, and oil services, mid-market, managers and directors, global delivery with a US preference — we add for campaign honesty only adjacent industrial field-services firms in the same size band, and English-speaking markets outside the US where Roger already said he can deliver.</li>
+<li>Check vs Call 1: Matches anti-founder path, $10M–$100M mid-market, productize-for-webinar need, partner-dependency urgency, about $300k direct client math, and five-more-clients path to $3M.</li>
+<li>Too small?: Ideal-only with no list pull yet is unknown — after honest expansion across US mid-market manufacturing, engineering, and oil-services buyers (plus global English-speaking where real), this should clear the roughly 30,000-person qualify-out bar; verify with a real list pull on the demo before quoting a hard campaign number.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): Clear proof stories (decal manufacturer work-order AI, field training LMS, real-estate ops brain-download). Strong delivery and retention (no client lost in four years; clients expand). Education angle buyers already feel: custom software feels scary and expensive until someone shows how to choose and succeed with an early MVP.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): Custom software is still broad until Call 2 locks one problem lane; partner still feeds most revenue so timing of going direct must stay respectful; our price and six-month economics were not discussed yet; team size on tape was six or seven — confirm before repeating.</li>
+<li>Positioning line for the webinar if we pick today: How mid-market manufacturers, engineering firms, and oil-services leaders stop gambling on custom software — and ship an MVP that runs the business without a million-dollar, year-long build.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): Mid-market industrial and engineering operators are stuck between cheap off-the-shelf tools and heavy enterprise systems, so they fear cost and bad choices when they need custom software that actually runs the work.</li>
+<li>Who we invite first, then next: Ideal first — U.S. mid-market manufacturers, engineering firms, and oil-services managers and directors — then the broader honest list across adjacent industrial services and other English-speaking markets Roger can serve. That invite order is our acquisition motion, not the webinar story.</li>
+<li>Story arc (THEIR webinar to THEIR audience — NOT our company&#x27;s value prop):</li>
+<li>Shape: hook then problem then proof (their method / results / proof) then offer (their product) then easy CTA (book with them).</li>
+<li>Hook on “custom software feels like a million-dollar bet you cannot see.”</li>
+<li>Problem: Basecamp-to-SAP no-man’s-land, late billing, and manual checks.</li>
+<li>Proof: Open Range MVP speed (roughly 60 to 105 days on the decal example) and AI-assisted process software.</li>
+<li>Offer then CTA: a scoped project conversation with Open Range, booked with Roger’s team.</li>
+<li>Copy / talk-track beats (3–5): 1. “Most mid-market operators do not need another off-the-shelf tool. They need software that follows their rules — without a two-year enterprise project.” 2. “The real fear is not code. It is writing a big check and still not knowing what will ship.” 3. “What changed when a manufacturing workflow went from paper chaos to AI work orders — and the team doubled capacity without doubling headcount.” 4. Soft CTA: book a scoped conversation with Open Range — not a free chat that looks like every other vendor pitch.</li>
+<li>Cadence: One Ideal topic aimed at manufacturers and engineering / oil-services ops leaders first to prove show then meeting math; test; then segment industry variants once conversion is real. Do not mash LMS, manufacturing ops, and real-estate brain-download into three equal stories — stay linear on how to choose and succeed with custom process software.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Cedric Le Rouzo — Cinnamon Consulting — why it fits: B2B software / consulting practitioner who used webinars to change cost-per-conversation and hours economics; closest parallel when Roger pressure-tests whether a technical seller can fill a room and still protect delivery time.</li>
+<li>When to pull Cedric: webinar economics dig, “will this create conversations without burning my team,” or diligence on outcomes for software-side consultants. Prospect link = https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+<li>Philipp — Oxoia — why it fits: software / tech offer sold through education to selective buyers; useful when Roger worries that managers and directors will not show for a webinar about custom software. When to pull it: senior-buyer skepticism, Ideal invite quality worries, or “technical buyers only respond to inbound.” Prospect link = https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</li>
+<li>Luke — why it fits: software-lane case for productized webinar motion when the underlying delivery is technical; reinforces that the story must be one buyer problem, not “we build whatever you need.” When to pull it: productization debate, fear that custom shops cannot run one-to-many, or “we solve different problems for every client.” Prospect link = https://quantums-institute.com/due-diligence-software#section-vsjNPfqiE6O</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who is in the room / who signs / what each cares about: Roger alone unless he brings someone — champion and signer. He cares about Ideal list quality, a productized webinar story, six-month economics vs a ~$10k/month marketing budget he floated, and not blowing up the partner friendship. No co-decider named on Call 1.</li>
+<li>Landmines from Call 1: Do not invent a TAM people count — show companies, then titles, then contacts on screen.</li>
+<li>Do not mix our list or invite mechanics into HIS webinar story arc — story stays buyer fear of custom software cost and choice.</li>
+<li>Do not pitch founders as the Ideal buyer after he rejected them. Do not trash the partner — frame owned pipeline as diversification.</li>
+<li>Do not lead with our price before the four-level walk. Confirm case studies landed or walk those links live. Keep Tue Oct 6 · 2:00 PM MT / 3:00 PM CT warm.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Philippe Bouissou · Call 2 · 4:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Philippe Bouissou · Blue Dots Partners · Call 2 · Tue Oct 6, 2026 · 4:00 PM CT (2:00 PM PT) · Armando Valencia</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Philippe runs Blue Dots Partners, a Palo Alto market-alignment consultancy that sells only to CEOs of roughly $10M–$500M companies. Growth today is referrals, his book Aligning the Dots, and a TED Talk with over one million views — by design he has not built a real marketing system. He booked Call 2 as a proposal walkthrough after Call 1, not a second discovery.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Direct, calm, and deliberately non-emotional in his own words. He apologized for sounding impatient and said time is the only precious thing. He pushed back hard on same-call credit-card language, then warmed once Call 2 was framed as a proposal walkthrough. He closed with “gracias… I will talk to you soon.”</li>
+<li>Goals they want but can&#x27;t hit yet: A systematic top-of-funnel engine that puts qualified CEOs in front of him on a roughly every-two-weeks webinar cadence, without flooding him with unqualified calls. He is curious whether that engine can work and what ROI looks like — not desperate for leads tomorrow.</li>
+<li>Why it matters to them: Without a repeatable acquisition system, growth stays tied to Philippe’s personal brand. He named a strategic fork on tape: grow Blue Dots, or sell it with a proven engine so an acquirer does not price the business as “Philippe must stay five more years.”</li>
+<li>What&#x27;s holding them back: Top of funnel only. Closing already works in about three or four CEO meetings over roughly four weeks. Capacity is intentionally capped at five concurrent projects, so volume without quality would waste his time.</li>
+<li>Consequences if nothing changes: Acquisition stays referral-and-personal-brand dependent. An acquirer would worry the growth engine dies if he leaves, which changes acquisition pricing. He stays the bottleneck even if delivery is fine.</li>
+<li>Fears that will show up in the decision: Will calendar invites still work in six to nine months if others copy them? Will partners support a six-month commitment without a two-month pilot?</li>
+<li>More fears: Will expected webinar attendance and post-webinar one-to-one volume justify the fee? Hard-close framing will shut him down.</li>
+<li>Objections still open: No same-call purchase — needs written proposal and partner input. Prefers a two-month pilot (QS said full engagement only); he said he can do six months if metrics and deal structure are clear.</li>
+<li>Still open: sustainability / copycat risk on calendar invites; expected attendees and one-to-one volume; exact software and ops fees beyond the roughly $18k–$25k six-month ballpark deferred to materials and Call 2.</li>
+<li>Who&#x27;s joining Call 2: Philippe alone on Call 1. Partners are named decision participants and were not on that call. Confirm live whether any partner joins; treat Philippe as champion unless someone else appears.</li>
+<li>What we promised to walk: Written proposal with scope, timeline, budget, and due-diligence materials sent before the call so he arrives with questions. On Call 2: expected webinar attendance and post-webinar one-to-one volume for the $10M–$500M CEO band, plus economics including software and ops fees beyond the ballpark, and a clear six-month path (not a two-month pilot structure).</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Blue Dots finds misalignments between a business and its target market, then delivers a growth playbook for the management team. Buyers are CEOs only at roughly $10M–$500M companies who care about growth and will accept help — not consultant-allergic leaders and not companies already firing on all cylinders. Core buyer pain is working hard and still missing growth because product, market, sales, and internal teams are out of alignment.</li>
+<li>Company goals / dream state (from Call 1): Prove a repeatable lead engine so Blue Dots can grow or be sold without Philippe remaining the acquisition bottleneck. Capacity stays capped at five concurrent projects. He is not trying to grow Blue Dots to $100M.</li>
+<li>ICP dream state (what THEIR buyers want): Better alignment between the business and its market, faster growth, and more shareholder value — with a clear playbook the management team can execute, not another generic sales pitch.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>This is framed as a decision / proposal walkthrough after materials review, not discovery. Partners must weigh in; he will not swipe a card on the call.</li>
+<li>Live tension: he floated a two-month pilot; QS needs a full engagement. He said six months is possible if metrics and deal structure are clear on the proposal.</li>
+<li>Sustainability is a live diligence item: he worries calendar invites are already more common and may get copied in six to nine months.</li>
+<li>Help-first language matters. He rejects hard “sell” and same-call credit-card framing. Calendar-in-the-CEO-diary was the motion that intrigued him more than email or LinkedIn noise.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): Mainly U.S., plus Europe, Canada, and a bit of South America in current customers. Vertical is industry-agnostic. Company type is roughly $10M–$500M revenue. Buyer title is CEO only.</li>
+<li>Who we exclude: arrogant or consultant-allergic CEOs, and CEOs who believe they are already firing on all cylinders.</li>
+<li>Ideal ICP (tight — who they said they want most): CEOs of roughly $10M–$500M companies who care about growth and are willing to be helped — we have not counted the people yet.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Same CEO-only band across U.S. first, then Europe, Canada, and other markets Blue Dots already serves, still inside roughly $10M–$500M and still filtered for growth-minded CEOs open to help — we have not counted the people yet.</li>
+<li>How we got the number: We start from the revenue band and CEO-only rule Philippe named on Call 1. On the demo we will show companies first, then CEO titles, then the contacts we can actually reach. We will not invent a people count today.</li>
+<li>What we widened (if thin): They said U.S.-mainly, industry-agnostic, $10M–$500M, CEO only, growth-minded and help-willing. We add for campaign honesty only the Europe / Canada / South America customer geos he already named, still inside the same revenue and CEO filters. Always say which lever is theirs versus ours.</li>
+<li>Check vs Call 1: Matches CEO-only path, $10M–$500M industry-agnostic band, referral-and-thought-leadership acquisition today, five-project capacity cap, roughly every-two-weeks webinar preference, roughly $100k first-year client value example, and the grow-or-sell-with-engine fork.</li>
+<li>Too small?: Ideal-only with no list pull yet is unknown. After honest expansion across U.S. mid-market CEOs in that revenue band plus geos he already serves, this should clear the roughly 30,000-person qualify-out bar. Verify with a real list pull on the demo before quoting a hard campaign number.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): Clear outcome story — find misalignments, then deliver a growth playbook. Strong authority assets (Aligning the Dots plus a TED Talk with over one million views). Closing already works once he is in front of the right CEO. Help-first positioning fits a CEO education webinar better than a hard pitch.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): No owned marketing system yet, so Call 2 must prove list quality and expected meeting volume, not personality. Two-month pilot preference vs six-month engagement is still open. Sustainability of calendar invites is a live concern.</li>
+<li>Also fuzzy: exact software and ops fees beyond the roughly $18k–$25k six-month ballpark were not locked. Partners were not on Call 1.</li>
+<li>Positioning line for the webinar if we pick today: How CEOs of $10M–$500M companies stop guessing at growth — and find the market misalignments that are quietly capping revenue before they hire another salesperson.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): Mid-market CEOs work hard and still miss growth because the business and its target market are out of alignment, so effort and headcount do not turn into shareholder value.</li>
+<li>Who we invite first, then next: Ideal first — U.S. CEOs of roughly $10M–$500M companies who care about growth and will accept help — then the broader honest list across Europe, Canada, and other markets Blue Dots already serves, still CEO-only and still filtered for growth-minded buyers. That invite order is our acquisition motion, not the webinar story.</li>
+<li>Story arc (THEIR webinar to THEIR audience — NOT our company&#x27;s value prop):</li>
+<li>Shape: hook then problem then proof (their method / results / proof) then offer (their product) then easy CTA (book with them).</li>
+<li>Hook on “you are working hard and still not growing — the gap is alignment, not another sales hire.”</li>
+<li>Problem: product, market, sales, and internal teams pulling in different directions while Bain / BCG / McKinsey-style help feels oversized or misaimed for the real misalignment.</li>
+<li>Proof: Blue Dots’ A4 Precision Alignment method, Aligning the Dots, TED Talk authority, and playbooks management teams can execute.</li>
+<li>Offer then CTA: a scoped alignment conversation with Blue Dots, booked with Philippe’s team.</li>
+<li>Copy / talk-track beats (3–5): 1. “Most $10M–$500M companies do not have a hustle problem. They have a misalignment problem between the business and the market it thinks it serves.” 2. “Hiring more sellers will not fix a growth engine that is pointed at the wrong customer or the wrong offer.” 3. “What changes when a CEO gets a clear map of the misalignments and a playbook the management team can actually run.” 4. Soft CTA: book a scoped conversation with Blue Dots — framed as help first, not a hard pitch that feels like every other consultant outreach.</li>
+<li>Cadence: One Ideal topic aimed at growth-minded CEOs in the $10M–$500M band, roughly every two weeks first to prove show then meeting math; test; then segment geos or sub-themes once conversion is real. Do not mash alignment methodology, book promotion, and TED storytelling into three equal stories — stay linear on finding and fixing market misalignment.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Lynn Rousseau — The Conscious Leader — why it fits: long-running professional practice that lived on referrals and prior marketing programs that did not stick; closest parallel when Philippe already closes when he is in front of the right CEO but has no systematic top-of-funnel. When to pull it: referral dependency, “authority assets are fine — we just need at-bats,” or “we never needed marketing until now.” Prospect link = https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0</li>
+<li>Tejas Parikh — Akshar Consulting — why it fits: high-ticket B2B consulting sold to senior finance buyers; answers “CEOs will not show for a webinar” and “I would rather have a few real conversations than junk volume.” When to pull it: senior-buyer skepticism, Ideal invite quality worries, or capacity-cap fear of unqualified calls. Prospect link = https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+<li>Cedric Le Rouzo — Cinnamon Consulting — why it fits: B2B consulting practitioner who used webinars to change cost-per-conversation and hours economics; useful when Philippe pressure-tests whether a capacity-capped firm can fill a room without burning delivery. When to pull it: economics dig, six-month ROI walk, or “will this create conversations without flooding five-project capacity.” Prospect link = https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who is in the room / who signs / what each cares about: Philippe is champion and runs the company. Partners are named decision participants and were not on Call 1 — confirm who joins and what they need. Philippe cares about expected attendees and one-to-one volume, clear six-month metrics versus a pilot, sustainability of the calendar-invite channel, help-first language, and economics beyond the roughly $18k–$25k six-month ballpark.</li>
+<li>Landmines from Call 1: Do not invent a people count — show companies, then CEO titles, then contacts on screen.</li>
+<li>Do not mix our list or invite mechanics into HIS webinar story arc — story stays buyer fear of misalignment and wasted growth effort.</li>
+<li>Do not hard-close or credit-card-at-end language — that triggered a hard pushback on Call 1.</li>
+<li>Do not ignore the two-month pilot preference — reframe with clear six-month metrics and deal structure, not a brush-off.</li>
+<li>Do not trash Bain / BCG / McKinsey — he named them as expensive adjacent, not daily bid competitors. Confirm proposal and due-diligence materials landed before walking numbers. Keep Tue Oct 6 · 4:00 PM CT / 2:00 PM PT warm.</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+

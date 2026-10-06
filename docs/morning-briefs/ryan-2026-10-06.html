@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Tue Oct 6, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Tue Oct 6, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>11:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/WJhFwXCda5J8RmNCCRc1">Frank Auger</a> · Call 2 · Fassilio Inc.</strong>
+      </div>
+      <div class="slot">
+        <strong>12:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/BRUl4ZDWRHtmt2tYJetW">Anna Marques</a> · Call 3+ · FedBiz Access</strong>
+      </div>
+      <div class="slot">
+        <strong>1:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/bBAxbmMfeANMxS3VZqLD">Derek Brown</a> · Call 1 · Brookes Supply Chain Solutions</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Frank Auger · Call 2 · 11:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Frank Auger · Fassilio Inc. · Call 2 · Tue Oct 6, 2026 · 11:00 AM ET (10:00 AM CT) · Ryan</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Sep 9 Call 1 (~52 min). Frank (Montreal; Francois on CRM) sells Fassilio — sales-enablement SaaS (storytelling + personalization + engagement tracking in one link) for financial planners, insurance brokers, and commercial real estate after a ~1.5 year pivot from manufacturing. Proof exists (~$5k–$7.5k MRR, ~20–25 clients; ~15–20 meetings/month, ~80% qualified, ~3–4 clients/month). LinkedIn messages/ads failed; trade shows + network work but do not scale. Investors want multiplication. Custom demo booked with investors invited.</li>
+</ul>
+<ul>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Warm, open, commercially serious — volunteered economics and investor status.</li>
+<li>Goals they want but can’t hit yet: Multiply beyond network/trade-show acquisition into Canada then US CRE (Boston / New York / Miami), with insurance/finance where licenses allow.</li>
+<li>Why hitting the goal matters: Investor mandate (“you have proof — now multiply”); funding round ~$100k–$250k ~80% complete with ~70% earmarked to sales/marketing.</li>
+<li>What’s holding them back: Funding not fully closed (step ~8/10); acquisition still relationship-bound; SOC 2 Type 2 still needed for banking paths.</li>
+<li>Consequences if nothing changes: Stays locally proven while US markets and competitors move; investors lose patience.</li>
+<li>Fears that will show up in the decision: Paying before the investor check lands; picking the wrong first vertical; banking expansion blocked without SOC 2.</li>
+</ul>
+<ul>
+<li>Objections still open: Investor calendar / funding timing; Canada-first vs US timing; SOC 2 for finance/banking.</li>
+</ul>
+<ul>
+<li>Who’s joining Call 2: Frank plus investor group (Jonathan / Pat; group of three — maybe one attends). Confirm who is actually on Zoom at open.</li>
+</ul>
+<ul>
+<li>What we promised to walk: Custom demo for Fassilio ICP, webinar rewatch / team materials already sent, investor-ready economics.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Frank Auger — Fassilio Inc. Sales-enablement SaaS so reps send one personalized interactive link after meetings/webinars/trade shows and see engagement. Buyers: CRE brokers/landlord reps, financial planners, insurance brokers.</li>
+</ul>
+<ul>
+<li>Company goals / dream state (from Call 1): Scale seat/license packs (example ~15–20 licenses / ~$550 MRR starting pack) across Canada then US CRE, funded by the incoming round.</li>
+</ul>
+<ul>
+<li>ICP dream state (what THEIR buyers want): More meetings converting with less chase — prospects engage a story link instead of static decks.</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<ul>
+<li>Investors in the room change the demo into a board-level acquisition decision. Cash is tight until the check lands — commercial path must respect funding timing without losing the Oct window. CRE can move without SOC 2; banking cannot.</li>
+</ul>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English): Canada first for proof, then US CRE cities (Boston, New York, Miami) and broader US; company type brokerages / practices that buy multi-seat licenses (roughly $5M–$100M+ revenue frame Ryan used without pushback; Colliers-class targets named); titles CRE brokers / landlord reps, financial planners, insurance brokers; exclude tiny one-seat shops and banking logos that require SOC 2 before they can buy.</li>
+</ul>
+<ul>
+<li>Ideal ICP (tight — who they said they want most): Canadian CRE and adjacent financial-planner / insurance buyers who will take 15–20+ seat packs now. People count: We have not counted the people yet — walk companies, then titles, then contacts on the demo.</li>
+</ul>
+<ul>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Wider Canada + US CRE / financial-planner / insurance-broker decision-makers that can buy license packs without SOC 2. People count: We have not counted the people yet — expand after Ideal.</li>
+</ul>
+<ul>
+<li>How we got the number: Count firms in the Ideal filters first, then roles, then contacts — in words on screen.</li>
+</ul>
+<ul>
+<li>What we widened (if thin): US CRE cities next, then insurance/financial planners outside Canada — label “Frank said Canada first” versus “we added US CRE for campaign volume.”</li>
+</ul>
+<ul>
+<li>Check vs Call 1: Keep CRE + financial/insurance lanes; do not force banking until SOC 2 is real.</li>
+</ul>
+<ul>
+<li>Too small?: Qualify out only if broadest honest people count still under ~30k after widening.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): One-link interactive sales stories with tracking after meetings and trade shows — easy for CRE brokers to understand.</li>
+</ul>
+<ul>
+<li>What’s fuzzy or weak (closer must know): Account value / packaging still needs investor-grade clarity (diagnosis noted market-access and account-value problems more than conversion). MRR is still early (~under $100k/year run-rate).</li>
+</ul>
+<ul>
+<li>Positioning line for the webinar if we pick today: How CRE / advisory teams turn every meeting into a tracked story link that keeps deals moving.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Brokers and advisors lose momentum after meetings because follow-up is static and untracked.</li>
+</ul>
+<ul>
+<li>Who we invite first, then next: Ideal Canadian CRE / planner / insurance buyers first, then broader honest US CRE list.</li>
+</ul>
+<ul>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop): hook then problem then proof (Fassilio method / client or Colliers-path proof) then offer (license packs) then easy CTA (book with Frank / team)</li>
+</ul>
+<ul>
+<li>Copy / talk-track beats (3–5):</li>
+<li>Meetings that go quiet after the handshake</li>
+<li>Why another PDF deck does not restart the deal</li>
+<li>What a tracked story link shows the rep</li>
+<li>Soft CTA into a working session / pilot seats</li>
+</ul>
+<ul>
+<li>Cadence: One CRE-first topic, test, then segment planners/insurance.</li>
+</ul>
+<p>Best case studies for THIS Call 2 (required)</p>
+<ul>
+<li>Cedric Le Rouzo · Cinnamon Consulting — about 66 booked calls — B2B technical/SaaS skepticism.</li>
+<li>Gene Rosendale · Advocate Advisors — about 61 / 12 — investor “another marketing spend” fear.</li>
+<li>Jonathan Duarte · GoHire — scale proof on cold-invite machine (high invite volume across many runs) — use when investors ask if this multiplies beyond network.</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Frank operates; Jonathan / Pat / investor group care about multiplication math, use of the ~70% S&amp;M allocation, and timing versus funding close. Confirm who can approve spend.</li>
+<li>Landmines from Call 1: Funding not closed; Canada-first preference vs investor push to multiply; SOC 2 banking trap; do not re-litigate QS email cadence.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Anna Marques · Call 3+ · 12:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Anna Marques · FedBiz Access · Call 3+ · Tue Oct 6, 2026 · 12:00 PM ET (11:00 AM CT) · Ryan</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Multi-meeting arc (Call 1 May 21 then Full Demo May 28 then 3rd Jun 4 then 4th Jun 11 then silent/thin 5th Jun 25). FedBiz Access helps SMBs win government contracts (consulting/training/SAM-related services). Revenue compressed from nearly $5M in COVID peak to around $2M; goal to add ~1,000 new clients/year toward ~$3–4M. Soft conceptual yes on webinar system; stuck on risk and cash.</li>
+</ul>
+<ul>
+<li>What paused the close: ~$20K upfront consulting fee feels risky without clearer ROI; fear strategy goes obsolete in months; misunderstanding that team access ends after six months; webinar-host readiness / internal presenter; performance-based fee structure referenced but not locked cleanly; Ryan Sherr / Bill / others in the decision mix.</li>
+</ul>
+<ul>
+<li>Who else matters: Ryan Sherr (on several calls), Bill (commercial), possible webinar presenter talent internally. Anna is an active objector/champion hybrid.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table: ~$20,000 consulting + ~$1,000/month ops in earlier framing; 3x ROI language; performance-based structure was mentioned and must be clarified — do not invent a new performance deal on the fly.</li>
+</ul>
+<ul>
+<li>Whose court: FedBiz for internal talent + commercial yes; Ryan for clarity on risk protection, lifetime access, and any performance structure that leadership already approved. Today is a 5th-meeting-style reopen after a long gap.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Engaged and skeptical. They want protection against one-sided risk more than another feature tour.</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency rises if email/opt-in base stays too small to hit 1,000 new clients. Urgency dies if upfront cash fear wins or presenter talent is missing.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: $20k downside; obsolescence; time drain; webinar attention in a niche contracting audience; unclear performance pricing.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Upfront $20k risk without felt protection — primary.</li>
+</ul>
+<ul>
+<li>Co-decider / commercial alignment (Ryan Sherr / Bill) — primary.</li>
+</ul>
+<ul>
+<li>Webinar presenter readiness — secondary.</li>
+</ul>
+<ul>
+<li>Prior email marketing constraints / niche attention fears — secondary.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “$20k upfront is too risky if results aren’t guaranteed.”</li>
+</ul>
+<ul>
+<li>Status: still open — 3rd/4th meeting center of gravity.</li>
+</ul>
+<ul>
+<li>Overcome with: Restate risk protections already explained (ownership of assets, ongoing access model, ROI framing). Clarify any performance-based structure only if already approved — otherwise stick to standard commercial terms and proof stories. Do not improvise a custom guarantee.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors — spent years on agencies with almost no return; about 61 booked sales calls across 12 webinars once they owned the engine. Use for “paid before without results.”</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand.</li>
+</ul>
+<ul>
+<li>Exact land line: “Gene burned years of agency fees for almost nothing — then about sixty-one booked sales calls across twelve webinars once he owned the machine. The risk story flips when you keep the asset.”</li>
+</ul>
+<ul>
+<li>Objection: “What if calendar-invite webinars go obsolete in a few months?”</li>
+</ul>
+<ul>
+<li>Status: still open — named on 3rd meeting.</li>
+</ul>
+<ul>
+<li>Overcome with: Lifetime / continued access framing Alexander started; optimization is part of the engagement, not a one-shot tactic purchase.</li>
+</ul>
+<ul>
+<li>Full story to tell: Greg Smart at 500 More — first packaging failed; iteration produced consistently more than 10 sales calls per month. Use for “one tactic then die” fear.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand.</li>
+</ul>
+<ul>
+<li>Exact land line: “Greg’s first webinar flopped — the system is built to iterate packaging, which is why he later got consistently more than ten sales calls a month instead of freezing a dead tactic.”</li>
+</ul>
+<ul>
+<li>Objection: “Our niche buyers need heavy information — webinars won’t hold them / we may not have the right presenter.”</li>
+</ul>
+<ul>
+<li>Status: still open.</li>
+</ul>
+<ul>
+<li>Overcome with: Agree content must be specific to govcon / SAM / certification pain. Help name the internal presenter or training path; do not proceed without a voice.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo at Cinnamon Consulting — specialized buyers; about 66 booked calls when messaging matched the niche.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand.</li>
+</ul>
+<ul>
+<li>Exact land line: “Cedric’s buyers needed specific technical education too — about sixty-six booked sales calls when the room matched that niche. Vague webinars fail; specific ones convert.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Gene Rosendale · Advocate Advisors — ~61 / 12 — upfront risk / agency scar tissue.</li>
+</ul>
+<ul>
+<li>Greg Smart · 500 More — iterate packaging — obsolescence fear.</li>
+</ul>
+<ul>
+<li>Cedric Le Rouzo · Cinnamon Consulting — ~66 — niche info-dense buyers.</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Reopen the risk / access / performance-pricing questions in plain English — no full re-demo.</li>
+</ul>
+<ul>
+<li>Confirm who signs (Anna / Ryan Sherr / Bill) and who presents webinars.</li>
+</ul>
+<ul>
+<li>Re-anchor commercial terms from the last written offer only.</li>
+</ul>
+<ul>
+<li>Name first webinar topic in their words for SMB govcon buyers.</li>
+</ul>
+<ul>
+<li>Leave with e-sign / pay or a dated commercial decision with signers present — not a 6th educational meeting.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If they demand a custom performance deal you cannot approve, then escalate offline — do not invent terms live.</li>
+</ul>
+<ul>
+<li>If presenter talent is missing, then make naming a presenter a condition of kickoff week.</li>
+</ul>
+<ul>
+<li>If only Anna is present and others decide, then book the decision-makers inside seven days.</li>
+</ul>
+<ul>
+<li>If they want another strategy tour, then decline unless a close path is attached.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: signed start with signer + presenter named. Next acceptable: written yes from commercial owners with kickoff inside two weeks. Not acceptable: “still worried about the $20k” with no decision date.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Derek Brown · Call 1 · 1:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Derek Brown · Brookes Supply Chain Solutions · Call 1 · Tue Oct 6, 2026 · 1:00 PM ET (6:00 PM UK) · Ryan</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Derek Brown is Head of Revenue at Brookes Supply Chain Solutions (Brookes SCS) in London. His LinkedIn headline calls the role Revenue Specialist, and his LinkedIn About describes it as Sales Director.</li>
+<li>He is UK-based. His LinkedIn lists Birmingham, England, and the Brookes office is on Langham Street in London.</li>
+<li>He has about 35 years of experience leading client engagement and sales teams across Europe, the Middle East, Africa, and Asia-Pacific for US software companies.</li>
+<li>Before Brookes, he held sales leadership roles at Manugistics and Oracle, and he was Vice President for Europe, the Middle East, and Africa at Zenoss. In December 2020, DWCC announced him as the head of its new &quot;Revenue as a Service&quot; offer, which helped tech companies enter new markets with a pay-as-you-go sales team.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Brookes is a specialist supply chain planning consultancy that has been running for about 18 years. The founder and CEO is Martin Woodward.</li>
+<li>They help companies choose, build, and run planning software for forecasting, stock replenishment, sales and operations planning, and financial planning.</li>
+<li>They build on technology from ToolsGroup, Board, and Microsoft, and they host it in the Microsoft Azure and AWS clouds.</li>
+<li>They say they have more than 40 customers, including Toyota, Telefonica O2, 3M, NHS Blood and Transplant, Smiths Medical, Greif, and BorgWarner.</li>
+<li>They also run a separate service called Brookes Cash Release. It frees up cash tied up in stock and working capital, and they are paid from results, often around 10%.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Mid-size and large companies in retail, grocery, fashion, wholesale distribution, manufacturing, consumer goods, food and beverage, pharma, and automotive service parts.</li>
+<li>Inside those companies, the buyers are supply chain leaders, planning teams, and often the CFO or CEO when the goal is freeing up cash.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Companies hold too much stock in some places and run out in others because their forecasts are weak and their planning is manual.</li>
+<li>That ties up cash, hurts service levels, and keeps planners busy with spreadsheets.</li>
+<li>Brookes says its projects usually pay back within a year. They claim better forecast accuracy, better customer service, and much less manual planner work through automation.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>Derek is the person who owns revenue at Brookes, so he is the buyer for more pipeline. When he booked, he gave &quot;booking more leads&quot; as the reason for the call (GHL booking form).</li>
+<li>He came in through a quantumSCALE webinar registration on Sep 22 (GHL tags: webinar-registered, appointwise-webinar-lead, sales call booked).</li>
+<li>This is a UK consultancy that sells complex, high-trust projects to big enterprises. Expect long sales cycles and a small, senior buyer list. Ask how they win new logos today and how much comes from the ToolsGroup partner channel.</li>
+<li>His LinkedIn posts mostly share Brookes and ToolsGroup content about AI in demand forecasting. That is the topic his buyers care about right now, so it is a natural webinar theme to test.</li>
+<li>He has run sales teams for decades, so expect sharp questions about lead quality and cost per meeting. Confirm whether Martin Woodward, the CEO, is involved in the decision.</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
