@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Wed Oct 7, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Wed Oct 7, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>10:30 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/x1SCRxRUb2le4hCjFDnm">Mark / Paul Coss</a> · Call 3+ · Directed Systems</strong>
+      </div>
+      <div class="slot">
+        <strong>11:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/g7Owf9QDD2FYcBuaL3kt">Lydia Hoye</a> · Call 1 · Bound to Prosper · overlaps John Davis 11:00 AM ET · declined the invite Oct 2</strong>
+      </div>
+      <div class="slot">
+        <strong>11:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/ib949UsEu18PhaYORGj8">John Davis</a> · Call 2 · Alpha Gen Systems (formerly Pioneer Logics)</strong>
+      </div>
+      <div class="slot">
+        <strong>12:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/aJDc6wfZJqhrtVSwrDx9">Jimmy Timmins</a> · Call 2 · Xelure Technologies</strong>
+      </div>
+      <div class="slot">
+        <strong>1:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/y97ZNKH9mHnTb37dzQM2">Michael Powell</a> · Call 3+ · Next Chapter</strong>
+      </div>
+      <div class="slot">
+        <strong>3:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/8shSdCLRXLAtISyi3a7V">Jide Adesalu</a> · Call 3+ · Microhills Inc</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Mark / Paul Coss · Call 3+ · 10:30 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Mark Leaning and Paul Coss · Directed Systems · Call 3+ (5th meeting) · Wed Oct 7, 2026, 10:30 AM ET (30 min slot) · Ryan</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>The last meeting was on July 8. Ryan walked Mark through the full system for the first time, with Paul on the call. Mark said, &quot;I can see a role for this in our business,&quot; and he called the pricing &quot;extremely interesting.&quot;</li>
+</ul>
+<ul>
+<li>Mark paused the close because he was in the middle of a funding round. He said he was &quot;not quite ready to leap into it, partly because I&#x27;m raising money.&quot; He also said the next six months were about a few very tight, hand-picked hospital sites, and that the big scale-up push was more of a 2027 goal.</li>
+</ul>
+<ul>
+<li>Mark set today&#x27;s meeting himself. He asked Ryan to send an invite for &quot;the first Wednesday in October,&quot; around the same time, as a friendly check-in. He even praised Ryan for booking the next meeting before hanging up.</li>
+</ul>
+<ul>
+<li>Mark is the final decision maker. Paul is the champion who found us and brought Mark in. Sam Leaning (COO) was also named as part of the decision on earlier calls.</li>
+</ul>
+<ul>
+<li>Ryan already put the money on the table on July 8. The build is a one-time fee of $18,000 US, plus running costs of under $1,000 a month for data, tools, and an assistant. Ryan described a six-month build, test, and run program with a 3x return guarantee, which he put at a minimum of $54,000 in new contracts within six months.</li>
+</ul>
+<ul>
+<li>The ball is in their court. Ryan asked Paul to forward everything to Mark, and Paul said, &quot;I&#x27;ll be back in touch.&quot; There is no note in GHL of any contact between July 8 and today.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>They feel interested but cautious. Mark liked the approach a lot, but money was the blocker. In early July, Paul said they had paused payments to their contractors until they had six months of funding secured.</li>
+</ul>
+<ul>
+<li>Urgency depends almost fully on whether the funding round has closed. On June 29 the target round was about £250,000 to £350,000, and it was already running about six months later than planned. If the round is closed, the door may be open. If it is still open, expect another delay.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: spending cash before the round lands, picking the wrong project out of their four or five priorities, and scaling demand before the company is ready to deliver at many hospitals.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Funding round status. This is the primary blocker. Every earlier call came back to &quot;no budget until the money lands.&quot;</li>
+</ul>
+<ul>
+<li>Ranking against other projects. This is a secondary blocker. In July, Paul said his top priority was online training videos for current customers, and the webinar project ranked lower.</li>
+</ul>
+<ul>
+<li>Timing of scale. This is also secondary. Mark said the company was not yet set up to deliver at scale and wanted the next six months focused on a few named sites.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: &quot;We don&#x27;t have the budget until our funding round closes.&quot;</li>
+<li>Status: still open.</li>
+<li>Overcome with: Do not push financing. Paul already said a 12-month payment plan does not matter, because they either have the cash or they do not. Instead, ask one plain question early: &quot;Mark, last time you were in the middle of the round. Where did that land?&quot; Let the answer decide the rest of the call. If the round closed, move to timing and a start date. If it did not, set a dated check-in tied to the round.</li>
+<li>Full story to tell: Ken Tyborski at Code of the North. Ken is the founder and president of a NetSuite consulting firm in Minneapolis with about ten people. Before he came to us, he had put roughly a quarter of a million dollars into salespeople and programs that did not fix his lead generation. So when he finally spent again, he needed to know the money would come back. He checked us out hard first. He signed up under a fake name, called a past client for a reference, and watched several client videos looking for holes. The return he could point to was simple. An $8,000 first contract came off his second webinar, from an account he expects to keep for three to five years. Prospect link: https://quantums-institute.com/due-diligence-software</li>
+<li>How to deliver it: Tell it half-offhand, right after Mark explains where the cash stands. It is a story about a careful founder spending carefully, not a pressure line.</li>
+<li>Exact land line: &quot;Ken was spending carefully too, so the only question that mattered was whether the first wins paid it back. For you, one hospital contract is a big number. So if the round is in, what would need to be true for this to be the project you fund first?&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;It is too early. We are not ready to scale. The next six months are about a few hand-picked sites.&quot;</li>
+<li>Status: half-handled. Mark said this himself on July 8, and Ryan did not get to answer it before time ran out.</li>
+<li>Overcome with: Agree with him. Then point out that he does not need a huge list right now. He needs a medical champion at the right hospitals, which is what he said the goal is. A webinar can start small, with a tight list of the right anesthesia leaders, and it doubles as market research. Mark himself said the poll questions inside a webinar would be &quot;good market research&quot; on the pain. Also remind him that the build takes about 15 hours of his time, which most clients give over two weeks. That matches his own style of working in focused two to four week projects.</li>
+<li>Full story to tell: Jacqueline Throop-Robinson at Spark&#x27;d Engagement. Spark&#x27;d Engagement ran the smallest invite list in all of our client results, at 1,332 invites. That small, well-matched list still produced a 76% attendance rate, which is roughly five times better than the typical client, and it booked a sales call. Across four webinars they had 557 attendees and 3 booked sales calls. The point is that the right small list beats a big random one. Prospect link: https://quantums-institute.com/due-diligence-home</li>
+<li>How to deliver it: Tell it when Mark says they are not ready for big volume. Keep it short.</li>
+<li>Exact land line: &quot;You do not need to blast the whole market yet. You need the right few hundred anesthesia leaders to show up and raise their hand. That is a small list done well, and it builds the champion pipeline you said you need for your next sites.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Our buyers are hospitals. It is a committee sale with procurement, and doctors do not believe they have this problem.&quot;</li>
+<li>Status: half-handled. Paul raised the &quot;evangelical sale&quot; on the first call, and Mark described the committee process on July 8. Mark already agreed that good content pulls people in better than a cold email does.</li>
+<li>Overcome with: Use Mark&#x27;s own words back to him. He said they are &quot;opinion formers&quot; trying to &quot;create a market,&quot; and that good content is what pulls people in. That is exactly what a webinar does. It educates the anesthesia leaders who do not yet believe hypotension is a big problem, and it finds the champion who will carry it through the committee.</li>
+<li>Full story to tell: Philipp Von Schulthess at Oxoia. Philipp is CEO and co-founder of Oxoia, a Swiss company whose AI software cuts energy use in existing buildings. His public customers include Swiss Railways, Zurich Airport, and several Swiss cities. So he sells a technical product into careful, institutional buyers, which is one of the hardest webinar audiences there is. He still filled his webinars with those buyers, and he closed the largest deal in his company&#x27;s history off one of them. He also said referrals had been real, but &quot;not big enough to grow fast enough.&quot; Prospect link: https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</li>
+<li>How to deliver it: Tell it if Mark or Paul say hospitals are different. Keep the focus on the institutional buyer parallel. Do not add numbers for Philipp that are not in this story.</li>
+<li>Exact land line: &quot;Philipp sells technical software to railways, airports, and city governments, and those buyers still showed up and bought. Your buyers are careful too. The webinar is where they learn they have the problem, and that is the market you said you are trying to create.&quot;</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Ken Tyborski · Code of the North: A founder of a ten-person NetSuite consulting firm who had already lost about a quarter of a million dollars on things that did not work. He tested us hard before buying, and he got an $8,000 first contract off his second webinar from an account with a three to five year life. Use him when the talk is about careful spending and payback. Prospect link: https://quantums-institute.com/due-diligence-software</li>
+</ul>
+<ul>
+<li>Jacqueline Throop-Robinson · Spark&#x27;d Engagement: The smallest list in our results, 1,332 invites, still got a 76% attendance rate and a booked call. Use her when Mark says they are not ready for volume. Prospect link: https://quantums-institute.com/due-diligence-home</li>
+</ul>
+<ul>
+<li>Philipp Von Schulthess · Oxoia: He sells technical AI energy software to Swiss Railways, Zurich Airport, and city governments. He closed the largest deal in his company&#x27;s history off a webinar. Use him when they say hospital buyers are too careful for a webinar. Prospect link: https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open warm and short. Mark asked for a friendly check-in, so honor that. Thank him for keeping the date he picked in July.</li>
+</ul>
+<ul>
+<li>Ask where the funding round landed. This one answer sets the whole call.</li>
+</ul>
+<ul>
+<li>If the round is closed, ask how Mark, Paul, and Sam ranked their four or five projects. Then connect the webinar to what Mark said he needs most, which is finding a medical champion at the right hospitals.</li>
+</ul>
+<ul>
+<li>Re-state the offer plainly: $18,000 US one time, under $1,000 a month to run, about 15 hours of their time over roughly two weeks, and the six-month program with the 3x guarantee Ryan already described. Do not add new terms.</li>
+</ul>
+<ul>
+<li>Agree on a start date for the build that fits Mark&#x27;s two to four week project style. Then send the agreement while you are still on the call or right after, and ask for e-signature by a named date.</li>
+</ul>
+<ul>
+<li>If the round is not closed, agree on a dated next check-in tied to the round, with Mark on the invite.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If Mark says the round closed, then say &quot;Congratulations,&quot; ask what changed in their priorities, and move straight to step 3 of the path above.</li>
+</ul>
+<ul>
+<li>If Mark says the round is still open, then do not pitch. Ask when he expects it to close, and book a short check-in for the week after that date, with Mark on the invite.</li>
+</ul>
+<ul>
+<li>If only Paul shows up, then keep it short. Ask Paul where the round and the project ranking stand, and ask him to get Mark on a 15-minute call this week or next. Do not run a demo without Mark.</li>
+</ul>
+<ul>
+<li>If they say the training videos come first, then ask whether the training videos and the webinar could share the same content. Mark said content is what pulls people in, so the same material may serve both. Do not argue that their priority is wrong.</li>
+</ul>
+<ul>
+<li>If Mark asks again where the data comes from, then give Ryan&#x27;s July answer. We work with several data vendors and partners, and that is how the cost drops from about $1 per lead to about $30 for 10,000 leads.</li>
+</ul>
+<ul>
+<li>If they say a clear no for now, then accept it, thank them, and ask for permission to check back at a set month they choose.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Best: Mark agrees to a build start date, and the agreement goes out today for e-signature by a named date.</p>
+<p>Next best: Mark, Paul, and Sam agree on a dated decision call within two weeks, with all three named on the invite.</p>
+<p>Fallback: a clear &quot;not moving now,&quot; with a dated check-in that Mark picks, tied to when the round closes.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Lydia Hoye · Call 1 · 11:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Lydia Hoye · Bound to Prosper · Call 1 · Wed Oct 7, 2026, 11:00 AM ET (4:00 PM UK) · Ryan</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Lydia Hoye is the Founder and Managing Director of Bound to Prosper. Her email signature also calls her Founder and CEO.</li>
+</ul>
+<ul>
+<li>She is based in London, in the UK.</li>
+</ul>
+<ul>
+<li>She has more than 20 years of experience leading PR strategy for big brands.</li>
+</ul>
+<ul>
+<li>Before Bound to Prosper, she was a Managing Partner at Kazoo Communications. She launched Bound to Prosper in October 2021.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Bound to Prosper is a consumer PR agency in London. PR means getting a brand talked about in the press, by influencers, and online.</li>
+</ul>
+<ul>
+<li>They help fast-growing wellness and lifestyle brands become the best-known name in their category.</li>
+</ul>
+<ul>
+<li>Their services include PR campaigns, influencer marketing, a digital press office, thought leadership for founders, and search visibility.</li>
+</ul>
+<ul>
+<li>It was the first consumer agency launched by MXP Ventures, a fund that builds and grows new marketing agencies.</li>
+</ul>
+<ul>
+<li>Their website lists brands such as Wild Nutrition, Planted, and Three Spirit Drinks among happy clients.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Purpose-driven consumer brands in the UK that are growing fast.</li>
+</ul>
+<ul>
+<li>Their sectors include women&#x27;s wellness, health, femtech, sustainability, packaged consumer goods, retail, food and drink, hospitality, parenting, and lifestyle.</li>
+</ul>
+<ul>
+<li>The person who hires them is usually a founder, a marketing director, or a UK general manager.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Most brands are easy to forget. Their website says more than 75% of brands could disappear tomorrow and people would not notice.</li>
+</ul>
+<ul>
+<li>Their clients want to be famous for the right thing, earn press and trust, and turn that attention into sales.</li>
+</ul>
+<h3>What&#x27;s interesting for this call</h3>
+<ul>
+<li>She registered for the quantumSCALE webinar and attended it, and then she booked this call.</li>
+</ul>
+<ul>
+<li>She is in the UK, so this call is late afternoon for her.</li>
+</ul>
+<ul>
+<li>She sells a service to brand founders and marketing leaders. That is a high-trust, relationship-based sale, so ask how she wins new clients today.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>She wrote a public piece about helping the plant-based food industry grow and go mainstream. She calls it a mission. (vegconomist magazine op-ed, &quot;Lydia Hoye, Founder, Bound to Prosper, on Pushing the Plant Transition&quot;)</li>
+</ul>
+<ul>
+<li>She publicly thanked her first employee, Lauren Sawyer, on International Women&#x27;s Day 2025. She said Lauren left a top agency to join her and stuck with her through 2am pitches with Japan. (her LinkedIn post, March 2025)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>John Davis · Call 2 · 11:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>John Davis · Alpha Gen Systems (formerly Pioneer Logics) · Call 2 · Wed Oct 7, 2026, 11:00 AM ET (55 min) · Ryan</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Alpha Gen Systems is the brand John markets under, after merging with Pioneer Logics about three years ago. His email address still says pioneerlogics.net. They sell tech consulting in two ways: placing their own pre-screened engineers inside a client&#x27;s team, and building whole projects for a fixed price, including AI work. Their best year was 2024, at about $300,000 to $400,000. It fell to about $100,000 to $110,000 in 2025. This year is at about $70,000, and they closed no new project last quarter.</li>
+</ul>
+<ul>
+<li>Emotional state / urgency (from Call 1):</li>
+<li>How they feel: Disappointed and under real pressure. John was open and honest about the drop. He said the situation is very disappointing for him and the team.</li>
+<li>Goals they want but can&#x27;t hit yet: Get back to about $300,000 to $400,000 in the next 12 months, and ideally about $500,000. In the near term, that means about two new clients a month.</li>
+<li>Why it matters to them: They have spent three to four years building this company. When Ryan asked what it would mean to close down and get jobs, John said, &quot;It&#x27;s the worst thing.&quot;</li>
+<li>What&#x27;s holding them back: Email outreach books about 8 to 12 meetings a month, and LinkedIn books about 4 to 6. But only about one or two meetings per channel are real decision makers with a need and a budget. This has gone on for about nine months.</li>
+<li>Consequences if nothing changes: John estimated about six months before things become unsustainable. He also worries that AI could shrink the work from their current clients.</li>
+<li>Fears that will show up in the decision: Spending money on one more thing that books meetings but does not close deals, and running out of time.</li>
+</ul>
+<ul>
+<li>Objections still open: No hard objections came up on Call 1. The open loop is Navid. Navid is their delivery manager and the second decision maker, and he has not heard the pitch yet.</li>
+</ul>
+<ul>
+<li>Who&#x27;s joining Call 2: John is confirmed. Navid is not confirmed. Call 2 was first set for Monday Oct 5, and on that morning John emailed that Navid &quot;won&#x27;t be able to join us today.&quot; The meeting then moved to today. Ask at the start whether Navid is on, and if not, how Navid will see it.</li>
+</ul>
+<ul>
+<li>What we promised to walk: A customized demo of how the webinar system would look for Alpha Gen&#x27;s brand and market, plus answers to their questions. Ryan sent the recording and supporting info on Sep 29. On Oct 5, Ryan emailed that he would show them how to reach &quot;a new high of at least $500k a year&quot; and avoid ever feeling like they need to shut down.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: John is based in Dubai and is originally from Germany. Alpha Gen sells engineering help and fixed-price software builds to companies in the US and Europe, and it is open to any English-speaking market. Their buyers are senior tech leaders at companies with at least $3 million in revenue. The problem is that they get meetings, but not with people who can buy.</li>
+</ul>
+<ul>
+<li>Company goals / dream state (from Call 1): Get back to $300,000 to $400,000, with a stretch goal of $500,000, within 12 months. They have about 13 people on payroll and room for three to four new clients a month, so they can deliver more than they sell today.</li>
+</ul>
+<ul>
+<li>ICP dream state (what THEIR buyers want): Their buyers are tech leaders at growing companies. They want skilled engineers who already know AI, or a project built and shipped for a fixed price, without months of hiring.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>Navid has now missed one scheduled demo and is still unconfirmed. If he is not on today, John cannot fully decide alone. Plan a short, dated call with Navid before you hang up.</li>
+</ul>
+<ul>
+<li>The brand is split. They market as Alpha Gen, but the email and old website say Pioneer Logics. Pick one brand for the webinar during the demo.</li>
+</ul>
+<ul>
+<li>Money is tight. They are at about $70,000 this year with about six months of runway, by John&#x27;s own estimate. The &quot;one close pays for the system&quot; math will matter a lot. Their average deal is about $25,000 to $30,000. Do not promise results beyond what Ryan has already said.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English). ICP means the ideal customer profile, the kind of company and person they want to sell to.</li>
+<li>Geo: The US and Europe first, which is where they sell today. Then the rest of the English-speaking world. John is curious about the Gulf and Saudi Arabia, but they have not sold there yet.</li>
+<li>Vertical: Health tech, fintech, education tech, construction, and finance.</li>
+<li>Company size: At least $3 million in revenue and about 10 to 200 employees. John set no upper limit, and Ryan suggested about $3 million to $100 million as the working range.</li>
+<li>Buyer titles: CTO, CIO, chief digital officer, CEO, VP of engineering, engineering manager, head of product development, and head of IT.</li>
+<li>Who we leave out: Junior technical staff, tiny startups with no budget, and people who are &quot;just exploring&quot; or waiting on funding.</li>
+</ul>
+<ul>
+<li>Ideal ICP (tight, who they said they want most): Health tech, fintech, and education tech companies in the US and Europe with $3 million or more in revenue and 10 to 200 employees, reaching the CTO, CIO, chief digital officer, VP of engineering, head of product, or head of IT. We have not counted the people yet. On the demo, show the count as companies first, then the job titles, then the contacts.</li>
+</ul>
+<ul>
+<li>Broadest honest TAM (largest possible still real, the campaign headline): All English-speaking companies of about $3 million to $100 million across all five of their named industries, reaching the same senior tech titles. We have not counted the people yet. On the demo, show it as companies first, then titles, then contacts, after adding the extra geography and industries.</li>
+</ul>
+<ul>
+<li>How we got the number: Start with the Ideal companies, then add the senior tech job titles, then pull the contacts. If that count looks small, widen to all English-speaking countries and add construction and finance.</li>
+</ul>
+<ul>
+<li>What we widened (if thin): John said the US and Europe, and he said he is open to any English-speaking market. We would add the wider English-speaking geography and the two other industries he already named. We do not add industries he never named.</li>
+</ul>
+<ul>
+<li>Check vs Call 1: This matches what John said on Call 1: the $3 million floor, 10 to 200 employees, the title list, and the five industries.</li>
+</ul>
+<ul>
+<li>Too small?: Unlikely, because this covers five industries and many senior titles. Only raise it if the counted list stays under about 30,000 people after widening.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): Two clear offers that buyers already understand. One is &quot;I need good engineers now,&quot; and the other is &quot;I need this built for a set price.&quot; Their 2024 year proves they can deliver when the demand is there.</li>
+</ul>
+<ul>
+<li>What&#x27;s fuzzy or weak (closer must know): The brand is not settled yet. Deals range from about $10,000 to over $100,000, so the webinar needs one main hook, not both offers at once. Also, their current mass email may have hurt how their name looks to buyers.</li>
+</ul>
+<ul>
+<li>Positioning line for the webinar if we pick today: How health tech, fintech, and education tech leaders get AI-ready engineers and finished projects without another failed hire or a stalled build.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): Senior tech leaders cannot hire or ship AI-era work fast enough, and their projects stall while competitors move ahead.</li>
+</ul>
+<ul>
+<li>Who we invite first, then next: The Ideal list first (health tech, fintech, and education tech leaders at $3 million or more). Then the broader honest list, with construction and finance and the wider English-speaking world.</li>
+</ul>
+<ul>
+<li>Story arc (THEIR webinar to THEIR audience, not quantumSCALE&#x27;s pitch): hook, then problem, then proof, then offer, then an easy call to action.</li>
+<li>Hook: AI changed how much engineering help a growing tech team needs.</li>
+<li>Problem: Hiring is slow, freelancers are hit or miss, and internal teams are buried, so projects stall.</li>
+<li>Proof: How Alpha Gen screens AI-ready engineers and delivers fixed-price builds. Use their real client stories. Their website names clients such as Magnus Health and CareFlow. Confirm with John which ones he can use.</li>
+<li>Offer: Engineers placed in your team, or a fixed-price build for your project.</li>
+<li>Easy call to action: Book a short call with Alpha Gen if you have an active project and a budget.</li>
+</ul>
+<ul>
+<li>Copy / talk-track beats:</li>
+<li>You are not shopping resumes. You need trusted engineers who already know modern AI tools.</li>
+<li>A fixed price, so the project does not drift and cost more every month.</li>
+<li>Pre-screened engineers who are ready to join your team quickly.</li>
+<li>Built for tech leaders who need results this quarter, not a six-month hiring search.</li>
+<li>If you are just exploring, stay for the learning, and only book when you are ready.</li>
+</ul>
+<ul>
+<li>Cadence: Run one topic first. Test how many people show up and how good the booked calls are. Then split by industry if the Ideal list converts.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Gene Rosendale · Advocate Advisors. Why it fits: John fears spending on one more thing that does not work. Gene&#x27;s firm used four agencies over five years at $36,000 to $48,000 a year, and got five qualified prospects and one client in total. With our system, they matched those five years of results in six months, and they have since booked 61 sales calls across 12 webinars. When to use it: when John or Navid asks why this is different from email and LinkedIn. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<ul>
+<li>Cedric Le Rouzo · Cinnamon Consulting. Why it fits: his buyers are senior software leaders, much like CTOs. In his own interview, his first webinar brought 63 attendees and 16 qualified sales calls, and his second brought 128 attendees and 50 sales calls. He says his cost per sales call fell from about $2,000 to about $10. When to use it: when they doubt CTOs will sit through a webinar. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<ul>
+<li>Tejas Parkish · Akshar Business Group. Why it fits: John said he would rather have fewer real buyers than a full calendar of people who are just looking. Tejas sells to CFOs and finance directors and raised that same worry. On his first webinar, he reported 80 or more attendees and 15 qualified sales calls, and he closed several deals. When to use it: when they say they want quality, not volume. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room / who signs / what each cares about: John cares about revenue, survival, and the six-month clock. Navid is the delivery manager and the second decision maker. He will care that new demand does not overload delivery, and that the webinar promise matches what the team can actually ship.</li>
+</ul>
+<ul>
+<li>Landmines from Call 1: Tight cash means price will be sensitive. Navid not being there could turn into &quot;we need to think about it.&quot; The brand split needs a decision. They have had busy but empty calendars for nine months, so they will test whether the webinar really screens out people who cannot buy. Do not walk a generic slide plan. Walk the customized Alpha Gen demo Ryan promised.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Jimmy Timmins · Call 2 · 12:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jimmy Timmins · Xelure Technologies · Call 2 · Wed Oct 7, 2026 · 12:00 PM ET / 11:00 AM CT / midnight Thu Oct 8 PH · Ryan</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Jimmy runs Xelure (say “Zuler” / “Zillor,” not a hard X). Legal dba is AFIX Solutions, Inc. He helps US and international companies build owned offshore teams in the Philippines — employee of record, bespoke hire, no bench, cost-plus — not project outsourcing. He came from the quantumSCALE webinar, joined Call 1 just after midnight Philippines time, and Ryan called a clear fit. What stuck for Jimmy was education-first webinar marketing versus a hard sales email, which matches how he already sells by mentoring buyers on Philippines teams, tech, and regulation.</li>
+</ul>
+<ul>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Open and matter-of-fact. He walked through the 2024 near-collapse, his partner’s stroke, losing an operations manager, and getting distracted by other ventures without defensiveness. He stayed engaged through a full evaluation after midnight local time, then said it was a pleasure and he looks forward to next week.</li>
+<li>Goals they want but can’t hit yet: About five clients this year (the recent ones came from referrals) and then another five that are not referrals. Operationally he said they could handle about 20 net-new clients a year if each stays in the five-to-ten seat band, though that would be more than they have ever done.</li>
+<li>Why hitting the goal matters to them personally / for the company: He is 61 with no retirement date and no interest in going back to a W2. A W2 was on his radar at the end of last year. The recent client resurgence made him serious about growing again. Lifestyle control and remote work between Virginia and the Philippines matter. Acquisition in three to five years is possible if the right offer appears, but he is not hunting one near-term.</li>
+<li>What’s holding them back: The business is built entirely on referrals right now. Cold email programs have produced zero success. The market is saturated with call centers, “cousin” brokers, and remote-hiring platforms, so warm introductions still matter more than cold outreach.</li>
+<li>Consequences if nothing changes: Growth stays capped at whatever his network happens to send him. He already lived the 2024 crash to near zero after acquisitions, attrition, and taking his eye off the ball. Without a scalable trust-based channel outside his network, that dependency stays.</li>
+<li>Fears that will show up in the decision: Fear of another channel that looks like cold email spam and gets ignored. Fear of wasting time on large broker-dealers and enterprises with heavy vendor approval (he cited London Stock Exchange as niche, not typical). Soft fear that “another five non-referral clients” may not materialize if he keeps relying on the same network.</li>
+</ul>
+<ul>
+<li>Objections still open: No hard product objections on Call 1. Scheduling was the open loop — he prefers earlier Philippines times because he is more alert earlier. Tomorrow was conflicted, so Call 2 is next week. That loop is closed by the Oct 7 booking.</li>
+</ul>
+<ul>
+<li>Who’s joining Call 2: Jimmy only. No co-decider was named on Call 1.</li>
+</ul>
+<ul>
+<li>What we promised to walk: A customized marketing demo of what this looks like for Xelure — lead list of executives, calendar invites, webinar, hours, and finances — so he has a tangible feel of what he would be buying. Ryan also said he would send the calendar invite, the Call 1 recording, case studies / testimonials, and a landing page to rewatch the webinar and see the team.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem: Jimmy (Philippines / Virginia; New York for decades before Virginia) builds owned Philippines remote teams for fintech and related buyers. Clients hire the people they want; Xelure recruits and acts as employee of record. Typical start is about 5–10 seats, not 20–40. Fractional CTO / COO work is a personal add-on, not the main product. Buyers are startup CTOs, founders, and CEOs who own both the financial and operational decision, plus trading-software and fintech service vendors who need 24-hour coverage as they expand beyond the US. Their pain is building a compliant, high-trust Philippines team without becoming an offshore employer themselves, in a market full of cheap-labor noise.</li>
+</ul>
+<ul>
+<li>Company goals / dream state (from Call 1): Add about five non-referral clients next, keep lifestyle control between Virginia and the Philippines, stay off W2, and optionally set up for a right-fit acquisition in three to five years. Capacity frame he accepted: roughly 20 net-new clients a year in the five-to-ten seat band if demand arrives.</li>
+</ul>
+<ul>
+<li>ICP dream state (what THEIR buyers want): Fintech and related leaders who need a trusted Philippines team that understands regulation, tech language, and 24-hour coverage — without hiring “cheap labor” through a call center or a cousin broker, and without running a full Philippines entity on day one.</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<ul>
+<li>Education-first is already his sales style. He said the webinar approach stood out because he sells as a mentor / educator on Philippines teams, tech, and regulation. Build the demo story around that trust lane, not a BPO discount pitch.</li>
+<li>Referral rebuild after a near-zero year. He almost went to zero in 2024, signed three clients in 2026 (~20 people placed), has two Q4 deals that would add about another 15 seats into 2027, and Ryan’s ~$400k 2026 revenue frame got a yes. Call 2 should make “clients outside my network” concrete without inventing a people-count census that was never built on Call 1.</li>
+<li>Midnight PH timing. He chose Wednesday midnight Philippines over later options because he is more alert earlier. Keep the demo tight and scannable.</li>
+<li>Ryan still owes the promised materials (recording, case studies / testimonials, landing page). Bring those into Call 2 or send before, so the demo does not start from an empty inbox.</li>
+</ul>
+<p>Deep TAM (required)</p>
+<ul>
+<li>ICP parameters (plain English):</li>
+<li>Geo: US is primary. He already has UK clients and at least one in Australia. Ryan framed Canada, US, UK, and EU as workable; Jimmy said the UK footprint is worth exploring.</li>
+<li>Vertical: Financial technology is the current book and the space he speaks most confidently. Adjacent lanes he has tried: firms already hiring remote people, recently funded startups, and funding / VC firms that influence hiring choices.</li>
+<li>Company type / size: Small to mid-size under about 200 employees. Ideal starts with about 5–10 seats. Not someone who walks in needing 20–40 people on day one.</li>
+<li>Buyer titles: Startup CTO, founder, or CEO who owns both the financial and operational decision. On the vendor side: trading software and fintech service providers expanding beyond the US.</li>
+<li>Who we exclude: Large broker-dealers and enterprises with heavy vendor-approval processes. Pure call-center / cheap-labor shoppers. Project-outsourcing buyers who do not want an owned team.</li>
+</ul>
+<ul>
+<li>Ideal ICP (tight — who they said they want most): US fintech and trading-software / fintech service companies under about 200 employees, buying through a CTO, founder, or CEO who owns money and operations, starting with about 5–10 Philippines seats. Decision-maker count: We have not counted the people yet. Call 2 demo should show companies, then those titles, then contacts for this tight stack.</li>
+</ul>
+<ul>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Canada, US, UK, and EU (plus Australia where he already has a client) across fintech and the adjacent lanes he named — recently funded startups, firms already hiring remote, and funding / VC influencers — into the same founder / CTO / CEO decision-maker titles. Count AFTER expansion: We have not counted the people yet. On the demo we will show companies, then titles, then contacts after widening geo and adjacent lanes if Ideal is thin.</li>
+</ul>
+<ul>
+<li>How we got the number: Start from Ideal fintech companies under about 200 employees in the US, then pull founder / CTO / CEO titles, then contacts. If the Ideal people count looks thin, widen geo to Canada / UK / EU / Australia and add the adjacent lanes Jimmy already named (remote-hiring firms, recently funded startups, funding influencers) before declaring the campaign headline. Write this as companies, then roles, then contacts — never invent a census that was not built on Call 1.</li>
+</ul>
+<ul>
+<li>What we widened (if thin): They said US fintech under ~200 with founder / CTO / CEO buyers. We may add Canada, UK, EU, and Australia, plus the secondary lanes Jimmy already tried (remote-hiring firms, funded startups, VC / funding influencers). We do not invent new industries he never named.</li>
+</ul>
+<ul>
+<li>Check vs Call 1: Matches his stated book (all fintech referrals), size band (under ~200, start 5–10 seats), buyer titles, UK footprint curiosity, and Ryan’s “large / global” frame. No exact people-count was built on Call 1 — keep that honest on the demo.</li>
+</ul>
+<ul>
+<li>Too small?: Unlikely once geo and adjacent lanes are widened. Only escalate a “too small” conversation if the counted Ideal people list stays clearly under about 30,000 after widening.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): Owned Philippines team, not outsourced project work. Employee-of-record plus bespoke hire with no bench. Fintech-fluent operator who has built Philippines teams since about 2000 and can talk regulation, tech language, and 24-hour coverage. Clear recurring economics buyers understand once they want seats.</li>
+</ul>
+<ul>
+<li>What’s fuzzy or weak (closer must know): Cold email already failed for him, so invite copy that feels like staffing spam will die. Market is noisy with call centers and cousin brokers — the webinar must separate “trusted owned team / compliance / fintech language” from “cheap offshore labor.” Deal size is recurring (~$25k/month revenue per typical client, about 25% margin / ~$60k year-two net, about $100k first year with recruitment), so the demo must make one-close ROI obvious without inventing guarantees beyond what Ryan already framed. Fractional CTO / COO is a personal add-on — do not let it muddy the core owned-team offer.</li>
+</ul>
+<ul>
+<li>Positioning line for the webinar if we pick today: How fintech founders and CTOs build an owned Philippines team that understands regulation and 24-hour coverage — without a call center, and without standing up a Philippines entity on day one.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Fintech leaders need trusted Philippines capacity for tech and ops coverage, but the market is full of cheap-labor noise and they do not know who can hire compliant, high-quality people they will actually own.</li>
+</ul>
+<ul>
+<li>Who we invite first, then next: Ideal first (US fintech / trading-software vendors under about 200 employees, founder / CTO / CEO). Then the broader honest list across Canada, UK, EU, and Australia, plus recently funded startups, firms already hiring remote, and funding / VC influencers.</li>
+</ul>
+<ul>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE’s value prop):</li>
+<li>Hook: Building a Philippines team is not the same as buying a call center seat.</li>
+<li>Problem: Fintech leaders need 24-hour coverage and regulatory-aware talent, but cold staffing pitches and cousin brokers create risk they cannot defend to their board or clients.</li>
+<li>Proof: How Jimmy has built and transferred owned Philippines teams for fintech buyers (use his real mentoring / ISO-environment / compliance framing from Call 1 — do not invent client logos).</li>
+<li>Offer: Bespoke recruitment plus Philippines employee-of-record so the client owns the team; optional path later to their own Philippines office.</li>
+<li>Easy CTA: Book a short call with Jimmy if you are a founder / CTO / CEO evaluating an owned Philippines team this year.</li>
+</ul>
+<ul>
+<li>Copy / talk-track beats (3–5):</li>
+<li>You are not renting a call center — you are hiring your own people in the Philippines.</li>
+<li>Fintech has a language and a compliance bar; your team should already speak both.</li>
+<li>Start with about 5–10 seats that mirror your home team, then grow.</li>
+<li>We recruit bespoke and act as employee of record so you can move fast without standing up a local entity on day one.</li>
+<li>If you only want the cheapest body shop, this is not for you — stay for the education and do not book.</li>
+</ul>
+<ul>
+<li>Cadence: One core topic first (owned Philippines teams for fintech / 24-hour coverage), test show rate and booked-call quality, then segment by geo (US then UK) or by buyer lane (trading-software vendors vs funded startups) if Ideal converts.</li>
+</ul>
+<p>Best case studies for THIS Call 2 (required)</p>
+<ul>
+<li>Ken Baron &amp; Rory Zipper — ZEA Financial</li>
+<li>Why it fits: Strongest regulated / financial-services parallel. Two fee-based fiduciary planners had already burned budget on cold callers, purchased lead lists, LinkedIn lists, and about $13,000 dinner seminars, doubted for weeks, and still got results in a compliance-heavy industry. Also answers “cold lists and outreach already failed.” Across tracked runs they have about 30 booked sales calls from about 10 webinars.</li>
+<li>When to pull it: Jimmy says fintech buyers are too careful for webinars, or that cold email / list outreach already proved the market will not respond.</li>
+<li>Prospect link: Due diligence deep link is blank — use the consulting industry page only: https://quantums-institute.com/due-diligence-consultingandprofessional (never invent a section id).</li>
+</ul>
+<ul>
+<li>Lynn Rousseau — The Conscious Leader</li>
+<li>Why it fits: Best referral-rebuild parallel. She ran a long-standing practice on referrals, had already tried a dozen marketing programmes, and needed a predictable path to conversations outside her network. Matches Jimmy’s “five more clients that are not referrals” goal after years of referral-only growth.</li>
+<li>When to pull it: He says referrals rebuilt him but he cannot depend on them next year, or asks why this would stick when other outreach failed.</li>
+<li>Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0</li>
+</ul>
+<ul>
+<li>Gene Rosendale — Advocate Advisors</li>
+<li>Why it fits: Burned by marketing agencies in a niche advisory market, then matched years of weak agency output after installing an owned system. Use when Jimmy fears another spend that looks like the cold-email programs that produced zero. Across tracked runs he has about 61 booked calls from about 12 webinars.</li>
+<li>When to pull it: Cost / “will this just be another marketing vendor” skepticism, or “I already tried outreach and it died.”</li>
+<li>Prospect link: Due diligence deep link is blank — use the consulting industry page only: https://quantums-institute.com/due-diligence-consultingandprofessional (never invent a section id).</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Jimmy only. He owns the decision. He cares about clients outside his network, lifestyle control between Virginia and the Philippines, staying off W2, and a channel that builds trust the way he already sells (education / mentoring), not spammy staffing outreach.</li>
+</ul>
+<ul>
+<li>Landmines from Call 1:</li>
+<li>Pronounce the company “Zuler” / “Zillor,” not a hard X.</li>
+<li>Do not invent a people-count TAM — none was built on Call 1; show companies, then titles, then contacts on the demo.</li>
+<li>Cold email trauma — invite and webinar copy must not feel like staffing spam.</li>
+<li>Exclude large broker-dealer / heavy vendor-approval chase from the Ideal lane.</li>
+<li>Economics he stated: about $25k/month revenue per typical client, about 25% margin, about $60k/year net, about $100k first year with recruitment — use those, do not invent new ones.</li>
+<li>Materials still owed from Ryan’s Call 1 close: Call 1 recording, case studies / testimonials, landing page to rewatch the webinar and see the team.</li>
+<li>Timing: he is more alert earlier Philippines time; keep Call 2 crisp at midnight PH.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Michael Powell · Call 3+ · 1:30 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Michael Powell · Next Chapter (NexXT Chapter) · Call 3+ · Wed Oct 7, 2026, 1:30 PM ET (11:30 AM Mountain, 15 min slot) · Ryan</b></p>
+<h3>Missing tape gap (read first)</h3>
+<p>There is no recording of a Sep 30 Call 3. Fireflies was checked again this morning in both accounts, and nothing exists for Michael after the Sep 24 demo.</p>
+<p>The best real evidence is Michael&#x27;s own email on the morning of Sep 30. In it, he asked to push the meeting. He then accepted today&#x27;s invite that same day. So this pack treats today as the first real Call 3. Nothing in this pack comes from a Sep 30 conversation, because we have no record that one took place.</p>
+<h3>Where we left it</h3>
+<ul>
+<li>On the Sep 24 demo (Call 2), Michael came alone. His partners Pauline and Bronson could not join. Michael said &quot;I love it&quot; more than once, and the price did not scare him.</li>
+</ul>
+<ul>
+<li>Ryan priced it at $18,000 US one time, plus $500 a month for data, tools, and the assistant. For Canadian clients, Ryan offered financing of up to $20,000 US over 12 months. Michael said &quot;Oh, nice&quot; and &quot;Cool.&quot;</li>
+</ul>
+<ul>
+<li>Ryan sent the recording and a two-page agreement on Sep 24 so Pauline and Bronson could review.</li>
+</ul>
+<ul>
+<li>Then on the morning of Sep 30, Michael wrote that it was a national holiday, so neither Sam nor Bronson was available. He also wrote that he had added three new clients the week before, including two large engagements, and that he is &quot;at capacity now.&quot; He said one of the two partners he thought would be interested is not. He wrote, &quot;NexXT Chapter isn&#x27;t ready to proceed,&quot; and offered to push to next week.</li>
+</ul>
+<ul>
+<li>He accepted today&#x27;s 15-minute invite the same day. The ball is in his court, and the deal is cooling.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How he feels: Warm and friendly toward Ryan, but stalling. His email was polite and thankful, and he signed it with a smile. He is busy and happy with new client wins, not desperate.</li>
+</ul>
+<ul>
+<li>What is killing urgency: He is at capacity, so he does not feel he needs more leads right now. One partner is out. On Sep 24 he had already floated learning the system in December and earning from it in January, around a possible break from mid-December to mid-January.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: Taking on more work than his team can handle, spending money while one partner is not on board, and choosing the wrong start date.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Capacity. This is the primary blocker. He says he is full right now after three new clients.</li>
+</ul>
+<ul>
+<li>Partner buy-in. This is also primary. One of the two partners he expected to join is not interested, and he says he lacks enough input from the other.</li>
+</ul>
+<ul>
+<li>Start timing. This is secondary. He already raised a December learning and January revenue path on Sep 24.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: &quot;I&#x27;m at capacity now. We just added three new clients.&quot;</li>
+<li>Status: still open.</li>
+<li>Overcome with: Congratulate him first, and mean it. Then ask how long those two large engagements run, and what happens to his pipeline when they end. Remind him that the build takes time before the first calls show up. On Sep 24 he himself walked through first calls in about 60 days and revenue in about 90 days. So if he wants new clients in January or February, the build has to start well before that. Also remind him that Ryan already said the invite volume can be scaled down to fit three partners with about ten deals each.</li>
+<li>Full story to tell: Bora Ger at Bora Ger Consulting. Bora has been a business consultant for 15 years. He also holds a senior full-time role at Capgemini Invent, where he leads work on people and AI. He built his whole client pipeline as a side business while keeping that full-time job. He kept his own time cost low by using the tools and a support team to carry the work. In his own words, it was &quot;a complete game changer&quot; for him. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-oQ6GJuJNVAx</li>
+<li>How to deliver it: Tell it half-offhand when he says he is too busy. The point is that a very busy consultant still ran this.</li>
+<li>Exact land line: &quot;Bora ran this while holding a full-time director job, so busy is not the blocker. The real question is when you want the next wave of clients to land. If that is January, the build needs to start now, not in December.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;One of my partners isn&#x27;t interested, and I don&#x27;t have enough input from the other.&quot;</li>
+<li>Status: still open.</li>
+<li>Overcome with: Ask which partner is out and why. Ask whether Michael can make this decision for Next Chapter on his own, or whether he needs the other partner. If the other partner&#x27;s view is missing, offer a short call with that partner this week. Do not try to win over the partner who said no through Michael.</li>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors. Gene is a founding partner at a boutique investment bank and M&amp;A advisory firm in Chicago. Inside his firm, he was the partner with the most marketing background, so the other partners asked him to vet vendors, and he looked at about two dozen firms. Before us, they had used four agencies over five years at $36,000 to $48,000 a year, and they got five qualified prospects and one client in total. With our system, they matched those five years of results in six months, and they have since booked 61 sales calls across 12 webinars. His own words were, &quot;It&#x27;s too good to be true, and if it sounds too good to be true, it&#x27;s because it is. You just need to do this.&quot; Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+<li>How to deliver it: Tell it when partners come up. Gene was the partner who had to convince the others.</li>
+<li>Exact land line: &quot;Gene was the one partner who had to vet this for the rest of his firm, and he looked at two dozen options. If one of your partners is unsure, let&#x27;s get them fifteen minutes with me so they can poke holes directly.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Let&#x27;s wait. Maybe December to learn and January to make money.&quot;</li>
+<li>Status: half-handled. Michael raised this on Sep 24, and Ryan asked which start path he wanted.</li>
+<li>Overcome with: Treat this as a real choice, not a brush-off. Lay out the two paths in plain terms. Path one: sign now and start the build now, so calls land in January. Path two: pick a firm start date now, in writing, for later. Ask him which one he wants. Either answer gives a dated next step.</li>
+<li>Full story to tell: Simon Mueller at Mantaro Brands. Simon founded Mantaro Brands in 2021, a funded company with offices in Munich and Boston that buys and grows small online consumer brands. He raised about 20 million in funding and grew the team from about 10 to 30 people. He was busy and under pressure from investors, and he still ran this system from the first week of the business. He used it for two jobs at once, hiring and finding companies to buy. He said learning all of this alone &quot;would be extremely time intensive and cost intensive,&quot; and that our help speeding up that learning was &quot;really transformational.&quot; Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-WruJ398nwnq</li>
+<li>How to deliver it: Tell it if he says he is too busy to start now. Keep it short.</li>
+<li>Exact land line: &quot;Simon was growing fast and still started from week one, because learning it alone would have cost him more time later. If January is when you want revenue, which start date gets you there?&quot;</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Bora Ger · Bora Ger Consulting: A 15-year consultant who built his pipeline as a side business while holding a senior full-time job at Capgemini Invent. Use him for &quot;I&#x27;m too busy.&quot; Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-oQ6GJuJNVAx</li>
+</ul>
+<ul>
+<li>Gene Rosendale · Advocate Advisors: The partner who vetted about two dozen firms for his M&amp;A firm. After four agencies over five years produced one client, they matched that in six months and have booked 61 sales calls across 12 webinars. Use him for partner doubt. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<ul>
+<li>Simon Mueller · Mantaro Brands: A funded, fast-growing founder who still started the system in week one and called the help &quot;really transformational.&quot; Use him for &quot;let&#x27;s wait.&quot; Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-WruJ398nwnq</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open by thanking him for the honest Sep 30 email and congratulating him on the three new clients. This is only a 15-minute slot, so do not re-demo.</li>
+</ul>
+<ul>
+<li>Ask two questions: who is still in on the partner side, and when he wants the next wave of clients to land.</li>
+</ul>
+<ul>
+<li>If he wants clients in the new year, show him the timeline. The build comes first, then roughly 60 days to first calls, as he said himself. Then ask whether he wants to sign now with the 12-month financing he liked, or lock a written start date.</li>
+</ul>
+<ul>
+<li>If a partner still needs to weigh in, book a short call with that partner this week, with Michael on the invite.</li>
+</ul>
+<ul>
+<li>Re-send the two-page agreement after the call with the start path he picked, and set a named date for signature.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If he says &quot;not now, maybe next year,&quot; then ask him to pick the month now, and book that meeting before you hang up.</li>
+</ul>
+<ul>
+<li>If he says the price is the issue, then remind him of the 12-month financing up to $20,000 US that he liked on Sep 24. Do not offer new discounts.</li>
+</ul>
+<ul>
+<li>If he says he can decide alone, then ask for the start date and the signature date today.</li>
+</ul>
+<ul>
+<li>If he brings up Bronson&#x27;s software company as a separate opportunity, then note it and book a separate call. Keep today about Next Chapter.</li>
+</ul>
+<ul>
+<li>If he says it is a clear no, then accept it, thank him, and ask whether you can check back at a month he names.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Best: Michael signs the two-page agreement with financing, and a build start date is set.</p>
+<p>Next best: a written start date for the build, plus a dated call with the remaining partner this week.</p>
+<p>Fallback: a clear &quot;not moving now,&quot; with a dated check-in month that Michael picks.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Jide Adesalu · Call 3+ · 3:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jide Adesalu · Microhills Inc · Call 3+ · Wed Oct 7, 2026 · 2:00–2:30 PM CT / 3:00–3:30 PM ET (4:00 PM Atlantic) · Ryan Matsumori</b></p>
+<p>Zoom: https://us06web.zoom.us/j/85965415909?pwd=fxLdsIXvmoeg5mqSAFOlYXjd9nJn0K.1</p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft interest, not a close. After Call 2 (~66 min, Jide alone on video for the first time), he stayed through a full custom demo even after opening with “this may not be a fit.” He said the lead list felt very valuable, the calendar-invite motion felt easier than chasing replies, and quantumSCALE was clearer and more engaging than the shops he is comparing. He also said he wants this done as soon as possible, and that about five hours a month after the build “sounds clear enough.”</li>
+</ul>
+<ul>
+<li>What paused the close: He will not commit until he checks two things. First, whether he can find about two to three hours a week (or one or two focused weeks in a slower “fall” stretch) for the about-fifteen-hour build. Second, whether the $18,000 one-time fee fits this year’s advertisement budget. He called $18,000 a lot. Financing over a year was offered on the call and not accepted on the spot.</li>
+</ul>
+<ul>
+<li>Who else matters: His team was talked to offline after Call 1 and did not join Call 2. They want to stay on coding, not leave technical work to build presentations. No teammate was named for Call 3. The recording is how they catch up if he shares it.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table (Call 2 tape only): One-time consulting fee $18,000 USD to build, test, and hand over the system. Run cost about $500 USD per month for 30,000 leads (data, tools, assistant). Above 30,000 leads, about $30 per extra 10,000 (example on tape: about $560 for 50,000 leads that month). Lifetime access to updates included. Financing over a year inside the contract was offered and not accepted on Call 2. No money-back or guarantee was discussed on this tape — do not invent one.</li>
+</ul>
+<ul>
+<li>Whose court: Shared after Call 2. Jide checks calendar hours and ad-budget fit, then comes back Wednesday for a final yes or no. Ryan still owes the Call 2 recording, a two-page contract with the year-financing option written in, and the other materials he promised. Follow-up email after Call 2 was skipped, so treat those sends as still owed before or at the open of Call 3.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Cautious and interested, not excited and not closed. Polite and unusually direct. He showed up on a holiday he had meant to spend outside, then told the honest read that they may not have the resources. Near the end he was warm but rushed (about four minutes left). There was no “let’s start” energy. No 1–10 score was taken — do not invent one.</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency = he wants the outcome and wants it done as soon as possible; referral refill is not enough for the growth he wants. Killers = fifteen-hour build while the team is slammed; $18,000 against this year’s ads budget; leftover presenter / accent doubt; other DFY shops still in the comparison even though he cannot describe what they do.</li>
+</ul>
+<ul>
+<li>Fears still alive: The team cannot leave coding for presentations. Fifteen hours up front is more than he will promise without a calendar check. $18,000 may not fit the yearly ad budget. Building a crisp webinar for a technical room still feels hard. He would still love someone else to present if he can get that. Other agencies might let Microhills “only pay” while someone else runs ads and presentations.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Ad-budget fit for $18,000 — primary — he said it is a lot and will see how it fits this year’s advertisement budget, then get back on Wednesday.</li>
+<li>Build time / team hours — primary — about fifteen hours up front; he wants two to three hours a week or a slower stretch of one or two focused weeks; he has not checked the calendar yet.</li>
+<li>DFY agency comparison — primary — he wants shops that run ads and presentations so Microhills only pays; after the walkthrough he said those shops use a different strategy and he does not know their method, but he did not drop them.</li>
+<li>Who presents / accent comfort — secondary — softened on Call 2 (“nice to hear” / “why not”) but not gone; he still would have loved someone else to present.</li>
+<li>Webinar craft for a technical room — secondary — thirty years of presentations still leave him unsure how technical or crisp the talk should be; Ryan’s “software can design a prospect-facing webinar in about thirty minutes” got an “okay,” not a cleared worry.</li>
+<li>Materials / contract in hand — secondary — recording, two-page contract with financing, and other info were promised; FU after Call 2 was skipped, so confirm they landed before you ask for a yes.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “$18,000 is a lot — I have to see if it fits this year’s advertisement budget.”</li>
+</ul>
+<ul>
+<li>Status: still open — this is one of the two explicit yes/no checks he named for Wednesday.</li>
+</ul>
+<ul>
+<li>Overcome with: Open by asking what the ad-budget check showed, in plain numbers if he will share them. Restate the package exactly as Call 2: $18,000 once to own the machine, then about $500 a month for 30,000 leads as ongoing fuel, not a $5,000-a-month agency. Put the year-financing option back on the table inside the two-page contract without pushing it as the only path. Do not invent a discount, a money-back, or a guarantee that was not on the tape. Soft contrast: renting DFY forever versus owning a system one deal can fund (his average deal is about $25,000; systems work goes upward of $75,000).</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors. Gene is a founding partner at a boutique investment bank and M&amp;A advisory firm. He is the marketing-literate partner who vetted vendors for the group. He had been burned by agencies — four agencies over five years at roughly $36,000 to $48,000 a year, for five qualified prospects and one client total. Once he owned a machine instead of renting campaigns, he matched five years of output in about six months. Workshop path shows about 61 booked sales calls across 12 webinars. Use for “sticker shock versus owning the machine, and why another forever retainer is the expensive path.” Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand after he reports the budget check; land as rent-versus-own, not as pressure to stretch cash.</li>
+</ul>
+<ul>
+<li>Exact land line: “Fair — eighteen thousand only works if it fits the ad budget you already run. Gene Rosendale at Advocate Advisors spent years renting agencies at thirty-six to forty-eight thousand a year and got almost nothing, then owned a machine and matched five years of output in about six months. Same choice for you: one build you keep, or keep paying shops whose method you still cannot describe.”</li>
+</ul>
+<ul>
+<li>Objection: “My team will not leave coding for presentations — fifteen hours feels like a lot, and I have to check if I can find two or three hours a week.”</li>
+</ul>
+<ul>
+<li>Status: still open — primary time blocker; he prefers a slower fall stretch of one or two focused weeks if he can get it.</li>
+</ul>
+<ul>
+<li>Overcome with: Ask what the calendar check showed. Separate build hours from run hours. On Call 2 he already heard about five hours a month after the build for two webinars, and that landed as “clear enough.” Reframe the fifteen hours as a short build window with software doing the heavy webinar design (about thirty minutes versus twenty-plus hours the old way), not as turning engineers into full-time marketers. Offer a dated build plan that respects busy delivery weeks. Do not invent that someone else will do all fifteen hours for free.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo at Cinnamon Consulting. Cedric is a partner-sales practitioner for twenty-plus years. He helped Minit grow and sell to Microsoft, then built Cinnamon Consulting (about eighteen projects in eighteen months solo before scaling). His buyers are technical software leaders who look “too specialized” for a webinar. He doubted webinar economics, then framed cost per sales call collapsing from about $2,000 toward about $10, and hours from about forty toward about three per month. He reports 66 booked sales calls across his first two webinars (sixteen, then fifty). Use for “technical team that stays technical while the machine feeds senior buyers.” Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand when the hours objection returns; land as operator stays expert, machine handles the invite engine.</li>
+</ul>
+<ul>
+<li>Exact land line: “Your team should stay on code. Cedric Le Rouzo at Cinnamon Consulting sells into technical software leaders and still pulled sixty-six sales calls off his first two webinars while cutting the monthly hours way down. Same design here: about fifteen hours to stand it up, then about five hours a month to run it — what did your calendar actually show for the next few weeks?”</li>
+</ul>
+<ul>
+<li>Objection: “I am talking to shops that would run the ads and presentations while Microhills only pays.”</li>
+</ul>
+<ul>
+<li>Status: still open — he did not pick a winner; he admitted he does not know what those companies actually do; he heard the risk warning and kept them in the mix.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not attack the shops by name. Ask him to name what they own, what Microhills keeps if they leave, and how results get measured. Own-the-machine frame: we build, hand over, you keep the system; about $500 a month is fuel, not a hostage retainer. Clarity he already felt on Call 2 (“more engaging… I could see the exact steps”) is the contrast versus shops whose method is still foggy.</li>
+</ul>
+<ul>
+<li>Full story to tell: Same Gene Rosendale pack above for agency burn and rent-versus-own — full tellable version already written. Secondary proof if he asks whether a technical services firm can run this without becoming an agency client forever: Luke Edwards at Boss Writing / Boss Equity. Luke runs a newsletter and LinkedIn writing service and also works inside Boss Equity, his father’s software-sector M&amp;A firm. He applied the same lead-generation system to his own service business and to more than five third-party software companies in that portfolio, with revenue-doubling reported across those accounts in his story. Use for “this transfers to technical / service businesses; you keep the machine.” Prospect link: https://quantums-institute.com/due-diligence-software#section-vsjNPfqiE6O</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand when DFY comparison returns; lead Gene, bring Luke only if he asks “does this travel outside coaching?”</li>
+</ul>
+<ul>
+<li>Exact land line: “Those shops only win if you can say what you own when they leave. Gene Rosendale only moved after agency retainers taught him to own the machine. You already said our walkthrough was clearer than theirs — Wednesday is the yes or no on owning that machine, not another foggy retainer.”</li>
+</ul>
+<ul>
+<li>Objection: “I would rather someone else present — I worry some listeners strain to follow my accent.”</li>
+</ul>
+<ul>
+<li>Status: softened, not gone — Ryan said a client with a heavy accent closed $100,000 deals within six months, that Jide is easy to understand, and that someone else could re-record the talk track once; Jide said that was nice to hear and “why not,” but still would have loved someone else to present.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not reopen a long accent seminar. Confirm the one-time re-record option is still available. Keep him as the expert on camera for credibility with technical buyers unless he brings a named alternate. Tie to high-ticket B2B proof that senior buyers show up for the right room, not for perfect broadcast English.</li>
+</ul>
+<ul>
+<li>Full story to tell: Tejas Parikh at Akshar Consulting (also listed as Akshar Business Group). Tejas is a career finance leader turned founder who sells high-ticket work to CFOs and finance directors. He raised the exact fear that senior buyers will not show up and that a small niche cannot support webinars. On his first webinar he reported about 250 registrations, more than 80 attendees, and 15 qualified sales calls, and he closed several deals. Roughly five calls a month produced four clients at about GBP 100,000 lifetime value each. Use for “high-ticket technical / senior buyers will sit in the right room; you do not need a flood.” Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand if presenter fear returns; do not over-claim the accent story beyond what Ryan already said on Call 2.</li>
+</ul>
+<ul>
+<li>Exact land line: “You already heard the re-record option, and you are easy to follow. Tejas Parikh at Akshar Consulting sells to CFOs and still pulled fifteen sales calls off his first webinar — senior buyers show up for the right room. Do you want to present yourself with a one-time polish, or name who else records the track?”</li>
+</ul>
+<ul>
+<li>Objection: “Building the webinar itself is never easy — I do not know how technical or crisp it should be for the room.”</li>
+</ul>
+<ul>
+<li>Status: half-handled — “okay” on Call 2, worry not cleared.</li>
+</ul>
+<ul>
+<li>Overcome with: Replay the Call 2 frame without a new invent: software helps design a prospect-facing webinar in about thirty minutes versus twenty-plus hours the old way, and those hours sit inside the fifteen-hour build. Keep the story about their buyers’ problem (technology gap, trust, delivery), not about quantumSCALE. Offer a dated first-webinar topic once he says yes.</li>
+</ul>
+<ul>
+<li>Full story to tell: Same Cedric Le Rouzo pack above for technical-room confidence and webinar economics — full tellable version already written.</li>
+</ul>
+<ul>
+<li>How to deliver it: short; do not re-demo the whole Call 2.</li>
+</ul>
+<ul>
+<li>Exact land line: “You do not have to invent the webinar craft alone. Cedric’s technical software room was the hard case, and the machine still produced sixty-six sales calls across two webinars. We use part of the fifteen hours to lock a crisp first talk for your buyers — what is the one problem you want that first webinar to solve?”</li>
+</ul>
+<ul>
+<li>Objection: “I need to think / compare a bit more” (likely if materials or budget check are incomplete).</li>
+</ul>
+<ul>
+<li>Status: likely if he arrives without a clear calendar or budget answer.</li>
+</ul>
+<ul>
+<li>Overcome with: No auto-close pressure. Convert “think” into one of three dated outcomes only: e-sign / pay today; a named build-start date with financing path chosen; or a clear not-moving with a reason. Do not leave with “I’ll think about it.”</li>
+</ul>
+<ul>
+<li>Full story to tell: Same Gene Rosendale pack for decision quality after shopping vendors — full tellable version already written.</li>
+</ul>
+<ul>
+<li>Exact land line: “Totally fine if the answer is not today — just not an open ‘think.’ Either we date a start on the two-page contract, we date financing inside that contract, or we say this is not moving and why. Which of those three is true after your calendar and budget check?”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Gene Rosendale · Advocate Advisors — lead for DFY / agency comparison and $18k rent-versus-own. Four agencies over five years at roughly $36k–$48k a year for five prospects and one client; then matched five years of output in about six months; about 61 booked sales calls across 12 webinars. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<ul>
+<li>Cedric Le Rouzo · Cinnamon Consulting — lead for technical team time and webinar-craft fear. Niche partner-program software motion; 66 sales calls across first two webinars; hours and cost-per-call economics frame. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<ul>
+<li>Tejas Parikh · Akshar Consulting — lead for high-ticket senior-buyer show-up and presenter confidence. First webinar about 250 registrations, 80-plus attendees, 15 sales calls; roughly five calls a month produced four clients at about GBP 100k LTV each. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+</ul>
+<ul>
+<li>Luke Edwards · Boss Writing / Boss Equity — backup if he asks whether this transfers outside coaching into technical / service businesses. Same system on his firm and more than five software companies; revenue-doubling reported across those accounts. Prospect link: https://quantums-institute.com/due-diligence-software#section-vsjNPfqiE6O</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Before or at open: confirm Ryan’s promised materials landed (Call 2 recording, two-page contract with year-financing written in, other info). If they did not, send them first and only then ask for a decision.</li>
+<li>Open in the first three minutes as a yes/no check-in, not a second sixty-minute demo. Ask what the calendar check showed for two to three hours a week (or a focused one-to-two-week stretch). Ask what the ad-budget check showed against $18,000.</li>
+<li>Confirm soft interest still stands on the parts that landed: list scale, calendar invite, clearer process than the other shops, about five hours a month after build.</li>
+<li>Restate commercial package exactly as Call 2: $18,000 one-time to own the system; about $500 a month for 30,000 leads; financing over a year available inside the contract. No new discount. No invented guarantee.</li>
+<li>Handle the live blocker only — budget, hours, DFY comparison, or presenter — with one full story, then soft tie-back. Do not stack all four stories.</li>
+<li>If yes: lock e-sign on the two-page contract (cash or year-finance path), name a build-start week, and name who owns the first webinar talk track (Jide, or a one-time re-record alternate).</li>
+<li>If not yet: leave with either a dated kickoff inside seven days after a named remaining check, or a clear not-moving with a reason. Never “I’ll think about it.”</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If he says the ad budget cannot take $18,000 this year, then walk the year-financing option already offered inside the contract, compare it to renting DFY forever, and ask what monthly number would fit without inventing a discount. If still no, take a clear not-moving.</li>
+<li>If he says the calendar has no hours for fifteen weeks of drip, then offer a dated one-or-two-week focused build in the slower stretch he called the fall, with the five-hours-a-month run plan after. Do not pretend the build has zero hours.</li>
+<li>If he is still leaning DFY shops, then ask what he owns when they leave and what method they use. Tell the Gene own-the-machine story once, then ask for a pick: own this system or stay in the foggy comparison.</li>
+<li>If presenter / accent fear returns, then restate the one-time re-record option and the Tejas senior-buyer proof; do not reopen a long accent talk.</li>
+<li>If a teammate suddenly joins, then do not re-demo from zero. Give a three-minute recap of list, invite, build hours, price, and ownership, then return to the yes/no.</li>
+<li>If he asks for more time with no date, then refuse the open loop. Offer only e-sign today, a named dated hold, or clear not-moving.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Preference order: e-sign / pay on the two-page contract today (cash or year-finance path written in) with a named build-start week and a named talk-track owner — then a dated kickoff inside seven days if one named check is still open — then a clear not-moving with a reason. Never leave with “I’ll think about it.”</p>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
