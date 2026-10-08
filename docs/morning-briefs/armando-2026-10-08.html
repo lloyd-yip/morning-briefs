@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Thu Oct 8, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Thu Oct 8, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>2:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/AcHJVWO6NwDQTGoSznQY">Julien Normand</a> · Call 1 · Pointblank Marketing</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Julien Normand · Call 1 · 2:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Julien Normand · Pointblank Marketing · Call 1 · Thu Oct 8, 2026 · 2:00 PM CT · Armando</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Julien Normand is the Head of Retention at Pointblank Marketing, and he is listed as an owner of the agency.</li>
+<li>He is based in Victoria, British Columbia, in Canada.</li>
+<li>His past roles include Director of Email and SMS Marketing at Pilothouse Digital and Sales Director at GC Importers.</li>
+<li>He calls himself a retention and lifecycle marketing expert on his LinkedIn profile.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Pointblank Marketing is a marketing agency that was founded in 2015 and is based in Saanich, near Victoria.</li>
+<li>It offers customer acquisition, customer retention, brand development, and app and headless website builds.</li>
+<li>LinkedIn lists the team at 10 to 20 people, working across several countries.</li>
+<li>The agency uses free audits as a way to start new client relationships.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Online brands that want to keep customers buying again, not just win a first sale.</li>
+<li>Brands that run email and SMS programs, loyalty, and referral programs, often on tools like Klaviyo.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Many brands spend most of their money winning new customers and then lose them after the first order.</li>
+<li>Pointblank helps those brands build email, SMS, and loyalty systems so customers come back and spend more over time.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He registered for the QS webinar and then booked this call.</li>
+<li>He gave his first keynote at the Canadian Digital Marketing Summit in Victoria in January 2026, on moving from funnels to flywheels in retention.</li>
+<li>His public view is that retention comes from listening to customers, so expect him to respect questions over pitches.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He was open about being nervous before his first ever keynote, and afterward he wrote that it went well and he was ready for the next one. A light question about how speaking has gone since then is a natural opener. (his LinkedIn posts “First ever keynote” and “First one done”)</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
