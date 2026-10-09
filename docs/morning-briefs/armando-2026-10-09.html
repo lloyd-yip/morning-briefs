@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Fri Oct 9, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Fri Oct 9, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>1:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/63ynALGtFW0TGDW0eo5K">Jeff Ingersoll</a> · Call 1 · Drive Wealth Advisers</strong>
+      </div>
+      <div class="slot">
+        <strong>1:45 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/Nw89Y88QOpc8hxYJoI4h">Christine Cagle</a> · Call 1 · Peak Financial Services</strong>
+      </div>
+      <div class="slot">
+        <strong>3:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/NvXlLiujLhESknS3K1A4">Carla Ramirez</a> · Call 2 · CRIA</strong>
+      </div>
+      <div class="slot">
+        <strong>4:15 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/pQWitak2NCSc66VB0nHZ">Jean Brewster</a> · Call 1 · BrandStory Architech</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Jeff Ingersoll · Call 1 · 1:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jeff Ingersoll · Drive Wealth Advisers · Call 1 · Fri Oct 9, 2026 · 1:00 PM CT · Armando Valencia</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Jeff Ingersoll is a Wealth Adviser at Drive Wealth Advisers in Lehi, Utah.</li>
+<li>He has more than 30 years in the business and holds the CIMA, AIF, and QPFC designations.</li>
+<li>He co-founded Magellan Capital, which Drive Wealth acquired in April 2021, and he joined Drive Wealth at that time.</li>
+<li>He studied Family Financial Planning and Counseling at BYU.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Drive Wealth Advisers is a fee-only investment advisory firm in Lehi, Utah.</li>
+<li>It gives wealth planning, investment management, and family office services.</li>
+<li>At the time of the 2021 acquisition, it said it managed more than $800 million in client assets.</li>
+<li>The firm has roughly 20 people, and Jeff is one of several wealth advisers on the team.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Founders, executives, and high-net-worth families with complex finances.</li>
+<li>People nearing or in retirement, which is Jeff’s own focus. He describes his specialty as “all things retirement” on LinkedIn.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Many people save for decades but have no real plan for turning those savings into steady income once they stop working.</li>
+<li>Jeff helps clients plan and stress-test their retirement so they can feel confident about their money.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He registered for the QS webinar, attended it, and then booked this call.</li>
+<li>He works inside a larger firm, so ask whether he is growing his own book of clients or speaking for the whole firm, and who else would need to say yes.</li>
+<li>He already has a published book and a retirement method he named the Comfort Zone. That gives him ready-made webinar content if he decides to move forward.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He wrote a book called “The Accumulation Myth: 8 Retirement Flaws and How to Fix Them.” Asking what the myth is that he is pushing back on is an easy way to get him talking. (his book site, theaccumulationmyth.net, and Amazon)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Christine Cagle · Call 1 · 1:45 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Christine Cagle · Peak Financial Services · Call 1 · Fri Oct 9, 2026 · 1:45 PM CT · Armando Valencia</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Christine Cagle owns Peak Financial Services and Cagle Insurance.</li>
+<li>She is based in Excelsior Springs, Missouri, near Kansas City.</li>
+<li>She is also an Investment Advisor Representative and Registered Representative with DMK Advisor Group, a broker-dealer based in Florida.</li>
+<li>She ran Cagle Insurance from 2011 to 2022, selling Medicare, health, life, and long-term care plans, before she moved into investment advice in 2021.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Peak Financial Services offers financial planning, investment management, and retirement planning.</li>
+<li>She also sells insurance, including Medicare products, life insurance, annuities, and long-term care coverage.</li>
+<li>She works through DMK Advisor Group, which supports independent advisors across the United States and Puerto Rico.</li>
+<li>Public listings show a small team of about six people.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Individuals and families who need help with retirement and investments.</li>
+<li>Seniors and people turning 65 who need Medicare and supplemental coverage.</li>
+<li>Small businesses that want employee benefit programs.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Retirement, Medicare, and insurance choices are confusing, and one wrong choice can cost people a lot of money.</li>
+<li>Christine helps them sort through the options and pick coverage and investments that fit their life.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>She is licensed in Missouri, Kansas, and Louisiana, according to the DMK Advisor Group representative directory. Confirm which states she wants to grow in.</li>
+<li>Her LinkedIn says she is looking for people of integrity to join her as agents. Ask whether she wants more clients, more agents, or both.</li>
+<li>She was auto-registered for the QS webinar and then booked this call, so find out what made her book.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Before insurance, she managed the Inn on Crescent Lake in Excelsior Springs for a couple of years. Asking how she went from running an inn to running a financial practice is a light, friendly opener. (her LinkedIn experience section)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Carla Ramirez · Call 2 · 3:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Carla Ramirez · CRIA · Call 2 · Fri Oct 9, 2026, 3:00–3:55 PM CT (1:00 PM PT for Carla) · Armando Valencia</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Carla came to Call 1 about two hours after the webinar and booked the first open slot. She said she wanted to hear the price while it was fresh. She agreed to start with the life insurance lane first, because quantumSCALE already has experience there, and then add contractors second. She said, &quot;Yeah, I&#x27;m down with that. I mean, because that&#x27;s what we need anyways.&quot;</li>
+</ul>
+<ul>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Carla is urgent, direct, and warm. She is fed up with cheap internet leads and called them &quot;a hamster in a wheel&quot; and &quot;such an awful game to play.&quot; She was excited by our calendar invite and called it &quot;genius.&quot;</li>
+<li>Goals they want but can’t hit yet: She wants to grow sales after years of focusing on service. She wants more life insurance sales right now. She wants her advisors talking to real target buyers on booked appointments instead of working raw leads.</li>
+<li>Why hitting the goal matters: Most of her property and casualty book is with Farmers, and Farmers pays a large bonus only when the agency also hits certain life numbers. In her words, &quot;We need life sales more.&quot; She also said her service side is now stable, so &quot;we need to put all the money towards sales now.&quot;</li>
+<li>What’s holding them back: She has no steady source of target buyers. Her Google Ads brought in callers who were often not target clients, so her team spent time weeding them out. She paused those ads about six months ago and has been running free campaigns to her own client list since then. She has never run a webinar.</li>
+<li>Consequences if nothing changes: She is hiring and training new advisors, and she said it takes six months to a year before one can handle a large account. If there is no flow of qualified appointments, those advisors have no good buyers to work. She said sales have been flat since COVID, and they would likely stay that way. The life numbers she needs for the Farmers bonus would stay out of reach.</li>
+<li>Fears that will show up in the decision: She fears paying for leads that turn out to be price shoppers. She will judge the cost against what she paid before. She said a Google call lead cost her about $120. She said a target appointment at about $100 or less would be &quot;a huge win.&quot; She also asked early on, &quot;I don’t know how well you guys do with life.&quot;</li>
+</ul>
+<ul>
+<li>Objections still open: Price and scope were not shown on Call 1, and she asked for the price at the very start of Call 1. She raised a soft doubt about whether quantumSCALE can do life insurance as well as business insurance. Lead quality is her main worry, because her new advisors are still learning.</li>
+</ul>
+<ul>
+<li>Who’s joining Call 2: Only Carla is on the appointment. No one else was named on Call 1.</li>
+</ul>
+<ul>
+<li>What we promised to walk: Armando promised to show four things in this order.</li>
+<li>First, the data: We show a sample contact list, so she can see how many people there are and check that they are the right people.</li>
+<li>Second, the calendar invitation: We show the real invite copy her prospects would see on their calendars.</li>
+<li>Third, the webinar framework: We show the outline of her webinar slides.</li>
+<li>Fourth, the financial model: We walk a line-by-line quote of our service fee and the monthly tools cost.</li>
+<li>Also promised: Armando said he would email the Call 1 transcript and the financial-advisor case studies for Jason, and for Ken and Rory.</li>
+</ul>
+<p>Who / Business / Buyers / Problem (refresh only)</p>
+<ul>
+<li>Who / business / who buys / problem:</li>
+<li>Who: Carla Ramirez runs CRIA, an insurance agency. She lives in Rolling Hills Estates, California, and her office is in Manhattan Beach.</li>
+<li>Business: She has a team of about 40 people, and almost all of them work remotely. The agency brings in about $2.5 million a year.</li>
+<li>What they sell: CRIA sells property and casualty insurance, mostly through Farmers, plus life and health insurance. She is licensed in California and Texas.</li>
+<li>Who buys and their problem: Her buyers are service contractors and middle-to-upper-income families. Their problem is that insurance is complicated, and coverage can quietly change at renewal without anyone noticing.</li>
+</ul>
+<ul>
+<li>Company goals / dream state (from Call 1): Carla wants to invest in sales this coming year. She wants to add sales advisors and new lead sources, with life insurance first. She wants qualified appointments that cost about the same as, or less than, a Google call lead. She would like to start as soon as possible. She said that getting more sales in this quarter &quot;would be fabulous,&quot; but she is fine if the build runs into next year.</li>
+</ul>
+<ul>
+<li>ICP dream state (ideal customer profile, meaning what THEIR buyers want): Her life buyers want to know they are covered, with no holes in their coverage, from someone who actually gives advice. Many of them do not have a financial advisor yet. Her contractor buyers first want a lower cost on their truck fleet insurance. After that, they want one trusted advisor to handle everything. One client told her, &quot;just do everything you can.&quot;</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<ul>
+<li>She wants price fast. She opened Call 1 by saying, &quot;I’d like to have you do whatever you have to do to give me the price.&quot; Tell her early that the line-by-line financial model is coming, so she can relax and follow the first three parts.</li>
+</ul>
+<ul>
+<li>She has already lived the invite as a buyer. She said our invite got past the AI filter that trashes her spam. She also liked the title and the time slot. Use her own experience as the live example when you show her invitation copy.</li>
+</ul>
+<ul>
+<li>The life lane is the harder data lane. On Call 1, Armando said the method works best for business buyers, because accurate consumer data is harder to get than business data. Life is the lane she wants first. Be honest about the quality of the life sample list when you show it.</li>
+</ul>
+<ul>
+<li>She has two lanes, which are life and contractors. The webinar needs one topic at a time. Keep the demo focused on the life lane first, and show contractors as the second campaign.</li>
+</ul>
+<p>Deep TAM (TAM means the total market, which is how many real buyers we can invite)</p>
+<ul>
+<li>ICP parameters (ideal customer profile, in plain English):</li>
+<li>Where: We target all of California and all of Texas, because she is licensed in both states.</li>
+<li>Life lane (first): We target high-net-worth individuals and middle-to-upper earners. She said their income is usually about $100,000 to $200,000 a year.</li>
+<li>Contractor lane (second): We target service contractors, such as HVAC (heating and air), electrical, and plumbing companies.</li>
+<li>Company size for contractors: The company needs at least five trucks. A five-truck company usually has about 15 employees. Her sweet spot is 25 to 50 trucks.</li>
+<li>Buyer titles for contractors: We want the founder or owner, a family owner such as the founder’s son, or a partner or investor who cares about the financials.</li>
+<li>Who we leave out: We leave out contractors with fewer than five trucks. We also do not want one-off price shoppers, like the small condo owner who only wanted the liability coverage their homeowners association required.</li>
+</ul>
+<ul>
+<li>Ideal ICP (ideal customer profile, tight — who they said they want most):</li>
+<li>Life lane: We want middle-to-upper earners in California and Texas who do not already have a financial advisor. Their income is about $100,000 to $200,000 a year.</li>
+<li>Contractor lane: We want the founders, owners, and partners of service contractors in California and Texas that run 25 to 50 trucks.</li>
+<li>Decision-maker count: We have not counted the people yet. No list was pulled on Call 1.</li>
+</ul>
+<ul>
+<li>Broadest honest TAM (largest possible still real — campaign headline):</li>
+<li>Life lane: We can invite all high-net-worth and middle-to-upper earners in California and Texas, and we can add business owners. Carla said they have not targeted business owners for life yet, but &quot;it could be something that we can try.&quot;</li>
+<li>Contractor lane: We can invite all service contractors in California and Texas with five or more trucks. This includes companies above 50 trucks, because she said, &quot;I’m sure I can handle more.&quot;</li>
+<li>Count: We have not counted the people yet. Do not say a number on the call until the list pull is done.</li>
+</ul>
+<ul>
+<li>How we got the number: There is no number yet. On the demo, show the sample list in this order. First, show the companies or households that match. Then show the buyer titles inside them. Then show the actual contacts we can invite.</li>
+</ul>
+<ul>
+<li>What we widened (if thin):</li>
+<li>They said: Adding business owners to the life lane was Carla’s own idea. Going above 50 trucks was also her idea. Armando said &quot;anybody in the service field&quot; for contractors, and Carla agreed.</li>
+<li>We added: We have not added anything beyond what was said on Call 1. If the life list comes back thin, ask her about adding pre-retirees. On Call 1, Armando named pre-retirees as one of the buyers our financial-advisor clients target.</li>
+</ul>
+<ul>
+<li>Check vs Call 1: This matches what was said on Call 1. Armando told her that California and Texas give her a large market for life insurance, but he did not give her a number.</li>
+</ul>
+<ul>
+<li>Too small?: We cannot tell until the list is pulled. If the life list from consumer data comes back thin, the business-owner lane is the honest way to widen it.</li>
+</ul>
+<p>Offer / value-prop read (required — honest)</p>
+<ul>
+<li>What’s sharp (easy to invite on): Her renewal review is a real difference. Every renewing policy is compared to last year’s policy. If an important coverage was removed, her team tells the client and finds another option. She said most agents just sell a policy and never manage it, so this gives a clear &quot;blind spots&quot; message.</li>
+</ul>
+<ul>
+<li>What’s fuzzy or weak (closer must know): The life offer was not described as clearly as the property and casualty offer. Her life buyer is broad, from high-net-worth people down to middle earners. Her contractors also came in to cut their fleet auto cost, which is a price message, and she does not want price shoppers. Also, we did not hear any of her client results in numbers on Call 1, so we have no proof numbers for her webinar yet.</li>
+</ul>
+<ul>
+<li>Positioning line for the webinar if we pick today: CRIA is the advisor who actually reads your renewal, so you find out what your insurance quietly stopped covering before you need it.</li>
+</ul>
+<p>Webinar strategy (required — keep OUR motion vs THEIR story separate)</p>
+<ul>
+<li>Core problem lane (one, not five): Successful people pay for a CPA and a lawyer, but nobody is checking their life and home coverage for gaps.</li>
+</ul>
+<ul>
+<li>Who we invite first, then next: We invite the Ideal life list first. Then we invite the broader honest life list. Contractors come next, as a second campaign with its own topic.</li>
+</ul>
+<ul>
+<li>Story arc (THEIR webinar to THEIR audience):</li>
+<li>Hook: Your insurance can quietly drop important coverage at renewal, and nobody tells you.</li>
+<li>Problem: Insurance is complicated for most people. You will not read 100 pages of fine print, and the agent who sold you the policy is busy selling to someone else.</li>
+<li>Proof: Carla walks through her method. Her team compares each renewal to last year’s policy and flags anything that was removed. Ask her for one or two real client stories to use here.</li>
+<li>Offer: She offers a review of the person’s insurance and life coverage with one of her advisors.</li>
+<li>Easy CTA (call to action): The viewer books a short review call with a CRIA advisor.</li>
+</ul>
+<ul>
+<li>Copy / talk-track beats:</li>
+<li>&quot;You pay a CPA so you don’t miss something on your taxes. Who is checking your insurance?&quot;</li>
+<li>&quot;Every renewal can quietly remove coverage, and most people never read what changed.&quot;</li>
+<li>&quot;If you earn well but don’t have a financial advisor, nobody may have looked at your life coverage.&quot;</li>
+<li>&quot;We don’t just sell you a policy. We review it at every renewal and tell you what changed.&quot;</li>
+</ul>
+<ul>
+<li>Cadence: Run one topic first, which is the life lane. Test it, and then add the contractor lane as its own campaign. Armando told her the first webinar can run within about 30 days.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Jason Rotman, Elevate Financial. Jason is a licensed financial advisor and life specialist. He used this webinar and calendar-invite approach with high-net-worth and executive buyers that people assume will not attend a webinar. This fits because life is her first lane, and it answers her question about how well we do with life. Use it when she asks about life or doubts that wealthy buyers will show up. Link to send: https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS</li>
+</ul>
+<ul>
+<li>Ken Baron and Rory Zipper, ZEA Financial. They are fiduciary planners who had already spent money on lists, cold callers, and dinner seminars in a field with strict compliance rules. Then they used the same calendar-invite approach. This fits because Carla is tired of paying for leads that waste her advisors’ time. Use it when she compares us to internet leads or Google Ads. Link to send: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Carla is the only person on the call. She spoke for the budget and the direction on Call 1, and no co-decider was named. She cares about appointment quality, cost per appointment, and clear line-item pricing. Ask early whether anyone else needs to sign off.</li>
+</ul>
+<ul>
+<li>Landmines from Call 1:</li>
+<li>Price: She already remembers about $500 a month in tools from the webinar. She will compare our cost per appointment to the $120 she paid per Google call lead.</li>
+<li>Contacts versus appointments: On Call 1, Armando said &quot;10,000 contacts per $30&quot; while explaining the difference between contacts and appointments. Be ready to explain that contacts are not appointments, so she does not treat that line as the price.</li>
+<li>Double invite: She said she registered once but got two calendar invites with two different titles. Be ready to explain this if she asks how her own campaign will look to her prospects.</li>
+<li>Advisor ramp: Her new advisors need six months to a year before they can handle big accounts. Show how the first campaign fits what her advisors can handle today. She said her team can take about 10 appointments a day across three advisors.</li>
+<li>Compliance: Armando said the hook must fit whatever her compliance team allows. Who approves her marketing was not discussed, so ask her.</li>
+<li>Follow-up email: She asked for the Call 1 transcript. Make sure the email with the transcript and the case studies went out before Friday.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Jean Brewster · Call 1 · 4:15 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jean Brewster · BrandStory Architech · Call 1 · Fri Oct 9, 2026 · 4:15 PM CT · Armando Valencia</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Jean Brewster is the Chief Operating Officer of BrandStory Architech, a creator-led marketing consultancy.</li>
+<li>She is based in White Plains, New York.</li>
+<li>She was Executive Managing Director at Garth Group, her own strategy and analytics firm.</li>
+<li>Earlier in her career she held strategy and growth roles at Mastercard and American Express.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>BrandStory Architech helps brands show up in culture through influencers, music, TV, and film partnerships.</li>
+<li>It also offers PR, brand identity work, and AI-driven audience insights.</li>
+<li>She runs it with CEO and co-founder Pauline Malcolm. The company is small, with about four to ten people.</li>
+<li>The firm has produced original digital series for the OWN Network, including Dating Download, which premiered in July 2026.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Brands that want to reach younger and more diverse audiences through creators and entertainment.</li>
+<li>Marketing leaders who need storytelling that still ties back to revenue.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Brands struggle to show up in culture in a way that feels real and still drives sales.</li>
+<li>BrandStory Architech pairs creators and entertainment partners with data, so the creative work can be measured and scaled.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>She registered for the QS webinar, attended it, and booked this Roadmap call.</li>
+<li>Her booking form said revenue is not yet steady, deal sizes are about $3,000 to $10,000, and the team makes decisions together. Ask whether CEO Pauline Malcolm should be part of the next step.</li>
+<li>They already make media for a major network, so they have proof they can put on a webinar.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>In 2022 she stepped away from her firm to complete a full-time, 13-week data science bootcamp at General Assembly, and she wrote about it. Asking what pushed her to go back to school mid-career is a warm opener. (her LinkedIn article “My Journey to Becoming a Data Scientist”)</li>
+<li>She attended her first Cannes Lions festival in 2024 with the BrandStory team. (her LinkedIn post about Cannes Lions)</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
