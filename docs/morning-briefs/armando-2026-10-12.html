@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Mon Oct 12, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Mon Oct 12, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>11:30 AM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/FyFvwYryEFZKDjRzMB9a">Timothy Mutua</a> · Call 1 · KPT Social</strong>
+      </div>
+      <div class="slot">
+        <strong>4:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/pQWitak2NCSc66VB0nHZ">Jean Brewster</a> · Call 1 · BrandStory Architech</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Timothy Mutua · Call 1 · 11:30 AM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Timothy Mutua · KPT Social · Call 1 · Mon Oct 12, 2026 · 11:30 AM CT · Armando Valencia</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Timothy Mutua is the founder of KPT Social, which he describes as an AI agency.</li>
+<li>He is based in Hillsboro, Oregon, in the United States.</li>
+<li>Before KPT Social he spent more than six years in property management, including work as an Assistant Property Manager at Sequoia.</li>
+<li>He also says he built ProperSync, an AI automation kit for landlords and property managers.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>KPT Social builds AI chatbots, CRM hookups, automated follow-ups, and digital marketing campaigns.</li>
+<li>He says on LinkedIn that he works as a solopreneur, so this looks like a one-person business today.</li>
+<li>The kptsocial.com website is not live with business content right now.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Landlords and small to mid-sized property managers.</li>
+<li>Small businesses in real estate and hospitality that want to automate lead follow-up and customer service.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Property teams lose leads and time chasing messages, follow-ups, and rent by hand.</li>
+<li>KPT Social sets up AI tools that answer leads fast and handle the repeat work, so the owner can focus on growth.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He attended the QS webinar before booking this call.</li>
+<li>He is active in large Skool groups about AI automation agencies, so he likely compares many offers.</li>
+<li>He has publicly said that chasing leads by hand is exhausting and inefficient, so time savings will matter to him.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He sums up his own story as swapping property management for AI. Asking what made him take that leap is an easy, warm start. (his Skool profile bio)</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Jean Brewster · Call 1 · 4:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jean Brewster · BrandStory Architech · Call 1 · Mon Oct 12, 2026 · 4:00 PM CT · Armando Valencia</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Jean Brewster is the Chief Operating Officer of BrandStory Architech, a creator-led marketing consultancy.</li>
+<li>She is based in White Plains, New York.</li>
+<li>She was Executive Managing Director at Garth Group, her own strategy and analytics firm.</li>
+<li>Earlier in her career she held strategy and growth roles at Mastercard and American Express.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>BrandStory Architech helps brands show up in culture through influencers, music, TV, and film partnerships.</li>
+<li>It also offers PR, brand identity work, and AI-driven audience insights.</li>
+<li>She runs it with CEO and co-founder Pauline Malcolm. The company is small, with about four to ten people.</li>
+<li>The firm has produced original digital series for the OWN Network, including Dating Download, which premiered in July 2026.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Brands that want to reach younger and more diverse audiences through creators and entertainment.</li>
+<li>Marketing leaders who need storytelling that still ties back to revenue.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Brands struggle to show up in culture in a way that feels real and still drives sales.</li>
+<li>BrandStory Architech pairs creators and entertainment partners with data, so the creative work can be measured and scaled.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>She registered for the QS webinar, attended it, and booked this Roadmap call.</li>
+<li>Her booking form said revenue is not yet steady, deal sizes are about $3,000 to $10,000, and the team makes decisions together. Ask whether CEO Pauline Malcolm should be part of the next step.</li>
+<li>They already make media for a major network, so they have proof they can put on a webinar.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>In 2022 she stepped away from her firm to complete a full-time, 13-week data science bootcamp at General Assembly, and she wrote about it. Asking what pushed her to go back to school mid-career is a warm opener. (her LinkedIn article “My Journey to Becoming a Data Scientist”)</li>
+<li>She attended her first Cannes Lions festival in 2024 with the BrandStory team. (her LinkedIn post about Cannes Lions)</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
