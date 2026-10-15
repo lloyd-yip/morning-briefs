@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Thu Oct 15, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Thu Oct 15, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>6:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/cpNQg9r5o2jnlTyNQj5F">Pablo Copelli</a> · Call 1 · Bronixia</strong>
+      </div>
+      <div class="slot">
+        <strong>7:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/xwny4FLhqQbfvsCK7XpS">Ger Schuivens</a> · Call 2 · CRDL</strong>
+      </div>
+      <div class="slot">
+        <strong>9:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/ytETyIkQmEo0GJ8i8fM4">Graham Mitchell</a> · Call 1 · Citwell</strong>
+      </div>
+      <div class="slot">
+        <strong>10:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/fYWrTv0uNAgoFC2NvfRB">Sylvie Milverton</a> · Call 3+ · Lynx Educate</strong>
+      </div>
+      <div class="slot">
+        <strong>11:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/EWAUDSH2KCXJanUpc6iB">Fran Arbulu</a> · Call 3+ · 4Biz</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Pablo Copelli · Call 1 · 6:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Pablo Copelli · Bronixia · Call 1 · Thu Oct 15, 2026, 6:00 AM ET (12:00 PM Barcelona) · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Pablo Copelli is the CEO of Bronixia, a small software and AI development company in Barcelona. He has run it since August 2022, and Spain&#x27;s company register lists him as its sole director and sole owner.</li>
+<li>He is a technical founder. His LinkedIn shows CTO roles at SensationALL (a virtual reality company), Innovation Ark, and CardinalTech, plus founder and CTO of a blockchain project called Padlock.</li>
+<li>He is active in the Barcelona startup scene. He went through Wayra&#x27;s Acelera Startups Barcelona program in 2024, and he was at 4YFN, the startup event that runs alongside Mobile World Congress, in March 2026.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Bronixia builds custom software and AI for companies. Its site lists private AI models, AI agents, system integrations and automation, mobile apps, e-commerce platforms, tech consulting, and ongoing support.</li>
+<li>The company started out in web3, metaverse, and video game work, and it has since moved toward AI and custom software for businesses. Its LinkedIn page also promotes AI Act compliance work for small and mid-sized companies, which means diagnostics, policies, and training for the new EU AI rules.</li>
+<li>It is a small team. LinkedIn shows about five people.</li>
+<li>Pricing is quote-only. The site shows logos including Y Combinator, Crowe, Hospital del Mar Barcelona, and Aztlan Capital Partners.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Companies and startups that need software that standard tools cannot handle.</li>
+<li>The site does not name one industry or company size, so the target customer looks broad today.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Companies want to use AI and automation but do not have the in-house engineers to build it properly.</li>
+<li>Bronixia builds the custom system, connects it to the tools the company already uses, and keeps it running.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He registered for our webinar, attended it, and then booked, so he has already seen how the system works.</li>
+<li>The only way to buy from Bronixia today is a free 30-minute call booked from the site. There is no lead magnet, newsletter, or gated content, so ask where his current clients actually come from.</li>
+<li>His public posts warn companies against trying to solve everything with one giant AI prompt and push a step-by-step approach instead. Expect him to like a specific, phased plan more than big promises.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Ger Schuivens · Call 2 · 7:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Ger Schuivens · CRDL (Cradle) · Call 2 · Thu Oct 15, 2026 · 7:00–7:55 AM ET (1:00 PM CET) · Edwin Chung</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: CRDL sells Cradle, a patented touch-and-sound instrument for people in dementia and palliative care who can no longer speak. A unit costs about €7,000, or about $10,000, and CRDL sells directly in the Netherlands and through distributors in 20 other countries. Revenue is about $1.5 million, and they sell 200 to 300 units a year. Ger said, &quot;I&#x27;m looking for a solution… this is not… kicking the tires.&quot;</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Focused, efficient, and serious. He believes deeply in the product and is a little frustrated that more trade shows do not add reach.</li>
+<li>Goals they want but can&#x27;t hit yet: 50 leads a week from location and care directors, up from about 50 a month, and growth from 200–300 units a year to 500–1,000.</li>
+<li>Why it matters: His team and distributors can already handle two to three times the volume. Only demand is missing, and he believes 50,000 to 60,000 units is realistic.</li>
+<li>What&#x27;s holding them back: Demand depends on conferences and some social media. Ads gave likes but no organized demand, and nobody searches Google for a product they don&#x27;t know exists.</li>
+<li>Consequences if nothing changes: Sales stay flat at 200 to 300 units a year, which is where they have been since 2023.</li>
+<li>Fears that will show up in the decision: Whether his small team can handle the workload, whether leads can reach distributors for in-person demos, and whether there are references in his field.</li>
+<li>Objections still open: References he can talk to, ideally close to his field and across several countries. The distributor handoff for on-site demos. The workload, which he said is fine across three people but hard on one. Keeping the message on quality of life, because ROI talk can backfire with care staff.</li>
+<li>Who&#x27;s joining Call 2: Ger said he will ask &quot;one or two of the other members who need to be involved,&quot; and he has &quot;two other people in mind.&quot; He said the &quot;marketing lady is not available.&quot; No names were given, so confirm at the start who joined.</li>
+<li>What we promised to walk: A full top-to-bottom strategy covering the size of the target market, how we get in front of care home directors without feeling spammy, how the webinar builds trust, and how this produces leads. Edwin also said he would center the call on references and international rollout.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Ger runs CRDL from Maastricht. Buyers are care homes, mainly the location manager or director of care, plus quality of life, well-being, quality of care, or activities directors. Their problem is residents in late-stage dementia or palliative care who are socially isolated because they can no longer speak.</li>
+<li>Company goals / dream state (from Call 1): Steady demand of 50 leads a week, about 30 demos a week, and about 15 sales within eight to nine months, growing to 500 to 1,000 units a year. He wants to pilot in one or two markets first and then roll out country by country.</li>
+<li>ICP dream state (what THEIR buyers want): Real connection and quality of life for residents who cannot speak. Families want to see their loved one cared for as a person, and in US private care, that also helps occupancy and family trust.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>Ger is an expert buyer. He ran demand generation in Europe for a large marketing services company with clients like IBM, Lenovo, and HP, so show real mechanics and numbers, not basics.</li>
+<li>Every sale goes through an on-site demo by a distributor. The plan must show how leads get routed to the local distributor, and Ger said distributors do not yet know this new process.</li>
+<li>He suggested the pilot himself: one or two markets first, then roll out by country and language.</li>
+<li>Budget timing matters. About 50% of revenue lands in Q4, and budgets often release in January, so expect a six-to-twelve-month lag before leads become revenue.</li>
+<li>The call is short notice and he is flying to the US on Saturday for the Philadelphia conference starting October 22, so lock next steps before he travels.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): Care homes and memory care units in CRDL&#x27;s distributor countries, starting with one or two pilot markets. In the US, the target is private care, both for-profit operators and not-for-profit foundations, including senior living villages with memory care. Government-funded Medicaid homes are left out. Buyer titles are location manager or administrator, director of care or nursing, and directors of quality of life, well-being, quality of care, and resident activities. Corporate purchasing is left out as a first touch.</li>
+<li>Ideal ICP (tight — who they said they want most): Location managers and care, quality of life, and well-being directors at private elderly care homes with 50 or more residents and memory care units in the pilot market. We have not counted the people yet.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): The same titles across all of CRDL&#x27;s distributor markets, plus palliative care units (about 20 residents) and care for people with mental disabilities. We have not counted the people yet. For reference, Ger estimated about 150,000 units if every care home in his markets bought one. That is his unit estimate, not a people count.</li>
+<li>How we got the number: Not run yet. On the demo, show the care homes first, then the matching titles, then the contacts. This needs a Deal Forge V2 job, which uses credits, so get Edwin&#x27;s OK first.</li>
+<li>What we widened (if thin): Ger named palliative and disability care himself. The extra titles (administrator, director of nursing) are ones we added.</li>
+<li>Check vs Call 1: Ger gave no people count. His figures were about 2,500 units sold to date and about 2% market penetration.</li>
+<li>Too small?: Not known until counted.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): A patented product that is hard to copy, with a very emotional outcome. On-site demos convert at 75% to 80%, and the product held about 45% share in the Netherlands.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): Video does not convince people like an in-person demo does, so the webinar must show real interaction footage. The ROI and occupancy angle must stay light for care staff.</li>
+<li>Positioning line for the webinar if we pick today: &quot;How care teams reconnect with residents who can no longer speak, and what that means for residents, families, and staff.&quot;</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): Residents with advanced dementia live in social isolation because words are no longer available.</li>
+<li>Who we invite first, then next: Invite the Ideal list first, which is location managers and care, quality of life, and well-being directors in one or two pilot markets. Then expand to the broader honest list across other distributor countries and palliative and disability care.</li>
+<li>Story arc (THEIR webinar to THEIR audience):</li>
+<li>Hook: What happens to connection when words disappear?</li>
+<li>Problem: In late-stage dementia, most care touches are functional, like hygiene, food, and bathing, and residents feel alone.</li>
+<li>Proof: Video of real Cradle interactions, about 2,500 units in use, and about 45% of care homes in the Netherlands.</li>
+<li>Offer: Cradle, delivered and demonstrated by the local distributor.</li>
+<li>Easy CTA: Book an on-site demonstration.</li>
+<li>Copy / talk-track beats:</li>
+<li>&quot;Connection without words.&quot;</li>
+<li>&quot;Moments where a resident feels another person is there just for them.&quot;</li>
+<li>&quot;Families see their loved one still cared for as a person.&quot;</li>
+<li>&quot;Simple to use, with the technology hidden inside.&quot;</li>
+<li>Cadence: One market and one language first. Test the invite titles, then add countries through the distributors.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Gene Rosendale — Advocate Advisors. Gene is a founding partner at a boutique M&amp;A advisory firm in Chicago and a marketing-literate buyer who vetted vendors. Before using the system he had paid agencies for years with almost nothing to show for it. Running his own webinar system, he got 614 attendees and 61 booked sales calls across 12 webinars. Pull it when Ger asks for results and proof of the process, or when the &quot;is this another agency&quot; doubt comes up. Link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+<li>There is no healthcare or care-home client with its own due-diligence page and proven results on file. Say this honestly if Ger asks for a reference in his field. Do not invent one, and check with the team whether any live reference in care or healthcare exists.</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room / who signs / what each cares about: Ger runs CRDL and leads the decision. He cares about professionalism, references, international rollout, and workload. One or two colleagues may join (names unknown), and the marketing lead will not. Distributors are not part of the decision, but they must accept the lead handoff.</li>
+<li>Landmines from Call 1:</li>
+<li>He wants references close to his field, and we have none on file.</li>
+<li>Every sale needs an in-person demo, so plan for the distributor handoff and lead cost.</li>
+<li>Price was not discussed.</li>
+<li>Pushing ROI too hard with care-focused buyers could backfire.</li>
+<li>He travels Saturday and is at the Philadelphia conference from October 22.</li>
+<li>Edwin said &quot;16 leads a week&quot; on the call by mistake. Ger&#x27;s goal is 50 a week.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Graham Mitchell · Call 1 · 9:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Graham Mitchell · Citwell · Call 1 · Thu Oct 15, 2026, 9:00 AM ET (Boston) · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Graham Mitchell is Supply Chain Practice Leader at Citwell, based in Greater Boston. He has held the role since December 2024.</li>
+<li>His LinkedIn shows more than 30 years of experience. Before Citwell he was Chief Operating Officer at Zea Biosciences, a Boston-area plant biotech company, Managing Director at the ProTerra Foundation, a nonprofit that promotes sustainable and traceable food and feed supply chains, and Senior Program Director at Conservation International.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Citwell is a supply chain and operations consulting firm founded in 2004 and headquartered in Paris. It has about 100 to 150 people across France, the US, and the UK.</li>
+<li>It opened its first US office in Boston in 2023, aimed at pharma, life sciences, food, chemicals, retail, and distribution companies.</li>
+<li>It sells consulting from strategy to execution, a team-reinforcement service called Talentwell that places experienced people inside client teams during busy periods, and certified training in supply chain, logistics, Lean, and project management.</li>
+<li>Its site cites a 2025 client survey by the research firm INIT, which says 100% of clients trust Citwell.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Operations and supply chain leaders at mid-size and large companies in aerospace and defense, food, automotive, healthcare, luxury, pharma, retail and e-commerce, and transport.</li>
+<li>In the US, the Boston office focuses on pharma and life sciences, specialized distribution, and industrial companies.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Companies with slow, costly, or fragile supply chains need help planning better, cutting waste, and getting through big changes such as new systems or network redesigns.</li>
+<li>Citwell diagnoses the problem, builds the roadmap, and helps teams carry it out.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He registered for our webinar, and he replied to the booking reminder before the call, so he is engaged.</li>
+<li>Citwell gets customers today through masterclasses, conferences, a newsletter, and a contact form. Ask how the US practice is winning new clients, since the Boston office is only about two years old and competes against much bigger firms.</li>
+<li>He likely owns growth for the US supply chain practice, while the CEO and partners sit in France. Find out who else would need to say yes.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He advises Grain Zero, a gluten-free, grain-free granola brand, and he posted excitedly when it hit Hannaford shelves in July 2025 (his LinkedIn post about Grain Zero at Hannaford).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Sylvie Milverton · Call 3+ · 10:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Sylvie Milverton · Lynx Educate · Call 3+ · Thu Oct 15, 2026 · 4:00 PM France time (9:00 AM CT) · Edwin Chung</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Sylvie already said yes to the system itself. On Call 2 she said &quot;I&#x27;m convinced&quot; and &quot;I&#x27;m for it,&quot; and she rated herself an 8 out of 10 with money set aside.</li>
+</ul>
+<ul>
+<li>Money paused the close, not belief. She said she cannot commit more money until she has fundraising visibility, and she expects that by the end of the week of October 12.</li>
+</ul>
+<ul>
+<li>Two things happen before Call 3. She met with Chrissy right after Call 2 about her sales approach, and she is holding a team off-site to line up priorities, resources, and investment. We do not know Chrissy&#x27;s role beyond that, so ask instead of guessing.</li>
+</ul>
+<ul>
+<li>Edwin asked her to bring someone who handles finances or resource planning to Call 3. She said &quot;Cool&quot; but did not name anyone, so she may come alone.</li>
+</ul>
+<ul>
+<li>The price is already on the table. It is $8,000 for the 6-month engagement plus about $700 a month for tools, the assistant, and software. She can pay the $8,000 upfront, or finance it over 12 months at about $760 a month, which is $9,200 in total.</li>
+</ul>
+<ul>
+<li>Two things changed after the call. On October 7 her plan was switched to UK and Europe only, which cut her list from 153,883 to about 62,548 decision-makers and the suggested monthly outreach from about 51,000 to about 21,000. Edwin also sent her follow-up email on October 7 with the page, the case-studies link, Cedric, the $8,000 price, and the October 15 date.</li>
+</ul>
+<ul>
+<li>The ball is in her court on money. Edwin owes her the due diligence session he offered, which means a plan that fits the cash she actually has.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>She is bought in but blocked. Her energy rose during the calendar invite and webinar parts, and she ended with &quot;I think this could really help us.&quot;</li>
+</ul>
+<ul>
+<li>She is stressed and stretched thin. She said her to-do list was &quot;crazy&quot; and that &quot;we&#x27;re all totally overstressed,&quot; and her RevOps (revenue operations) person leaves about a week after Call 2.</li>
+</ul>
+<ul>
+<li>Her urgency is real and it is her own. She said UK social value rules change in January, so &quot;this is the moment&quot; when buyers will listen. On Call 1 she also said that by February or March she must either grow revenue or cut costs.</li>
+</ul>
+<ul>
+<li>The fears still alive are simple. She fears spending cash before fundraising is clear, having nobody to own the system, and her custom offer not pulling in enough of the right buyers.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Fundraising visibility (primary). She will not commit money until she knows her fundraising picture, so every other answer depends on this one.</li>
+</ul>
+<ul>
+<li>Who owns the system (secondary). Her RevOps person is leaving, her business development person is &quot;not great,&quot; and she thinks hiring a part-time head of sales takes about a month.</li>
+</ul>
+<ul>
+<li>Custom offer and several buyer types (secondary). She sells fairly custom projects to UK social value teams and CSR (corporate social responsibility) teams, and she worries one webinar cannot speak to all of them.</li>
+</ul>
+<ul>
+<li>The smaller list (secondary). On Call 2 Edwin&#x27;s math used 100,000 invites a month, but her new UK and Europe plan suggests about 21,000 a month, so the numbers must be redone honestly.</li>
+</ul>
+<ul>
+<li>The financing fee (minor). She worked out that financing costs about $1,200 extra and said &quot;you could be nicer to me on the financing fee.&quot;</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: &quot;I can&#x27;t commit to more money until I get fundraising visibility.&quot;</li>
+</ul>
+<ul>
+<li>Status: still open.</li>
+</ul>
+<ul>
+<li>Overcome with: Start Call 3 by asking what the off-site and the Chrissy meeting decided. Then show that one new client pays for the whole program several times over, using her own $50,000 average deal against the $8,000 fee plus 6 months of tools at $700, which is $12,200.</li>
+</ul>
+<ul>
+<li>Full story to tell: Tejas Parikh runs Akshar Consulting in the UK and sells finance consulting to CFOs and finance directors. His first webinar brought 250 registrations, more than 80 attendees, and 15 qualified sales calls. In his own words, about five calls a month turned into four clients worth about £100,000 each over their lifetime.</li>
+</ul>
+<ul>
+<li>How to deliver it: Tell it loosely, like it just came to mind, and then tie it back to her deal size.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;You don&#x27;t need hundreds of deals for this to pay back. With your deal size, one client covers the whole thing about four times.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Is it madness to put in a lead gen tool when I don&#x27;t have someone to own it?&quot;</li>
+</ul>
+<ul>
+<li>Status: half-handled. She called 30 hours of setup &quot;totally reasonable,&quot; but her RevOps person is leaving.</li>
+</ul>
+<ul>
+<li>Overcome with: Remind her that the first month is about 30 hours of her time, then 5 to 10 hours a month. The trained assistant does the manual work, and her new part-time head of sales can take over once hired, because no sales calls arrive until month two anyway.</li>
+</ul>
+<ul>
+<li>Full story to tell: Nick Uresin runs Podcast Pros and also leads a software company for Amazon sellers. He already knew LinkedIn Sales Navigator and outreach tools well, just like Sylvie. He went from his sales call with us to a running webinar in eight days, and he said the targeting and messaging strategy was the real value, not the tools.</li>
+</ul>
+<ul>
+<li>How to deliver it: Use it only for speed and for &quot;I already do outreach myself,&quot; not as a revenue story.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;You already know LinkedIn better than most people we work with, so the setup will feel familiar. The hard part is the strategy, and that is what we bring.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Our offer is bespoke, and we have a couple of different buyers.&quot;</li>
+</ul>
+<ul>
+<li>Status: half-handled. She said help packaging the offer brought her closer to a 9 or 10.</li>
+</ul>
+<ul>
+<li>Overcome with: Agree to start with one buyer and one offer, such as UK social value teams facing the January rule change. QS growth experts help her package that offer first, and the second webinar for CSR teams comes only after the first one works.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo runs Cinnamon Consulting, a niche firm that fixes partner programs for software companies. Before that, he built the partner program at Minit, a process-mining software company that grew from $3 million to $6 million and was bought by Microsoft. With us, his webinars drew 63, then 128, then about 300 attendees, and the first two produced 16 and then 50 sales calls.</li>
+</ul>
+<ul>
+<li>How to deliver it: Tell it half-offhand, and stress that the niche made it easier because the message could be very specific.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;Your market being specific is usually what makes this work, not what breaks it. We pick your sharpest buyer first and nail that one.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Those numbers are a lot higher than anything we do now.&quot;</li>
+</ul>
+<ul>
+<li>Status: half-handled. She said she does not doubt it, but that it is far above where Lynx is today.</li>
+</ul>
+<ul>
+<li>Overcome with: Be straight that removing the US made the list smaller, then redo the math live with the same careful rates Edwin used on Call 2. At 21,000 invites a month, those rates give about 63 attendees, about 9 booked calls, about 5 held calls, and close to 1 new client a month, which is still about $40,000 of new yearly contracts each month at her $50,000 average.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo of Cinnamon Consulting also fits here. He said his cost per sales call fell from about $2,000 to about $10, and the time he spent on it each month fell from about 40 hours to about 3 hours.</li>
+</ul>
+<ul>
+<li>How to deliver it: Lead with her smaller, honest numbers first, and then use Cedric to show how the cost and time drop once it runs.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;Even with the smaller list and careful rates, this is close to one new client a month. That is more than you close now, with fewer hours from you.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;15% is a huge financing fee. You could be nicer to me on that.&quot;</li>
+</ul>
+<ul>
+<li>Status: still open, but mild.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not invent a discount on the call. Before Call 3, ask leadership what flexibility exists, if any, and only offer what is approved. Otherwise remind her that paying upfront saves the $1,200, and financing keeps her monthly cash low while fundraising settles.</li>
+</ul>
+<ul>
+<li>Full story to tell: No client story fits this one. Handle it plainly and honestly.</li>
+</ul>
+<ul>
+<li>How to deliver it: Stay calm and friendly, because she joked about it rather than got angry.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;If cash timing is the worry, the monthly plan is the lighter path. If you can pay upfront, you keep the $1,200.&quot;</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<p>Tejas Parikh, Akshar Consulting. Use him when Sylvie worries about cost or about buyers being too senior.</p>
+<p>Tejas is a career finance leader who started a UK consulting firm that sells to CFOs and finance directors. He worried his market was too small and too senior for webinars, but his first webinar brought 250 registrations, more than 80 attendees, and 15 qualified sales calls. He says about five calls a month turned into four clients worth about £100,000 each.</p>
+<p>Link for Sylvie: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</p>
+<p>Cedric Le Rouzo, Cinnamon Consulting. Use him for &quot;my offer is too custom&quot; and for time and cost worries.</p>
+<p>Cedric has more than 20 years in partner sales, and he built the partner program at Minit, which grew from $3 million to $6 million and was bought by Microsoft. He then started Cinnamon Consulting, a niche firm for software companies, and his webinars drew 63, then 128, then about 300 attendees. The first two webinars produced 16 and then 50 sales calls, and he says his cost per sales call fell from about $2,000 to about $10.</p>
+<p>Link for Sylvie: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</p>
+<p>Nick Uresin, Podcast Pros. Use him for a fast start and for &quot;I already do outreach myself,&quot; but never as a revenue story.</p>
+<p>Nick is a software founder with more than 20 years in tech who already used LinkedIn Sales Navigator and outreach tools. He went from his sales call with us to a live webinar in eight days. He said the targeting and messaging strategy was the real value, not the tools.</p>
+<p>Link for Sylvie: https://quantums-institute.com/due-diligence-agencies#section-S7HoLH08fh</p>
+<p>Keep Cedric&#x27;s facts straight. On Call 2, Cedric came across as a client QS grew from $3 million to $6 million.</p>
+<p>That growth happened at Minit when Cedric built its partner program, before he started his own firm. His results with us are the webinar numbers above, so tell it that way if she has read the page.</p>
+<h3>Path to close</h3>
+<ul>
+<li>Before Call 3, Edwin checks with leadership on any financing or start-date flexibility, and he gets the revenue math ready on the UK and Europe numbers of about 62,548 people and 21,000 invites a month.</li>
+</ul>
+<ul>
+<li>Open Call 3 by asking how the Chrissy meeting and the off-site went, and what her fundraising picture looks like now. Let her talk first, because her answer decides the rest of the call.</li>
+</ul>
+<ul>
+<li>Run the due diligence session Edwin promised. Show the UK and Europe list, the smaller monthly math, and the full cost of $8,000 plus about $700 a month.</li>
+</ul>
+<ul>
+<li>Settle who owns it. She owns the first 30 days at about 30 hours, the assistant does the manual work, and her new part-time head of sales takes over once hired.</li>
+</ul>
+<ul>
+<li>Tie the start date to her own deadline. If she starts in late October, Edwin&#x27;s timeline puts first sales calls around December, which is right before the January rule change.</li>
+</ul>
+<ul>
+<li>Ask for the decision directly. She can pay $8,000 upfront and save $1,200, or finance it at about $760 a month.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If her fundraising is still unclear, then offer the monthly plan as the lightest cash path, ask the exact date she will know, and book that date before hanging up.</li>
+</ul>
+<ul>
+<li>If she brings a finance person, then lead with the payback math, because one $50,000 client covers the $12,200 six-month cost about four times.</li>
+</ul>
+<ul>
+<li>If she asks for a better financing fee, then only offer what leadership already approved. If nothing was approved, say you will check, and do not make up a number.</li>
+</ul>
+<ul>
+<li>If she says her team is not ready, then remind her no calls come in until month two, and tell the Nick story about going live in eight days.</li>
+</ul>
+<ul>
+<li>If she pushes on the 100,000 number from Call 2, then be honest that removing the US shrank the plan to about 21,000 invites a month, and walk through the smaller math together.</li>
+</ul>
+<ul>
+<li>If she asks about the $20,000 done-for-you offer because she has no time, then explain it, but do not push it while cash is her main worry.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>The first choice is a signed agreement with payment, upfront or financed, and a start date in October so her first sales calls from the system land before January. The second choice is a named decision date with her money decision-maker on the calendar before the call ends. If neither happens, get a clear &quot;not moving now&quot; and the reason, and never leave with &quot;I&#x27;ll think about it.&quot;</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Fran Arbulu · Call 3+ · 11:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Fran Arbulu · 4Biz · Call 3+ · Thu Oct 15, 2026 · 11:00 AM ET (5:00 PM Madrid) · Edwin Chung</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>On Call 2, Antonio Saramago told Edwin how he wants to decide. If the method and the figures look good, he said &quot;let&#x27;s do a first test,&quot; and then they could add sessions for their other products during the year. That is a clear path to a yes, but only after he sees the numbers.</li>
+</ul>
+<ul>
+<li>The close paused because Antonio wanted the economics and the method before he would talk. He joined late, said he had about 20 minutes, and offered to cancel and meet again once he had something to study. Fran backed him and explained that, as sellers, they often ask a vendor for a quote before the detailed proposal.</li>
+</ul>
+<ul>
+<li>Edwin sent the promised overview email to both of them on October 1. It walks through six parts, from finding prospects to costs and expected return, and it says our program is a six-month engagement. It does not include a price, and we have no written reply from either of them.</li>
+</ul>
+<ul>
+<li>Antonio is the co-decider who owns new business, and Fran is the champion who brought us in. Both of them accepted the original October 8 invite, and Antonio accepted it again on October 7. The meeting then moved to today, so confirm at the start that both of them are joining. Their new business director Javier was named on Call 1, but we do not know if he will join.</li>
+</ul>
+<ul>
+<li>No price from us is on the table yet. Their yardstick is the outside lead firm they pay about €3,000 a month for roughly ten meetings. They keep about 26% margin, and Fran said they win one or two deals from every ten good meetings.</li>
+</ul>
+<ul>
+<li>Fran said most deals for this product would run from about €10,000 to €100,000 a year. Their own price for the product is still not set, so treat these numbers as estimates.</li>
+</ul>
+<ul>
+<li>The ball is in our court. Edwin owes them a clear price and the payback math, and today is the meeting they set aside to judge it.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: They are cautious but open. Antonio is a numbers buyer who said on Call 1 that &quot;everything is figures and conversion,&quot; and on Call 2 he said both his time and Edwin&#x27;s time &quot;are expensive.&quot; Fran is warm and curious, and Fran is the one who explains what Antonio needs.</li>
+</ul>
+<ul>
+<li>What is creating urgency: Their launch window is short. Fran wants campaigns from mid-October into late November, and said anything after the first week of December is too late in Spain. Ethiack (the vendor whose AI security testing they resell) also just launched in Spain, which gives them a fresh story to tell.</li>
+</ul>
+<ul>
+<li>What is killing urgency: They are not in pain today. Almost all of their growth comes from upselling their current clients, and Fran called new business &quot;a risk,&quot; not a crisis.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: They fear paying for something they cannot earn back, because Fran called this &quot;a test.&quot; They fear another wasted lead service, like the anonymous leads they once bought. They also fear their small team gets flooded with meetings, and that a webinar only reaches people they already know.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Price and payback are the primary blocker. They will not move until they see a number and how it pays back against their outside lead firm, and we have not given them a price yet.</li>
+</ul>
+<ul>
+<li>Antonio&#x27;s time is a primary blocker too. He tried to cut Call 2 to about 30 minutes, and if he does that again today the call will stall again.</li>
+</ul>
+<ul>
+<li>Team capacity is a secondary blocker. Fran worries their small team becomes the bottleneck if meetings pile up, and Call 2 ended before Edwin could show how meetings are paced.</li>
+</ul>
+<ul>
+<li>The Spain-only market is a secondary blocker. They chose Spain only, so they need to see that the list is big enough before they pay for a test.</li>
+</ul>
+<ul>
+<li>Ethiack&#x27;s role is a secondary blocker. We do not know who presents in Spanish, whether Ethiack will help pay, or who takes the booked calls. Fran was due to meet Ethiack&#x27;s CEO the week of Call 2, and we do not know what came of it.</li>
+</ul>
+<ul>
+<li>Timing is a secondary blocker. The meeting moved from October 8 to October 15, so a mid-October start is now very tight, and every week of delay shrinks their fall window.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: &quot;Send us a proposal with a quote first, so we know if it fits our model.&quot;</li>
+</ul>
+<ul>
+<li>Status: This objection is still open, because we have not given them a price yet.</li>
+</ul>
+<ul>
+<li>Overcome with: Give a clear price for a first test today, and put it inside their own numbers. Start from the outside firm they pay about €3,000 a month, then show what one deal leaves them at their 26% margin. A €10,000 deal leaves them about €2,600. A €50,000 deal leaves them about €13,000.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo runs Cinnamon Consulting, a niche firm that fixes partner programs for software companies. Before that, he built the partner program at a software company called Minit. With us, his first webinar brought 63 attendees and 16 sales calls. His second webinar brought 128 attendees and 50 sales calls. He says his cost per sales call fell from about $2,000 to about $10.</li>
+</ul>
+<ul>
+<li>How to deliver it: Tell it loosely, as if it just came to mind, and then turn straight back to their margin math.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;You asked for the number first, so here it is, next to what one Ethiack deal leaves you. You can judge it the same way you judge your outside lead firm.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;We only have 30 minutes, so skip the strategy and give us the economics and the method.&quot;</li>
+</ul>
+<ul>
+<li>Status: This is half-handled. Edwin sent the overview so they could prepare, but Antonio may still try to cut the call short.</li>
+</ul>
+<ul>
+<li>Overcome with: In the first minute, ask how much time they both have today and confirm that the goal is a yes or no on a first test. Then lead with the price and the payback, and show the method only as proof behind the numbers.</li>
+</ul>
+<ul>
+<li>Full story to tell: None of our client stories fits this one. Handle it plainly and show that you respect his time.</li>
+</ul>
+<ul>
+<li>How to deliver it: Keep it short and direct, because Antonio said he wants to talk &quot;directly to the business.&quot;</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;I sent the overview so you could prepare. Let&#x27;s start where you asked, with the economics, and then decide together if a first test makes sense.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Spain only makes the market a lot smaller.&quot;</li>
+</ul>
+<ul>
+<li>Status: This is half-handled. They accepted Spain only, and Fran said &quot;that&#x27;s the reality,&quot; but nobody has shown them the real count yet.</li>
+</ul>
+<ul>
+<li>Overcome with: Show the Spain-only list on the portal. It found 23,086 people in Spain with the right security and IT titles. At the suggested pace of 8,000 invites a month, that is about three months of invites, which covers the fall window with some left for January. After that, a second vendor topic can go to the same list, which matches Antonio&#x27;s idea of sessions for each product.</li>
+</ul>
+<ul>
+<li>Full story to tell: Tejas Parikh runs Akshar Consulting in the UK and sells finance consulting to chief financial officers and finance directors. He worried his market was too small and too senior for webinars. His first webinar brought 250 registrations, more than 80 attendees, and 15 qualified sales calls. He says about five calls a month turned into four clients worth about £100,000 each over their lifetime.</li>
+</ul>
+<ul>
+<li>How to deliver it: Mention it half-offhand, and then compare his deal size to the size of an Ethiack deal.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;You do not need a huge list when each deal is worth tens of thousands of euros. What matters is reaching the right people in Spain, and this list shows they are there.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;The bottleneck will be us.&quot;</li>
+</ul>
+<ul>
+<li>Status: This is still open, because Call 2 ended before Edwin could show how meetings are paced.</li>
+</ul>
+<ul>
+<li>Overcome with: Show that the virtual assistant handles the manual work, like sending invites, reminders, and follow-up. Their team only steps in for booked calls. Agree on a weekly number of meetings Fran is comfortable with, and set the pace of invites to match it.</li>
+</ul>
+<ul>
+<li>Full story to tell: Felix Petzel runs Panda Media, a lead generation and consulting firm in Germany that sells to mid-size companies. He used to have a whole team doing outreach by hand. His first webinar with us brought 300 registrations, 90 attendees, and 17 qualified sales calls. He then cut that team down to one virtual assistant and now spends about an hour a week on the system.</li>
+</ul>
+<ul>
+<li>How to deliver it: Say it lightly, and stress that the assistant does the busy work, not their sales team.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;Your team only shows up for the calls that matter. The assistant handles the rest, and we set the pace to what your team can handle.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;It&#x27;s an untested system, and the product as well.&quot;</li>
+</ul>
+<ul>
+<li>Status: This is still open. Ethiack is new in Spain, and their own past webinars mostly reached people they already knew.</li>
+</ul>
+<ul>
+<li>Overcome with: Split the two doubts. For the product, point to Ethiack&#x27;s own Spanish users named in its launch press, such as Leroy Merlin, Cegid, CIE Automotive, and Salto Systems, and ask Fran what Ethiack&#x27;s CEO shared. For the system, show real names, titles, and companies from the Spain-only list, so they can see these are new people and not their current contacts.</li>
+</ul>
+<ul>
+<li>Full story to tell: Philipp Von Schulthess runs Oxoia, which sells technical AI software for building energy to careful buyers like cities and pension funds in Switzerland. He ran his webinars in German, filled them with that cautious audience, and closed the largest deal in his company&#x27;s history from one of them. His own time on the process dropped from about 16 hours a week to almost none once his assistant took it over.</li>
+</ul>
+<ul>
+<li>How to deliver it: Use it only to show that a technical product can sell to careful buyers in their own language. Do not use it as a revenue promise.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;Your buyers are careful, technical people too. The webinar works because it teaches first, in Spanish, before anyone is asked to buy.&quot;</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Tejas Parikh, Akshar Consulting. Tejas runs a UK firm that sells finance consulting to chief financial officers and finance directors, and he worried his market was too small and too senior for webinars. His first webinar brought 250 registrations, more than 80 attendees, and 15 qualified sales calls. He says about five calls a month turned into four clients worth about £100,000 each over their lifetime. Use this when they say Spain is too small or their buyers are too senior.</li>
+</ul>
+<p>Link for Fran and Antonio: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</p>
+<ul>
+<li>Cedric Le Rouzo, Cinnamon Consulting. Cedric spent more than 20 years in partner sales and built the partner program at Minit, a software company, before he started his own firm. With us, his first webinar brought 63 attendees and 16 sales calls. His second brought 128 attendees and 50 sales calls. He says his cost per sales call fell from about $2,000 to about $10. Use this when Antonio asks if the economics really work.</li>
+</ul>
+<p>Link for Fran and Antonio: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</p>
+<ul>
+<li>Felix Petzel, Panda Media. Felix runs a lead generation and consulting firm in Germany and used to have a whole team doing outreach by hand. His first webinar with us brought 300 registrations, 90 attendees, and 17 qualified sales calls. He cut that team down to one virtual assistant and now spends about an hour a week on it. He says his projects grew from about €10,000 to between €25,000 and €40,000. Use this when Fran worries about the team being flooded.</li>
+</ul>
+<p>Link for Fran and Antonio: https://quantums-institute.com/due-diligence-agencies#section-rpq6S3zvMtH</p>
+<ul>
+<li>Philipp Von Schulthess, Oxoia. Philipp sells technical AI software for building energy to careful buyers like cities and pension funds in Switzerland, and he ran his webinars in German. He closed the largest deal in his company&#x27;s history from one of those webinars. His own time on the process dropped from about 16 hours a week to almost none once his assistant took over. Use this when they doubt a technical product can sell through a webinar to careful buyers.</li>
+</ul>
+<p>Link for Fran and Antonio: https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</p>
+<h3>Path to close</h3>
+<ul>
+<li>Before the call, Edwin gets an approved price for a first 4Biz test. He also opens the portal and checks the Spain numbers he plans to show.</li>
+</ul>
+<ul>
+<li>Open by thanking them both for the time, and ask how long they have today. Confirm that the goal of this call is a yes or no on a first Ethiack test in Spain.</li>
+</ul>
+<ul>
+<li>Ask Fran what came out of the meetings with Ethiack&#x27;s CEO. Find out who can present in Spanish, whether Ethiack will help pay, and who takes the booked calls.</li>
+</ul>
+<ul>
+<li>Lead with the economics. Show the price first, and then their own payback math against the outside lead firm and their 26% margin.</li>
+</ul>
+<ul>
+<li>Show the method as proof behind the numbers, using the portal page for 4Biz: https://deal-forge-angel.onrender.com/c06cee7c-14f3-4c0c-92db-fdc4f4c00088/how-it-works</li>
+</ul>
+<ul>
+<li>Agree on a weekly meeting limit that their team can handle, and decide who owns the booked calls.</li>
+</ul>
+<ul>
+<li>Ask for the decision and a start date, and book the kickoff before the call ends.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If Antonio says he only has 30 minutes again, then go straight to the price and the payback, and ask for a yes or no on the first test before he leaves.</li>
+</ul>
+<ul>
+<li>If Edwin has no approved price for 4Biz yet, then say so plainly, do not make up a number, and agree on the exact day you will send it.</li>
+</ul>
+<ul>
+<li>If they ask to add Portugal or Latin America, then remind them that Fran chose Spain first for language reasons, and keep Portugal as a later step.</li>
+</ul>
+<ul>
+<li>If they say a mid-October start is no longer possible, then ask for the latest start date that still gets a webinar out before December, and lock that date today.</li>
+</ul>
+<ul>
+<li>If Fran worries about too many meetings, then set a weekly limit together and tell the Felix Petzel story.</li>
+</ul>
+<ul>
+<li>If they ask for proof that Ethiack sells in Spain, then point to Ethiack&#x27;s own Spanish users from its launch press, and keep our client stories as proof of the system.</li>
+</ul>
+<ul>
+<li>If they say they need to think about it, then ask what exact number or missing proof would make it a clear no, and settle that on the call.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>The first choice is a signed agreement for a first Ethiack test in Spain, with a kickoff date booked before the call ends. The second choice is a dated decision call with both Fran and Antonio, with the one missing item named in writing. If neither happens, get a clear &quot;not moving now&quot; and the reason, and never leave with &quot;send us more information.&quot;</p>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
