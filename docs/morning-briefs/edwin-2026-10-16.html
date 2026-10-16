@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Fri Oct 16, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Fri Oct 16, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>12:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/SHVfPIwPGgdGKXJnV1Rn">Phillip Isan</a> · Call 3+ · PinPoint Financial</strong>
+      </div>
+      <div class="slot">
+        <strong>2:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/umgxgyY3px5L5x5Tgiro">Craig Ball</a> · Call 3+ · Certitum</strong>
+      </div>
+      <div class="slot">
+        <strong>6:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/xgKg4ezLVLi7YT1unzK0">Rodney Leger</a> · Call 1 · PayerBlueprint</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Phillip Isan · Call 3+ · 12:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Phillip Isan · PinPoint Financial · Call 3+ · Fri Oct 16, 2026 · 12:00 PM ET · Edwin Chung</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Phillip agrees the system could work because it worked on him. He rated himself &quot;about an eight, maybe,&quot; and liked the list, the calendar invite, and the webinar as a filter for difficult prospects.</li>
+</ul>
+<ul>
+<li>The close paused on three things: copywriting (he is not a copywriter and does not want to be), bandwidth (he cares for his father, who has dementia), and timing. He said planning season and the holidays leave only about two and a half working weeks a month until after the Super Bowl.</li>
+</ul>
+<ul>
+<li>Phillip is the only decision maker mentioned, and no partner came up.</li>
+</ul>
+<ul>
+<li>No program price has been quoted yet. Edwin mentioned a done-for-you option and a coaching option and recommended coaching. Tool costs were given as about $500 to $700 a month with no ad spend, and the VA as about $10 to $13 an hour for five to ten hours a week. Phillip asked twice about costs that had not been disclosed yet.</li>
+</ul>
+<ul>
+<li>The ball is in Edwin&#x27;s court. Edwin promised to show how QS handles the holiday timing, walk through the full cost model, offer a due diligence session that maps who does what, and send Gene&#x27;s webinar recording.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>Phillip is engaged but guarded. He wants Edwin to show what QS delivers and stop asking trial-close questions, and he said so twice on Call 2.</li>
+</ul>
+<ul>
+<li>His urgency comes from slow cases and few at-bats. He said &quot;time truly is money&quot; and that he rarely gets in front of anyone. He wants $50,000 to $100,000 average cases and prospects who arrive already educated.</li>
+</ul>
+<ul>
+<li>His live fears are a heavy workload while caring for his father, being stuck writing copy, and spending money during a slow season with weak returns.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Timing (planning season and holidays) — primary — he worries that money spent now may not return during the holiday dip. Edwin promised to show how QS handles this.</li>
+</ul>
+<ul>
+<li>Copywriting — primary — he called it &quot;the biggest hurdle, the biggest headache.&quot; He wants to model Doug Andrew / Three Dimensional Wealth content rather than write from scratch.</li>
+</ul>
+<ul>
+<li>Bandwidth — primary — Edwin gave two different hour figures on Call 2. Settle on one honest number before the call.</li>
+</ul>
+<ul>
+<li>Full cost and price — primary — the program price has not been given yet, and he wants to know every cost.</li>
+</ul>
+<ul>
+<li>He wants to own the outcome, not operate it — secondary — he wants time freedom, like when he hired managers for his restaurants.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: &quot;This is planning season, and then the holidays hit. People check out, and we may not get the return we expect.&quot;</li>
+</ul>
+<ul>
+<li>Status: still open, and Edwin promised to answer it on this call.</li>
+</ul>
+<ul>
+<li>Overcome with: Use the onboarding timeline Edwin already showed. Week one is discovery and strategy, and weeks two to four are setup and copy, with first calls usually landing in months two to four. Explain that the build fits into the slow weeks, so the system is ready when owners return in January. Get the real QS answer from the team before the call (for example, how other financial clients timed their launches), and do not invent a policy, discount, or delayed start that has not been approved.</li>
+</ul>
+<ul>
+<li>Full story to tell: Nick Uresin at Podcast Pros. Nick is a technology and ecommerce founder who already knew LinkedIn and outreach tools and still used the system for targeting and messaging. He went from his sales call to a running webinar in about eight days and had qualified opportunities from his very first webinar. Use this only as proof of how fast setup can be, not as a revenue claim.</li>
+</ul>
+<ul>
+<li>How to deliver it: Say it half-offhand after you lay out the timeline, then tie it back to his slow season.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;Nick was live in about eight days, so the build is not the long part. If we set yours up during the quiet weeks, your invites go out when owners are back at their desks in January instead of starting from zero then.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;I&#x27;m not a copywriter, and I don&#x27;t want to be in that business.&quot;</li>
+</ul>
+<ul>
+<li>Status: half-handled. Edwin said the team, the AI research engine, and Nicholas on copy would help, but Phillip still named it his biggest hurdle.</li>
+</ul>
+<ul>
+<li>Overcome with: Be specific about who writes what. Explain that QS drafts the invite titles and the webinar outline, that Phillip gives feedback on language (which he said he wants to do), and that his Doug Andrew / Three Dimensional Wealth references can guide the tone. Show the done-for-you option clearly if copy is the deal breaker.</li>
+</ul>
+<ul>
+<li>Full story to tell: Jason Rotman at Elevate Financial. Jason is a financial advisor and life insurance specialist in Newport Beach who works on advanced estate planning, wealth transfer, and complex life insurance strategies for high-net-worth families. He ran a one-hour masterclass on tax-savvy life insurance strategies through the QS system. Phillip has met Jason and attended a couple of his webinars, so he has already seen the finished product.</li>
+</ul>
+<ul>
+<li>How to deliver it: Bring Jason up because Phillip already knows him, not as a pitch.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;You&#x27;ve sat in Jason&#x27;s webinars, so you&#x27;ve seen what the end product looks like. Jason didn&#x27;t become a copywriter to get there, and the same team would shape your Rich on Paper content with you.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;I don&#x27;t want to be the guy who runs this. I want my time back.&quot;</li>
+</ul>
+<ul>
+<li>Status: half-handled.</li>
+</ul>
+<ul>
+<li>Overcome with: Agree with his restaurant analogy. The VA runs the manual work, the webinar becomes recorded after about the fifth run, and he can later hand off the live Q&amp;A to someone on his team. Give one honest hours number for month one and after.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors. Gene is a founding partner at Advocate Advisors, a boutique M&amp;A advisory firm. Before using the system, he paid four agencies over five years at roughly $36,000 to $48,000 a year and got five qualified prospects and one client in total. After installing his own webinar system, his tracked campaigns show about 61 booked sales calls across 12 webinars.</li>
+</ul>
+<ul>
+<li>How to deliver it: Use it when ownership or &quot;renting versus owning&quot; comes up, and send the Gene webinar recording Edwin promised.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;Gene stopped renting agencies and owned the machine, with his team running it. That is your restaurant model: you own it, and good people run it.&quot;</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Nick Uresin · Podcast Pros — speed of setup, for the timing objection (full story above).</li>
+</ul>
+<ul>
+<li>Jason Rotman · Elevate Financial — a financial advisor in his own space whom he has already met, for copy and fit (full story above). Link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS</li>
+</ul>
+<ul>
+<li>Gene Rosendale · Advocate Advisors — owning versus renting, with a team running it (full story above). Link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Before Friday, get the team&#x27;s answer on how QS handles a Q4 or holiday start, confirm the program price and both options, and fix one honest hours number. Send Gene&#x27;s webinar recording.</li>
+</ul>
+<ul>
+<li>Open by confirming his end time. Then get straight into the timing answer he asked for, with no recap and no trial-close questions.</li>
+</ul>
+<ul>
+<li>Walk through the full cost picture: the program price for each option, tools at about $500 to $700 a month, and the VA at about $10 to $13 an hour. Answer his &quot;other costs&quot; question directly.</li>
+</ul>
+<ul>
+<li>Show who writes the copy and how his feedback fits in, using Jason as proof he has already seen.</li>
+</ul>
+<ul>
+<li>Offer the due diligence session that maps what he does versus what QS does, sized to his caregiving schedule.</li>
+</ul>
+<ul>
+<li>Ask for a decision on the option that fits him, with a start date that uses the slow weeks for setup.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If timing is still the brake, then show the setup-in-the-slow-weeks plan and Nick&#x27;s speed story. Do not invent a delayed-start discount.</li>
+</ul>
+<ul>
+<li>If copy is the deal breaker, then lead with the done-for-you option and Jason.</li>
+</ul>
+<ul>
+<li>If he pushes back on questions again, then stop asking and present. He told Edwin twice that he prefers this.</li>
+</ul>
+<ul>
+<li>If he says only half the projected revenue, then agree and use his own $500k to $600k number. Do not argue for $1.2 million.</li>
+</ul>
+<ul>
+<li>If his caregiving comes up, then acknowledge it and show the VA plus the recorded webinar as the way to protect his time.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>The best outcome is a decision on the coaching or done-for-you option, with a setup start date that uses the holiday weeks. The next-best outcome is a booked due diligence session with a dated decision. &quot;Let me think about it until January&quot; with no date is not acceptable.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Craig Ball · Call 3+ · 2:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Craig Ball · Certitum · Call 3+ · Fri Oct 16, 2026, 2:00-2:55 PM ET (11:00 AM Pacific for Craig) · Edwin Chung</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Craig agreed with the core idea. He said the calendar invite &quot;worked on me,&quot; and he called getting people to attend his webinars &quot;the biggest missing piece.&quot;</li>
+<li>The close paused because Craig had a hard stop at noon his time. Edwin never got to the revenue projections, the financial model, or the price.</li>
+<li>Nobody else matters in this decision. Craig is a solo business owner and decides alone.</li>
+<li>No money or terms are on the table yet. The program price was never said on Monday&#x27;s call.</li>
+<li>The ball is in our court. Edwin promised a new invite, a re-run lead list for the United States only with five or more employees, and the numbers.</li>
+<li>The meeting moved. It was first set for Tuesday, October 13, and the calendar now shows it on Friday, October 16 at 2:00 PM ET. Confirm the time works for Craig when you open.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Craig is cautious but bought in on the method. He is calm and analytical, and he said the system looked &quot;pretty much in line with what I figured,&quot; so he is not excited yet.</li>
+<li>What’s creating urgency: His revenue is light after a 14-month client ended, and he wants it &quot;more predictable and consistent.&quot; He has no hard deadline, so urgency is mild.</li>
+<li>Fears still alive: He fears this is &quot;overkill&quot; for a solo practice that only needs a few clients. He also said he needs &quot;faith that it’s going to work&quot; and to &quot;feel like it’s the right thing for me to do.&quot;</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Craig has not seen the numbers or the price. This is the primary blocker, because Edwin moved all of the money talk to this call.</li>
+<li>Craig worries the volume is too much for him. This is secondary, but it will shape how he hears every number Edwin shows.</li>
+<li>The lead list still needs to be re-run for the United States only with five or more employees. This is secondary, but showing it proves Edwin listened.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: &quot;I don’t need that many clients, so it may be overkill.&quot;</li>
+<li>Status: This is still open.</li>
+<li>Overcome with: Build the model from his own goal, which is two to three clients at a time and about one new client a quarter. Show the average case first and the top end second, and say clearly that we can turn the invite volume down.</li>
+<li>Full story to tell: Tejas Parikh runs Akshar Consulting, a finance consulting firm in the United Kingdom that only sells to finance directors and CFOs. He worried his market was too small for webinars and said he would rather have five real conversations than 500 junk leads. His first webinar brought in 15 qualified sales calls and several closed deals.</li>
+<li>How to deliver it: Say it half-offhand, like &quot;You remind me of a client of ours,&quot; and then tie it back to Craig.</li>
+<li>Exact land line: &quot;Tejas didn’t want volume either, he wanted a few right conversations, and that is exactly how we would size this for you.&quot;</li>
+<li>Objection: &quot;Does this actually make financial sense for me?&quot;</li>
+<li>Status: This is still open, because Edwin promised the revenue projections and financial modeling for this call.</li>
+<li>Overcome with: Use Craig’s own numbers from Call 1. He said one client is worth about $100,000 over roughly a year, and he wants about one new client each quarter. Walk the model in plain steps, from invites to attendees, then to calls, then to clients, and let Craig check every step.</li>
+<li>Full story to tell: Cedric Le Rouzo runs Cinnamon Consulting, which builds partner programs for software companies. His first webinar brought in 16 qualified sales calls and a closed deal. His second webinar brought in 50 sales calls.</li>
+<li>How to deliver it: Bring it up right after the model, as proof that the math holds for a consultant who sells to software companies.</li>
+<li>Exact land line: &quot;If one webinar gets you even one client at about $100,000, the question is not whether it pays, but how fast.&quot;</li>
+<li>Likely objection: &quot;I need to think about it.&quot;</li>
+<li>Status: This has not been raised yet, but it is likely from a careful, analytical buyer.</li>
+<li>Overcome with: Ask what exactly he needs to see, then offer a short due diligence plan with a date, which Edwin already named as one of the three outcomes on Monday.</li>
+<li>Full story to tell: Use the Tejas Parikh story from objection 1, and focus on how a small, senior market still paid off from the very first webinar.</li>
+<li>How to deliver it: Keep it calm and low-pressure, and remind him a clear no-go is fine too.</li>
+<li>Exact land line: &quot;Let’s name what you still need to see and put a date on it, so this doesn’t just drift.&quot;</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Tejas Parikh, Akshar Consulting. Tejas runs a small finance consulting firm in the United Kingdom and only wants to talk to finance directors and CFOs, a market as small and senior as Craig’s founder buyers. He raised the same worry Craig has, saying he would rather have five real conversations than 500 junk leads. His very first webinar brought in 15 qualified sales calls and several closed deals. Use this when Craig says he only needs a few clients or that the volume is overkill. The proof page is https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+<li>Cedric Le Rouzo, Cinnamon Consulting. Cedric runs a consulting firm that builds partner programs for software companies, which is close to Craig’s own channel background. His first webinar brought in 16 qualified sales calls and a closed deal. His second webinar brought in 50 sales calls. Use this when Craig questions whether the numbers work or whether software buyers will show up. The proof page is https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open by showing the re-run lead list for the United States only with five or more employees. This proves Edwin listened to Craig’s two filters from Monday.</li>
+<li>Walk the financial model built on Craig’s own goal of about one new client a quarter at about $100,000 each. Show the average case first and the top end second.</li>
+<li>Finish the parts Edwin skipped on Monday, which are the team, the revenue ops support, and how Craig owns the system at the end.</li>
+<li>Present the investment and tie it straight back to the value of one client.</li>
+<li>Ask for the decision using the three outcomes Edwin set on Monday, which are a go, a no-go, or a dated due diligence plan.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If Craig says the volume is too much, then show the dialed-down invite plan and tell the Tejas Parikh story.</li>
+<li>If Craig questions the list quality again, then remind him the emails are checked to be valid and the people are checked to fit before anyone is invited.</li>
+<li>If Craig asks about the larger list from the demo portal, then explain that the portal count of about 56,549 founders and CEOs includes Canada, the United Kingdom, Australia, and Ireland, and that the United States only cut with five or more employees will be smaller.</li>
+<li>If the return on investment page in the portal is still broken, then walk the model on a simple sheet instead of clicking into the portal live.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>The best outcome is a signed agreement and payment on this call. The next best is a named start date with a short due diligence plan due by a set day next week. If neither happens, get a clear not-moving answer rather than &quot;I’ll think about it.&quot;</p>
+<p>Rep-only caution: the 56,549 portal count and the broken return on investment page come from Monday’s demo portal, not from anything Craig said on the call, so check both before showing them.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Rodney Leger · Call 1 · 6:30 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Rodney Leger · PayerBlueprint · Call 1 · Fri Oct 16, 2026, 6:30 PM ET (5:30 PM CT) · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Rodney Leger is a consultant and founder based in Chicago. His LinkedIn shows him running Bright Idea Engine, his consulting firm, since January 2013.</li>
+<li>He started his career in IT at PwC and then moved into management consulting at the Boston Consulting Group, according to his Bright Idea Engine bio.</li>
+<li>He has an MBA from Wharton, a master&#x27;s in computer science from the University of Chicago, and degrees from the University of Virginia. He also earned a certificate from MIT Professional Education&#x27;s AI Strategy and Leadership program in January 2025.</li>
+<li>He booked this call under PayerBlueprint with a PayerBlueprint email address. The PayerBlueprint site does not name its founders, so confirm his role there early in the call.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>He has three things going on, and it helps to know all of them before the call.</li>
+<li>Bright Idea Engine is his management consulting firm. It does operational assessments, growth strategy, and program management during big changes like mergers. LinkedIn lists it at 2 to 10 people.</li>
+<li>PayerBlueprint is a newer, productized service for medical practices. It compares a practice&#x27;s insurance payment rates against similar clinicians and tells them which rates to push on. A one-payer Snapshot costs $400, and a Full Practice Benchmark costs $1,000 to $2,000.</li>
+<li>Ktema is a win-loss research practice. It interviews a company&#x27;s buyers to find out why big deals were won or lost, in a fixed four-to-eight-week project. Its site lists Rodney and Amy Ruderman as the two practice leads.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Bright Idea Engine works with private equity firms and the companies they own, and its site says clients range from startups to Fortune 500 companies.</li>
+<li>PayerBlueprint sells to owners and administrators of independent medical practices, especially practices without their own contracting team.</li>
+<li>Ktema sells to executive teams at B2B companies. Its site says technology and industrial buyers are its deepest track record so far.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Mid-size and large companies need outside senior help to find waste, plan growth, and get through big transitions without dropping the ball on daily operations.</li>
+<li>Small medical practices often do not know whether insurers are underpaying them, and they have no one in-house to check. PayerBlueprint gives them a clear answer and next steps before a contract renewal.</li>
+<li>B2B leaders hear vague reasons like price or timing when they lose deals. Ktema digs into what really drove the decision so they know what to change.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He is not brand new to us. He showed for a quantumSCALE Business Evaluation Call on April 20, 2026. Notes from that April call say he runs a boutique consulting firm whose people trained at places like Deloitte and BCG, and that he wanted to get more specialized and productize his offer.</li>
+<li>He attended our webinar and booked this call from the link in the webinar chat, so he has already seen how the system works.</li>
+<li>PayerBlueprint and Ktema both look like that productized move in action, since each one has a fixed scope and a clear price or timeline. Ask him which one he wants to grow first, because the plan for each is very different. PayerBlueprint&#x27;s site shows no client names or testimonials yet, so also ask how many practices have bought so far and where they came from.</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
