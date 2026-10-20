@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Tue Oct 20, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Tue Oct 20, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>12:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/i7aA1nyigDI1d3pzLkbQ">Ximena Paul</a> · Call 2 · Nala</strong>
+      </div>
+      <div class="slot">
+        <strong>1:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/HOc71u1rWlrS6a10ygGZ">Ron Mckenna</a> · Call 2 · Minerva Valuations</strong>
+      </div>
+      <div class="slot">
+        <strong>2:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/63ynALGtFW0TGDW0eo5K">Jeff Ingersoll</a> · Call 2 · Blue Door Tax Group</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Ximena Paul · Call 2 · 12:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Ximena Paul · Nala (Nalarocks) · Call 2 · Tue Oct 20, 2026, 12:00 PM CT (1:00 PM ET) · Armando Valencia</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Ximena is the CEO and founder of Nala, a bootstrapped five-year-old SaaS platform for performance and talent management. She came to the US about a year ago. She saw the Tuesday webinar, booked right away, and said the system &quot;clearly works.&quot; She already runs webinars every other week plus AI agents on LinkedIn, so the question is scale and repeatability, not starting from zero.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Excited and very engaged. She said &quot;yes, yes, yes&quot; to the webinar ideas, but she is also worried Nala might be &quot;too small&quot; or not ready.</li>
+<li>Goals they want but can&#x27;t hit yet: Get in front of many more US CHROs and VPs of HR, and get more registrants and the right profile on each webinar.</li>
+<li>Why it matters: She said the product is not the problem. Her words were &quot;I need a machine that will help me get the message massively so that I can take it to the next level.&quot;</li>
+<li>What&#x27;s holding them back: The US database is small, VPs of HR are hard to reach, and her automation still depends on her telling the agents what to do. Building calendar-invite outreach at scale herself would take weeks or months.</li>
+<li>Consequences if nothing changes: She stays at about 100 registrants and 30 attendees per webinar, and the US sales cycle of six to 12 months gets longer when she starts with the wrong person.</li>
+<li>Fears that will show up in the decision: Cost. She said &quot;the cost will have a big impact if we can use this now or maybe the future.&quot; She is also worried about being too early.</li>
+<li>Objections still open: Price (not discussed yet), whether Nala is ready, which package fits what she already runs, and whether to start with the US or Latin America.</li>
+<li>Who&#x27;s joining Call 2: Ximena plus two more people from her team. She did not name them. Ask at the start who they are and what each one owns.</li>
+<li>What we promised to walk: Armando will use the first 15 minutes to gather more information, then spend 30 to 45 minutes on a full breakdown of how quantumSCALE plugs into what she already has. He told her she may not need everything, so show a fitted scope, not the full menu.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Nala sells AI-powered performance reviews, talent reviews and succession planning, delivered with a senior bilingual support team. US buyers are CHROs, Chief People Officers, VPs of HR and Heads of Talent at companies with 1,000 to 20,000 employees. Her problem is reaching enough of those buyers.</li>
+<li>Company goals / dream state (from Call 1): Grow in the US with a repeatable, scalable way to fill webinars with the right senior HR profile, especially during Q4 and Q1 budget season. She did not give a revenue target.</li>
+<li>ICP dream state (what THEIR buyers want): A senior HR leader at a fast-grown, PE-backed company with many locations wants performance and talent processes running in one or two months, with a flexible tool and real support, so they can show results before the next PE event.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>Two new team members are joining who did not hear Call 1. Spend a minute retelling her own story to them: good webinar conversion, but not enough of the right people in the room.</li>
+<li>Her US webinar conversion is already strong. About half of US attendees book a call. Lead with volume, not with fixing her webinar.</li>
+<li>Budget sensitivity is real and was said out loud. Have the scope options ready so she can pick a starting point that fits.</li>
+<li>Her deal size is $80,000 to $250,000 a year, plus about a 30% implementation fee. One closed client is a big number for her. Use that when you get to ROI.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): US companies with 1,000 to 20,000 employees in industries with many locations and mostly field or plant workers, such as manufacturing, utilities, transportation and construction. Buyers are the CHRO or Chief People Officer, the VP of Human Resources, and the Head or VP of Talent Management. We leave out HR managers, HR directors and HR business partners, and we leave banks and other cash-rich companies with big HR teams as a lower priority.</li>
+<li>Ideal ICP (tight — who they said they want most): The same profile, but PE-backed companies that grew through acquisitions and ideally have teams outside the US. We have not counted the people yet.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): All US companies with 1,000 to 20,000 employees in her named industries, with all three buyer titles. We have not counted the people yet. On the demo, show the companies first, then the titles, then the contacts.</li>
+<li>How we got the number: Not counted yet. Count the companies that match size and industry, then the people with the three buyer titles at those companies, then the contacts we can reach.</li>
+<li>What we widened (if thin): She said: US first, the three titles, 1,000 to 20,000 employees, and her four industry examples. We could add, if needed: adjacent multi-location industries, companies with teams outside the US that are headquartered elsewhere, and Latin America as a second lane, which she said has a bigger database.</li>
+<li>Check vs Call 1: Matches what she said. She has about 4,000 HubSpot leads and about 14,000 LinkedIn followers, mostly HR people. That is her warm base, not the TAM.</li>
+<li>Too small?: Unlikely, but confirm the count before Tuesday. If the US count with only the three senior titles looks under 30,000, widen with the levers above before showing it.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): Fast implementation in one or two months with no outside consultants, which fits PE-backed companies on a four-year clock. She also has a named ranking as number one in Info-Tech user reviews for performance and talent management.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): The pitch only clicks once the buyer has a specific process pain like talent reviews or succession planning. She said the need has to exist first. Generic &quot;people intelligence&quot; language will not pull senior HR leaders.</li>
+<li>Positioning line for the webinar if we pick today: How fast-growing, PE-backed companies get talent reviews and succession planning running in 60 days without a two-year Workday project.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): After a run of acquisitions, senior HR leaders need talent reviews and succession planning across many locations, with a small HR team and a short PE clock.</li>
+<li>Who we invite first, then next: Ideal first (PE-backed, acquisition-grown companies with 1,000 to 20,000 employees), then the broader honest list of all multi-location companies in that size band.</li>
+<li>Story arc (THEIR webinar to THEIR audience):</li>
+<li>Hook: You grew through acquisitions, and now the board wants talent reviews and succession planning.</li>
+<li>Problem: Legacy tools take two years and outside consultants, and you have a small HR team and maybe four years.</li>
+<li>Proof: Nala&#x27;s ranking in Info-Tech user reviews and her client stories, such as Glencore launching in several languages.</li>
+<li>Offer: Nala&#x27;s platform plus a senior support team, live in one to two months.</li>
+<li>Easy CTA: Book a short call with the Nala team to map your first talent review.</li>
+<li>Copy / talk-track beats:</li>
+<li>&quot;You don&#x27;t need a two-year project to run your first talent review.&quot;</li>
+<li>&quot;Keep ADP for payroll. Run performance and talent on top of it.&quot;</li>
+<li>&quot;A senior team that runs it with you every week, not a login.&quot;</li>
+<li>Cadence: One topic in English for the US. Test it, then split by industry or by PE-backed versus not. Keep the Spanish series separate.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Jonathan Duarte, GoHire. A small, bootstrapped HR software company selling to CHROs and VPs of HR, the same buyer as Nala. They went from 240 invites to more than 29,000 per webinar across 18 runs and still kept 47% of registrants attending at their peak. Pull it when she asks if Nala is too small or if quality drops at volume. Link: https://quantums-institute.com/due-diligence-software</li>
+<li>Jacqueline Throop-Robinson, Spark&#x27;d Engagement. She sells to CHROs and VPs of HR. From 1,332 invites, the smallest list we have run, 76% of registrants attended and it produced a booked call. Pull it if the team worries their US list is too small to start. Link: https://quantums-institute.com/due-diligence-home</li>
+<li>Philipp Von Schulthess, Oxoia. Software sold to a cautious, institutional buyer that most people assume won&#x27;t attend webinars. He still filled webinars and closed the largest deal in company history from one. Pull it for long, senior, enterprise sales cycles. Link: https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room / who signs / what each cares about: Ximena is CEO and founder, leads this area and is most likely the signer. Her co-founder (spelled &quot;Mafia&quot; in the transcript, based in Colombia) runs the Hispanic market and is not confirmed for Tuesday. Two unnamed team members are joining, so find out early whether they run marketing, sales or the agents.</li>
+<li>Landmines from Call 1: Price was never discussed and she flagged cost as the deciding factor. Long six-to-12-month sales cycle means ROI will feel slow, so frame it with her deal size. She may try to build calendar invites herself, so show what it takes to do it at scale. She is not sure whether to start with the US or Latin America.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Ron Mckenna · Call 2 · 1:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Ron Mckenna · Minerva Valuations · Call 2 · Tue Oct 20, 2026, 1:00 PM CT (2:00 PM ET) · Armando Valencia</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Minerva is a ~three-year lower-middle-market M&amp;A advisory shop. Ron leads Canada; Scott Wells, CFA leads the U.S.; Cindy runs LinkedIn and email outreach under Abby.</li>
+<li>Sell-side mandates are the priority, with debt advisory and valuation / quality-of-earnings as supporting offers. Almost all real business is founder-led through Abby’s network. Cold campaigns have closed zero new business after three years. Call 2 Custom Demo is booked for Friday.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: The room was engaged and collaborative. Scott called the webinar “very interesting,” said he liked the idea, and focused on traffic and awareness into conversations.</li>
+<li>Ron was practical and forward-leaning. He said Gene’s work is “exactly what we do” and “right in our wheelhouse,” and that he and Scott are looking forward to seeing day-to-day operations and conversion on Friday.</li>
+<li>Goals they want but can&#x27;t hit yet: Each of Ron and Scott closing five to seven deals a year (Abby has aligned on that range with Ron). Ron’s frame for success is enough qualified leads that they close at least about 30%. Longer term they want so many good leads that they need more people to staff them, like Gene’s shop.</li>
+<li>Why it matters to them: Founder-led demand is not scalable. Ron answered a flat “no” when Armando said that out loud.</li>
+<li>Capacity is already there; at-bats are not. Without a better top-of-funnel engine they stay under the five-to-seven target and stuck on network luck.</li>
+<li>What&#x27;s holding them back: Cold email and LinkedIn via Cindy (Apollo and purchased lists) are running but weak on email quality and volume. Cindy recently processed about 10,000 purchased leads for roughly $100 to $200.</li>
+<li>Scott sees a couple of campaign replies, nothing driving true outreach. Their one prior webinar (February last year, about 30–40 people) was brand-awareness only and did not convert deals.</li>
+<li>Consequences if nothing changes: They stay under capacity with sparse founder-fed deals. Campaigns keep closing zero. Crowded LinkedIn and email channels with similar AI-sounding M&amp;A scripts make it hard to stand out.</li>
+<li>Fears that will show up in the decision: Go or no-go will come down to operating cost and ROI after Call 2. Ron said if they find it compelling enough they can take a package back to Abby. They need to see how clients actually come in and whether they can convert them day to day.</li>
+<li>Objections still open: Abby is the final approver and very busy; past pattern is “run with it and report back.” Cindy will confirm if Abby joins; otherwise she ferries notes and economics.</li>
+<li>Armando will show CAC on upfront retainers only and leave backend success fees out of the math on purpose. Campaign email quality remains an open ops loop Cindy flagged. No quantumSCALE price objection was raised on Call 1.</li>
+<li>Who&#x27;s joining Call 2: Ron and Scott are expected. Cindy likely joins to take notes for Abby. Abby is unlikely; invite him if Cindy confirms, but do not block on him.</li>
+<li>What we promised to walk: Lead-database quality and volume, the calendar-invite mechanism, the webinar framework, and financials / proposal package with ROI on upfront fees only. Scott finishes the Gene case study beforehand.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Minerva sells sell-side M&amp;A (small retainer plus success fee), debt advisory, and valuation / sell-side prep (quality of earnings and business valuation as set fees). Buyers are owners and operators of lower-middle-market B2B companies thinking about a sale in about the next 18 months. The live problem is owned, scalable pipeline — founder network works, campaigns do not.</li>
+<li>Company goals / dream state (from Call 1): Move from sparse founder-fed deals to a predictable at-bat machine so each of Ron and Scott closes five to seven deals a year, with enough qualified leads that they eventually need more people, like Gene’s firm.</li>
+<li>ICP dream state (what THEIR buyers want): A clear path to a clean exit (or a ready sale in the next ~18 months) without burning cash on hourly lawyers to build the data room, with books and story prepared so buyers do not force a messy discount.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>Gene is already their north star. Ron watched the Gene case study; Scott sat the webinar. Lead with that parallel and the three-offer flywheel so early-stage sellers still buy valuation / quality-of-earnings / prep when the exit is 12–18 months out.</li>
+<li>One campaign, both Ron and Scott on stage, U.S. plus Canada attendees, allocate by geography after. Do not split into two campaigns unless they change their mind.</li>
+<li>Abby is the economic buyer but likely absent. Package Abby-ready operating costs and upfront-fee ROI so Cindy can carry it. Ron also said “Adam” once — confirm the principal’s name before repeating it.</li>
+<li>Soft yes only. Friday’s list quality, calendar-invite sample, webinar framework, and upfront-fee ROI decide whether they recommend to Abby.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English):</li>
+<li>Location: Canada (Ron) and United States (Scott) in one shared campaign.</li>
+<li>Verticals: Best fit is B2B — healthcare, manufacturing, aerospace, and tech named. Avoid restaurants, food service, and retail.</li>
+<li>Company type / size: Lower middle market. Canada deals roughly $1M to $5M revenue. U.S. broader at about $2M to $50M.</li>
+<li>Buyer titles: Owners and operators considering a sale in roughly the next 18 months. Finer titles were not locked on Call 1.</li>
+<li>Who we exclude: Restaurants, food service, and retail. Pure B2C where they said they do not excel.</li>
+<li>Ideal ICP (tight — who they said they want most): Owners and operators of B2B lower-middle-market companies in healthcare, manufacturing, aerospace, or tech, in Canada at about $1M–$5M revenue and in the U.S. at about $2M–$50M, who are thinking about selling in the next ~18 months. We have not counted the people yet.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Owners, founders, CEOs, and principals at B2B companies across Canada and the U.S. in the same revenue bands, including adjacent industries beyond the four named verticals, still excluding restaurants, food service, and retail.</li>
+<li>U.S. Census SUSB 2022 shows about 1.41 million firms with receipts from $1M to under $5M, and about 873,000 firms with receipts from $2.5M to under $50M. Canada had about 1.36 million employer businesses in December 2024 (Statistics Canada). We have not counted the matching people yet.</li>
+<li>How we got the number: Start with public firm counts in those revenue bands. Then keep B2B industries and drop restaurants, food service, and retail.</li>
+<li>Then count owner / founder / CEO / principal titles at each firm. Then count the contacts we can actually reach. On the demo, show companies first, then titles, then reachable contacts.</li>
+<li>What we widened (if thin): They said Canada $1M–$5M, U.S. $2M–$50M, B2B with healthcare / manufacturing / aerospace / tech preferred, owners thinking about a sale in ~18 months.</li>
+<li>For campaign honesty we add adjacent B2B industries in the same size bands, and extra owner-side titles (founder, CEO, principal, managing director) when owner alone is too thin. Always say which lever is theirs versus ours.</li>
+<li>Check vs Call 1: Matches dual Canada / U.S. coverage, one shared webinar, sell-side priority, three-offer flywheel, B2B preference, avoid restaurants / food service / retail, 18-month sale window, five-to-seven closes each, zero campaign closes, Abby as final approver.</li>
+<li>Too small?: Ideal-only four verticals with no people pull yet is unknown as a contact count. After honest expansion across adjacent B2B industries and both countries’ revenue bands, this should clear the roughly 30,000-person qualify-out bar. Verify with a real list pull on the demo before quoting a hard campaign number.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): Clear three-offer path — sell-side M&amp;A, debt advisory, and valuation / quality-of-earnings prep. Ron’s Canada angle is Bay Street legal prep that saves owners a large share of hourly legal fees before LOI.</li>
+<li>Scott’s U.S. angle is a former CFO and banker who has sat both sides of the table. Credentialed team (CFA, CPA, M&amp;A counsel). Early sellers still have something to buy now through prep fees.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): Firm-level Minerva revenue was never stated — do not invent it. Finer buyer titles beyond “owners and operators” were not locked.</li>
+<li>Abby may not be on the call, so the package must travel without him. Campaign email quality is still an open ops worry. “Abby” versus “Adam” needs a one-line confirm.</li>
+<li>Positioning line for the webinar if we pick today: How lower-middle-market owners get sale-ready in the next 18 months — clean books, a real value story, and a process that does not burn the company on hourly fees before a buyer ever shows up.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): Lower-middle-market owners who may sell in the next ~18 months often wait too long, show up messy, and leave value on the table because nobody is preparing their side of the table.</li>
+<li>Who we invite first, then next: Ideal first — B2B owners in healthcare, manufacturing, aerospace, and tech in the Canada $1M–$5M and U.S. $2M–$50M bands who are thinking about a sale in ~18 months — then the broader honest list across adjacent B2B industries in those same bands. That invite order is our acquisition motion, not the webinar story.</li>
+<li>Story arc (THEIR webinar to THEIR audience — NOT our company&#x27;s value prop):</li>
+<li>Hook: Most owners do not lose value at closing. They lose it in the 18 months before they ever go to market.</li>
+<li>Problem: Books are messy, the story is unclear, and hourly advisors burn cash building a data room the other side already knows how to attack.</li>
+<li>Proof: Ron’s Bay Street legal prep path and Scott’s CFO / banker path — credentialed people who have sat the seller’s side and the buyer’s side.</li>
+<li>Offer: Sell-side mandate when ready, plus valuation / quality-of-earnings prep and debt advisory when the exit is still 12–18 months out.</li>
+<li>Easy next step: Book a short readiness conversation with Ron or Scott (allocate by geography after).</li>
+<li>Copy / talk-track beats (3–5):</li>
+<li>“If you might sell in the next 18 months, the work that protects your price starts now — not when a buyer is already in the building.”</li>
+<li>“Stop paying hourly lawyers to invent a data room from scratch when the other side already knows what they will ask.”</li>
+<li>“A former Bay Street M&amp;A lawyer and a former CFO / banker on your side of the table, not another junior generalist.”</li>
+<li>Soft CTA: book a short sale-readiness call with Minerva — Canada with Ron, U.S. with Scott.</li>
+<li>Cadence: One Ideal topic on sale-readiness for lower-middle-market B2B owners first, with both Ron and Scott on stage. Test show-then-meeting math.</li>
+<li>Then segment Canada versus U.S. talk tracks or industry variants only after conversion is real. Do not run a brand-awareness webinar like their February session.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Gene Rosendale — Advocate Advisors — why it fits: Exact M&amp;A advisory parallel. Boutique investment bank / M&amp;A firm; marketing-literate partner; burned by agencies (~$36k–$48k a year for five qualified prospects and one client); then tracked workshop totals show about 61 booked sales calls across 12 webinars.</li>
+<li>When to pull it: open with Gene because Ron already watched the case study and called it their wheelhouse; use again when Abby-package economics or “will owners actually show” comes up.</li>
+<li>Prospect link = https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+<li>Lynn Rousseau — The Conscious Leader — why it fits: Long-running professional practice that lived on referrals and needed a predictable pipeline; closest parallel when they say founder / principal network is the only engine and campaigns have closed zero. When to pull it: referral dependency, “capacity is fine — we just need at-bats,” or Cindy’s cold-outreach fatigue. Prospect link = https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0</li>
+<li>Cedric Le Rouzo — Cinnamon Consulting — why it fits: B2B consulting practitioner who used webinars to change cost-per-conversation and hours economics; useful when you walk upfront-fee-only ROI for Abby and show the engine can create conversations without turning Ron and Scott into full-time marketers. When to pull it: operating-cost dig, CAC on retainers only, or “will this create meetings without burning delivery.” Prospect link = https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room: Ron (Canada MD, champion, practical recommender). Scott (U.S. side, CFA, likes traffic and awareness into conversations).</li>
+<li>Cindy (ops / outreach, will ferry notes and economics to Abby). Abby (final economic buyer, likely absent; past pattern is green-light after Ron / Scott / Cindy package). Confirm whether the principal is only Abby or also called Adam.</li>
+<li>Landmines from Call 1:</li>
+<li>Package for the absent buyer: Abby will not sit every vendor call. Make operating cost and upfront-fee ROI Cindy-carryable.</li>
+<li>Upfront-only math: Armando already framed backend success fees as left to imagination. Do not re-include them in CAC without saying so.</li>
+<li>Prior webinar was awareness-only: Contrast conversion system versus their February brand session without insulting it.</li>
+<li>Email quality scar: Cindy flagged purchased-list quality. Show list quality and volume on screen before price.</li>
+<li>One campaign, both on stage: Do not propose two separate Canada / U.S. campaigns unless they ask.</li>
+<li>Name check: Confirm Abby versus Adam before the follow-up package.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Jeff Ingersoll · Call 2 · 2:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jeff Ingersoll · Drive Wealth Advisers / Blue Door Tax Group · Call 2 · Tue Oct 20, 2026, 2:00 PM CT (1:00 PM Mountain for Jeff) · Armando Valencia</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Jeff now runs an approved outside business called Blue Door Tax Group. His website, Zoom scheduler, and AI phone screen are nearly done, and he said he is &quot;this close&quot; to committing money to a marketing system. What stuck for him was the idea that a webinar sends him only people who already know they have the problem.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: He is hopeful and eager. He did most of the talking, said &quot;if your system can help me do that, then we gotta talk some more,&quot; and ended with &quot;mucho taco bueno,&quot; which he said means he is excited.</li>
+<li>Goals they want but can&#x27;t hit yet: He wants to get in front of the wealthiest people who have real tax pain, win them with tax planning, and then move them into wealth management.</li>
+<li>Why it matters to him: He said he has limited time before he starts stepping back from his practice, and he has &quot;very ambitious goals.&quot;</li>
+<li>What&#x27;s holding him back: He was waiting for his website so prospects would not think it looked &quot;Mickey Mouse.&quot; He also has no steady way yet to reach the right people.</li>
+<li>Consequences if nothing changes: He would keep competing with every other advisor for the same people, or fall back on dinner seminars that he does not want to run.</li>
+<li>Fears that will show up in the decision: He worries about wasting time on people who are not ready. He does not want to launch during the holidays, and he must not give investment advice through Blue Door.</li>
+<li>Objections still open: He wants the exact price and any minimum term. Armando said it is usually $20,000 to $25,000 for about six months, about $3,000 to $4,000 a month, and that delivery sets the final number. He also wants to understand how leads are found, and he thought 30 minutes was long for a webinar.</li>
+<li>Who&#x27;s joining Call 2: Only Jeff was named. No one else was mentioned.</li>
+<li>What we promised to walk: A full custom demo set up like a workshop. It covers the tax planning front door and a separate funnel just for wealth advisory. It also covers how we find leads, how we get them onto the webinar, how the webinar runs, and the financial model behind it.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Jeff is a financial advisor at Drive Wealth Advisers in Utah, and he owns Blue Door Tax Group, a paid tax planning team. He sells to high net worth people across the country who have a big tax event coming. Their CPAs only file returns and look backward, so nobody helps them plan ahead.</li>
+<li>Company goals / dream state (from Call 1): Jeff wants the system built in December so he can launch around the first week of January. He can take on about three new clients a week, and he wants those clients to move into wealth management after the tax work.</li>
+<li>ICP dream state (what THEIR buyers want): His buyers want to keep more of the money from a business sale, a property sale, or a Roth conversion. They want a trusted person who plans ahead instead of just filing last year&#x27;s return.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>Jeff went quiet after his first talk with Armando in the spring. He promised to &quot;commit in blood&quot; that he will show up, so confirm the invite reached him before the 20th.</li>
+<li>Compliance is unique here. Blue Door can use testimonials freely, but the funnel must not give investment advice. Show how the webinar stays on tax planning.</li>
+<li>Jeff wants to run webinars to his current clients and their friends for referrals. Show that the same system can point at his own list.</li>
+<li>He already knows a peer&#x27;s results from Facebook and Instagram ads that only target Roth conversions. Expect him to compare our numbers to that.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): Buyers are people in the United States, not companies. We include business owners selling a company worth $5 million or more, owners selling land, ranches, or buildings, and people with large IRAs or 401(k)s weighing a Roth conversion. We leave out people below his screening bar, which is about $5 million net worth without the home and $500,000 a year in income.</li>
+<li>Ideal ICP (tight — who they said they want most): Owners of private companies who plan to sell for $5 million or more and have not closed the sale yet. We have not counted the people yet.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): All three groups together across the whole country. That means business owners near an exit, large real estate holders, and older high earners with big retirement accounts. We have not counted the people yet.</li>
+<li>How we got the number: On the demo, show the count of companies first, then the owner and executive titles, then the contacts we can reach.</li>
+<li>What we widened (if thin): Jeff said the three groups and the national reach himself. We added older owners and executives with large retirement accounts as a way to find Roth conversion prospects, since those accounts are not public.</li>
+<li>Check vs Call 1: These match what Jeff said on Call 1, including his $5 million floor for a business sale.</li>
+<li>Too small?: Not likely, because the list is national and has three groups. Confirm this once the count is done.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): The pain is clear and easy to say. Your CPA looks backward, and if you plan after the sale it is too late to save on taxes.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): The offer has a lot of parts, including business sales, real estate, Roth conversions, and wealth management. The webinar needs one lane, and it must not slide into investment advice.</li>
+<li>Positioning line for the webinar if we pick today: &quot;If you plan to sell your business in the next few years, your CPA is probably not doing the planning that has to happen before the sale closes.&quot;</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane: Business owners about to sell who will lose a large share of the sale to taxes because nobody planned before closing.</li>
+<li>Who we invite first, then next: Invite the Ideal list first, which is owners near a sale. Then invite the broader honest list, which adds real estate sellers and Roth conversion prospects.</li>
+<li>Story arc (Jeff&#x27;s webinar to his audience):</li>
+<li>Hook: Selling your business soon? Most owners find out too late what the sale will cost them in taxes.</li>
+<li>Problem: Your CPA files last year&#x27;s return and looks in the rearview mirror. Once the money is received, many tax strategies are gone.</li>
+<li>Proof: Jeff&#x27;s team and their planning process, using Blue Door testimonials, which he is allowed to use.</li>
+<li>Offer: A tax planning analysis and executive summary for the sale.</li>
+<li>Easy CTA: Book a one-on-one planning call with Jeff and his team.</li>
+<li>Copy / talk-track beats:</li>
+<li>&quot;Your CPA is looking in the rearview mirror. We look out the windshield.&quot;</li>
+<li>&quot;Planning has to happen before the sale, not after.&quot;</li>
+<li>&quot;Everyone calls you once they hear you are selling. Talk to the people who will plan with you first.&quot;</li>
+<li>Cadence: Run one topic for business owners first. Test it, then add a separate webinar for real estate sellers or Roth conversions.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Jason Rotman, Elevate Financial. He is a financial advisor who runs webinars on tax-smart planning for executives, founders, and high net worth families. Pull this story if Jeff doubts that wealthy people attend webinars or worries about compliance. Link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS</li>
+<li>Ken Baron and Rory Zipper, ZEA Financial. Their firm helps high net worth owners and executives cut avoidable taxes in retirement. Before working with us, they tried cold lists and dinner seminars. Pull this story when Jeff talks about the dinner seminar firm he wants to avoid, or about a regulated industry. Link: https://quantums-institute.com/due-diligence-home</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room / who signs / what each cares about: Jeff is the only person named, and he appears to be the one who decides. He cares about the price, any minimum term, his time, and staying compliant. His compliance officer at Drive Wealth Advisers has approved Blue Door, does not want to review its marketing, and only warned him not to give investment advice there.</li>
+<li>Landmines from Call 1: He went quiet after the spring talk. He will not launch over the holidays. He needs a clear price and term. He will compare us to his peer&#x27;s ad program. He can only take about three new clients a week.</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
