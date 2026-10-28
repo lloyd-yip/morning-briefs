@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Wed Oct 28, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Wed Oct 28, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>3:15 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/011FxIxSsLdjPLmfieWz">Seth Maust</a> · Call 1 · Five Star Life</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Seth Maust · Call 1 · 3:15 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Seth Maust · Five Star Life · Call 1 · Wed Oct 28, 2026, 3:15 PM ET · Ryan</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Seth is the co-founder and President of Five Star Life, a nonprofit based in Elkhart, Indiana. He has led it since 2005.</li>
+<li>He hosts a weekly podcast called &quot;Five Star Life with Coach Seth,&quot; about mindset, leadership and parenting. On the podcast he goes by Coach Seth.</li>
+<li>He has been on local TV (WNDU) talking about the organization and its basketball program.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Five Star Life is a nonprofit with the mission &quot;Transforming students&#x27; lives by challenging the way they think, act, and lead.&quot; It was started to help lower the high school dropout rate.</li>
+<li>They sell a video curriculum for schools, experiential programs at their Summit campus, after-school clubs, professional development, and a parent mobile app.</li>
+<li>They also run Five Star Life Basketball, a youth training academy with leagues, AAU teams, camps and private training. It moved into the new Mishawaka Fieldhouse in fall 2024 after six years of bouncing between gyms.</li>
+<li>They raise money through donations too, including a &quot;Sponsor a Student for $25 a month&quot; option.</li>
+<li>Their site says up to 80% of schools see improved GPAs or keep a 3.0+, and up to 70% see fewer discipline referrals.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Schools and school districts that buy the curriculum and programs.</li>
+<li>Parents and families who sign kids up for basketball and programs.</li>
+<li>Donors and sponsors who fund students.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Many kids disengage from school and some drop out. Schools struggle with behavior, motivation and grades.</li>
+<li>Five Star Life teaches kids a winning mindset so they show up, behave better and do better in class.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He came in from a quantumSCALE webinar and booked from the webinar chat, so he has heard how we think.</li>
+<li>This is a nonprofit with several buyer types at once. Ask which one he wants to grow first: more schools buying the curriculum, more families in programs, or more donors. A webinar works very differently for each.</li>
+<li>School leaders and principals respond well to education, so a webinar on something like &quot;how schools cut discipline referrals and raise GPAs&quot; fits his strongest proof.</li>
+<li>He already runs a podcast, so he is comfortable on camera and has content. Ask how the podcast turns into new schools or donors today.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He hosts the weekly &quot;Five Star Life with Coach Seth&quot; podcast. (Apple Podcasts, &quot;Five Star Life with Coach Seth&quot;)</li>
+<li>His basketball program spent six years moving from gym to gym before landing at the Mishawaka Fieldhouse in 2024. (Five Star Basketball announcement on 5starbasketball.org)</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
