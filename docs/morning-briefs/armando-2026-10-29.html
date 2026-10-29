@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Thu Oct 29, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Thu Oct 29, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>11:15 AM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/tV7SHRzNqtO4YAsUhvbg">Alfred Longtin</a> · Call 1 · Longtin Family Companies</strong>
+      </div>
+      <div class="slot">
+        <strong>1:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/dzPoAQkqt3Aoot9qT2rx">Gordon Adelsberg</a> · Call 1 · Adelsberg Consulting</strong>
+      </div>
+      <div class="slot">
+        <strong>3:00 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/Sh2a0sQBWS24NEbx4ZF4">Beth Murphy</a> · Call 1 · Athena Assessment</strong>
+      </div>
+      <div class="slot">
+        <strong>4:15 PM CT · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/TJblw742myStGuZoI1Ge">Ridhi Tatineni</a> · Call 1 · Chelo LLC</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Alfred Longtin · Call 1 · 11:15 AM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Alfred Longtin · Longtin Family Companies · Call 1 · Thu Oct 29, 2026, 11:15 AM CT · Armando</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Al is the founder and CEO of Longtin Family Companies, which he started in 1992. He has more than 30 years in financial advisory work.</li>
+<li>He grew up in a farming family as the youngest of nine kids. His dad started a grain-hauling business, which is where Al says his love for business started.</li>
+<li>He served four years in the U.S. Navy and left with letters of commendation.</li>
+<li>His wife Caren runs finances and first impressions at the firm, and his daughter Alicia works there in business development, so this is truly a family business.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Longtin Family Companies is a small advisory firm in Frankfort, Illinois. Their line is &quot;Entrepreneurs serving Entrepreneurs.&quot;</li>
+<li>They help with estate planning, tax strategy, exit and succession plans, captive insurance, real estate, business growth and raising capital.</li>
+<li>Since 1987 they have partnered with The Mid-Continent Companies in Houston for employee benefits and advanced planning.</li>
+<li>There is no public pricing, and the site has no case studies or named clients.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Business owners, fast-growing entrepreneurs and ultra high net worth families across the U.S.</li>
+<li>They especially call out large family-owned businesses.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Successful owners have their money tied up in the business and face hard choices on taxes, succession, exit and protecting what they built.</li>
+<li>LFC acts like a trusted family office that helps them make those calls with a clear plan.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>The site has no lead magnet, newsletter or content offer, only a conference page. Ask how new families find them today, because this kind of firm usually runs on referrals.</li>
+<li>Wealthy business owners are a hard crowd to reach cold. Ask what a new client is worth to him, because high client value makes a steady system very attractive.</li>
+<li>He wrote a July 2025 piece in IBTimes called &quot;Rethinking Risk: How Small Businesses Can Protect What They&#x27;ve Built.&quot; He already likes teaching, which fits a webinar model well.</li>
+<li>A webinar on something like &quot;how to plan your exit without handing half of it to taxes&quot; fits his buyer well.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He served four years in the U.S. Navy right after losing both parents at eighteen, and he says that time gave him his discipline (Longtin Family website).</li>
+<li>His dad&#x27;s grain-hauling business is where his entrepreneur story started (Longtin Family website).</li>
+<li>He and Caren married in 1989 and now work side by side at the firm (Longtin Family website).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Gordon Adelsberg · Call 1 · 1:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Gordon Adelsberg · Adelsberg Consulting · Call 1 · Thu Oct 29, 2026, 1:00 PM CT · Armando</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Gordon is the founding partner of Adelsberg Consulting in Miami, which he has run since about 2012.</li>
+<li>He also works as a Managing Director at ARGO Capital Advisors, which he joined in 2022.</li>
+<li>Before that he did business transformation work at DuPont Sustainable Solutions. He is a Lean Six Sigma Black Belt.</li>
+<li>Early on, he built and owned Masterpiece Ice Cream Company in Raleigh from 1995 to 2002, then sold it in a management buyout before going to Penn State for his MBA.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Adelsberg Consulting helps private companies raise money or sell, by matching them with the right investment bankers and capital partners.</li>
+<li>Their line is &quot;Raising capital is difficult, and requires time and skill.&quot;</li>
+<li>They also help private equity firms with operational due diligence and improving operations after a deal, especially supply chain and safety.</li>
+<li>He says he talks to owners &quot;in your language as opposed to banker-speak.&quot;</li>
+<li>There is no public pricing, and the site has no case studies or named clients.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Lower middle-market and mid-market private companies, including family businesses, that want to raise capital, refinance or exit.</li>
+<li>Private equity firms and investment bankers who need help with operations and due diligence.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Most owners raise money or sell only once, so they don&#x27;t know which banker or investor is right for them.</li>
+<li>Gordon helps them get ready and pick the right partner so they get a better deal and fewer surprises.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He attended a quantumSCALE webinar before booking, so he has already heard how we think.</li>
+<li>The site has no lead capture at all, not even a visible form. Ask how deals come in today, because this business usually runs on a personal network.</li>
+<li>He is active in XPX Miami, an exit-planning community for advisors. That tells you he already gets deals through relationships and events, so ask how many good owner conversations he gets a month.</li>
+<li>A webinar on something like &quot;how to get your company ready to raise money or sell&quot; fits a family business owner well.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He built an ice cream company from scratch, sold it, and says to ask him about &quot;the wonderful aroma of baking vanilla waffle cones&quot; (LinkedIn).</li>
+<li>He helped promote the XPX Miami launch party in March 2025 at Bulla Gastrobar in Coral Gables (LinkedIn).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Beth Murphy · Call 1 · 3:00 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Beth Murphy · Athena Assessment · Call 1 · Thu Oct 29, 2026, 3:00 PM CT · Armando</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Beth (also listed as Elizabeth) is an Account Manager at Athena Assessment and has been there since December 2011.</li>
+<li>She was a customer first. As a hiring manager for a chain of retail stores in South Carolina, she tried many hiring tests, and Athena was the one that worked, so she joined the company.</li>
+<li>She holds two senior HR credentials, SHRM-SCP and SPHR, and studied business at the University of South Carolina.</li>
+<li>She is the instructor for Athena Academy and runs their free 30-minute webinars.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Athena Assessment sells a pre-hire test that measures how a person makes decisions, to predict who will do well in a job.</li>
+<li>Beth&#x27;s own line on it is that decision-making is &quot;the only true predictor of employee success.&quot;</li>
+<li>They are based in Boiling Springs, South Carolina.</li>
+<li>We could not read their main website, so ask early how they price and package it.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Employers and HR teams who hire often and want fewer bad hires.</li>
+<li>Her webinars talk to HR people and hiring managers, and about half the people who attend are not clients yet.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Bad hires cost a lot of money and cause conflict on the team.</li>
+<li>Athena helps companies spot risk before they hire, and also helps them develop the people they already have.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>She attended a quantumSCALE webinar before booking, so she has already heard how we think.</li>
+<li>Athena already runs free webinars on a regular schedule. Ask how many people attend, how many become clients, and what happens after the webinar ends. That shows whether the gap is getting people in or turning them into buyers.</li>
+<li>Her webinars promise &quot;no sales pitch&quot; and &quot;you won&#x27;t be added to any list.&quot; That may be leaving buyers on the table, so ask gently how they follow up today.</li>
+<li>She bought on proof, not on a pitch. Lead with real numbers and examples, and let her draw her own conclusions.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>She grew up in Raleigh, lived in other states for school and work, and moved back to North Carolina (Athena website).</li>
+<li>Her popular webinar &quot;Don&#x27;t Ask That!&quot; teaches interviewers which questions to avoid, which is a fun topic to ask about (LinkedIn).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Ridhi Tatineni · Call 1 · 4:15 PM CT</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Ridhi Tatineni · Chelo LLC · Call 1 · Thu Oct 29, 2026, 4:15 PM CT · Armando</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Ridhi is the founder and CEO of Chelo, also called Chelo Software Lab, in Boise, Idaho.</li>
+<li>She started Chelo in 2023, but the site talks about 15+ years of experience, so there is a longer story before Chelo worth asking about.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Chelo is a software studio. Their line is &quot;From idea to launch, we&#x27;re your software product partner.&quot;</li>
+<li>They build web and mobile apps and SaaS products, and they also do design, product strategy, AI and automation, websites, paid ads, SEO and social media.</li>
+<li>They built JollybirdAI, an AI screenwriting tool that turns ideas into scripts and short videos.</li>
+<li>There is no public pricing. They show four named client testimonials and a portfolio of 12+ clients, including Behavior Imaging and Idaho APEX Accelerator.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Startups and small businesses, especially early-stage founders who need a product built.</li>
+<li>They do not name a specific industry or company size, which makes them a generalist today.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Founders have an idea but no tech team, so building an app is slow, risky and expensive.</li>
+<li>Chelo acts as the product team from first idea through launch.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>She attended a quantumSCALE webinar before booking, so she has already heard how we think.</li>
+<li>Their only lead path on the site is a &quot;Start project&quot; button. There is no blog, lead magnet or newsletter, so ask where projects come from today.</li>
+<li>They serve &quot;startups and businesses&quot; broadly. Ask who her best clients have been, because picking a clear niche usually makes everything else easier.</li>
+<li>A webinar on something like &quot;how to launch your app idea without wasting your first $50k&quot; fits an early-stage founder well.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Chelo is listed in the Buy Idaho directory, which supports locally owned businesses, so she is active in the Boise business community (Buy Idaho directory).</li>
+<li>The name Chelo is a Hindi word, which makes for an easy question about where it came from (Chelo website).</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+

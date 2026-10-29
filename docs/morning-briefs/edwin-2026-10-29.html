@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Thu Oct 29, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Thu Oct 29, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>8:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/qq3uHKF8dvwOyldNFWrq">CJ Swingle</a> · Call 3+ · Advantage Design Group</strong>
+      </div>
+      <div class="slot">
+        <strong>12:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/am1S00kTfTfkPgG3JFqO">Jamison Jaworski</a> · Call 1 · Payouts Network</strong>
+      </div>
+      <div class="slot">
+        <strong>1:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/7DufW03xEsBL6ZdnkeTM">Robert G Green</a> · Call 2 · RG Advisors, LLC</strong>
+      </div>
+      <div class="slot">
+        <strong>5:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/H3uMcf3lkIi3i5aG05ea">Christopher Adams</a> · Call 1 · Thinklogic</strong>
+      </div>
+    </section>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>CJ Swingle · Call 3+ · 8:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>CJ Swingle · Advantage Design Group · Call 3+ · Thu Oct 29, 2026, 8:00 AM ET · Edwin</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft lean after Call 2 Custom Demo (~64 min) with CJ, Sam, and Karen all on. Calendar invite and early CTA landed with Karen and CJ. Karen said it seems faster and less like a pitch ploy. CJ lit up on A/B testing invites and webinars, and on trying an evergreen or mixed recorded format. Karen said she is on board with a shorter educational webinar cut for HR. Nobody walked away.</li>
+</ul>
+<ul>
+<li>What paused the close: US references and due diligence, plus an open gap on converting the CFO or other decision maker after HR is excited. Sam framed next steps as homework and references before any order. CJ still said she has no idea if this will resonate on that step.</li>
+</ul>
+<ul>
+<li>Who else matters: Sam Swingle (practical co-decider, pushed price, wants about two US references) and Karen (engaged on invite and webinar shape). CJ is the champion voice. This call is diligence and DM-CFO conversion, not a second full demo.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table: $20,000 USD for the six-month full implementation, then handoff. Ongoing tools after that about $700 a month, pauseable or cancelable. Sam said that is good on the gas cost. CJ’s worry is fees tied to the six-month length with someone new, not the hours.</li>
+</ul>
+<ul>
+<li>Whose court: Shared. Edwin owed the invite, a Josephine reference path, and ideally a second US reference. Buyer side owed internal homework on price and fit. Purpose on tape: diligence / DM-CFO conversion with Josephine floated as the main reference path.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Curious and commercially open, not closed. About a 6/10 deal temp. CJ is championing (“I’d love to try it”) and still uncertain on decision-maker resonance. Sam is polite, time-boxed, and procedural. Karen is constructive and on board with the webinar cut while still voicing invite-fatigue as a future risk.</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency is the live pain of HR love then CFO no (Sam named about $30,000 getting shot down without a real look), plus a booked hour to keep moving. Killers are unfinished US proof, the six-month fee frame sitting heavy, and CJ/Sam still doubting the path from webinar interest to CFO or decision-maker close.</li>
+</ul>
+<ul>
+<li>Fears still alive: Paying fees for six months to someone new before it works; betting without US references because there is no US home office; repeating the HR-excited then CFO-blocks movie; calendar invites losing power if they become common.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>US references / due diligence - primary - Sam said two US references are kind of what they need before an order; no US office is part of their vetting story.</li>
+<li>Decision-maker / CFO conversion after HR love - primary - named twice on Call 2; CJ said the demo did not fully address converting decision makers because they price on follow-up and proposal, not on the webinar.</li>
+<li>Six-month fee / commitment length - primary - CJ confirmed the worry is fees, not hours; shorter trial feels safer with someone new until it works.</li>
+<li>Calendar-invite fatigue over time - secondary - half-handled; near-term upside accepted, long-term saturation still named.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “If you have anybody already using you in the USA that we could speak to as a reference… if we could get two references here in the US… that’s kind of what we need.”</li>
+</ul>
+<ul>
+<li>Status: still open - this is why this call exists.</li>
+</ul>
+<ul>
+<li>Overcome with: Lead with the Josephine path Edwin already floated, and put a second US name in their hands the same day. Do not re-demo the whole machine. Hand them prospect-facing diligence pages they can click, then ask what would make diligence “done enough” to decide on this call or inside seven days. Protect the hour for DM-CFO tactics plus reference logistics, not another strategy dump.</li>
+</ul>
+<ul>
+<li>Full story to tell: Jonathan Duarte at GoHire. Jonathan has decades building recruiting solutions and runs GoHire, a US-facing HR SaaS that sells text-first recruiting automation (text-to-apply, AI SMS pre-screen, interview self-scheduling) into hourly and frontline employers across restaurants, hospitality, retail, manufacturing, logistics, and hospitals and health care. GoHire used the webinar motion as its outbound demand engine and scaled invite volume from about 240 invites per webinar up to about 29,000-plus across roughly eighteen runs while still holding about a 47 percent attendee-to-registrant rate at peak. That is the cleanest pinable US HR software proof for Sam’s “someone already using this in the USA” ask. Prospect link: https://quantums-institute.com/due-diligence-software</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand when Sam reopens US proof; offer the diligence page and a live reference path (Josephine first, Jonathan as the US HR SaaS mirror), not a highlight reel dump.</li>
+</ul>
+<ul>
+<li>Exact land line: “Sam, you asked for two US references because you have to vet harder without a US office. Jonathan Duarte at GoHire is the HR SaaS version of that story in the US, and Josephine is the live reference path for how HR actually gets past the decision maker. Let’s lock who you talk to and what would make diligence done.”</li>
+</ul>
+<ul>
+<li>Objection: “I’m not sure this addressed getting the decision maker and then converting those… because we don’t give them the price during the webinar.” / “HR loves it, then the CFO says no to about $30,000 without really looking.”</li>
+</ul>
+<ul>
+<li>Status: still open - hard gap named by CJ and Sam.</li>
+</ul>
+<ul>
+<li>Overcome with: Make this call a conversion clinic, not a second demo. Walk Josephine’s playbook in plain English: HR is often not a linear buyer; even budget holders check with management; map who decides, who evaluates, and what makes the champion credible in front of the CFO; use educational webinars plus a “best and worst options / you need a solution now” topic for buyers further down the project; keep pricing simple with no hidden setup surprises; once a number has been shown inside the org, avoid reopening budget for small adds; offer sign-now with a later commencement date so budget and priority stay defended. Soft-offer a short Josephine reference conversation if they want it live.</li>
+</ul>
+<ul>
+<li>Full story to tell: Josephine Groom at Compensation IQ (reference path, not a glossy case-study page). On a Pursuit Review with Scott, Josephine walked exactly how HR buying works when funding and decision makers are the stall. She maps the buying center (example: Louise is decision maker and budget holder but wants to stay credible with the management team; Kelly on her team does most of the evaluation). She runs educational webinars plus a third topic aimed at people who already have verbal approval to find a provider. She is blunt that HR rarely has the budget they want, that the CFO or finance director will argue even when HR holds the budget, and that once a price has been shown internally you should not force another budget conversation for a small add. She also uses commencement-date contracting: sign now, start later, so the organization has signed, the price is secured, and a competing vendor cannot walk in over lunch and reset the shortlist. Use this as the DM-CFO conversion story Edwin already pointed at on Call 2.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand as the spine of this call; then soft tie-back to Advantage’s HR-then-CFO movie.</li>
+</ul>
+<ul>
+<li>Exact land line: “You already named the movie: HR loves it, CFO says no without looking. Josephine’s play at Compensation IQ is built for that exact buying center: map who decides versus who evaluates, keep the number clean so finance does not get a second fight, and lock commitment with a start date that defends the budget. That is the gap today is for.”</li>
+</ul>
+<ul>
+<li>Objection: “Six months commitment sounds long… we’re more likely to try something new with someone new… [concern is] the fees.”</li>
+</ul>
+<ul>
+<li>Status: still open - CJ confirmed fees, not hours. Sam already accepted the ~$700/mo tools cost after handoff as pauseable.</li>
+</ul>
+<ul>
+<li>Overcome with: Restate the commercial frame exactly as Call 2: $20,000 for six months of build and handoff, then about $700 a month for tools that can pause or cancel. Reframe six months as the time to install and transfer the machine, not a forever retainer. Do not invent a shorter paid trial or a new discount. Use own-the-machine proof after channel burn.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors. Gene is a founding partner at a boutique investment bank and M&amp;A advisory (Chicago base, sister offices in other US cities). He is the marketing-literate partner who vetted vendors for the group. He had been burned by agencies: four agencies over five years at roughly $36,000 to $48,000 a year, five qualified prospects and one client total. Once he owned the system instead of renting campaigns, he matched five years of output in about six months, then scaled. Workshop path shows about 61 booked sales calls across 12 webinars (about 614 attendees across those runs). Use for “fees feel long until you own the machine instead of renting another fragile dependency.” Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand after CJ restates fee fear; land as rent-versus-own, not another agency pitch.</li>
+</ul>
+<ul>
+<li>Exact land line: “You already said the worry is fees, not hours, and Sam already liked that the ~$700 tools can pause. Gene Rosendale only moved after years of agency rent taught him to own the machine. Same frame for you: twenty thousand buys the build and the handoff over six months, then you keep the keys.”</li>
+</ul>
+<ul>
+<li>Objection: Soft diligence posture / “we still have to do our homework before we place an order.”</li>
+</ul>
+<ul>
+<li>Status: still open as process, not a hard no.</li>
+</ul>
+<ul>
+<li>Overcome with: Treat homework as a dated checklist, not an open loop. Put Jonathan (and Jacqueline as backup US HR proof) plus Josephine reference logistics in their hands. Ask what remaining diligence questions would still block a yes after today. Prefer a clear decision path on this call once references are lined up.</li>
+</ul>
+<ul>
+<li>Full story to tell: Jacqueline Throop-Robinson at Spark’d Engagement Inc. Jacqueline has spent 25-plus years on why high performers leave “good” companies and sells Spark’dLens, an employee engagement survey with individual profiles and action plans into US and Canadian HR buyers across healthcare and many other verticals. On a tight, well-matched list of 1,332 invites (one of the smallest lists in the set), that run produced about a 76 percent attendance rate and a booked call, with invite-to-attendee conversion roughly five times the median. Use as the second US HR diligence mirror when Sam wants two names and Jonathan is the primary SaaS pin. Prospect link: https://quantums-institute.com/due-diligence-software</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand as the second US proof next to Jonathan; keep Josephine as the live conversation for conversion tactics.</li>
+</ul>
+<ul>
+<li>Exact land line: “Homework is fair. Jonathan Duarte at GoHire and Jacqueline Throop-Robinson at Spark’d are the US HR diligence pair, and Josephine is the live reference for the CFO step. Tell me what still has to be true after those for this to be a yes.”</li>
+</ul>
+<ul>
+<li>Objection: “Will busy senior buyers / CFOs even show and take this seriously?” (implied under the CFO-shot-down story)</li>
+</ul>
+<ul>
+<li>Status: half-open - not stated as a hard stop, but lives inside the DM conversion fear.</li>
+</ul>
+<ul>
+<li>Overcome with: Separate room-filling from offer conversion. Remind them how *they* showed up to the QS webinar off a calendar invite. Then use senior-buyer proof for the “CFO will not engage” fear, and return to Josephine’s conversion tactics for the post-webinar proposal step.</li>
+</ul>
+<ul>
+<li>Full story to tell: Tejas Parikh at Akshar Consulting. Tejas is a career finance leader turned founder (FCMA/ACMA, MBA in Finance, two-plus decades of FP&amp;A across GE Healthcare, Vodafone, Unilever, Dixons/Currys, and Whitbread). He sells high-ticket work to CFOs and finance directors and raised the exact fear that senior buyers would not show up and that he would rather have a few real conversations than hundreds of junk leads. On his first webinar he reported about 250 registrations, 80-plus attendees, and 15 qualified sales calls, and closed several deals. Roughly five calls a month produced four clients at about GBP 100k lifetime value each in his story. Use for “busy financial decision-makers will show when the offer is serious.” Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand if Sam or CJ drifts into “CFOs will not even look”; then return to Josephine for how HR keeps the number and the champion credible after the call is booked.</li>
+</ul>
+<ul>
+<li>Exact land line: “You already lived the show-up proof. Tejas Parikh sells to CFOs and finance directors with the same ‘too senior / too busy’ fear and still filled a serious first webinar. Josephine’s play is what happens after HR is excited so finance actually looks.”</li>
+</ul>
+<ul>
+<li>Objection: Calendar-invite fatigue (“this could stop working if everyone does it”).</li>
+</ul>
+<ul>
+<li>Status: half-handled - near-term upside accepted on Call 2.</li>
+</ul>
+<ul>
+<li>Overcome with: One short reminder that few operators can send at this scale today, then move on. Do not spend this call re-proving the invite mechanic.</li>
+</ul>
+<ul>
+<li>Full story to tell: Same Jonathan Duarte / GoHire pack above for scale without collapsing attendance quality (240 to 29,000-plus invites while holding about 47 percent attendee-to-registrant at peak). Full tellable version already written.</li>
+</ul>
+<ul>
+<li>Exact land line: “Karen’s fatigue point is real over a long horizon. Near term, Jonathan Duarte’s GoHire runs show the motion still fills serious rooms at volume. Let’s spend today on references and the CFO step, not another invite seminar.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Josephine Groom · Compensation IQ - lead for DM-CFO / funding / buying-center conversion (reference path Edwin already floated). Map Louise/Kelly-style decision versus evaluation, keep price clean so finance does not reopen budget, use commencement-date contracting to defend priority. Reference conversation, not a case-study deep link.</li>
+<li>Jonathan Duarte · GoHire - primary pinable US HR SaaS diligence; scaled about 240 to 29,000-plus invites across roughly eighteen runs while holding about 47 percent attendee-to-registrant at peak. Prospect link: https://quantums-institute.com/due-diligence-software</li>
+<li>Jacqueline Throop-Robinson · Spark’d Engagement - backup US HR diligence; 1,332 invites, about 76 percent attendance, booked call on a small well-matched list. Prospect link: https://quantums-institute.com/due-diligence-software</li>
+<li>Gene Rosendale · Advocate Advisors - six-month fee / own-the-machine after agency burn; about 61 booked calls across 12 webinars. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+<li>Tejas Parikh · Akshar Consulting - senior CFO / finance-director show-up; first webinar about 250 registrations, 80-plus attendees, 15 sales calls; four clients near GBP 100k lifetime value in his story. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+</ul>
+<p>Deal Forge how-it-works (if they want the motion overview again without a re-demo): https://deal-forge-angel.onrender.com/1384e9b8-edcb-4545-9656-4c0ff9484c32/how-it-works</p>
+<h3>Path to close</h3>
+<ul>
+<li>Open in the first five minutes: thank them; confirm this hour is diligence plus DM-CFO conversion, not a second 60-minute demo. Ask what homework they finished overnight, what still feels thin, and whether Josephine (plus a second US reference) is the proof path they want.</li>
+<li>Walk Josephine’s buying-center play in plain English (who decides, who evaluates, how HR stays credible with the CFO, clean price, commencement-date option). Offer to set the live Josephine reference conversation on the spot if they want voice-to-voice proof.</li>
+<li>Hand US diligence: Jonathan Duarte / GoHire as the primary HR SaaS pin, Jacqueline Throop-Robinson / Spark’d as the backup US HR name, both on the software diligence page. Restate Ideal ICP only if needed in one line: US healthcare and senior living, 201-10k employees, HR and Talent titles (Apollo TAM about 37k; recommended outreach about 12k; no government, no higher ed).</li>
+<li>Restate commercial package exactly as Call 2: $20,000 / six months full implementation, then about $700 / month tools pauseable after handoff. No new discount. No invented shorter paid trial. Use Gene only if fee length is still the brake.</li>
+<li>Ask for a clear decision path on this call: proceed (e-sign / pay / SOW) once reference calls are dated, or a dated Hold Call 4 inside seven days with named open items and references already booked, or clear not-moving. Never “we’ll keep doing homework” with no names and no date.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If US references are still the only hard gate, then lead with Josephine logistics plus Jonathan (and Jacqueline as second US name); send diligence links same day; date the reference calls before you leave the hour.</li>
+<li>If DM-CFO conversion is the live fear, then run Josephine’s buying-center play first; use Tejas only if they doubt senior buyers will even show; do not re-walk the whole webinar build.</li>
+<li>If six-month fees are the brake, then restate $20k / 6 months and ~$700 pauseable tools exactly as tape; tell Gene’s own-the-machine story; do not invent a trial price.</li>
+<li>If they ask to re-demo the invite and webinar system, then five minutes max, then back to references and CFO conversion. Protect the hour.</li>
+<li>If Karen reopens invite fatigue, then one Jonathan scale line, then move on.</li>
+<li>If they want paper before references, then send commercial terms matching Call 2 and still date Josephine plus one US reference inside seven days.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: verbal lean from CJ, Sam, and Karen to the $20,000 six-month engagement (about $700 / month tools pauseable after handoff, as framed on Call 2) plus dated Josephine reference call and at least one US reference (Jonathan Duarte / GoHire primary; Jacqueline Throop-Robinson / Spark’d backup) plus a named kickoff week and e-sign / pay step once those calls land. Next acceptable: written yes pending diligence on a Call 4 calendar hold dated inside seven days with Josephine and the US reference already booked and diligence links already in their hands. Not acceptable: “still doing homework” with no reference names, no dates, and no calendar invite.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Jamison Jaworski · Call 1 · 12:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jamison Jaworski · Payouts Network · Call 1 · Thu Oct 29, 2026, 12:00 PM ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Jamison is the Chief Revenue Officer at Payouts Network. He joined in May 2026, and the company announced it on June 23, 2026.</li>
+<li>He owns the whole revenue side there: sales, business development, partnerships and go-to-market.</li>
+<li>Before this he spent almost six years at Green Dot as GM and SVP of the consumer division, running retail relationships across more than 90,000 store locations.</li>
+<li>Earlier he was CEO of EML Americas and ran business development at Netspend. He has more than 25 years in payments and prepaid, and he is based in Overland Park, Kansas.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Payouts Network is a real-time payments company that helps big businesses send money to consumers fast. Their line is &quot;Your payout dollars should do more than leave your account.&quot;</li>
+<li>They handle things like refunds, service recovery, rewards, loyalty redemption, customer incentives and digital credits, instead of paper checks and vouchers.</li>
+<li>They are small, with roughly 10 to 20 people, headquartered in Bozeman, Montana, and they have raised about $20M.</li>
+<li>Pricing is quote-only, and their site has no named customers or case studies.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Enterprise brands in airlines, banking, insurance, lending, hospitality, healthcare, retail, utilities, logistics and gig platforms.</li>
+<li>The buyer is usually someone in customer experience, operations or finance who is stuck sending payouts the slow, expensive way.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Mailed checks and paper vouchers are slow, costly to run, and frustrate customers who are already upset.</li>
+<li>Payouts Network lets a company send money instantly, so a bad moment like a cancelled flight turns into a good experience.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He is a brand-new CRO at a small company with a big enterprise target list. He was likely hired to build pipeline fast, so ask what his number is for the next 12 months and how he plans to hit it.</li>
+<li>The site has no named customers, no case studies and no way to capture leads besides &quot;Book a Demo.&quot; That is a clean opening to talk about how enterprise buyers find them today.</li>
+<li>His background is big partnerships and retail networks, not a marketing engine. Ask how much of his pipeline he expects to come from his own network versus a repeatable system.</li>
+<li>Enterprise buyers in airlines, insurance and banking love education. A webinar on something like &quot;how to cut payout costs and turn refunds into loyalty&quot; fits that buyer well.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He went from a large public company to a 10 to 20 person startup this year, so the &quot;why make that jump&quot; story is easy and warm to ask about (LinkedIn).</li>
+<li>He lists Board Member in his LinkedIn headline, which could open a light question about what he does outside the day job (LinkedIn).</li>
+</ul>
+      </div>
+    </details>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Robert G Green · Call 2 · 1:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Robert G Green · RG Advisors, LLC (Robert Green &amp; Company) · Call 2 · Thu Oct 29, 2026, 1:00 PM ET (10:00 AM PT) · Edwin</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Robert has 47 years in life insurance and 30 in investments, and Daryl Hable is his newer partner who left a salaried role this year. They have been working Robert&#x27;s aging book since January, and new referrals are &quot;virtually none.&quot; What stuck for them was the calendar invite: Daryl said that approach had more appeal than anything else they looked at.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Calm and practical, not desperate. Daryl is hungrier and a bit burned by a webinar program with poor attendance, while Robert is relaxed and wants to work fewer days.</li>
+<li>Goals they want but can&#x27;t hit yet: One to two new closes a month. Daryl wants to go from about $100K to $250K to $500K a year.</li>
+<li>Why it matters personally: Daryl needs his own recurring revenue base, since he has no book of his own. Robert wants to stay engaged and hand work to Daryl over the next 10 to 15 years.</li>
+<li>What&#x27;s holding them back: They have no prospecting system, the referral tank is empty, and Robert does not want tech work.</li>
+<li>Consequences if nothing changes: Revenue stays lumpy and tied to an elderly book, and Daryl&#x27;s practice never gets traction.</li>
+<li>Fears in the decision: Getting locked into a long, expensive contract that does not work, a cash-flow hit, and upfront tech work.</li>
+<li>Objections still open: A 12-month lock-in (Daryl walked away from one), price (&quot;solid and priced right&quot;), starting over the holidays, and Robert&#x27;s tech aversion.</li>
+<li>Who&#x27;s joining Call 2: Robert and Daryl (both accepted the invite). Treat both as decision makers.</li>
+<li>What we promised to walk: Target market and list, messaging, what their webinar would look like, implementation timing around Nov/Dec, and finances.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Estate tax and legacy planning, built around life insurance, for family-owned ag operations. Without that planning, heirs may have to sell land to pay estate tax.</li>
+<li>Company goals / dream state (from Call 1): One to two closes a month, organized for 2027, and eventually a back-office hire. Robert wants to work Tue to Thu, 9 to 3, with travel time.</li>
+<li>ICP dream state (what THEIR buyers want): Keep the ranch or vineyard in the family for the next generation, without a forced sale when the parents die.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>The ICP has no job titles to filter on, because the owner wears every hat. The list has to come from industry codes, acreage or land data, and family ownership, so show how we would solve that.</li>
+<li>Daryl&#x27;s last webinars failed on attendance from mass email. The calendar invite is the hook, so show it clearly.</li>
+<li>Daryl held back the price of the 12-month competitor. Expect him to compare, so address contract length early.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): Owners of family-run ranches, farms, cattle operations, vineyards and wineries in western US states where they are licensed. We leave out corporate agribusiness and anyone in Canada.</li>
+<li>Ideal ICP (tight — who they said they want most): Family-owned operations of roughly 30,000 to 50,000 acres west of the Rockies. We have not counted the people yet, and this slice is likely small.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): All family-owned ag operations with high land value (not only very large acreage) across the states Robert listed. We have not counted the people yet. Show companies, then owners, then contacts on the demo.</li>
+<li>How we got the number: Start with ag companies by industry code in their states, then filter to family-owned and size, then find the owner or principal, then find contact data.</li>
+<li>What we widened (if thin): They said all agriculture, not just wine. We would add smaller acreage with high land value and possibly ag-adjacent family businesses, such as equipment dealers and processors. Confirm both with them.</li>
+<li>Check vs Call 1: Robert&#x27;s 30K to 50K acres may be too narrow. Ask whether a 2,000 to 5,000 acre family operation with high land value still fits.</li>
+<li>Too small?: The risk is real for the tight ICP. Only qualify out if the broad version is still under about 30,000 after widening.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): A very specific, emotional problem. Families want to keep the land without selling it to pay estate tax, and there is little real competition.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): They have no current case-study content, and ag owners are conservative and slow to trust. The webinar needs a story-driven, educational tone, not a pitch.</li>
+<li>Positioning line for the webinar if we pick today: How ranch and farm families keep the land in the family when estate taxes come due.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane: Estate taxes that can force heirs to sell land or cattle, because the family&#x27;s wealth is tied up in land and equipment.</li>
+<li>Who we invite first, then next: The ideal family operations in the core western states first, then the broader honest list of family ag owners.</li>
+<li>Story arc (their webinar to their audience):</li>
+<li>Hook: what happens to the ranch the day mom and dad pass.</li>
+<li>Problem: land rich and cash poor, with a big estate tax bill and a forced sale.</li>
+<li>Proof: Robert&#x27;s decades with Napa vineyard families, plus Daryl&#x27;s ultra-wealthy planning background.</li>
+<li>Offer: a legacy and estate tax plan using life insurance to fund the bill.</li>
+<li>Easy CTA: book a private review with Robert and Daryl.</li>
+<li>Copy / talk-track beats:</li>
+<li>&quot;Your land is worth millions, but your heirs may not have the cash for the tax bill.&quot;</li>
+<li>&quot;Most families find out too late. Planning ahead costs far less than selling 1,000 acres.&quot;</li>
+<li>&quot;Attorneys write the documents, CPAs do the books, but someone has to fund the bill.&quot;</li>
+<li>Cadence: One topic and one shared webinar, then test, then segment by state or operation type. Plan the build in Nov/Dec and the first live session in January to match their 2027 timing.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Jason Rotman (Elevate Financial Services), an independent financial advisor and life insurance specialist who uses custom life insurance for tax-efficient wealth and estate transfer. This is the closest match to their offer. Use it when they say high-net-worth people don&#x27;t attend webinars, or for the compliance worry. His line: it &quot;produced more quality leads in literally a month&quot; than nine to 12 months of traditional prospecting. Link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS</li>
+<li>Ken Baron and Rory Zipper (ZEA Financial), a holistic planning firm for retirement, tax and legacy. They used to rely on referrals and cold lists, had wasted money on lead lists and dinner seminars, and won clients through the same calendar-invite play. Use it for &quot;we tried webinars and attendance was poor&quot; and for patience: the first couple of webinars were small, and results came from the third. Link: https://quantums-institute.com/due-diligence-home</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room / who signs / what each cares about: Robert cares about seniority, credibility and low effort for him, and wants it &quot;solid and priced right.&quot; Daryl is the operator and owns the tech, cares about lead flow and building his own revenue, and is sensitive to cash flow and contract length. They decide jointly.</li>
+<li>Landmines from Call 1: 12-month lock-in, price comparison against the program Daryl walked from, holiday timing (&quot;is this the time to pull the trigger?&quot;), Robert&#x27;s tech aversion, and a thin TAM if we stay at 30K+ acres.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Christopher Adams · Call 1 · 5:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Christopher Adams · Thinklogic · Call 1 · Thu Oct 29, 2026, 5:00 PM ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Chris is the CEO and founder of Thinklogic, a custom software company he has run for about 25 years.</li>
+<li>He is still the founder running the company, which is rare for a software shop that has been around this long.</li>
+<li>His team describes him on their site as &quot;calm, insightful, smart,&quot; and his personal line there is &quot;Technology extends humanity&#x27;s ability to positively effect change.&quot;</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Thinklogic builds custom software, apps and content systems. Their line is &quot;We turn complex operations into intelligent systems.&quot;</li>
+<li>They do product strategy, UX and design, development, system integration, AI workflow mapping and support after launch.</li>
+<li>They are based in El Segundo near Los Angeles, with 50+ team members working across 10+ states and 3 countries, fully remote.</li>
+<li>Their team stays a long time. The founder says average tenure is over 8 years.</li>
+<li>Pricing is quote-only. Named clients include Manatt Phelps &amp; Phillips, The Ticket Clinic, Chatsworth Products and the Writers Guild West, and they have also listed Johnson &amp; Johnson and Stanley Black &amp; Decker.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Government agencies, law firms and legal or compliance groups, nonprofits and larger product teams.</li>
+<li>These are organizations with messy workflows and strict rules that need old systems modernized.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Old, clunky systems slow teams down and create risk, especially in regulated work.</li>
+<li>Thinklogic maps the workflow first and then builds a system that fits it. Their stated idea is &quot;Clarity Before Code.&quot;</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>Their only way to bring in leads on the site is a &quot;Let&#x27;s Talk&quot; contact form. There is no lead magnet, newsletter or webinar, so ask where new projects come from today.</li>
+<li>A 25-year shop usually runs on referrals and repeat clients. Find out how predictable that is month to month and what happens when a big project ends.</li>
+<li>He has a clear opinion that AI only matters when it improves real workflows. That is a natural bridge to how we use AI to fill a calendar, not as a gimmick.</li>
+<li>Their buyers in legal and government love education. A webinar on something like &quot;how to modernize legacy systems without breaking compliance&quot; fits that buyer well.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>His site quote says AI is not a separate service at Thinklogic but something they build into workflows, which is a fun opinion to ask him about (Thinklogic website).</li>
+<li>He credits the team&#x27;s long tenure for the company&#x27;s success, so asking how he keeps people for 8+ years is an easy, warm opener (Thinklogic website).</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
