@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Fri Oct 30, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Fri Oct 30, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>9:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/X2Um9P14QrZcHibOKeik">Asif Iqbal</a> · Call 1 · Juspay</strong>
+      </div>
+      <div class="slot">
+        <strong>12:15 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/sIvH461HvS2o3DMgxuKs">Robert Champion</a> · Call 1 · InnoFlex Solutions</strong>
+      </div>
+      <div class="slot">
+        <strong>5:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/Rhdb6NkEUFkbsRaEYKfI">Ben Tanner</a> · Call 1 · Ignite Viral Media</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Asif Iqbal · Call 1 · 9:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Asif Iqbal · Juspay · Call 1 · Fri Oct 30, 2026, 9:00 AM ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Asif leads US market expansion for Juspay, focused on getting American merchants to adopt Juspay Hyperswitch. He has been in that seat since January 2025 and is based in Austin, Texas.</li>
+<li>Before Juspay he spent years at HP, first as a technical program manager in e-commerce and then as Principal for Consumer Subscriptions go-to-market. Earlier he was a project manager at TEKsystems.</li>
+<li>He describes himself as having more than 13 years in payments, e-commerce and subscription platforms.</li>
+<li>He is a business development leader at a big company, not the owner. Find out early who signs off on a marketing spend like ours.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Juspay is a large payments infrastructure company, roughly 1,000 to 2,000 people, founded in 2012, with about $198M raised and offices in India, Singapore, Dublin, São Paulo and San Mateo.</li>
+<li>His product, Hyperswitch, is an open-source payments platform. It lets a merchant plug in several payment providers, route transactions, run checkout, store cards safely and reconcile payments, without getting locked into one vendor.</li>
+<li>They pitch it as &quot;Linux for payments.&quot; Merchants can host it themselves or use it as a hosted service.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Mid-size and enterprise merchants and marketplaces in the US and Canada, especially ones selling across several countries or running subscriptions.</li>
+<li>The buyer is usually a head of payments, a payments product manager or an engineering lead who is tired of costly, rigid payment setups.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Every new payment provider can take months of developer work, fees stack up, and failed payments quietly cost revenue.</li>
+<li>Hyperswitch lets a merchant add providers through settings instead of code and route each payment to the cheapest or most reliable option.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>On his booking form he picked B2B SaaS, said his main problem is not getting qualified leads, and said he wants to start immediately. Ask what &quot;qualified&quot; means to him and what pipeline number he is carrying for the US.</li>
+<li>He came in through our paid ads, not a webinar, so he has not seen the method yet. Keep the first part of the call about his problem before showing anything.</li>
+<li>He has said publicly that the best payments conversations start with merchant problems, not products. A webinar built around a merchant pain, like &quot;why your payment costs keep rising,&quot; fits how he already likes to sell.</li>
+<li>Because Juspay is big, ask how US marketing decisions get made, what budget his team controls, and who else would need to be on a second call.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He moved from consumer subscriptions at HP to open-source payments infrastructure, so asking what pulled him from a big corporate role into building a new market is an easy, warm start (LinkedIn).</li>
+<li>He has posted about Juspay expanding into Brazil and Latin America as exciting news, which gives you a friendly &quot;how&#x27;s that going&quot; question (LinkedIn).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Robert Champion · Call 1 · 12:15 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Robert Champion · InnoFlex Solutions · Call 1 · Fri Oct 30, 2026, 12:15 PM ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Robert is the President and CEO of InnoFlex Solutions, which he has run since 2019. Before that he spent years inside large consumer packaged goods companies.</li>
+<li>He grew up on the south side of Chicago and credits his father, who ran a construction company, with sparking his interest in running his own business.</li>
+<li>He talks a lot about mentoring younger professionals and calls Dale Carnegie&#x27;s &quot;How to Win Friends and Influence People&quot; a foundation of how he works.</li>
+<li>He is not new to us. He met with Armando back in June after attending a webinar, with his chief of staff Marlon Lyons and engineer Mark Shivey on the line. He said then he wanted to see how we work and what results we get before going further. He came back through a recent email campaign and booked again.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>InnoFlex is a technical consulting firm for packaging and automation. They help with project feasibility, capital equipment decisions, cutting operating costs and technical business development. Their tagline is &quot;Better Efficiency - Better Operations.&quot;</li>
+<li>In June he said they get paid by the hour or by the project, have worked with brands like Nestlé, Kellogg&#x27;s, Conagra and PepsiCo, and that a client is worth about $48K to $50K over its life.</li>
+<li>Their site has a gated white paper, a blog and a contact form, but only one named testimonial.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Food and beverage manufacturers doing roughly $5M to $100M in sales that don&#x27;t have their own engineering team, mostly in the Midwest.</li>
+<li>They also sell to equipment suppliers that sell into those plants, and they want to expand into medical devices, cosmetics, personal care and similar consumable products.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Plants buy expensive equipment and run projects that often fail to pay off. Robert likes to say that over 60% of capital investments fail.</li>
+<li>InnoFlex brings engineering judgment to those decisions, so plants spend less, avoid downtime and get projects done right.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>In June he told Armando the problem is outreach, not capacity. Ads and cold email didn&#x27;t work, they couldn&#x27;t get past gatekeepers, and almost every client came from in-person networking. Ask what has changed since June and whether that is still true.</li>
+<li>His goals in June were $500K in six months and $1M the next year. Ask where he is against that now, because the gap is the reason to act.</li>
+<li>He reacted badly when price came up early in June. Build value and the gap first, and keep money for the end of the call or the next one.</li>
+<li>He leads with risk and proof in his own marketing, so lead with measurable outcomes and case studies, not hype.</li>
+<li>Ask whether Marlon and Mark should join a second call, since they were part of the decision in June.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>His Chicago upbringing and his dad&#x27;s construction company are an easy, genuine opener about where his drive to build InnoFlex came from (podcast).</li>
+<li>He has spoken on PACK EXPO panels next to big-company executives, which is a good thing to ask about (LinkedIn).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Ben Tanner · Call 1 · 5:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Ben Tanner · Ignite Viral Media · Call 1 · Fri Oct 30, 2026, 5:00 PM ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Ben is co-founder and co-owner of Ignite Viral Media, a small digital marketing agency in Utah. He runs it with his partner Brandon Flint.</li>
+<li>He has a bachelor&#x27;s degree in Information Systems and Technology, and says he loves that the work forces him to keep learning and challenge the status quo.</li>
+<li>Public research on him is thin, so don&#x27;t fake familiarity. Let him tell the story.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Ignite Viral Media sells SEO, Shopify SEO, lead generation, reputation management, social media and video production. They are about 12 years old, with a team of roughly three, now based in Spanish Fork, Utah.</li>
+<li>They promote an &quot;ROI your SEO&quot; guarantee and offer month-to-month work instead of long contracts.</li>
+<li>Ben and Brandon also host a podcast called &quot;Masters of the Shopiverse,&quot; which reviews Shopify apps and does live store audits for Shopify sellers.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Small businesses and online store owners, especially Shopify sellers who aren&#x27;t getting enough traffic or sales.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Stores and small businesses that don&#x27;t show up in search lose customers to competitors, even if their product is better.</li>
+<li>Ignite fixes the store&#x27;s content, structure, speed and links so it ranks higher and turns more visitors into buyers.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>On his booking form he picked Marketing Agency, said he wants more booked calendar appointments, and said he wants to start immediately. Ask how new clients find them today and how many sales calls a month he is getting.</li>
+<li>He came in through our paid ads, so he likely hasn&#x27;t seen a webinar from us. Keep the start about his pipeline, not our method.</li>
+<li>Agencies selling month-to-month work live and die on steady new clients. Ask what one client is worth to him over its life and how many new clients a month would change the business.</li>
+<li>The podcast is a ready-made audience and authority builder. Ask whether it brings in clients today, because a webinar built on that same &quot;live store audit&quot; idea could be a natural fit.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>The &quot;Masters of the Shopiverse&quot; podcast is a friendly opener. Ask how a Shopify podcast ended up next to the SEO agency and whether it&#x27;s still going (company website).</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
