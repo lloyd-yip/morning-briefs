@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Fri Nov 6, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Fri Nov 6, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>1:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/XTROvSyopIwIKN3qRuDR">Ziad Abdelnour</a> · Call 1 · Blackhawk Partners</strong>
+      </div>
+      <div class="slot">
+        <strong>3:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/knFXjieA9bjwDKfNtyEI">Gerry Galloway</a> · Call 3+ · FoodReady</strong>
+      </div>
+      <div class="slot">
+        <strong>4:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/09Z9G62QkXOIuowM93Zq">Connor McLeod</a> · Call 3+ · SageCreek AI</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Ziad Abdelnour · Call 1 · 1:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Ziad Abdelnour · Blackhawk Partners · Call 1 · Fri Nov 6, 2026, 1:00 PM ET · Ryan</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Ziad is Founder, President and CEO of Blackhawk Partners, a New York private equity and strategic advisory firm he started in 2008.</li>
+<li>Earlier Wall Street roles include private finance at Ladenburg Thalmann, venture finance at THCG, and private capital markets and M&amp;A at TerraNova Capital Partners.</li>
+<li>He is Lebanese-born, based in New York, and has written books including Economic Warfare and Startup Saboteurs. Public research is useful for openers, not for asserting facts on the call.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Blackhawk Partners presents itself around &quot;the Art of Wealth Creation,&quot; with private equity investing, strategic advisory, and trading services.</li>
+<li>The site lists management-led buyouts, minority equity investments, equity private placements, and growth capital financings for companies and projects in the US and emerging markets.</li>
+<li>No clear pricing, lead magnet, or gated offer showed up on the public site. Contact is via email and phone. Named testimonials appear on a testimonials page.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Companies and projects seeking private capital or strategic advisory, in the US and emerging markets.</li>
+<li>The homepage does not name a tight ICP, so ask him who he actually wants more of and how those deals find him today.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Founders and operators who need capital or strategic help often cannot get it from traditional lenders or generic investors.</li>
+<li>Blackhawk positions around backing people and execution, not just industries or ideas, and structuring deals that create outcomes.</li>
+</ul>
+<h3>What&#x27;s interesting for this call</h3>
+<ul>
+<li>This is his first sales call with us. He booked the Business Growth Roadmap Call, so start with how new deals and relationships find him today, not with our method.</li>
+<li>He is a PE / advisory principal with a public &quot;I back people&quot; stance and a hard bias for execution over talk. Lead with specifics and a clear ask, not a long pitch.</li>
+<li>His firm has no obvious inbound engine on the site. Ask how many conversations a month he wants with the right operators or capital partners, and what one closed deal is worth.</li>
+<li>Hawkstorm Global advisory work (former Navy SEAL and CIA talent) is a different lane from family-office PE. Ask whether that network is a growth channel or a separate brand.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>His line &quot;I don&#x27;t back industries, I don&#x27;t back ideas, I back people&quot; is a strong opener if you ask how he got there (published interview).</li>
+<li>Startup Saboteurs, with ego and small thinking in the frame, is a clean curiosity opener about what deal made him put that in writing (author bio).</li>
+</ul>
+      </div>
+    </details>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Gerry Galloway · Call 3+ · 3:30 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Gerry Galloway · FoodReady · Call 3+ · Fri Nov 6, 2026, 3:30 PM ET · Ryan Matsumori</b></p>
+<p>UNLOCKED DRAFT — not yet reviewed and locked by the closer. Original draft was for the Nov 4 check-in; same deal thread for today&#x27;s 5th meeting.</p>
+<h3>Where we left it</h3>
+<ul>
+<li>Gerry already said yes in spirit. On Oct 27 he said he is &quot;about 85 to 90%&quot; sure and &quot;most likely I&#x27;m going to do it.&quot; On the Oct 20 demo he said &quot;I love everything I&#x27;m hearing&quot; and that he is &quot;very confident it&#x27;s going to work incredibly well.&quot;</li>
+</ul>
+<ul>
+<li>The close paused because he asked for one more week. He wanted to review the contract, run more analysis, and check references. He was busy and out of town that week.</li>
+</ul>
+<ul>
+<li>His co-deciders are his business partners, and he wants to review the agreement with them. Who those partners are is unknown. Alex (sales director) missed the demo and got the recording. Elena (email marketing) was on the demo and was positive.</li>
+</ul>
+<ul>
+<li>The money on the table is a $20,000 one-time fee. It was $18,000 if signed within 24 hours, which has passed. It can be financed over 12 months with a 15% uplift. Running costs are about $400 a month for 30,000 invites, plus $30 for each extra 10,000 leads. The guarantee is 3X ROI, meaning $54,000 contracted in six months, or we keep working for free.</li>
+</ul>
+<ul>
+<li>On Oct 27 Gerry said, &quot;If I do it, I&#x27;m going to do month, monthly.&quot; No dollar amount was attached to that.</li>
+</ul>
+<ul>
+<li>The ball is in Gerry&#x27;s court for the decision. Ryan owed him an email intro to Cedric as a reference. Whether that intro went out and whether they talked is unknown.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Gerry is bought in but blocked. He calls himself 85 to 90% in. The stall looks like busyness plus careful checking, not cold feet.</li>
+</ul>
+<ul>
+<li>What&#x27;s creating urgency: Cold email has given diminishing returns every year for six years, and he said he is looking for alternatives right now. He also wants to reach C-level buyers at larger food companies, which cold email is not doing.</li>
+</ul>
+<ul>
+<li>What&#x27;s killing urgency: His own pace and travel. He said signing in one day is &quot;just not happening,&quot; and he keeps asking for another week.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision:</li>
+<li>Wasting the money. He said, &quot;I can&#x27;t afford to waste $20,000.&quot;</li>
+<li>Being fooled. He said he needs to &quot;fact check you guys and make sure you&#x27;re for real.&quot;</li>
+<li>A risk he has not named. On Oct 27 he said risk was one of his two hesitations, and nobody found out what he means.</li>
+<li>Brand damage. On Call 1 he worried anything &quot;schlocky&quot; could hurt FoodReady&#x27;s name.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Cost and terms. This is primary. He wants monthly payments, and earlier he asked for about $5,000 to start, month to month, with a way out after 90 days. It matters because it decides whether he signs today.</li>
+</ul>
+<ul>
+<li>The unnamed risk. This is primary. We cannot answer it until he says what it is, whether results, delivery, the commitment length, or his brand.</li>
+</ul>
+<ul>
+<li>References. This is primary. He wants to speak with a software client, ideally the one linked to the Microsoft sale. The Cedric intro was promised, and its status is unknown.</li>
+</ul>
+<ul>
+<li>Partner sign-off on the agreement. This is secondary, but it can stall the close if the partners have not read it.</li>
+</ul>
+<ul>
+<li>The webinar pricing slide. This is secondary. Gerry said our webinar showed pricing but not the $20,000. If he feels misled, it feeds the trust blocker.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: &quot;I don&#x27;t like $20,000 upfront without knowing it will pan out. If I do it, I&#x27;m going monthly.&quot;</li>
+</ul>
+<ul>
+<li>Status: Still open.</li>
+</ul>
+<ul>
+<li>Overcome with: Agree that his question is about risk, not about whether the system works, because he already said it is worth the $20,000 if it pans out. Show him three things that already lower the risk. First, the first two months are a built-in test with his buyers before we scale. Second, the 3X guarantee means we keep working for free until he contracts $54,000. Third, the 12-month financing gives him the monthly payments he asked for. Do not offer a $5,000 start or a 90-day exit unless Lloyd has approved it before the call.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale is a founding partner at Advocate Advisors, a boutique investment bank and M&amp;A firm in Chicago. He is the marketing person in his firm, so he was the one who vetted vendors, and he looked at about two dozen firms before us. For five years he had hired four different marketing agencies, paying $36,000 to $48,000 a year. Across those five years the agencies produced five qualified prospects and one client in total. With us, he matched those five years of results in six months, and then he scaled from there. In his own words: &quot;It&#x27;s too good to be true, and if it sounds too good to be true, it&#x27;s because it is, you just need to do this.&quot;</li>
+</ul>
+<ul>
+<li>How to deliver it: Say it half-offhand when he talks about paying monthly or trying first, for example, &quot;You actually remind me of a guy in Chicago.&quot; Keep it short, then tie it back to him.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;Gene was paying more than this every year to rent agencies, and it walked out the door each time. You are building something you own. On your own numbers a client is worth about $25,000 over its life, so a couple of clients pay for the whole thing.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;I need to fact check you and make sure you&#x27;re for real. I don&#x27;t know anyone who uses you.&quot;</li>
+</ul>
+<ul>
+<li>Status: Half-handled. He has the due diligence page and client interviews, and the Cedric intro was offered.</li>
+</ul>
+<ul>
+<li>Overcome with: Treat his checking as smart. Ask what he watched and what stood out. Ask whether he spoke with Cedric and what he took from it. If a reference is the last thing he needs, book it before you hang up and tie it to a decision date.</li>
+</ul>
+<ul>
+<li>Full story to tell: Ken Tyborski is the founder and president of Code of the North, a NetSuite consulting firm of about ten people in Minneapolis. His firm sells to manufacturers, distributors and food and beverage companies, which are much like FoodReady&#x27;s buyers. Before us he had spent roughly a quarter of a million dollars on salespeople and programs that did not fix his lead flow. So he checked us hard. He signed up under a fake name, he called one of our past clients, he watched several client videos, and he tried to poke holes in all of it. The guarantee is what finally got him to sign. His first contract came from his second webinar and was worth $8,000, from a client he expects to keep for three to five years.</li>
+</ul>
+<ul>
+<li>How to deliver it: Tell it with a smile, for example, &quot;You&#x27;re not the toughest checker we&#x27;ve had.&quot; Then move straight to booking the reference or the decision.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;Ken checked us harder than you are, and he still signed, because the guarantee took the risk off him. If talking to a client is the last thing you need, let&#x27;s book it right now and pick the day you&#x27;ll decide.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;I want to talk to another software company, especially the one tied to the Microsoft sale.&quot;</li>
+</ul>
+<ul>
+<li>Status: Half-handled. Ryan offered the Cedric intro on Oct 27 and Gerry accepted. Whether it happened is unknown.</li>
+</ul>
+<ul>
+<li>Overcome with: Tell the story accurately, because Gerry checks facts. The Microsoft sale was Minit, where Cedric built the partner program before he founded his own firm. Do not say &quot;high 8 figures,&quot; and do not say he hired us again after the sale.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo has worked in partner sales for more than 20 years. Minit, a process-mining software company, headhunted him to build its partner program, and Minit grew from 3 million to 6 million and was sold to Microsoft. After that, Cedric founded Cinnamon Consulting, which redesigns partner programs for software companies. With us, his first webinar drew 63 attendees and produced 16 qualified sales calls and one closed deal. His second webinar drew 128 attendees and 50 sales calls. His third drew about 300 attendees. He said his cost per sales call went from about $2,000 to about $10, and his time on lead generation went from 40 hours a month to 3.</li>
+</ul>
+<ul>
+<li>How to deliver it: Keep it plain and factual. Bring it up when he mentions the reference.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;Cedric sells a technical, specialist offer to a narrow set of buyers, the same as you. If you&#x27;ve spoken with him, what did he tell you? If not, let&#x27;s lock a time today.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Your webinar talked about pricing and didn&#x27;t mention the $20,000.&quot;</li>
+</ul>
+<ul>
+<li>Status: Still open. Ryan said on the demo that he would look again.</li>
+</ul>
+<ul>
+<li>Overcome with: Raise it yourself before he does, so it builds trust. Say what the webinar actually shows, based on what you checked before the call. Then restate every cost in one place.</li>
+</ul>
+<ul>
+<li>Full story to tell: No client story fits this one. Handle it with straight facts.</li>
+</ul>
+<ul>
+<li>How to deliver it: Be direct and calm. Do not argue about what he remembers.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;Here is every cost in one place: a one-time $20,000, which can be spread over 12 months, and about $400 a month to run 30,000 invites. That&#x27;s it.&quot;</li>
+</ul>
+<ul>
+<li>Objection (likely, not yet raised): &quot;Will CEOs and COOs at food manufacturers really show up to a webinar?&quot;</li>
+</ul>
+<ul>
+<li>Status: Not raised yet. He wants to reach the top of a four-to-five-person buying committee.</li>
+</ul>
+<ul>
+<li>Overcome with: Remind him the calendar invite was the part he liked most, because it speaks to the buyer&#x27;s outcome. Then point out that at his deal sizes he needs the right few people in the room, not a crowd.</li>
+</ul>
+<ul>
+<li>Full story to tell: Joshua Hollander leads Horton International in North America, a long-running executive search firm that sells retained searches to CEOs and boards. Their buyers are about the hardest people to get on anything. Using the same calendar-invite system, Horton sends 30,000 or more invites per webinar to C-suite and board members, and it still holds about a 33% show rate.</li>
+</ul>
+<ul>
+<li>How to deliver it: Use it only if he doubts senior buyers will attend.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;If CEOs and board members show up for Horton, your food-safety and operations leaders will show up for a topic that hits their audit risk.&quot;</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Gene Rosendale, Advocate Advisors, Chicago. Use him for the upfront-cost and monthly-terms objection and the &quot;rent versus own&quot; point. The full story is in objection 1. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+</ul>
+<ul>
+<li>Ken Tyborski, Code of the North, Minneapolis. Use him for the &quot;fact check you&quot; objection, because he did exactly what Gerry is doing and he sells to food and beverage companies. The full story is in objection 2. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<ul>
+<li>Cedric Le Rouzo, Cinnamon Consulting. Use him for the software-reference request. The full story is in objection 3. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<ul>
+<li>Joshua Hollander, Horton International. Use him only if Gerry doubts senior buyers will attend. The full story is in objection 5. Prospect link: https://quantums-institute.com/due-diligence-home</li>
+</ul>
+<ul>
+<li>Do not use the Boss Equity story. Gerry cut Ryan off on the demo and said he already knows it.</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Before 2:00 PM ET, Ryan confirms whether the Cedric intro went out and whether they talked. Ryan also checks what the current webinar pricing slide shows, and gets Lloyd&#x27;s answer on whether any monthly or trial terms are allowed.</li>
+</ul>
+<ul>
+<li>In the first two minutes, confirm who is on the call and whether his partners have read the agreement.</li>
+</ul>
+<ul>
+<li>Ask Gerry directly what the risk is that he mentioned on Oct 27. Answer that specific risk, not a general one.</li>
+</ul>
+<ul>
+<li>Answer cost with the built-in test months, the 3X guarantee, and the 12-month financing as his monthly option. Then ask: &quot;With the guarantee and monthly payments over the year, is anything else stopping you?&quot;</li>
+</ul>
+<ul>
+<li>Close the pricing-slide question yourself and restate all costs in one place.</li>
+</ul>
+<ul>
+<li>If he is ready, send the agreement for e-signature on the call and pick paid-in-full or financed with him live.</li>
+</ul>
+<ul>
+<li>Once he signs, book the build kickoff so his 15 hours land in the next two to three weeks.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If he asks again for $5,000 to start, month to month, with a 90-day exit, then do not invent a deal. Explain the guarantee and the financing, and only offer something different if Lloyd approved it before the call.</li>
+</ul>
+<ul>
+<li>If he has not spoken with Cedric yet, then book that call before you hang up on a real date, and get his agreement to decide the day after.</li>
+</ul>
+<ul>
+<li>If his partners have not reviewed the agreement, then ask what is in the way and book a call with them within the week.</li>
+</ul>
+<ul>
+<li>If the risk turns out to be his brand, then remind him his own domain is never used and domains rotate if performance drops, as Ryan explained on Call 1.</li>
+</ul>
+<ul>
+<li>If he says the agreement is missing terms, then write down exactly what is missing and send a corrected version today with a set time to talk.</li>
+</ul>
+<ul>
+<li>If he says yes, then send the e-signature link on the call and walk him through payment.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>First choice: Gerry signs today, paid in full or financed over 12 months, and books the build kickoff.</p>
+<p>Second choice: A reference call with Cedric is booked on a set date, and Gerry agrees that if it checks out he signs by a named date with his partners aligned.</p>
+<p>Third choice: A clear answer that he is not moving forward, and why. Do not leave with &quot;I&#x27;ll think about it.&quot;</p>
+      </div>
+    </details>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Connor McLeod · Call 3+ · 4:30 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Connor McLeod · SageCreek AI · Call 3+ · Fri Nov 6, 2026, 4:30 PM ET · Ryan Matsumori</b></p>
+<p>UNLOCKED DRAFT — not yet reviewed and locked by the closer. Original draft was for the Nov 3 check-in; same deal thread for today&#x27;s 3rd meeting.</p>
+<h3>Where we left it</h3>
+<ul>
+<li>Connor said, &quot;I&#x27;m confident we&#x27;ll get leads and meetings.&quot; Mylie (head of marketing) said the strategy makes sense for busy executives. Melisa (lead AI strategist) said our data work &quot;feels like you&#x27;re very meticulous.&quot;</li>
+<li>The close paused for two reasons. Connor thinks our revenue projections are high, and their lawyer partner wants to review the offer and contract before a yes.</li>
+<li>Greg (partner and co-decider) was not confirmed on Call 2, and his view is unknown. The lawyer partner&#x27;s name is unknown, and whether he is the same person as Greg is also unknown.</li>
+<li>The fee on the table is $20,000, one time. Connor said it was &quot;about what I was expecting given the 15 hours.&quot;</li>
+<li>Running costs are about $500 a month for 30,000 leads, $530 for 40,000, and $560 for 50,000, starting in month one.</li>
+<li>The guarantee is at least a 3x return on the fee, meaning $60,000 contracted within six months. If we miss it, we keep working for free until we hit it.</li>
+<li>The ball is in their court. Connor asked for the deck, the offer, and contract details, and said, &quot;We should have an answer for you tomorrow.&quot; Whether the follow-up email with the deck and offer was actually sent is unknown, because only the draft is on file.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Connor is cautious and analytical, not excited. He is close to bought in, because he believes in the channel and the price matched his expectations. Ryan read him at about 7 out of 10.</li>
+<li>What is creating urgency: Connor wants to start &quot;sooner than later.&quot; His goal is $5M next year against a confident $3.5M without a new channel. Ryan said they could onboard as early as this week.</li>
+<li>What is killing urgency: Connor still has holiday concerns. He said, &quot;You know my concerns about the holidays.&quot;</li>
+<li>Fears still alive in the decision:</li>
+<li>The first fear is that the numbers are too good. Connor said AI services are a &quot;red ocean&quot; where deals close on relationships, so he doubts 2 to 5 new clients a month.</li>
+<li>The second fear is a wrong list. A $120M lending fund can be &quot;three guys in an office,&quot; so revenue filters may pull the wrong firms.</li>
+<li>The third fear is that cold outreach will not reach their buyers. Mylie raised this.</li>
+<li>The fourth fear is legal. The lawyer partner &quot;always wants to see everything.&quot;</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>The lawyer&#x27;s contract review is the primary blocker. It is a process step rather than resistance, but nothing signs until he has seen it.</li>
+<li>Doubt about the revenue projections is the primary emotional blocker. It is the one thing keeping Connor from a 9.</li>
+<li>Greg&#x27;s view is secondary. We have not heard from him on this decision.</li>
+<li>AUM targeting is secondary. It is partly answered, but Connor needs to trust that the list will match their buyers.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: &quot;Your revenue projections look high for a relationship-driven market like ours.&quot;</li>
+</ul>
+<ul>
+<li>Status: Half-handled.</li>
+<li>Overcome with: Do not defend the 2 to 5 clients a month. Use Connor&#x27;s own numbers instead. One client at his $150K first-year value is about 7.5 times the $20,000 fee. The guarantee only needs $60,000 contracted in six months, which is less than half of one client. If that doesn&#x27;t happen, we keep working for free.</li>
+<li>Full story to tell:</li>
+</ul>
+<p>Cedric Le Rouzo is the founder of Cinnamon Consulting, and he has spent more than 20 years in partner sales. Minit headhunted him to build their partner program. Minit grew from 3M to 6M and was sold to Microsoft.</p>
+<p>When he started Cinnamon Consulting, he doubted the webinar economics too. His first webinar had 63 attendees and produced 16 qualified sales calls. His second had 128 attendees and produced 50 sales calls.</p>
+<p>His cost per sales call went from about $2,000 to about $10. His own time on it went from 40 hours a month to 3.</p>
+<ul>
+<li>How to deliver it: Say it half-offhand, as in &quot;Connor, you remember Cedric from the webinar.&quot; Connor already recalled this story.</li>
+<li>Exact land line: &quot;Forget my model for a second. You need one client at your own $150K number to make this about 7x, and the guarantee covers you if it doesn&#x27;t happen.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Funds report AUM, not revenue, so your filters will pull the wrong firms.&quot;</li>
+</ul>
+<ul>
+<li>Status: Partly answered. Ryan answered with filters at several levels plus self-qualifying language in the invite.</li>
+<li>Overcome with: Offer to set the AUM floor with Connor during the build, as the follow-up email promised. Remind him the invite says &quot;you must be X, Y and Z,&quot; so the wrong firms filter themselves out. That self-qualifying language got the strongest reaction on Call 2.</li>
+<li>Full story to tell:</li>
+</ul>
+<p>Gene Rosendale is a founding partner at Advocate Advisors, a boutique investment bank and M&amp;A advisory firm in Chicago. His buyers are private company owners thinking about a sale, which is a confidential, high-trust market much like Connor&#x27;s.</p>
+<p>Gene is the most marketing-literate partner in his firm and vetted about two dozen firms. Before us, he ran four agencies over five years at $36,000 to $48,000 a year and got five qualified prospects and one client in total.</p>
+<p>With us, he matched those five years of output in six months, and then scaled. He calls it renting versus owning the system.</p>
+<ul>
+<li>How to deliver it: Tell it when the list, data quality, or &quot;our buyers won&#x27;t respond&quot; comes up. Then tie it back.</li>
+<li>Exact land line: &quot;Gene&#x27;s buyers are as private and high-trust as yours, and he got more in six months than in five years of agencies. And you own the list we build together.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Our lawyer partner has to review the contract.&quot;</li>
+</ul>
+<ul>
+<li>Status: Open, as a process step.</li>
+<li>Overcome with: Ask early whether he has seen the offer yet. If he hasn&#x27;t, resend it right away. Offer a short call with him this week to answer questions directly, and agree on a date by which he will finish.</li>
+<li>Full story to tell: No case study in our set matches a lawyer review. Do not invent one. Handle it as process and use the guarantee terms as the reassurance.</li>
+<li>How to deliver it: Treat it as normal, and say, &quot;Totally expected, so what does he need from us to finish?&quot;</li>
+<li>Exact land line: &quot;Let&#x27;s get him what he needs this week, so a clean yes isn&#x27;t waiting on paperwork.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Greg hasn&#x27;t weighed in yet.&quot;</li>
+</ul>
+<ul>
+<li>Status: Open.</li>
+<li>Overcome with: Ask whether Greg has seen the deck and what he thinks. Remind Connor that Greg forwarded our invite to him three times, so Greg already believes the invite reaches people like them. If Greg is still unknown, book a short call with Greg before the end of the week.</li>
+<li>Full story to tell: Use the Cedric story from objection 1 for Greg, because Greg cares about the PE angle, roll-ups, and a fund. The Minit sale to Microsoft is the part that will land with him.</li>
+<li>How to deliver it: Keep it brief, and frame it as something to pass on to Greg.</li>
+<li>Exact land line: &quot;Greg forwarded our invite to you three times, so he&#x27;s already seen it work on you.&quot;</li>
+</ul>
+<ul>
+<li>Objection (likely): &quot;Should we wait until after the holidays?&quot;</li>
+</ul>
+<ul>
+<li>Status: Still alive.</li>
+<li>Overcome with: Repeat Ryan&#x27;s plan. Build and test now, so they start January near full scale instead of starting the build in January. Ryan also said webinars still work during the holidays.</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Cedric Le Rouzo of Cinnamon Consulting. Use him for the revenue doubt and for Greg&#x27;s PE angle. His full story is in objection 1. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+<li>Gene Rosendale of Advocate Advisors. Use him for AUM, list quality, and high-trust buyers. His full story is in objection 2. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Before the call, confirm the deck, the two-page offer, and the recording reached Connor, Mylie, and Melisa at melisa@sagecreek.ai. Also check that the 4:30 PM ET invite exists, because GHL showed no booking.</li>
+<li>Open by asking whether the lawyer has reviewed the offer and what Greg thinks.</li>
+<li>Handle the revenue doubt with Connor&#x27;s own $150K number and the $60,000 guarantee.</li>
+<li>If the lawyer and Greg are clear, send the agreement and the payment link while you are on the call, and book the first build session this week.</li>
+<li>If the lawyer is still reviewing, set a dated deadline for his review and offer him a short call. Book the final yes call for that date.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If the lawyer hasn&#x27;t seen the offer, then resend it while you are on the call and book a follow-up within 48 hours.</li>
+<li>If the lawyer has contract questions, then offer a short call with him and Ryan this week. Do not change terms on the spot.</li>
+<li>If Connor says the numbers are still too high, then agree that the model is aggressive, and move to one client at $150K plus the guarantee.</li>
+<li>If Greg hasn&#x27;t weighed in, then book a 15-minute call with Greg and Connor before Friday.</li>
+<li>If they say yes, then send the agreement and payment while you are on the call, and book the first build session this week.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>The first choice is a signed agreement and payment today, with the first build session booked this week.</p>
+<p>The second choice is a dated deadline for the lawyer&#x27;s review, with Greg aligned and a yes call booked on that date.</p>
+<p>The fallback is a clear &quot;not moving&quot; with the reason stated.</p>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
