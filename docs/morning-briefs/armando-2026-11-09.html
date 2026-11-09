@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Mon Nov 9, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Mon Nov 9, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>1:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/BrVp3Cyp6AhKYd1bOKeS">Jason Reynolds</a> · Call 2 · Ovidius AI</strong>
+      </div>
+      <div class="slot">
+        <strong>2:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/YuXIjrFszDLXRlu2GzXa">Samyuktha Aswadhati</a> · Call 1 · Samhar CRM</strong>
+      </div>
+      <div class="slot">
+        <strong>3:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/nQBH8WS0vIFlCxDXap5N">Lisa Thorson</a> · Call 2 · Run The Numbers</strong>
+      </div>
+      <div class="slot">
+        <strong>5:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/pPDBfmcvDXZDYezsjFaG">Sequoia Houston</a> · Call 1 · Sur-Ryl Marketing</strong>
+      </div>
+    </section>
+
+    <details class="pack" data-prep-lock="jZfcCywIkjyoGvVcPC3O">
+      <summary><span>Jason Reynolds · Call 2 · 1:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jason Reynolds · Ovidius AI · Call 2 · Mon Nov 9, 2026, 1:00 PM ET (12:00 PM CT) · Armando Valencia</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Jason joined alone from Waco, Texas. He is a shareholder and partner, not the founder. Owen is the founder and CEO. There is also a CTO with shares, and Ben, known as Ben AI on YouTube, is the fourth shareholder. Owen was invited to Call 1 and declined the calendar invite that morning. Ovidius AI is an AI transformation agency for mid-market and small enterprise. They sell agentic workflow projects at $5k to $50k over four to eight weeks, plus maintenance and support after that. They also sell an AI enablement program for teams on ChatGPT or Claude, and a stand-alone audit and consulting offer. They have three products: a context layer at $20k to $40k to implement, a content generation system from about $16k plus $2k a month, and a skill repository platform with coaching. Their pitch is production-ready work in 30 to 45 days. They say their rates run $30 to $50 an hour under McKinsey-type competitors. Revenue is about $100k a month, up from about $45k a month last year, with somewhere between 10 and 20 active clients. About 85% of lead flow comes through Ben AI, who has about 264k YouTube subscribers and a paid community of about 2,000. They do no outbound, cold outreach, or account-based marketing today.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Jason was open, organised, and talked freely. He said he was late because he was coming off another client call. He was upfront that &quot;we&#x27;re still early for this conversation&quot; and that budget is tight while they are &quot;fishing more so than hunting.&quot; He knows exactly what they need. He pushed back on paying for infrastructure or list building, saying &quot;we could turn that up in a week.&quot; He sees the value in program management: copy, timing, subject lines, and webinar topics. He was relaxed about the decision process. He said the CEO decides, but that you &quot;won&#x27;t get surprised&quot; and will get direct access when things are closer.</li>
+<li>Goals they want but can&#x27;t hit yet: They want to launch a multi-channel marketing program in Q1, covering webinars, outbound, partners, and paid media. Jason wants webinar invites going out in the third week of January, with webinars starting in the first week of February. He also wants to grow the team to about 100 staff, using AI harnesses at 90% utilization within 18 months. They are talking to an investor.</li>
+<li>Why hitting the goal matters to them personally / for the company: Almost all lead flow depends on one partner&#x27;s YouTube channel. That creates spikes instead of a steady engine: 400 leads in February 2025 with no CRM or qualifying in place, and 10 leads in two days this summer with 8 closes. They want a way to create demand that does not wait on the next YouTube wave.</li>
+<li>What&#x27;s holding them back: They do no outbound today. Cash is tight because the first project is usually break-even, and the first-year goal per client is three projects, or about $60k. Jason said it is hard to spend out of pocket when they could chase follow-on deals instead. He just signed five contracts in the last two weeks, and a lot of that consulting work lands on him. He is the likely webinar host. Their buyers usually have no budget set aside for AI work, so deals get stuck. Some prospects try to do it in-house, fail, and come back about six months later.</li>
+<li>Consequences if nothing changes: Lead flow keeps arriving in spikes through Ben&#x27;s channel. Larger deals can die when security gets involved. Fortune 1000 deals like Nestle have died when a CISO (chief information security officer) stepped in. They are not SOC 2 or ISO 27001 certified yet, which are the security reviews those larger buyers often require, and they are aiming to have those in place by the end of Q1.</li>
+<li>Fears that will show up in the decision: Paying for list building or infrastructure they believe they can stand up themselves. Spending cash while first projects only break even. Moving before Owen has more confidence that the website converts. Getting a package that feels bigger than what they want to buy right now.</li>
+<li>Objections still open:</li>
+<li>Timing: Jason said &quot;we&#x27;re still early.&quot; He just signed five contracts, and that work lands on him.</li>
+<li>Budget: Cash is tight because first projects break even. It is hard to spend out of pocket when they could chase follow-on work instead.</li>
+<li>Scope: They do not want to pay for list building or infrastructure. They want to own the list for outbound and retargeting. You said we have no use for the list.</li>
+<li>Decision maker: Owen decides. He did not watch the webinar, but Jason has described it to him. Owen also wants more confidence that the website converts before launch.</li>
+<li>Commercials: Jason asked whether we take a cut per sold deal, per booked webinar, or per meeting. He also asked what CRM, analytics, and enrichment fields we need.</li>
+<li>Program effort: He asked how many webinars there are, how much effort the content takes, what the approval timing is, and who does what.</li>
+<li>Who&#x27;s joining Call 2: Jason is expected. You invited him to bring other stakeholders, and he did not confirm who would join. Owen is the person who decides, and he was not on Call 1. Try to get Owen onto this call or the next one.</li>
+<li>What we promised to walk: The commercials and a deliberately bigger package Jason can trim. The tech and CRM needs, enrichment fields, webinar count and content effort, approval timing, and who does what. Show list ownership early, since the infrastructure fee is the sticking point.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Ovidius AI helps mid-market and small-enterprise companies put AI to work, through agentic workflow projects, team enablement, and related products. They sell worldwide. They have staff in eight or nine countries, clients in 21 countries, and more than 100 projects delivered. At traditional companies, the buyers are the EVP or VP of Marketing and the Chief People Officer for enablement, and the COO, CTO, or CIO for agentic workflows. At AI or SaaS companies it is usually the founder or a board member. Private equity firms also come to them for their portfolio companies. Companies have 50 to 5,000 employees, and the sweet spot is 100 to 500. They screen out companies that are not AI-ready. The only exclusion named was pornography. Their close rate is about 30 to 40% now, down from about 80% when deals were smaller. Half of deals close in under six weeks, and the other half take six to twelve months for the first deal.</li>
+<li>Company goals / dream state (from Call 1): Launch the Q1 multi-channel program, with invites in the third week of January and webinars in the first week of February, build a demand engine that does not depend on one YouTube channel, and grow toward about 100 staff in 18 months.</li>
+<li>ICP dream state (what THEIR buyers want): Mid-market leaders want production-ready AI workflows in 30 to 45 days, plus a practical way to get their teams using tools like ChatGPT or Claude well, without a giant consulting bill.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>Treat this like a consulting conversation, not a beginner walkthrough. Jason has about 20 years in digital and already understands list building, outbound, and program management. He told you they could turn list building up in a week. Lead with strategy, copy, timing, subject lines, webinar topics, and who does what.</li>
+<li>Show a larger package he can trim, and show list ownership early. They do not want to pay for infrastructure or list building, and they want to own the list for outbound and retargeting.</li>
+<li>Owen decides and was not on Call 1. Ask who is joining. If Owen is not there, leave with a clear next step that gets him in the room or reviewing the commercials directly. Jason said you will not get surprised and will get direct access when things are closer.</li>
+<li>He asked a precise commercials question: do we take a cut per sold deal, per booked webinar, or per meeting? Answer that cleanly, along with CRM needs, enrichment fields, webinar count, content effort, and approval timing.</li>
+<li>Timing is a Q1 launch, with the build taking about four weeks. You said that would start around the week before Christmas or between Christmas and New Year&#x27;s. He also has five new contracts landing on him, so do not ignore the &quot;we&#x27;re still early&quot; point.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English):</li>
+<li>Where they are: Anywhere in the world. They already work with clients in 21 countries.</li>
+<li>Vertical: Any industry, as long as the company is ready for AI. The only exclusion named was pornography.</li>
+<li>Company type and size: Mid-market and small enterprise, from 50 to 5,000 employees. The sweet spot is 100 to 500 employees. They also work with private equity firms on behalf of portfolio companies.</li>
+<li>Buyer titles: At traditional companies, the EVP or VP of Marketing and the Chief People Officer for enablement, and the COO, CTO, or CIO for agentic workflows. At AI or SaaS companies, the founder or a board member. Jason also named CISOs (chief information security officers) as a lane they could invite, using AI compliance and data security topics.</li>
+<li>Who we exclude: Companies that are not AI-ready, and pornography.</li>
+<li>Ideal ICP (tight — who they said they want most): Companies with 100 to 500 employees that are ready for AI, reaching marketing and people leaders for enablement and COO, CTO, or CIO buyers for agentic workflows. At AI or SaaS companies, start with the founder or a board member. We have not counted the people yet.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Widen to the full 50 to 5,000 employee range they already sell to, keep the global reach, and include the extra CISO (security-leader) lane Jason named around AI compliance and data security, plus private-equity-backed portfolio companies. Still leave out companies that are not AI-ready, and still leave out pornography. We have not counted the people yet.</li>
+<li>How we got the number: We have not counted the people yet. On the demo, show the companies first, then the job titles inside those companies, then the contacts we can actually reach.</li>
+<li>What we widened (if thin): The 100 to 500 employee range is the sweet spot they named. The broader 50 to 5,000 range is also theirs, not something we added. The CISO invite lane was named by Jason. Global reach was also their stated market. We are not inventing extra industries, because they already said any industry except pornography, as long as the company is AI-ready.</li>
+<li>Check vs Call 1: We did not count a TAM on Call 1. Jason said they already have access to the data sources and build SDR and BDR outreach teams (sales and business development reps) for other companies, so list building is easy for them. That makes the value of the demo the targeting, messaging, and program, not a lecture on how to build a list.</li>
+<li>Too small?: We have not counted the people yet, so we should not guess a headline number. A global list of mid-market companies, with several buyer titles at each one, is unlikely to land under about 30,000 people after we widen it. If the broadest honest list is still under that after we count it, we would usually qualify out.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): The offer is clear and well explained: production-ready AI work in 30 to 45 days, agentic workflow projects, team enablement, and specific products with clear prices. They already know who buys enablement versus who buys workflows. The contrast with slower, more expensive consulting firms is easy to say out loud.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): They do not want to pay for list building or infrastructure, and they believe they can stand that part up themselves. Cash is tight because first projects usually break even. Buyers often have no AI budget yet, so deals stall. They are not SOC 2 or ISO 27001 certified yet, which are common security reviews large buyers ask for, and large deals have died when a chief information security officer stepped in. Owen also wants more confidence that the website converts before launch.</li>
+<li>Positioning line for the webinar if we pick today: How mid-market teams get production-ready AI workflows live in 30 to 45 days, without a McKinsey-sized bill.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): Mid-market leaders want AI results, but projects stall when there is no budget, when teams try to build it in-house, or when the work never makes it into production.</li>
+<li>Who we invite first, then next: Invite the ideal buyers first: 100 to 500 employee companies, reaching marketing and people leaders for enablement and COO, CTO, or CIO buyers for agentic workflows. Then widen to the broader honest list, including the full 50 to 5,000 employee range and the CISO compliance lane Jason named.</li>
+<li>Story arc (THEIR webinar to THEIR audience, not our system):</li>
+<li>Hook: Most companies want AI results, and most internal projects never make it into production.</li>
+<li>Problem: Teams try to figure it out in-house, there is no budget set aside, and the work stays stuck in experiments instead of live workflows.</li>
+<li>Proof: How Ovidius gets production-ready AI workflows live in 30 to 45 days, using testing, coding harnesses, and evaluations, at rates well under a McKinsey-type team.</li>
+<li>Offer: An agentic workflow project, with enablement and support around it, not a never-ending strategy engagement.</li>
+<li>Easy CTA: Book a conversation with Ovidius about a first workflow.</li>
+<li>Copy / talk-track beats:</li>
+<li>&quot;Production-ready AI work in 30 to 45 days, not another slide deck.&quot;</li>
+<li>&quot;Rates well under a McKinsey-type team, and built to be easy to partner with.&quot;</li>
+<li>&quot;If your team is already on ChatGPT or Claude, we can help them use it well, with governance included.&quot;</li>
+<li>&quot;The first workflow should pay for the path to the next three, not sit in a pilot forever.&quot;</li>
+<li>Cadence: Run one topic first, likely production-ready agentic workflows for operators. Test it. Then segment later into enablement for people leaders or AI compliance for security leaders if the first webinar works.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Cedric Le Rouzo, Cinnamon Consulting — Cedric is the technical, high-ticket fit. He sells into software and IT buyers and is the case to use when Jason questions the economics of webinars or wonders whether this is worth it for a specialist firm. The story to tell is the drop in cost per sales call from about $2,000 to about $10, and the drop in monthly time from about 40 hours to about 3 hours. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+<li>Felix Petzel, Panda Media — Felix is the &quot;we already know this&quot; case. He ran a social selling agency for a living, already knew the workflows and tools, and still found pieces he had not seen. That matches Jason&#x27;s 20 years in digital and his pushback that they can build lists themselves. Felix also answers the fear that this just replaces one cost with another: he cut a manual outbound team down to one assistant, took margin from 30% to 90%, and now runs the system on about an hour a week. Deal size also moved from about 10K EUR retainers to 25K to 40K EUR transformation work because a full pipeline let him choose better clients. Use this when Jason says the value is program management, not infrastructure. Prospect link: https://quantums-institute.com/due-diligence-agencies#section-rpq6S3zvMtH</li>
+<li>Nick Uresin, Podcast Pros — Nick is for the technically capable buyer who thinks they can run outreach themselves. He was already strong with Sales Navigator and LinkedIn automation, and he still said the targeting and messaging strategy was the real value. He also went from the sales call to a running webinar in eight days and had qualified opportunities off the first webinar. Use this for speed and for the &quot;we can do this ourselves&quot; objection. Do not use Nick as a closed-revenue story. Prospect link: https://quantums-institute.com/due-diligence-agencies#section-S7HoLH08fh</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room / who signs / what each cares about: Jason is a shareholder and partner and is likely the webinar host. He cares about a trimmed package, list ownership, program management, commercials, and a Q1 launch that does not overload him while five new contracts are landing. Owen is the founder and CEO and the person who decides. He did not watch the webinar and wants more confidence that the website converts before launch. The CTO has shares. Ben, the fourth shareholder, currently supplies about 85% of the leads through YouTube. If Jason joins alone again, treat him as the internal champion and get a path to Owen.</li>
+<li>Landmines from Call 1:</li>
+<li>Do not pitch list building or infrastructure as the thing they have to buy. They believe they can turn that up in a week, and they want to own the list.</li>
+<li>Do not walk this like a first-time marketer&#x27;s demo. Jason will bounce if it feels basic.</li>
+<li>Budget is tight because Project 1 is usually break-even. Show why the package is worth taking money away from chasing follow-on deals.</li>
+<li>Answer the commercials question directly: is this a cut per sold deal, per booked webinar, or per meeting?</li>
+<li>Owen is the signer and was not there. If he is missing again, do not force a close. Leave with a next step that gets him the commercials and a chance to meet you.</li>
+<li>They are not SOC 2 or ISO 27001 compliant yet. Do not build the first webinar around Fortune 1000 deals that die in security review.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Samyuktha Aswadhati · Call 1 · 2:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Samyuktha Aswadhati · Samhar CRM · Call 1 · Mon Nov 9, 2026, 2:00 PM ET · Armando</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Samyuktha is the founder and CEO of Samhar CRM. She started it in June 2024 and goes by Sam (LinkedIn).</li>
+<li>She is based in the San Francisco Bay Area. Her background is Content Team Lead at Course Hero, Team Leader at Cognizant, then self-employed Salesforce consulting (LinkedIn).</li>
+<li>She describes herself as &quot;part creative, part business therapist, and 100% obsessed with helping sales teams get their systems together&quot; (Samhar CRM about page).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Samhar CRM is a tiny team of one to two people that does done-for-you sales operations. That means Salesforce setup and cleanup, pipeline design, territory mapping, dashboards and automations (samharcrm.com).</li>
+<li>The website lists three unnamed client testimonials and claims like 25% faster sales cycles and 75% less manual work. It offers a free CRM Health Check as its lead magnet (samharcrm.com).</li>
+<li>Pricing is quote only. There is no blog, newsletter or gated content on the site.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>B2B companies that are growing fast, with a focus on life sciences, medtech and manufacturing sales teams (samharcrm.com and her LinkedIn headline).</li>
+<li>Buyers are sales leaders and founders who have a messy CRM and dashboards nobody trusts.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Sales teams run on messy CRMs, dirty data and dashboards nobody trusts, so leaders make decisions in the dark.</li>
+<li>Samhar fixes the whole sales operations engine so reps actually use the system (about page).</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>Her clients mostly find her through referrals. Ask how many new clients she wants in the next 12 months and how she gets them today.</li>
+<li>Her website says &quot;fast-growing medtech&quot; but her LinkedIn also says manufacturing. Ask which niche she wants to own first.</li>
+<li>She offers a free CRM Health Check. Ask how many of those turn into paid projects.</li>
+<li>GHL shows she is also booked on a custom demo with Ryan on Tue Nov 10 at 1:00 PM ET. Check with Ryan before this call so the two calls do not overlap.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>She wrote a funny, honest LinkedIn post called &quot;You will build a Dreamforce agenda. You will not follow it.&quot; Ask how Dreamforce went for her (her LinkedIn post on Dreamforce).</li>
+<li>She went from content leadership at Course Hero to Salesforce consulting. Ask how that jump happened (her LinkedIn experience).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack" data-prep-lock="ykWRWnVr1ytvasSy3TgB">
+      <summary><span>Lisa Thorson · Call 2 · 3:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Lisa Thorson · Run The Numbers · Call 2 · Fri Nov 6, 2026, 1:00 PM ET (12:00 PM CT) · Armando Valencia</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Lisa joined alone from Denver, where she has lived for about 20 years. She is the only stakeholder in the company. Run The Numbers sells fractional data teams, mainly to CPG (consumer packaged goods) brands, and also offers fractional operations, fractional sales, and deductions. Data analytics is about 30% of the business today, and she wants it to be about 80%. Her headline is &quot;create data that actually creates action.&quot; Anyone can make dashboards with AI, but her team turns the data into decisions for retailer presentations, investor decks, and new product launches. The business is about six years old and does about $500k a year. She said it is growing, and the data pivot from about six months ago is already proving profitable. About 80% of clients come from referrals and her own networking. She said that if you do not go beyond referrals in her industry, &quot;you&#x27;re not going to survive.&quot;</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Lisa was warm, direct, and honest about where she stands. She said things like &quot;I&#x27;m very new to this or very amateur at this&quot; and &quot;that&#x27;s why I&#x27;m talking to you right now.&quot; Our webinar hit her &quot;exact issue.&quot; She could not pin down why, but it felt like we &quot;could actually do something,&quot; unlike others who do not know her industry. She admitted the calendar invite &quot;slightly annoyed&quot; her, then said &quot;it worked, obviously.&quot; She was price-aware but clearly motivated, and said &quot;I&#x27;m looking forward to it.&quot;</li>
+<li>Goals they want but can&#x27;t hit yet: For the first webinar, she defined success as 20 to 30 people on sales calls and two to four new clients by February 2027. She wants data work to move from about 30% of the business to about 80%, and she wants retainers more than one-off projects. Longer term, she wants to hand off sales within about a year, once there is an engine someone else can run. She is torn between building the company to sell in about five years and running it for 20 more years.</li>
+<li>Why hitting the goal matters to them personally / for the company: She is the main salesperson while also running the business and the data work. The company depends on referrals, and she said you will not survive in her industry if that stays the only path. She has been sending personal emails to past prospects who did not say a hard no, and she plans to get through about 200 of them. She posts on LinkedIn and gets some inbound messages, but said &quot;I suck at it.&quot;</li>
+<li>What&#x27;s holding them back: Almost all growth still sits on referrals and networking. Her updated website has brought two or three clients in a year. She called her email metrics &quot;very new and horrible.&quot; She recently lost two clients because of consultant issues, and she is working a large pipeline while expecting those consultants to be back up to speed by the end of the year. Sales cycles run three to nine months, depending on how ready the buyer is.</li>
+<li>Consequences if nothing changes: The business stays dependent on referrals, Lisa stays the bottleneck for sales, and she said that path will not keep the company alive. Losing two clients has already tightened her budget.</li>
+<li>Fears that will show up in the decision: Price and budget. She said &quot;depends on price.&quot; If the price is reasonable she would start very soon, and if it is higher than expected she would look at Q1. Her industry shuts down after December 15, so the launch target is around mid-January.</li>
+<li>Objections still open:</li>
+<li>Price and budget: She said it depends on price, and losing two clients has tightened what she can spend.</li>
+<li>Timing: December is dead in her industry after the 15th, so they agreed to build in December and launch around mid-January.</li>
+<li>Hook clarity: You flagged that the webinar has to make the need obvious within five minutes. That still needs work.</li>
+<li>Operations team: Lisa is the decider, but she wants you to meet her operations team, a non-equity partner, if they move forward.</li>
+<li>She asked for the Fireflies recording because her own note taker was not on the call. You also promised case studies and team info for her to review.</li>
+<li>Who&#x27;s joining Call 2: Lisa is expected to join alone. She is the only stakeholder. The operations-team intro is for after they decide to move forward, not something she confirmed for this call.</li>
+<li>What we promised to walk: The custom demo. That covers where the contacts come from and how they are enriched, sample calendar-invite copy, the webinar structure, and the split of work, economics, and tech. You also said you would send the case studies, team info, and the Fireflies recording before this call.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Lisa runs Run The Numbers, a fractional data and operations firm for CPG brands, with a focus on food, natural, and sustainable products. Buyers are C-suite people, especially the CFO and finance team, plus CMOs and CEOs. She said to take owners out, because they only get pulled in once the CFO or CMO wants this. Data and deductions clients have $5M to $300M in sales. Ops and sales clients have $0 to $20M. She will not work with the oil industry. Projects run 1 to 5 months and cost $10k to $50k. Retainers run $2,500 to $10k a month, and retainers are what she wants. She uses projects as a way in. She talks to about 50 to 75 prospects a year. Her competitor Bedrock does similar work at about five times her price.</li>
+<li>Company goals / dream state (from Call 1): Move data analytics from about 30% of the business to about 80%, sell more retainers, get 20 to 30 sales calls and two to four new clients by February 2027, launch around mid-January, and hand off sales within about a year.</li>
+<li>ICP dream state (what THEIR buyers want): CPG finance and marketing leaders want clean data turned into actions they can take into retailer meetings, investor decks, and new product launches, not another dashboard.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>Price decides timing. A reasonable entry price means she would start very soon, with a December build and a mid-January launch. A higher-than-expected price pushes her to Q1. Lead with a clear number and the break-even logic.</li>
+<li>On Call 1 you said the build &quot;takes us 30 months.&quot; That was most likely a slip for about 30 days. Confirm the real build time on this call so she is not confused.</li>
+<li>She asked how long quantumSCALE has been in business and how many people work here. You answered seven years and about 1,300 clients, but you did not give a headcount. Have a simple team answer ready, because you also promised team info.</li>
+<li>She asked for the Fireflies recording, case studies, and team info before this call. If those already went out, be ready to walk them. If not, do not pretend they did.</li>
+<li>Lead with her own line, &quot;create data that actually creates action,&quot; and with CFO buyers. Keep the first webinar on the data offer, not on ops and sales at the same time.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English):</li>
+<li>Where they are: Mostly the United States today. Lisa said the work could go global.</li>
+<li>Vertical: CPG brands, with a focus on food, natural, and sustainable products. She also said other industries such as sustainability could make sense later, because &quot;data is data,&quot; but she wants to stay focused on CPG.</li>
+<li>Company type and size: For data and deductions work, brands with $5M to $300M in sales. For ops and sales work, companies with $0 to $20M in sales.</li>
+<li>Buyer titles: C-suite buyers, especially the CFO and finance team, plus CMOs and CEOs.</li>
+<li>Who we exclude: Owners, because she said to take them out. The oil industry, because she will not work with it.</li>
+<li>Ideal ICP (tight — who they said they want most): United States CPG brands, especially food, natural, and sustainable products, with $5M to $300M in sales, reaching CFOs and finance teams first, then CMOs and CEOs. We have not counted the people yet.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): Keep the same CPG data buyers, then widen to the lanes she already named: global CPG, adjacent industries such as sustainability, and the smaller ops and sales companies at $0 to $20M in sales. Still leave out owners as the first invite, and still leave out oil. We have not counted the people yet.</li>
+<li>How we got the number: We have not counted the people yet. On the demo, show the companies first, then the job titles inside those companies, then the contacts we can actually reach.</li>
+<li>What we widened (if thin): She said she wants to stay focused on CPG in the United States. She also said the work could go global and into other industries such as sustainability. The $0 to $20M ops and sales lane is a second offer she already runs, not something we invented. We do not add owners, because she told us to take them out.</li>
+<li>Check vs Call 1: We did not count the market on Call 1. Lisa believes the market is wide, but she wants the first campaign focused on CPG. She currently talks to about 50 to 75 prospects a year. That is her current outreach, not the size of the market.</li>
+<li>Too small?: We have not counted the people yet, so we cannot call this too small on today&#x27;s call. After we count companies, then roles, then contacts, we will know. If the broadest honest list is still under about 30,000 people after we widen it, we would usually qualify out.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): She already has a clear headline: &quot;create data that actually creates action.&quot; The buyer is senior and specific, especially CFOs and finance teams at CPG brands. The work ties to real moments those buyers care about, including retailer presentations, investor decks, and new product launches. She wants retainers and already uses projects as a way in.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): The webinar still has to make the need obvious within five minutes, and that hook is not locked yet. If the first session tries to sell data, operations, and sales support at the same time, the story will blur. She is also price-sensitive right now because she lost two clients.</li>
+<li>Positioning line for the webinar if we pick today: How CPG finance and marketing leaders turn brand data into decisions they can take to retailers, investors, and a new product launch.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): CPG finance and marketing leaders have data and dashboards that do not turn into actions they can use in retailer meetings, investor decks, or a product launch.</li>
+<li>Who we invite first, then next: Invite United States CPG brands at $5M to $300M in sales first, reaching CFOs and finance teams, then CMOs and CEOs. Then widen to the broader honest list she already named, including global CPG and adjacent industries such as sustainability.</li>
+<li>Story arc (THEIR webinar to THEIR audience, not our system):</li>
+<li>Hook: Your team has data, but it is not creating action.</li>
+<li>Problem: Anyone can make a dashboard with AI, and that still does not help a CFO walk into a retailer or investor meeting with a decision.</li>
+<li>Proof: How Run The Numbers turns a brand&#x27;s data into actions for retailer presentations, investor decks, and new product launches.</li>
+<li>Offer: A fractional data team, with projects as a way into a retainer.</li>
+<li>Easy CTA: Book a conversation with Lisa and Run The Numbers.</li>
+<li>Copy / talk-track beats:</li>
+<li>&quot;Create data that actually creates action.&quot;</li>
+<li>&quot;Anyone can make a dashboard with AI. The work is turning that data into a decision.&quot;</li>
+<li>&quot;Walk into the retailer meeting, the investor deck, or the product launch with actions, not just charts.&quot;</li>
+<li>&quot;This is built for CFOs, finance teams, and marketing leaders at CPG brands.&quot;</li>
+<li>Cadence: Run one topic first around data that creates action. Test it. Then consider a later segment for operations or sales support if the first webinar works.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Tejas Parkish, Akshar Business Group — This is the closest match for Lisa&#x27;s buyer. Tejas sells to CFOs and finance directors and worried the market was too small and too senior for webinars. He said he would rather have a few real conversations than a flood of low-value leads. Use this when she wonders whether busy CPG finance leaders will actually attend. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+<li>Lynn Rousseau, The Conscious Leader — Lynn had built her business on referrals for years and had already tried other marketing programs. What changed for her was specific actions and ongoing refinement, not another pile of ideas she would abandon. Use this when Lisa comes back to &quot;I already network and send emails, and I have tried things before.&quot; Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0</li>
+<li>Jason Rotman, Elevate Financial — Jason answers the worry that C-suite and high-income buyers will not attend a webinar. He also talks about follow-up that did not convert until the webinar itself made booking the next step easy, moving him from 2 replies out of 15 hand-sent emails to 33 bookings on one webinar. Use this if Lisa doubts senior buyers will show up, or if she worries that her current email follow-up is too weak. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room / who signs / what each cares about: Lisa is the only stakeholder and the decider. She cares about a reasonable price, a mid-January launch that respects the December 15 industry shutdown, a webinar that makes the need obvious fast, and an engine she can eventually hand to someone else. If they move forward, she wants you to meet her operations team, who is a non-equity partner.</li>
+<li>Landmines from Call 1:</li>
+<li>Price is the timing switch. Have a clear entry number ready, because a surprise here sends her to Q1.</li>
+<li>Confirm the build time. Do not leave the &quot;30 months&quot; slip hanging.</li>
+<li>She was slightly annoyed by the calendar invite even though she admitted it worked. Talk about the invite as a tool that gets the right people in the room, not as something to oversell.</li>
+<li>Keep the first webinar on the data offer and CFO buyers. Do not try to cover operations and sales in the same first story.</li>
+<li>She asked for the recording, case studies, and team info. If those are still outstanding, handle that cleanly rather than skipping past it.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Sequoia Houston · Call 1 · 5:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Sequoia Houston · Sur-Ryl Marketing · Call 1 · Mon Nov 9, 2026, 5:00 PM ET · Armando</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Sequoia is the founder and CEO of Sur-Ryl Marketing, which she started in 2009. She is based in Los Angeles (LinkedIn).</li>
+<li>Before that she held marketing roles at American Chemical Society, Gilead Sciences and Dexcom (LinkedIn).</li>
+<li>She also founded MochaStock.com and hosts the Diversity Be Like podcast (LinkedIn).</li>
+<li>She is a Goldman Sachs 10,000 Small Businesses alumna (2021) and a Grid110 Launchpad alumna (2025). The firm is WBENC and minority business certified (LinkedIn).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Sur-Ryl is a full-service marketing agency. Services include brand strategy, integrated campaigns, employer brand, communications and PR, web, events and media production (surrylmarketing.com).</li>
+<li>Named clients include Los Angeles World Airports, Foundation for Women&#x27;s Cancer, ICF Foundation, City of Carson, City of Stafford and SMPS (surrylmarketing.com work page).</li>
+<li>The homepage offers a free &quot;Message to Momentum Audit&quot; as its lead magnet. Pricing is quote or call only.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Government and public agencies, nonprofits, associations and foundations, higher education and mission-driven brands (surrylmarketing.com).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Mission-driven organizations need clear messaging and campaigns that deliver outcomes, not just activity.</li>
+<li>Sur-Ryl builds the brand strategy and the campaigns behind it.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>Public agency and nonprofit buyers usually buy through referrals and procurement. Ask how most of her best clients found her and how long a typical deal takes to close.</li>
+<li>She has publicly said good marketing is about outcomes and clarity. Keep the pitch to the specific result, not a feature list.</li>
+<li>She values being vouched for by trusted contacts. Ask who sent her to the webinar or the booking page.</li>
+<li>Her list of buyers is specific. Ask which single client type she would most like ten more of.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>She created Mocha Stock, a stock photo site with authentic images of people of color, then launched the Diversity Be Like podcast from it. Ask whether that was always the plan (Sur-Ryl case study &quot;Launching the Diversity Be Like podcast&quot;).</li>
+<li>She is a classically trained actress and has been on stage at the Geffen Playhouse (Diversity Be Like Season 2 press release, EIN Presswire).</li>
+<li>She volunteered for years as a Big Sister with Big Bro Big Sis of America (Diversity Be Like Season 2 press release, EIN Presswire).</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
