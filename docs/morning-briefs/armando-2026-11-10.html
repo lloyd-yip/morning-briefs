@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Tue Nov 10, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Tue Nov 10, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>12:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/QuImt0MlDSHHhI49DyJ6">John Winner</a> · Call 1 · Kizen</strong>
+      </div>
+      <div class="slot">
+        <strong>5:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/fmOK3Dfzrga8mq2l75Kz">John Burns</a> · Call 1 · Growth Point Financial</strong>
+      </div>
+      <div class="slot">
+        <strong>6:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/pPDBfmcvDXZDYezsjFaG">Sequoia Houston</a> · Call 1 · Sur-Ryl Marketing</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>John Winner · Call 1 · 12:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>John Winner · Kizen · Call 1 · Tue Nov 10, 2026, 12:00 PM ET · Armando</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>John Winner is CEO and co-founder of Kizen, based in Austin, Texas. GHL only has his first name, but his email (john@kizen.com) and LinkedIn match John Winner.</li>
+<li>Kizen is the sixth company he has founded. He started his first business at 13, setting up and repairing home computers in Palm Beach Gardens, Florida.</li>
+<li>He graduated from the University of Texas at Austin in 2011 and ran a management consultancy focused on data, automation and AI before starting Kizen in 2018.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Kizen sells what it calls an &quot;Agentic Orchestration System&quot; that safely puts AI into enterprise workflows. Products include an AI-native CRM and several AI &quot;CoPilots&quot; for contracting, commissions, marketing and underwriting.</li>
+<li>The site shows outcome claims like 80% less manual time per loan, 74% faster agent onboarding, and four times more contracts per team member.</li>
+<li>They raised a $12M seed round, and in 2022 they said they had sold more than 400,000 user licenses.</li>
+<li>Every page pushes &quot;Book a demo.&quot; There is no free trial, newsletter or lead magnet.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Enterprises in regulated industries: insurance carriers and agencies, banks, credit unions, mortgage lenders, and healthcare organizations.</li>
+<li>The buyers are operations, distribution and technology leaders who run heavy manual workflows like onboarding agents, contracting and loan processing.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Regulated companies want AI, but their data sits in many disconnected systems and they cannot risk an AI tool that breaks compliance.</li>
+<li>Kizen connects that data and automates the manual steps, so teams get more done without adding headcount.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He came in from a paid Facebook ad and filled out the application before booking the strategy session. He did not come from a webinar, so walk him through the method from the start.</li>
+<li>He sells high-ticket enterprise deals with a &quot;Book a demo&quot; button as the only way in. Ask how many demos a month they get today, where they come from, and what one new enterprise customer is worth to them.</li>
+<li>He is a sixth-time founder and ran a consultancy, so expect sharp questions on numbers and process. Be crisp and lead with outcomes.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He named the company after the Japanese idea of kaizen (continuous improvement), which he first learned about at UT Austin in 2009, and he bought the domain from a man who called himself a prince in the Philippines (Kizen newsroom, &quot;Kizen Lands $12 Million in Funding&quot;).</li>
+<li>The Wall Street Journal once added &quot;yes, that&#x27;s his real name&quot; when writing about him, which makes for an easy laugh if the moment is right (Wall Street Journal profile).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>John Burns · Call 1 · 5:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>John Burns · Growth Point Financial · Call 1 · Tue Nov 10, 2026, 5:00 PM ET · Armando</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>John is Principal Owner and Financial Advisor at Growth Point Financial LLC in Lancaster, Pennsylvania. The firm was formed in June 2018 and he is listed as principal owner on its SEC Form ADV.</li>
+<li>He entered the industry around 2013 to 2014 and worked at another firm before going out on his own in 2018 (his LinkedIn).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Growth Point calls itself &quot;Lancaster&#x27;s Fee-Only Fiduciary Financial Advisors&quot; (growthpointfinancial.com).</li>
+<li>It sells investment management, retirement planning, tax strategies and estate planning to individuals.</li>
+<li>Form ADV shows all client assets are managed on a discretionary basis. The firm is also registered as running educational seminars.</li>
+<li>The site shows no pricing, case studies, named clients or testimonials, and no opt-in or lead magnet.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Individuals and families in Lancaster, Pennsylvania (growthpointfinancial.com).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Local individuals and families who want fiduciary, fee-only guidance on investing, retirement, taxes and estate planning.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>The site has no visible way to capture new clients. Ask how most of his clients find him and what he does when referrals slow down.</li>
+<li>He runs educational seminars. Ask whether seminars bring in clients and how often he holds them.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Sequoia Houston · Call 1 · 6:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Sequoia Houston · Sur-Ryl Marketing · Call 1 · Tue Nov 10, 2026, 6:00 PM ET · Armando</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Sequoia is the founder and CEO of Sur-Ryl Marketing, which she started in 2009. She is based in Los Angeles (LinkedIn).</li>
+<li>Before that she held marketing roles at American Chemical Society, Gilead Sciences and Dexcom (LinkedIn).</li>
+<li>She also founded MochaStock.com and hosts the Diversity Be Like podcast (LinkedIn).</li>
+<li>She is a Goldman Sachs 10,000 Small Businesses alumna (2021) and a Grid110 Launchpad alumna (2025). The firm is WBENC and minority business certified (LinkedIn).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Sur-Ryl is a full-service marketing agency. Services include brand strategy, integrated campaigns, employer brand, communications and PR, web, events and media production (surrylmarketing.com).</li>
+<li>Named clients include Los Angeles World Airports, Foundation for Women&#x27;s Cancer, ICF Foundation, City of Carson, City of Stafford and SMPS (surrylmarketing.com work page).</li>
+<li>The homepage offers a free &quot;Message to Momentum Audit&quot; as its lead magnet. Pricing is quote or call only.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Government and public agencies, nonprofits, associations and foundations, higher education and mission-driven brands (surrylmarketing.com).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Mission-driven organizations need clear messaging and campaigns that deliver outcomes, not just activity.</li>
+<li>Sur-Ryl builds the brand strategy and the campaigns behind it.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>Public agency and nonprofit buyers usually buy through referrals and procurement. Ask how most of her best clients found her and how long a typical deal takes to close.</li>
+<li>She has publicly said good marketing is about outcomes and clarity. Keep the pitch to the specific result, not a feature list.</li>
+<li>She values being vouched for by trusted contacts. Ask who sent her to the webinar or the booking page.</li>
+<li>Her list of buyers is specific. Ask which single client type she would most like ten more of.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>She created Mocha Stock, a stock photo site with authentic images of people of color, then launched the Diversity Be Like podcast from it. Ask whether that was always the plan (Sur-Ryl case study &quot;Launching the Diversity Be Like podcast&quot;).</li>
+<li>She is a classically trained actress and has been on stage at the Geffen Playhouse (Diversity Be Like Season 2 press release, EIN Presswire).</li>
+<li>She volunteered for years as a Big Sister with Big Bro Big Sis of America (Diversity Be Like Season 2 press release, EIN Presswire).</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
