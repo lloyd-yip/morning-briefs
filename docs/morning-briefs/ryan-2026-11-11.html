@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Wed Nov 11, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Wed Nov 11, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>11:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/MXJ5KPpygzSbZrDknu7E">Marek Kowalczyk</a> · Call 3+ · MANDARINE Project Partners</strong>
+      </div>
+      <div class="slot">
+        <strong>1:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/BXOL6SiD3W5OEPFrpnqe">Barry Carlin</a> · Call 2 · Best Performance Systems</strong>
+      </div>
+      <div class="slot">
+        <strong>3:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/WLBZiX345uqasxQMT0Wk">Robert Walker</a> · Call 1 · Surveys &amp; Forecasts</strong>
+      </div>
+      <div class="slot">
+        <strong>5:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/09Z9G62QkXOIuowM93Zq">Connor McLeod</a> · Call 3+ · SageCreek AI</strong>
+      </div>
+    </section>
+
+    <details class="pack" data-prep-lock="Xo2kLK12KHR2xBne5Bg3">
+      <summary><span>Marek Kowalczyk · Call 3+ · 11:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Marek Kowalczyk · MANDARINE Project Partners · Call 3+ · Wed Nov 11, 2026, 11:00 AM ET · Ryan</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Soft yes on fit after an 89-minute Business Evaluation (Jul 28). Marek (Warsaw) runs Mandarin / MANDARINE Project Partners — 25+ years in critical-chain project management consulting and training for CEOs / VPs / managers in engineering-to-order manufacturing and new product development. He is largely solo. Strategy discussed: high-touch lifestyle consulting plus scalable executive education (Maven.com) fed by a webinar system aimed at 50,000+ executives across Poland and the EU. Check-in for decision was set for September 18 at 5pm Warsaw time.</li>
+</ul>
+<ul>
+<li>What paused the close: Productization unfinished — he wanted standardized offers for consulting and executive education within 1–3 months before fully leaning into the webinar engine. Mild anxiety about launching before the course / offer is crisp.</li>
+</ul>
+<ul>
+<li>Who else matters: Marek is the decision-maker (solo). No co-decider named.</li>
+</ul>
+<ul>
+<li>Money / terms already on the table: Pricing / build-hours / financing overview was to be sent after Call 1; treat commercial numbers as “review materials sent” unless he confirms a figure on this call — do not invent a locked price if he did not state one back.</li>
+</ul>
+<ul>
+<li>Whose court: Marek’s for self-assessment and productization progress; Ryan’s for testimonials / demo peek / accountability hold. Today is the Sep 18 decision check-in he agreed to.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Interested and thoughtful, not impulsive. Wants accountability and market fit before a full launch.</li>
+</ul>
+<ul>
+<li>What’s creating urgency (or killing it): Urgency rises if Maven course and standardized offers are ready and he wants EU reach without travel. Urgency dies if productization slips and he stays in single-project timing hell.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: Solo capacity; travel reluctance for low fees; launching webinars before the offer is productized; “will executives in Poland / EU sit this.”</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Offer / course productization incomplete — primary — explicit Call 1 pause.</li>
+</ul>
+<ul>
+<li>Solo operator capacity — primary — no bench of consultants.</li>
+</ul>
+<ul>
+<li>Geographic / travel hesitation — secondary — Poland-first, EU open, long-haul only if fees justify.</li>
+</ul>
+<ul>
+<li>Anxiety before full launch — secondary — asked for testimonials and a sneak peek to reduce fear.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: “I still need to finish productizing the consulting and Maven course before I buy a lead system.”</li>
+</ul>
+<ul>
+<li>Status: still open.</li>
+</ul>
+<ul>
+<li>Overcome with: Agree the offer must be teachable on a webinar. Reframe QS as the forcing function that finishes productization inside the build month — not a reason to wait three more quiet months. Ask what exactly is unfinished and whether a first webinar lane can launch on the consulting offer while Maven catches up.</li>
+</ul>
+<ul>
+<li>Full story to tell: Nick Uresin at Podcast Pros. Best answer to “how long until this is actually live?” — sales call to a running webinar in about eight days, with qualified opportunities off webinar one. Tell it half-offhand: speed comes from a crisp offer plus a machine, not from waiting for perfect productization in private.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; land on “build while we launch.”</li>
+</ul>
+<ul>
+<li>Exact land line: “Nick went from sales call to a live webinar in about eight days once the offer was clear enough to teach. Waiting for perfect productization in private usually just delays the market feedback the webinar would give you.”</li>
+</ul>
+<ul>
+<li>Objection: “I’m solo — I don’t have capacity to run a new system.”</li>
+</ul>
+<ul>
+<li>Status: still open.</li>
+</ul>
+<ul>
+<li>Overcome with: Restate the time model from Call 1 materials (initial hours then assistant-run). Position the engine as replacing founder outreach hours, not adding a second full-time job.</li>
+</ul>
+<ul>
+<li>Full story to tell: Philipp Von Schulthess at Oxoia — founder outreach from about 16 hours a week to almost none once an assistant ran the process; largest deal in company history off the motion.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand; capacity.</li>
+</ul>
+<ul>
+<li>Exact land line: “Philipp’s founder time on outreach went from about sixteen hours a week to almost none once an assistant ran it — and he still got the largest deal in company history. Solo is exactly who needs the machine.”</li>
+</ul>
+<ul>
+<li>Objection: “My niche is too specific / technical for webinars.”</li>
+</ul>
+<ul>
+<li>Status: half-handled (ETO / critical chain named).</li>
+</ul>
+<ul>
+<li>Overcome with: Niche is the advantage for critical-chain / Theory of Constraints executives.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo at Cinnamon Consulting — technical buyers; about 66 booked calls when the room matched the niche.</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand.</li>
+</ul>
+<ul>
+<li>Exact land line: “Cedric’s buyers were as specialized as a critical-chain executive lane — and he still got about sixty-six booked sales calls. Specific is the advantage.”</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Nick Uresin · Podcast Pros — live fast — productization stall.</li>
+</ul>
+<ul>
+<li>Philipp Von Schulthess · Oxoia — time freed + largest deal — solo capacity.</li>
+</ul>
+<ul>
+<li>Cedric Le Rouzo · Cinnamon Consulting — ~66 booked calls — technical niche.</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open on the Sep 18 self-assessment he promised — what is done on offers / Maven, what is not.</li>
+</ul>
+<ul>
+<li>Decide whether consulting-first webinar can start while Maven finishes.</li>
+</ul>
+<ul>
+<li>Re-confirm commercial terms from the materials he was sent; only quote numbers he acknowledges.</li>
+</ul>
+<ul>
+<li>Name Poland-first invite lane and EU expansion rule.</li>
+</ul>
+<ul>
+<li>Leave with e-sign / pay or a dated kickoff tied to a named productization milestone this month — not another quarter of private prep.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If productization is still months out, then offer a dated start after a named offer-complete checkpoint and still capture verbal commercial intent.</li>
+</ul>
+<ul>
+<li>If capacity fear dominates, then run Philipp’s time story and walk the hour model again without re-demoing the whole funnel.</li>
+</ul>
+<ul>
+<li>If he wants only Maven and not consulting on webinars, then lock one lane so messaging stays sharp.</li>
+</ul>
+<ul>
+<li>If he asks for another full custom demo before deciding, then agree only with a same-week decision attached.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>Prefer: signed start with Poland-first lane and consulting (or Maven) offer named. Next acceptable: written yes + kickoff hold inside two weeks tied to a named productization deliverable. Not acceptable: “check back when the course is finished” with no date.</p>
+      </div>
+    </details>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Barry Carlin · Call 2 · 1:30 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Barry Carlin · Best Performance Systems · Call 2 · Wed Nov 11, 2026, 1:30 PM ET · Ryan</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Barry runs a live safety and behavior training company with enterprise programs at $100,000 to $180,000 for clients like United Airlines, Boeing and Hilton Resorts. He is launching a digital supervisor program built on short behavior-change videos, priced at $15,000, with two $5,000 on-site upsells. He came in from a Facebook ad and had not seen our webinar. What stuck was the calendar invite approach, which he called &quot;a brilliant idea,&quot; and he closed with &quot;I think it&#x27;s brilliant and I love it.&quot;</li>
+<li>Emotional state / urgency (from Call 1):</li>
+<li>How he feels: Engaged, curious and excited. He asked a lot of clarifying questions and took careful notes. He was also stretched for time, eating during the call and pushing his next meeting.</li>
+<li>Goals he wants but can&#x27;t hit yet: Five new clients a day, and he said he could easily handle 30 new clients a week. He wants a path toward about $20M a year, and said &quot;time will tell&quot; whether that takes two months or two years.</li>
+<li>Why it matters: His live model is capped by his own time at four to six clients a year, and he turns away 10 to 12 large companies a year. The digital program is how he scales past himself, and it also sets up the future, where either Amanda takes over the company or he sells it, possibly to an insurance company.</li>
+<li>What&#x27;s holding him back: He wins clients by speaking at high-end conferences, and he has no digital marketing experience. In his words, &quot;No idea what I&#x27;m doing.&quot; He is just starting to look at marketing companies.</li>
+<li>Consequences if nothing changes: The digital program launches in about two weeks with no proven way to reach buyers at volume, and growth stays capped at what he can do in person.</li>
+<li>Fears in the decision: He worried the system depends on us providing the list. He asked where we get clean, accurate data. He wants Amanda involved, and he wants references before deciding.</li>
+<li>Objections still open:</li>
+<li>Dependence on us for the lead list. Ryan explained we build it with him over six months and hand over the data providers, an assistant and the SOPs (step-by-step operating guides), but the demo has to prove he owns it.</li>
+<li>Where the clean data comes from. Ryan gave a short answer and deferred the detail to the demo.</li>
+<li>Timing. He is still building his launch site and wants to see where he is before starting.</li>
+<li>Our price was not quoted. Ryan only gave the general $18,000 to $50,000 value-based range.</li>
+<li>Who&#x27;s joining Call 2: Barry and Amanda. Amanda has been with him 15 years and is his likely successor. Ryan was to send the invite to both (Amanda&#x27;s email, amanda@bestperformancesystems.com, was inferred from the call audio, so confirm it delivered).</li>
+<li>What we promised to walk: On Call 1 this slot was set as a 10 to 15 minute check-in where they decide whether to walk the custom demo now or push it. Be ready to run the full demo (lead list, calendar invites, webinar) if they say yes. Ryan also promised at least 30 testimonials and sent the recording, webinar page, testimonials and team info, so confirm they arrived.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Barry Carlin owns Best Performance Systems, a safety and behavior training company. The digital program sells to manufacturers, small and large, in the US and Canada. Buyers include HR directors, risk managers, safety and EHS (environment, health and safety) managers, production and plant managers, operations leaders, the CFO, COO, CEO and owners. Barry said the real decision maker varies by company. The problem he solves is that most training fails because habits slide back within six months once the trainer leaves.</li>
+<li>Company goals / dream state (from Call 1): Scale the digital program to five new clients a day and toward about $20M a year, then hand the company to Amanda or sell it.</li>
+<li>ICP dream state (what THEIR buyers want): Safety and supervisor behavior that actually sticks after training, which shows up as fewer injuries, lower workers&#x27; compensation costs, and better productivity and retention.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>Track record mismatch. His website says &quot;since 1995,&quot; but on the call he said he has run the company since 2012 (14 years). Ask him which one to use before any of it goes into his webinar copy. Do not put either number in front of him as fact until he confirms.</li>
+<li>Amanda is new to the deal and may be the person who runs this after Barry. She has not heard any of Call 1, so give her a short recap and speak to her as a decision maker, not a guest.</li>
+<li>The slot may be short. It was booked as a 10 to 15 minute check-in, so open by asking how much time they have, and lead with the calendar invite and the lead list, which are what he reacted to most.</li>
+<li>He thought we were a lead-list vendor at first. Stress ownership and the six-month build throughout.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): Manufacturing companies in the United States and Canada with 21 or more employees, up to the very largest. Buyers are HR directors, VPs of HR and HR managers, risk managers, safety and EHS managers, workers&#x27; comp managers, production and plant managers, directors and VPs of operations, and the CFO, COO, CEO, owner and president. We leave out non-manufacturing industries for now, because Barry said hospitality comes later as a second version.</li>
+<li>Ideal ICP (tight — who he said he wants most): The people closest to the problem, which are HR, risk, safety and plant leaders at US and Canadian manufacturers. We have not counted this tighter group separately yet. On the demo, show the full count and explain that this group is where we would invite first.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): About 918,000 decision makers (918,271) across about 132,000 US and Canadian manufacturing companies, using the full title list above. This is the headline set in Deal Forge.</li>
+<li>How we got the number: We started from manufacturing companies in the US and Canada with 21 or more employees, then filtered to the buyer titles Barry named plus the safety and EHS titles that own this problem, then counted the contacts in the data.</li>
+<li>What we widened: Barry named manufacturing, the US and Canada, and the HR, risk, production, CFO, COO, CEO and owner titles. We added safety and EHS managers, workers&#x27; comp managers, plant managers, VPs of operations and presidents, because they own the same problem.</li>
+<li>Check vs Call 1: No number was discussed on Call 1. Ryan used 200,000 executives only as an example, so expect Barry to react well to the real figure being much larger.</li>
+<li>Too small?: No. The headline is far above the 30,000 minimum.</li>
+<li>Note for Ryan: Quote about 918,000. Do not use the 1.69 million figure, which is stale. Recommended outreach in Deal Forge is 100,000 a month.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): Every manufacturer feels the cost of injuries and workers&#x27; comp claims, and Barry has strong enterprise names behind him, including United Airlines, Boeing and Hilton Resorts. The proof slide in Deal Forge uses UVDI (Ultra Violet Devices Inc.), whose workers&#x27; comp claim expenses fell from $264,000 (114% of premium) to $4,500 (2% of premium) in one year. That is a very easy number for a CFO or risk manager to care about.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): The digital program is brand new and has no digital customers yet, so the proof comes from his live work. The price is not settled. The ROI in Deal Forge uses the $15,000 core price, but he said he could go to $25,000, and he framed the upsells as already &quot;up to 25,000&quot; per client. Ask which number he wants modelled. Also confirm the track record (1995 or 2012) before it appears on any slide.</li>
+<li>Positioning line for the webinar if we pick today: &quot;Why most safety training wears off in six months, and the short weekly routine that keeps supervisors and crews safe long after the trainer leaves.&quot;</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane: Safety and behavior training that does not stick, which keeps injuries and workers&#x27; comp costs high.</li>
+<li>Who we invite first, then next: We invite HR, risk, safety and plant leaders at US and Canadian manufacturers first, then the broader honest list of operations leaders, the CFO, COO, CEO, owners and presidents.</li>
+<li>Story arc (HIS webinar to HIS audience):</li>
+<li>Hook: &quot;You paid for the safety training, and six months later the crew is back to old habits.&quot;</li>
+<li>Problem: Training is a one-time event, so habits slide back once the trainer leaves, and the cost shows up in injuries and claims.</li>
+<li>Proof: The UVDI result, where workers&#x27; comp claim expenses fell from $264,000 to $4,500 in one year, plus his work with enterprise clients like United Airlines, Boeing and Hilton Resorts.</li>
+<li>Offer: The digital supervisor program, with short behavior videos shown at least three times a week.</li>
+<li>Easy call to action: Book a call with Best Performance Systems.</li>
+<li>Copy / talk-track beats:</li>
+<li>&quot;Most safety training wears off in six months. Here is why.&quot;</li>
+<li>&quot;One manufacturer cut workers&#x27; comp claim costs from $264,000 to $4,500 in a year.&quot;</li>
+<li>&quot;A few minutes a week keeps supervisors and crews on the right habits.&quot;</li>
+<li>&quot;The same approach used with United Airlines, Boeing and Hilton, built for manufacturers of any size.&quot;</li>
+<li>Cadence: Run one topic and test it on the HR, risk and safety list, then widen to operations and the C-suite once the first runs show which titles register best.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Gene Rosendale, Advocate Advisors. This answers &quot;the system depends on you providing the lead list.&quot; Gene ran four marketing agencies over five years, paying $36,000 to $48,000 a year, and got five qualified prospects and one client in total. With us he matched five years of output in six months, and he uses the frame of renting leads versus owning the system. Pull it when Barry or Amanda asks who owns the list and the process. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+<li>Jonathan Duarte, GoHire. This answers &quot;will calendar invites still work at scale?&quot; GoHire went from 240 invites to more than 29,000 per webinar across 18 runs and still held a 47% attendee-to-registrant rate at its peak. GoHire sells to HR buyers, close to Barry&#x27;s HR directors. Pull it when you show the calendar invite and the 100,000-a-month outreach. Prospect link: https://quantums-institute.com/due-diligence-home</li>
+<li>Lynn Rousseau, The Conscious Leader. This answers &quot;I&#x27;ve always won clients in person and I don&#x27;t know marketing.&quot; Lynn had grown on referrals for years and had tried many marketing programs. She said this one was different because it gave her specific actions plus a year of ongoing support, and she called it &quot;completely worth it.&quot; Pull it when Barry says he has no idea what he is doing with digital marketing. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0</li>
+<li>Jacqueline Throop-Robinson, Spark&#x27;d Engagement (backup). She sells employee engagement work to HR leaders. 1,332 invites, our smallest list, produced a 76% attendance rate and a booked call. Use it only if Amanda asks whether HR buyers actually show up. Prospect link: https://quantums-institute.com/due-diligence-home</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room / who signs / what each cares about: Barry is the owner and the signer. He cares about scale, speed and owning the system. Amanda has been with him 15 years, is his likely successor and must be on every meeting. She will likely care about who does the work, how many hours it takes, and whether this fits the launch.</li>
+<li>Landmines from Call 1:</li>
+<li>Timing. He is still building his launch site and may want to push the demo. If he does, leave with a dated demo slot that Amanda accepts.</li>
+<li>Ownership. He first thought we were a lead-list vendor, so keep repeating that he owns the list, the providers, the assistant and the SOPs.</li>
+<li>Data quality. He asked where clean data comes from, so show the real lead list in Deal Forge and how it was filtered.</li>
+<li>References. He asked for references and Ryan promised at least 30 testimonials. Confirm they were sent before the call.</li>
+<li>Price. Our price was not quoted, only the $18,000 to $50,000 range. In the ROI, check whether to model $15,000 or $25,000 per client before showing it. The ROI tab currently uses $15,000, with a default 70% show rate and 20% close rate.</li>
+<li>Track record. Confirm &quot;since 1995&quot; versus 2012 before any copy uses it.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Robert Walker · Call 1 · 3:30 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Robert Walker · Surveys &amp; Forecasts · Call 1 · Wed Nov 11, 2026, 3:30 PM ET · Ryan</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Robert (Bob) Walker is CEO and founder of Surveys &amp; Forecasts, LLC in Norwalk, Connecticut. He founded it in December 1994 (his LinkedIn).</li>
+<li>Before that he led research and innovation teams at Unilever and P&amp;G, and was Senior Vice President at Evaluative Criteria Inc. from 1992 to 1994 (his LinkedIn and the QRCA speaker page).</li>
+<li>He holds a BA in experimental and social psychology from the University of Connecticut and an MBA in marketing from the University of New Hampshire (QRCA speaker page).</li>
+<li>His LinkedIn headline now reads Founder at a stealth AI startup.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Surveys &amp; Forecasts is a full-service marketing research consultancy focused on new product development. Services are insights, advisory for buying or selling businesses and brands, analytics, and research that supports legal claims (safllc.com).</li>
+<li>It lists expertise in fast-moving consumer goods, durables, fintech, pet care, health care, luxury goods and e-commerce (its LinkedIn company page).</li>
+<li>Proof on the site: anonymous testimonials from a regional online grocery CMO and a neuroscience consultancy CEO. No named clients or pricing (safllc.com).</li>
+<li>Directory listings give it 1 to 10 employees. The LinkedIn page says clients get direct access to Bob Walker.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Brands, businesses and legal teams, from Fortune 500 companies to emerging brands, trade associations and nonprofits (his LinkedIn).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Teams that need confident, research-backed decisions on customers, products and growth, with a thought partner who turns findings into recommendations (his LinkedIn).</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>The business depends on Bob personally. Ask how new clients find him today and what happens to the pipeline when he is busy on a project.</li>
+<li>He is building a stealth AI startup alongside the firm. Ask what he is working on and which business the call is for.</li>
+<li>The site has no lead magnet or opt-in. Ask whether clients come mostly from referrals.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>In 2019 he said the marketing researcher is the conscience of a business, when joining the Veriglif data program (Veriglif announcement on Medium). Ask what sparked that view.</li>
+<li>He led research at both P&amp;G and Unilever, two rival companies (QRCA speaker page). Ask how the two cultures differed.</li>
+</ul>
+      </div>
+    </details>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Connor McLeod · Call 3+ · 5:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Connor McLeod · SageCreek AI · Call 3+ · Wed Nov 11, 2026, 5:00 PM ET · Ryan Matsumori</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Connor said, &quot;I&#x27;m confident we&#x27;ll get leads and meetings.&quot; Mylie (head of marketing) said the strategy makes sense for busy executives. Melisa (lead AI strategist) said our data work &quot;feels like you&#x27;re very meticulous.&quot;</li>
+<li>The close paused for two reasons. Connor thinks our revenue projections are high, and their lawyer partner wants to review the offer and contract before a yes.</li>
+<li>Greg (partner and co-decider) was not confirmed on Call 2, and his view is unknown. The lawyer partner&#x27;s name is unknown, and whether he is the same person as Greg is also unknown.</li>
+<li>The fee on the table is $20,000, one time. Connor said it was &quot;about what I was expecting given the 15 hours.&quot;</li>
+<li>Running costs are about $500 a month for 30,000 leads, $530 for 40,000, and $560 for 50,000, starting in month one.</li>
+<li>The guarantee is at least a 3x return on the fee, meaning $60,000 contracted within six months. If we miss it, we keep working for free until we hit it.</li>
+<li>The ball is in their court. Connor asked for the deck, the offer, and contract details, and said, &quot;We should have an answer for you tomorrow.&quot; Whether the follow-up email with the deck and offer was actually sent is unknown, because only the draft is on file.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Connor is cautious and analytical, not excited. He is close to bought in, because he believes in the channel and the price matched his expectations. Ryan read him at about 7 out of 10.</li>
+<li>What is creating urgency: Connor wants to start &quot;sooner than later.&quot; His goal is $5M next year against a confident $3.5M without a new channel. Ryan said they could onboard as early as this week.</li>
+<li>What is killing urgency: Connor still has holiday concerns. He said, &quot;You know my concerns about the holidays.&quot;</li>
+<li>Fears still alive in the decision:</li>
+<li>The first fear is that the numbers are too good. Connor said AI services are a &quot;red ocean&quot; where deals close on relationships, so he doubts 2 to 5 new clients a month.</li>
+<li>The second fear is a wrong list. A $120M lending fund can be &quot;three guys in an office,&quot; so revenue filters may pull the wrong firms.</li>
+<li>The third fear is that cold outreach will not reach their buyers. Mylie raised this.</li>
+<li>The fourth fear is legal. The lawyer partner &quot;always wants to see everything.&quot;</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>The lawyer&#x27;s contract review is the primary blocker. It is a process step rather than resistance, but nothing signs until he has seen it.</li>
+<li>Doubt about the revenue projections is the primary emotional blocker. It is the one thing keeping Connor from a 9.</li>
+<li>Greg&#x27;s view is secondary. We have not heard from him on this decision.</li>
+<li>AUM targeting is secondary. It is partly answered, but Connor needs to trust that the list will match their buyers.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: &quot;Your revenue projections look high for a relationship-driven market like ours.&quot;</li>
+</ul>
+<ul>
+<li>Status: Half-handled.</li>
+<li>Overcome with: Do not defend the 2 to 5 clients a month. Use Connor&#x27;s own numbers instead. One client at his $150K first-year value is about 7.5 times the $20,000 fee. The guarantee only needs $60,000 contracted in six months, which is less than half of one client. If that doesn&#x27;t happen, we keep working for free.</li>
+<li>Full story to tell:</li>
+</ul>
+<p>Cedric Le Rouzo is the founder of Cinnamon Consulting, and he has spent more than 20 years in partner sales. Minit headhunted him to build their partner program. Minit grew from 3M to 6M and was sold to Microsoft.</p>
+<p>When he started Cinnamon Consulting, he doubted the webinar economics too. His first webinar had 63 attendees and produced 16 qualified sales calls. His second had 128 attendees and produced 50 sales calls.</p>
+<p>His cost per sales call went from about $2,000 to about $10. His own time on it went from 40 hours a month to 3.</p>
+<ul>
+<li>How to deliver it: Say it half-offhand, as in &quot;Connor, you remember Cedric from the webinar.&quot; Connor already recalled this story.</li>
+<li>Exact land line: &quot;Forget my model for a second. You need one client at your own $150K number to make this about 7x, and the guarantee covers you if it doesn&#x27;t happen.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Funds report AUM, not revenue, so your filters will pull the wrong firms.&quot;</li>
+</ul>
+<ul>
+<li>Status: Partly answered. Ryan answered with filters at several levels plus self-qualifying language in the invite.</li>
+<li>Overcome with: Offer to set the AUM floor with Connor during the build, as the follow-up email promised. Remind him the invite says &quot;you must be X, Y and Z,&quot; so the wrong firms filter themselves out. That self-qualifying language got the strongest reaction on Call 2.</li>
+<li>Full story to tell:</li>
+</ul>
+<p>Gene Rosendale is a founding partner at Advocate Advisors, a boutique investment bank and M&amp;A advisory firm in Chicago. His buyers are private company owners thinking about a sale, which is a confidential, high-trust market much like Connor&#x27;s.</p>
+<p>Gene is the most marketing-literate partner in his firm and vetted about two dozen firms. Before us, he ran four agencies over five years at $36,000 to $48,000 a year and got five qualified prospects and one client in total.</p>
+<p>With us, he matched those five years of output in six months, and then scaled. He calls it renting versus owning the system.</p>
+<ul>
+<li>How to deliver it: Tell it when the list, data quality, or &quot;our buyers won&#x27;t respond&quot; comes up. Then tie it back.</li>
+<li>Exact land line: &quot;Gene&#x27;s buyers are as private and high-trust as yours, and he got more in six months than in five years of agencies. And you own the list we build together.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Our lawyer partner has to review the contract.&quot;</li>
+</ul>
+<ul>
+<li>Status: Open, as a process step.</li>
+<li>Overcome with: Ask early whether he has seen the offer yet. If he hasn&#x27;t, resend it right away. Offer a short call with him this week to answer questions directly, and agree on a date by which he will finish.</li>
+<li>Full story to tell: No case study in our set matches a lawyer review. Do not invent one. Handle it as process and use the guarantee terms as the reassurance.</li>
+<li>How to deliver it: Treat it as normal, and say, &quot;Totally expected, so what does he need from us to finish?&quot;</li>
+<li>Exact land line: &quot;Let&#x27;s get him what he needs this week, so a clean yes isn&#x27;t waiting on paperwork.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;Greg hasn&#x27;t weighed in yet.&quot;</li>
+</ul>
+<ul>
+<li>Status: Open.</li>
+<li>Overcome with: Ask whether Greg has seen the deck and what he thinks. Remind Connor that Greg forwarded our invite to him three times, so Greg already believes the invite reaches people like them. If Greg is still unknown, book a short call with Greg before the end of the week.</li>
+<li>Full story to tell: Use the Cedric story from objection 1 for Greg, because Greg cares about the PE angle, roll-ups, and a fund. The Minit sale to Microsoft is the part that will land with him.</li>
+<li>How to deliver it: Keep it brief, and frame it as something to pass on to Greg.</li>
+<li>Exact land line: &quot;Greg forwarded our invite to you three times, so he&#x27;s already seen it work on you.&quot;</li>
+</ul>
+<ul>
+<li>Objection (likely): &quot;Should we wait until after the holidays?&quot;</li>
+</ul>
+<ul>
+<li>Status: Still alive.</li>
+<li>Overcome with: Repeat Ryan&#x27;s plan. Build and test now, so they start January near full scale instead of starting the build in January. Ryan also said webinars still work during the holidays.</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Cedric Le Rouzo of Cinnamon Consulting. Use him for the revenue doubt and for Greg&#x27;s PE angle. His full story is in objection 1. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+<li>Gene Rosendale of Advocate Advisors. Use him for AUM, list quality, and high-trust buyers. His full story is in objection 2. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Before the call, confirm the deck, the two-page offer, and the recording reached Connor, Mylie, and Melisa at melisa@sagecreek.ai.</li>
+<li>Open by asking whether the lawyer has reviewed the offer and what Greg thinks.</li>
+<li>Handle the revenue doubt with Connor&#x27;s own $150K number and the $60,000 guarantee.</li>
+<li>If the lawyer and Greg are clear, send the agreement and the payment link while you are on the call, and book the first build session this week.</li>
+<li>If the lawyer is still reviewing, set a dated deadline for his review and offer him a short call. Book the final yes call for that date.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If the lawyer hasn&#x27;t seen the offer, then resend it while you are on the call and book a follow-up within 48 hours.</li>
+<li>If the lawyer has contract questions, then offer a short call with him and Ryan this week. Do not change terms on the spot.</li>
+<li>If Connor says the numbers are still too high, then agree that the model is aggressive, and move to one client at $150K plus the guarantee.</li>
+<li>If Greg hasn&#x27;t weighed in, then book a 15-minute call with Greg and Connor before Friday.</li>
+<li>If they say yes, then send the agreement and payment while you are on the call, and book the first build session this week.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>The first choice is a signed agreement and payment today, with the first build session booked this week.</p>
+<p>The second choice is a dated deadline for the lawyer&#x27;s review, with Greg aligned and a yes call booked on that date.</p>
+<p>The fallback is a clear &quot;not moving&quot; with the reason stated.</p>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
