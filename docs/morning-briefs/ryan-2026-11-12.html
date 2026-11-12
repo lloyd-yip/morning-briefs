@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Thu Nov 12, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Thu Nov 12, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>1:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/YuXIjrFszDLXRlu2GzXa">Samyuktha Aswadhati</a> · Call 2 · Samhar CRM</strong>
+      </div>
+      <div class="slot">
+        <strong>3:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/dVtTjoClOzHfmrSCjS7T">Andrew Hamilton</a> · Call 1 · Cybriant</strong>
+      </div>
+      <div class="slot">
+        <strong>4:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/lPTop0qHygf8Og9pcdsE">Keith M Moore</a> · Call 2 · Auxilio Partners</strong>
+      </div>
+    </section>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Samyuktha Aswadhati · Call 2 · 1:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Samyuktha Aswadhati · Samhar CRM · Call 2 · Thu Nov 12, 2026, 1:00 PM ET · Ryan</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Samhar CRM is a Salesforce consulting boutique at about $60k last year across three clients. She has an India delivery team ready to take more work, but she is between clients after moving to the Bay Area. What stuck was whether webinars can reach technical Salesforce buyers, and whether QS finances and implementation will fit her stage.</li>
+<li>Emotional state / urgency (from Call 1):</li>
+<li>How she feels: Open, direct and practical. Skeptical about proof. The theory resonated, but she wants to see implementation and finances before she trusts it.</li>
+<li>Goals she wants but can&#x27;t hit yet: One client early, then about one new client a month next year. Five clients this year would also feel like a win.</li>
+<li>Why it matters: She does not want a W2. Life is not getting cheaper, and she does not want to keep burning her ~$500/month marketing budget with nothing to show.</li>
+<li>What&#x27;s holding her back: Referrals work; LinkedIn, Sales Navigator, AI outreach and local events do not. She cannot see which CRM a prospect uses, and her messaging does not land.</li>
+<li>Consequences if nothing changes: She stays between clients and keeps spending without leads.</li>
+<li>Fears in the buyers&#x27; evaluation: Implementation may not work for her niche. Finances may not fit. Webinar topic/structure is still blank after 6+ months of thinking about it. Limited public QS reviews make her cautious.</li>
+<li>Objections still open:</li>
+<li>Implementation proof over theory. She wants to see how the system would actually be built for Samhar.</li>
+<li>Finances / budget fit. Current spend is about $500/month; she asked about smallest QS clients and online review scarcity.</li>
+<li>Calendar-invite mechanism. She asked how QS gets on calendars; Ryan called it IP and said Call 2 will show it.</li>
+<li>Webinar topic and messaging still undefined.</li>
+<li>Who&#x27;s joining Call 2: Samyuktha alone. She is the only buyer. No partners or board.</li>
+<li>What we promised to walk: Example prospect contacts, calendar invites, the webinar, how we build and test with her, hours from her side, expected results from client conversion rates, and the financial investment. Also CRM-relevant client examples if the team has any.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Samyuktha is founder of Samhar CRM (Bay Area). Done-for-you Salesforce implementation, optimization and admin-as-a-service; Pipedrive for smaller companies. Buyers are founders and VPs at medtech and manufacturing companies (financial services also in play) with long sales cycles, compliance and complex Salesforce needs. First contacts are often sales leaders who then need to bring the economic buyer in.</li>
+<li>Company goals / dream state (from Call 1): Rebuild pipeline after the move, land one client early, then scale toward one new client a month next year without burning cash on dead channels.</li>
+<li>ICP dream state (what THEIR buyers want): A Salesforce org that sales teams actually use, with cleaner data, better pipeline visibility and less admin drag, without hiring a full internal RevOps bench.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>She already lived the QS funnel (calendar invite, then webinar, then Call 1). Use that as the mirror for how her buyers will experience her webinar.</li>
+<li>She is early-stage (~$60k) with delivery capacity already in India, so the demo must make the hours and cash-flow math feel safe, not just the TAM.</li>
+<li>Implementation proof and finances are the two gates. Do not lead with brand stories; lead with the build walkthrough, then proof, then investment.</li>
+<li>ROI tab uses $15k LTV. On Call 1 she described ~$10k to $60k per client over 3–6 months. Calibrate live if her numbers differ.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): US primary (Canada / UK / Australia stretch). Companies of about 20–200 employees (test up to 500) in medtech, manufacturing and adjacent financial services, using Salesforce or considering a move onto it. Buyer titles: founders, VPs, heads of sales, sales leaders, Salesforce admins, Sales Ops / RevOps.</li>
+<li>Ideal ICP (tight — who she said she wants most): Medtech and manufacturing, Salesforce, ~20–200 employees, US. Apollo vertical keyword slice for SF + Admin/Sales Ops/RevOps/VP Sales/CEO titles is about 20k people (noisy). Company estimate for that vertical band is about 5k–12k.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): US Salesforce companies ~11–1,000 employees with a sales team. About 30k–40k companies / ~55k–75k contacts. Apollo verified people in the broad buyer band: ~107k US / ~142k US+CA+UK. Multi-CRM widen (SF + HubSpot + Zoho + Pipedrive) raises the ceiling further if she wants it later.</li>
+<li>How we got the number: Public Salesforce install bases (~150k paying globally; ~57.5k–70k US) filtered to boutique-serviceable size, then buyer titles. Apollo people-search totals used as a sanity check. Full write-up: /workspace/samyuktha-tam/report.md.</li>
+<li>What we widened: She named Salesforce-first and 20–200, but Ryan framed global English-speaking SF users at 100k+ people and said testing up to 500 employees is fair. Multi-CRM is optional expansion from her public site, not the Call 1 lock.</li>
+<li>Check vs Call 1: Ryan&#x27;s &quot;at least 100,000 people&quot; framing matches the broad US+geo people band. Tight vertical alone can sit near or under 30k people, so Call 2 should show Ideal first, then the broader SF SMB/MM list that clears the floor.</li>
+<li>Too small?: No on the broad honest list. Ideal-only is thinner — do not sell Ideal-only as the whole campaign.</li>
+<li>Note for Ryan: Prefer Salesforce-first for the first list. HubSpot tags in Apollo inflate Marketing Hub stacks. Claritysoft is a rounding error.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): Salesforce is messy for growing medtech and manufacturing sales teams. She already offers a free SFDC Health Check and Admin-as-a-Service. Long sales cycles and compliance create a clear education lane.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): Webinar topic is not chosen. Named client proof was not discussed on Call 1. Public site is tech-agnostic (HubSpot/Zoho/Pipedrive/Claritysoft), which can blur the invite list if not forced Salesforce-first.</li>
+<li>Positioning line for the webinar if we pick today: &quot;Why growing medtech and manufacturing sales teams outgrow their Salesforce setup, and the sales-ops fixes that cut manual work without hiring a full RevOps team.&quot;</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane: Salesforce that sales teams will not use, with dirty data, weak pipeline visibility and no admin bandwidth.</li>
+<li>Who we invite first, then next: Ideal list first (US medtech/manufacturing, SF, 20–200). Then broader US SF SMB/MM titles, including companies evaluating a move onto Salesforce.</li>
+<li>Story arc (HER webinar to HER audience):</li>
+<li>Hook: &quot;Your sales team has Salesforce, but the forecast is still a spreadsheet.&quot;</li>
+<li>Problem: Bad data, low adoption and missing automations waste the license and stretch the sales cycle.</li>
+<li>Proof: Her SFDC Health Check pattern plus any named client result she can clear for use.</li>
+<li>Offer: Implementation, optimization or a 3-month Admin-as-a-Service retainer.</li>
+<li>Easy call to action: Book a no-cost Salesforce health check / working session with Samhar.</li>
+<li>Copy / talk-track beats:</li>
+<li>&quot;Sales Navigator will not tell you who is on Salesforce. A webinar finds the 5% who need help now.&quot;</li>
+<li>&quot;Your buyers are not living in LinkedIn DMs. They live on their calendars.&quot;</li>
+<li>&quot;Come with video off, see the diagnosis, then book only if it fits.&quot;</li>
+<li>&quot;We work with companies of about 20 to 200 people, not enterprise SI panels.&quot;</li>
+<li>Cadence: One topic on the Ideal list first. Split medtech vs manufacturing messaging after the first runs show which segment registers.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Swift Cloud Solutions (Salesforce for nonprofits). Closest CRM / Salesforce partner shape. Results not in yet — use for industry adjacency and CSM path (John Nicol), not for outcome numbers. Flag the &quot;no results yet&quot; honestly if she asks for proof.</li>
+<li>Turn-Yellow (HubSpot partner). CRM-partner proof with volume: 154 attendees and 7 booked calls. CSM John Nicol, coach James Walters. Pull when she doubts that CRM consultants can fill a webinar.</li>
+<li>DSC. Self-reported revenue move from about $5K to $10K and registrations from 47 to 360. CSM Daniel King. Useful for early-stage scale story close to her ~$60k base.</li>
+<li>Mobile Text Alerts. Keep as a software / tech-adjacent proof if she worries her buyers are too technical for webinars.</li>
+<li>Code of the North (Ken Tyborski). Manufacturing / ops buyers and &quot;spent before us&quot; diligence story. Useful because her Ideal ICP includes manufacturing.</li>
+</ul>
+<h3>Stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room / who signs / what each cares about: Samyuktha only. She cares about implementation proof, finances, hours from her side, and whether this can start after the holidays without burning cash.</li>
+<li>Landmines from Call 1:</li>
+<li>Finances. Her current marketing budget is ~$500/month. Build the gap and capacity story before investment. The demo ROI tool shows a lifetime value of $15k — confirm against her $10k–$60k per-client range live.</li>
+<li>Implementation skepticism. Walk the exact lead list, invite and webinar build; do not stay in first-principles mode.</li>
+<li>Calendar-invite &quot;how.&quot; Show it in the demo; do not over-explain IP.</li>
+<li>Public review scarcity. Have Trustpilot / founder LinkedIn / DD page ready; she already asked.</li>
+<li>Website rebuild (Nov 15). Reiterate that the funnel should not depend on the new site.</li>
+<li>New-year start preference. Plan build/test timing so she is not forced into a dead December launch if she wants January go-live.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Andrew Hamilton · Call 1 · 3:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Andrew Hamilton · Cybriant · Call 1 · Thu Nov 12, 2026, 3:00 PM ET · Ryan</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Andrew is the Chief Technology Officer at Cybriant. His LinkedIn shows he has held that role since 2016 or earlier (his LinkedIn).</li>
+<li>His earlier background is in infrastructure and virtualization. He holds Red Hat and VMware certifications from 2012 and 2013 (his LinkedIn).</li>
+<li>He is a repeat judge at Kennesaw State University&#x27;s computing showcase (Kennesaw State C-Day program pages).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Cybriant sells managed cybersecurity services. That includes extended detection and response (XDR), managed detection and remediation, vulnerability management, and compliance services, delivered on Google Cloud&#x27;s AI security stack (cybriant.com).</li>
+<li>Their site headline is &quot;Securing AI and Your Business&quot; (cybriant.com).</li>
+<li>Proof on the site is a verified G2 review from their CEO, several managed security provider awards, and one SIEM customer testimonial. Pricing needs a quote or a call (cybriant.com).</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Security leaders in healthcare, financial services, manufacturing, and software companies. The site also says companies of any size with complex environments (cybriant.com).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Companies whose security teams cannot watch, detect, and fix threats around the clock on their own. Cybriant runs that monitoring and cleanup for them (cybriant.com).</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He has publicly said security failures keep happening even in the most resourced companies, because of what he calls poor environmental hygiene. Ask how that shows up in the deals Cybriant wins and loses (his LinkedIn).</li>
+<li>The site has only a contact form, with no visible lead magnet, newsletter, or free trial. Ask how new security leaders find Cybriant today (cybriant.com).</li>
+<li>A talk title of his reads &quot;Do what works, not what&#x27;s flashy.&quot; That suggests he will dislike hype, so keep the conversation practical (public speaking listing).</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He gives his time to Kennesaw State&#x27;s College of Computing and Software Engineering. He is listed as a judge at the Fall 2025 and Spring 2026 computing showcase (Kennesaw State C-Day program pages). Ask what keeps him coming back to judge student projects.</li>
+<li>He has publicly encouraged other companies to build a relationship with that college (his LinkedIn).</li>
+</ul>
+      </div>
+    </details>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Keith M Moore · Call 2 · 4:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Keith M Moore · Auxilio Partners · Call 2 · Thu Nov 12, 2026 · 4:00–5:00 PM ET (2:00–3:00 PM MT) · Ryan</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Auxilio started in February 2019, will be over $5 million this year with about 90% monthly recurring revenue, and serves about 170 churches and church-based nonprofits, grown entirely on referrals. Keith also asked to evaluate Nicene Network, a not-quite-two-year-old nonprofit that may launch a captive self-funded church health plan on January 1 if the stop-loss carrier says yes next week.</li>
+<li>Emotional state / urgency (from Call 1 — required):</li>
+<li>How they feel: Open, precise, and collaborative. Proud of Auxilio&#x27;s missional culture and referral growth, and practical rather than desperate about marketing. Intrigued by the calendar approach, and careful not to speak for Kara.</li>
+<li>Goals they want but can&#x27;t hit yet: Deliberate marketing in 2027, and a move from about two new Auxilio clients a month to four or five once delivery capacity is ready. For Nicene, a way to talk to 50 or 60 church leaders at a time instead of one-off Zooms if the health plan goes live.</li>
+<li>Why hitting the goal matters to them personally / for the company: They have been building delivery capacity for months and do not want to leave that unused. Keith is still with Auxilio but has turned most day-to-day over to Kara, and he is the Nicene decision maker trying to make the nonprofit self-sustaining.</li>
+<li>What&#x27;s holding them back: Auxilio has never really marketed. Buying a list of 20,000 churches and blasting email is, in Keith&#x27;s words, not effective. Nicene has no clients yet and is waiting on the carrier, cost, and 2027 budget.</li>
+<li>Consequences if nothing changes: Auxilio stays on about 25 net new clients a year and does not use the capacity they are building. If Nicene launches January 1 without a scaled way to get the word out, Keith and administrator Dyer may be swamped by one-off inquiries, or they may fail to reach the market fast enough.</li>
+<li>Fears that will show up in the decision: Kara&#x27;s still-unknown criteria. Whether the cost fits Auxilio&#x27;s 2027 plan and Nicene&#x27;s fundraising budget. A chicken-and-egg with donors who will jump in if the health plan goes live.</li>
+<li>Objections still open: Kara and the four-person Auxilio leadership team have not evaluated this yet. Nicene cost, 2027 budget, and the stop-loss decision next week are still open. Phil Van Valkenberg and Keith&#x27;s administrative assistant still need to see it.</li>
+<li>Who&#x27;s joining Call 2: Keith plans to include Kara (Callaghan), Auxilio senior partner who runs day-to-day, and Phil Van Valkenberg, a Nicene board member. Keith also wanted his administrative assistant on, because she would help curate the work. He did not have Kara&#x27;s calendar on Call 1, so confirm who actually accepted the invite.</li>
+<li>What we promised to walk: A custom demonstration of how this looks for Auxilio and Nicene, including the target market, the lead list, calendar invites, the webinar, time and resources from their side, and the commercial terms. Ryan also said that if the operations overlap, they might only need to hire once and later copy the system to the second organization.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Keith is Senior Partner Emeritus at Auxilio, based in Washington, DC. Auxilio is a comprehensive church back-office, priced as a percentage of operating budget. Buyers are pastors, treasurers, board chairs, board members, and executive or operations pastors at US churches, especially plants and churches with a felt operations need.</li>
+<li>Company goals / dream state (from Call 1): Start deliberate Auxilio marketing in Q1 2027 and average four to five new clients a month. For Nicene, get a January 1 health plan live if the carrier says yes, stay operationally self-sustaining in about two years, and eventually use affiliate fees to help fund church planting.</li>
+<li>ICP dream state (what THEIR buyers want): Church planters want the business side handled so they can focus on what they are called to do. Existing churches want a stable operations partner after a bookkeeper leaves or an incident forces the issue. Nicene&#x27;s churches want health and retirement benefits they usually cannot get without a denomination.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>This is one demo for two organizations. Lead with Auxilio, the established $5 million, 170-client business. Treat Nicene as a second vertical that may be able to reuse the same system if the teams overlap.</li>
+<li>Kara is the Auxilio decision seat and has only heard a short teaser. If she is in the room, do not let Keith speak for her. If she is not, get a dated next step that includes her.</li>
+<li>The Thursday 4:00 PM ET slot was agreed verbally. Confirm the invite is out to Keith, Kara, and Phil, and that they have the webinar replay.</li>
+<li>Confirm year-one revenue per new Auxilio client in the demo ROI tool before you walk the ROI tab. $25,000 is already entered, which is the low end of the $25,000 to $30,000 average Keith gave.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): United States only. Churches, ministries, religious institutions, and church plants. Company size in the 1 to 100 employee band. Buyer titles Keith named: pastor (including senior, lead, associate, executive, and administrative), church planter, senior minister, elder, treasurer, board chair, board member, church or business administrator, business manager, finance director, director of operations, and executive director. Exclude churches and ministries outside the United States, and do not lead with mega churches that already have a full internal operations team.</li>
+<li>Ideal ICP (tight — who they said they want most): US church plants and existing US churches with a felt operations need, especially those with annual budgets between $500,000 and $1 million. Same title stack as above, with pastors first. Decision-maker count: we have not isolated the $500,000 to $1 million budget band as its own people count yet. The tighter Apollo pass on US church and ministry organizations with 1 to 100 employees and those titles returned 73,336 people.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): US church, ministry, religious-institution, and church-plant contacts across all 50 states, including smaller churches down to Auxilio&#x27;s roughly $750 a month minimum and the titles Keith named. People count: 468,148. That is the demo ROI tool headline already built for this demo.</li>
+<li>How we got the number: Apollo first found 78,505 US church, ministry, religious-institution, and church-plant organizations in the 1 to 100 employee band, then 73,336 people at the titles above. The demo ROI tool then broadened that Apollo people count to a headline of 468,148 US church and ministry contacts. Recommended first-year outreach in the model is 100,000 people. Keith&#x27;s Nicene figure of about 50,000 unaffiliated churches is an organization count for that nonprofit&#x27;s base market, not this people count.</li>
+<li>What we widened (if thin): They said US only, and that is still US only. They said the sweet spot is $500,000 to $1 million budgets. The broadest list also includes smaller churches they already price down to about $750 a month, plus church-based nonprofits and ministries in the same title stack. We added those adjacent church and ministry keywords. We did not add other countries.</li>
+<li>Check vs Call 1: Matches Keith&#x27;s US-only rule, title stack, church plants plus felt-need churches, and the $500,000 to $1 million sweet spot. The 468,148 figure was not said on the call. It comes from the demo ROI tool build you will walk on Thursday.</li>
+<li>Too small?: No. Even the tighter Apollo pass of 73,336 people is already above the roughly 30,000-person floor, and the broadest honest headline is 468,148.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): Clear percentage-of-budget pricing, a $25,000 to $30,000 average client, 90% recurring revenue, 170 clients, and seven years of referrals with no real marketing yet. Keith already agreed that a calendar-based webinar beats a 20,000-name email blast and beats one-off Zooms.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): Nicene has no clients and is waiting on a carrier. Affiliate fees of $250 to $350 a year and about $2 per person per month on health are much thinner than Auxilio&#x27;s average ticket, so a six-month 3x return is much easier to defend on Auxilio than on Nicene alone. Kara has not evaluated this. Do not let the demo become two mixed pitches.</li>
+<li>Positioning line for the webinar if we pick today: How church leaders can hand off the business side of the church, from payroll and bookkeeping to HR, so they can stay focused on the ministry they were called to lead.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): Church leaders are stuck running a business they never signed up to run, and they usually only look for help when a bookkeeper leaves or an incident forces the issue.</li>
+<li>Who we invite first, then next: Ideal first (US church plants and $500,000 to $1 million budget churches, pastors and the rest of Keith&#x27;s title stack), then the broader honest list (smaller qualifying US churches, church-based nonprofits and ministries, same titles, all 50 states).</li>
+<li>Story arc (THEIR webinar to THEIR audience — NOT quantumSCALE&#x27;s value prop): hook: you were called to ministry, not to payroll, HR, and a spreadsheet you do not trust then problem: the business side breaks when a volunteer leaves or an incident shows the gaps, and hiring a full internal team is often too expensive until the church is well over $1 million then proof: Auxilio&#x27;s method, the comprehensive back-office model, and a client church result if Keith approves one then offer: partnership with Auxilio, priced as a percentage of operating budget then easy CTA: book an intro conversation with Auxilio</li>
+<li>Copy / talk-track beats (3–5):</li>
+<li>You did not get a business degree so you could run payroll and bookkeeping for the church.</li>
+<li>Most churches only confront the business side after they lose a bookkeeper or have an incident.</li>
+<li>Pricing is a percentage of your operating budget, starting around 7% for smaller churches and stepping down as you grow, so you can budget it up front.</li>
+<li>A church with a couple hundred thousand dollar budget is often around $1,100 a month, not a corporate invoice they cannot carry.</li>
+<li>The goal is to give the ministry back the hours that operations currently consume.</li>
+<li>Cadence: Start with one Auxilio operations webinar, test it, and only then segment church plants versus existing churches, or add a Nicene benefits webinar if that vertical is using the same system.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Philipp Von Schulthess (Oxoia) — why it fits: Auxilio has grown fine on referrals and is only now looking at marketing. Philipp&#x27;s own words are that referrals were real but &quot;not big enough to grow fast enough.&quot; He also sells a technical product to conservative institutional buyers (municipalities, pension funds, facility managers), which is the closest analogue to pastors and boards, and still filled webinars and closed the largest deal in company history off one. Use this first if Kara or Phil doubts that church leaders will attend. Prospect link: https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</li>
+<li>Lynn Rousseau (The Conscious Leader) — why it fits: She had run for years on referrals and had already tried other marketing programs. Her reason this one stuck is specific actions plus a year of ongoing refinement, which is useful when Kara asks why this is different from &quot;just doing some marketing in 2027.&quot; Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0</li>
+<li>Jason Rotman (Elevate Financial) — why it fits: Keith&#x27;s current motion is email, then a one-off Zoom. Jason went from 2 replies out of 15 hand-sent emails to 33 bookings off one webinar, and said it produced more quality leads in a month than nine to 12 months of traditional prospecting. He also ran this as a licensed financial advisor, which is useful if Nicene&#x27;s regulated benefits and retirement conversation comes up. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room / who signs / what each cares about: For Auxilio, Kara and the four-person leadership team sign, and Keith said that group is nimble. Kara cares about a 2027 marketing path that is more effective than a traditional blast, and she has only heard a short calendar-approach teaser. For Nicene, Keith signs, with Phil Van Valkenberg as a board voice and the administrative assistant as the person who would help run it. Keith cares about cost, how it fits the 2027 budget, and whether they can reach churches at scale if the health plan goes live.</li>
+<li>Landmines from Call 1: Do not let Keith speak for Kara. Do not pitch Nicene&#x27;s thinner unit economics as if they were Auxilio&#x27;s $25,000 to $30,000 average. Do not assume they must hire twice; Ryan already offered one implementation if the teams overlap. The stop-loss answer is due next week, so do not treat January 1 as guaranteed. Get a clear next step with named owners and a date, especially if Kara or Phil is missing.</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
