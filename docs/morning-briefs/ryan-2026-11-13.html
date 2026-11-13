@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Fri Nov 13, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Fri Nov 13, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>12:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/BXOL6SiD3W5OEPFrpnqe">Barry Carlin</a> · Call 2 · Best Performance Systems</strong>
+      </div>
+      <div class="slot">
+        <strong>1:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/sIvH461HvS2o3DMgxuKs">Robert Champion</a> · Call 2 · InnoFlex Solutions</strong>
+      </div>
+      <div class="slot">
+        <strong>4:15 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/2SeFWsjAA8AHhEnsGLeX">Roger Sanford</a> · Call 1 · Hcare Health</strong>
+      </div>
+    </section>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Barry Carlin · Call 2 · 12:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Barry Carlin · Best Performance Systems · Call 2 · Fri Nov 13, 2026, 12:00 PM ET · Ryan</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Barry runs a live safety and behavior training company with enterprise programs at $100,000 to $180,000 for clients like United Airlines, Boeing and Hilton Resorts. He is launching a digital supervisor program built on short behavior-change videos, priced at $15,000, with two $5,000 on-site upsells. He came in from a Facebook ad and had not seen our webinar. What stuck was the calendar invite approach, which he called &quot;a brilliant idea,&quot; and he closed with &quot;I think it&#x27;s brilliant and I love it.&quot;</li>
+<li>Emotional state / urgency (from Call 1):</li>
+<li>How he feels: Engaged, curious and excited. He asked a lot of clarifying questions and took careful notes. He was also stretched for time, eating during the call and pushing his next meeting.</li>
+<li>Goals he wants but can&#x27;t hit yet: Five new clients a day, and he said he could easily handle 30 new clients a week. He wants a path toward about $20M a year, and said &quot;time will tell&quot; whether that takes two months or two years.</li>
+<li>Why it matters: His live model is capped by his own time at four to six clients a year, and he turns away 10 to 12 large companies a year. The digital program is how he scales past himself, and it also sets up the future, where either Amanda takes over the company or he sells it, possibly to an insurance company.</li>
+<li>What&#x27;s holding him back: He wins clients by speaking at high-end conferences, and he has no digital marketing experience. In his words, &quot;No idea what I&#x27;m doing.&quot; He is just starting to look at marketing companies.</li>
+<li>Consequences if nothing changes: The digital program launches in about two weeks with no proven way to reach buyers at volume, and growth stays capped at what he can do in person.</li>
+<li>Fears in the decision: He worried the system depends on us providing the list. He asked where we get clean, accurate data. He wants Amanda involved, and he wants references before deciding.</li>
+<li>Objections still open:</li>
+<li>Dependence on us for the lead list. Ryan explained we build it with him over six months and hand over the data providers, an assistant and the SOPs (step-by-step operating guides), but the demo has to prove he owns it.</li>
+<li>Where the clean data comes from. Ryan gave a short answer and deferred the detail to the demo.</li>
+<li>Timing. He is still building his launch site and wants to see where he is before starting.</li>
+<li>Our price was not quoted. Ryan only gave the general $18,000 to $50,000 value-based range.</li>
+<li>Who&#x27;s joining Call 2: Barry and Amanda. Amanda has been with him 15 years and is his likely successor. Ryan was to send the invite to both (Amanda&#x27;s email, amanda@bestperformancesystems.com, was inferred from the call audio, so confirm it delivered).</li>
+<li>What we promised to walk: On Call 1 this slot was set as a 10 to 15 minute check-in where they decide whether to walk the custom demo now or push it. Be ready to run the full demo (lead list, calendar invites, webinar) if they say yes. Ryan also promised at least 30 testimonials and sent the replay, webinar page, testimonials and team info, so confirm they arrived.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Barry Carlin owns Best Performance Systems, a safety and behavior training company. The digital program sells to manufacturers, small and large, in the US and Canada. Buyers include HR directors, risk managers, safety and EHS (environment, health and safety) managers, production and plant managers, operations leaders, the CFO, COO, CEO and owners. Barry said the real decision maker varies by company. The problem he solves is that most training fails because habits slide back within six months once the trainer leaves.</li>
+<li>Company goals / dream state (from Call 1): Scale the digital program to five new clients a day and toward about $20M a year, then hand the company to Amanda or sell it.</li>
+<li>ICP dream state (what THEIR buyers want): Safety and supervisor behavior that actually sticks after training, which shows up as fewer injuries, lower workers&#x27; compensation costs, and better productivity and retention.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>Track record mismatch. His website says &quot;since 1995,&quot; but on the call he said he has run the company since 2012 (14 years). Ask him which one to use before any of it goes into his webinar copy. Do not put either number in front of him as fact until he confirms.</li>
+<li>Amanda is new to the deal and may be the person who runs this after Barry. She has not heard any of Call 1, so give her a short recap and speak to her as a decision maker, not a guest.</li>
+<li>The slot may be short. It was booked as a 10 to 15 minute check-in, so open by asking how much time they have, and lead with the calendar invite and the lead list, which are what he reacted to most.</li>
+<li>He thought we were a lead-list vendor at first. Stress ownership and the six-month build throughout.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): Manufacturing companies in the United States and Canada with 21 or more employees, up to the very largest. Buyers are HR directors, VPs of HR and HR managers, risk managers, safety and EHS managers, workers&#x27; comp managers, production and plant managers, directors and VPs of operations, and the CFO, COO, CEO, owner and president. We leave out non-manufacturing industries for now, because Barry said hospitality comes later as a second version.</li>
+<li>Ideal ICP (tight — who he said he wants most): The people closest to the problem, which are HR, risk, safety and plant leaders at US and Canadian manufacturers. We have not counted this tighter group separately yet. On the demo, show the full count and explain that this group is where we would invite first.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): About 918,000 decision makers (918,271) across about 132,000 US and Canadian manufacturing companies, using the full title list above. This is the headline set in the demo.</li>
+<li>How we got the number: We started from manufacturing companies in the US and Canada with 21 or more employees, then filtered to the buyer titles Barry named plus the safety and EHS titles that own this problem, then counted the contacts in the data.</li>
+<li>What we widened: Barry named manufacturing, the US and Canada, and the HR, risk, production, CFO, COO, CEO and owner titles. We added safety and EHS managers, workers&#x27; comp managers, plant managers, VPs of operations and presidents, because they own the same problem.</li>
+<li>Check vs Call 1: No number was discussed on Call 1. Ryan used 200,000 executives only as an example, so expect Barry to react well to the real figure being much larger.</li>
+<li>Too small?: No. The headline is far above the 30,000 minimum.</li>
+<li>Note for Ryan: Quote about 918,000. Do not use the 1.69 million figure, which is stale. Recommended outreach in the demo is 100,000 a month.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): Every manufacturer feels the cost of injuries and workers&#x27; comp claims, and Barry has strong enterprise names behind him, including United Airlines, Boeing and Hilton Resorts. The proof slide in the demo uses UVDI (Ultra Violet Devices Inc.), whose workers&#x27; comp claim expenses fell from $264,000 (114% of premium) to $4,500 (2% of premium) in one year. That is a very easy number for a CFO or risk manager to care about.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): The digital program is brand new and has no digital customers yet, so the proof comes from his live work. The price is not settled. The ROI in the demo uses the $15,000 core price, but he said he could go to $25,000, and he framed the upsells as already &quot;up to 25,000&quot; per client. Ask which number he wants modelled. Also confirm the track record (1995 or 2012) before it appears on any slide.</li>
+<li>Positioning line for the webinar if we pick today: &quot;Why most safety training wears off in six months, and the short weekly routine that keeps supervisors and crews safe long after the trainer leaves.&quot;</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane: Safety and behavior training that does not stick, which keeps injuries and workers&#x27; comp costs high.</li>
+<li>Who we invite first, then next: We invite HR, risk, safety and plant leaders at US and Canadian manufacturers first, then the broader honest list of operations leaders, the CFO, COO, CEO, owners and presidents.</li>
+<li>Story arc (HIS webinar to HIS audience):</li>
+<li>Hook: &quot;You paid for the safety training, and six months later the crew is back to old habits.&quot;</li>
+<li>Problem: Training is a one-time event, so habits slide back once the trainer leaves, and the cost shows up in injuries and claims.</li>
+<li>Proof: The UVDI result, where workers&#x27; comp claim expenses fell from $264,000 to $4,500 in one year, plus his work with enterprise clients like United Airlines, Boeing and Hilton Resorts.</li>
+<li>Offer: The digital supervisor program, with short behavior videos shown at least three times a week.</li>
+<li>Easy call to action: Book a call with Best Performance Systems.</li>
+<li>Copy / talk-track beats:</li>
+<li>&quot;Most safety training wears off in six months. Here is why.&quot;</li>
+<li>&quot;One manufacturer cut workers&#x27; comp claim costs from $264,000 to $4,500 in a year.&quot;</li>
+<li>&quot;A few minutes a week keeps supervisors and crews on the right habits.&quot;</li>
+<li>&quot;The same approach used with United Airlines, Boeing and Hilton, built for manufacturers of any size.&quot;</li>
+<li>Cadence: Run one topic and test it on the HR, risk and safety list, then widen to operations and the C-suite once the first runs show which titles register best.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Gene Rosendale, Advocate Advisors. This answers &quot;the system depends on you providing the lead list.&quot; Gene ran four marketing agencies over five years, paying $36,000 to $48,000 a year, and got five qualified prospects and one client in total. With us he matched five years of output in six months, and he uses the frame of renting leads versus owning the system. Pull it when Barry or Amanda asks who owns the list and the process. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+<li>Jonathan Duarte, GoHire. This answers &quot;will calendar invites still work at scale?&quot; GoHire went from 240 invites to more than 29,000 per webinar across 18 runs and still held a 47% attendee-to-registrant rate at its peak. GoHire sells to HR buyers, close to Barry&#x27;s HR directors. Pull it when you show the calendar invite and the 100,000-a-month outreach. Prospect link: https://quantums-institute.com/due-diligence-home</li>
+<li>Lynn Rousseau, The Conscious Leader. This answers &quot;I&#x27;ve always won clients in person and I don&#x27;t know marketing.&quot; Lynn had grown on referrals for years and had tried many marketing programs. She said this one was different because it gave her specific actions plus a year of ongoing support, and she called it &quot;completely worth it.&quot; Pull it when Barry says he has no idea what he is doing with digital marketing. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0</li>
+<li>Jacqueline Throop-Robinson, Spark&#x27;d Engagement (backup). She sells employee engagement work to HR leaders. 1,332 invites, our smallest list, produced a 76% attendance rate and a booked call. Use it only if Amanda asks whether HR buyers actually show up. Prospect link: https://quantums-institute.com/due-diligence-home</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room / who signs / what each cares about: Barry is the owner and the signer. He cares about scale, speed and owning the system. Amanda has been with him 15 years, is his likely successor and must be on every meeting. She will likely care about who does the work, how many hours it takes, and whether this fits the launch.</li>
+<li>Landmines from Call 1:</li>
+<li>Timing. He is still building his launch site and may want to push the demo. If he does, leave with a dated demo slot that Amanda accepts.</li>
+<li>Ownership. He first thought we were a lead-list vendor, so keep repeating that he owns the list, the providers, the assistant and the SOPs.</li>
+<li>Data quality. He asked where clean data comes from, so show the real lead list in the demo and how it was filtered.</li>
+<li>References. He asked for references and Ryan promised at least 30 testimonials. Confirm they were sent before the call.</li>
+<li>Price. Our price was not quoted, only the $18,000 to $50,000 range. In the ROI, check whether to model $15,000 or $25,000 per client before showing it. The ROI tab currently uses $15,000, with a default 70% show rate and 20% close rate.</li>
+<li>Track record. Confirm &quot;since 1995&quot; versus 2012 before any copy uses it.</li>
+</ul>
+      </div>
+    </details>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Robert Champion · Call 2 · 1:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Robert Champion · InnoFlex Solutions · Call 2 · Fri Nov 13, 2026, 1:00 PM ET · Ryan</b></p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: InnoFlex is about a $1M engineering and consulting firm winning roughly 10 new contracts a year, with projects from $50,000 to $300,000. Since June, Robert had his team rebuild sales and marketing around 3 to 5 new offers that run about eight weeks each. What caught his attention on our webinar was access to a broad database, making sense of it, and building trust as they build the brand.</li>
+<li>Emotional state / urgency (from Call 1):</li>
+<li>How he feels: Guarded and analytical at the start. He said he is &quot;just getting facts and information&quot; and set a hard 30-minute stop, then warmed up, gave extra time, and said our webinar &quot;impressed me, it was well done.&quot;</li>
+<li>Goals he wants but can&#x27;t hit yet: Triple revenue next year, then grow at least 50% a year. His leadership team is pushing for 2x to 3x every year.</li>
+<li>Why it matters: The new offers are built and the internal tools are about 90% done, with two to three weeks left. He is operationally ready to scale within a month, so pipeline is the only missing piece.</li>
+<li>What&#x27;s holding him back: He said referrals don&#x27;t work. Social media, focused email campaigns and cold-email webinars have not produced enough, and the databases his team bought were mass job functions, not the people who sign off.</li>
+<li>Consequences if nothing changes: The new offers launch with no reliable pipeline, and the 3x plan for next year slips.</li>
+<li>Fears in the decision: He doesn&#x27;t yet understand putting invites on people&#x27;s calendars. He worries that volume without pain-point messaging gets nobody on a call. He also wants to know exactly what it costs and who has to do what.</li>
+<li>Objections still open:</li>
+<li>The calendar invite mechanism is new to him, and he said it is the one thing that doesn&#x27;t make sense yet.</li>
+<li>He believes quality of the ask matters more than numbers, and wants messaging matched to each industry&#x27;s pain points.</li>
+<li>He doesn&#x27;t remember our pricing and asked for the costing.</li>
+<li>He is interviewing other companies.</li>
+<li>Who&#x27;s joining Call 2: Ryan offered to present to &quot;you and your entire team.&quot; Robert didn&#x27;t name anyone. Confirm before the call whether his sales team joins, since he said &quot;the sales team isn&#x27;t on the phone&quot; when he couldn&#x27;t recall the industry list. Marlon Lyons (chief of staff) and Mark were on the June call.</li>
+<li>What we promised to walk: An example lead list, the calendar invites that would go out, how he would run his webinar, the hours needed from his side, expected returns and the new cash-flow model, the investment, and who does what. Ryan also said we would calibrate any numbers Robert got wrong.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Robert is the CEO of InnoFlex Solutions in Michigan. InnoFlex is purely engineering and consulting, with no equipment sales, helping plants with project feasibility, FAT/SAT testing (equipment acceptance testing at the factory and on site), capital equipment decisions and operational efficiency. Buyers are food and beverage manufacturers, co-packers and co-manufacturers, and consumer and personal care products companies, whose capital and packaging projects run late, over budget or under spec.</li>
+<li>Company goals / dream state (from Call 1): Go from about $1M to about $3M next year, then keep growing at least 50% a year using the new short-cycle offers and internal tools.</li>
+<li>ICP dream state (what THEIR buyers want): Capital equipment and packaging projects that hit their timelines and the ROI that was projected, with less downtime and lower operating cost.</li>
+</ul>
+<h3>What&#x27;s interesting for THIS Call 2</h3>
+<ul>
+<li>Robert pushed back on numbers versus quality. The demo has to show the invite copy is pain-point specific by industry (baking, co-packers, personal care), not just big list counts.</li>
+<li>He is the one person in the deal who has now seen two QS evaluations (June with Armando, now Ryan). He is collecting facts across vendors, so the cost, hours and who-does-what slide has to be very concrete.</li>
+<li>His buyer group is unusually deep. He said 100 to 200 relevant people per company, which is why the TAM works even though he only named about 700 target companies.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): Companies headquartered in the United States in food manufacturing, beverage manufacturing, and soap, cosmetics and personal care manufacturing, with 21 or more employees. Buyers are the C-suite (CEO, COO, chief manufacturing officer), VPs and directors of operations, engineering, manufacturing, procurement and maintenance, R&amp;D directors, capital project managers and project directors, packaging engineers and managers, and plant and operations managers. We leave out equipment suppliers, because he did not name them on this call.</li>
+<li>Ideal ICP (tight — who he said he wants most): The same titles, only at companies doing $5M to $100M in revenue. Apollo counts about 22,700 people.</li>
+<li>Broadest honest TAM (largest possible still real — campaign headline): The full title list at companies of any size from 21 employees up, including the billion-dollar corporations he said he does not turn down. Apollo counts about 78,000 people, and that is the headline set in the demo.</li>
+<li>How we got the number: We started from the industry codes for food, beverage and personal care manufacturers in the United States, then filtered to the buyer titles Robert listed, then counted the contacts Apollo holds. With no size floor it is about 96,500 people, and we dropped the very smallest companies to keep it honest.</li>
+<li>What we widened: Robert named the industries, the corporate and plant-level titles, and the national reach. We added the 21-plus employee floor and the billion-dollar companies above his $5M to $100M sweet spot, which he said he takes on.</li>
+<li>Check vs Call 1: Robert estimated about 700 companies with 100 to 200 relevant people each, and Ryan framed that as about 70,000. Our count of about 78,000 matches that.</li>
+<li>Too small?: No. Even the tight sweet-spot list is close to 23,000, and the headline is well above the 30,000 minimum.</li>
+<li>Note for Ryan: The demo&#x27;s own AI estimate came out at about 170,000, but that number rode on loose keyword tags. Don&#x27;t quote it. Use 78,000.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What&#x27;s sharp (easy to invite on): A concrete, painful topic for plant and capital teams. Robert likes to say over 60% of capital investments fail, and InnoFlex brings engineering judgment from both the equipment-maker side and the plant side. The new offers are short at about eight weeks, which makes a webinar call to action easier.</li>
+<li>What&#x27;s fuzzy or weak (closer must know): The 3 to 5 new offers were not named or described on Call 1. Ask him to name the offer he wants on the first webinar. Named client proof was not discussed, so ask which results he can show.</li>
+<li>Positioning line for the webinar if we pick today: &quot;Why most food and beverage capital equipment projects never hit their ROI target, and the engineering checks that fix it before the money is spent.&quot;</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane: Capital equipment and packaging projects that run late and never deliver the projected return.</li>
+<li>Who we invite first, then next: We invite the Ideal list first ($5M to $100M food, beverage and personal care manufacturers and co-packers), then the broader honest list of larger companies and the wider title set.</li>
+<li>Story arc (HIS webinar to HIS audience):</li>
+<li>Hook: &quot;You approved the CapEx, the equipment arrived, and it still isn&#x27;t running right.&quot;</li>
+<li>Problem: Feasibility gaps, rushed FAT/SAT testing and missing operating standards are where the losses hide.</li>
+<li>Proof: InnoFlex&#x27;s experience on both the equipment-maker and plant sides, plus a named client result (confirm which one he can use; demo proof slide uses Intralox LLC).</li>
+<li>Offer: One of his new eight-week engagements.</li>
+<li>Easy call to action: Book a no-cost initial assessment with InnoFlex.</li>
+<li>Copy / talk-track beats:</li>
+<li>&quot;Over 60% of capital investments fail. Here is where they fail.&quot;</li>
+<li>&quot;Most plants skip the checks before equipment ships, then pay for it in downtime.&quot;</li>
+<li>&quot;You can bring in engineering judgment for one project without hiring an engineering team.&quot;</li>
+<li>&quot;Separate tracks for baking, co-packing and personal care, because the pain points are different&quot; (this answers his quality-of-the-ask point directly).</li>
+<li>Cadence: Run one topic and test it on the Ideal list, then split invites by industry with pain-specific copy once the first runs show which segment registers best.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Jonathan Duarte, GoHire. This answers &quot;putting invites on calendars doesn&#x27;t make sense to us.&quot; GoHire went from 240 invites to more than 29,000 per webinar across 18 runs and still held a 47% attendee-to-registrant rate at its peak. Their buyers include VPs and directors of operations at food and beverage, manufacturing and logistics companies, which is very close to Robert&#x27;s buyers. Pull it when he questions the invite mechanism. Prospect link: https://quantums-institute.com/due-diligence-home</li>
+<li>Ken Tyborski, Code of the North. This answers &quot;we&#x27;ve tried things and spent money.&quot; Ken put roughly a quarter million dollars into salespeople and programs before us. He did hard due diligence before joining, then landed an $8,000 first contract off his second webinar with a 3 to 5 year account life. His buyers are operations and finance leaders at manufacturing, consumer goods and food and beverage companies. Prospect link: https://quantums-institute.com/due-diligence-home</li>
+<li>Cedric Le Rouzo, Cinnamon Consulting. This answers &quot;our niche is too technical.&quot; Cedric runs niche technical consulting, and his cost per sales call went from about $2,000 to about $10, with his time going from 40 hours to 3 hours a month. Pull it if Robert worries that engineering buyers won&#x27;t respond to a webinar. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+<li>Gene Rosendale, Advocate Advisors (backup). He ran four marketing agencies over five years and got five qualified prospects and one client in total, then matched five years of output in six months with us. Use it only if Robert compares us to agencies he is interviewing. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who&#x27;s in the room / who signs / what each cares about: Robert is the CEO and the clear signer, and he cares about facts, cost, hours and who does what. His sales team rebuilt the strategy and may join. They will care about the lead list quality and the per-industry messaging. Marlon Lyons (chief of staff) and Mark (engineer) were part of the June look, so they may weigh in again.</li>
+<li>Landmines from Call 1:</li>
+<li>Price. He wants the costing, and in June he reacted badly when price came up early. Build value and the gap first, then show the investment.</li>
+<li>He is interviewing other vendors, so expect &quot;we&#x27;ll compare.&quot; Leave with a dated next step.</li>
+<li>He said some of his numbers may be off, so show his ROI with his own $50,000 to $300,000 project range and let him correct it live. The demo ROI tab uses $100,000 a client, from $1M over about 10 contracts, and needs a check before the call.</li>
+<li>The ROI tab in the demo did not build (&quot;needs input&quot;). Open the demo and confirm it renders before the call.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Roger Sanford · Call 1 · 4:15 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Roger Sanford · Hcare Health · Call 1 · Fri Nov 13, 2026, 4:15 PM ET · Ryan</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Roger is the Founder, CEO and Chairman of Hcare Health, PBC. He has run it since January 2021 (his LinkedIn).</li>
+<li>He is a Silicon Valley entrepreneur with more than three decades in AI, software, healthcare and branding (Hcare Health team page).</li>
+<li>Earlier, he founded the digital advertising agency P3M, which grew to 120 employees and about $100 million in valuation before WPP acquired it (his LinkedIn).</li>
+<li>He is based in California (his LinkedIn).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Hcare builds two products, Althea and OTKey. They are described as &quot;clinician-in-the-loop&quot; AI for aftercare, recovery support, and secure control of personal health records (hcarehealth.com).</li>
+<li>The company calls itself Delaware&#x27;s first public benefit corporation dedicated to transforming healthcare (his LinkedIn).</li>
+<li>The site shows no pricing, no named clients or testimonials, and only a newsletter signup (hcarehealth.com).</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Individuals and patients who want control of their health information.</li>
+<li>Physicians, hospitals, health systems and payors (Hcare Health team page).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Patients often struggle after treatment, and avoidable recovery costs add up. Hcare pitches AI that supports recovery and keeps health data secure, so doctors can help patients heal at lower cost (Hcare Health team page).</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He has publicly said Hcare&#x27;s AI could create over 200,000 six-figure jobs nationwide, with 2029 as the target. Ask what has to happen first to get there (his LinkedIn post, Sept 2026).</li>
+<li>He created a growth method he calls Geometric Growth. Ask how he applies it to getting Hcare&#x27;s first customers (Hcare Health team page).</li>
+<li>The site has no demo request, case study, or client logos. Ask how new health systems or communities find Hcare today.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>In December 2022 he took the whole month off, handed the company to a colleague, and stepped away from tech and social media. Ask what he did with that month (his LinkedIn post, Dec 2022).</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
