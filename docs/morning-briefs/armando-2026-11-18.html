@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Armando · Wed Nov 18, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Armando</h1>
+      <p class="meta">Wed Nov 18, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>1:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/0Vg4KjJP4VeM6TLBONoY">Michael Macho</a> · Call 1 · BIS Computer Solutions</strong>
+      </div>
+      <div class="slot">
+        <strong>3:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/F1NPJU5EQ42zKQ6ouMgC">Amber Farrell</a> · Call 1 · Far Beyond Marketing</strong>
+      </div>
+      <div class="slot">
+        <strong>4:15 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/9yFNTxiauSBkPjAno3ni">Bill Allan</a> · Call 1 · Orion Healthcare Technology</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Michael Macho · Call 1 · 1:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Michael Macho · BIS Computer Solutions · Call 1 · Wed Nov 18, 2026, 1:00 PM ET · Armando</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Michael Macho is Division President of BIS Computer Solutions in the Los Angeles area. He is the second generation of the family, and his father Miro Macho founded the company and is still CEO (BIS company brief).</li>
+<li>He began his career at NASA&#x27;s Jet Propulsion Laboratory in Pasadena, building the internal intranet and public website for the MUSES CN project. BIS recruited him in 2004 to launch its Mobile Division (BIS company brief; Michael Macho bio).</li>
+<li>He owns or co-owns four technology companies: BIS, ResultWorx Technology Solutions, Viridio.net and Tenecies LLC (Michael Macho bio).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>BIS was founded in 1971 and says it has served more than 3,000 clients. It sells its own ERP software, managed IT services, cybersecurity, cloud and hosting, and mobile apps (biscomputer.com; BIS company brief).</li>
+<li>A well-known product is PCS, software built for pet cremation businesses, which BIS says leads that niche. It also built a criminal justice information system for police, jails and courts (BIS company brief).</li>
+<li>The site shows no pricing, named case studies or lead magnet. The way in is a contact form.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Wholesale distributors, retailers, logistics and transportation companies, manufacturers, pet service businesses, and government agencies (BIS company brief).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Companies running on old or disconnected systems need software that fits how they actually operate, plus someone to keep IT and security running.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>On the application form he picked the 50 to 100K answer. Ask what that number means to him and what he wants to change this year.</li>
+<li>With more than 50 years of history, ask how new customers find BIS today and how many new software or managed IT conversations they get a month.</li>
+<li>It is a family-led company, so ask who else is involved in a growth decision.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>His bio says he started his career building the website for a NASA project at JPL. Asking how someone goes from space mission websites to enterprise software is an easy opener.</li>
+<li>He has been a returning boardroom member at The Channel Company&#x27;s XChange conference (Michael Macho bio).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Amber Farrell · Call 1 · 3:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Amber Farrell · Far Beyond Marketing · Call 1 · Wed Nov 18, 2026, 3:00 PM ET · Armando</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Amber Farrell is the founder and CEO of Far Beyond Marketing in McKinney, Texas. She calls herself a third-generation entrepreneur and &quot;a plumber&#x27;s kid&quot; (Far Beyond Marketing About page).</li>
+<li>She has about 20 years of marketing experience, including building home service companies and a lead generation company that she sold to private equity about five years after starting it. She is a Baylor graduate and a StoryBrand Certified Guide (Far Beyond Marketing About page; guidebook author page).</li>
+<li>She is a three-time international bestselling author and a speaker who has keynoted a SCORE North Texas small business awards luncheon (Far Beyond Marketing site).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Far Beyond Marketing is a women-owned agency that sells StoryBrand messaging, branding, websites, SEO and AI-search optimization, local ads, content, email and funnels, and fractional CMO guidance (Far Beyond Marketing FAQ).</li>
+<li>It describes a proprietary AI platform called YG3 and says it targets growth-stage companies doing roughly $1M to $5M a year (CanvasRebel interview).</li>
+<li>She also runs a monthly marketing membership for local business owners (podcast mention).</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Growth-minded owners of small businesses, mostly home services, franchises, professional services and women-led businesses, in North Texas and nationally.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Owners know their business is good but their marketing is not working or depends on their spare time. She gives them clear messaging and an AI-supported system to run it.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>She is a marketer who sells to the same kind of owner we help, so ask how she gets her own clients today and how predictable that flow is.</li>
+<li>She sold a lead generation company, so she will know the numbers. Be crisp and lead with outcomes.</li>
+<li>The booking is for today, and she has a second call already on the calendar for Friday Nov 20. Ask what she wants answered today so the second call is not wasted.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>She was born in Lafayette, Louisiana, and tells a story about her mother putting Texas soil under the hospital mattress so she could claim Texas birthright (podcast).</li>
+<li>She left a private equity life of constant travel because she felt like &quot;a number on a spreadsheet,&quot; though she still misses the airline points (podcast).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Bill Allan · Call 1 · 4:15 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Bill Allan · Orion Healthcare Technology · Call 1 · Wed Nov 18, 2026, 4:15 PM ET · Armando</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Bill Allan is the CEO of Orion Healthcare Technology in Omaha, Nebraska. He co-founded it in 1992 and earlier ran treatment services at a correctional facility in Iowa (SEC filing, 2001; LinkedIn).</li>
+<li>His LinkedIn About line says he began his own journey in recovery in 1978, and that this shaped his work (LinkedIn).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Orion builds software for addiction and mental health agencies. Its products are the AccuCare electronic health record and billing system and the newer OakTree practice management platform. It also sells outsourced billing, training and consulting (orionhealthcare.com).</li>
+<li>It says AccuCare was the first web-based EHR for the addictions field. It has a state of Nebraska contract for a central behavioral health data system (orionhealthcare.com).</li>
+<li>LinkedIn lists the company at 1 to 10 employees and $1M to $10M in revenue. The main office is in Bellevue, Nebraska (LinkedIn).</li>
+<li>The site&#x27;s main call to action is &quot;Book a free demo.&quot; He recently posted on LinkedIn about asking conference attendees whether they want AI in their EHR (LinkedIn).</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Addiction treatment and mental health providers, peer recovery organizations and state agencies.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Clinics need one system for clinical records, billing and reporting that keeps up with regulations, without extra admin work for clinicians.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>The only way in is a demo request, so ask how many demos they get a month, where they come from, and what one new agency customer is worth.</li>
+<li>He just exhibited at the NAADAC conference. Ask what he gets from conferences and how many deals trace back to them.</li>
+<li>He is a long-time founder in a niche market. Ask what a good year looks like and what stands in the way.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>His LinkedIn says his own recovery journey began in 1978. It is personal, so let him bring it up and do not assume details.</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
