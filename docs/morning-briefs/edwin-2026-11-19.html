@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Thu Nov 19, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Thu Nov 19, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>8:00 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/rGBaCqg6acNxABwKZemN">Sidi Rev</a> · Call 1 · Revlinkers</strong>
+      </div>
+      <div class="slot">
+        <strong>9:30 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/LSKDPRLspLrrIph8vcTa">Joseph Nelson</a> · Call 1 · Stewardship Investments</strong>
+      </div>
+      <div class="slot">
+        <strong>1:15 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/BUgoTAJnS4xSzwBsJlMM">Jeff</a> · Call 1 · Credkeeper</strong>
+      </div>
+      <div class="slot">
+        <strong>4:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/QuImt0MlDSHHhI49DyJ6">John Winner</a> · Call 1 · Kizen</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Sidi Rev · Call 1 · 8:00 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Sidi Rev · Revlinkers · Call 1 · Thu Nov 19, 2026, 8:00 AM ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Sidi Rev, based in the US. He booked this call on Nov 18 through the whitepaper booking page, not from a webinar.</li>
+<li>There is no LinkedIn profile or personal website we could tie to him, so we have nothing reliable on his background.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>In the booking form he described the company as a high-volume online store doing about $30K a day that cannot scale because it lacks payment processing capacity. He says he wants more Stripe payment processors and will pay upfront or a percentage of sales to anyone who has one.</li>
+<li>The public site revlinkers.co presents Revlinkers as a &quot;Stripe income brokerage&quot;. Its terms say Stripe account holders give Revlinkers team-member access to their Stripe account and earn up to 10% of the volume that runs through it. The site lists a Leicester, UK address.</li>
+<li>That is a payment-processing arrangement, not a store with its own product or brand that we could find.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Stripe account holders who want passive income, and e-commerce merchants who need payment processing capacity. Nothing public shows a service that a webinar lead-gen program would help.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Merchants with fast-growing sales get their Stripe payouts held or frozen, so Revlinkers says it spreads their volume across other people&#x27;s Stripe accounts.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>This looks off-profile for us. He is not asking about leads or sales calls. He is asking for Stripe processors and told people to cancel if they do not have one.</li>
+<li>A public scam-watch forum thread links ads that use the Revlinkers name to a Stripe account scam. That is unverified, but it is a reason to be careful and never agree to share any account access.</li>
+<li>Honest plan: spend the first few minutes finding out what he really wants from a quantumSCALE call and whether he owns a business that sells to other businesses. If he does not, wrap up politely rather than force a pitch.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Joseph Nelson · Call 1 · 9:30 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Joseph Nelson · Stewardship Investments · Call 1 · Thu Nov 19, 2026, 9:30 AM ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Joseph Nelson is the founder and principal of Stewardship Investments, a firm he started in 2007. He is a Certified Financial Planner with an MBA from the University of St. Thomas and is also a Certified Kingdom Advisor (Stewardship Investments website; LinkedIn).</li>
+<li>Before that he spent eight years with a Bible translation mission, mostly in Kenya managing project funds (Stewardship Investments website).</li>
+<li>He is based in Bagley, Minnesota, with a second office in Naples, Florida, and has about 28 years of experience (LinkedIn).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Stewardship Investments is a fee-only, fiduciary advisory firm for Christian families across the US. It offers comprehensive planning, biblically responsible investing, retirement planning and tax-efficient giving (LinkedIn company page).</li>
+<li>The company page lists about 10 employees and says it was founded in 2007.</li>
+<li>The only public way in is a contact page with a phone number and email. We did not find a newsletter, webinar or lead magnet.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Christian families who have significant resources and want their money to reflect their faith and support giving (LinkedIn company page).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Families want one plan that ties investing, retirement, taxes and generosity together, with portfolios that match their convictions.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He is a faith-based niche advisor, so ask how new families find him today and how many new planning conversations he has in a normal month.</li>
+<li>He came in through a webinar and booked on Nov 17, so ask what made him book and what he hopes to fix.</li>
+<li>He runs a team of about 10, so ask whether growth is limited by new conversations or by capacity.</li>
+</ul>
+<h3>Case studies to have ready</h3>
+<ul>
+<li>Jason Rotman, Elevate Financial Partners. He is a financial advisor for high-net-worth clients who went from sporadic prospecting to about 62 calls a month, and says one month of webinar leads equaled 9 to 12 months of old prospecting. Bring it up when Joseph talks about how he finds new families today. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS</li>
+<li>ZEA Financial (Ken Baron and Rory Zipper). They went from 2 to 3 new-client meetings a month to 87 calls from our campaign database between March and November 2025, and report $400k or more in new revenue in about a year. Their buyers are business owners and high earners nearing retirement. Bring it up if he wants proof that this works for planners with wealthy clients. There is no public due-diligence link yet, so tell the story out loud and do not send a file or video link.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He enjoys photography, pickleball, cooking, running and reading, and he and his wife Carol have seven grandkids (Stewardship Investments website, his team page).</li>
+<li>He spends summers in Minnesota and winters in southern Florida (Stewardship Investments website, his team page).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Jeff · Call 1 · 1:15 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Jeff · Credkeeper (SaaS) · Call 1 · Thu Nov 19, 2026, 1:15 PM ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>GHL only has the first name Jeff, but his email at financialmedia.marketing and the Credkeeper blog author page point to Jeff Boettcher. Confirm the last name on the call.</li>
+<li>Jeff Boettcher founded Financial Media &amp; Marketing in 2022 and writes articles for Credkeeper under his own name (LinkedIn; Credkeeper author page).</li>
+<li>He is also a financial advisor. He founded Bedrock Investment Advisors in Scottsdale, Arizona in 2010 and started his career on the floor of the Chicago Mercantile Exchange (Bedrock website; VoyagePhoenix interview).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Financial Media &amp; Marketing sells marketing to financial professionals: websites, SEO, content, lead generation, CRM and email marketing, plus the Credkeeper platform (financialmedia.marketing).</li>
+<li>Credkeeper is a patent-pending application meant to build online credibility and generate leads for licensed professionals (Credkeeper page).</li>
+<li>The site claims 1,200 or more clients. Pricing is by quote or call only.</li>
+<li>He also runs Bedrock Financial Services, an insurance marketing organization that supports 200 or more financial professionals (VoyagePhoenix interview).</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Financial advisors, insurance agents and financial planners. The firm also says it partners with carriers, marketing organizations, broker-dealers and RIAs.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Prospects look advisors up online before they call, and many advisors have little visible proof of expertise. Credkeeper aims to fix that and bring in leads.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He already sells lead generation to the same kind of buyer we help, so ask how his own clients get booked calls today and how he finds new customers for Credkeeper.</li>
+<li>His Credkeeper articles are about credibility signals, searchable expertise and building trust before the first call. Ask which of those ideas actually brings him new clients.</li>
+<li>He is a founder who also runs an advisory firm, so ask where his time goes and what he wants to take off his plate.</li>
+</ul>
+<h3>Case studies to have ready</h3>
+<ul>
+<li>Felix Petzel, Panda Media. A lead-generation agency that could not generate its own leads. After building an in-house engine, Felix reports lead costs down 95% and margins moving from 30% to 90%. Bring it up if Jeff says his own pipeline is the weak spot. Prospect link: https://quantums-institute.com/due-diligence-agencies#section-rpq6S3zvMtH</li>
+<li>Jason Rotman, Elevate Financial Partners. A financial advisor who went from sporadic prospecting to about 62 calls a month. Bring it up as proof of what advisors, the people Jeff sells to, get from this method. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He plays golf with his daughters most weeks and likes rebuilding old cars and swinging hammers on building projects (Bedrock Investment Advisors website, his bio page).</li>
+<li>He is known for making up Disney-themed bedtime stories with his kids (Bedrock Investment Advisors website, his bio page).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>John Winner · Call 1 · 4:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>John Winner · Kizen · Call 1 · Thu Nov 19, 2026, 4:00 PM ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>John Winner is CEO and co-founder of Kizen, based in Austin, Texas. GHL only has his first name, but his email (john@kizen.com) and LinkedIn match John Winner.</li>
+<li>Kizen is the sixth company he has founded. He started his first business at 13, setting up and repairing home computers in Palm Beach Gardens, Florida.</li>
+<li>He graduated from the University of Texas at Austin in 2011 and ran a management consultancy focused on data, automation and AI before starting Kizen in 2018.</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Kizen sells what it calls an &quot;Agentic Orchestration System&quot; that safely puts AI into enterprise workflows. Products include an AI-native CRM and several AI &quot;CoPilots&quot; for contracting, commissions, marketing and underwriting.</li>
+<li>The site shows outcome claims like 80% less manual time per loan, 74% faster agent onboarding, and four times more contracts per team member.</li>
+<li>They raised a $12M seed round, and in 2022 they said they had sold more than 400,000 user licenses.</li>
+<li>Every page pushes &quot;Book a demo.&quot; There is no free trial, newsletter or lead magnet.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Enterprises in regulated industries: insurance carriers and agencies, banks, credit unions, mortgage lenders, and healthcare organizations.</li>
+<li>The buyers are operations, distribution and technology leaders who run heavy manual workflows like onboarding agents, contracting and loan processing.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Regulated companies want AI, but their data sits in many disconnected systems and they cannot risk an AI tool that breaks compliance.</li>
+<li>Kizen connects that data and automates the manual steps, so teams get more done without adding headcount.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He came in from a paid Facebook ad and filled out the application before booking the strategy session. He did not come from a webinar, so walk him through the method from the start.</li>
+<li>He sells high-ticket enterprise deals with a &quot;Book a demo&quot; button as the only way in. Ask how many demos a month they get today, where they come from, and what one new enterprise customer is worth to them.</li>
+<li>He is a sixth-time founder and ran a consultancy, so expect sharp questions on numbers and process. Be crisp and lead with outcomes.</li>
+</ul>
+<h3>Case studies to have ready</h3>
+<ul>
+<li>Philipp von Schulthess, Oxoia. A Swiss AI software startup selling to large real-estate and investment companies. Webinars took them from referrals only to a deal that was 25 times their average monthly revenue, and they report going from $120K to $1M a year. Bring it up when John talks about enterprise demos and how hard big deals are to source. Prospect link: https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He named the company after the Japanese idea of kaizen (continuous improvement), which he first learned about at UT Austin in 2009, and he bought the domain from a man who called himself a prince in the Philippines (Kizen newsroom, &quot;Kizen Lands $12 Million in Funding&quot;).</li>
+<li>The Wall Street Journal once added &quot;yes, that&#x27;s his real name&quot; when writing about him, which makes for an easy laugh if the moment is right (Wall Street Journal profile).</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
