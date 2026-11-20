@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Fri Nov 20, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Fri Nov 20, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>8:15 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/3nMDu2a5t8MZL9KIjXYW">Bilal Muta</a> · Call 1 · Northlight Solutions Group</strong>
+      </div>
+      <div class="slot">
+        <strong>9:30 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/vmes7FFIOFb4gutwZHHz">Soledad Torti</a> · Call 1 · Accounting Prose</strong>
+      </div>
+      <div class="slot">
+        <strong>12:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/esrXV5Oawmdph23PND53">Adrian E Velasquez</a> · Call 3+ · Fi-Med</strong>
+      </div>
+      <div class="slot">
+        <strong>1:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/DO32abBEdANIrVJxO93P">Stephen Topley</a> · Call 1 · Lansing Street Advisors</strong>
+      </div>
+      <div class="slot">
+        <strong>3:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/jRUmNidzE5ncD8S46lHM">Afia Owusu-Forfie</a> · Call 1 · Coders Who Travel Inc.</strong>
+      </div>
+      <div class="slot">
+        <strong>4:15 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/rnbwC9vQOlrsduS2Sz7P">Matthew Meader</a> · Call 1 · Caring Data</strong>
+      </div>
+    </section>
+
+    <details class="pack">
+      <summary><span>Bilal Muta · Call 1 · 8:15 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Bilal Muta · Northlight Solutions Group · Call 1 · Fri Nov 20, 2026, 8:15 AM ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Bilal Muta is VP of Delivery Services at Northlight Solutions Group, a Salesforce consulting firm. LinkedIn lists that title from May 2026. A Northlight blog post from January 2026 still quotes him as Director of Delivery Services, so confirm the title on the call (his LinkedIn; Northlight blog “Future-Proofing the Enterprise”).</li>
+<li>He is based in Defiance, Ohio, and is a Defiance College alumnus (his LinkedIn; Defiance College Jacket Days post).</li>
+<li>His work covers consulting delivery operations, customer outcomes, resource planning, and financial performance for Salesforce engagements (his LinkedIn).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Northlight Solutions Group is a Salesforce consulting and implementation partner, headquartered in Salem, New Hampshire. It offers consulting, development and integration, staff augmentation, and work across Sales Cloud, Service Cloud, Experience Cloud, Revenue Cloud, Agentforce, Data Cloud, and MuleSoft (Northlight website and LinkedIn company page).</li>
+<li>Public headcount figures do not all agree, so ask him how large the delivery team is today rather than asserting a number. LinkedIn currently lists him among the leadership team (Northlight LinkedIn company page).</li>
+<li>The company describes a nearshore and offshore hybrid delivery model and positions delivery as the engine of the firm (Northlight blog “Future-Proofing the Enterprise”).</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Organizations in North America that need Salesforce implemented, migrated, or run as a managed service, including financial services, manufacturing, high tech, healthcare, and automotive (Northlight website and blog).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Companies buy Salesforce and then struggle to get it live, keep it upgrade-safe, and connect sales, service, and billing into one working system. Northlight sells that implementation and ongoing delivery.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He attended a webinar and then booked this Call 1, so ask what he wanted to change about how Northlight finds and wins new delivery work.</li>
+<li>He leads delivery, not the founder seat, so ask whether he owns new-logo growth or is here for the firm, and who else would need to be in a later conversation.</li>
+<li>He has written about “success-based delivery” and keeping implementation human as AI shows up in the work. Ask whether the growth problem is too little demand, lumpy demand, or delivery already being full (Northlight blog posts in his name).</li>
+</ul>
+<h3>Case studies to have ready</h3>
+<ul>
+<li>Gene Rosendale, Advocate Advisors. An M&amp;A advisory firm that spent five years and about $36,000 to $48,000 a year on four marketing firms, and got five qualified prospects and one client, then booked 62 calls in eight months with this system. Bring it up if Bilal says agencies have already been tried, or that Salesforce buyers are too relationship-driven or too niche for a webinar. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+<li>Forrest Dombrow, Profitable by Design. He went from almost no booked calls to 63 calls in five months, including 27 from one webinar, and later a steady 7 to 10 calls a month. Bring it up if Bilal wants predictable conversations with new buyers instead of lumpy referrals. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-twtCclsfCG</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He is a Defiance College alumnus and went back to campus as a Jacket Days speaker to talk with students about careers and emerging technology (Defiance College’s Jacket Days post).</li>
+<li>He writes and speaks under a personal leadership platform he calls “Defining the Gray,” and his LinkedIn About says he also enjoys mentoring (his LinkedIn About).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Soledad Torti · Call 1 · 9:30 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Soledad Torti · Accounting Prose · Call 1 · Fri Nov 20, 2026, 9:30 AM ET · Edwin</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>María Soledad Torti, who goes by Sol, is Sales and Client Success Manager at Accounting Prose. She is based in Córdoba, Argentina (Accounting Prose team page; her LinkedIn).</li>
+<li>She trained as a professional journalist in Córdoba, then moved into sales and management. Before this role she was an SMB sales manager at the fintech company Bobtail (Accounting Prose team page; her LinkedIn).</li>
+<li>She joined Accounting Prose in October 2025, so she is relatively new in the seat (her LinkedIn; Accounting Prose welcome post).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Accounting Prose is a FinOps-as-a-Service firm founded by Enzo Garza in 2010 and headquartered in Denver, Colorado. It is a remote team that offers fractional accounting, payroll, HR, sales tax, recruiting, and automation, built on Xero (Accounting Prose website).</li>
+<li>Monthly accounting starts at $1,500, with other services priced separately so a client can start with one and add more (Accounting Prose website).</li>
+<li>They say they typically work with fast-growing startups and small businesses, including SaaS companies, agencies, law firms, consultants, and ecommerce teams of five people and up (Accounting Prose website FAQ).</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Founders and operators of growing startups and small businesses who need a back office without building a full in-house finance and HR team.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>As a company grows, accounting, payroll, HR, and sales tax split across tools and contractors, and the founder is left chasing a complete picture of the business. Accounting Prose sells one team that takes that work on.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>She is in sales and client success, not the founder, so ask whether she is here to grow her own pipeline of startup clients, and who signs off if this becomes a later conversation with Enzo or the leadership team.</li>
+<li>Her Google Calendar RSVP for this morning is declined, while the GHL appointment is still confirmed. Open by confirming whether she still intends to meet today. Do not assume the call is off, and do not change GHL yourself.</li>
+<li>She booked a Business Growth Roadmap Call, so ask what is not working about how Accounting Prose finds and wins new clients today.</li>
+</ul>
+<h3>Case studies to have ready</h3>
+<ul>
+<li>Felix Petzel, Panda Media. He already ran a B2B lead-generation agency and still used the system to rebuild his own pipeline, cut a manual outbound team down to one VA, and move margin from 30% to 90%. Bring it up if Sol says they already know how to sell, or that the weak spot is their own new-client engine. Prospect link: https://quantums-institute.com/due-diligence-agencies#section-rpq6S3zvMtH</li>
+<li>Forrest Dombrow, Profitable by Design. He went from almost no booked calls to 63 calls in five months, including 27 from one webinar, and later a steady 7 to 10 calls a month. Bring it up if she wants a predictable way to get conversations with startup founders instead of hoping referrals show up. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-twtCclsfCG</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>Her official Accounting Prose bio says she is a foodie and enjoys spending time outdoors (Accounting Prose team page for Sol Torti).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack" data-prep-lock="7o8QiDMh7whc6KX9gDX2">
+      <summary><span>Adrian E Velasquez · Call 3+ · 12:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Adrian E Velasquez · Fi-Med · Call 3+ · Fri Nov 20, 2026, 12:00 PM ET (19:00 SAST; 10:00 AM MT) · Edwin</b></p>
+<p>Locked by Edwin on Nov 19, 2026, 4:44 PM SAST</p>
+<p>Portal: https://deal-forge-angel.onrender.com/bb48dde0-e227-4a40-b67e-3ca5ccdf7aa2/how-it-works</p>
+<p>Market size: Apollo counts 316,744 US contacts across 22 titles at practices, surgery centers, hospitals and ACOs. Recommended outreach is 70,000 a month. Invite title selected: &quot;Practice Leader Roundtable: How Practices Add Medicare Revenue Between Visits.&quot; Asset check (as of Nov 18, look again before the call): ROI model needs the LTV entered. On the calendar invite tab, Gene Rosendale is not cleared; pick Juliana Marulanda or Sheila Kloefkorn, or leave empty. Never use Jonathan Duarte.</p>
+<p>Where we left it: Both partners want to start with Well Living. Adrian rated it 9 out of 10 and called $23K plus $700 a month reasonable. Upfront cash is the problem after a $650K collection loss. Christine left before pricing, so she has not reacted to price or financing, and she is the analytical one.</p>
+<p>What they&#x27;re worried about: another bad list, invites that get deleted, and a vendor that looked shaky during the webinar tech issues.</p>
+<p>Blockers, in order:</p>
+<ul>
+<li>Cash timing.</li>
+<li>Christine has not agreed to the money.</li>
+<li>Trust in list accuracy. Christine wants show-up stats.</li>
+<li>They floated a percentage of sales. Hold the line.</li>
+</ul>
+<p>Case studies to have ready (case_study_picks):</p>
+<ul>
+<li>Gene Rosendale, Advocate Advisors (list accuracy / burned by agencies). About $36K to $48K a year on agencies for about 5 prospects and 1 client; with the owned webinar system about 61 booked calls across 12 webinars and 2 deals worth about $3M in expected profit. https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+<li>Forrest Dombrow, Profitable by Design (steady deal flow). One webinar booked nearly 30 calls; now a predictable 7 to 10 calls a month. https://quantums-institute.com/due-diligence-consultingandprofessional#section-twtCclsfCG</li>
+</ul>
+<p>Path to close:</p>
+<ul>
+<li>Get Christine on the line and ask what she needs to say yes.</li>
+<li>Walk through the agreement together (sent Nov 19 with the follow-up).</li>
+<li>Answer the list question with the sample list and Gene&#x27;s story.</li>
+<li>Confirm which price and financing option they pick ($23K + $700/mo; $3K off for a Friday start drops to $20K plus a 7th month; financing $2,204/mo, or $1,916/mo plus $700 with both).</li>
+<li>Set the start date, using the Friday discount as the deadline.</li>
+</ul>
+<p>If things go sideways:</p>
+<ul>
+<li>If Christine is not on, offer a 15-minute call with her on Monday.</li>
+<li>If cash is the blocker, restate the financing.</li>
+<li>If they push for a percentage of sales, say it is not part of this engagement.</li>
+</ul>
+<p>Next step to leave with: signed agreement and first payment by end of day Friday, with the setup week booked.</p>
+<p>Before the call: recording and agreement already emailed Nov 19 (Cc Christine). Still add chris@fimed.com to the invite.</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Stephen Topley · Call 1 · 1:30 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Stephen Topley · Lansing Street Advisors · Call 1 · Fri Nov 20, 2026, 1:30 PM ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Steve Topley, CPA, is Chief Financial Officer and a Family Wealth Advisor at Lansing Street Advisors, a registered investment advisor in Ambler, Pennsylvania. He is based in the Doylestown, Pennsylvania area (Lansing Street Advisors team page; his LinkedIn).</li>
+<li>He started as an auditor at Ernst &amp; Young, then advised companies at Centri Business Consulting, and later worked with small-business owners on cash flow, tax planning, and financial strategy (Lansing Street Advisors team page; BusinessWire hire announcement).</li>
+<li>The firm’s ADV brochure also lists Stephen Topley as Chief Compliance Officer (Lansing Street Advisors Form ADV Part 2A).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Lansing Street Advisors is an SEC-registered investment advisor, organized in Pennsylvania in 2020 and owned by Matthew Topley, the CEO. A April 2026 BusinessWire announcement said the firm had over $500 million in assets under management when it announced Steve and three other management hires (Form ADV; BusinessWire).</li>
+<li>The firm offers wealth management and financial planning, and also operates a private real estate fund. Steve leads internal accounting and tax work for the firm and that fund, and also builds financial plans for clients (Lansing Street Advisors team page; his LinkedIn).</li>
+<li>His LinkedIn says the clients he serves are high-earning business owners and families, with investment, tax, insurance, and estate planning in one plan.</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>High-earning business owners and families who need investment management, tax planning, insurance, and estate planning in one place.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Owners who are making good money still need help turning business cash flow and equity into a long-term personal wealth plan, with tax and estate issues handled along the way.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>He wears two hats, firm CFO and client-facing advisor, so ask which growth problem he is here to solve: new advisory clients, the real estate fund, or both, and who else would need to be involved.</li>
+<li>This is a compliance-heavy advisory firm, so expect questions about whether webinars work in a regulated market and with high-income buyers.</li>
+<li>He booked a Business Growth Roadmap Call, so ask how new clients find Lansing Street today, and how predictable that has been.</li>
+</ul>
+<h3>Case studies to have ready</h3>
+<ul>
+<li>Jason Rotman, Elevate Financial Partners. A licensed financial advisor who works with high-net-worth families. He is the cleanest answer if Steve says wealthy or C-level buyers will not attend a webinar, or that compliance will block this. In his story, changing the in-webinar calendar link and bonus took him from 2 replies out of 15 follow-up emails to 33 bookings on one webinar. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS</li>
+<li>Ken Baron and Rory Zipper, ZEA Financial. An independent financial planning firm that had already tried cold calling, purchased lead lists, and $13,000 dinner seminars, then went from two or three meetings a month to 87 booked calls in nine months and more than doubled monthly revenue. Bring it up if Steve says they have already spent on lead gen or that financial services is too regulated for this to work. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>His LinkedIn headline describes him as a Boston Marathoner (his LinkedIn headline).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Afia Owusu-Forfie · Call 1 · 3:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Afia Owusu-Forfie · Coders Who Travel Inc. · Call 1 · Fri Nov 20, 2026, 3:00 PM ET · Edwin</b></p>
+<h3>Who she is</h3>
+<ul>
+<li>Afia Owusu-Forfie is founder, president, and executive director of Coders Who Travel Inc. Public pages also describe her as a statistician, operations researcher, and a senior data analytics consultant at Deloitte (Coders Who Travel about and management pages; Humans of Fuzia interview).</li>
+<li>She grew up in Ghana, moved to the United States as a young adult, and has been based in Virginia and Maryland (Humans of Fuzia interview; Coders Who Travel management page).</li>
+<li>In 2015 she launched the Women Who Code Accra network. After that trip, she filed Coders Who Travel as a nonprofit in December 2016 and later received 501(c)(3) status (Coders Who Travel about page; Humans of Fuzia interview).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Coders Who Travel Inc. is a US nonprofit that trains people in coding, analytics, and career skills, with a focus on Ghana and other emerging regions, and on underserved groups such as veterans, women returning to work, and immigrants (Coders Who Travel about page; Humans of Fuzia interview).</li>
+<li>Her personal site also describes a group of related entities, including a US 501(c)(3) foundation, a for-profit analytics company called Coders Who Travel L.L.C., and a Ghana-based NGO. Confirm on the call which entity she is here to grow (afiaowusu-forfie.com).</li>
+<li>The organization raises support through donations and events, and she has described paying nearly $10,000 of her own money to launch the Accra work (Coders Who Travel about page).</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>For the nonprofit, the “buyers” are donors, partners, and institutions that fund training, plus the students and career-changers who join the programs.</li>
+<li>If the for-profit analytics company is in play, the buyers would be organizations that need data analytics and reporting help. Confirm which of those she means today.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>People in underserved communities and in emerging markets often cannot get current coding and analytics training, or a network that helps them turn those skills into work. The organization exists to close that gap.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>She booked this as a Business Growth Roadmap Call under Coders Who Travel Inc., and she also has a full-time consulting role, so ask which hat she is wearing today and what “growth” means: more students, more funding, or the for-profit company.</li>
+<li>The model is unusual for this call type, so ask how they currently find students, partners, and donors, and what is not working about that.</li>
+<li>Public pages emphasize programs in Ghana and for US veterans. Ask which audience she wants to grow first.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>The Coders Who Travel management page says she loves teaching, and that she has spent her free time organizing meetups to help Ghanaian women step into leadership roles (Coders Who Travel “About Our Team” page).</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Matthew Meader · Call 1 · 4:15 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Matthew Meader · Caring Data · Call 1 · Fri Nov 20, 2026, 4:15 PM ET · Edwin</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Matthew Meader is President of Caring Data, a small assisted-living software company based in Seal Beach, California. He has held that role since June 2020 (his LinkedIn; Caring Data LinkedIn company page).</li>
+<li>He is also managing partner of Blue Horizon Homes, which operates as Mom and Dad’s House, family-style assisted living homes in Long Beach and Los Alamitos, California (his LinkedIn; Mom and Dad’s House website).</li>
+<li>Ivonne Meader is named publicly as the founder and owner of Caring Data, and as owner and administrator of Mom and Dad’s House. She is also on today’s calendar invite and has accepted (Caring Data LinkedIn posts; Google Calendar attendee list).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>Caring Data sells cloud software for assisted living homes: communication and documentation to track resident and caregiver information, described as an EMR-style system for that industry (Caring Data LinkedIn company page; his LinkedIn).</li>
+<li>LinkedIn lists the company at 1 to 10 employees, founded in 2020, with a later Caring Data LATAM entity for the assisted-living market in Latin America (his LinkedIn; company LinkedIn).</li>
+<li>They already run educational webinars and CEU trainings for facility operators, with Ivonne as a featured speaker (Caring Data LinkedIn posts).</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Owners and administrators of assisted living homes and related residential care facilities who need a cleaner way to document care, communicate with staff, and keep the home compliant and organized.</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Small care homes have to track residents, staff, and medications carefully, and paper or scattered tools make that easy to miss. Caring Data sells one system for that communication and documentation.</li>
+</ul>
+<h3>What’s interesting for this call</h3>
+<ul>
+<li>They already host educational webinars for facility operators, so this call is not about whether a webinar can exist. Ask how those events are filled today, how many conversations they create, and what they want to change.</li>
+<li>Ivonne, the founder, is on the invite and has accepted. Treat this as a two-person conversation if she joins, and find out who owns sales versus product.</li>
+<li>He also still operates the care homes, so ask whether Caring Data growth is the main goal, and how much time he can give a new client-acquisition system.</li>
+</ul>
+<h3>Case studies to have ready</h3>
+<ul>
+<li>Philipp Von Schulthess, Oxoia. He sells building-energy software to municipalities, pension funds, and facility managers, an institutional and technical buyer group, and still filled webinars and closed the largest deal in company history off one of them. Bring it up if Matthew says assisted-living owners are too busy, too specialized, or too relationship-driven to show up. Prospect link: https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</li>
+<li>Forrest Dombrow, Profitable by Design. He went from almost no booked calls to 63 calls in five months, including 27 from one webinar, and later a steady 7 to 10 calls a month. Bring it up if they want a predictable way to get conversations with home owners instead of relying on community referrals. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-twtCclsfCG</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>For a second year in a row, he took a Mom and Dad’s House client, 104-year-old Lt. Col. Sam Sachs, a D-Day veteran, to a local luncheon honoring Orange County veterans (his LinkedIn post about that luncheon).</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
