@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Ryan · Tue Nov 24, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Ryan</h1>
+      <p class="meta">Tue Nov 24, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>10:30 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/bBAxbmMfeANMxS3VZqLD">Derek Brown</a> · Call 3+ · Brookes</strong>
+      </div>
+      <div class="slot">
+        <strong>12:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/IKadcVhcsyNO9wFne7Mb">Kingsley Borello</a> · Call 3+ · TradeToWorld Marketplace</strong>
+      </div>
+      <div class="slot">
+        <strong>2:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/lPTop0qHygf8Og9pcdsE">Keith M Moore</a> · Call 3+ · Nicene Network</strong>
+      </div>
+      <div class="slot">
+        <strong>3:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/ebVTpvzbIUrK6w4DuBer">Marcin Mańka</a> · Call 1 · NobleProg</strong>
+      </div>
+      <div class="slot">
+        <strong>4:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/XTROvSyopIwIKN3qRuDR">Ziad Abdelnour</a> · Call 3+ · American Lebanon Education Foundation (ALEF)</strong>
+      </div>
+      <div class="slot">
+        <strong>4:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/GEnrQKkHSaX0jwFhhNcr">Elena Scholl</a> · Call 3+ · Ballancer®Pro</strong>
+      </div>
+    </section>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Derek Brown · Call 3+ · 10:30 AM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Derek Brown · Brookes · Call 3+ · Tue Nov 24, 10:30 AM ET · Ryan</b></p>
+<p>This is a 30-minute check-in at 10:30 to 11:00 AM ET, which is 3:30 to 4:00 PM UK. Derek is in the UK. Only Derek joined the last two live conversations. Martin and Chris may or may not appear.</p>
+<h3>Where we left it</h3>
+<ul>
+<li>Derek already gave a verbal yes on Mon Oct 26: &quot;Yes, we want to go ahead.&quot; He said Martin wanted to go ahead as well. On Tue Nov 17 he said again, &quot;We&#x27;re fully committed. It&#x27;s part of our go forward strategy,&quot; and that this is part of their 2027 plan to take a new product to market.</li>
+</ul>
+<ul>
+<li>What paused the close is not a no. Brookes has been iterating a new, separate company and website around a product they have already built, meant to fill a gap between large supply-chain systems and large ERP systems with a lower-cost, faster implementation. Derek said the product is ready and needs a few tweaks, but they have been stuck on the problem statement and how they explain the fix.</li>
+</ul>
+<ul>
+<li>On Nov 17 he said they agreed internally to have the message nailed by Christmas and to start the program in the new year, because going now would be &quot;half cock&quot; and they would not be ready to articulate it clearly on a buyer call.</li>
+</ul>
+<ul>
+<li>Who else matters: Martin Woodward, Founder and CEO, is the economic buyer. Derek said plainly, &quot;It&#x27;s Martin&#x27;s money,&quot; and &quot;He won&#x27;t make a decision now. I need to talk him through it.&quot; Martin is an engineer who turns the messaging over many times. Chris Raxworthy, marketing, is in New Zealand and has been in the earlier rooms, but the live blocker on Nov 17 was Martin, not Chris. Derek is retired from a long software-sales career and supports Martin; he is bought in and has been pushing Martin for weeks to cut the other activities that are not working.</li>
+</ul>
+<ul>
+<li>Money and terms already on the table: the original program fee is $30,000 USD. On Call 2 Ryan also quoted about $500 a month to run two webinars, and a 3x ROI guarantee of at least $90,000 contracted within six months, or we keep working for free. On Oct 26 the payment choice was pay in full or about $35,000 over 12 months. The older $2,000-off-by-October-30 offer is expired.</li>
+</ul>
+<ul>
+<li>The live offer from the Nov 17 call, restated in Ryan&#x27;s email to Derek, Martin, and Chris that same afternoon, is $5,000 off the program fee if they contract and pay by today, Tuesday Nov 24. The partnership also extends from six months to eight months, so they can use us now through December on messaging and the website, then begin the build in mid-December or January, or later if needed under the pause guarantee. Derek said he believes their fiscal year ends in December and that a 2026 tax deduction could apply, and he said he would check.</li>
+</ul>
+<ul>
+<li>Ryan sent the updated agreement and the payment link on Nov 17, then corrected a typo so the deadline is clearly Nov 24, not Nov 14. There is no email in the thread after that from Derek or Martin confirming that Martin has signed off.</li>
+</ul>
+<ul>
+<li>Whose court the ball is in: Derek was going to email Martin on the evening of Nov 17, walk him through the offer, and come back today for a yes or no. If they are ready before the call they can e-sign and pay on their own. If they want to do it together, that is the job of this call. Do not assume Martin has already said yes.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Derek is bought in and impatient to get moving, but he cannot sign alone. On Nov 17 he said the offer was appealing, &quot;I like the offer. I&#x27;ll put it to Martin,&quot; &quot;We will appreciate the offer,&quot; and &quot;You&#x27;re speaking to the converted.&quot; He also said &quot;Thank you for your patience&quot; and &quot;We will get there, my friend. Trust me.&quot; The stall is Martin&#x27;s style, not Derek&#x27;s belief in the system.</li>
+</ul>
+<ul>
+<li>What’s creating urgency, or killing it: The $5,000 reduction and the two extra months only lock if they contract and pay today. Derek also said they have about a 12 to 18 month window to attack the market as AI changes how software gets built, and they just lost a large deal in their Greek office to a small, agile company that could build apps quickly. What is killing urgency is Martin&#x27;s need to have the public message and website perfect before he will start, plus the long gap since the October verbal yes while they iterated the new company.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: If they go to market before the story is clear, they will look unready on buyer calls. Martin has had &quot;numerous attempts in the past&quot; that did not work, and Derek is now the one on his shoulder. Derek wants an outsider to sense-check their framing so they do not get trapped in their own reinforcing dialogue. Martin may still want a clearer picture of what the fee buys, which is the question he asked twice on the Oct 13 demo.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Martin&#x27;s signature and payment — primary — Derek is ready, but Martin holds the money and will not be rushed. No written confirmation from Martin is in the Gmail thread after the Nov 17 offer email.</li>
+</ul>
+<ul>
+<li>&quot;We&#x27;re not ready until the new year&quot; — primary — they want the website and problem statement finished by Christmas, then a blitz after the holidays. This already has an answer in the live offer: contract now, get help now, start the build in January, and pause if they still are not ready.</li>
+</ul>
+<ul>
+<li>The November 24 deadline on the $5,000 reduction — primary — today is the date Ryan put in writing. If they leave without signing, that concession should not be assumed to stay open.</li>
+</ul>
+<ul>
+<li>What the $30,000 buys — secondary — Martin asked for the components and how much direct time versus behind-the-scenes work is included. Ryan walked 15 build hours, testing reviews, daily office hours, and WhatsApp support on Call 2, but it still felt only partly resolved then.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: &quot;We want to start in the new year. We will not be ready to go public in the next four weeks, and Martin will not decide until the message and website are right.&quot;</li>
+</ul>
+<ul>
+<li>Status: still open. This is the reason they delayed after the Oct 26 verbal yes, and it was the opening of the Nov 17 call.</li>
+</ul>
+<ul>
+<li>Overcome with: Agree that they should not run buyer-facing webinars half-ready. Then separate contracting from launching. The Nov 17 offer already lets them lock the fee and the extra two months now, use us through December to stress-test the problem statement and the website, and begin the build in January, or later under the pause guarantee. Remind Derek of what he already accepted on Nov 17: most of the value is not more whiteboarding. Ryan said even good tweaks are not the main prize, and that getting to market and looking at the data is about 90 percent of the value. Derek answered, &quot;You&#x27;re speaking to the converted.&quot; Ask whether he did walk this to Martin, and if Martin is still iterating, offer to get on a short call with Martin so the push is not only coming from Derek.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo at Cinnamon Consulting. Cedric runs a technical consulting and software business, which is the closest match in our set to Brookes&#x27; mix of diagnostic, software, and services, including work into the UK and Europe. His buyers are specialized software and partner-channel leaders, the kind of room that can look too technical for a webinar. He had the same worry about whether the motion would be worth the time. The way he later told the story is that the cost of a sales call came down from about $2,000 toward about $10, and the monthly hours came down from about 40 toward about 3. On his first webinar he reported 63 attendees, 16 qualified sales calls, and one deal closed. On the second he reported 128 attendees and 50 sales calls. Those first two webinars alone produced 66 booked sales calls. Use this when Martin is still polishing the story instead of locking the partnership and starting to test in market. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand, as a comparable technical firm that had to stop waiting for a perfect public story and start taking the room. Then soft tie-back to Brookes&#x27; January launch plan, not as a shove to go live this week.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;You do not have to go public this month. Cedric Le Rouzo at Cinnamon Consulting sells a technical consulting and software offer, and once he ran the system his first two webinars produced 66 sales calls while the monthly hours came way down. The useful move for you and Martin is the same one we already mapped: lock this now so we can help you finish the story, then start the build in January when you are ready to take it to market.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;It&#x27;s Martin&#x27;s money. He will not make a decision today, and I have to maneuver him into this.&quot;</li>
+</ul>
+<ul>
+<li>Status: still open. This is the live close condition. Derek is converted. Martin is the signer.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not ask Derek to pretend he can sign for Martin. Open by asking what Martin actually said after the Nov 17 email. If Martin is a yes, put the updated agreement and the payment link on screen and complete both before you leave, then book onboarding. If Martin is still turning it over, ask for a short three-person call, even later today or tomorrow, and use the November 24 deadline, the extra two months, the pause guarantee, and the possible year-end tax point only as Derek already framed them. Derek already told Martin they need to cut the other activities that are not working. Your job is to give Derek a clean, written offer he can put in front of Martin, and if possible to be in the room with Martin so it is not only Derek &quot;beating him up.&quot;</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors. Gene is a founding partner at a boutique investment bank and M&amp;A advisory firm, and he is the partner who had already vetted a lot of vendors. Before they owned a system, Gene ran four marketing firms over five years at about $36,000 to $48,000 a year and got five qualified prospects and one client in total. Growth had been referral-only. After they switched, he matched five years of output in about six months, and the workshop record shows 62 booked sales calls across eight months. Use this when Martin is comparing this decision to the other lead-gen attempts that have already disappointed him, including the current provider that promised five qualified meetings a month and delivered two. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand, as the story of a careful buyer who had already been burned and still chose to own the machine. Then tie it to Martin, not to Derek.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;Derek, you are already in. The person this has to feel safe for is Martin. Gene Rosendale at Advocate Advisors had already spent five years and four firms at thirty-six to forty-eight thousand a year for one client, then booked 62 sales calls in eight months once he owned the system. Martin has had enough weak attempts. If he will get on even a short call, we can show him why this is the one that replaces those, and why today is the day the $5,000 reduction and the extra two months actually lock.&quot;</li>
+</ul>
+<ul>
+<li>Objection: &quot;What are we buying for $30,000?&quot; or a pause on paying before January.</li>
+</ul>
+<ul>
+<li>Status: half-handled. Martin asked this twice on the Oct 13 demo and did not push back on the number itself. Price has not been the stated no. The live issue is paying now, before the public launch, in order to keep today&#x27;s reduction.</li>
+</ul>
+<ul>
+<li>Overcome with: Restate the live commercial clearly, without inventing a net price that was not written in the email: $5,000 off the $30,000 program fee if they contract and pay by today, plus two extra months, help now through December, a January or later start if they want it, and the pause guarantee if they are not ready. Refresh what the fee buys from Call 2: the custom list and webinar system, about 15 build hours, testing reviews, daily office hours, WhatsApp support, and the 3x ROI guarantee of at least $90,000 contracted within six months or we keep working for free. The about $500 a month run cost is separate and is fuel, not a second program fee. Have the Nov 17 agreement and payment links ready and walk them on screen.</li>
+</ul>
+<ul>
+<li>Full story to tell: Tejas Parikh at Akshar Consulting. Tejas is a UK finance-consulting founder who sells high-ticket work to CFOs and finance directors, which is close to Brookes&#x27; senior buyer set of CEOs, CFOs, and supply-chain leaders. He raised the exact worry that a senior, high-ticket room would not show up, and that he would rather have a few real conversations than a flood of weak leads. On his first webinar he reported about 250 registrations, more than 80 attendees, and 15 qualified sales calls, and he closed several deals. Roughly five calls a month then produced four clients at about £100,000 lifetime value each. Use this when Martin is weighing whether the fee is justified for a senior, high-ticket market, or whether they should wait and keep spending on activity that is not producing. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+</ul>
+<ul>
+<li>How to deliver it: half-offhand after you restate the package and the November 24 reduction. Keep it on economics and buyer quality, not on personality.</li>
+</ul>
+<ul>
+<li>Exact land line: &quot;Martin wanted to know what the fee buys, which is fair. You already have the system, the support, the 3x guarantee, and today&#x27;s $5,000 reduction plus two extra months. Tejas Parikh at Akshar Consulting sells high-ticket work to CFOs and finance directors, and from about five calls a month he closed four clients at about £100,000 lifetime value each. One senior client already covers this. The question for Martin is whether he wants that machine locked in today, while the reduction is still on the table.&quot;</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Gene Rosendale at Advocate Advisors, for the burned-by-agencies and &quot;Martin has tried this before&quot; moment. Full story: four firms over five years at about $36,000 to $48,000 a year, five qualified prospects and one client, then 62 booked sales calls in eight months and five years of output matched in about six months. Use when you need Martin, or Derek speaking to Martin, to see why this is not another rented lead-gen retainer. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</li>
+</ul>
+<ul>
+<li>Cedric Le Rouzo at Cinnamon Consulting, for the technical-offer and &quot;we&#x27;re not ready to go public yet&quot; moment. Full story: niche technical consulting plus software, cost per sales call from about $2,000 toward about $10, monthly hours from about 40 toward about 3, and 66 booked sales calls across the first two webinars (16, then 50). Use when they want more internal iteration before they will contract. Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</li>
+</ul>
+<ul>
+<li>Tejas Parikh at Akshar Consulting, for the high-ticket senior-buyer and &quot;is the fee worth it&quot; moment. Full story: UK founder selling to CFOs and finance directors, first webinar about 250 registrations, more than 80 attendees, and 15 qualified sales calls, then roughly five calls a month producing four clients at about £100,000 lifetime value each. Use when the room needs proof that CEOs, CFOs, and supply-chain leaders will sit down, and that one or two clients already pay for the program. Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-G-VQ82Di65s</li>
+</ul>
+<h3>Path to close</h3>
+<ul>
+<li>Open on the Nov 17 offer, not on a fresh demo. Ask Derek whether he spoke with Martin, what Martin said, and whether they are ready to complete the two steps today.</li>
+</ul>
+<ul>
+<li>If it is a yes, share the screen, e-sign the updated agreement, complete the investment, and book the onboarding meeting before you hang up. The start date still begins at onboarding, so they can pick a January build without waiting to sign.</li>
+</ul>
+<ul>
+<li>If Martin has not decided, do not accept &quot;I&#x27;ll keep talking to him&quot; as the leave-behind. Offer a short call with Martin, restate that the $5,000 reduction and the two extra months lock only if they contract and pay today, and walk the pause guarantee and the January start so Martin does not hear &quot;we have to launch this week.&quot;</li>
+</ul>
+<ul>
+<li>If they want the help on messaging but not the contract today, be direct: that help, the reduction, and the extra two months are the November package. Get a clear yes, a dated next step with Martin on the line, or a clear not-moving.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If Derek is alone and says Martin is a yes, then put the agreement and the payment link on screen immediately and complete both, then book onboarding. Do not end on &quot;I&#x27;ll send it again.&quot;</li>
+</ul>
+<ul>
+<li>If Derek is alone and says Martin is still iterating, then ask what Martin actually objected to, offer to join a short call with Martin, and restate that they can sign today and still start the build in January, with a pause if they need it.</li>
+</ul>
+<ul>
+<li>If Martin is on the call and asks what the $30,000 buys, then walk the Call 2 package, the 3x guarantee, the $5,000 reduction, the two extra months, and the Tejas story. Do not invent a new scope or a net price that was not in the Nov 17 email.</li>
+</ul>
+<ul>
+<li>If they say they will sign after Christmas, then be honest that today&#x27;s reduction is dated Nov 24. Keep the door open, but do not promise the $5,000 off or the extra two months will still be there in January.</li>
+</ul>
+<ul>
+<li>If the fiscal-year or tax point comes up, then stay inside what Derek already said: he believes the year ends in December and he was going to check. Do not give tax advice.</li>
+</ul>
+<ul>
+<li>If Chris&#x27;s old questions on GDPR, list fatigue, or recourse come back, then keep it short. Those were handled on Call 2: the list is re-contacted on a cadence, copy is co-created and A/B tested with Brookes having final say, and the recourse is the 3x ROI guarantee.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>E-sign the updated agreement and complete the investment today, Tuesday Nov 24, so the $5,000 reduction and the two extra months lock, then book the onboarding meeting on screen and set the first build window for January, or earlier if they want it. If Martin is not on the call and has not approved payment, leave with a dated same-week slot that includes Martin, not another &quot;I&#x27;ll talk to him.&quot;</p>
+<p>Links Ryan already sent on Nov 17, for the screen share:</p>
+<ul>
+<li>Updated agreement: https://link.quantuminst.com/documents/v1/f452b656-3d66-476f-ae13-1d357b00d91b?locale=en-US</li>
+<li>Complete investment: https://whop.com/checkout/plan_tdF2DKYMzsU5W</li>
+</ul>
+      </div>
+    </details>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Kingsley Borello · Call 3+ · 12:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Kingsley Borello · TradeToWorld Marketplace · Call 3+ · Tue Nov 24, 12:00 PM ET · Ryan Matsumori</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Kingsley is not a signed yes yet. On August 31 he said they were all set on the system, then said they were not able to subscribe that day, and that they were definitely planning to do it within the end of the year.</li>
+</ul>
+<ul>
+<li>What paused the close is company funding and organizational hiring, not a new objection to the model. He said the boxes that still needed to be checked were funding and hiring at least two to three people, including a second customer manager, before the first webinars, so they can fulfill demand if the system works.</li>
+</ul>
+<ul>
+<li>Chris Sunderman, Director of Global Partnerships and co-founder, missed the August 31 call. Kingsley asked Ryan to send the recording so Chris could review it. Chris accepted today&#x27;s calendar invite from chris.sunderman@tradeto.world on August 31, so he may be in the room.</li>
+</ul>
+<ul>
+<li>Money already on the table from the August 12 demo is an $18,000 one-time consulting fee plus $500 a month from month one.</li>
+</ul>
+<ul>
+<li>The monthly $500 covers data, tools, and a part-time assistant for 30,000 contacts. It rises by $30 for each extra block of ten thousand contacts, not by country. Financing was offered on August 12.</li>
+</ul>
+<ul>
+<li>The ball is in their court on those two boxes. Ryan sent the August 31 recording that afternoon and said they could book sooner if they were ready. There has been no later email from Kingsley or Chris in Ryan&#x27;s thread.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Kingsley sounded bought in on the system and blocked on timing. He called the value proposition very professional and very compelling, said the webinar is tremendous for them, and said your solution could generate a great return at scale.</li>
+</ul>
+<ul>
+<li>What&#x27;s creating urgency, or killing it: He wanted to be ready for the first quarter of next year, and he said if funding accelerated they could close earlier. What is killing urgency is investor timing and the hiring lag. This meeting was booked as a November checkpoint, closer to December, when they expected to set initiatives for early next year.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: They do not want a wave of registrations they cannot fulfill. Kingsley also flagged that most users may register for free at first, with about 20 percent converting to paid, so the math only works if they can reach the market at volume.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Company funding is the primary blocker. Kingsley tied the start date to funds availability and investor conversations. We have no source since August 31 on whether that funding landed, so you must ask today.</li>
+</ul>
+<ul>
+<li>Hiring two to three people, including a second customer manager, is also primary. He said they need to be more ready as an organization before the first webinars, and that they would need those hires even without this system.</li>
+</ul>
+<ul>
+<li>Chris&#x27;s alignment is secondary if he is on the call, and still open if he is not. He was absent on August 31, and the last written touch from Ryan was the recording and a note that they could launch as soon as they are ready.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: We are not able to start until funding is in and we have hired two to three people, including a second customer manager.</li>
+</ul>
+<ul>
+<li>Status: This is still open. Those were the two boxes Kingsley named on August 31, and nothing in email since then tells us they are done.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not reopen the pitch. Ask plainly where funding stands and who is hired. If both boxes are checked, move straight to the agreement, payment, and a January build start.</li>
+</ul>
+<ul>
+<li>If they are not ready, get a dated plan for the remaining box, or a clear no. Remind him that the first webinar is about 30 days after they hire you. The hiring clock and the build clock can run together, which is what he agreed with on August 31.</li>
+</ul>
+<ul>
+<li>Full story to tell: Nick Uresin at Podcast Pros is the speed story, not a revenue story. Nick already knew LinkedIn and outreach, and he still wanted the system. He went from the sales call to a live webinar in eight days and had qualified opportunities from webinar one.</li>
+</ul>
+<ul>
+<li>Do not quote a closed deal for him, because he had not closed one at the time of the interview. Use this only to show that once they say go, the first webinar does not wait for a long build.</li>
+</ul>
+<ul>
+<li>How to deliver it: Tell it half offhand, as a picture of what the first 30 days can look like once funding and the hires are in, not as a reason to skip those boxes.</li>
+</ul>
+<ul>
+<li>Exact land line: Once funding and the hires are in, we can be live in front of your market on the same 30-day clock we walked, and today is the day to date that start or be clear you are not moving yet.</li>
+</ul>
+<ul>
+<li>Objection: We compared you with another vendor, and we still need to be sure this is the right firm before we put investor money into it.</li>
+</ul>
+<ul>
+<li>Status: This is half handled. On August 31 Kingsley said a different vendor had been a disaster and that Chris had said that person was not like Ryan, and he called your value proposition very compelling. It can still come back if Chris or an investor asks why this is different from other marketing spends.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not trash the other vendor. Thank him for the compliment, then tell Gene&#x27;s story as the closest picture of a buyer who had already paid other firms and still got a system he owns. Soft tie it back to TradeToWorld&#x27;s need for a durable engine, not another short campaign.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors had already been burned. His firm spent between $36,000 and $48,000 a year with four marketing firms over five years and got five qualified prospects and one client.</li>
+</ul>
+<ul>
+<li>After installing this system, Advocate booked 62 calls across eight months in 2025. Those calls led to $3 million in projected commission. Lead flow outstripped delivery, so they added partner firms to handle the volume.</li>
+</ul>
+<ul>
+<li>Gene is the marketing-literate partner, and he had vetted many firms before he signed.</li>
+</ul>
+<ul>
+<li>How to deliver it: Tell it half offhand, then land on ownership of the system and the fact that Kingsley already liked the mechanism. Do not make it a speech about agencies.</li>
+</ul>
+<ul>
+<li>Exact land line: Gene had already paid other firms for years and still needed a system he owned, and that is the same question you and Chris are bringing to this checkpoint today.</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Nick Uresin, Podcast Pros, is for the speed question once they fund and hire. He went from the sales call to a running webinar in eight days and had qualified opportunities off webinar one. Do not use him as a revenue proof point.</li>
+</ul>
+<p>Prospect link: https://quantums-institute.com/due-diligence-agencies#section-S7HoLH08fh</p>
+<ul>
+<li>Gene Rosendale, Advocate Advisors, is for residual heat if Chris or an investor asks why this is different from other vendors. Over five years and four firms he had five qualified prospects and one client. He then booked 62 calls in eight months that led to $3 million in projected commission.</li>
+</ul>
+<p>Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</p>
+<h3>Path to close</h3>
+<ul>
+<li>Open with the August 31 plan, not a new demo. Thank them for coming back at the date they chose, and ask Chris, if he is there, whether he reviewed the recording.</li>
+</ul>
+<ul>
+<li>Get a straight answer on the two boxes: Is the funding in, and are the two to three hires in place or dated? Write down the answers in their words.</li>
+</ul>
+<ul>
+<li>If both boxes are done, do not reopen the pitch. Walk the $18,000 consulting fee, the $500 monthly operating cost from month one, financing if they want it, and the e-sign step on this call, then book the build start.</li>
+</ul>
+<ul>
+<li>If a box is still open, leave with one dated commitment for that box, plus a date to sign once it clears, or a clear statement that they are not moving.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If funding and the hires are done, then treat this as paperwork and signature only. Recap the $18,000 fee and the $500 monthly cost, send the agreement on the call, and walk the signature and payment.</li>
+</ul>
+<ul>
+<li>If funding is close but not in, then get the expected decision date and a verbal agreement that they sign when it lands, and offer a follow-up on a named day rather than another long gap.</li>
+</ul>
+<ul>
+<li>If the hires are not in, then agree that those hires can be made during the 30-day build, which Kingsley already said yes to in August, and date when the first person starts.</li>
+</ul>
+<ul>
+<li>If Chris is on the call and has new questions, then answer the open blocker only. Do not restart the August 12 demo.</li>
+</ul>
+<ul>
+<li>If they want a January start with no signature today, then explain that the first webinar is about 30 days after they hire you, so a January webinar means signing with enough time to build in December.</li>
+</ul>
+<ul>
+<li>If they are not moving, then get a clear no and the reason, and do not leave with &quot;we will see.&quot;</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>First choice today: If funding and the hires are in, they review and e-sign the agreement on this call, pick payment in full or financing, and book the build start for a named December date.</p>
+<p>Second choice today: One remaining box is dated, they agree in their words that they will sign when that box clears, and a short follow-up is booked on a named day.</p>
+<p>Third choice today: A clear no, with the reason stated, so this does not sit until another quarter. Do not leave with &quot;we will think about it.&quot;</p>
+<p>--- contact_id: IKadcVhcsyNO9wFne7Mb appointment_id: sc9xqnARp8vD4xhcAcQL</p>
+      </div>
+    </details>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Keith M Moore · Call 3+ · 2:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Keith M Moore · Nicene Network · Call 3+ · Tue Nov 24, 2:00 PM ET · Ryan Matsumori</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Keith is very close, and he is not a signed yes yet. On November 18 he said he was at 98.5% of pulling the trigger and saying let&#x27;s do this, and that this is probably the direction he goes whether or not the health plan comes through.</li>
+</ul>
+<ul>
+<li>What paused the close was Friday&#x27;s health-plan answer, then board due diligence. He expected final health product information on November 20, and he said he would decide by Monday or Tuesday. His later emails did not confirm that the health plan cleared, or that the board voted yes.</li>
+</ul>
+<ul>
+<li>This is a Nicene-only close. Kara asked on the last call to be dropped from these meetings and said Auxilio is a deeper into next year conversation.</li>
+</ul>
+<ul>
+<li>Phil VanValkenburg, a Nicene board member, asked the hard questions on that call and left before Keith gave his number. Today&#x27;s short call is booked with Keith only.</li>
+</ul>
+<ul>
+<li>Money on the table in the mid-November written offer is $17,995 if they come in by this Friday, or $19,995 after that. The $500 a month covers email, tools, and the assistant. Ryan sent the e-sign link and the pay-in-full or monthly checkout links to keith@nicene.network.</li>
+</ul>
+<ul>
+<li>On the last call Ryan also offered a seventh month if Keith comes in by this Friday. That seventh month is not in the written agreement, so confirm it in writing if he says yes.</li>
+</ul>
+<ul>
+<li>The ball is in Keith&#x27;s court for a go or no-go today. He accepted this invite, asked more board questions yesterday, and wrote &quot;See you tomorrow&quot; after your answers. This is the last live touch before you are out November 25 through November 30, and before the Friday price deadline.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Keith is bought in and still doing careful board work. He wants speed if the health plan goes, even asking to fit his 15 build hours into two days, and he wants to be working in December either way.</li>
+</ul>
+<ul>
+<li>What&#x27;s creating urgency, or killing it: Urgency comes from a hoped-for January 1 health-plan launch, the November 27 discount, and the holiday gap after today. What could kill urgency is a paused health plan, or a board that is still uneasy about brand risk.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: The board&#x27;s biggest stated concern on November 20 is risk to the Nicene Network brand, because this would be their primary launch tool. Phil also left open whether QS has a church-client parallel, and whether a church nine months from renewal will care. Keith still wants denomination targeting to be a rifle, not a shotgun.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>A go or no-go from Keith today is the primary close step. He promised this date. The agreement is already in his Nicene inbox, so a yes should move to e-sign and payment on this call, not to another recap.</li>
+</ul>
+<ul>
+<li>Health-plan information is still unconfirmed in writing. He expected it on November 20. Ask where it landed, because it changes speed, not whether he said he would likely proceed.</li>
+</ul>
+<ul>
+<li>Board comfort is secondary and still live. The board met on November 20, then Keith came back with more questions yesterday about nonprofit CTAs, webinar tone, and denomination data. He called your answers super helpful, but he did not write that the board had approved.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: We are not a typical B2B firm looking for sales calls, and the board is worried about brand risk if this is our primary launch tool.</li>
+</ul>
+<ul>
+<li>Status: This is half handled in writing, and still the live board concern. On November 23 you told him the call to action is fully flexible, including a website CTA, and that he has final say on webinar style. On November 20 you told him invites come from warmed domains built to look like Nicene, not from his personal domains, with a full opt-out.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not reopen the demo. Recap those written answers in one short pass, then ask whether the board is now comfortable enough for him to sign. If brand risk is still the hold, walk the domain and opt-out points again and offer to put the seventh month and any board-facing reassurance in writing today.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors is the closest ownership story, not a church story. Gene&#x27;s firm had already spent years paying other marketing firms and still did not own a system that worked.</li>
+</ul>
+<ul>
+<li>After installing this, Advocate booked 62 calls across eight months in 2025. Those calls led to $3 million in projected commission. They even had to bring on partner firms because lead flow outstripped delivery.</li>
+</ul>
+<ul>
+<li>Do not tell this as proof we have already run church launches. Tell it as proof that a careful buyer can own the engine and the domains, instead of renting a risky campaign.</li>
+</ul>
+<ul>
+<li>How to deliver it: Tell it half offhand, then tie it to Nicene owning the system, the domains, and the list, which is the board&#x27;s actual fear.</li>
+</ul>
+<ul>
+<li>Exact land line: The board&#x27;s fear is brand risk, and the way we handle that is the same way Gene ended up owning the engine, on warmed domains that are not your personal Nicene domain, with a clean opt-out.</li>
+</ul>
+<ul>
+<li>Objection: You have not done this for churches or nonprofits before, and our call to action is a quote page, not a sales call.</li>
+</ul>
+<ul>
+<li>Status: This is still open as a church-parallel proof point. On November 18 you said plainly that QS has not worked with anyone targeting churches yet. Yesterday you answered the CTA and style questions in writing, and Keith called that super helpful.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not invent a church client. Stay with what you already said, then use Ken and Rory as the honest &quot;new industry&quot; story. Confirm that the first webinar can stay educational, and that the CTA can be the census-to-quote page Keith wants for the health plan.</li>
+</ul>
+<ul>
+<li>Full story to tell: Ken Baron at ZEA Financial, with his partner Rory Zipper, is the industry-is-different story. ZEA is a compliance-heavy financial firm, and this was a new vertical for the system. They had been getting two or three new-client meetings a month.</li>
+</ul>
+<ul>
+<li>With webinars they booked 87 calls in nine months. They added about $400,000 in new revenue in about a year. They also took time to get comfortable before they signed.</li>
+</ul>
+<ul>
+<li>Use only these figures, and do not claim ZEA is a church or a nonprofit.</li>
+</ul>
+<ul>
+<li>How to deliver it: Tell it half offhand as a parallel for entering a careful, trust-heavy market, then come back to Keith&#x27;s educational webinar and website CTA.</li>
+</ul>
+<ul>
+<li>Exact land line: We have not run this for churches yet, and Ken and Rory were also a new, careful vertical, and we can still build your CTA as a quote page rather than a sales call.</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Gene Rosendale, Advocate Advisors, is for board brand risk and for a buyer who already scrutinized other firms. After years of paying agencies, Advocate booked 62 calls in eight months that led to $3 million in projected commission, and they own the system.</li>
+</ul>
+<p>Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</p>
+<ul>
+<li>Ken Baron, ZEA Financial, with Rory Zipper, is for the church-parallel question. It is a new, regulated vertical, not a church case. They went from a few meetings a month to 87 booked calls in nine months.</li>
+</ul>
+<ul>
+<li>They also added about $400,000 in new revenue in about a year.</li>
+</ul>
+<p>Prospect link: https://quantums-institute.com/due-diligence-home</p>
+<h3>Path to close</h3>
+<ul>
+<li>Open on his last-call number and today&#x27;s job. You said you were at 98.5 percent. This short call is the go or no-go, so ask where the health plan and the board landed.</li>
+</ul>
+<ul>
+<li>If he says yes, do not reopen the pitch. Pull the November 19 agreement, confirm the $17,995 price through Friday, confirm payment in full or monthly, and put the seventh month in writing if you are still offering it.</li>
+</ul>
+<ul>
+<li>Walk e-sign on the call at this link, https://link.quantuminst.com/documents/v1/f792569b-fc59-40d5-9bae-7d3262ffd2fd?locale=en-US, then payment in full at https://whop.com/checkout/plan_uqLdzhbhJsELl or monthly at https://whop.com/checkout/plan_5lJ4LL36NFH8D.</li>
+</ul>
+<ul>
+<li>If he says yes, also book the 15-hour build around his calendar before you hang up, including the two-day sprint he asked for if the health plan is a go.</li>
+</ul>
+<ul>
+<li>If he is not a yes, leave with one dated next step or a clear no, because you are out from tomorrow through Monday and Friday is the deadline.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If he says yes, then treat this as paperwork and signature only. Open the agreement, confirm the Friday price, walk e-sign and payment, and book the build.</li>
+</ul>
+<ul>
+<li>If the health plan cleared, then lean into speed, offer the two-day 15-hour build he asked for, and still get the signature today so work can start in December.</li>
+</ul>
+<ul>
+<li>If the health plan is paused, then remind him he already said this is probably the direction either way, with a January start and less urgency, and ask whether he will still sign today at the Friday price.</li>
+</ul>
+<ul>
+<li>If the board is still uneasy about brand risk, then recap the warmed domains, opt-out, and educational CTA in one pass, offer a short written FAQ he can forward, and ask what would let him sign today.</li>
+</ul>
+<ul>
+<li>If he asks you to wait until after the holiday, then show the November 27 deadline and that you are out after today, and offer to stay on the line while he e-signs.</li>
+</ul>
+<ul>
+<li>If he says no, then get the reason in his words and stop pitching.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>First choice today: Keith e-signs the Nicene agreement on this call at the $17,995 price, completes payment in full or monthly, and books the December build dates before you leave for the holiday.</p>
+<p>Second choice today: He names one remaining board or health-plan item, you send any missing written term the same day, and he agrees to sign by Friday, November 27, without another long meeting.</p>
+<p>Third choice today: A clear no, with the reason stated. Do not leave with &quot;let me think about it,&quot; because the next live window is after the discount deadline.</p>
+<p>--- contact_id: lPTop0qHygf8Og9pcdsE appointment_id: LZkhxkxWRPkgGMI1kmsi</p>
+      </div>
+    </details>
+
+    <details class="pack">
+      <summary><span>Marcin Mańka · Call 1 · 3:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p><b>Marcin Mańka · NobleProg · Call 1 · Tue Nov 24, 3:00 PM ET · Ryan</b></p>
+<h3>Who he is</h3>
+<ul>
+<li>Marcin Mańka is Business Development Manager at NobleProg Polska and Business Development Executive for NobleProg Scandinavia, based in Warsaw (his LinkedIn; NobleProg Sweden and Norway contact pages).</li>
+<li>Public Polish company records also list him as a management board member of Nobleprog Polska and as president of Nobleprog Services. Ask how he describes his role on this call (Polish KRS listings summarized on Compabase and firmy.ai).</li>
+<li>The Sweden and Norway contact pages list him as the local team contact. Those pages use marcin.manka@nobleprog.com; this booking came in on marcin.manka@nobleprog.pl (NobleProg Sweden and Norway &quot;Contact Us&quot; pages; this GHL record).</li>
+</ul>
+<h3>The business</h3>
+<ul>
+<li>NobleProg is an international training and consultancy group. It sells custom, live instructor-led training on current technologies, plus reskilling, consultancy, and DaDesktop, its virtual classroom for hands-on remote training (NobleProg website, &quot;What We Do&quot; and &quot;Who We Are&quot;).</li>
+<li>Course topics include AI, cloud, cybersecurity, programming, Agile, and leadership. The Polish site also promotes open SAP courses and other live classes (NobleProg.com and NobleProg.pl).</li>
+<li>LinkedIn describes NobleProg Polska as a local training provider founded in 2005, based in Warsaw, with an office in Glogow Malopolski. Headcount figures on LinkedIn should be confirmed with him rather than treated as exact (NobleProg Polska LinkedIn company page).</li>
+</ul>
+<h3>Who they sell to</h3>
+<ul>
+<li>Companies and organizations that need employees trained or reskilled on specific tools and methods, usually through customized live training, online or onsite (NobleProg website).</li>
+<li>His public Scandinavia contact listings cover Sweden and Norway, and his Poland role covers NobleProg Polska, so ask which market this conversation is about (NobleProg Sweden and Norway contact pages; his LinkedIn).</li>
+</ul>
+<h3>Problem they solve</h3>
+<ul>
+<li>Organizations need their people current on new tools and methods, and they want live, customized training rather than generic e-learning. NobleProg sells that instruction and related consulting (NobleProg website).</li>
+</ul>
+<h3>What&#x27;s interesting for this call</h3>
+<ul>
+<li>He attended a webinar and then booked this Call 1. The slot is late evening in Warsaw, so this is an after-hours conversation for him. GHL tags show he showed up and booked (this GHL record).</li>
+<li>He sits in a business-development seat and also appears as an owner and board member in the Polish entities. Ask whether he is looking at growth for NobleProg Polska, the Scandinavia book, or the wider group, and who else would need to join a later call.</li>
+<li>The public story is customized employee training. Ask what is not working today in how they find and win new corporate training clients.</li>
+</ul>
+<h3>Rapport (personal)</h3>
+<ul>
+<li>He studied biotechnology at Gdansk University of Technology and was a project manager with BEST Gdansk, the Board of European Students of Technology (his LinkedIn Education and Experience).</li>
+<li>He has helped bring the Elastic Warsaw User Group back after a pandemic pause, including a meetup with three talks from Elastic experts (his LinkedIn post about the Elastic Warsaw User Group).</li>
+</ul>
+      </div>
+    </details>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Ziad Abdelnour · Call 3+ · 4:00 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Ziad Abdelnour · American Lebanon Education Foundation (ALEF) · Call 3+ · Tue Nov 24, 4:00 PM ET · Ryan Matsumori</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Ziad&#x27;s personal lean after the November 10 demo is yes. He asked you to present as if speaking to the board, said he wants their point of view and then wants to move forward, and said he feels very comfortable with you and with what was portrayed.</li>
+</ul>
+<ul>
+<li>What paused the close is board approval of the $18,000 consulting fee, not a new objection to the model. Ziad called that fee not impossible, said it is exactly what he needs to take to the board, and that he thinks he can do that. The $500 monthly operating cost and the $30 per 10,000 leads were fine with him, and he liked financing.</li>
+</ul>
+<ul>
+<li>The board is now in the room. On November 17 Ziad wrote that the board really likes the proposal and asked you to add Sam Smiley, Fady, and five other board emails to this call. He promised they would come prepared after watching the demo recording.</li>
+</ul>
+<ul>
+<li>Yesterday the board sent five written questions on the list, opt-outs, conversion and data ownership, lead costs, and the supporter-gift range.</li>
+</ul>
+<ul>
+<li>You answered all five in writing last night and offered to start a little earlier, or to meet again at quarter past five Eastern. Ziad replied &quot;Thanks much Ryan&quot; and confirmed today at four Eastern.</li>
+</ul>
+<ul>
+<li>The ball is in the board&#x27;s court for a go or no-go today. If it is a go, Ziad wanted to hire after the December 2 fundraiser at Trump Tower and use December to build, so they are not waiting until January to start the 30-day build.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: Ziad is bought in and is bringing the board to finish the diligence. He called the system crystal clear and very powerful on the demo, and he has been coordinating the group in writing.</li>
+</ul>
+<ul>
+<li>What&#x27;s creating urgency, or killing it: He wants to raise at least $10 million over two years and called a 100,000-invite start very little. What can kill urgency is the December 2 event taking their time, and a board that still wants conversion certainty you cannot honestly promise.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: Brand and sender reputation at high invite volume, who owns the data, whether the $30 lead cost is one charge or three, and whether gift-size or donor-conversion figures were promises. You already answered each of those in last night&#x27;s email.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Board approval, especially of the $18,000 consulting fee, is the primary gate. This call is the go or no-go they booked, and the agreement is already in the thread.</li>
+</ul>
+<p>Prospect link: https://link.quantuminst.com/documents/v1/2c988a2d-b11d-4616-ade9-86a1ed782214?locale=en-US</p>
+<ul>
+<li>Remaining board questions may still be asked live, even though you answered them in writing. Do not restart the demo.</li>
+</ul>
+<ul>
+<li>Ryan already told them there would not be time to re-demo. Elena Scholl is on your calendar at half past four Eastern, so hold this room to the booked half hour or use the quarter-past-five overflow you offered.</li>
+</ul>
+<ul>
+<li>Timing around the December 2 fundraiser is secondary. The preferred path, if they say yes, is to sign now and start the build after that event, in December.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: At this volume, how do you protect ALEF&#x27;s sender reputation, and who owns the data if we stop?</li>
+</ul>
+<ul>
+<li>Status: This is half handled in writing as of last night, and it may still be asked live. You told them recipients can opt out, bounces and opt-outs go on ALEF&#x27;s do-not-contact list, they never use their own domain, and they own the emails, the CRM, and the data from day one and can take it with them.</li>
+</ul>
+<ul>
+<li>Overcome with: Recap those four points in plain words. Do not re-demo the invite flow unless someone missed the recording. Then ask if that is enough for a yes on data and brand.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors is the ownership story, not a nonprofit story. Gene&#x27;s firm had already paid other marketing firms for years and still did not own a working system.</li>
+</ul>
+<ul>
+<li>After installing this, Advocate booked 62 calls across eight months in 2025. Those calls led to $3 million in projected commission. They own the engine, and they even had to add partner firms because the lead flow outstripped delivery.</li>
+</ul>
+<ul>
+<li>Use this to show a careful buyer owning the list and the system, not to promise ALEF the same donor results.</li>
+</ul>
+<ul>
+<li>How to deliver it: Tell it half offhand, then land on ALEF owning the CRM and the data, on warmed domains that are not theirs, which is the reputation point the board asked about.</li>
+</ul>
+<ul>
+<li>Exact land line: The board&#x27;s question is who owns the list and how the brand is protected, and the answer is the same ownership Gene ended up with, on warmed domains, with a clean opt-out and the data in ALEF&#x27;s hands from day one.</li>
+</ul>
+<ul>
+<li>Objection: What results should we expect, and are the gift-size and conversion figures guaranteed?</li>
+</ul>
+<ul>
+<li>Status: This is still the sharpest live objection. Last night you told them you cannot accurately predict their conversion rates, because their model is outside the usual business-services scope. You also said the wide supporter-gift range was a general range to test against.</li>
+</ul>
+<ul>
+<li>The only money-related guarantee you put in writing is a 3x return on the $18,000 fee, meaning $54,000 contracted in six months. If that mark is missed, you keep working at no extra consulting fee until it is hit.</li>
+</ul>
+<ul>
+<li>Overcome with: Repeat that guarantee in the same words you used in the email. Do not defend the demo calculator as a forecast. If they ask for a cheaper pilot, stay with what you already wrote: testing starts at about 30,000 invites a month for two months, inside the same $18,000 engagement, not as a separate product.</li>
+</ul>
+<ul>
+<li>Full story to tell: Ken Baron at ZEA Financial, with his partner Rory Zipper, is the careful-new-vertical story. ZEA is a compliance-heavy financial firm, and this was a new industry for the system. They had been getting two or three new-client meetings a month.</li>
+</ul>
+<ul>
+<li>With webinars they booked 87 calls in nine months. They added about $400,000 in new revenue in about a year.</li>
+</ul>
+<ul>
+<li>Do not tell this as a donor-conversion forecast for ALEF. Tell it as proof that a cautious buyer can still get a measured result after a real test.</li>
+</ul>
+<ul>
+<li>How to deliver it: Tell it half offhand, then return to ALEF&#x27;s test start at 30,000 invites a month and the written 3x guarantee.</li>
+</ul>
+<ul>
+<li>Exact land line: We will not promise your donor conversion in advance, and the written guarantee is the 3x return on the consulting fee, while the system itself gets tested at a starting volume you already accepted.</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Gene Rosendale, Advocate Advisors, is for data ownership, brand protection, and not renting an agency forever. After years of paying other firms, Advocate booked 62 calls in eight months that led to $3 million in projected commission, and they own the system.</li>
+</ul>
+<p>Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</p>
+<ul>
+<li>Ken Baron, ZEA Financial, with Rory Zipper, is for a board that wants proof in a careful, new vertical without treating donor math as a forecast. They went from a few meetings a month to 87 booked calls in nine months.</li>
+</ul>
+<ul>
+<li>They also added about $400,000 in new revenue in about a year.</li>
+</ul>
+<p>Prospect link: https://quantums-institute.com/due-diligence-home</p>
+<h3>Path to close</h3>
+<ul>
+<li>Open by thanking the board for watching the recording and for the written questions. Confirm they received last night&#x27;s answers. Do not restart the demo.</li>
+</ul>
+<ul>
+<li>Take remaining live questions in a tight pass, using the written answers. Watch the clock, because Elena Scholl starts at half past four Eastern. If they need more time, use the quarter-past-five overflow you already offered.</li>
+</ul>
+<ul>
+<li>Ask for a clear go or no-go on the $18,000 consulting fee, the $500 monthly operating cost, and a December build after the December 2 fundraiser.</li>
+</ul>
+<ul>
+<li>If it is a go, send them back to the agreement already in the thread and walk e-sign and payment, including financing if they want it, before you leave the call.</li>
+</ul>
+<ul>
+<li>If the board needs one more internal conversation, leave with a named date this week, not an open &quot;after the event&quot; maybe.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If they have not watched the recording, then point them to the Zoom share you sent when Fireflies would not open, and still refuse to re-demo in this 30-minute slot.</li>
+</ul>
+<ul>
+<li>If they re-ask the five written questions, then answer from last night&#x27;s email in short form and ask what, if anything, is still in the way of a yes.</li>
+</ul>
+<ul>
+<li>If they want a cheaper standalone pilot, then stay with the written plan: the same $18,000 engagement, testing at about 30,000 invites a month, then they choose the scale.</li>
+</ul>
+<ul>
+<li>If they want conversion certainty you cannot give, then repeat that donor results will be found in testing, and that the only money guarantee is the 3x consulting-fee guarantee you already put in writing.</li>
+</ul>
+<ul>
+<li>If they say yes, then treat the rest as paperwork. Open the agreement, confirm financing if they want it, and date the December build after the December 2 event.</li>
+</ul>
+<ul>
+<li>If they run long, then protect the half-past-four call and move leftover questions to the quarter-past-five overflow.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>First choice today: The board says yes, Ziad or Sam e-signs the agreement, they pick payment in full or financing, and you book a December build start after the December 2 fundraiser.</p>
+<p>Second choice today: One remaining board item is named, you send any missing written answer the same day, and they agree to a decision date this week, before the event swallows the calendar.</p>
+<p>Third choice today: A clear no, with the reason stated. Do not leave with &quot;we will think about it after December 2.&quot;</p>
+<p>--- contact_id: XTROvSyopIwIKN3qRuDR appointment_id: 5o8UfN0HL56JPZcuHWd5</p>
+      </div>
+    </details>
+
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Elena Scholl · Call 3+ · 4:30 PM ET</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p><b>Elena Scholl · Ballancer®Pro · Call 3+ · Tue Nov 24, 4:30 PM ET · Ryan Matsumori</b></p>
+<h3>Where we left it</h3>
+<ul>
+<li>Elena is not a yes yet. This is the first live Call 3 after the October 19 demo, and the job today is to find out whether her legal papers landed and whether a price she will actually sign is still on the table.</li>
+</ul>
+<ul>
+<li>On that demo she liked the system, called the education webinar the right thing for her niche, and spotted her own customer, Colleen Lewis, on the list. She said five hours a month for two webinars is where she wants to be. She did not buy, because the $30,000 fee was much higher than she expected, and her legal split from Ballancer®Pro was not done.</li>
+</ul>
+<ul>
+<li>She said she had about $8,000 in her head from the webinar. She also said that if the price had been up to $15,000, she would have signed right away. She does not want the do-it-yourself path, and she said she never uses financing.</li>
+</ul>
+<ul>
+<li>The day after the demo, you emailed a reduced one-time fee of $19,995, with the same guarantee intact, and a decision window through the last day of October. After that date, you wrote, the offer goes back to the original fee. She did not reply to that email in this thread.</li>
+</ul>
+<ul>
+<li>She planned to run this in her own distribution company, Wellness Technology, once her distribution rights were restored. She expected a new contract by the end of October, and she said she could commit by the end of that month if the contract was ready. Nothing in GHL or email confirms that those papers landed.</li>
+</ul>
+<ul>
+<li>The first follow-up was set for late October and then moved several times. In mid-November she wrote that she was out of the office for an unforeseen circumstance and used the link to reschedule. Today&#x27;s meeting is that delayed Call 3.</li>
+</ul>
+<h3>Emotional state / close readiness</h3>
+<ul>
+<li>How they feel about closing: The last live read is from October 19. She was warm, curious, and excited to see the demo, then visibly stuck when she heard the $30,000 fee.</li>
+</ul>
+<ul>
+<li>She ended by saying she really enjoyed the demo and was excited to reconnect the next week. There is no later live read.</li>
+</ul>
+<ul>
+<li>What&#x27;s creating urgency, or killing it: On the demo she wanted the system live before Thanksgiving, which is now two days away. The mid-October reduced-fee window ended on the last day of October. What can kill urgency is legal work that is still open, or a month of delay with no new written update.</li>
+</ul>
+<ul>
+<li>Fears still alive in the decision: Price is still the main money fear. She also said the new company is not at the same revenue level, so a large upfront payment made her uncomfortable. Trust came up softly when she said the company seemed too good to be true, and you already pointed her to Gene&#x27;s video on that point.</li>
+</ul>
+<h3>Open blockers</h3>
+<ul>
+<li>Legal and entity are still unconfirmed. Ask whether her distribution agreement is signed, which vertical she can sell, and whether today&#x27;s buyer is Wellness Technology, Ballancer®Pro, or a cost-split with her partners. Do not invent that the contract is done.</li>
+</ul>
+<ul>
+<li>Price is still open, and the written mid-October reduction is past its stated window. Confirm with yourself before this call whether you can still honor $19,995, or whether the fee is back to $30,000. She never accepted the reduced offer in writing, and her on-the-spot number was $15,000.</li>
+</ul>
+<ul>
+<li>She is not here to watch another demo. If the legal work is done and a fee is agreed, the close path is the agreement and payment. If it is not done, leave with a dated next step, not a new pitch.</li>
+</ul>
+<h3>Objections + how we fight them</h3>
+<ul>
+<li>Objection: The fee is higher than I planned for, I will not finance it, and I am not ready to write a large check while the new company is smaller.</li>
+</ul>
+<ul>
+<li>Status: This is still the main money objection. On the demo she said she was not prepared to spend $30,000, and that she would have signed at up to $15,000. Your mid-October email offered $19,995 through the last day of October, with payment in full, and that window has passed.</li>
+</ul>
+<ul>
+<li>Overcome with: Do not reopen the pitch. Ask which fee she is actually weighing today.</li>
+</ul>
+<ul>
+<li>If you can still honor the reduced offer, say that clearly and walk the agreement. If you cannot, say that clearly too, and do not invent a new number on the spot unless you already have approval.</li>
+</ul>
+<ul>
+<li>Full story to tell: Cedric Le Rouzo at Cinnamon Consulting is the time-and-cost story, not a revenue-size story. Cedric wanted more sales without pouring more of his own hours into the work.</li>
+</ul>
+<ul>
+<li>His cost per sales call went from $2,000 down to $10. His time went from forty hours a month down to about three.</li>
+</ul>
+<ul>
+<li>Do not quote his firm-wide revenue figures. Use this only to show why a done-for-you build can cost more than the do-it-yourself path she already rejected, while keeping her at about five hours a month.</li>
+</ul>
+<ul>
+<li>How to deliver it: Tell it half offhand, then come back to her five-hour target and the setter help you already offered for follow-up calls.</li>
+</ul>
+<ul>
+<li>Exact land line: You already said the do-it-yourself path is not for you, and Cedric is the picture of why the build fee buys back your time, so the real question today is which fee you can actually sign.</li>
+</ul>
+<ul>
+<li>Objection: I still cannot commit until my distribution rights and the new company paperwork are clear.</li>
+</ul>
+<ul>
+<li>Status: This was the second open objection on October 19, and it is still unconfirmed in writing. She expected the new contract by the end of October, and she said she could commit by the end of that month if it was ready.</li>
+</ul>
+<ul>
+<li>Overcome with: Open here, not with price. Ask whether the papers landed, which company would sign, and whether her partners are in or out.</li>
+</ul>
+<ul>
+<li>If the papers are done, move to fee and signature on this call. If they are not, get the remaining legal item and a dated decision, and do not keep shopping a fee she cannot yet sign.</li>
+</ul>
+<ul>
+<li>Full story to tell: Gene Rosendale at Advocate Advisors is the trust story she has already started. On the demo she said this seemed too good to be true, and you pointed her to Gene, who said the same thing and hired anyway.</li>
+</ul>
+<ul>
+<li>Gene&#x27;s firm had already paid other marketing firms for years and still did not own a working system. After installing this, Advocate booked 62 calls across eight months in 2025, and those calls led to $3 million in projected commission.</li>
+</ul>
+<ul>
+<li>They own the engine. Use this to settle the leftover trust point, not to promise Wellness Technology the same numbers, and not as a reason to skip the legal question.</li>
+</ul>
+<ul>
+<li>How to deliver it: Only tell it if the too-good-to-be-true fear is still alive. Then come straight back to whether she is now free to sign.</li>
+</ul>
+<ul>
+<li>Exact land line: Gene had the same too-good-to-be-true pause and still moved once he could own the system, and the question for you is whether the legal work now lets you do the same.</li>
+</ul>
+<h3>Story ammo for THIS close</h3>
+<ul>
+<li>Cedric Le Rouzo, Cinnamon Consulting, is for the fee-versus-time objection. His cost per sales call went from $2,000 to $10, and his time went from forty hours a month to about three. Do not quote his firm-wide revenue figures.</li>
+</ul>
+<p>Prospect link: https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</p>
+<ul>
+<li>Gene Rosendale, Advocate Advisors, is for the leftover trust point she already named. After years of paying other firms, Advocate booked 62 calls in eight months that led to $3 million in projected commission, and they own the system.</li>
+</ul>
+<p>Prospect link: https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</p>
+<h3>Path to close</h3>
+<ul>
+<li>Open on the two blockers, not a re-demo. Ask whether the distribution agreement is signed, and which company would be the buyer today.</li>
+</ul>
+<ul>
+<li>If the legal work is done, name the fee you are actually offering today. Confirm with yourself first whether $19,995 is still available, because the written window ended on the last day of October.</li>
+</ul>
+<ul>
+<li>If she says yes to a live fee, do not reopen the pitch. Walk e-sign on the mid-October agreement at https://link.quantuminst.com/documents/v1/69158c81-8b9d-4187-8190-228dbcf50137?locale=en-US. Then use the one-time payment link at https://whop.com/checkout/plan_gGrYB4zjNJqe4.</li>
+</ul>
+<ul>
+<li>If she says yes, also confirm the $500 monthly operating cost, the five-hour webinar pace, and that you will help her find a sales assistant and one or two sales reps in the first quarter of next year.</li>
+</ul>
+<ul>
+<li>If the legal work is not done, or she will not meet the live fee, leave with one dated next step or a clear no. Do not book another loose catch-up with no decision attached.</li>
+</ul>
+<h3>If / then</h3>
+<ul>
+<li>If the legal papers are signed and she accepts a live fee, then treat the rest of the call as paperwork and payment. Open the agreement, walk e-sign, and take payment before you hang up.</li>
+</ul>
+<ul>
+<li>If the legal papers are still open, then get the remaining item in her words, agree a dated checkpoint, and do not keep negotiating a fee she cannot yet sign.</li>
+</ul>
+<ul>
+<li>If she asks you to honor $19,995, then only say yes if you already have approval to reopen that window. If you do not, say that the written window ended on the last day of October, and tell her the live fee.</li>
+</ul>
+<ul>
+<li>If she holds at $15,000 or asks to finance, then remind her she already rejected the do-it-yourself path and said she never uses financing. Do not invent a new number on the call.</li>
+</ul>
+<ul>
+<li>If she wants to split the cost with her Ballancer®Pro partners, then get who would sign and by when. Do not treat a maybe-split as a close.</li>
+</ul>
+<ul>
+<li>If this call starts late because the prior meeting ran long, then skip the recap, apologize once, and go straight to legal status and fee.</li>
+</ul>
+<ul>
+<li>If she says no, then get the reason in her words and stop pitching.</li>
+</ul>
+<h3>Exact next step to leave with</h3>
+<p>First choice today: Elena confirms the legal work is done, agrees the live fee you can actually offer, e-signs the agreement on this call, and completes payment before she leaves.</p>
+<p>Second choice today: She names the one remaining legal or fee item, you send any confirmed term the same day, and she agrees to a decision inside seven days, not another loose reschedule.</p>
+<p>Third choice today: A clear no, with the reason stated. Do not leave with &quot;let me think about it&quot; and no date, because that is how the last month slipped.</p>
+<p>--- contact_id: GEnrQKkHSaX0jwFhhNcr appointment_id: erh0upr7HnKh1gAKZ6GI</p>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
+
