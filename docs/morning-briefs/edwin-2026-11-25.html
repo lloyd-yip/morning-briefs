@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Morning brief · Edwin · Wed Nov 25, 2026</title>
+<style>
+
+  :root {
+    --bg: #0f1419;
+    --card: #1a222c;
+    --border: #2a3544;
+    --text: #e8eef5;
+    --muted: #9aabbd;
+    --accent: #5b9fd4;
+    --body: #c5d4e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.45;
+    padding: 20px 14px 56px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; font-weight: 650; margin: 0 0 6px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 18px; }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 12px; font-size: 0.85rem; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: #1e3a55; border-color: var(--accent); }
+  .slate {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; margin-bottom: 14px;
+  }
+  .slate h2 {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em;
+    color: var(--muted); margin: 0 0 10px;
+  }
+  .slot { padding: 12px 0; border-top: 1px solid var(--border); }
+  .slot:first-of-type { border-top: none; padding-top: 0; }
+  .slot strong { display: block; font-size: 0.98rem; margin-bottom: 0; }
+  details.pack {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    margin-bottom: 10px; overflow: hidden;
+  }
+  details.pack > summary {
+    list-style: none; cursor: pointer; padding: 14px 16px; font-weight: 600;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  details.pack > summary::-webkit-details-marker { display: none; }
+  details.pack > summary::after { content: none; }
+  .expand-pill {
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: #0f1419;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: 4px 10px;
+    line-height: 1.2;
+  }
+  .expand-pill::after { content: "Expand"; }
+  details.pack[open] .expand-pill::after { content: "Collapse"; }
+  .body {
+    padding: 0 16px 16px; border-top: 1px solid var(--border);
+    color: var(--body); font-size: 0.92rem;
+  }
+  .body h3 {
+    color: var(--muted); font-size: 0.75rem; text-transform: uppercase;
+    letter-spacing: 0.04em; margin: 14px 0 6px;
+  }
+  .body ul, .body ol { margin: 0; padding-left: 1.15rem; }
+  .body li { margin: 6px 0; }
+  .body p { margin: 6px 0; }
+  .body b { color: var(--text); }
+  .note { margin-top: 18px; color: var(--muted); font-size: 0.8rem; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Morning brief · Edwin</h1>
+      <p class="meta">Wed Nov 25, 2026 · unique dated URL · packs start collapsed</p>
+    </header>
+
+    <div class="toolbar">
+      <button class="primary" type="button" onclick="setAll(true)">Expand all</button>
+      <button type="button" onclick="setAll(false)">Collapse all</button>
+    </div>
+
+    <section class="slate">
+      <h2>Today’s slate</h2>
+      <div class="slot">
+        <strong>9:30 AM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/rnbwC9vQOlrsduS2Sz7P">Matthew Meader</a> · Call 2 · Caring Data</strong>
+      </div>
+      <div class="slot">
+        <strong>12:00 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/esrXV5Oawmdph23PND53">Adrian E Velasquez</a> · Call 3+ · Fi-Med</strong>
+      </div>
+      <div class="slot">
+        <strong>1:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/DO32abBEdANIrVJxO93P">Stephen Topley</a> · Call 2 · Lansing Street Advisors</strong>
+      </div>
+      <div class="slot">
+        <strong>4:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/vmes7FFIOFb4gutwZHHz">Soledad Torti</a> · Call 2 · Accounting Prose</strong>
+      </div>
+      <div class="slot">
+        <strong>6:30 PM ET · <a href="https://app.gohighlevel.com/v2/location/G7ZOWCq78JrzUjlLMCxt/contacts/detail/0Vg4KjJP4VeM6TLBONoY">Michael Macho</a> · Call 2 · BIS Computer Solutions</strong>
+      </div>
+    </section>
+
+    <div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Matthew Meader · Call 2 · 9:30 AM</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p>Matthew Meader · Caring Data · Call 2 · Wed Nov 25, 2026, 9:30-11:00 AM ET (6:30 AM PT) · Edwin Chung</p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Caring Data is a software company for boutique assisted-living and other group homes. Matthew is President. Ivonne is a decision-maker and was on the full Call 1. They also own assisted living facilities and teach at trade shows and webinars. The software business is at about $500,000 a year, up about 40% a year for six years, with a little over 350 facilities. Starting price is $125 a month, or about $1,500 a year per home, with add-ons and more homes usually following the first one. Billing is month to month, with an annual option being built. Churn is low. Trade shows, especially when they present, are their number one channel and usually pay back, but they are expensive in time and travel. Cold calling and email produce less, and booked demos often do not show. When Matthew and Ivonne meet someone in person they close about 70%. Demos that show from colder sources close around 25%, or 25% to 50% depending on the source. A California CEU training had more than 500 signups and more than 300 attendees, then a wave of demo requests, but they cannot offer free CEUs nationwide.</li>
+<li>Emotional state / urgency (from Call 1 , required):</li>
+<ul>
+<li>How they feel: Engaged, candid, and practical. Ivonne was warm at the start and later very direct about cost and proof. Matthew was open about the gap between live teaching and cold outreach, and he called Caring Data their passion and their future.</li>
+<li>Goals they want but can't hit yet: Double the software company as quickly as possible, to about $1 million a year. Create the feeling of a live educational event on a regular cadence, without being limited to how many trade shows they can physically do.</li>
+<li>Why hitting the goal matters to them personally / for the company: The homes are 24 hours a day, 7 days a week, with a lot of liability. They have been in elder care for 15 years and want to sell those facilities, then live on Caring Data. They cannot let go of the homes until the software business can support the same lifestyle. Matthew also said they have already invested a lot of overhead, and they need the extra revenue to stay profitable.</li>
+<li>What's holding them back: They can only be in so many rooms a year. Cold lists, emails, and a Philippines-based calling team do not create the same credibility as when Matthew or Ivonne teach in person. Some prospects hang up on an accent. It is hard to target smaller home owners, even though many of them live in Facebook and WhatsApp groups. The California webinar worked in part because of free CEUs they cannot offer everywhere.</li>
+<li>Consequences if nothing changes: Sales stay streaky, up when they present and down when they do not. New software vendors are coming in, and the first system in the door usually keeps the account. They stay tied to the facilities and cannot make Caring Data the retirement business they want it to be.</li>
+<li>Fears that will show up in the decision: They are a small company and cost-sensitive. Ivonne said the conversation made quantumSCALE sound expensive, asked for a range, and asked whether an $8,000 setup would come with a proven number of leads. Matthew asked to walk before they run, with a palatable proof of concept first. Ivonne does not want a year-long experiment and talked about a roughly three-month test. Edwin already said the ticket is smaller than usual, so volume has to make the math work. He is not promising $8,000.</li>
+</ul>
+<li>Objections still open: Ticket size and volume. Pricing range and proof of results. No nationwide CEU hook. Weak show-up on cold-booked demos. Hard targeting of boutique owners versus big-box directors. Seasonal slowdown from late November to mid-January.</li>
+<li>Who's joining Call 2: Matthew and Ivonne. Both confirmed the Wednesday invite on the call. Edwin tagged Ivonne at her request.</li>
+<li>What we promised to walk: How big the target market is across the states, how we get onto their calendars, what the webinar would look like, past results, the financials, and case studies, including smaller companies and the time frame of those results. Edwin also said he will cover the proof and pricing conversation on this call, without committing to $8,000.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Matthew and Ivonne run Caring Data and also own assisted living homes. They sell documentation and operations software to boutique care homes, and they teach filling empty beds, managing providers, and proper documentation. Buyers are owners and administrators, usually the same person, in smaller US group homes. The buyer pain is empty beds, liability, and compliance citations.</li>
+<li>Company goals / dream state (from Call 1): Get Caring Data to about $1 million a year, keep lifestyle without depending on the homes, and eventually sell the elder-care facilities so they can spend the next stretch of their working life on the software business.</li>
+<li>ICP dream state (what THEIR buyers want): A full home, less liability, clean documentation, and a way to look competent and organized when a family tours, so they can win the placement.</li>
+</ul>
+<h3>What's interesting for THIS Call 2</h3>
+<ul>
+<li>This is an early Pacific call on Thanksgiving week: 9:30 to 11:00 AM ET, which is 6:30 to 8:00 AM for them in California. Keep it tight and send them into the holiday with a clear picture, not a rushed close.</li>
+<li>The commercial risk is volume, not whether they can sell. At about $1,500 a year to start, the plan has to show enough of the right owners, not a high ticket. Be honest if the math is tight.</li>
+<li>Ivonne will likely come back to cost and proof. Edwin gave a one-time range of $8,000 to $50,000 and clearly said he is not quoting $8,000. Have the financials and smaller-company stories ready, and do not invent a guarantee.</li>
+<li>The California webinar is proof that education works, and also a trap: free CEUs helped drive more than 500 signups, and they cannot offer that nationwide. The Wednesday plan has to show how the room still fills without that hook.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): United States. Boutique residential care and other group homes, especially 6 to 12 beds per house and operators with more than one home. Buyer titles are owners and administrators, usually the same person. Leave out big-box chains, "facility director" type titles, and large multi-site operators with hundreds of beds, which they said they do not serve well yet.</li>
+<li>Ideal ICP (tight , who they said they want most): US owners and administrators of boutique residential care homes, especially 6 to 12 beds per house, including people who already run several homes. We have not counted the people yet. What we can show on Wednesday starts with the California picture they gave, then expands state by state.</li>
+<li>Broadest honest TAM (largest possible still real , campaign headline): Still US-focused, and still boutique rather than big-box, but the net can also include adult-disabled and mental-illness group homes, foster homes, and adult and senior daycares, plus some standalone homes up to about 100 or even 200 beds. They sell in Latin America and the Caribbean, but they said that is not the priority. We have not counted the national people yet.</li>
+<li>How we got the number: We have not counted the national people yet. On the call, Ivonne estimated about 7,500 to 8,000 elderly homes in California, and another 6,000 to 7,000 adult-disabled group homes in California only. On Wednesday, show companies first, then the owner and administrator titles, then contacts, across the states, as Edwin promised.</li>
+<li>What we widened (if thin): They already widened beyond elderly homes into adult disabled, foster, mental illness, and daycares. They also said they do okay with some larger standalone homes. That widening came from them, not from us. Do not add big-box or "director" titles just to make the list look bigger. They were clear those are the wrong buyers.</li>
+<li>Check vs Call 1: This matches what they said. United States first. Owners and administrators, not carers or directors. Boutique and multi-home first. California counts are the only hard facility numbers we have so far.</li>
+<li>Too small?: Do not call this too small from the California counts alone. The US market was described as big enough that they are not prioritizing Latin America right now. The live question is not whether enough homes exist. It is whether we can reach enough of the right owners, at this ticket size, to make the plan pay.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What's sharp (easy to invite on): They already sell through education, and it works. Empty beds, liability, and citations are pains owners already feel. They own homes, sit on association boards, and teach from real operations, which is why a live room trusts them. A California training proved people will show up and then ask for demos. When they get a live conversation, they close a high share. Retention is strong, and extra homes often follow the first one.</li>
+<li>What's fuzzy or weak (closer must know): The starting ticket is small, so this only works at volume. They cannot take the free-CEU hook national, and that hook is part of why the California event was so large. Cold booked demos have a show-up problem. December into mid-January is likely slow. Targeting boutique owners, rather than noisy consumer-style lists or big-box directors, is still hard for them. They will ask about price and proof, and they want a short proof of concept, not a one-year leap of faith.</li>
+<li>Positioning line for the webinar if we pick today: Learn how to keep the beds full and the home compliant, taught by people who actually run homes, with a simple way to see the system they use to do it.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): Empty beds, and the revenue those empty beds should be creating. Liability and compliance can support the same lane, but do not split this into three different first campaigns.</li>
+<li>Who we invite first, then next: Invite the Ideal first, meaning US owners and administrators of boutique 6-to-12-bed homes, including multi-home operators. Then the broader honest list, meaning other US group-home owners in adult disabled, foster, mental illness, and daycare, plus some larger standalone homes they already said they can serve. Do not start with big-box directors.</li>
+<li>Story arc (THEIR webinar to THEIR audience , NOT quantumSCALE's value prop):</li>
+</ul>
+<p>Hook: empty beds and the money sitting idle in those rooms.</p>
+<p>Then the problem: tours that do not convert, providers that are hard to manage, citations, and families who cannot see that the home is on top of care.</p>
+<p>Then the proof: they run homes themselves, they teach documentation and marketing across the country, and they can pull up a resident record in seconds when a family asks a hard question.</p>
+<p>Then the offer: the Caring Data system they use in their own homes.</p>
+<p>Then the easy call to action: book a short demo with Matthew or Ivonne, not a hard close in the webinar.</p>
+<ul>
+<li>Copy / talk-track beats (3-5):</li>
+<ul>
+<li>"Every empty bed is revenue you already earned the right to fill."</li>
+<li>"When a family tours, they are deciding whether you can show them, in 30 seconds, that mom is actually being taken care of."</li>
+<li>"The homes that stay full are the ones that can document, communicate, and follow up without hunting through paper."</li>
+<li>"This is training from operators who still run homes, not a product pitch from a vendor who has never staffed a shift."</li>
+<li>"If you want to see the system behind that, book a time with us after the session."</li>
+</ul>
+<li>Cadence: One core topic first, likely sales and marketing to fill beds, because that is the pain they named first and the one that already filled a California room. Run it as a repeatable event, not only when they can travel to a show. Test that lane, then build separate sessions for managing providers or documentation if a second audience clearly needs a different story. Do not lean on free CEUs as the national hook.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Philipp Von Schulthess, Oxoia. He sells technical software to a specialized buyer group and still filled webinars, including one that produced the largest deal in company history. Use this if they say boutique care owners are too busy, too relationship-driven, or too specialized to attend, or if they think only a live trade-show room can create trust. Prospect link: <a href="https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I">https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</a></li>
+<li>Forrest Dombrow, Profitable by Design. He went from almost no booked calls to 63 calls in five months, including 27 from one webinar, and later a steady 7 to 10 calls a month. Use this when they ask for smaller-company proof and a time frame, which Ivonne already requested, or when they say lead flow is streaky without a show. Prospect link: <a href="https://quantums-institute.com/due-diligence-consultingandprofessional#section-twtCclsfCG">https://quantums-institute.com/due-diligence-consultingandprofessional#section-twtCclsfCG</a></li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who's in the room / who signs / what each cares about: Matthew and Ivonne are both in the room and both decide. Matthew is President and spoke to growth, overhead, profitability, and wanting a proof of concept he can live with. Ivonne pushed on cost, proof, and a shorter test window, and she is clearly an operator-owner, not a silent partner. Treat them as co-signers. Do not leave her off the numbers conversation.</li>
+<li>Landmines from Call 1 (hiring, IP, price, "we'll think", etc.): Do not quote $8,000 as the price. Do not invent a lead guarantee. Do not brush past the small ticket. Be ready if they want to "walk before we run" and ask for a tighter first step. Do not recommend targeting "directors" or big-box lists. Do not use the California CEU success as if it will automatically repeat nationwide. Remember this is 6:30 AM their time in Thanksgiving week, so do not overrun without a reason. Facilities still cover a lot of the software-company cost, so a large one-time fee will feel personal.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack" data-prep-lock="7o8QiDMh7whc6KX9gDX2">
+      <summary><span>Adrian E Velasquez · Call 3+ · 12:00 PM</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p>Adrian E Velasquez · Fi-Med · Call 3+ · Fri Nov 20, 2026, 12:00 PM ET (19:00 SAST; 10:00 AM MT) · Edwin</p>
+<p>Portal: <a href="https://deal-forge-angel.onrender.com/bb48dde0-e227-4a40-b67e-3ca5ccdf7aa2/how-it-works">https://deal-forge-angel.onrender.com/bb48dde0-e227-4a40-b67e-3ca5ccdf7aa2/how-it-works</a></p>
+<p>Market size: Apollo counts 316,744 US contacts across 22 titles at practices, surgery centers, hospitals and ACOs. Recommended outreach is 70,000 a month.</p>
+<p>Invite title selected: "Practice Leader Roundtable: How Practices Add Medicare Revenue Between Visits."</p>
+<p>Asset check (as of Nov 18, look again before the call): ROI model needs the LTV entered. On the calendar invite tab, Gene Rosendale is not cleared; pick Juliana Marulanda or Sheila Kloefkorn, or leave empty. Never use Jonathan Duarte.</p>
+<p>Where we left it: Both partners want to start with Well Living. Adrian rated it 9 out of 10 and called $23K plus $700 a month reasonable. Upfront cash is the problem after a $650K collection loss. Christine left before pricing, so she has not reacted to price or financing, and she is the analytical one.</p>
+<p>What they're worried about: another bad list, invites that get deleted, and a vendor that looked shaky during the webinar tech issues.</p>
+<p>Blockers, in order:</p>
+<ul>
+<li>Cash timing.</li>
+<li>Christine has not agreed to the money.</li>
+<li>Trust in list accuracy. Christine wants show-up stats.</li>
+<li>They floated a percentage of sales. Hold the line.</li>
+</ul>
+<p>Case studies to have ready (case_study_picks):</p>
+<ul>
+<li>Gene Rosendale, Advocate Advisors (list accuracy / burned by agencies). About $36K to $48K a year on agencies for about 5 prospects and 1 client; with the owned webinar system about 61 booked calls across 12 webinars and 2 deals worth about $3M in expected profit. <a href="https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM">https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</a></li>
+<li>Forrest Dombrow, Profitable by Design (steady deal flow). One webinar booked nearly 30 calls; now a predictable 7 to 10 calls a month. <a href="https://quantums-institute.com/due-diligence-consultingandprofessional#section-twtCclsfCG">https://quantums-institute.com/due-diligence-consultingandprofessional#section-twtCclsfCG</a></li>
+</ul>
+<p>Path to close:</p>
+<ul>
+<li>Get Christine on the line and ask what she needs to say yes.</li>
+<li>Walk through the agreement together (sent Nov 19 with the follow-up).</li>
+<li>Answer the list question with the sample list and Gene's story.</li>
+<li>Confirm which price and financing option they pick ($23K + $700/mo; $3K off for a Friday start drops to $20K plus a 7th month; financing $2,204/mo, or $1,916/mo plus $700 with both).</li>
+<li>Set the start date, using the Friday discount as the deadline.</li>
+</ul>
+<p>If things go sideways:</p>
+<ul>
+<li>If Christine is not on, offer a 15-minute call with her on Monday.</li>
+<li>If cash is the blocker, restate the financing.</li>
+<li>If they push for a percentage of sales, say it is not part of this engagement.</li>
+</ul>
+<p>Next step to leave with: signed agreement and first payment by end of day Friday, with the setup week booked.</p>
+<p>Before the call: recording and agreement already emailed Nov 19 (Cc Christine). Still add chris@fimed.com to the invite.</p>
+      </div>
+    </details>
+
+    <div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Stephen Topley · Call 2 · 1:30 PM</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p>Stephen Topley · Lansing Street Advisors · Call 2 · Wed Nov 25, 2026, 1:30-3:00 PM ET (8:30-10:00 PM SAST) · Edwin Chung</p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Steve is an advisor and the CFO at Lansing Street Advisors, a wealth management firm in Ambler, Pennsylvania. The firm does about $3 million a year with a little over 100 client families, at about $30,000 a year each. The average household has about $3 million in assets at a 1% fee, so one client is worth about $90,000 to $100,000 over three years. They have grown about 15% a year for three years and lost about two clients in six years. Almost all growth is referrals, about two meetings a month, with one or two closes. He said the close rate on meetings is at least 75%, but it is not fully tracked and those meetings come from trusted referrals. Steve agreed a webinar lead will close lower. The founder's newsletter and videos do not turn into meetings, and nobody follows up on who watches.</li>
+<li>Emotional state / urgency (from Call 1, required):</li>
+<ul>
+<li>How they feel: Engaged, concise and open. Steve came in already interested and was candid about what is not tracked. He said referrals sometimes feel like "crossing their fingers."</li>
+<li>Goals they want but can't hit yet: One new client a month from a steady, owned lead source. About six months in, he wants a handful of webinar attendees turning into one or two real meetings a month and at least one close a month.</li>
+<li>Why hitting the goal matters to them personally / for the company: Steve is doing this mainly for himself. The founder is in his 50s and brings most of the big referrals, including $5 million and $10 million families. Four younger advisors, Steve included, need their own steady lead source because their peers do not have that kind of wealth.</li>
+<li>What's holding them back: Referrals come in waves, with flat stretches and then a big relationship. Past marketing agencies reported views, not money in the bank. Founder approval is still needed.</li>
+<li>Consequences if nothing changes: The younger advisors keep depending on the founder's network, and the firm keeps feeling the quarter-to-quarter swings.</li>
+<li>Fears that will show up in the decision: Outreach that feels spammy. Steve does not want people to ask "who are these guys?"</li>
+</ul>
+<li>Objections still open: Outreach quality and the spam worry. A webinar meeting will not have the trust a referral has. The founder has not approved yet.</li>
+<li>Who's joining Call 2: Steve only. Do not email or invite the founder until Steve says so.</li>
+<li>What we promised to walk: A deep dive on the custom build: the target market, how we get in front of those people, which webinar structures work for wealth management, and how to keep outreach from feeling spammy. Steve asked for the full 90 minutes.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Lansing Street Advisors is a wealth management firm that leads with financial planning, covering insurance, estate planning, cash flow and tax planning. They help business owners with retirement planning, a coming liquidity event or a business sale, including gifting shares and lowering the tax on a sale. The problem is that new business depends on referrals and has no steady second source.</li>
+<li>Company goals / dream state (from Call 1): One new client a month, running by about January 1, 2027, with the prep done before year end.</li>
+<li>ICP dream state (what THEIR buyers want): A trades or professional-services owner wants to sell or step back on their own terms, keep more of the sale price after tax, and know their family and employees are looked after.</li>
+</ul>
+<h3>What's interesting for THIS Call 2</h3>
+<ul>
+<li>Steve said the 75% close rate is a referral number. Show the math at a lower rate for webinar leads so he sees you are not selling him a dream.</li>
+<li>He needs to brief the founder before anyone else is added. The pack for the founder, if Steve asks for it, should be short and about the money, not the tools.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): United States only. Owners of trades and professional-services businesses, with about $5 to $15 million in revenue, with a floor around $3 million. Buyer titles are owners, founders and CEOs. We leave out advisors, brokers and business-sale marketers, because they are not the buyer.</li>
+<li>Ideal ICP (tight, who they said they want most): US owners of trades and professional-services firms with $5 to $15 million in revenue who are 12 to 24 months from a sale or thinking about retirement. We have not counted the people yet, so there is no number to quote.</li>
+<li>Broadest honest TAM (largest possible still real, campaign headline): US owners and CEOs of privately held trades and professional-services firms from about $3 million up to $15 million in revenue, whether or not a sale is planned. We have not counted the people yet.</li>
+<li>How we got the number: No count has been run. Deal Forge has no job for Steve, and building one spends Apollo credits and Claude tokens, so it needs your yes. When it runs it counts companies first, then the owner and CEO titles, then contacts.</li>
+<li>What we widened (if thin): Nothing yet. The trades and professional-services focus is what Steve agreed to on the call. Anything wider would be our addition, so say so if you add it.</li>
+<li>Check vs Call 1: Matches the call. United States, trades and professional services, $5 to $15 million, owners.</li>
+<li>Too small?: Cannot say until the count runs. Your rule is a tight core of about 30,000 decision-makers, with each audience kept separate and nothing padded in.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What's sharp (easy to invite on): Steve gave topics that sell by themselves: retirement plans, what employees need, year-end tax strategy, and what to do 12 to 24 months before selling a business.</li>
+<li>What's fuzzy or weak (closer must know): The firm mostly serves families today and has no marketing history with business owners. He has no proof a webinar lead closes at his usual rate.</li>
+<li>Positioning line for the webinar if we pick today: Help the owner of a $5 to $15 million trades or services business keep more of the sale price after tax by planning 12 to 24 months before they sell.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): Business owners who plan to sell or retire in the next one to three years and do not know how much of the sale price they will keep after tax.</li>
+<li>Who we invite first, then next: Ideal first, then the broader honest list. This is how we fill the room. It is not part of Steve's story.</li>
+<li>Story arc (THEIR webinar to THEIR audience):</li>
+<ul>
+<li>Hook: what owners usually leave on the table when they sell.</li>
+<li>Problem: late planning, a sale with surprise taxes, and an owner who has never seen the number before the offer arrives.</li>
+<li>Proof: how Lansing Street plans a sale, including gifting shares and lowering the tax, with a plain example.</li>
+<li>Offer: a planning conversation with an advisor at the firm.</li>
+<li>Easy next step: book a planning call with Steve or another advisor.</li>
+</ul>
+<li>Copy / talk-track beats (3 to 5):</li>
+<ul>
+<li>"Most owners learn what they keep after tax only once the offer is on the table."</li>
+<li>"The best time to plan the sale is one to two years before it."</li>
+<li>"Gifting shares out of your name can change the tax on the sale."</li>
+<li>"You do not have to juggle a tax person, an insurance person and an estate attorney."</li>
+</ul>
+<li>Cadence: One topic first, test it, then split by trade and by year-to-sale.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Jason Rotman, Elevate Financial Partners. He is a licensed financial advisor serving high-net-worth families, so he is the same kind of professional Steve is. He went from 2 replies out of 15 hand-sent emails to 33 bookings on one webinar, and said one month of the system gave more quality leads than nine to twelve months of old prospecting. Use him when Steve says wealthy or senior buyers will not show up to a webinar, or that regulated advice does not fit this. Prospect link: <a href="https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS">https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS</a></li>
+<li>Ken Baron and Rory Zipper, ZEA Financial. They run an independent financial planning firm and had already tried cold calling, purchased lead lists and $13,000 dinner seminars. They went from two or three meetings a month to 87 booked calls in nine months and more than doubled monthly revenue. Use them when Steve says they have already spent on lead generation, or that financial services is too regulated. Prospect link: <a href="https://quantums-institute.com/due-diligence-consultingandprofessional">https://quantums-institute.com/due-diligence-consultingandprofessional</a></li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who's in the room / who signs / what each cares about: Steve is the champion and wants this for himself and the three other younger advisors. The founder decides and spends the money, and he has a huge network and is hard to reach. Steve will brief him first.</li>
+<li>Landmines from Call 1: Do not email or invite the founder until Steve says so. Do not claim a 75% close rate for webinar leads. Do not promise a go-live before January 1, 2027. Remember Steve was concise, so keep a steady pace and use the full 90 minutes he asked for.</li>
+</ul>
+      </div>
+    </details>
+
+    <div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+    <details class="pack">
+      <summary><span>Soledad Torti · Call 2 · 4:30 PM</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<div class="unlocked-banner" style="background:#b91c1c;color:#fff;font-weight:700;padding:10px 14px;border-radius:8px;margin:12px 0 4px;border:2px solid #7f1d1d;">UNLOCKED DRAFT: not yet reviewed and locked by the closer. Lock with your Wingman before the call.</div>
+<p>Soledad Torti · Accounting Prose · Call 2 · Wednesday, November 25, 2026, 2:30 to 4:00 PM Mountain (4:30 to 6:00 PM ET / 11:30 PM SAST) · Edwin</p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Accounting Prose is a 13-year United States accounting firm with about 100 to 120 clients, priced from $1,500 a month on a one-year contract. Almost all new leads still come from referrals and the website, about 3 or 4 a month, and it can take 3 or 4 months to close one. Sol is comparing this system with Apollo, Sales Navigator, and email outreach, and she wants a way to reach the right owners without looking spammy.</li>
+<li>Emotional state / urgency (from Call 1 - required):</li>
+<ul>
+<li>How they feel (frustrated, stuck, scared, hopeful, numb, etc.): Sol was warm, engaged, and careful rather than desperate. She was hopeful about a webinar because Enzo already speaks at Xero conferences, and she was protective of Enzo's time and of the brand.</li>
+<li>Goals they want but can't hit yet: A predictable flow of qualified leads so they can grow, and especially so they can promote the newer HR offer, not only accounting.</li>
+<li>Why hitting the goal matters to them personally / for the company: Uncertain lead flow is already constraining the CEO's growth plan. Existing clients tend to stay, so the problem is new business, not retention.</li>
+<li>What's holding them back: Referral volume is thin and up and down. Four months of LinkedIn ads produced no real leads. An earlier cold-email push felt too spammy for a premium firm, so Enzo has been cautious about outbound.</li>
+<li>Consequences if nothing changes: They keep closing about one client every 3 or 4 months from 3 or 4 unqualified-or-mixed leads, and they cannot plan growth or put real energy behind HR, where they already have capacity.</li>
+<li>Fears that will show up in the decision: Damaging a premium brand with outreach that feels like spam. Enzo rejecting a cold calendar invite. Buying a motion they cannot operationally absorb if volume comes in as a flood.</li>
+</ul>
+<li>Objections still open: What a validated contact means, and how cost per contact compares with Apollo. Setup fee, monthly cost, minimums, contract length, and expected results. What the guarantee covers. The invite-to-consult funnel for a firm like theirs. Ownership of contacts and materials after they pay. Proof from financial and accounting firms. Capacity is real but limited; they cannot take 100 new clients in a month.</li>
+<li>Who's joining Call 2: Sol will be there. Enzo, the CEO, based in Colorado, is intended to join, but only after Sol briefs them and then sends the invite. Enzo had not attended the webinar. Enzo's email was not given on Call 1.</li>
+<li>What we promised to walk: A custom strategy, how much the leads cost, how the list and the messaging stay targeted so it does not sound spammy, plus Sol's written list: validated contacts, pricing and setup, the guarantee, the funnel, ownership, and financial-firm examples. Edwin already sent the recap and 15-minute overview to Sol at 9:21 PM SAST on Monday, November 23.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Sol runs sales and client success. They sell team-based accounting, plus newer HR and automation, to United States companies on Xero. Buyers are usually the owner or CEO. The buyer's problem is messy or DIY books, missed filings, bookkeeper gaps, and reports that are not investor-ready, often just as the company is getting too complex to handle alone.</li>
+<li>Company goals / dream state (from Call 1): Steady growth they can actually plan for, enough qualified leads to use the capacity they already have, and a real push behind the newer HR service. No dated revenue target was given. Sol said Enzo would have to answer that.</li>
+<li>ICP dream state (what THEIR buyers want): Owners who have outgrown DIY books want clean, investor-ready accounts that keep running even if one person is out, and they often also need HR help because they are still too small for an in-house HR team.</li>
+</ul>
+<h3>What's interesting for THIS Call 2</h3>
+<p>Enzo has not been invited yet. Sol will only send the invite after she briefs them, because she thinks Enzo will reject a cold invite. Wednesday is also the only window before Thanksgiving, since Thursday and Friday are holidays.</p>
+<p>Edwin already sent Sol the 15-minute overview and the recap on Monday, including the financial case studies and the exact demo agenda she asked to cover. Walk that list in order. Do not invent guarantee or pricing details that were not said on Call 1.</p>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): geography is United States companies and US entities only. Vertical is companies on Xero, with SaaS as the ideal, though they already work with many other types. Company size is about 5 to 50 employees, with a floor around $1 million ARR. Buyer titles are owners and CEOs. We exclude nonprofits, non-US entities, and income tax return work, and we leave out very small shops that cannot afford a $1,500-a-month starting price.</li>
+<li>Ideal ICP (tight - who they said they want most): Owners or CEOs of United States SaaS companies on Xero, about 5 to 50 employees, at least about $1 million ARR. We have not counted the people yet.</li>
+<li>Broadest honest TAM (largest possible still real - campaign headline): Owners or CEOs of United States companies on Xero, about 5 to 50 employees, at or above that revenue floor, across the other company types they already serve, still excluding nonprofits and tax-return-only work. We have not counted the people yet.</li>
+<li>How we got the number: We have not counted the people yet. On the demo, show the company list first, then the owner and CEO titles, then the contacts.</li>
+<li>What we widened (if thin): They said SaaS is the ideal customer, and they also said they already work with many other types. If the tight SaaS count is thin, widen to those other United States Xero companies in the same size band. That widening comes from what they said, not from a new market we invented.</li>
+<li>Check vs Call 1: Edwin called it a large target addressable market, but no headcount was given on the tape. Do not invent one on this call.</li>
+<li>Too small?: We cannot say until we count. Only qualify out if the broadest honest count is still under about 30,000 people after that widening.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What's sharp (easy to invite on): A premium team, not a cheap solo bookkeeper, for United States Xero companies that have outgrown DIY books. Investor-ready reporting is a clear hook for founders raising or reporting to investors. Enzo already teaches this kind of content at Xero conferences, so the webinar motion has a natural speaker.</li>
+<li>What's fuzzy or weak (closer must know): HR is the service they most want to grow, but they are still known for accounting, and HR is newer. Sol could not share company revenue, a 12-month target, or exact delivery capacity. Year-end is a slower close season. The 25-employee versus 50-employee upper band is a little loose and may need a tighter call on the list.</li>
+<li>Positioning line for the webinar if we pick today: For owners of United States Xero companies that have outgrown DIY books, a standing team that keeps the accounts investor-ready, and can add HR, without hiring in-house yet.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): the pain THEIR buyers feel (not "we need more leads"): The books are starting to break as the company grows, and a solo bookkeeper or DIY setup cannot keep up.</li>
+<li>Who we invite first, then next: Ideal first, then the broader honest list. Start with owners and CEOs of United States SaaS companies on Xero in the 5 to 50 employee band. Then go to owners and CEOs of other United States Xero companies in that same size band.</li>
+<li>Story arc (THEIR webinar to THEIR audience, not quantumSCALE's value prop):</li>
+</ul>
+<p>Hook: your books, or your HR, are starting to break as the company grows.</p>
+<p>Then the problem: DIY or a cheap bookkeeper leads to notices, fines, gaps when someone is out, and reports that are not investor-ready.</p>
+<p>Then proof: their team model, the Xero gold partnership, and Enzo already educating this audience at conferences.</p>
+<p>Then the offer: a standing accounting team, with newer HR and automation, for United States Xero companies that are not ready to hire in-house.</p>
+<p>Then the easy CTA: book a consult with Accounting Prose.</p>
+<ul>
+<li>Copy / talk-track beats (3-5): lines about THEIR offer as THEIR buyers would hear them:</li>
+<ul>
+<li>You have outgrown doing the books yourself, and the notices and gaps are starting to show.</li>
+<li>A single cheap bookkeeper leaves you exposed when that person is out or leaves.</li>
+<li>If you are raising or reporting to investors, the books have to be ready, not patched together later.</li>
+<li>At this size you often cannot justify in-house accounting or in-house HR yet, and both problems show up together.</li>
+<li>This is a team that stays on the account and can hand you a clean setup when you are ready to hire inside.</li>
+</ul>
+<li>Cadence: Start with one topic, the outgrown-DIY and investor-ready books lane, because that is what they are known for. Test that, then add a later HR-focused session once the motion is working.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Jason Rotman at Elevate Financial Partners. He is a financial advisor who also had inconsistent lead flow and paid ads that did not stick, which maps to Sol's LinkedIn and outbound caution. A month of webinar leads is now doing what used to take 9 to 12 months of prospecting, from sporadic calls to 62 a month. Pull this when Enzo asks for financial-firm proof, or when brand-safe outbound comes up. Prospect link: <a href="https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS">https://quantums-institute.com/due-diligence-consultingandprofessional#section-UCiG71YLFS</a></li>
+<li>Ken Baron and Rory Zipper at ZEA Financial. They are a financial services firm that went from 2 to 3 meetings a month to 87 calls in the QS database by November 2025, and 184 on their calendar by May 2026, with monthly revenue more than doubling. Pull this when they want volume and a firm in financial services, not a solo advisor. Prospect link: <a href="https://quantums-institute.com/due-diligence-consultingandprofessional">https://quantums-institute.com/due-diligence-consultingandprofessional</a></li>
+<li>Lynn Rousseau at The Conscious Leader. She ran a long-standing referral-only professional firm, then used webinars to build a predictable pipeline, with 287 registrations on the first webinar and revenue moving from $300,000 to $600,000 a year. Pull this when the referral dependency and "we have been around a long time" point comes up. Prospect link: <a href="https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0">https://quantums-institute.com/due-diligence-consultingandprofessional#section-8OQzUEBer0</a></li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who's in the room / who signs / what each cares about: Sol will run the comparison and the briefing. She owns sales, client success, and the growth ideas, but she cannot speak to revenue, official capacity, or spend. Enzo is the CEO, based in Colorado, already speaks at Xero conferences, and is the person who has to accept the invite and approve a motion like this. Enzo cares about brand, timing, and not repeating a failed paid-ads or spammy-email experience. Sol cares about getting Enzo into the room prepared, and about having a clean recap she can forward.</li>
+<li>Landmines from Call 1 (hiring, IP, price, "we'll think", etc.): Do not pitch anything that sounds like the old cold email. Do not invent QS pricing, a guarantee, or a cost-per-contact versus Apollo; walk those live, because they were reserved for this demo. Do not promise a sudden flood of clients. Do not treat Sol as the final signer. Watch the timezone: the booked slot is 2:30 to 4:00 PM Mountain, which is 4:30 to 6:00 PM Eastern. Confirm Enzo is actually on the invite before you assume they will be in the room.</li>
+</ul>
+      </div>
+    </details>
+
+    <details class="pack" data-prep-lock="KAtM8WdHc0ErElGYCT9s">
+      <summary><span>Michael Macho · Call 2 · 6:30 PM</span><span class="expand-pill" aria-hidden="true"></span></summary>
+      <div class="body">
+<p>Michael Macho · BIS Computer Solutions · Call 2 · Mon Nov 23, 2026, 20:30-22:00 SAST (10:30 AM-12:00 PM PT, 1:30-3:00 PM ET) · Edwin Chung</p>
+<p>Booking status: Confirmed in GHL as a Custom Demo, Mon Nov 23, 10:30 AM-12:00 PM PT (appointment PHkHjf038YtIraGhqDW9). Edwin booked it after Call 1.</p>
+<h3>From Call 1</h3>
+<ul>
+<li>Where they are / what stuck: Michael is one of the owners of BIS and said he owns about six technology companies. They try to be a one-stop shop for cloud, MSP and IT, software development, data center, VoIP, cybersecurity, consulting, and business software. The campaign he wants is wholesale distribution software, which he called the biggest market and the one that still feels untapped. He has spent the last three to five years more focused on pet cremation software, where he said they already dominate.</li>
+<li>Emotional state / urgency (from Call 1 , required):</li>
+<ul>
+<li>How they feel (frustrated, stuck, scared, hopeful, numb, etc.): Cautious and interested, not rushed. He was a bit lower-energy on the tape (allergies), and later said he is usually more high-energy on webinars and calls. He was open and booked the longer demo anyway.</li>
+<li>Goals they want but can’t hit yet: In 12 months, he wants two pretty sizable deals closed and a good chunk of pipeline still being worked. Five to ten good leads that can be worked would be a good start. He also wants a consistent lever for leads so he is not reinventing the pipeline.</li>
+<li>Why hitting the goal matters to them personally / for the company: This year they lost a 50-plus-year client, one of their first, after the entire C-suite was replaced and the new team moved to a different system. Revenue for the business he wants this for is about $3.5 to $4 million, down from a peak around $8 million. He said, "Yeah, it worries me," and that is why they are trying to get new customers.</li>
+<li>What’s holding them back: Referrals and light inbound are not producing enough new high-ticket distributor deals. He has tried ZoomInfo, paid ads, SEO, calling, mail, and Mailchimp, and has not found a recent channel that worked really well. ZoomInfo in particular "went absolutely nowhere."</li>
+<li>Consequences if nothing changes: They are holding steady on existing clients. If another large account goes out of business or gets sold, he does not have a reliable way to replace it.</li>
+<li>Fears that will show up in the decision: Spending a lot of money up front with no shared risk, after paying ZoomInfo for intent data that was not real-time. He wants both sides to have skin in the game, then increase the amount if it is working. He is also researching a few other things and said they would decide within a week or two after Monday.</li>
+</ul>
+<li>Objections still open: Large upfront spend with no shared risk. How to run two or three products at once (you recommended starting with one beachhead). He is researching other options in parallel. No second stakeholder was clearly committed to join Monday.</li>
+<li>Who’s joining Call 2: Michael only, unless he brings someone later. Public company materials describe Miro Macho as CEO and Michael as Division President in a second-generation family business. That was not discussed on the tape, so do not assume Miro must be there unless Michael raises it.</li>
+<li>What we promised to walk: A custom demo of how we would get his wholesale-distributor audience, what the calendar invitations would look like, and how we would run the webinar. You also said you would research BIS and send the invite after the call.</li>
+</ul>
+<h3>Who / Business / Buyers / Problem</h3>
+<ul>
+<li>Who / business / who buys / problem: Michael is an owner at BIS Computer Solutions in the Los Angeles area, on Pacific time. Buyers for the first campaign are owners and C-suite at wholesale distributors, mainly from about $5 million to $200 or $300 million in revenue. The pains to lead with are inventory replenishment and forecasting, and EDI chargebacks of $20,000 to $50,000 when an order is not done exactly right.</li>
+<li>Company goals / dream state (from Call 1): In 12 months, two pretty sizable new deals closed, a working pipeline, and a reliable way to bring in leads without a large unshared upfront spend.</li>
+<li>ICP dream state (what THEIR buyers want): Wholesale distributors want to know they will have enough inventory for current and future orders, and they want EDI orders with large retailers to process cleanly so they are not hit with chargebacks.</li>
+</ul>
+<h3>What’s interesting for THIS Call 2</h3>
+<ul>
+<li>The Monday demo is now booked in GHL. He leaves Thursday for Texas for Thanksgiving and may already be traveling Monday. He still agreed to 10:30 AM to 12:00 PM Pacific, and mentioned a 10:00 AM appointment that may or may not hold.</li>
+<li>He asked if they could do two or three products. Keep the demo on wholesale distribution first. Pet is already strong. Transportation products at about $100 to $200 a month are a weak first lane.</li>
+<li>Commercial temperature is mixed. He can give honest opinions on Monday and said they would make a decision within a week or two after that, not necessarily the same day.</li>
+</ul>
+<h3>Deep TAM</h3>
+<ul>
+<li>ICP parameters (plain English): Geography is mainly the United States first, with global expansion possible later (the pet system is already global; the distribution system is not). Vertical is wholesale distribution. Company type and size is distributors from about $5 million in revenue up to $200 or $300 million, and they already serve some larger than that. Buyer titles are the business owner or C-suite. We leave out a first campaign aimed at tiny transportation tickets, and we do not lead with a generic one-stop IT pitch.</li>
+<li>Ideal ICP (tight , who they said they want most): Owners and C-suite at wholesale distributors with about $5 million to $300 million in revenue, first in the United States, who feel the inventory-forecasting and EDI-chargeback problems. We have not counted the people yet.</li>
+<li>Broadest honest TAM (largest possible still real , campaign headline): The same owner and C-suite titles at wholesale distributors, possibly widened later by adjacent verticals he already serves (party rental, and transportation only if the ticket can be raised), or by geographies once the US list is real. We have not counted the people yet, so do not quote a contact number on Monday unless a count is finished before the call.</li>
+<li>How we got the number: We have not counted the people yet. On the demo, show companies first, then the owner and C-suite titles, then the contacts.</li>
+<li>What we widened (if thin): Nothing has been widened yet, because no people count exists. If the tight list is thin, we can add titles around operations or purchasing only if he agrees, or widen company size inside the range he already gave. Distinguish what he said ($5 million to $300 million, owners and C-suite, distribution first) from anything we add later.</li>
+<li>Check vs Call 1: This matches the tape. He said distribution is the biggest and most untapped market, named inventory and EDI as the pains, and asked to start a conversation about this motion rather than standard SEO or ads.</li>
+<li>Too small?: Unknown until the people are counted. He himself described distribution as a large, competitive market, so the risk is more likely a fuzzy offer than a tiny list. Qualify out only if a completed count is still under about 30,000 after honest widening.</li>
+</ul>
+<h3>Offer / value-prop read</h3>
+<ul>
+<li>What’s sharp (easy to invite on): Inventory replenishment and forecasting, plus EDI chargebacks of $20,000 to $50,000, aimed at owners and C-suite of mid-market distributors. Year-one value of about $60,000 to $100,000 and an 80 to 90 percent close rate on qualified conversations make a high-ticket, low-volume webinar make sense.</li>
+<li>What’s fuzzy or weak (closer must know): If the invite leads with "one-stop technology for six businesses," the message gets generic, which is the trap you already warned him about. Transportation is a real product line but a weak first offer because of the small monthly ticket. There is no completed people count or custom invite copy yet, because no Deal Forge job has been run.</li>
+<li>Positioning line for the webinar if we pick today: Help wholesale distributors stop running short on inventory and stop paying EDI chargebacks when retailer orders are not processed exactly right.</li>
+</ul>
+<h3>Webinar strategy</h3>
+<ul>
+<li>Core problem lane (one, not five): Wholesale distributors cannot reliably forecast inventory, and a messy EDI order with a large retailer can trigger a $20,000 to $50,000 chargeback.</li>
+<li>Who we invite first, then next: Invite the Ideal first (owners and C-suite at mid-market wholesale distributors). Then, only if needed, the broader honest list of adjacent companies or titles he agrees to.</li>
+<li>Story arc (THEIR webinar to THEIR audience , NOT quantumSCALE’s value prop):</li>
+</ul>
+<p>hook: You are turning down orders, or you are one bad EDI form away from a five-figure chargeback.</p>
+<p>problem: Replenishment is still guesswork, and electronic orders from retailers like Walmart, Target, or Amazon are a complicated process with a lot of forms that have to be exact.</p>
+<p>proof: Walk their method and results for distributor inventory and EDI, using proof they actually have. Do not invent client numbers they did not give on Call 1.</p>
+<p>offer: Their wholesale distribution software and the way BIS implements it.</p>
+<p>easy CTA: Book a conversation with BIS.</p>
+<ul>
+<li>Copy / talk-track beats (3-5):</li>
+<ul>
+<li>"Will we have enough inventory next month for the orders already coming in?"</li>
+<li>"A retailer order that is not filled out exactly right can come back as a $20,000 to $50,000 chargeback."</li>
+<li>"This is not another generic ERP tour. It is about replenishment and EDI in a wholesale distribution operation."</li>
+<li>"If this is already costing you deals or chargebacks, here is how distributors work with BIS."</li>
+<li>"If you want this looked at for your operation, book a time with the BIS team."</li>
+</ul>
+<li>Cadence: One topic first, the distribution inventory and EDI story. Test that campaign, then consider a later segment for another product line once the first beachhead is working.</li>
+</ul>
+<h3>Best case studies for THIS Call 2</h3>
+<ul>
+<li>Cedric Le Rouzo, Cinnamon Consulting. Use this when Michael wonders whether a webinar works for a technical software or IT buyer, or whether the motion will sound like a generic tech pitch. Cedric sells software and IT services, so the buyer type is close. Do not quote attendee or close numbers for Cedric on this call. Prospect link: <a href="https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J">https://quantums-institute.com/due-diligence-software#section-q7lxhXlRS_J</a></li>
+<li>Gene Rosendale, Advocate Advisors. Use this when the ZoomInfo and agency-style spend comes up, or when Michael says he will not put a lot of money out without skin in the game. Gene had already been burned by marketing agencies over several years, then used a proven webinar system instead of buying another untested one. Prospect link: <a href="https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM">https://quantums-institute.com/due-diligence-consultingandprofessional#section-LWwnpIIvtM</a></li>
+<li>Philipp Von Schulthess, Oxoia. Use this if he says his distributor buyer is too specialized or too operational for a webinar, or that referrals should be enough. Oxoia sells technical software to a niche buyer set and still used webinars to create real conversations, including the largest deal in the company's history off one of them. Prospect link: <a href="https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I">https://quantums-institute.com/due-diligence-software#section-Xqv-egBah3I</a></li>
+</ul>
+<h3>Decision / stakeholder map</h3>
+<ul>
+<li>Who’s in the room / who signs / what each cares about: Michael is one of the owners and appears to be the person who would decide. He said he can give honest opinions on Monday and that they would make a decision within a week or two after the talk. No other decision-maker was clearly committed to join. If a parent or partner needs to be involved, get that named on the call rather than assuming it.</li>
+<li>Landmines from Call 1 (hiring, IP, price, “we’ll think”, etc.): Do not ask him to fund a large upfront experiment with no shared risk. Do not try to demo all six businesses at once. Do not lead with transportation or a generic one-stop-shop story. Do not promise a people-count you do not have. Remember he may be in Texas and had a possible 10:00 AM conflict. Send the invite. He is researching other options, so leave Monday with a clear next step and a decision date, not just "we'll think."</li>
+</ul>
+      </div>
+    </details>
+
+    <p class="note">Prep packs for today’s confirmed calls. Expand a pack when you’re ready.</p>
+  </div>
+<script>
+    function setAll(open) {
+      document.querySelectorAll('details.pack').forEach(d => d.open = open);
+    }
+  </script>
+</body>
+</html>
